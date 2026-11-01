@@ -1,0 +1,90 @@
+# Paper feed configuration. This is the only file you normally need to edit.
+
+site:
+  title: "E-Bus & Transport Research Feed"
+  subtitle: "Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration"
+  author: "Renyou Xie, UNSW"
+  base_url: ""          # e.g. https://<user>.github.io/paper-feed  (used in feed.xml links)
+
+# Used as the scoring rubric for Claude. Write it as you'd describe your work to a colleague.
+profile: |
+  Postdoc at UNSW working on electric-bus fleet operations. Core interests:
+  - Electric vehicle / electric bus scheduling (E-VSP, MDEVSP), charging scheduling, partial charging,
+    capacitated chargers, time-of-use tariffs, battery ageing as a cost; robust, stochastic and
+    chance-constrained optimisation; column generation, branch-and-price, MILP decomposition,
+    learning-augmented exact methods.
+  - Microscopic traffic simulation (SUMO) of bus lines built from public data (GTFS, OSM, AVL/APC,
+    stop arrivals); calibration of simulation parameters with Bayesian optimisation, Gaussian-process
+    surrogates, identifiability analysis; validation on blind hold-out data; energy consumption of buses.
+  - LLM agents for transport and operations research: agents that run simulation/optimisation pipelines,
+    LLM + optimisation, multi-agent LLM decision making for transit disruptions and emergencies.
+  - Transport-grid integration: bus depot and opportunity charging impact on distribution networks,
+    V2G, aggregators, charging flexibility, electricity price uncertainty (e.g. AEMO NEM).
+  Less relevant: battery chemistry/materials, private-car consumer adoption surveys, autonomous-driving
+  perception, freight-only logistics without electrification, generic deep learning without transport.
+
+topics:
+  ebus:
+    label: "E-bus scheduling & charging"
+    keywords: [electric bus, e-bus, battery electric bus, electric vehicle scheduling, vehicle scheduling,
+               charging schedul, charging station, opportunity charging, depot charging, partial charging,
+               charging infrastructure, column generation, branch-and-price, branch and price,
+               time-of-use, fleet electrification, electric fleet, transit fleet, battery degradation]
+  sim:
+    label: "Traffic simulation & calibration"
+    keywords: [SUMO, microscopic simulation, microsimulation, traffic simulation, calibration,
+               bayesian optimization, bayesian optimisation, surrogate model, gaussian process,
+               GTFS, bus line, bus route, travel time, dwell time, transit simulation, digital twin]
+  llm:
+    label: "LLM agents for transport/OR"
+    keywords: [large language model, LLM, language agent, multi-agent, agentic, foundation model,
+               GPT, generative AI]
+  grid:
+    label: "Transport-grid integration"
+    keywords: [vehicle-to-grid, V2G, grid integration, distribution network, power grid, aggregator,
+               demand response, charging load, electricity price, flexibility, smart charging,
+               power system, renewable]
+
+# A candidate must also mention at least one anchor term (transport / EV context), otherwise
+# generic LLM, calibration or power-system papers would flood the feed. Papers from journals marked
+# `anchor: true` (transport journals) skip this check.
+anchor_keywords: [bus, buses, transit, public transport, vehicle, EV, EVs, electric vehicle, charging,
+                  charger, traffic, mobility, fleet, transportation, transport network, road network,
+                  ride-hailing, vehicle routing]
+
+arxiv:
+  categories: [math.OC, eess.SY, cs.AI, cs.MA, cs.LG, cs.CE, physics.soc-ph]
+  max_results: 400
+
+# Journals: fetched from Crossref by ISSN. `gated: true` = high-volume journal, keep only papers
+# that hit at least two keywords. `anchor: true` = transport journal (see anchor_keywords).
+journals:
+  - {name: "Transportation Research Part B", anchor: true, publisher: Elsevier, issn: 0191-2615}
+  - {name: "Transportation Research Part C", anchor: true, publisher: Elsevier, issn: 0968-090X}
+  - {name: "Transportation Research Part D", anchor: true, publisher: Elsevier, issn: 1361-9209}
+  - {name: "Transportation Research Part E", anchor: true, publisher: Elsevier, issn: 1366-5545}
+  - {name: "Applied Energy", publisher: Elsevier, issn: 0306-2619, gated: true}
+  - {name: "European Journal of Operational Research", publisher: Elsevier, issn: 0377-2217}
+  - {name: "Computers & Operations Research", publisher: Elsevier, issn: 0305-0548}
+  - {name: "eTransportation", anchor: true, publisher: Elsevier, issn: 2590-1168}
+  - {name: "IEEE Trans. Intelligent Transportation Systems", anchor: true, publisher: IEEE, issn: 1524-9050}
+  - {name: "IEEE Trans. Smart Grid", publisher: IEEE, issn: 1949-3053}
+  - {name: "IEEE Trans. Transportation Electrification", anchor: true, publisher: IEEE, issn: 2332-7782}
+  - {name: "IEEE Trans. Power Systems", publisher: IEEE, issn: 0885-8950, gated: true}
+  - {name: "Transportation Science", anchor: true, publisher: INFORMS, issn: 0041-1655}
+  - {name: "Operations Research", publisher: INFORMS, issn: 0030-364X}
+  - {name: "INFORMS Journal on Computing", publisher: INFORMS, issn: 0899-1499}
+  - {name: "Nature Energy", publisher: Springer Nature, issn: 2058-7546}
+  - {name: "Nature Communications", publisher: Springer Nature, issn: 2041-1723, gated: true}
+  - {name: "Public Transport", anchor: true, publisher: Springer Nature, issn: 1613-7159}
+  - {name: "OR Spectrum", publisher: Springer Nature, issn: 0171-6468}
+  - {name: "Transportation", anchor: true, publisher: Springer Nature, issn: 0049-4488}
+
+fetch:
+  days_back: 3           # overlap window; already-seen papers are skipped
+  max_candidates: 300    # cap on papers sent to Claude per day
+
+scoring:
+  model: claude-haiku-5-5
+  batch_size: 20
+  min_score: 6           # papers below this are not shown

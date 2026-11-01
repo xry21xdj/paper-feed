@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>{{ site.title }}</title>
+  <link>{{ site.base_url or "" }}</link>
+  <description>{{ site.subtitle }}</description>
+{% for p in items %}
+  <item>
+    <title>[{{ p.score }}] {{ p.title }}</title>
+    <link>{{ p.url }}</link>
+    <guid isPermaLink="false">{{ p.id }}</guid>
+    <pubDate>{{ p.rfc822 }}</pubDate>
+    <category>{{ topics.get(p.topic, "") }}</category>
+    <description>{{ p.venue }} · {{ p.authors | authors }} — {{ p.reason }}</description>
+  </item>
+{% endfor %}
+</channel>
+</rss>
