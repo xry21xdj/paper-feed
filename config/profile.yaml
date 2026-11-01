@@ -4,7 +4,7 @@ site:
   title: "E-Bus & Transport Research Feed"
   subtitle: "Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration"
   author: "Renyou Xie, UNSW"
-  base_url: ""          # e.g. https://<user>.github.io/paper-feed  (used in feed.xml links)
+  base_url: "https://xry21xdj.github.io/paper-feed/"   # used in feed.xml links
 
 # Used as the scoring rubric for Claude. Write it as you'd describe your work to a colleague.
 profile: |
