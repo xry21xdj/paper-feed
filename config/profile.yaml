@@ -85,6 +85,7 @@ fetch:
   max_candidates: 300    # cap on papers sent to Claude per day
 
 scoring:
+  use_llm: true          # false = keyword scores only (no API key or credit needed)
   model: claude-haiku-5-5
   batch_size: 20
   min_score: 6           # papers below this are not shown

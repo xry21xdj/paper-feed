@@ -28,7 +28,8 @@ python -m feed.main --build-only         # re-render docs/ after editing templat
 
 ## Setup on GitHub
 
-- Secret `ANTHROPIC_API_KEY` (required). Optional: secret `OPENALEX_API_KEY` (free key, more abstract
+- Secret `ANTHROPIC_API_KEY` (optional: without it, or when the key is invalid or out of credit, papers
+  get keyword scores instead; `scoring.use_llm: false` switches Claude off on purpose). Optional: secret `OPENALEX_API_KEY` (free key, more abstract
   lookups per day), variable `CROSSREF_MAILTO` (Crossref "polite pool").
 - Settings → Pages → Deploy from branch `main`, folder `/docs`.
 - Actions → "Daily paper feed" → Run workflow for the first run (e.g. `days` = 7).

@@ -58,7 +58,12 @@ def keyword_scores(papers: list[Paper], cfg: dict) -> None:
 
 
 def llm_scores(papers: list[Paper], cfg: dict) -> None:
-    """Scores papers in place. Falls back to keyword scores for any batch the API can't handle."""
+    """Scores papers in place. Falls back to keyword scores when the LLM is switched off, no key is
+    set, the account can't be used (bad key, no credit), or a single batch fails."""
+    if not cfg["scoring"].get("use_llm", True):
+        print("  scoring.use_llm is false: using keyword scores")
+        keyword_scores(papers, cfg)
+        return
     if not os.environ.get("ANTHROPIC_API_KEY"):
         print("  ANTHROPIC_API_KEY not set: using keyword scores")
         keyword_scores(papers, cfg)
@@ -83,6 +88,11 @@ def llm_scores(papers: list[Paper], cfg: dict) -> None:
                 output_config={"effort": "low"},
                 output_format=Ratings,
             )
+        except (anthropic.AuthenticationError, anthropic.PermissionDeniedError, anthropic.BadRequestError) as e:
+            # Invalid key or no credit: every later batch would fail the same way, so stop calling the API.
+            print(f"  Claude API unusable ({type(e).__name__}: {e}); keyword scores for the rest")
+            keyword_scores(papers[i:], cfg)
+            break
         except (anthropic.APIError, ValueError) as e:  # ValueError: output failed validation
             print(f"  scoring batch {i // sc['batch_size']} failed ({type(e).__name__}: {e}); keyword fallback")
             keyword_scores(batch, cfg)
