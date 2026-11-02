@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>E-Bus &amp; Transport Research Feed</title>
+  <link>https://xry21xdj.github.io/paper-feed/</link>
+  <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
+  <item>
+    <title>[9] Voltage Safety-Aware EV Charging Coordination in Distribution Network via Graph-Enhanced Safe MARL with Dedicated Critics</title>
+    <link>https://doi.org/10.1109/tte.2026.3748620</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3748620</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Chenghao Huang, Jiarong Fan, Weiqing Wang, Hao Wang — Graph-enhanced safe multi-agent RL for EV charging coordination with voltage safety in distribution networks, directly on the grid integration problem.</description>
+  </item>
+  <item>
+    <title>[8] Electric Vehicle Scheduling and Carbon-Aware Energy Dispatch for Charging Stations</title>
+    <link>https://arxiv.org/abs/2610.36426</link>
+    <guid isPermaLink="false">arxiv:2610.36426</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>arXiv eess.SY · Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al. — Greedy vehicle scheduling and TD3 battery dispatch for charging stations with PV and carbon-aware costs, directly relevant to charger scheduling and energy cost.</description>
+  </item>
+  <item>
+    <title>[7] Cooperative EV Charging Assignment Using Multi-Agent Reinforcement Learning: A Comparison of QMIX and Independent Q-Learning Under Urban Traffic Uncertainty</title>
+    <link>https://arxiv.org/abs/2610.38053</link>
+    <guid isPermaLink="false">arxiv:2610.38053</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>arXiv cs.MA · Nour-Eddine Moumni, Rachid Alaoui, Driss Kiouach — QMIX versus IQL multi-agent RL for EV charging assignment across stations in SUMO, a clear method and application match.</description>
+  </item>
+  <item>
+    <title>[7] Dual-Agent Reinforcement Learning for Vehicle Scheduling and Multi-Energy Dispatch in Electric-Hydrogen-Transport Systems</title>
+    <link>https://arxiv.org/abs/2610.40116</link>
+    <guid isPermaLink="false">arxiv:2610.40116</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al. — Couples electric bus-like vehicle scheduling with multi-energy dispatch using RL, directly touching the researcher&#39;s scheduling and energy-coupling interests.</description>
+  </item>
+  <item>
+    <title>[6] Chance constrained optimization of hub transport systems</title>
+    <link>https://doi.org/10.1016/j.cor.2026.107709</link>
+    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107709</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Computers &amp; Operations Research · Max Bourgeat, Öykü Naz Attila, Rémy Chevrier, Quentin Cappart et al. — Chance-constrained shuttle routing solved by column generation under travel-time uncertainty; method close to the researcher&#39;s, though not electrified.</description>
+  </item>
+  <item>
+    <title>[6] Electrified cross-carrier platooning for long-haul freight: Charging coordination and stable cost allocation</title>
+    <link>https://doi.org/10.1016/j.trd.2026.105705</link>
+    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105705</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Transportation Research Part D · Rui Zheng, Yu Zhou, Chuan Ding, Mi Gan et al. — Electrified freight platooning with charging coordination and cost allocation shares optimisation and charging themes, though it targets long-haul trucks.</description>
+  </item>
+  <item>
+    <title>[6] Algebraic World Model: From Exploration to Proofs</title>
+    <link>https://arxiv.org/abs/2610.40503</link>
+    <guid isPermaLink="false">arxiv:2610.40503</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM agents for transport/OR</category>
+    <description>arXiv cs.AI · Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao — LLM-driven world-model construction with Lean proofs for reachability; a generic agent paper with limited transport or OR overlap despite its agentic framing.</description>
+  </item>
+  <item>
+    <title>[6] Distribution Grid Reconfiguration and Restoration via Linearizable Multi-phase Power Flow Modeling</title>
+    <link>https://arxiv.org/abs/2610.36252</link>
+    <guid isPermaLink="false">arxiv:2610.36252</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Young-ho Cho, Hao Zhu — MILP-compatible neural power-flow model for distribution network reconfiguration and restoration; relevant to grid integration and MILP formulations.</description>
+  </item>
+  <item>
+    <title>[6] GNN-Guided Network Reduction for Centralized Urban Traffic Routing</title>
+    <link>https://arxiv.org/abs/2610.36981</link>
+    <guid isPermaLink="false">arxiv:2610.36981</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>arXiv cs.LG · Nikolai Antonov, Lukáš Chrpa, Andrii Nyporko, Jan Hůla — GNN-guided network reduction for MILP-based urban traffic routing; traffic-optimisation methods that the researcher may find useful.</description>
+  </item>
+  <item>
+    <title>[6] LLM-Assisted Optimization for Simulation-Based Redesign</title>
+    <link>https://arxiv.org/abs/2610.39275</link>
+    <guid isPermaLink="false">arxiv:2610.39275</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM agents for transport/OR</category>
+    <description>arXiv cs.AI · Chan-Eui Song, Jeremy J. Michalek, Christopher McComb — Integrates LLM guidance with black-box solvers for simulation-based redesign on an EV battery case; relevant LLM-plus-optimisation method.</description>
+  </item>
+</channel>
+</rss>

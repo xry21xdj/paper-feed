@@ -1,0 +1,2109 @@
+{
+ "date": "2026-11-02",
+ "fetched": 647,
+ "sources": {
+  "arXiv": 272,
+  "Transportation Research Part B": 7,
+  "Transportation Research Part C": 6,
+  "Transportation Research Part D": 12,
+  "Transportation Research Part E": 3,
+  "Applied Energy": 47,
+  "European Journal of Operational Research": 13,
+  "Computers & Operations Research": 7,
+  "eTransportation": 3,
+  "IEEE Trans. Intelligent Transportation Systems": 10,
+  "IEEE Trans. Smart Grid": 11,
+  "IEEE Trans. Transportation Electrification": 26,
+  "IEEE Trans. Power Systems": 13,
+  "Transportation Science": 1,
+  "Operations Research": 4,
+  "INFORMS Journal on Computing": 3,
+  "Nature Energy": 9,
+  "Nature Communications": 200,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0
+ },
+ "papers": [
+  {
+   "id": "doi:10.1109/tte.2026.3748620",
+   "title": "Voltage Safety-Aware EV Charging Coordination in Distribution Network via Graph-Enhanced Safe MARL with Dedicated Critics",
+   "url": "https://doi.org/10.1109/tte.2026.3748620",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Chenghao Huang",
+    "Jiarong Fan",
+    "Weiqing Wang",
+    "Hao Wang"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 9,
+   "topic": "grid",
+   "reason": "Graph-enhanced safe multi-agent RL for EV charging coordination with voltage safety in distribution networks, directly on the grid integration problem.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.36426",
+   "title": "Electric Vehicle Scheduling and Carbon-Aware Energy Dispatch for Charging Stations",
+   "url": "https://arxiv.org/abs/2610.36426",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Fulong Yao",
+    "Yiming Xu",
+    "Maurizio Albano",
+    "Liana Cipcigan",
+    "Naeima Hamed",
+    "Shangyin Weng",
+    "Omer Rana"
+   ],
+   "abstract": "Electric vehicle (EV) charging stations integrating photovoltaic (PV) generation, battery storage, and bidirectional grid exchange must coordinate access to limited chargers with energy supply while considering both energy cost and carbon emissions. This paper proposes a solver-free greedy heuristic (SFGH) for dynamic vehicle scheduling (VS) and a twin delayed deep deterministic policy gradient (TD3) controller for carbon-aware energy dispatch (ED). SFGH assigns EVs according to reductions in service delays, and TD3 controls battery operation to balance energy costs and carbon emissions while meeting the resulting charging demand. The model allows both PV and battery exports, accounting for export revenue and carbon credits. Simulations on year-long case studies show that SFGH--TD3 achieves the lowest accumulated service delay, energy cost, and carbon emissions among the evaluated heuristic and multi-agent deep reinforcement learning (DRL) configurations.",
+   "topics": [
+    "ebus",
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 8,
+   "topic": "ebus",
+   "reason": "Greedy vehicle scheduling and TD3 battery dispatch for charging stations with PV and carbon-aware costs, directly relevant to charger scheduling and energy cost.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.38053",
+   "title": "Cooperative EV Charging Assignment Using Multi-Agent Reinforcement Learning: A Comparison of QMIX and Independent Q-Learning Under Urban Traffic Uncertainty",
+   "url": "https://arxiv.org/abs/2610.38053",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Nour-Eddine Moumni",
+    "Rachid Alaoui",
+    "Driss Kiouach"
+   ],
+   "abstract": "The allocation of electric vehicles to public charging stations is increasingly constrained by the fact that several heterogeneous facilities often serve the same stream of requests while observing only partial local information. An accept/reject decision that is defensible for one station may nevertheless reduce the efficiency of the charging district as a whole. We formulate this operational problem as a Decentralized Partially Observable Markov Decision Process (Dec-POMDP) and examine whether Centralized Training with Decentralized Execution (CTDE), instantiated through QMIX, improves assignment performance relative to a cooperative Independent Q-Learning baseline (IQL). The evaluation uses a six-station urban network simulated with SUMO, five independent random seeds, 200 training episodes, and four traffic flux scenarios ranging from 100 to 250 vehicles/hour. Under this protocol, QMIX reaches a mean reward per evaluated decision of +0.776, versus +0.578 for IQL (delta = +0.198, seed-paired Cohens dz = 2.98, exact two-sided Wilcoxon p = 0.0625, the minimum attainable value at this sample size), and raises the acceptance rate from 72.4% to 94.0% (delta = +21.6 pp, dz = 5.24, Wilcoxon p = 0.0625). A five-variant ablation suggests this gain is primarily attributable to the CTDE architecture when holding cooperative reward terms fixed, though not formally isolated with a single seed. By contrast, cooperative reward shaping and experience sharing show no clear descriptive benefit and may slightly reduce performance. These findings support the view that, for multi-station charging assignment, coordination should be embedded in the learning architecture rather than added only through heuristic cooperation terms.",
+   "topics": [
+    "ebus",
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 7,
+   "topic": "ebus",
+   "reason": "QMIX versus IQL multi-agent RL for EV charging assignment across stations in SUMO, a clear method and application match.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.40116",
+   "title": "Dual-Agent Reinforcement Learning for Vehicle Scheduling and Multi-Energy Dispatch in Electric-Hydrogen-Transport Systems",
+   "url": "https://arxiv.org/abs/2610.40116",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Fulong Yao",
+    "Yiming Xu",
+    "Maurizio Albano",
+    "Liana Cipcigan",
+    "Naeima Hamed",
+    "Bo Zou",
+    "Omar Rana"
+   ],
+   "abstract": "Electric-hydrogen-transport systems (EHTSs) require coordinated scheduling of electric and hydrogen vehicles together with multi-energy dispatch. These operations form a sequential decision process: upstream vehicle scheduling (VS) determines service allocation and order, thereby endogenously shaping the electricity and hydrogen demands faced by downstream energy dispatch (ED). This paper develops a dual-agent reinforcement learning framework tailored to the heterogeneous decision structures. The vehicle-scheduling agent combines proximal policy optimisation (PPO) with a Plackett-Luce policy to learn vehicle-priority permutations, which are then mapped to feasible charger and refueller assignments through a greedy allocation. The energy-dispatch agent employs twin delayed deep deterministic policy gradient (TD3) for continuous storage and energy-flow control. The directional coupling between the two decision layers is analysed, revealing that updates to the upstream scheduling policy can shift the demand distribution experienced by the downstream dispatcher. A three-stage training mechanism is therefore introduced, combining layer-wise pretraining with concurrent fine-tuning to mitigate the effects of scheduling-induced distribution shifts on downstream ED learning. Year-long case studies show that the proposed framework achieves the lowest vehicle-service delay and energy cost among the 11 evaluated methods, demonstrating effective coordination between vehicle scheduling and multi-energy dispatch.",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "grid",
+   "reason": "Couples electric bus-like vehicle scheduling with multi-energy dispatch using RL, directly touching the researcher's scheduling and energy-coupling interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.cor.2026.107709",
+   "title": "Chance constrained optimization of hub transport systems",
+   "url": "https://doi.org/10.1016/j.cor.2026.107709",
+   "venue": "Computers & Operations Research",
+   "publisher": "Elsevier",
+   "date": "2026-10-30",
+   "authors": [
+    "Max Bourgeat",
+    "Öykü Naz Attila",
+    "Rémy Chevrier",
+    "Quentin Cappart",
+    "Antoine Legrain"
+   ],
+   "abstract": "Railway transportation offers an efficient and reliable service between stations. However, in remote areas, reduced accessibility due to large distances between stations and passengers’ origin/destination points presents a significant challenge for railway companies. In low-density areas and in the countryside in particular, the supply of complementary transport to the train is often limited, or even nonexistent during off-peak hours, and does not always allow for an intermodal journey. For the French railway operator (SNCF), it is desirable to be able to provide a complementary offer to transport service in order to make a typical passenger journey as seamless as possible. A key aspect to operate this service successfully is to ensure that shuttles arrive at the train station before the time that passengers are due to take their train. Consequently, finding an optimal routing plan for shuttles is a highly time-sensitive problem. Besides, an inaccurate representation of travel times can easily lead to infeasible routing decisions with respect to meeting the due date that passengers are required to be at the train station. Given this context, the main contribution of this paper is the formalization of this problem, that we refer to as the hub transportation problem with chance constrained due dates . The problem involves optimizing routing decisions for shuttles while ensuring their timely arrival at the train station under uncertain travel times. The second contribution is an algorithm based on column generation to solve it. The pricing problem incorporates chance constraints, deeming a route feasible if the shuttle can reach the train station before the passengers’ due date. Travel time uncertainty is modeled using a discrete and finite uncertainty set to represent various travel time scenarios. The chance constraints ensures that the final decision remains feasible by meeting the passengers’ due date in at least a specified proportion of the travel time scenarios. Because solving the chance-constrained pricing problem exactly on a large scenario set is intractable, the proposed heuristic algorithm samples a finite scenario set, accelerates the labelling algorithm in the pricing problem with reduced dominance and feasibility sets, and recovers an integer solution by re-solving the master problem with the generated columns. Experiments on 100 instances built from real transit and census data, with synthetic travel-time scenarios generated from a calibrated multimodal distribution, show that the chance-constrained approach consistently meets the desired empirical feasibility rates while achieving cost savings compared to deterministic counterparts, which tend to be either overly conservative or insufficiently reliable.",
+   "topics": [
+    "ebus",
+    "sim"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "ebus",
+   "reason": "Chance-constrained shuttle routing solved by column generation under travel-time uncertainty; method close to the researcher's, though not electrified.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105705",
+   "title": "Electrified cross-carrier platooning for long-haul freight: Charging coordination and stable cost allocation",
+   "url": "https://doi.org/10.1016/j.trd.2026.105705",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-29",
+   "authors": [
+    "Rui Zheng",
+    "Yu Zhou",
+    "Chuan Ding",
+    "Mi Gan",
+    "Xiaobo Liu",
+    "Xuedong Yan"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "grid",
+   "reason": "Electrified freight platooning with charging coordination and cost allocation shares optimisation and charging themes, though it targets long-haul trucks.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.40503",
+   "title": "Algebraic World Model: From Exploration to Proofs",
+   "url": "https://arxiv.org/abs/2610.40503",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Guancheng Pan",
+    "Qixin Tan",
+    "Yang Yuan",
+    "Andrew Chi-Chih Yao"
+   ],
+   "abstract": "AI has made remarkable progress in mathematics, solving challenging problems with machine-checkable proofs in Lean, yet typically relying on predefined mathematical definitions and formal specifications. This raises a natural question: can it reason rigorously about an unknown world? We introduce the Algebraic World Model (AWM), a framework that turns interaction with unfamiliar environments into explicit mathematical models supporting formal reasoning. AWM explores the environment and develops executable Python hypotheses, continually testing and revising them against observations. It then structures these hypotheses into typed objects and shared rules, simplifies their structure through category-theory-guided transformations, and formalizes the resulting model in Lean 4 to prove reachability and impossibility. AWM can formally prove that a goal is unreachable, even beyond explored trajectories. On two impossible game levels, it constructs closed, kernel-checked Lean proofs excluding every legal winning sequence in all six runs, while Claude Opus 5.5 and GPT-6 Astra, equipped with coding tools, produce none in twelve baseline runs. Four of AWM's six initial bounds are correct, compared with one for Opus 5.5 and none for GPT-6 Astra; given only feedback that a cheaper win exists, AWM revises its rules and constructs new proofs, reaching six of six correct bounds. Moreover, AWM produces interpretable mathematical models whose rules can be inspected and tested step by step. Across all 25 public ARC-AGI-3 games, these models enable Lean to replay the winning trajectories of all 183 levels and generalize beyond observed play, predicting unseen transitions and detecting changes in game mechanics. With Claude Opus 5, AWM clears all levels with a score of 99.9, while its certified winning trajectories use only 43% of the human baseline's actions.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "llm",
+   "reason": "LLM-driven world-model construction with Lean proofs for reachability; a generic agent paper with limited transport or OR overlap despite its agentic framing.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.36252",
+   "title": "Distribution Grid Reconfiguration and Restoration via Linearizable Multi-phase Power Flow Modeling",
+   "url": "https://arxiv.org/abs/2610.36252",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-10-26",
+   "authors": [
+    "Young-ho Cho",
+    "Hao Zhu"
+   ],
+   "abstract": "Accurate and tractable power-flow (PF) modeling is essential for distribution grid topology optimization, where the presence of discrete branch-status decisions therein significantly increase the computational complexity. To tackle this challenge, we develop a topology-adaptive, low-complexity neural piecewise-linear (N-PWL) PF model. We propose a sequential layer design that can directly incorporate branch status variables into the PF mapping from branch flows to nodal injections. As a result, our N-PWL model not only preserves the PF branch-node consistency but also facilitates the representation of any unseen topologies without retraining. A low-complexity model design is further pursued to attain a linear NN parameter scaling by using a fixed-size area partition of the feeder. The resulting scalable N-PWL model enables mixed-integer linear programming (MILP) formulations of feeder topology optimization tasks, including distribution network reconfiguration (DNR) and restoration ordering problems (ROP). Numerical studies on the unbalanced, multi-phase IEEE 123-bus feeder demonstrate our N-PWL model outperforms existing end-to-end baselines in PF prediction and, more importantly, can fill the gap by achieving accurate representation of any unseen topologies. For solving DNR/ROP, our model can significantly improve the AC feasibility over linearized PF models, with a notable reduction of computation time compared with AC-PF based nonlinear formulations, particularly under a large number of topology decisions.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "grid",
+   "reason": "MILP-compatible neural power-flow model for distribution network reconfiguration and restoration; relevant to grid integration and MILP formulations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.36981",
+   "title": "GNN-Guided Network Reduction for Centralized Urban Traffic Routing",
+   "url": "https://arxiv.org/abs/2610.36981",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Nikolai Antonov",
+    "Lukáš Chrpa",
+    "Andrii Nyporko",
+    "Jan Hůla"
+   ],
+   "abstract": "We consider the centralized traffic routing (CTR) problem, where a central planner assigns routes to origin-destination (OD) vehicle flows to minimize congestion-dependent segment cost. Prior work formulates CTR efficiently as a mixed-integer linear program (MILP), but scaling this formulation to the full road network is computationally prohibitive within an operational time budget. Bounded Routes and Smart Routes speed up optimization using precomputed reduced networks; however, these methods do not account for vehicle information within each OD flow. Motivated by this gap, we propose a learning-based urban network reduction approach. A dedicated graph neural network (GNN) first scores road segments for each OD flow using the road network and vehicle-flow information. Highly ranked segments are then incorporated into complete OD routes, and the original segment-flow MILP is solved on the resulting reduced road network. The GNN thus guides the reduction of the road network, while the solver enforces feasibility and determines the routing. Experiments on four real urban networks -- Prague-Dejvice, London, New York, and Sydney -- show that the proposed approach achieves the smallest relative objective difference to the $30$-second full-graph reference in every city under both traffic regimes. Averaged across cities, this difference is more than six times lower than that of the best competing method. Moreover, traffic simulation results show that the optimization gains of the proposed method lead to more efficient routing, with the highest aggregate arrival rate and a competitive trip duration per arrival percentage point.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "sim",
+   "reason": "GNN-guided network reduction for MILP-based urban traffic routing; traffic-optimisation methods that the researcher may find useful.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39275",
+   "title": "LLM-Assisted Optimization for Simulation-Based Redesign",
+   "url": "https://arxiv.org/abs/2610.39275",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Chan-Eui Song",
+    "Jeremy J. Michalek",
+    "Christopher McComb"
+   ],
+   "abstract": "Engineering design frequently involves redesigning a prior solution to adapt to changes in context, such as material prices or system requirements. Redesign often leverages simulators too complex and/or computationally intensive for traditional numerical solvers, which lack engineering knowledge and context, to ensure global solution quality. Large language models (LLMs) can interpret semantic information, including engineering knowledge about the system and changes in context, to help guide search, and recent studies have shown that incorporating this knowledge into optimization can improve search performance. However, how best to combine LLMs with numerical solvers in redesign remains unclear. We develop and test an integrated LLM-optimization approach for redesign and compare three methods for leveraging LLMs (warm start, variable fixing and ReAct) and four black-box solvers (Bayesian optimization, genetic algorithms, mesh adaptive direct search and random search) on an electric vehicle battery pack cost minimization case study across four types of redesign scenarios. We find that the integrated approach can match feasible design discovery of the numerical-solver baselines with 80% fewer simulator evaluations while tripling the fraction of runs that find near-optimal solutions. We find that the best LLM-solver integration approach and the way the prior solution is leveraged depend on the structure of the design requirement change, and that the benefit of increasing LLM model size grows with the extent to which the LLM controls the search. These results show clear potential for LLMs in redesign tasks for guiding or replacing numerical solvers.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Integrates LLM guidance with black-box solvers for simulation-based redesign on an EV battery case; relevant LLM-plus-optimisation method.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742800",
+   "title": "A Hawkes Process-Driven RH-MADDPG Framework for Automated Container Terminals: Modeling and Mitigating Task-Induced Disruptions",
+   "url": "https://doi.org/10.1109/tits.2026.3742800",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Wenqian Chang",
+    "Yu Zhang",
+    "Xuan Lu",
+    "Caiyun Yang",
+    "Kexin Tang",
+    "Baojuan Shi"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Multi-agent RH-MADDPG handling task-induced disruptions in automated container terminals uses learning-based rolling optimisation, adjacent to disruption management but in port logistics.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103624",
+   "title": "A comprehensive framework of traffic shockwave propagation",
+   "url": "https://doi.org/10.1016/j.trb.2026.103624",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-10-28",
+   "authors": [
+    "Nachuan Li",
+    "Hani S. Mahmassani",
+    "Alireza Talebpour",
+    "Samer Hamdar"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "sim",
+   "reason": "Framework for traffic shockwave propagation; relevant background for traffic simulation, though the abstract is unavailable.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103626",
+   "title": "A multilane macroscopic framework for mixed traffic: Addressing inter-lane flow imbalance and CAV effects at freeway merging bottlenecks",
+   "url": "https://doi.org/10.1016/j.trb.2026.103626",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-10-26",
+   "authors": [
+    "Kangning Hou",
+    "Fangfang Zheng",
+    "Xiaobo Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "sim",
+   "reason": "Macroscopic multilane traffic model for merging bottlenecks; adjacent traffic-flow modelling with no abstract available.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.apenergy.2026.129084",
+   "title": "Adaptive dynamic planning method for electric vehicle charging stations considering active interaction with EV growth",
+   "url": "https://doi.org/10.1016/j.apenergy.2026.129084",
+   "venue": "Applied Energy",
+   "publisher": "Elsevier",
+   "date": "2026-10-26",
+   "authors": [
+    "Nan Yang",
+    "Wenbin Gan",
+    "Zijian Wang",
+    "Pengcheng Liang",
+    "Xiaoyu Dai",
+    "Edris Pouresmaeil",
+    "Tianlu Luo",
+    "Yuehua Huang",
+    "Zhengmao Li"
+   ],
+   "abstract": "Against the backdrop of rapid development in China's electric vehicle (EV) industry, the adequacy of charging infrastructure has emerged as a critical constraint. In this context, the exploration of economical and adaptable charging station (CS) planning methods is paramount. Therefore, this paper proposes an adaptive phased planning method for electric vehicle charging stations that considers transformation and expansion, based on system dynamics (SD) theory. The method explicitly accounts for the active interaction between EV ownership and planning results. Firstly, to reflect the interests of CSs, the power grid, and users, the division of phases as well as the transformation and expansion of CSs are incorporated as decision variables in the planning model. Building on this framework, an adaptive dynamic planning method is developed to minimize the combined cost of investment and queuing. Then, a predictive model for EV ownership is formulated based on SD theory to capture the active interaction between EV ownership and planning results. Finally, the immune genetic algorithm is used to solve the above programming model. The simulation results demonstrate that the proposed method can effectively address the challenges arising from the growth in EV ownership and enhance the adaptability and economy of CS planning schemes.",
+   "topics": [
+    "ebus",
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Adaptive phased planning of charging stations with queuing costs; adjacent background on charging infrastructure planning.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.37702",
+   "title": "Balancing Mobility Efficiency and Environmental Exposure During Mega Events: A Multi-agent Routing Framework",
+   "url": "https://arxiv.org/abs/2610.37702",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-10-26",
+   "authors": [
+    "Xinyue Liu",
+    "Qiumeng Li",
+    "Suhong Zhou",
+    "Junwen Lu",
+    "Jiali Zhou",
+    "Weipan Xu"
+   ],
+   "abstract": "Mega events can generate concentrated travel demand, intensifying congestion around venues and increasing travelers' environmental exposure. Existing traffic management strategies focus on travel efficiency, with limited attention to exposure risks. Taking mega-event travel as a short-term high-demand scenario, this study develops an exposure-aware multi-agent routing framework integrating road-network conditions, event-induced demand, background traffic, and environmental data within a unified simulation environment. Motorized travelers optimize travel efficiency, whereas micro-mobility travelers consider travel time and dynamic exposure to traffic-related PM2.5 and noise. We compare the framework with shortest-distance, congestion-aware, and exposure-aware routing baselines. Results show that, under high demand, the SARSA-based framework reduces vehicle travel time by 34.59% and cumulative environmental exposure by 58.65%, while micro-mobility travel time remains nearly unchanged. Exposure reduction is jointly driven by vehicle-side congestion mitigation and low-exposure routing. The framework provides quantitative support for vehicle diversion, low-exposure route guidance, and health-oriented traffic management in short-term high-demand scenarios.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "sim",
+   "reason": "Multi-agent routing with SARSA and exposure in a unified traffic simulation for mega events; adjacent agent-based traffic work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.38094",
+   "title": "PyPSA-Libya: An Open-Source Energy System Model for National Decarbonization and Hydrogen Export Pathways",
+   "url": "https://arxiv.org/abs/2610.38094",
+   "venue": "arXiv cs.CE",
+   "publisher": "arXiv",
+   "date": "2026-10-28",
+   "authors": [
+    "Mohamed Abuella"
+   ],
+   "abstract": "Libya possesses significant renewable energy potential that remains largely untapped. This paper presents PyPSA-Libya, a national-scale model built on the PyPSA-Earth framework, designed to explore optimal transition pathways for the Libyan power sector. We present two primary studies: (1) an electricity-only capacity expansion analysis comparing a zero-emission constraint against an unconstrained baseline at 36-cluster resolution, and (2) a sector-coupled hydrogen export study evaluating the levelized cost of exporting 70 TWh/year of hydrogen to Europe under three technological scenarios and a 100 EUR/tonne CO2 carbon tax regime. Results indicate that while solar PV dominates the domestic capacity mix, integration of hydrogen production significantly alters grid storage requirements. Furthermore, under carbon pricing, steam methane reforming with carbon capture (SMR-CC) frequently out-competes pure green electrolysis, establishing a lower-cost compliance pathway for cross-border export. The model, data, and configuration files are released under an open-source license to support transparent energy planning in Libya.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Open-source PyPSA-based national energy model with capacity expansion and carbon pricing; useful background for energy-system modelling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747914",
+   "title": "A Harmonic-assisted Power Transfer Modulation Strategy for Efficiency Improvement in IPT Systems Over a Wide Output Power Range",
+   "url": "https://doi.org/10.1109/tte.2026.3747914",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-27",
+   "authors": [
+    "Siwei Guo",
+    "Senwen Luo",
+    "Fangyong Wang",
+    "Yadong Wang",
+    "Chenyang Zhu",
+    "Bangyin Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Wireless inductive power transfer efficiency for EV charging is charging hardware, adjacent to charging interests but not scheduling or grid impact.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103625",
+   "title": "A unified resource-flow representation and optimization method for railway traffic management with multi-type resources",
+   "url": "https://doi.org/10.1016/j.trb.2026.103625",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-10-26",
+   "authors": [
+    "Ranfei Zheng",
+    "Lingyun Meng",
+    "Valentina Cacchiani",
+    "Jianrui Miao",
+    "Zhengwen Liao",
+    "Peiran Han",
+    "Xiaojie Luan"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Resource-flow optimisation for railway traffic management; transport scheduling adjacent to the researcher's work but not electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105212",
+   "title": "Column-and-row generation for integrated berth allocation and quay crane assignment considering crew scheduling",
+   "url": "https://doi.org/10.1016/j.tre.2026.105212",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Xueting He",
+    "Jianyi Zhao",
+    "Bingying Zhao",
+    "Lu Zhen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "Berth allocation and quay crane assignment with crew scheduling is port operations optimisation using decomposition, a method the researcher uses but a different domain.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105697",
+   "title": "Flexibility at a cost? Required price reductions in dynamic EV charging tariffs",
+   "url": "https://doi.org/10.1016/j.trd.2026.105697",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-29",
+   "authors": [
+    "Paul Fabianek",
+    "Ayse Tugba Atasoy",
+    "Reinhard Madlener"
+   ],
+   "abstract": "Congestion at charging stations causes uneven infrastructure utilization and restricts user mobility, potentially slowing battery electric vehicle adoption. This study examines how dynamic pricing can make users more flexible in when, where, and how long they charge. Using a survey-based experiment, we quantify the price reductions needed to induce each type of flexibility. Among consistently price-responsive respondents, average required reductions were 23.8% for charging 1 km farther away, 24.5% for shifting from daytime to nighttime, and 29.7% for accepting doubled charging duration. Responsiveness varied with battery electric vehicle charging experience, mobility patterns, and socio-demographic characteristics. By testing a broad range of price incentives in a survey-based experiment, this study complements field experiment evidence and informs the design of targeted dynamic pricing schemes that improve charging infrastructure utilization while accounting for heterogeneous user preferences.",
+   "topics": [
+    "ebus",
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Survey-based experiment on price reductions for EV charging flexibility; consumer-preference focus is less relevant to scheduling and grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1287/trsc.2025.0056",
+   "title": "Integrated Schedule Planning for Regional Airlines Using Column Generation",
+   "url": "https://doi.org/10.1287/trsc.2025.0056",
+   "venue": "Transportation Science",
+   "publisher": "INFORMS",
+   "date": "2026-10-27",
+   "authors": [
+    "Alberto Santini",
+    "Vikrant Vaze"
+   ],
+   "abstract": "More than one-third of U.S. domestic flights are operated by regional airlines. This paper focuses on optimizing medium-term schedule planning decisions for a network of regional airlines through the joint optimization of frequency planning, timetable development, fleet assignment, and some limited aspects of route planning while capturing passengers’ travel decisions through a general attraction discrete choice model. Unlike previous studies that focused on flight-level decision variables, our formulation uses composite variables to model all nonstop flights between a pair of airports and their complex interdependencies, giving rise to an extended formulation with an extremely tight continuous relaxation. We develop an original solution approach based on column generation and a restricted master heuristic to generate high-quality solutions. Additionally, we propose a new acceleration technique based on dynamic programming (DP) to quickly generate promising columns. When combined with implicit dual stabilization, symmetry-breaking techniques, and subproblem aging, this acceleration approach allows us to solve large-scale real-world instances to near optimality in less than three hours. Through an extensive computational analysis for some of the largest regional airline networks in the United States, we demonstrate the effectiveness of our overall modeling and computational framework. Our approach can generate daily profit improvements of up to $0.4 million compared with the actual schedule of the airline. We identify the main operational drivers of profit improvement. Furthermore, numerous sensitivity analyses confirm that our results are robust to relaxing key modeling assumptions. Ultimately, our detailed experiments show that the proposed approach provides near-optimal solutions to real-world problem instances within practically reasonable runtimes. Funding: A. Santini’s research was financed by MICIU/AEI/10.13039/501100011033 (Spain) and FSE+ (European Union) [Grant RYC2022-035269-I].",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "Column generation with dynamic programming acceleration for airline schedule planning; a useful OR method reference outside electrified transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106102",
+   "title": "Interpretable long-term traffic modelling on national road networks using theory-informed deep learning",
+   "url": "https://doi.org/10.1016/j.trc.2026.106102",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-10-31",
+   "authors": [
+    "Yue Li",
+    "Shujuan Chen",
+    "Akihiro Shimoda",
+    "Ying Jin"
+   ],
+   "abstract": "Long-term traffic modelling is fundamental to transport planning, but existing approaches often trade off interpretability, transferability, and predictive accuracy. Classical travel demand models provide behavioural structure but rely on strong assumptions and extensive calibration, whereas generic deep learning models capture complex patterns but often lack theoretical grounding and spatial transferability, limiting their usefulness for long-term planning applications. We propose DeepDemand, a theory-informed deep learning framework that embeds key components of travel demand theory to predict long-term highway traffic volumes using external socioeconomic features and road-network structure. The framework integrates a competitive two-source Dijkstra procedure for local origin–destination (OD) region extraction and OD pair screening with a differentiable architecture modelling OD interactions and travel-time deterrence. The model is evaluated using eight years (2017–2024) of observations on the UK strategic road network, covering 5088 highway segments. Under random cross-validation, DeepDemand achieves an R 2 of 0.706, an MAE of 7567 vehicles and a wMAPE of 30.0%, the best values on these three metrics among linear, gravity, tree-based, and graph neural network baselines. Performance remains strong under spatial cross-validation ( R 2 = 0.647 ), indicating good geographic transferability. Interpretability analysis reveals a stable nonlinear travel-time deterrence pattern, the socioeconomic characteristics most associated with predicted demand, and polycentric OD interaction structures aligned with major employment centres and transport hubs. These results highlight the value of integrating transport theory with deep learning for interpretable long-term traffic estimation, network screening, and scenario exploration.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Theory-informed deep learning for highway traffic volume estimation; transport modelling but not simulation or electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747786",
+   "title": "Low Complexity Voltage Gradient-Based Optimal Switching Sequence Predictive Control Approach for an Off-Board EV Battery Charger",
+   "url": "https://doi.org/10.1109/tte.2026.3747786",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-27",
+   "authors": [
+    "Durga Prasad Pilli",
+    "Deepak Ronanki"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Off-board EV charger predictive control touches charging hardware, only loosely connected to charging scheduling and grid interaction.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105708",
+   "title": "Low-emission zones in urban freight: Tailpipe and life-cycle impacts",
+   "url": "https://doi.org/10.1016/j.trd.2026.105708",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-29",
+   "authors": [
+    "Cristian Aguayo",
+    "Jorge Amaya",
+    "Fernando Arenas-Araya",
+    "Sabine Limbourg"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Low-emission zones for urban freight with life-cycle impacts is freight-focused and not about electrified transit operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747743",
+   "title": "Magnetic-Core Integration: Fundamentals, Methodology, and Application in Electric Vehicles",
+   "url": "https://doi.org/10.1109/tte.2026.3747743",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Yue Liu",
+    "Hongfei Wu",
+    "Guosheng Ji",
+    "C. Q. Jiang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Magnetic-core integration in EV power electronics is hardware-focused and only peripherally related to EV charging systems.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106098",
+   "title": "Measuring the recoverability of all individual vehicle paths with incomplete and imperfect roadside vehicle identification sensors",
+   "url": "https://doi.org/10.1016/j.trc.2026.106098",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Shuhan Qiu",
+    "Guoyang Qin",
+    "Chaoteng Wu",
+    "Melvin Wong",
+    "Xuejian Chen",
+    "Jian Sun"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Recovering individual vehicle paths from roadside identification sensors touches traffic data inference, but is not simulation calibration or transit.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106095",
+   "title": "Routing, scheduling, and synchronization of unmanned aerial vehicles (UAVs) with bus hitchhiking for last-mile parcel delivery",
+   "url": "https://doi.org/10.1016/j.trc.2026.106095",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-10-26",
+   "authors": [
+    "Yizhi Zhen",
+    "Fangni Zhang",
+    "Yong-Hong Kuo",
+    "Kaifeng Ji"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "UAV parcel delivery hitchhiking on buses involves transit routing and synchronisation, but not electric buses or charging, so only loosely connected.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103627",
+   "title": "Scheduling human interventions to free trapped autonomous vehicles: A robust multi-priority P-queue model",
+   "url": "https://doi.org/10.1016/j.trb.2026.103627",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Bo Lu",
+    "Jiajun Wang",
+    "Guowei Zhang",
+    "T.C.E. Cheng"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Robust P-queue model for human interventions on trapped autonomous vehicles; operations-oriented but not electrification, and no abstract is available.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105298",
+   "title": "Train rescheduling under unidirectional disruptions: A status-driven dynamic rolling optimization framework",
+   "url": "https://doi.org/10.1016/j.tre.2026.105298",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Xiaoyu Hao",
+    "Fangsheng Wang",
+    "Rudong Yang",
+    "Ruihua Xu",
+    "Andrea D’Ariano"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Train rescheduling under disruptions with rolling optimisation is adjacent to disruption handling in transit, but rail-focused and non-electric.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3744678",
+   "title": "When Wavelets Meet Waves: A Dual-Wave Network for Interpretable Traffic Prediction",
+   "url": "https://doi.org/10.1109/tits.2026.3744678",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Jia Hu",
+    "Simone Baldi",
+    "Di Liu",
+    "Chu Wang",
+    "Jie Gui",
+    "Wenwu Yu",
+    "C. L. Philip Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Interpretable deep traffic prediction is generic deep learning on traffic data, only tangentially useful for transit demand or simulation inputs.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.40431",
+   "title": "Adaptive search with path-constrained mobile sensors using multi-arm bandits",
+   "url": "https://arxiv.org/abs/2610.40431",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Abraham P. Vinod",
+    "Parth K. Thaker",
+    "Gautam Dasarathy",
+    "Stefano Di Cairano"
+   ],
+   "abstract": "We study a constrained sequential decision problem for detecting regions of interest from noisy online measurements collected by a team of energy-constrained mobile sensors. The sensor motion is restricted to a precomputed set of feasible paths that satisfy mobility constraints, limited available energy by requiring return to charging stations, and avoidance of known obstacles. We cast the resulting active path selection as a multi-armed bandit problem and propose an iterative search algorithm that adaptively assigns paths using confidence bounds computed from the collected data. We also propose a graph-based method to construct low-cardinality path covers under the team's constraints. We establish finite-time and anytime probabilistic correctness guarantees for the proposed algorithm, derive non-asymptotic upper bounds on the times required to detect all regions of interest and to label all nodes, and show that these bounds match algorithm-independent lower bounds up to constant factors for a broad class of problem instances. Using numerical simulations, we illustrate the behavior of the proposed approach and the effect of path redundancy and team size on search performance.",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "Bandit-based path selection for energy-constrained mobile sensors with charging stations; shares constrained routing ideas but not transit or electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39547",
+   "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+   "url": "https://arxiv.org/abs/2610.39547",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Xi Zheng",
+    "Ivan Ruchkin",
+    "Hong Jin Kang",
+    "Tevfik Bultan",
+    "Vijay Ganesh",
+    "Taylor T. Johnson",
+    "Ziyang Li",
+    "Lei Ma",
+    "Aloysius K. Mok",
+    "Daniel Neider",
+    "Ruzica Piskac",
+    "Nalini Venkatasubramanian",
+    "Simon Thompson",
+    "Sanjoy Baruah"
+   ],
+   "abstract": "Learning-enabled cyber-physical systems (CPS), including autonomous vehicles and UAVs, increasingly incorporate foundation models, yet fragmented assurance practices provide insufficient support for system-level guarantees. We argue that restoring engineering control across stochastic neural, symbolic, and physical boundaries requires a shift from model-centric evaluation to system-level assurance. We introduce the Foundation Model Assurance Stack, connecting three directions: (i) neuro-symbolic architectures that constrain foundation models through explicit symbolic world models, reasoning layers, and interfaces; (ii) semantically grounded, conformance-based testing that combines formal specifications and symbolic world models with foundation-model-assisted specification mining, scenario generation, and test synthesis; and (iii) compositional verification and runtime assurance that target formally tractable components and interfaces through modular contracts, equivalence checking, verified synthesis, uncertainty-aware reasoning, and runtime monitoring and enforcement. Symbolic abstractions establish assurance boundaries between stochastic learning and formal reasoning, connecting testing, verification, and runtime evidence across the system lifecycle. Foundation models serve as constrained assistants whose outputs are independently checked wherever correctness can be formally specified. We identify research challenges in specification engineering, abstraction fidelity, evidence composition, and lifecycle certification, and outline a staged agenda toward trustworthy, deployable, and certifiable learning-enabled CPS.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Assurance framework for learning-enabled CPS like autonomous vehicles; adjacent to testing and verification but mostly conceptual.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.38985",
+   "title": "Benchmarking Graph Neural Networks for AC Power Flow: The Role of Inductive Biases and Physical Constraints",
+   "url": "https://arxiv.org/abs/2610.38985",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-28",
+   "authors": [
+    "Federico Clerici",
+    "Ferran Bohigas-Daranas",
+    "Hamid Latif-Martínez",
+    "Eduardo Prieto-Araujo",
+    "Oriol Gomis-Bellmunt",
+    "Pere Barlet-Ros"
+   ],
+   "abstract": "Fast and accurate models for AC power flow (ACPF) are increasingly important as modern electrical grids require more frequent system analyses. Graph neural networks (GNNs) naturally exploit electrical grid topology, yet the effects of architectural design choices on predictive performance remain poorly understood given differences in graph representations and evaluation settings across studies. We present a unified benchmark of representative GNN architectures for ACPF prediction under a common experimental framework. All models use identical preprocessing and training procedures and comparable parameter budgets, isolating the impact of message-passing mechanisms and inductive biases. We also analyze errors by distance from the slack bus and systematically ablate key design components. We evaluate predictive accuracy and physical consistency on the IEEE 14-bus and IEEE 118-bus systems. Results indicate that anisotropic message-passing architectures offer the most favorable trade-off between predictive accuracy and physical consistency under the studied parameter and topology constraints. Explicit edge features encoding line impedances and global context aggregation are particularly important for representing electrical interactions and system-wide dependencies, especially for voltage-angle predictions on the topologically bottlenecked IEEE-118 grid. Under a budget with approximately fixed parameters, two or three message-passing layers generally provide the best balance between depth and representation width, while additional depth offers no consistent improvement. Ablations also show that standard residual and root connections are not necessarily beneficial in shallow models, and that aggregation operators involve trade-offs between statistical accuracy and physical consistency. These results provide practical guidelines for designing graph-based power system models.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Benchmarks GNNs for AC power flow; power-system modelling is adjacent but not tied to transport-grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.40287",
+   "title": "Only Accepted Tokens Count: An Energy Accounting of Speculative Decoding Under Latency Targets",
+   "url": "https://arxiv.org/abs/2610.40287",
+   "venue": "arXiv cs.DC",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Bole Ma",
+    "Ayesha Afzal",
+    "Jan Eitzinger",
+    "Harald Koestler",
+    "Gerhard Wellein"
+   ],
+   "abstract": "Large language model serving is limited by facility power. Energy per token determines how many tokens a datacenter can serve, while a latency target bounds how quickly each user receives them. During decode, every weight is read from memory for every generated token. Batching amortizes this read across users but makes no individual user faster. Speculative decoding does: a drafter proposes several future tokens, and the target model verifies them in a single forward pass that reuses the same weight read. Because every drafted token must be verified whether or not it is accepted, the energy speculation saves depends on how many drafted tokens are accepted. This saving is hard to pin down. It varies across target models from different attention families and across drafting schemes, and it depends on the text being served. Every drafter we evaluate accepts fewer tokens on conversation than on code, and every trained drafter accepts fewer on Romansh, a low-resource language, than on English. We measure speculative decoding under production serving conditions (SGLang, CUDA graphs enabled) on H100 and H200 GPUs, at batch sizes up to 64 across 5 corpora. On dense models, verification, not drafting, dominates the energy cost. The saving shrinks as the batch grows, because batching has already shared the weight read that speculation would divide among the accepted tokens. At large batch sizes, block drafters push verification past the balance point between arithmetic and memory traffic into the compute-bound regime, where the saving becomes a loss, and a drafter with low acceptance raises energy per token. Meeting a tighter latency target with speculation then costs additional energy. Larger batches lower energy per token without speculation. Speculation adds to that saving only when acceptance is high, and on the model we tested it leaves little headroom for latency-preserving DVFS.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Energy accounting of speculative decoding for LLM serving; datacenter energy is only tangentially related to the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748794",
+   "title": "An Interpretable Design and Optimization Method for Electric Vehicle Traction Motors based on an FT-Transformer Surrogate Model",
+   "url": "https://doi.org/10.1109/tte.2026.3748794",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Ling Ding",
+    "Shumei Cui",
+    "Yuan Cheng",
+    "Yong Cui",
+    "Bochao Du",
+    "Zesong Wang",
+    "Da Zhao",
+    "Yuan Wan",
+    "Xiaodong Yu",
+    "Xiaomei Liu"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Surrogate-based design of EV traction motors; EV hardware design rather than fleet operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.etran.2026.100648",
+   "title": "Beyond Rigid Sequences: A Selective Degradation Representation Network for Efficient and Robust Battery Degradation Trajectory Forecasting",
+   "url": "https://doi.org/10.1016/j.etran.2026.100648",
+   "venue": "eTransportation",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Xuan Liu",
+    "Yan Lyu",
+    "Jie Gao",
+    "Zhongyang Gao",
+    "Cunfu He",
+    "Zhenhua Han",
+    "Xi Zhang",
+    "Fanxu Meng",
+    "Fan Shi"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Battery degradation trajectory forecasting; battery-focused, which the researcher treats as less relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tpwrs.2026.3748050",
+   "title": "Deep Learning-Accelerated Shapley Value for Fair Allocation in Power Systems: The Case of Carbon Emission Responsibility",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3748050",
+   "venue": "IEEE Trans. Power Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Yuanhao Feng",
+    "Tao Sun",
+    "Yan Meng",
+    "Xuxin Yang",
+    "Donghan Feng"
+   ],
+   "abstract": "Allocating costs, benefits, and emissions fairly among power system participant entities represents a persistent challenge. The Shapley value provides an axiomatically fair solution, yet computational barriers have limited its adoption beyond small-scale applications. This paper presents SurroShap, a scalable Shapley value approximation framework combining efficient coalition sampling with deep learning surrogate models that accelerate characteristic function evaluations. Exemplified through carbon emission responsibility allocation in power networks, SurroShap enables Shapley-based fair allocation for power systems with thousands of entities for the first time. We derive theoretical error bounds proving that time-averaged SurroShap allocations converge to be $\\varepsilon$-close to exact Shapley values. Experiments on nine systems ranging from 26 to 1,951 entities demonstrate completion within the real-time operational window even at maximum scale, achieving 10^4-10^5 speedups over other sampling-based methods while maintaining tight error bounds. The resulting Shapley-based carbon allocations possess six desirable properties aligning individual interests with decarbonization goals. Year-long simulations on the Texas 2000-bus system validate real-world applicability, with regional analysis revealing how renewable-rich areas offset emission responsibility through exports while load centers bear responsibility for driving system-wide generation.",
+   "topics": [
+    "sim",
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Shapley-value carbon emission allocation in power networks; only tangentially related to transport electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748403",
+   "title": "Electromechanical–Thermal Coupling Analysis of Temperature-Induced Flux-Linkage Reduction in Permanent Magnet Direct-Drive Locomotive Traction Systems",
+   "url": "https://doi.org/10.1109/tte.2026.3748403",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Zirui Ye",
+    "Zaigang Chen",
+    "Jiyong Chen",
+    "Yanhui Xu",
+    "Wanming Zhai"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Thermal-electromagnetic coupling in locomotive traction motors is electrical machine analysis, marginally related to electrified transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3743333",
+   "title": "Extended State Observer-Based Coordinated Indirect Adaptive Iterative Learning Control for Metro Trains Under FDI Attacks",
+   "url": "https://doi.org/10.1109/tits.2026.3743333",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Dong Liu",
+    "Jia-Wei Wu",
+    "Wei-Wei Che",
+    "Xin Wang",
+    "Yu-Kun Wang",
+    "Zheng-Guang Wu",
+    "Jun-Sheng Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Fault-tolerant iterative learning control for metro train traction is control engineering with rail relevance but no scheduling, charging or simulation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105696",
+   "title": "Insights into brake wear particle emissions from a pure electric light-duty vehicle",
+   "url": "https://doi.org/10.1016/j.trd.2026.105696",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-30",
+   "authors": [
+    "Baoli Gong",
+    "Zhixin Zeng",
+    "Yu Lyu",
+    "Yibo Xu",
+    "Yu Gu",
+    "Yi Ma",
+    "Jiachen Li",
+    "Jianxun Tan",
+    "Qiang Lyu",
+    "Zhennan Cai",
+    "Yong Peng",
+    "Hui Xu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Brake wear particle emissions from an electric light-duty vehicle is vehicle emissions measurement, adjacent to energy consumption of buses at best.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105701",
+   "title": "Integrating circular economy strategies enhances carbon mitigation in China’s passenger vehicle electrification",
+   "url": "https://doi.org/10.1016/j.trd.2026.105701",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-28",
+   "authors": [
+    "Yijing Zhu",
+    "Haotian Zheng",
+    "Zhencheng Xing",
+    "Xiang Liu",
+    "Yifan Liu",
+    "Bowen Chu",
+    "Fengqi You",
+    "Haikun Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Circular economy and passenger vehicle electrification emissions are policy and consumer-level topics rather than fleet or grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747897",
+   "title": "Intelligent Condition Monitoring and DAFCE Method for High-Speed Maglev Train Suspension Systems",
+   "url": "https://doi.org/10.1109/tte.2026.3747897",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Xingyu Zhou",
+    "Fei Zhou",
+    "Xiaolong Li",
+    "Zhiqiang Long"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Condition monitoring for maglev suspension is rail mechatronics diagnostics, only adjacent to electrified transport interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3744146",
+   "title": "Mobile Long-Term Traffic Flow Forecasting for Low-Altitude Traffic Surveillance",
+   "url": "https://doi.org/10.1109/tits.2026.3744146",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Li Shen",
+    "Yangzhu Wang",
+    "Xuyi Fan",
+    "Qing Zhang",
+    "Wei Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Long-term traffic flow forecasting for low-altitude surveillance is generic forecasting with UAVs, offering little for bus or simulation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3746684",
+   "title": "Modeling and Characteristics Analysis of Interturn Short-Circuit Faults in Hairpin-Winding Traction Motors",
+   "url": "https://doi.org/10.1109/tte.2026.3746684",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-26",
+   "authors": [
+    "Taotao Pan",
+    "Yinpeng Qu",
+    "Qi Li",
+    "Sheng Huang",
+    "Haoyang Chen",
+    "Kaiwen Yao",
+    "Kunpeng Zhu",
+    "Wu Liao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Interturn short-circuit fault modelling in traction motors is machine diagnostics, with little bearing on bus operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747817",
+   "title": "Multi-physics Coupling and Motor Electromagnetic Disturbance Estimation-based Precise Modeling of Magnetic Suspension Flywheel Battery",
+   "url": "https://doi.org/10.1109/tte.2026.3747817",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Weiyu Zhang",
+    "Si Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Flywheel battery multi-physics modelling is energy storage hardware modelling, only weakly connected to transport grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742519",
+   "title": "NormGen: Normalizing Flow-Based Traffic Scenario Generation for Training and Testing of Autonomous Driving Prediction Algorithms",
+   "url": "https://doi.org/10.1109/tits.2026.3742519",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Yujie Wang",
+    "Rui Gao",
+    "Canjie Cai",
+    "Shuaijun Wang",
+    "Zirui Zhao",
+    "Qi Hao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Normalizing-flow traffic scenario generation for autonomous driving prediction is mainly perception and prediction, only tangentially related to traffic simulation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103629",
+   "title": "Optimal forecast sharing in ride-sharing platforms",
+   "url": "https://doi.org/10.1016/j.trb.2026.103629",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-11-01",
+   "authors": [
+    "Hao Sun"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Ride-sharing forecast sharing is a platform operations topic with no electrification or bus focus, so only superficially relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105712",
+   "title": "Port alliance and information disclosure under disasters: a distributionally robust optimization approach",
+   "url": "https://doi.org/10.1016/j.trd.2026.105712",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-29",
+   "authors": [
+    "Shan Lyu",
+    "Ruisi Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Port alliance under disasters using distributionally robust optimisation shares a robust-optimisation method but applies to maritime ports, not transit.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748569",
+   "title": "Research on a Rapid Calculation Method for Variable-Speed Operation Performance of Linear Motors Based on Constant-Speed Simulation Data",
+   "url": "https://doi.org/10.1109/tte.2026.3748569",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Jingang Bai",
+    "Wanquan Li",
+    "Bo Liu",
+    "Yong Liu",
+    "Ping Zheng"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Fast calculation of linear motor variable-speed performance from constant-speed simulations is machine modelling, only loosely related to simulation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749096",
+   "title": "State-of-Charge Estimation for Uncertain Battery Model With Physics-Informed Neural Network: A Passivity-based Observer Design",
+   "url": "https://doi.org/10.1109/tte.2026.3749096",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Zhen Zhuang",
+    "Jin You",
+    "Zhongkai Zhou",
+    "Xiangyang Xing",
+    "Tong Yang",
+    "YangQuan Chen",
+    "Yan Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Battery SOC estimation with physics-informed networks is battery state estimation, which relates only indirectly to battery ageing costs in e-bus scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749028",
+   "title": "Unified Real-Time Simulation of Three-Level Converters for Electric Vehicle Traction Using Modal Mapping and Generalized Transformation Module",
+   "url": "https://doi.org/10.1109/tte.2026.3749028",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Zixiang Liao",
+    "Xianyao Huang",
+    "Yinbin Chen",
+    "Can Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Real-time simulation of three-level traction converters is power-electronics simulation, only superficially related to traffic simulation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3744587",
+   "title": "Warm-Starting QAOA With XY Mixers: A Novel Approach for Traveling Salesman Problem",
+   "url": "https://doi.org/10.1109/tits.2026.3744587",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Rafael Simões do Carmo",
+    "Marcos C. S. Santana",
+    "Felipe Fernandes Fanchini",
+    "Victor Hugo C. de Albuquerque",
+    "João Paulo Papa"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ebus",
+   "reason": "Quantum QAOA for TSP is a generic routing method with no electrification or transit application; only loosely related to combinatorial optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.38046",
+   "title": "Conformal Predictive Distributions for Contextual Order Fulfillment Optimization",
+   "url": "https://arxiv.org/abs/2610.38046",
+   "venue": "arXiv math.OC",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Tinghan Ye",
+    "Amira Hijazi",
+    "Pascal Van Hentenryck"
+   ],
+   "abstract": "Ship-to-home fulfillment requires a retailer to select a fulfillment location and carrier before the delivery time is known. These decisions often rely on static transit-time estimates, which cannot represent how delivery-time uncertainty varies across orders and fulfillment options. This paper constructs conformal predictive distributions (CPDs) using Conformal Predictive Systems (CPS) for regression and the cross Venn-Abers predictor (CVAP) for multiclass classification, and uses them in a contextual optimization model for fulfillment decisions. The model is solved by contextual sample-average approximation (C-SAA). The regret of each fulfillment decision, its expected cost above that of the best decision, is bounded by forecast error, scenario-evaluation error, and the candidate-generation gap. The forecast term depends on how well calibration residuals or class probabilities represent the current order. On more than five million proprietary order records, CVAP raises exact-day accuracy from 49.5% for the rule-based estimate to 64.1%. Paired with a decision rule that selects a quantile weighting late errors more heavily, the split CPS (SCPS) gives a point estimate that raises late-delivery detection from 3.8% to 79.4%. Residual-based CPS distributions also meet or slightly exceed nominal interval-coverage targets. In decision experiments with a JD.com simulator over six test dates, C-SAA with CVAP lowers mean total cost by 7.1% and C-SAA with the Mondrian CPS (MCPS) lowers it by 6.7%, relative to C-SAA with the original nonconformal forecast. Both cut the late-delivery rate from 5.7% to below 4.0%.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Conformal delivery-time prediction for ship-to-home fulfillment; logistics without electrification and not aligned with the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39884",
+   "title": "KARMA: Training-Free Knowledge-Atomic Harness Evolution for Industrial Advertising Agents",
+   "url": "https://arxiv.org/abs/2610.39884",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Xinhua Miao",
+    "Yuanzhen Rong",
+    "Weiru Zhang",
+    "Xiaoyi Zeng"
+   ],
+   "abstract": "Industrial advertising agents must continually adapt their decision knowledge to changing product offerings, traffic patterns, and operating policies. We present KARMA (Knowledge-Atomic, Regression-Gated Modular Adaptation), a training-free framework that evolves six typed knowledge modules while keeping model weights and executable harness code frozen. During our evolution, a deterministic Trace Verifier maps observed errors to candidate modules, and a Critic compares successful and failed trajectories to guide a tool-constrained Evolver. The Evolver applies atomic knowledge edits, which a fixed validation gate retains only when their measured gain reaches a threshold; otherwise, the previous knowledge state is restored. We evaluate KARMA with three LLM families on cases sampled from a corpus of approximately half a million real-world operation logs across six e-commerce domains. Across 18 domain--model settings, KARMA raises the average hold-out score from 30.19 to 39.15 (+8.96 points, +29.7%). Ablations show that removing either successful or failed trajectories more than halves the average hold-out gain. Evolved knowledge also transfers across domains without further adaptation, yielding an average hold-out gain of 8.54 points across all source--target pairs. By linking retained patches to their diagnostic evidence and validation outcomes, KARMA supports inspectable, reversible knowledge adaptation for agents in Web marketplaces.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Training-free LLM agent knowledge evolution for e-commerce advertising; unrelated to transport or operations research.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106099",
+   "title": "A training-free, physics-based framework for ego-centric spatio-temporal traffic accident localization",
+   "url": "https://doi.org/10.1016/j.trc.2026.106099",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-10-29",
+   "authors": [
+    "Yunfei Shen",
+    "Wenjing Li",
+    "Jun Zhang",
+    "Zhongcheng Wu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Training-free accident localization from ego-centric video is a perception-style traffic safety method with little overlap with the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741888",
+   "title": "An Improved Cooperative Lane-Changing Control Method for Connected Autonomous Vehicles Based on Dynamic Trajectory Planning",
+   "url": "https://doi.org/10.1109/tits.2026.3741888",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Miaomiao Liu",
+    "Mingyue Zhu",
+    "Guangquan Lu",
+    "Xiaochen Liu",
+    "Zeping Wei",
+    "Hui Deng",
+    "Minkun Yao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Cooperative lane-changing for connected autonomous vehicles is far from bus scheduling or bus-line simulation calibration; only superficial traffic overlap.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747999",
+   "title": "Analysis of Steady-State Voltage Harmonics and Dynamic Performance in Aircraft Permanent Magnet High-Voltage DC Starter/Generator System",
+   "url": "https://doi.org/10.1109/tte.2026.3747999",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Tong Jin",
+    "Ting Tang",
+    "Yanrui Chen",
+    "Wei Sun",
+    "Dawei Li",
+    "Ronghai Qu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Aircraft high-voltage DC starter/generator harmonics concern aerospace power systems, unrelated to road transport electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105710",
+   "title": "Assessing pre-earthquake preparedness through multi-system simulation of post-earthquake medical rescue",
+   "url": "https://doi.org/10.1016/j.trd.2026.105710",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-28",
+   "authors": [
+    "Pengshun Li",
+    "Bingyu Zhao",
+    "Tracy Becker",
+    "Ziqi Wang",
+    "Kenichi Soga"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Multi-system simulation of post-earthquake medical rescue is emergency management, not relevant to the researcher's transit or simulation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748396",
+   "title": "Damping Loop Reshaping-Based 2-DOF Internal Model Current Control for High-Speed PMSMs",
+   "url": "https://doi.org/10.1109/tte.2026.3748396",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Qixing Gao",
+    "Weimin Li",
+    "Xiaoqiang Guo",
+    "Jiafan Shen",
+    "Xiaolin Wang",
+    "Xucong Bao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Current control for high-speed PMSMs is motor drive control with no transport operations or grid-level relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747847",
+   "title": "Desired Input Modulation for Enhanced Voltage Regulation to Improve Performance of CLLC Resonant Converters Under Load Variations",
+   "url": "https://doi.org/10.1109/tte.2026.3747847",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Junyeob Kim",
+    "Jaeyun Yim",
+    "Gwanyeon Kim",
+    "Yonghao Gui",
+    "Youngwoo Lee",
+    "Wonhee Kim"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "CLLC resonant converter voltage regulation is power electronics hardware design, far from fleet charging scheduling or grid integration studies.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747796",
+   "title": "Eccentricity Effect on Torque Ripple of Multi-Unit PMSM for In-Wheel Traction Applications",
+   "url": "https://doi.org/10.1109/tte.2026.3747796",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Guangchen Wang",
+    "Chao Zhang",
+    "Yuchen Wang",
+    "Hengliang Zhang",
+    "Ji Qi",
+    "Wei Hua"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ebus",
+   "reason": "Motor torque ripple for in-wheel PMSM is electric-machine design, only tangentially connected to bus scheduling or charging work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749164",
+   "title": "Estimated-Speed Ripple Suppression for Multiphase Marine Propulsion Motor Based on Sum-Difference Coordinated Adaptive Full-Order Observer",
+   "url": "https://doi.org/10.1109/tte.2026.3749164",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Xiangyu Luo",
+    "Liangdeng Hu",
+    "Zicheng Liu",
+    "Xiaosong Xu",
+    "Shuo Lei",
+    "Yi Liu",
+    "Zida Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Marine propulsion motor speed-ripple suppression is motor control with no link to bus operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742376",
+   "title": "Human-Supervised RL for Occlusion-Aware Motion Planning With Adaptive Diffusion Sampling",
+   "url": "https://doi.org/10.1109/tits.2026.3742376",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Baiyu Du",
+    "Dongang Liu",
+    "Yahui Liu",
+    "Huanjie Wang",
+    "Ji Li",
+    "Chuan Hu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Occlusion-aware motion planning with diffusion sampling is autonomous-driving perception/planning, not relevant to the researcher's bus operations work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105715",
+   "title": "Integrated assessment of EU ETS, FuelEU Maritime and IMO net-zero framework: economic and emission implications of biofuel-based compliance strategies",
+   "url": "https://doi.org/10.1016/j.trd.2026.105715",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-30",
+   "authors": [
+    "Rukiye Ünal",
+    "Burak Zincir"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Maritime emissions compliance with biofuels concerns shipping policy and is unrelated to electrified transport or scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747065",
+   "title": "Model-Free Predictive Fault-Tolerant Control for SOEW-PMSM Under Open-Phase Faults Based on Zero-Sequence-Suppressed Minimum Copper Loss",
+   "url": "https://doi.org/10.1109/tte.2026.3747065",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-26",
+   "authors": [
+    "Yuhang Peng",
+    "Wenhui Yuan",
+    "Yunpeng Zhang",
+    "Jinwu Gong",
+    "Meng Huang",
+    "Yuting Gao",
+    "Xiaoming Zha"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Fault-tolerant control of open-phase PMSMs is drive-level motor control with no link to transit or charging optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105716",
+   "title": "Modeling systemic road network vulnerability and cascading healthcare disruption during urban Floods",
+   "url": "https://doi.org/10.1016/j.trd.2026.105716",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-10-30",
+   "authors": [
+    "Pritom Ray Nobin"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Flood-related road network vulnerability and healthcare disruption is resilience analysis with little link to bus operations or simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747375",
+   "title": "PALNet-Based Accurate Diagnosis of Incipient Intermittent Open-Circuit Faults in Traction Inverters via Improved Weak-Fault Feature Extraction",
+   "url": "https://doi.org/10.1109/tte.2026.3747375",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Chao Yang",
+    "Yanghe Liu",
+    "Kefan Yao",
+    "Sichen Shen",
+    "Tao Peng",
+    "Chunhua Yang",
+    "Weihua Gui"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Traction inverter fault diagnosis is power-electronics condition monitoring, not transport-grid integration or fleet operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106104",
+   "title": "Robust trajectory tracking for low-altitude logistics UAVs under spatiotemporal disturbances: A decoupled representation reinforcement learning approach",
+   "url": "https://doi.org/10.1016/j.trc.2026.106104",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-01",
+   "authors": [
+    "Wangyang Liu",
+    "Shuling Wang",
+    "Zhe Dai",
+    "Yishun Li",
+    "Yongjie Xue"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Reinforcement learning trajectory tracking for logistics drones is outside transit electrification and optimisation interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749041",
+   "title": "SSTDR-Based Reflection Signature Decoupling for Bond-Wire Fault Diagnosis in Multi-Chip Parallel IGBT Modules",
+   "url": "https://doi.org/10.1109/tte.2026.3749041",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Weiyu Yuan",
+    "Shu Cheng",
+    "Chang Liu",
+    "Chaoqun Xiang",
+    "Jian Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Reflectometry-based bond-wire fault diagnosis in IGBT modules is semiconductor reliability work, far from the researcher's focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741912",
+   "title": "TrajAware: Generalizable, Permutation-Robust, and Trajectory-Aware Routing for VANETs Under Incomplete Observations",
+   "url": "https://doi.org/10.1109/tits.2026.3741912",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Xiaolu Fu",
+    "Ziyuan Bao",
+    "Eiman Kanjo"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Routing for VANET communication networks is unrelated to bus fleet operations, charging, or transport simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748789",
+   "title": "Transmitter–Receiver Co-Design for DAB-to-Inverter DC-Link Backup Communication in Electric Vehicles",
+   "url": "https://doi.org/10.1109/tte.2026.3748789",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Chang Liu",
+    "Guvanthi Abeysinghe Mudiyanselage",
+    "Yulei Wang",
+    "Jiaming An",
+    "Linke Zhou",
+    "Ali Emadi"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "DC-link backup communication in EVs is in-vehicle electronics, not relevant to fleet charging or transport optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106100",
+   "title": "U-EASWS: An urban expressway Type-A short weaving segment UAV vehicle trajectory dataset integrated with interaction and risk semantic annotations",
+   "url": "https://doi.org/10.1016/j.trc.2026.106100",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-10-27",
+   "authors": [
+    "Baofeng Sun",
+    "Qibo Liu",
+    "Guodong Ma",
+    "Zhihong Yao",
+    "Wenyu Yang",
+    "Zongqi Wang",
+    "Huxing Zhou",
+    "Zhaoxin Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "UAV trajectory dataset for expressway weaving segments is a traffic data resource, only marginally related to bus simulation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.37989",
+   "title": "GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving",
+   "url": "https://arxiv.org/abs/2610.37989",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Srikant Bharadwaj",
+    "Ankur Mallick",
+    "Spyridon Mastorakis",
+    "Anjaly Parayil",
+    "Dhruv Deshmukh",
+    "Victor Ruehle"
+   ],
+   "abstract": "Large language model (LLM) inference has become an operational workload that fleets must provision, monitor, and bill against latency service-level objectives (SLOs). A single throughput number cannot answer the questions operators actually face, because generative serving couples two phases with very different service characteristics, continuous batching reshapes the effective service process, and user-visible tail latency can degrade long before aggregate throughput saturates. We present GAUSS, a workload-aware analytical and Monte-Carlo simulator that predicts the full distributions of time-to-first-token (TTFT) and time-between-tokens (TBT), together with the sustainable request rate, for a given workload, engine, and accelerator. GAUSS pairs calibrated, phase-specific latency surfaces for prefill and decode with a Lindley-recurrence model of queueing under stochastic arrivals and estimates performance by ensemble Monte-Carlo sampling rather than by replaying a single trace. This lets GAUSS reason about workloads, routing policies, and hardware that have never been deployed, and to capture the latency tails that trace-driven simulators systematically under-sample. We describe the model and show how it supports operating-point selection, traffic segmentation, and shortest-remaining-processing-time scheduling capacity questions that trace-driven simulators cannot address.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Monte-Carlo simulator for LLM inference serving latency; a simulation method but outside transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39685",
+   "title": "Practical Assessment of Agentic Systems in Acoustics",
+   "url": "https://arxiv.org/abs/2610.39685",
+   "venue": "arXiv cs.SD",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Arne Hildenbrand",
+    "Philipp Diel",
+    "Zhuo Cao",
+    "Hanno Scharr",
+    "Stefan Pischinger",
+    "Steffen Marburg"
+   ],
+   "abstract": "In engineering, applications of artificial intelligence have so far been largely limited to surrogate models and optimization tasks. Large language models changed this, as they can write software from a task given in words. Placed inside a harness, a system of components that lets it search for information and execute software, such a model becomes an agent that can take over recurring engineering tasks. This work measures how the model and the elements of the harness shape the performance and behavior of the agent in two common acoustic applications. In the first, the agent detects and locates faults in audio recordings from a vehicle interior with near-perfect accuracy. A benchmark on this task shows that a weak model sets a limit that no harness design can overcome, and that design choices take effect only once the model is capable enough to use them. In the second, a case study on the design of a metamaterial unit cell, the agent reliably finds designs that achieve a specified insertion loss over a given frequency range. The results aim to help the reader understand what each element of an agent contributes and how to design an agent for acoustic tasks.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 2,
+   "topic": "llm",
+   "reason": "LLM agent harness for acoustic fault detection and metamaterial design; outside transport, though it touches agent design.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747282",
+   "title": "A Review of Field Voltage Pulsation in Stator-Excited Flux-Modulated Synchronous Machines-Part II: Suppression Methods",
+   "url": "https://doi.org/10.1109/tte.2026.3747282",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Xiaoyong Sun",
+    "Jiaxuan Li",
+    "Zhitong Ran",
+    "Ruizhao Han"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Flux-modulated machine voltage pulsation suppression is machine-level electromagnetics with no link to the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748570",
+   "title": "Design of a High-Performance Field-Modulated Magnetic Screw Based on the Differential Modulation Principle",
+   "url": "https://doi.org/10.1109/tte.2026.3748570",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Yichen Yu",
+    "Qian Wang",
+    "Fangrui Wei",
+    "Xinghao Liu",
+    "Lu Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Magnetic screw device design is electromechanical machine design unrelated to the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749078",
+   "title": "Mechanical and Thermal Properties of Materials for Cryogenic Electric Machines: Review and Guidelines",
+   "url": "https://doi.org/10.1109/tte.2026.3749078",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-30",
+   "authors": [
+    "Xuebei Zhang",
+    "Fengyu Zhang",
+    "Zeyuan Xu",
+    "Lee Harper",
+    "Jesús Molinar-Díaz",
+    "Adam Walker",
+    "Chris Gerada",
+    "David Gerada"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Cryogenic machine materials review is far from the researcher's scheduling, simulation, and grid-integration interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.etran.2026.100647",
+   "title": "Mechanistic insights into thermal safety degradation driven by overcharge-induced electrical damage in hard carbon /Na(Ni1/3Fe1/3Mn1/3)O2 sodium-ion batteries",
+   "url": "https://doi.org/10.1016/j.etran.2026.100647",
+   "venue": "eTransportation",
+   "publisher": "Elsevier",
+   "date": "2026-10-26",
+   "authors": [
+    "Guangxu Zhang",
+    "Qi Kang",
+    "Kui Chen",
+    "Xuezhe Wei",
+    "Jiangong Zhu",
+    "Haifeng Dai"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Sodium-ion battery thermal safety mechanisms are battery chemistry, which the researcher explicitly considers less relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3748128",
+   "title": "Sliding Mode Based on a Novel Barrier Function Considering Time Delay for PMSM Speed Control",
+   "url": "https://doi.org/10.1109/tte.2026.3748128",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-29",
+   "authors": [
+    "Ziyi Cai",
+    "Jinhua Chen",
+    "Haiyang Cao",
+    "Fansong Lin",
+    "Qi Shi",
+    "Guangwei Liu",
+    "Chi Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Sliding-mode PMSM speed control is motor control theory with no connection to the researcher's topics.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3747943",
+   "title": "Suppression of Multiple Current Harmonics in Five-Phase PMSM via Two-Degree-of-Freedom Current Control",
+   "url": "https://doi.org/10.1109/tte.2026.3747943",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-10-27",
+   "authors": [
+    "Qiang Geng",
+    "Chenyi Song",
+    "Zhanqing Zhou",
+    "Zhendong Liu",
+    "Wei Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Five-phase PMSM current harmonic control is motor drive control with no transport operations relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.37195",
+   "title": "Action-Value Calibration via Continuation Sharing for Long-Horizon Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2610.37195",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Yingjian Chen",
+    "Lang Zhou",
+    "Zixin Zhao",
+    "Pingfan Li",
+    "Weishi Zheng",
+    "Zhilin Zhao"
+   ],
+   "abstract": "Reinforcement learning for long-horizon agents relies on feedback from sequences of interactions, making credit assignment to individual actions difficult. Existing methods such as GiGPO compare actions at shared states to compute relative advantages, but estimate each action's value from a single sampled continuation. The resulting local credit remains sensitive to decisions made later in the trajectory. To address this problem, we propose ConCal (Continuation Calibration), a recursive continuation-value estimator that incorporates continuation evidence already present in a rollout batch. ConCal matches visits from the same task by their incoming state-action-state transitions, combines shared continuation evidence with each visit's own transition estimate, and propagates calibrated values backward to refine earlier action-value estimates. This reduces dependence on individual sampled continuations and mitigates local credit distortions without additional rollouts. Held-out return diagnostics show lower error in within-group value differences and higher agreement with reference action orderings than estimates based on individual continuations. With Qwen2.5-1.5B-Instruct, ConCal improves success rates over GiGPO by 3.39 and 5.86 percentage points on ALFWorld and WebShop, respectively. Our code is available at https://github.com/Yingjian-Chen/ConCal.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Credit assignment for long-horizon LLM agent reinforcement learning; no transport relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.36617",
+   "title": "Balanced State Subspaces for Mamba-2 State Compression",
+   "url": "https://arxiv.org/abs/2610.36617",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Shang Tingyu",
+    "Cao Wenfei"
+   ],
+   "abstract": "Mamba-2 compresses all context into a fixed-size recurrent state that dominates decoding memory and bandwidth. Existing compressors quantize state values or prune state coordinates, scoring each channel independently in the native basis. We examine trained Mamba-2 states and find that energy is almost rank-one, but the output does not read the energetic directions: energy concentrates in a bias-like direction accumulated by the recurrence, while the content the output reads lives in a low-dimensional subspace that is not aligned with the state's coordinates. Even output-aware scores are computed coordinate by coordinate, so they miss the directions that determine the input--output map. Compression should therefore target the write--read subspace rather than individual coordinates. We propose \\method{}, a post-training transform that instantiates balanced truncation with full controllability and observability Gramians and applies the rotation exactly via Mamba-2's scalar-identity transition. Because the useful rank varies widely across layers, we further introduce HARP, which allocates ranks per layer from the Hankel spectrum and protects retrieval-sensitive layers, improving both perplexity and retrieval over uniform budgets. Calibration takes a single forward pass, an order of magnitude faster than GHOST's released protocol, with lower peak memory. With HARP, \\method{} halves the state dimension at an average WikiText-2 perplexity increase of $0.3$ points ($1.8\\%$) across 130M--2.7B, versus $1.6$ ($9.3\\%$) for GHOST, and the gap widens at 25\\% retention.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "State compression for Mamba-2 sequence models; generic deep learning without transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.35753",
+   "title": "CLOSURE: Cross-Channel Closure for Multivariate Time Series Anomaly Detection",
+   "url": "https://arxiv.org/abs/2610.35753",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-26",
+   "authors": [
+    "Fan Xu",
+    "Hao Wu",
+    "Zhi Song",
+    "Hanbo Huang",
+    "Wenzhuo Ma",
+    "Nan Wang",
+    "Wei Gong",
+    "Xibin Zhao"
+   ],
+   "abstract": "Multivariate time series produced by industrial installations and server clusters are under continuous monitoring, and anomaly detection is the first line of defense before a local fault escalates into a system-wide failure. In the absence of labels, the dominant paradigm trains a reconstruction model on normal data and scores the residual to reach a verdict. Recent work has steadily enriched the expressiveness of the recovery map through Transformers, diffusion models, and cross-scale associations. A residual, however, only certifies that an observation can be recovered; it does not certify that the variables still explain one another as they do under normal operation. A coordinated yet unfamiliar operating transition inflates the residual without breaking any relationship, whereas a sensor drifting away from its peers may leave the residual silent. Methods that fold inter-variable dependencies into the reconstruction objective inherit this ambiguity, because their relational evidence is ultimately supervised by the same recovery loss. We therefore propose CLOSURE, which evaluates recoverability and cross-channel consistency as two normal-data prediction tasks learned in separation. The recoverability task is solved by a diffusion reconstructor conditioned on a discrete memory of normal temporal bases. The consistency task is solved by a relation-closure operator that predicts every channel exclusively from the others, where the target's own trajectory is withheld and sparse signed gates decide which peers are actually used. The two scores are reconciled only through calibration on normal data. Extensive experiments show that CLOSURE consistently outperforms recent reconstruction-, frequency-, and topology-based detectors on public benchmark streams, confirming the value of examining consistency alongside recoverability.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Multivariate time series anomaly detection for industrial monitoring; generic machine learning without transport or energy focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39518",
+   "title": "Category-Anchored Large Language Models for Next POI Recommendation",
+   "url": "https://arxiv.org/abs/2610.39518",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Lexi Bai",
+    "Xiaopeng Zeng",
+    "Xun Zhou",
+    "Yuanshao Zhu",
+    "James Jianqiao Yu"
+   ],
+   "abstract": "Next point-of-interest (POI) recommendation aims to predict a user's next destination from spatio-temporal check-in data, and serves as the foundation for many location-based services. Recent advances incorporate large language models (LLMs) into this task by textualizing user trajectories to exploit their semantic reasoning ability. However, directly generating POI identifiers with such models is unreliable: POIs are sparse, localized, and long-tailed entities with weak natural-language semantics, which creates a semantic-to-entity gap between high-level mobility intent and concrete POI prediction. To bridge this gap, we propose ANCHOR, a category-anchored framework for semantic-to-entity grounding in next POI recommendation. Specifically, ANCHOR first estimates category-level mobility intent in a compact and stable semantic space, rather than predicting concrete POI entities directly. The inferred intent is then grounded into a candidate set by integrating three complementary sources of mobility evidence: category anchors, historical visit memory, and user preferences. Finally, a history-aware reranker selects the target POI by matching each candidate with the user's historical mobility patterns and current context. Experiments on three real-world check-in datasets show that ANCHOR consistently outperforms representative traditional, structure-enhanced, and LLM-based baselines on the reported metrics. Further analyses validate the effectiveness of semantic-to-entity grounding and show favorable trade-offs among candidate coverage, ranking quality, and inference efficiency.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "LLM-based next POI recommendation from check-in data; not related to transport operations or electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.37124",
+   "title": "Finite Element Modeling of Fracture in Brittle Foods with Physically Consistent Parameter Calibration: A Practical Case Study on Cooled Dark Chocolate",
+   "url": "https://arxiv.org/abs/2610.37124",
+   "venue": "arXiv cs.CE",
+   "publisher": "arXiv",
+   "date": "2026-10-27",
+   "authors": [
+    "Patrick Kurzeja",
+    "Felix Rörentrop",
+    "Kai Langenfeld",
+    "Jörn Mosler"
+   ],
+   "abstract": "Fracture in food can be undesired during production and transportation but also intended during cutting, grinding or mastication. The associated peak load, the deformation at failure and the resulting fragment geometry are all product properties. This work condenses the modeling of such fracture into a physically rigorous recipe that considers the practical constraints imposed by finite element simulations where necessary and applies idealized theoretical assessments where applicable. Cooled dark chocolate serves as a reproducible model material. Two well-established modeling frameworks for Griffith-type brittle fracture are assessed at an affordable spatial discretization: a sharp-interface and a diffuse phase-field approach. The assessment covers the choice of numerical framework, its discretization and a staged identification of the model parameters. Each parameter is identified from the loading stage that governs it: elastic parameters from pre-crack tension and compression, critical energy release rate from three-point-bending peak force, and the phase-field width last. The phase-field width interferes with the structural response, crack curvature and stress fields, depending on its lower bound set by the affordable spatial resolution. Elastic slope, peak force and crack path therefore cannot be met practically by a single parameter set. The objective must be fixed for the calibration of the model parameters and reported together with the numerical parameters and the boundary value problem.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Phase-field fracture modelling of chocolate; no relevance to transport or energy systems.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39246",
+   "title": "IMRouter: Imbalance-aware Temporal Pattern Routing for LLM-based Time Series Forecasting",
+   "url": "https://arxiv.org/abs/2610.39246",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Xin Yang",
+    "Cai Xu",
+    "Haishun Chen",
+    "Ying Liu",
+    "Jie Zhao",
+    "Wei Zhao",
+    "Ziyu Guan"
+   ],
+   "abstract": "Accurate time series forecasting (TSF) is essential for Web applications, such as traffic monitoring and online resource management. Recent advances in leveraging pre-trained large language models (LLMs) have shown promising performance in TSF. However, existing LLM-based TSF methods largely optimize the overall forecasting objective while overlooking temporal pattern imbalance (TPI), where different temporal patterns occur at highly unequal frequencies. Our empirical analysis reveals that TPI is prevalent across widely used TSF benchmarks, with substantially higher forecasting errors on less frequent patterns. To address this issue, we propose IMRouter (Imbalance-aware Temporal Pattern Routing), a novel framework that mitigates TPI-induced biases in both temporal representation learning and cross-modal alignment. Specifically, IMRouter introduces Pattern-Adaptive Temporal Representation Learning (PATR), which leverages gradient conflict and local gradient density to guide expert specialization. By penalizing incompatible expert assignments with density-aware weighting, PATR reduces the dominance of frequent optimization signals in router training. Furthermore, Routing-Guided Semantic Alignment (RGSA) transfers the pattern-specific knowledge learned by the router to cross-modal alignment through mutual information maximization, preserving distinctive temporal information across different patterns. Extensive experiments on benchmark datasets demonstrate the effectiveness of IMRouter, particularly in improving forecasting performance on less frequent temporal patterns.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "sim",
+   "reason": "LLM routing for time series forecasting imbalance; generic forecasting without transport focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.36386",
+   "title": "LoRA on a Budget: Function-Aware Post-Hoc Compression for Adapter Fleets",
+   "url": "https://arxiv.org/abs/2610.36386",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-26",
+   "authors": [
+    "Shenghui Li",
+    "Thiemo voigt"
+   ],
+   "abstract": "Low-Rank Adaptation (LoRA) has become a key mechanism for efficiently specializing foundation models into many task- and user-specific variants. Serving many LoRA adapters under a shared resource budget turns post-hoc compression into a two-level allocation problem: rank must be distributed across layers within each adapter and across adapters within the fleet. Although trained LoRAs contain substantial spectral redundancy, spectral reconstruction alone does not determine how much compression an adapter can functionally tolerate. We formulate fleet compression through a functional rank-distortion frontier for each adapter, followed by fleet-level minimax allocation under a shared rank budget. Given exact frontiers, this decomposition is equivalent to joint optimization over all layer ranks. We introduce Functional Rank Allocation (FRA), an unlabeled method for constructing practical frontiers. FRA measures isolated module truncations end to end, uses these measurements as an additive search surrogate solved by dynamic programming, remeasures every complete candidate, and takes the lower-risk envelope with a complementary spectral proposal before exact minimax allocation over the constructed frontiers. Across 78 adapters from three public fleets, FRA improves worst-case and tail utility over uniform spectral compression in constrained-budget regimes. Fixed-budget probes show that isolated costs rank candidates well, but their calibration shifts across proposal shapes; end-to-end verification and the spectral proposal therefore limit functional-search error.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Rank allocation for compressing LoRA adapter fleets; no transport relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39559",
+   "title": "Non-Zero Radius: The Missing Component of Neural Networks",
+   "url": "https://arxiv.org/abs/2610.39559",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-10-29",
+   "authors": [
+    "Tiansi Dong",
+    "Mateja Jamnik",
+    "Pietro Liò"
+   ],
+   "abstract": "Inspired by the analogy between the all-or-none activation of biological neurons and the true-false of logic circuits, McCulloch and Pitts proposed a mathematical model of the biological neuron in 1943 with the aim of simulating logical reasoning. Although Norbert Wiener considered the model overly simplistic at the time, it later became a building block of modern neural networks, including large language models. Despite their remarkable empirical success, however, conventional neural networks remain largely black-box systems and struggle with reliable symbolic reasoning. Viewing vectors as spheres of zero radius, we relax the zero-radius constraint and represent concepts as spheres with non-zero radii. We argue that sphere-based representations can capture additional features of biological cognition, including representing spatial concepts as regions and reasoning through model construction and inspection. Building on sphere embeddings, we introduce Sphere Neural Networks (SphNNs), which use a transition map to achieve symbolic-level Aristotelian syllogistic reasoning without training data, thereby taking an initial step toward the original goal of McCulloch and Pitts. We suggest that the zero-radius constraint may reflect an aspect of the oversimplification identified by Wiener and may limit conventional neural networks' capacity for symbolic-level logical reasoning.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Sphere embeddings for syllogistic reasoning in neural networks; no transport or optimisation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.39049",
+   "title": "Reinforcement Learning for the Game of Balatro: A Fast Simulator and Two-Policy Training Approach",
+   "url": "https://arxiv.org/abs/2610.39049",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-10-28",
+   "authors": [
+    "Ajay Vikram Periasami",
+    "Anjaneya Gupta",
+    "Ethan Cheng",
+    "Ivan Rosales"
+   ],
+   "abstract": "Balatro, a 2024 roguelike deckbuilder, presents three difficulties that have historically derailed reinforcement learning methods: a 3,000-action state-dependent action space, horizons of several hundred decisions with sparse rewards, and pervasive stochasticity in both card draws and shop generation. Published RL results on the game remain scarce. We introduce an end-to-end pipeline comprising (i) a high-throughput Rust simulator that is automatically state-diffed against the live game client via BalatroBot, (ii) a condensed observation-action interface with dynamic per-step masking of legal moves, and (iii) a multi-agent PPO architecture that decomposes play into a tactical blind policy and a strategic shop policy that share the full game state but act in disjoint phases. Long-horizon credit assignment is partially addressed by per-agent reward routing with explicit cross-agent credit. On the main joint run, training metrics show a sharp phase transition in which the first-blind clear rate converges above 99% and mean episode return increases by roughly an order of magnitude, plateauing at a mean maximum ante of 3 out of 8; single-agent baselines under identical rewards oscillated between greedy and hoarding failure modes and did not stably clear the first blind. These results establish the two-policy decomposition as a strong reactive baseline for Balatro and localise the remaining gap to long-horizon strategic planning rather than tactical blind play.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Multi-agent PPO for the card game Balatro; unrelated to transport or operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2610.38968",
+   "title": "TableTune: Measured, Self-Correcting Draft-Length Tables for Dynamic Speculative Decoding",
+   "url": "https://arxiv.org/abs/2610.38968",
+   "venue": "arXiv cs.ET",
+   "publisher": "arXiv",
+   "date": "2026-10-28",
+   "authors": [
+    "Abhishek Malvankar",
+    "Paul Castro",
+    "Nick Mitchell",
+    "Lionel Villard"
+   ],
+   "abstract": "Speculative decoding speeds up large language model (LLM) serving only while the GPU has spare compute, so the best draft length, the number of tokens a small drafter guesses per step, shrinks as the batch grows. vLLM lets operators set the draft length for each batch size with a hand-written table, but nothing measures or corrects that table. We present TableTune. Its tuner times the decoding step for every batch size and draft length on vLLM's own serving path and computes, in minutes, the table that maximizes throughput. Its controller, a vLLM plugin, tracks how many guesses are accepted in live traffic and rebuilds the table while serving. We measure TableTune only against other ways to speculate. On an H100, the tuned table delivers at least 94% of the throughput of the best fixed draft length at every load in four of five drafter settings (88% in the fifth) without the operator having to know which length that is. Against reimplementations of TurboSpec- and Nightjar-style control on the same engine, its worst-case loss is never higher than theirs, and with the EAGLE-3 drafter it is 3% against 9% and 12%. On a mixture-of-experts model, vLLM's documented table loses up to 18% and the tuned table at most 3%. Starting from mistuned tables, the controller raises throughput by up to 58% (up to 45% on vLLM's default runner), and after a workload switch with the DFlash drafter it recovers 96% of a stale table's loss. In llm-d's optimized-baseline deployment as shipped, two Qwen3-32B replicas on four GPUs, the tuned table is up to 32% faster than a fixed draft length of 3 and up to 25% faster than vLLM's documented table at high load, and the controller raises the documented table's throughput by up to 29%.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Draft-length tuning for LLM speculative decoding; unrelated to transport.",
+   "scored_by": "llm"
+  }
+ ]
+}
