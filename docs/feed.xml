@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>E-Bus &amp; Transport Research Feed</title>
+  <link>https://xry21xdj.github.io/paper-feed/</link>
+  <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
+  <item>
+    <title>[6] Chance constrained optimization of hub transport systems</title>
+    <link>https://doi.org/10.1016/j.cor.2026.107709</link>
+    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107709</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Computers &amp; Operations Research · Max Bourgeat, Öykü Naz Attila, Rémy Chevrier, Quentin Cappart et al. — Keyword match: E-bus scheduling &amp; charging, Traffic simulation &amp; calibration</description>
+  </item>
+</channel>
+</rss>
