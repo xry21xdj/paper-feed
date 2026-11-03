@@ -5,6 +5,30 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[8] Infrastructure planning for inductive charging in electrified shuttle systems</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106068</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106068</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part C · Paul Bischoff, Salma Hammani, Maximilian Schiffer — Infrastructure planning for inductive charging in electrified shuttle systems directly addresses electric transit charging infrastructure decisions.</description>
+  </item>
+  <item>
+    <title>[6] A real-time transit signal priority control method based on stochastic shockwave profile model for multi-line bus systems</title>
+    <link>https://doi.org/10.1016/j.tre.2026.105358</link>
+    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105358</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>Transportation Research Part E · Pengjie Liu, Yanzhan Chen, Ruiguang Liu, Fan Yu et al. — Real-time transit signal priority for multi-line bus systems using stochastic shockwave modelling; relevant bus operations control with adjacent simulation methods.</description>
+  </item>
+  <item>
+    <title>[6] Learning-oriented approach for integrated charging load prediction and mobile charging station scheduling</title>
+    <link>https://doi.org/10.1016/j.cor.2026.107716</link>
+    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107716</guid>
+    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Computers &amp; Operations Research · Ming Liu, Lutian Wang, Lihua Sun, Feifeng Zheng — Integrates charging load prediction with mobile charging station scheduling; relevant to charging scheduling and learning-augmented optimisation, though not explicitly electric buses.</description>
+  </item>
+  <item>
     <title>[9] Voltage Safety-Aware EV Charging Coordination in Distribution Network via Graph-Enhanced Safe MARL with Dedicated Critics</title>
     <link>https://doi.org/10.1109/tte.2026.3748620</link>
     <guid isPermaLink="false">doi:10.1109/tte.2026.3748620</guid>

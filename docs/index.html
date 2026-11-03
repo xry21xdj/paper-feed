@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-02</h2>
-  <span class="meta">10 relevant of 90 screened · 647 new papers fetched</span>
+  <h2>Today · 2026-11-03</h2>
+  <span class="meta">3 relevant of 33 screened · 187 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">10</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">3</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM agents for transport/OR<span class="n">2</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">4</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">3</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">2</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,131 +107,40 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="grid" data-score="9" data-date="2026-10-29" data-venue="IEEE Trans. Transportation Electrification"
-           data-text="voltage safety-aware ev charging coordination in distribution network via graph-enhanced safe marl with dedicated critics chenghao huang jiarong fan weiqing wang hao wang ieee trans. transportation electrification">
-    <div class="score s-hi" title="Relevance 9/10">9</div>
-    <div>
-      <h3><a href="https://doi.org/10.1109/tte.2026.3748620" target="_blank" rel="noopener">Voltage Safety-Aware EV Charging Coordination in Distribution Network via Graph-Enhanced Safe MARL with Dedicated Critics</a></h3>
-<div class="by">Chenghao Huang, Jiarong Fan, Weiqing Wang, Hao Wang</div>      <div class="venue">
-        <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-10-29</span>
-<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Graph-enhanced safe multi-agent RL for EV charging coordination with voltage safety in distribution networks, directly on the grid integration problem.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="ebus" data-score="8" data-date="2026-10-27" data-venue="arXiv eess.SY"
-           data-text="electric vehicle scheduling and carbon-aware energy dispatch for charging stations fulong yao yiming xu maurizio albano liana cipcigan naeima hamed shangyin weng omer rana arxiv eess.sy">
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-02" data-venue="Transportation Research Part C"
+           data-text="infrastructure planning for inductive charging in electrified shuttle systems paul bischoff salma hammani maximilian schiffer transportation research part c">
     <div class="score s-hi" title="Relevance 8/10">8</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2610.36426" target="_blank" rel="noopener">Electric Vehicle Scheduling and Carbon-Aware Energy Dispatch for Charging Stations</a></h3>
-<div class="by">Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-10-27</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">Greedy vehicle scheduling and TD3 battery dispatch for charging stations with PV and carbon-aware costs, directly relevant to charger scheduling and energy cost.</p>
-      <details><summary>Abstract</summary><p>Electric vehicle (EV) charging stations integrating photovoltaic (PV) generation, battery storage, and bidirectional grid exchange must coordinate access to limited chargers with energy supply while considering both energy cost and carbon emissions. This paper proposes a solver-free greedy heuristic (SFGH) for dynamic vehicle scheduling (VS) and a twin delayed deep deterministic policy gradient (TD3) controller for carbon-aware energy dispatch (ED). SFGH assigns EVs according to reductions in service delays, and TD3 controls battery operation to balance energy costs and carbon emissions while meeting the resulting charging demand. The model allows both PV and battery exports, accounting for export revenue and carbon credits. Simulations on year-long case studies show that SFGH--TD3 achieves the lowest accumulated service delay, energy cost, and carbon emissions among the evaluated heuristic and multi-agent deep reinforcement learning (DRL) configurations.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ebus" data-score="7" data-date="2026-10-27" data-venue="arXiv cs.MA"
-           data-text="cooperative ev charging assignment using multi-agent reinforcement learning: a comparison of qmix and independent q-learning under urban traffic uncertainty nour-eddine moumni rachid alaoui driss kiouach arxiv cs.ma">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2610.38053" target="_blank" rel="noopener">Cooperative EV Charging Assignment Using Multi-Agent Reinforcement Learning: A Comparison of QMIX and Independent Q-Learning Under Urban Traffic Uncertainty</a></h3>
-<div class="by">Nour-Eddine Moumni, Rachid Alaoui, Driss Kiouach</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.MA</span><span class="by">2026-10-27</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">QMIX versus IQL multi-agent RL for EV charging assignment across stations in SUMO, a clear method and application match.</p>
-      <details><summary>Abstract</summary><p>The allocation of electric vehicles to public charging stations is increasingly constrained by the fact that several heterogeneous facilities often serve the same stream of requests while observing only partial local information. An accept/reject decision that is defensible for one station may nevertheless reduce the efficiency of the charging district as a whole. We formulate this operational problem as a Decentralized Partially Observable Markov Decision Process (Dec-POMDP) and examine whether Centralized Training with Decentralized Execution (CTDE), instantiated through QMIX, improves assignment performance relative to a cooperative Independent Q-Learning baseline (IQL). The evaluation uses a six-station urban network simulated with SUMO, five independent random seeds, 200 training episodes, and four traffic flux scenarios ranging from 100 to 250 vehicles/hour. Under this protocol, QMIX reaches a mean reward per evaluated decision of +0.776, versus +0.578 for IQL (delta = +0.198, seed-paired Cohens dz = 2.98, exact two-sided Wilcoxon p = 0.0625, the minimum attainable value at this sample size), and raises the acceptance rate from 72.4% to 94.0% (delta = +21.6 pp, dz = 5.24, Wilcoxon p = 0.0625). A five-variant ablation suggests this gain is primarily attributable to the CTDE architecture when holding cooperative reward terms fixed, though not formally isolated with a single seed. By contrast, cooperative reward shaping and experience sharing show no clear descriptive benefit and may slightly reduce performance. These findings support the view that, for multi-station charging assignment, coordination should be embedded in the learning architecture rather than added only through heuristic cooperation terms.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-10-29" data-venue="arXiv eess.SY"
-           data-text="dual-agent reinforcement learning for vehicle scheduling and multi-energy dispatch in electric-hydrogen-transport systems fulong yao yiming xu maurizio albano liana cipcigan naeima hamed bo zou omar rana arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2610.40116" target="_blank" rel="noopener">Dual-Agent Reinforcement Learning for Vehicle Scheduling and Multi-Energy Dispatch in Electric-Hydrogen-Transport Systems</a></h3>
-<div class="by">Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-10-29</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Couples electric bus-like vehicle scheduling with multi-energy dispatch using RL, directly touching the researcher&#39;s scheduling and energy-coupling interests.</p>
-      <details><summary>Abstract</summary><p>Electric-hydrogen-transport systems (EHTSs) require coordinated scheduling of electric and hydrogen vehicles together with multi-energy dispatch. These operations form a sequential decision process: upstream vehicle scheduling (VS) determines service allocation and order, thereby endogenously shaping the electricity and hydrogen demands faced by downstream energy dispatch (ED). This paper develops a dual-agent reinforcement learning framework tailored to the heterogeneous decision structures. The vehicle-scheduling agent combines proximal policy optimisation (PPO) with a Plackett-Luce policy to learn vehicle-priority permutations, which are then mapped to feasible charger and refueller assignments through a greedy allocation. The energy-dispatch agent employs twin delayed deep deterministic policy gradient (TD3) for continuous storage and energy-flow control. The directional coupling between the two decision layers is analysed, revealing that updates to the upstream scheduling policy can shift the demand distribution experienced by the downstream dispatcher. A three-stage training mechanism is therefore introduced, combining layer-wise pretraining with concurrent fine-tuning to mitigate the effects of scheduling-induced distribution shifts on downstream ED learning. Year-long case studies show that the proposed framework achieves the lowest vehicle-service delay and energy cost among the 11 evaluated methods, demonstrating effective coordination between vehicle scheduling and multi-energy dispatch.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ebus" data-score="6" data-date="2026-10-30" data-venue="Computers &amp; Operations Research"
-           data-text="chance constrained optimization of hub transport systems max bourgeat öykü naz attila rémy chevrier quentin cappart antoine legrain computers &amp; operations research">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://doi.org/10.1016/j.cor.2026.107709" target="_blank" rel="noopener">Chance constrained optimization of hub transport systems</a></h3>
-<div class="by">Max Bourgeat, Öykü Naz Attila, Rémy Chevrier, Quentin Cappart et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106068" target="_blank" rel="noopener">Infrastructure planning for inductive charging in electrified shuttle systems</a></h3>
+<div class="by">Paul Bischoff, Salma Hammani, Maximilian Schiffer</div>      <div class="venue">
         <span class="pub elsevier">Elsevier</span>
-        <span>Computers &amp; Operations Research</span><span class="by">2026-10-30</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">Chance-constrained shuttle routing solved by column generation under travel-time uncertainty; method close to the researcher&#39;s, though not electrified.</p>
+        <span>Transportation Research Part C</span><span class="by">2026-11-02</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Infrastructure planning for inductive charging in electrified shuttle systems directly addresses electric transit charging infrastructure decisions.</p>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-10-29" data-venue="Transportation Research Part D"
-           data-text="electrified cross-carrier platooning for long-haul freight: charging coordination and stable cost allocation rui zheng yu zhou chuan ding mi gan xiaobo liu xuedong yan transportation research part d">
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-02" data-venue="Transportation Research Part E"
+           data-text="a real-time transit signal priority control method based on stochastic shockwave profile model for multi-line bus systems pengjie liu yanzhan chen ruiguang liu fan yu weihua gan transportation research part e">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.trd.2026.105705" target="_blank" rel="noopener">Electrified cross-carrier platooning for long-haul freight: Charging coordination and stable cost allocation</a></h3>
-<div class="by">Rui Zheng, Yu Zhou, Chuan Ding, Mi Gan et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105358" target="_blank" rel="noopener">A real-time transit signal priority control method based on stochastic shockwave profile model for multi-line bus systems</a></h3>
+<div class="by">Pengjie Liu, Yanzhan Chen, Ruiguang Liu, Fan Yu et al.</div>      <div class="venue">
         <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part D</span><span class="by">2026-10-29</span>
-<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Electrified freight platooning with charging coordination and cost allocation shares optimisation and charging themes, though it targets long-haul trucks.</p>
+        <span>Transportation Research Part E</span><span class="by">2026-11-02</span>
+<span class="tag">Traffic simulation &amp; calibration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Real-time transit signal priority for multi-line bus systems using stochastic shockwave modelling; relevant bus operations control with adjacent simulation methods.</p>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-10-29" data-venue="arXiv cs.AI"
-           data-text="algebraic world model: from exploration to proofs guancheng pan qixin tan yang yuan andrew chi-chih yao arxiv cs.ai">
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-02" data-venue="Computers &amp; Operations Research"
+           data-text="learning-oriented approach for integrated charging load prediction and mobile charging station scheduling ming liu lutian wang lihua sun feifeng zheng computers &amp; operations research">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2610.40503" target="_blank" rel="noopener">Algebraic World Model: From Exploration to Proofs</a></h3>
-<div class="by">Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-10-29</span>
-<span class="tag">LLM agents for transport/OR</span>      </div>
-      <p class="reason">LLM-driven world-model construction with Lean proofs for reachability; a generic agent paper with limited transport or OR overlap despite its agentic framing.</p>
-      <details><summary>Abstract</summary><p>AI has made remarkable progress in mathematics, solving challenging problems with machine-checkable proofs in Lean, yet typically relying on predefined mathematical definitions and formal specifications. This raises a natural question: can it reason rigorously about an unknown world? We introduce the Algebraic World Model (AWM), a framework that turns interaction with unfamiliar environments into explicit mathematical models supporting formal reasoning. AWM explores the environment and develops executable Python hypotheses, continually testing and revising them against observations. It then structures these hypotheses into typed objects and shared rules, simplifies their structure through category-theory-guided transformations, and formalizes the resulting model in Lean 4 to prove reachability and impossibility. AWM can formally prove that a goal is unreachable, even beyond explored trajectories. On two impossible game levels, it constructs closed, kernel-checked Lean proofs excluding every legal winning sequence in all six runs, while Claude Opus 5.5 and GPT-6 Astra, equipped with coding tools, produce none in twelve baseline runs. Four of AWM&#39;s six initial bounds are correct, compared with one for Opus 5.5 and none for GPT-6 Astra; given only feedback that a cheaper win exists, AWM revises its rules and constructs new proofs, reaching six of six correct bounds. Moreover, AWM produces interpretable mathematical models whose rules can be inspected and tested step by step. Across all 25 public ARC-AGI-3 games, these models enable Lean to replay the winning trajectories of all 183 levels and generalize beyond observed play, predicting unseen transitions and detecting changes in game mechanics. With Claude Opus 5, AWM clears all levels with a score of 99.9, while its certified winning trajectories use only 43% of the human baseline&#39;s actions.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-10-26" data-venue="arXiv eess.SY"
-           data-text="distribution grid reconfiguration and restoration via linearizable multi-phase power flow modeling young-ho cho hao zhu arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2610.36252" target="_blank" rel="noopener">Distribution Grid Reconfiguration and Restoration via Linearizable Multi-phase Power Flow Modeling</a></h3>
-<div class="by">Young-ho Cho, Hao Zhu</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-10-26</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">MILP-compatible neural power-flow model for distribution network reconfiguration and restoration; relevant to grid integration and MILP formulations.</p>
-      <details><summary>Abstract</summary><p>Accurate and tractable power-flow (PF) modeling is essential for distribution grid topology optimization, where the presence of discrete branch-status decisions therein significantly increase the computational complexity. To tackle this challenge, we develop a topology-adaptive, low-complexity neural piecewise-linear (N-PWL) PF model. We propose a sequential layer design that can directly incorporate branch status variables into the PF mapping from branch flows to nodal injections. As a result, our N-PWL model not only preserves the PF branch-node consistency but also facilitates the representation of any unseen topologies without retraining. A low-complexity model design is further pursued to attain a linear NN parameter scaling by using a fixed-size area partition of the feeder. The resulting scalable N-PWL model enables mixed-integer linear programming (MILP) formulations of feeder topology optimization tasks, including distribution network reconfiguration (DNR) and restoration ordering problems (ROP). Numerical studies on the unbalanced, multi-phase IEEE 123-bus feeder demonstrate our N-PWL model outperforms existing end-to-end baselines in PF prediction and, more importantly, can fill the gap by achieving accurate representation of any unseen topologies. For solving DNR/ROP, our model can significantly improve the AC feasibility over linearized PF models, with a notable reduction of computation time compared with AC-PF based nonlinear formulations, particularly under a large number of topology decisions.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="sim" data-score="6" data-date="2026-10-27" data-venue="arXiv cs.LG"
-           data-text="gnn-guided network reduction for centralized urban traffic routing nikolai antonov lukáš chrpa andrii nyporko jan hůla arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2610.36981" target="_blank" rel="noopener">GNN-Guided Network Reduction for Centralized Urban Traffic Routing</a></h3>
-<div class="by">Nikolai Antonov, Lukáš Chrpa, Andrii Nyporko, Jan Hůla</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-10-27</span>
-<span class="tag">Traffic simulation &amp; calibration</span>      </div>
-      <p class="reason">GNN-guided network reduction for MILP-based urban traffic routing; traffic-optimisation methods that the researcher may find useful.</p>
-      <details><summary>Abstract</summary><p>We consider the centralized traffic routing (CTR) problem, where a central planner assigns routes to origin-destination (OD) vehicle flows to minimize congestion-dependent segment cost. Prior work formulates CTR efficiently as a mixed-integer linear program (MILP), but scaling this formulation to the full road network is computationally prohibitive within an operational time budget. Bounded Routes and Smart Routes speed up optimization using precomputed reduced networks; however, these methods do not account for vehicle information within each OD flow. Motivated by this gap, we propose a learning-based urban network reduction approach. A dedicated graph neural network (GNN) first scores road segments for each OD flow using the road network and vehicle-flow information. Highly ranked segments are then incorporated into complete OD routes, and the original segment-flow MILP is solved on the resulting reduced road network. The GNN thus guides the reduction of the road network, while the solver enforces feasibility and determines the routing. Experiments on four real urban networks -- Prague-Dejvice, London, New York, and Sydney -- show that the proposed approach achieves the smallest relative objective difference to the $30$-second full-graph reference in every city under both traffic regimes. Averaged across cities, this difference is more than six times lower than that of the best competing method. Moreover, traffic simulation results show that the optimization gains of the proposed method lead to more efficient routing, with the highest aggregate arrival rate and a competitive trip duration per arrival percentage point.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-10-29" data-venue="arXiv cs.AI"
-           data-text="llm-assisted optimization for simulation-based redesign chan-eui song jeremy j. michalek christopher mccomb arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2610.39275" target="_blank" rel="noopener">LLM-Assisted Optimization for Simulation-Based Redesign</a></h3>
-<div class="by">Chan-Eui Song, Jeremy J. Michalek, Christopher McComb</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-10-29</span>
-<span class="tag">LLM agents for transport/OR</span>      </div>
-      <p class="reason">Integrates LLM guidance with black-box solvers for simulation-based redesign on an EV battery case; relevant LLM-plus-optimisation method.</p>
-      <details><summary>Abstract</summary><p>Engineering design frequently involves redesigning a prior solution to adapt to changes in context, such as material prices or system requirements. Redesign often leverages simulators too complex and/or computationally intensive for traditional numerical solvers, which lack engineering knowledge and context, to ensure global solution quality. Large language models (LLMs) can interpret semantic information, including engineering knowledge about the system and changes in context, to help guide search, and recent studies have shown that incorporating this knowledge into optimization can improve search performance. However, how best to combine LLMs with numerical solvers in redesign remains unclear. We develop and test an integrated LLM-optimization approach for redesign and compare three methods for leveraging LLMs (warm start, variable fixing and ReAct) and four black-box solvers (Bayesian optimization, genetic algorithms, mesh adaptive direct search and random search) on an electric vehicle battery pack cost minimization case study across four types of redesign scenarios. We find that the integrated approach can match feasible design discovery of the numerical-solver baselines with 80% fewer simulator evaluations while tripling the fraction of runs that find near-optimal solutions. We find that the best LLM-solver integration approach and the way the prior solution is leveraged depend on the structure of the design requirement change, and that the benefit of increasing LLM model size grows with the extent to which the LLM controls the search. These results show clear potential for LLMs in redesign tasks for guiding or replacing numerical solvers.</p></details>
+      <h3><a href="https://doi.org/10.1016/j.cor.2026.107716" target="_blank" rel="noopener">Learning-oriented approach for integrated charging load prediction and mobile charging station scheduling</a></h3>
+<div class="by">Ming Liu, Lutian Wang, Lihua Sun, Feifeng Zheng</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Computers &amp; Operations Research</span><span class="by">2026-11-02</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Integrates charging load prediction with mobile charging station scheduling; relevant to charging scheduling and learning-augmented optimisation, though not explicitly electric buses.</p>
     </div>
   </article>
 </main>
@@ -240,14 +149,15 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-02.html" class="cur" aria-current="page">2026-11-02 · 10</a></li>
+    <li><a href="archive/2026-11-03.html" class="cur" aria-current="page">2026-11-03 · 3</a></li>
+    <li><a href="archive/2026-11-02.html">2026-11-02 · 10</a></li>
   </ul>
 </nav>
 
 <footer>
   Sources: arXiv, Crossref and OpenAlex metadata for IEEE, Elsevier, INFORMS and Springer Nature journals.
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-02 00:40 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-03 02:06 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>

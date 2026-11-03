@@ -1,0 +1,752 @@
+{
+ "date": "2026-11-03",
+ "fetched": 187,
+ "sources": {
+  "arXiv": 32,
+  "Transportation Research Part B": 1,
+  "Transportation Research Part C": 5,
+  "Transportation Research Part D": 1,
+  "Transportation Research Part E": 20,
+  "Applied Energy": 21,
+  "European Journal of Operational Research": 4,
+  "Computers & Operations Research": 5,
+  "eTransportation": 0,
+  "IEEE Trans. Intelligent Transportation Systems": 0,
+  "IEEE Trans. Smart Grid": 4,
+  "IEEE Trans. Transportation Electrification": 8,
+  "IEEE Trans. Power Systems": 0,
+  "Transportation Science": 0,
+  "Operations Research": 4,
+  "INFORMS Journal on Computing": 1,
+  "Nature Energy": 3,
+  "Nature Communications": 78,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0
+ },
+ "papers": [
+  {
+   "id": "doi:10.1016/j.trc.2026.106068",
+   "title": "Infrastructure planning for inductive charging in electrified shuttle systems",
+   "url": "https://doi.org/10.1016/j.trc.2026.106068",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Paul Bischoff",
+    "Salma Hammani",
+    "Maximilian Schiffer"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 8,
+   "topic": "ebus",
+   "reason": "Infrastructure planning for inductive charging in electrified shuttle systems directly addresses electric transit charging infrastructure decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105358",
+   "title": "A real-time transit signal priority control method based on stochastic shockwave profile model for multi-line bus systems",
+   "url": "https://doi.org/10.1016/j.tre.2026.105358",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Pengjie Liu",
+    "Yanzhan Chen",
+    "Ruiguang Liu",
+    "Fan Yu",
+    "Weihua Gan"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "sim",
+   "reason": "Real-time transit signal priority for multi-line bus systems using stochastic shockwave modelling; relevant bus operations control with adjacent simulation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.cor.2026.107716",
+   "title": "Learning-oriented approach for integrated charging load prediction and mobile charging station scheduling",
+   "url": "https://doi.org/10.1016/j.cor.2026.107716",
+   "venue": "Computers & Operations Research",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Ming Liu",
+    "Lutian Wang",
+    "Lihua Sun",
+    "Feifeng Zheng"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "ebus",
+   "reason": "Integrates charging load prediction with mobile charging station scheduling; relevant to charging scheduling and learning-augmented optimisation, though not explicitly electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105345",
+   "title": "Rural passenger-freight demand-responsive transit with reconfigurable vehicle capacity and 3D loading constraints",
+   "url": "https://doi.org/10.1016/j.tre.2026.105345",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Jiabin Wang",
+    "Qipeng Sun",
+    "Zhen Shang",
+    "Haonan He",
+    "Ana Perić",
+    "Fei Ma",
+    "Simin Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "ebus",
+   "reason": "Demand-responsive transit with reconfigurable capacity and routing constraints; shares transit optimisation methods though not electric.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749547",
+   "title": "Soft Actor-Critic-based Energy Management System for a Clutched Dual-Motor Battery Electric Vehicle",
+   "url": "https://doi.org/10.1109/tte.2026.3749547",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Eduardo Louback",
+    "Hao Wang",
+    "Ryan Ahmed",
+    "Ali Emadi"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Soft actor-critic energy management for a dual-motor battery EV; energy management is adjacent to battery-ageing and energy cost interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105355",
+   "title": "A deep reinforcement learning-based algorithm for regional drone routing problem with nonlinear fuel consumption",
+   "url": "https://doi.org/10.1016/j.tre.2026.105355",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Yanfang Ma",
+    "Zheng He",
+    "Rui Qiu",
+    "Yu Gong"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "Deep RL for drone routing with nonlinear fuel consumption; energy-aware routing method but not electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105353",
+   "title": "A hierarchical generative adversarial network for traffic flow uncertainty modeling and anomalous state identification",
+   "url": "https://doi.org/10.1016/j.tre.2026.105353",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Feng Shao",
+    "Duanduan Dong",
+    "Hu Shao",
+    "Xin Bruce Wu",
+    "William H.K. Lam"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Generative adversarial network for traffic flow uncertainty and anomaly detection; data-driven traffic modelling with limited overlap with simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105357",
+   "title": "Attention-based deep reinforcement learning approach for dynamic truck-drone routing with stochastic requests",
+   "url": "https://doi.org/10.1016/j.tre.2026.105357",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Ruixue Gu",
+    "Yang Liu",
+    "Yining Ma"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Deep RL for truck-drone routing with stochastic requests; routing adjacent to bus operations but not electrified transit, so only loosely relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749062",
+   "title": "Electrochemical-Impedance-Spectroscopy-Informed Gaussian-Process-Regression-Enabled Spectral-Band Current Allocation for Heterogeneous Battery Banks in Islanded DC Microgrids Under EV Charging Load Profiles",
+   "url": "https://doi.org/10.1109/tte.2026.3749062",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Roland Kobla Tagayi",
+    "Masoud Davari",
+    "Weinan Gao",
+    "Frede Blaabjerg",
+    "Tianyou Chai"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Battery bank current allocation in DC microgrids under EV charging loads; touches charging-grid interplay but focuses on battery hardware and control.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105364",
+   "title": "Energy-efficient coordination of mixed truck platoons using multi-agent reinforcement learning",
+   "url": "https://doi.org/10.1016/j.tre.2026.105364",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Dan Wang",
+    "Gangyan Xu",
+    "Zhizhou Wu",
+    "Junqiang Leng"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ebus",
+   "reason": "Multi-agent RL for truck platoon energy efficiency; adjacent to energy-efficient transport operations but not electrified fleets.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106110",
+   "title": "Large language models for human mobility understanding: A case study of inbound tourist trajectories generation in Japan",
+   "url": "https://doi.org/10.1016/j.trc.2026.106110",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Jiawei Wang",
+    "Peiran Li",
+    "Wenxiao Jiang",
+    "Jundong Chen",
+    "Noboru Koshizuka",
+    "Ryosuke Shibasaki",
+    "Renhe Jiang"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Uses LLMs to generate tourist mobility trajectories; LLM-for-transport but not an agent or optimisation pipeline.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105347",
+   "title": "A distributionally robust optimization model for road–rail intermodal transportation of hazardous materials with product-code conversion under demand uncertainty",
+   "url": "https://doi.org/10.1016/j.tre.2026.105347",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Xunqing Wang",
+    "Jiaping Li",
+    "Mingliang Ma",
+    "Xiaoyu Sun"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ebus",
+   "reason": "Distributionally robust road-rail hazmat intermodal model; robust optimisation method is relevant but freight without electrification is out of scope.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105329",
+   "title": "Airport ground staff scheduling and task assignment problem with roster regularity and demand uncertainty",
+   "url": "https://doi.org/10.1016/j.tre.2026.105329",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Si Zhang",
+    "Bo Sun",
+    "Hua Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ebus",
+   "reason": "Staff scheduling with demand uncertainty and roster constraints; relevant OR methods but airport staff rather than transit.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105168",
+   "title": "On ride-sourcing market with bundled service option and passenger’s cancellation behavior",
+   "url": "https://doi.org/10.1016/j.tre.2026.105168",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Zhengfei Zheng",
+    "Yuming Ma",
+    "Hualing Ren",
+    "Yue Bao",
+    "Hai Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Ride-sourcing market pricing and cancellation behaviour; passenger-side mobility economics only loosely connected to bus fleet work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106103",
+   "title": "The parallel drone scheduling traveling salesman problem with lockers",
+   "url": "https://doi.org/10.1016/j.trc.2026.106103",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Thu Trang Hoa",
+    "Minh Anh Nguyen",
+    "Minh Hoàng Hà",
+    "Duc Minh Vu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ebus",
+   "reason": "Drone scheduling routing with lockers; routing optimisation method but no electrification or charging focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105332",
+   "title": "UAV-enabled upstream guidance for freeway incident management: Joint location and scheduling optimization",
+   "url": "https://doi.org/10.1016/j.tre.2026.105332",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Yuqi Shi",
+    "Jinhao Liang",
+    "Tao Wang",
+    "Xiaoguang Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "UAV upstream guidance for freeway incidents with joint location and scheduling; relevant to disruption management but not buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749630",
+   "title": "A High Torque Density PM Rotor Design for eVTOL Direct-Drive Electric Propulsion Systems",
+   "url": "https://doi.org/10.1109/tte.2026.3749630",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Yongze Miao",
+    "Xinggang Fan",
+    "Yu Zhao",
+    "Dawei Li",
+    "Ronghai Qu",
+    "Jiarui Liu",
+    "Xinjie Wen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "PM rotor design for eVTOL propulsion; aircraft motor design with no link to bus or road EV operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749311",
+   "title": "A Quasi-First-Order Frequency-Splitting Phase Compensator for HESS in More Electric Aircraft",
+   "url": "https://doi.org/10.1109/tte.2026.3749311",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Shuhao Deng",
+    "Shuaibing Qin",
+    "Shiqiu Li",
+    "Ming Huang",
+    "Tao Lei",
+    "Weilin Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Frequency-splitting phase compensator for hybrid energy storage in aircraft; power electronics outside the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749306",
+   "title": "Assessment of Winding Hotspot Temperature Margin Under Electrothermal Stress in Type II Insulation Systems Employing Corona-Resistant Wires",
+   "url": "https://doi.org/10.1109/tte.2026.3749306",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Yatai Ji",
+    "Paolo Giangrande",
+    "Xuanming Zhou",
+    "Jing Zhang",
+    "Weiduo Zhao",
+    "Pinjia Zhang",
+    "Haisen Zhao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Winding hotspot temperature in motor insulation; electric machine materials and thermal design, not transport operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105348",
+   "title": "Beyond operations: Realigning the EU’s three main decarbonization policies with a life cycle perspective and their implications on the sustainability of urban logistics",
+   "url": "https://doi.org/10.1016/j.tre.2026.105348",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Thant Zin Aung",
+    "Adriana Saraceni",
+    "Bart Vos",
+    "Diogo Cotta",
+    "Nawatch Surinkul",
+    "Shabbir H. Gheewala",
+    "Trakarn Prapaspongsa"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Life-cycle policy analysis of urban logistics decarbonisation; policy focus, not optimisation or electrified fleets.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749614",
+   "title": "Dual-Vector In-Wheel Motor for Integrated Drive and Suspension: Topology, Control, and Verification",
+   "url": "https://doi.org/10.1109/tte.2026.3749614",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Yuanyi Xu",
+    "Yunhui Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "In-wheel motor drive and suspension topology; vehicle powertrain hardware with little link to fleet scheduling or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105350",
+   "title": "Incentive-based strategies for road–waterway city logistics: A single-leader multi-follower game-theoretic framework",
+   "url": "https://doi.org/10.1016/j.tre.2026.105350",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Mingye Luan",
+    "Bilge Atasoy"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Game-theoretic incentives for urban freight logistics; not electrification or simulation-based work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105717",
+   "title": "Operational drivers of fuel performance in Ro–Ro shipping",
+   "url": "https://doi.org/10.1016/j.trd.2026.105717",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Emilie d.L.K. Caspersen",
+    "Frederik H. Berthelsen",
+    "Ulrik D. Nielsen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ebus",
+   "reason": "Fuel performance drivers in Ro-Ro shipping; freight-only and not electrified, so low relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105359",
+   "title": "Optimization approaches for a fair multi-source capacitated facility location problem",
+   "url": "https://doi.org/10.1016/j.tre.2026.105359",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Carlo Filippi",
+    "Gianfranco Guastaroba",
+    "Juan-José Salazar-González"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Fair multi-source capacitated facility location; generic location optimisation with weak transport link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105342",
+   "title": "Roadside unit relocation optimization with auction mechanism design: A multi-stage stochastic bi-level mixed-integer program",
+   "url": "https://doi.org/10.1016/j.tre.2026.105342",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Yining Ren",
+    "Zhizhou Wu",
+    "Yunyi Liang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Roadside unit relocation under stochastic bi-level optimisation; methodologically related but outside electrified transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105352",
+   "title": "Robust estimation of percentile travel time for transport networks using L-moments under data limitations",
+   "url": "https://doi.org/10.1016/j.tre.2026.105352",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Ruiya Chen",
+    "Jiaoyu Liu",
+    "Xiangdong Xu",
+    "Tien-Der Han",
+    "Mingwei He"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Estimates percentile travel times from limited data; only tangentially related to simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105356",
+   "title": "Topology-aware preconditioning for UAV logistics infrastructure and distributed swarm scheduling",
+   "url": "https://doi.org/10.1016/j.tre.2026.105356",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Haoze Gu",
+    "Zhixin Qi",
+    "Yunfei Gao",
+    "Zejiao Dong",
+    "Abaho G. Gershome"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "UAV logistics swarm scheduling preconditioning; optimisation method but unrelated to buses or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105354",
+   "title": "Understanding the mechanism of gap-acceptance behavior at roundabouts: A cumulative prospect theory and drift-diffusion model framework",
+   "url": "https://doi.org/10.1016/j.tre.2026.105354",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Congcong Bai",
+    "Cheng Xu",
+    "Donglei Rong",
+    "Xi Gao",
+    "Jiaqi Zeng",
+    "Meng Liu",
+    "Meng Sun",
+    "Xiangyu Li",
+    "Sheng Jin",
+    "Wenbin Yao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Behavioural gap-acceptance modelling at roundabouts; driver behaviour, not simulation calibration of transit.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105351",
+   "title": "Corporate social responsibility incentives in supply chains under pricing authority: The role of reverse factoring",
+   "url": "https://doi.org/10.1016/j.tre.2026.105351",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Franck Moraux",
+    "Dinh Anh Phan",
+    "Thi Le Hoa Vo",
+    "Ahmad Jafarian"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Supply-chain CSR and reverse factoring finance study with no transport electrification or operations relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749385",
+   "title": "Hybrid Modulation Method for Low Voltage Gain Regulation of Half-Bridge LLC Converters",
+   "url": "https://doi.org/10.1109/tte.2026.3749385",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Zhijian Zhang",
+    "Zaixin Song"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "LLC converter modulation for voltage gain; power electronics converter design with no transport operations relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3749649",
+   "title": "Impact of Non-Uniform Stator Tooth Sampling on Electromagnetic Force Modulation and Vibration in FPCW-PMSMs",
+   "url": "https://doi.org/10.1109/tte.2026.3749649",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Bitan Wang",
+    "Wenliang Zhao",
+    "Wenxiang Zhao",
+    "Zhongkun Cao",
+    "Wenqi Xu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Electromagnetic force and vibration in PMSM stators; machine design with no relevance to transport operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105346",
+   "title": "Resilience assessment for China’s crude oil shipping network considering maritime chokepoint disruptions",
+   "url": "https://doi.org/10.1016/j.tre.2026.105346",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Hanwen Fan",
+    "Lingye Zhang",
+    "Zhenming Wu",
+    "Haiying Jia",
+    "Zaili Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Maritime crude oil shipping network resilience; unrelated to bus or transit optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105349",
+   "title": "Synchronizing airport check-in and security services through urban air mobility: A preference analysis of air passengers’ choices under time uncertainty",
+   "url": "https://doi.org/10.1016/j.tre.2026.105349",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-02",
+   "authors": [
+    "Ying Zhao",
+    "Yan Hu",
+    "Tao Feng",
+    "Anming Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Airport check-in and urban air mobility passenger preferences; not relevant to the researcher's core problems.",
+   "scored_by": "llm"
+  }
+ ]
+}
