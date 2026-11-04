@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SEEN = DATA / "seen.json"
 TZ = ZoneInfo("Australia/Sydney")
-SEEN_KEEP_DAYS = 90
+SEEN_KEEP_DAYS = 400  # > 1 year: the conference query re-returns this year's papers every day
 
 
 def load_cfg() -> dict:
@@ -38,8 +38,8 @@ def _norm_title(t: str) -> str:
     return re.sub(r"[^a-z0-9]", "", t.lower())[:120]
 
 
-def fetch_all(cfg: dict, since: dt.date) -> tuple[list[tuple[Paper, dict]], dict[str, int]]:
-    """Returns (paper, journal config) pairs and per-source counts."""
+def fetch_all(cfg: dict, since: dt.date, today: dt.date) -> tuple[list[tuple[Paper, dict]], dict[str, int]]:
+    """Returns (paper, source config) pairs and per-source counts."""
     out: list[tuple[Paper, dict]] = []
     counts: dict[str, int] = {}
     headers = {"User-Agent": "paper-feed/1.0 (personal research feed)"}
@@ -59,6 +59,14 @@ def fetch_all(cfg: dict, since: dt.date) -> tuple[list[tuple[Paper, dict]], dict
             except (httpx.HTTPError, ValueError, KeyError) as e:
                 print(f"  {j['name']} failed: {e}")
                 counts[j["name"]] = -1
+        try:
+            for name, got in openalex.fetch_conferences(cfg, today, client).items():
+                conf = next(c for c in cfg["conferences"] if c["name"] == name)
+                out += [(p, conf) for p in got]
+                counts[name] = len(got)
+        except (httpx.HTTPError, ValueError, KeyError) as e:
+            print(f"  conferences (OpenAlex) failed: {e}")
+            counts["Conferences"] = -1
         filled = openalex.add_abstracts([p for p, _ in out], client)
         print(f"  openalex: filled {filled} missing abstracts")
     return out, counts
@@ -71,7 +79,7 @@ def run(args: argparse.Namespace) -> None:
     seen: dict[str, str] = json.loads(SEEN.read_text()) if SEEN.exists() else {}
 
     print(f"Fetching papers since {since} ...")
-    fetched, counts = fetch_all(cfg, since)
+    fetched, counts = fetch_all(cfg, since, today)
     for name, n in counts.items():
         print(f"  {name:<48} {'FAILED' if n < 0 else n}")
 
@@ -79,13 +87,14 @@ def run(args: argparse.Namespace) -> None:
     kf = KeywordFilter(cfg)
     candidates: dict[str, Paper] = {}
     titles: set[str] = set()
-    for p, journal in sorted(fetched, key=lambda x: x[0].publisher == "arXiv"):  # journals first
+    for p, journal in sorted(fetched, key=lambda x: x[0].publisher == "arXiv"):  # journals/conferences first
         nt = _norm_title(p.title)
-        if p.id in seen or p.id in candidates or nt in titles:
+        if p.id in seen or "t:" + nt in seen or p.id in candidates or nt in titles:
             continue
         if kf.keep(p, gated=bool(journal.get("gated")), anchored=bool(journal.get("anchor"))):
             candidates[p.id] = p
             titles.add(nt)
+    # Papers over the cap are not marked seen, so they come back tomorrow.
     cands = sorted(candidates.values(), key=lambda p: -p.keyword_hits)[: cfg["fetch"]["max_candidates"]]
     print(f"{len(fetched)} fetched, {len(cands)} new candidates after keyword filter")
 
@@ -113,7 +122,7 @@ def run(args: argparse.Namespace) -> None:
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     for p in cands:
-        seen[p.id] = today.isoformat()
+        seen[p.id] = seen["t:" + _norm_title(p.title)] = today.isoformat()
     cutoff = (today - dt.timedelta(days=SEEN_KEEP_DAYS)).isoformat()
     seen = {k: v for k, v in seen.items() if v >= cutoff}
     SEEN.write_text(json.dumps(seen, indent=0, sort_keys=True), encoding="utf-8")

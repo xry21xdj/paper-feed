@@ -9,7 +9,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 PUBLISHER_KEYS = {"arXiv": "arxiv", "Elsevier": "elsevier", "IEEE": "ieee", "INFORMS": "informs",
-                  "Springer Nature": "springer"}
+                  "Springer Nature": "springer", "Conference": "conf"}
 
 
 def _authors(names: list[str]) -> str:

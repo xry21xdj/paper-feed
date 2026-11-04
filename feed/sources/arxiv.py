@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import re
 import time
 import xml.etree.ElementTree as ET
 
@@ -10,7 +11,22 @@ import httpx
 from feed.models import Paper, clean
 
 API = "https://export.arxiv.org/api/query"
-NS = {"a": "http://www.w3.org/2005/Atom"}
+NS = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
+VENUES = ("NeurIPS", "ICML", "ICLR", "AAAI", "IJCAI", "KDD", "AAMAS", "ICAPS", "ACL", "EMNLP", "NAACL",
+          "ITSC", "e-Energy", "CPAIOR", "WWW", "CDC", "ACC")
+# "Accepted at ICLR 2026", "NeurIPS'25 camera-ready", ... but not workshop papers.
+VENUE_RE = re.compile(r"\b(" + "|".join(re.escape(v) for v in VENUES) + r")\s*['’]?\s*((?:20)?\d\d)\b")
+
+
+def venue_tag(comment: str) -> str:
+    """Conference named in an arXiv comment, e.g. "ICLR 2026"; "" if none or a workshop."""
+    if not comment or "workshop" in comment.lower():
+        return ""
+    m = VENUE_RE.search(comment)
+    if not m:
+        return ""
+    year = m.group(2) if len(m.group(2)) == 4 else "20" + m.group(2)
+    return f"{m.group(1)} {year}"
 
 
 def _term(kw: str) -> str:
@@ -41,13 +57,15 @@ def fetch(cfg: dict, since: dt.date, client: httpx.Client) -> list[Paper]:
                 continue
             abs_url = e.findtext("a:id", "", NS)
             arxiv_id = abs_url.rsplit("/abs/", 1)[-1].split("v")[0]
+            cat = e.find("x:primary_category", NS)
+            venue = "arXiv " + (cat.get("term") if cat is not None else "")
+            tag = venue_tag(" ".join(filter(None, [e.findtext("x:comment", "", NS),
+                                                   e.findtext("x:journal_ref", "", NS)])))
             papers[arxiv_id] = Paper(
                 id=f"arxiv:{arxiv_id}",
                 title=clean(e.findtext("a:title", "", NS)),
                 url=f"https://arxiv.org/abs/{arxiv_id}",
-                venue="arXiv " + (e.find("{http://arxiv.org/schemas/atom}primary_category").get("term")
-                                  if e.find("{http://arxiv.org/schemas/atom}primary_category") is not None
-                                  else ""),
+                venue=f"{venue} · {tag}" if tag else venue,
                 publisher="arXiv",
                 date=published,
                 authors=[a.findtext("a:name", "", NS) for a in e.findall("a:author", NS)],

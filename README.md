@@ -5,8 +5,10 @@ simulation and calibration, LLM agents for transport/OR, and transport-grid inte
 
 Every morning a GitHub Actions job:
 
-1. fetches new papers from **arXiv** and from journals of **Elsevier, IEEE, INFORMS and Springer Nature**
-   (via Crossref, with missing abstracts filled from OpenAlex);
+1. fetches new papers from **arXiv**, from journals of **Elsevier, IEEE, INFORMS and Springer Nature**
+   (via Crossref, with missing abstracts filled from OpenAlex), and from **top CS conferences** (NeurIPS,
+   AAAI, IJCAI, KDD, AAMAS, ICAPS, ACL, EMNLP, ITSC, e-Energy via OpenAlex; ICML/ICLR papers come through
+   arXiv and are tagged when the arXiv comment names the venue);
 2. drops papers already shown and applies a keyword + transport-anchor pre-filter;
 3. asks **Claude Haiku** to score each candidate 0-10 against the research profile, with a one-line reason;
 4. writes `data/daily/<date>.json` and rebuilds the static site in `docs/` (served by GitHub Pages).
@@ -14,7 +16,7 @@ Every morning a GitHub Actions job:
 ## Tuning
 
 Everything lives in [`config/profile.yaml`](config/profile.yaml): the research profile (the scoring rubric),
-topic keywords, anchor terms, journal list (by ISSN) and the score threshold.
+topic keywords, anchor terms, journal list (by ISSN), conference list (by OpenAlex source ID) and the score threshold.
 
 ## Running locally
 

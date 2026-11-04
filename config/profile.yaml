@@ -80,6 +80,24 @@ journals:
   - {name: "OR Spectrum", publisher: Springer Nature, issn: 0171-6468}
   - {name: "Transportation", anchor: true, publisher: Springer Nature, issn: 0049-4488}
 
+# Conferences: fetched from OpenAlex by source ID (https://api.openalex.org/sources?search=<name>).
+# ICML and ICLR are not indexed there (OpenReview/PMLR); their papers reach the feed through arXiv,
+# tagged with the venue when the arXiv comment says "accepted at ICML 2026" etc.
+conferences:
+  # AI / ML
+  - {name: NeurIPS, openalex: S4363606243}
+  - {name: AAAI, openalex: S4210191458}
+  - {name: IJCAI, openalex: S4306419999}
+  - {name: KDD, openalex: S4363608767}
+  # agents, planning, LLMs
+  - {name: AAMAS, openalex: S4306417597}
+  - {name: ICAPS, openalex: S4387283601}
+  - {name: ACL, openalex: S4393915740}
+  - {name: EMNLP, openalex: S4363608991}
+  # transport, energy
+  - {name: IEEE ITSC, openalex: S4363607737, anchor: true}
+  - {name: ACM e-Energy, openalex: S7407086837}
+
 fetch:
   days_back: 3           # overlap window; already-seen papers are skipped
   max_candidates: 300    # cap on papers sent to Claude per day

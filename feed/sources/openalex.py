@@ -1,16 +1,19 @@
-"""Fill in missing abstracts from OpenAlex, looked up by DOI (50 per request).
+"""OpenAlex: conference papers, and missing abstracts for journal papers (looked up by DOI).
 
-Lookups by DOI work on the free tier; an `OPENALEX_API_KEY` raises the daily budget.
+Both work on the free tier; an `OPENALEX_API_KEY` (free) gives the run its own daily budget instead
+of sharing one with everyone on the same IP address.
 """
 from __future__ import annotations
 
+import datetime as dt
 import os
 
 import httpx
 
-from feed.models import Paper
+from feed.models import Paper, clean
 
 API = "https://api.openalex.org/works"
+MAX_PAGES = 10
 
 
 def _rebuild(inv: dict[str, list[int]]) -> str:
@@ -18,17 +21,70 @@ def _rebuild(inv: dict[str, list[int]]) -> str:
     return " ".join(w for _, w in words)
 
 
+def _params(**kw) -> dict:
+    if os.environ.get("OPENALEX_API_KEY"):
+        kw["api_key"] = os.environ["OPENALEX_API_KEY"]
+    return kw
+
+
+def _or(terms: list[str]) -> str:
+    return " OR ".join(f'"{t}"' if " " in t or "-" in t else t for t in terms)
+
+
+def fetch_conferences(cfg: dict, today: dt.date, client: httpx.Client) -> dict[str, list[Paper]]:
+    """All papers from the configured conferences (this year and last) that mention a topic keyword
+    and an anchor term in title or abstract. Papers shown before are dropped later by the seen-check,
+    so what is new each day is whatever OpenAlex indexed since the last run."""
+    confs = {c["openalex"]: c for c in cfg.get("conferences", [])}
+    if not confs:
+        return {}
+    keywords = sorted({k for t in cfg["topics"].values() for k in t["keywords"]})
+    # Last year's proceedings only early in the year; next year's (AAAI-27 etc.) can appear from autumn.
+    years = ([today.year - 1] if today.month <= 3 else []) + [today.year, today.year + 1]
+    search = f"({_or(keywords)}) AND ({_or(cfg['anchor_keywords'])})"
+    filt = (f"primary_location.source.id:{'|'.join(confs)},"
+            f"publication_year:{'|'.join(str(y) for y in years)},"
+            f"title_and_abstract.search:{search}")
+    out: dict[str, list[Paper]] = {c["name"]: [] for c in confs.values()}
+    cursor = "*"
+    for _ in range(MAX_PAGES):
+        r = client.get(API, params=_params(
+            filter=filt, cursor=cursor, **{"per-page": 200},
+            select="doi,id,title,publication_date,primary_location,authorships,abstract_inverted_index"),
+            timeout=60)
+        r.raise_for_status()
+        data = r.json()
+        for w in data["results"]:
+            src = ((w.get("primary_location") or {}).get("source") or {}).get("id", "").rsplit("/", 1)[-1]
+            conf = confs.get(src)
+            if conf is None or not w.get("title"):
+                continue
+            doi = (w.get("doi") or "").lower().removeprefix("https://doi.org/")
+            date = w.get("publication_date") or ""
+            out[conf["name"]].append(Paper(
+                id=f"doi:{doi}" if doi else f"openalex:{w['id'].rsplit('/', 1)[-1]}",
+                title=clean(w["title"]),
+                url=f"https://doi.org/{doi}" if doi else (w["primary_location"].get("landing_page_url") or w["id"]),
+                venue=f"{conf['name']} {date[:4]}".strip(),
+                publisher="Conference",
+                date=date,
+                authors=[a["author"]["display_name"] for a in w.get("authorships", [])],
+                abstract=_rebuild(w["abstract_inverted_index"]) if w.get("abstract_inverted_index") else "",
+            ))
+        cursor = data["meta"].get("next_cursor")
+        if not cursor:
+            break
+    return out
+
+
 def add_abstracts(papers: list[Paper], client: httpx.Client) -> int:
     missing = [p for p in papers if not p.abstract and p.id.startswith("doi:")]
     by_doi = {p.id[4:]: p for p in missing}
-    params_base = {"select": "doi,abstract_inverted_index", "per-page": 50}
-    if os.environ.get("OPENALEX_API_KEY"):
-        params_base["api_key"] = os.environ["OPENALEX_API_KEY"]
     filled = 0
     dois = list(by_doi)
     for i in range(0, len(dois), 50):
         chunk = dois[i:i + 50]
-        params = dict(params_base, filter="doi:" + "|".join(chunk))
+        params = _params(filter="doi:" + "|".join(chunk), select="doi,abstract_inverted_index", **{"per-page": 50})
         try:
             r = client.get(API, params=params, timeout=60)
             r.raise_for_status()
