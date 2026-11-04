@@ -11,21 +11,21 @@
   --bg: #f7f7f5; --surface: #ffffff; --ink: #1d1f23; --muted: #62666d; --line: #e3e3df;
   --accent: #2f5bd3; --chip: #eef1f8;
   --hi: #1f7a4d; --hi-bg: #e3f3ea; --mid: #8a6a12; --mid-bg: #faf1d7; --lo: #62666d; --lo-bg: #ececea;
-  --arxiv: #b31b1b; --elsevier: #e9711c; --ieee: #00629b; --informs: #6a3d9a; --springer: #0f7f74; --other: #62666d;
+  --arxiv: #b31b1b; --elsevier: #e9711c; --ieee: #00629b; --informs: #6a3d9a; --springer: #0f7f74; --conf: #3d6b1f; --other: #62666d;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
     --accent: #8ea8ff; --chip: #262b35;
     --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
-    --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --other: #9a9ea6;
+    --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --conf: #a6d97a; --other: #9a9ea6;
   }
 }
 :root[data-theme="dark"] {
   --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
   --accent: #8ea8ff; --chip: #262b35;
   --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
-  --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --other: #9a9ea6;
+  --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --conf: #a6d97a; --other: #9a9ea6;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -60,7 +60,7 @@ header p { margin: 0; color: var(--muted); }
 .venue { font-size: 0.83rem; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
 .pub { font-weight: 600; }
 .pub.arxiv { color: var(--arxiv); } .pub.elsevier { color: var(--elsevier); } .pub.ieee { color: var(--ieee); }
-.pub.informs { color: var(--informs); } .pub.springer { color: var(--springer); } .pub.other { color: var(--other); }
+.pub.informs { color: var(--informs); } .pub.springer { color: var(--springer); } .pub.conf { color: var(--conf); } .pub.other { color: var(--other); }
 .tag { font-size: 0.75rem; background: var(--chip); border-radius: 6px; padding: 1px 7px; color: var(--muted); }
 .reason { margin: 8px 0 0; }
 details { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
@@ -93,12 +93,12 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 
 <div class="daybar">
   <h2>Today · 2026-11-04</h2>
-  <span class="meta">4 relevant of 22 screened · 386 new papers fetched</span>
+  <span class="meta">33 relevant of 167 screened · 593 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">4</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM agents for transport/OR<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">33</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">8</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">11</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM agents for transport/OR<span class="n">7</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">7</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,6 +107,78 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-04" data-venue="Transportation Research Part E"
+           data-text="distributionally robust operational planning for mixed charging and decentralized swapping jianzhi leng lun ran chi xie cheng hua transportation research part e">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105361" target="_blank" rel="noopener">Distributionally robust operational planning for mixed charging and decentralized swapping</a></h3>
+<div class="by">Jianzhi Leng, Lun Ran, Chi Xie, Cheng Hua</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part E</span><span class="by">2026-11-04</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Distributionally robust planning for mixed charging and battery swapping operations is directly on robust optimisation for electric vehicle charging scheduling, central to the researcher&#39;s core interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="consent: a negotiation framework for leveraging user flexibility in vehicle-to-building charging under uncertainty rishav sen fangqi liu jose paolo talusan ava pettet yoshinori suzue mark bailey ayan mukhopadhyay abhishek kumar dubey aamas 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/odfh4798" target="_blank" rel="noopener">CONSENT: A Negotiation Framework for Leveraging User Flexibility in Vehicle-to-Building Charging under Uncertainty</a></h3>
+<div class="by">Rishav Sen, Fangqi Liu, Jose Paolo Talusan, Ava Pettet et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Negotiation for V2B EV charging flexibility under uncertainty with building costs; directly on charging scheduling and grid-side flexibility.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="evmapsim: a network-level electric vehicle charging simulator prokopis georgiou jayati deshmukh vahid yazdanpanah sebastian stein enrico gerding aamas 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/woko4552" target="_blank" rel="noopener">EVMapSim: A Network-level Electric Vehicle Charging Simulator</a></h3>
+<div class="by">Prokopis Georgiou, Jayati Deshmukh, Vahid Yazdanpanah, Sebastian Stein et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Discrete-event simulator of national-scale EV charging with station failures and queues; directly relevant to charging infrastructure and scheduling reliability.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="8" data-date="2026-08-06" data-venue="KDD 2026"
+           data-text="episode spaces: mining reusable knowledge from urban simulation corpora for safety-critical decision support roman sultimov daniil efimov mikhail kuzin ivan novikov roman dvoryankov egor suraveikin kdd 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3818649" target="_blank" rel="noopener">Episode Spaces: Mining Reusable Knowledge from Urban Simulation Corpora for Safety-Critical Decision Support</a></h3>
+<div class="by">Roman Sultimov, Daniil Efimov, Mikhail Kuzin, Ivan Novikov et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>KDD 2026</span><span class="by">2026-08-06</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">Mines reusable decision episodes from SUMO urban evacuation simulations for safety-critical traffic decisions; closely matches simulation-based multi-agent decision support.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-06-16" data-venue="ACM e-Energy 2026"
+           data-text="unified provisioning of energy and transportation service flexibility with e-taxi fleets: a dual perspective liangkai zhou yue zhao shan lin acm e-energy 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3744255.3798117" target="_blank" rel="noopener">Unified Provisioning of Energy and Transportation Service Flexibility with E-taxi Fleets: A Dual Perspective</a></h3>
+<div class="by">Liangkai Zhou, Yue Zhao, Shan Lin</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACM e-Energy 2026</span><span class="by">2026-06-16</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Joint e-taxi fleet charging and passenger service flexibility under disruptions using LP; directly on EV fleet charging and transport-energy coupling.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="8" data-date="2026-09-01" data-venue="IJCAI 2026"
+           data-text="urbanmix: llm-guided simulation of mixed autonomy traffic with heterogeneous behavioral profiles roman sultimov daniil efimov ivan novikov aleksandr volkov yury maximov ijcai 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.24963/ijcai.2026/997" target="_blank" rel="noopener">UrbanMix: LLM-Guided Simulation of Mixed Autonomy Traffic with Heterogeneous Behavioral Profiles</a></h3>
+<div class="by">Roman Sultimov, Daniil Efimov, Ivan Novikov, Aleksandr Volkov et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>IJCAI 2026</span><span class="by">2026-09-01</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">SUMO-based mixed-autonomy traffic simulation with LLM policy coordinator on real Austin networks; close to the researcher&#39;s simulation and LLM interests.</p>
+    </div>
+  </article>
   <article class="card" data-topic="grid" data-score="8" data-date="2026-11-01" data-venue="arXiv cs.LG"
            data-text="a deep reinforcement learning framework for real-time electric vehicle charging management in ioev-enabled smart cities nour-eddine moumni rachid alaoui driss kiouach arxiv cs.lg">
     <div class="score s-hi" title="Relevance 8/10">8</div>
@@ -118,6 +190,66 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <span class="tag">Transport-grid integration</span>      </div>
       <p class="reason">DQN-based EV charging station selection evaluated in SUMO on OpenStreetMap networks with charging station heterogeneity and outages, closely matching the researcher&#39;s EV charging simulation work.</p>
       <details><summary>Abstract</summary><p>The rapid growth of electric vehicles (EVs) in urban environments demands intelligent, decentralised charging management strategies that operate under strict real-time constraints. This paper proposes an Edge-Intelligent architecture in which each EV selects a charging station (CS) by querying a shared, centrally trained Deep Q-Network (DQN) policy over a lightweight MQTT publish-subscribe backbone; independent per-EV edge inference is the deployment target, not the configuration evaluated here. The reported simulation evaluates that shared DQN policy applied sequentially to each vehicle&#39;s observations within a single SUMO run, using MQTT for KPI telemetry while observations are obtained through TraCI. The system is evaluated on two real-world road networks from OpenStreetMap (Rabat Agdal-Hay Riad and Tangier, Morocco); the primary network carries four geolocated public charging stations with heterogeneous power levels (50 kW and 150 kW). Three traffic demand profiles (morning, midday, evening peak) are simulated, and four decision policies are compared: an Adaptive Heuristic, a Tabular Q-Learning agent, the proposed DQN agent, and a Double DQN variant. A multi-seed statistical protocol (7 seeds, Wilcoxon signed-rank test, Cohen&#39;s d) evaluates the results. The DQN agent achieves a 6.8% relative improvement in charge rate and a 5.4% increase in delivered energy over the Adaptive Heuristic under Evening Peak demand ($p = 0.016$, Cohen&#39;s $d = 0.99$ and $1.51$), while showing no advantage in waiting time; on the second network the heuristic leads on waiting time, so the ranking is not stable across geographies. A scalability analysis shows linear state-space growth with station count and sub-millisecond inference; all runs include intermittent station outages under a Markov failure process.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="7" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="busenv: a multi-agent reinforcement learning environment and benchmark for urban public transportation wesley da silva e silva ricardo araújo rios rafael da c. fonseca sabarikirishwaran ponnambalam léa cassé marcos vinícius dos santos ferreira albert bifet tatiane nogueira rios aamas 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/cyha2042" target="_blank" rel="noopener">BusEnv: A Multi-agent Reinforcement Learning Environment and Benchmark for Urban Public Transportation</a></h3>
+<div class="by">Wesley da Silva e Silva, Ricardo Araújo Rios, Rafael da C. Fonseca, Sabarikirishwaran Ponnambalam et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Multi-agent RL benchmark for bus operations built on real transit data with energy metrics; close to the researcher&#39;s bus simulation and sustainability interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="7" data-date="2026-09-01" data-venue="IJCAI 2026"
+           data-text="charging station placement for anonymous mobile agents: a parameterized complexity perspective arun kumar das tesshu hanaka nikolaos melissinos hirotaka ono ijcai 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.24963/ijcai.2026/9" target="_blank" rel="noopener">Charging Station Placement for Anonymous Mobile Agents: A Parameterized Complexity Perspective</a></h3>
+<div class="by">Arun Kumar Das, Tesshu Hanaka, Nikolaos Melissinos, Hirotaka Ono</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>IJCAI 2026</span><span class="by">2026-09-01</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Charging station placement for mobile agents with range limits; closely matches charging-infrastructure and range-constrained routing problems.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="7" data-date="2026-03-14" data-venue="AAAI 2026"
+           data-text="multi-agent pointer transformer: seq-to-seq reinforcement learning for multi-vehicle dynamic pickup-delivery problems zengyu zou jingyuan wang yixuan huang junjie wu aaai 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.1609/aaai.v40i19.38700" target="_blank" rel="noopener">Multi-Agent Pointer Transformer: Seq-to-Seq Reinforcement Learning for Multi-Vehicle Dynamic Pickup-Delivery Problems</a></h3>
+<div class="by">Zengyu Zou, Jingyuan Wang, Yixuan Huang, Junjie Wu</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAAI 2026</span><span class="by">2026-03-14</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Seq-to-seq RL for multi-vehicle dynamic pickup-delivery routing with stochastic requests, close to fleet dispatch problems the researcher works on.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="7" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="multiagent system for dynamic multicriteria traffic routing in urban environments temirlan kurbanov adéla kubíková jiří vořínek franziska klügl aamas 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/mcol3382" target="_blank" rel="noopener">Multiagent System for Dynamic Multicriteria Traffic Routing in Urban Environments</a></h3>
+<div class="by">Temirlan Kurbanov, Adéla Kubíková, Jiří Vořínek, Franziska Klügl</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Multiagent dynamic routing evaluated in SUMO on city-scale scenarios with traffic prediction; close to the researcher&#39;s simulation and optimisation work.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="strategic interactions in multi-level stackelberg games with non-follower agents and heterogeneous leaders niloofar aminikalibar farzaneh farhadi maria chli aamas 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/kxdz6376" target="_blank" rel="noopener">Strategic Interactions in Multi-Level Stackelberg Games with Non-Follower Agents and Heterogeneous Leaders</a></h3>
+<div class="by">Niloofar Aminikalibar, Farzaneh Farhadi, Maria Chli</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Stackelberg model of EV charging infrastructure competition with congestion coupling; relevant to charging infrastructure and mobility-energy markets.</p>
     </div>
   </article>
   <article class="card" data-topic="sim" data-score="7" data-date="2026-11-01" data-venue="arXiv cs.LG"
@@ -133,6 +265,138 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
       <details><summary>Abstract</summary><p>Reinforcement-learning (RL) benchmarks built on microscopic traffic simulators such as SUMO are increasingly used to compare agent architectures for electric vehicle (EV) charging assignment. Unlike crashes, defects in the reward function, the environment&#39;s stochastic model, or the state encoding often fail silently: the simulation completes, produces plausible numbers, and the comparison is biased. We report five such defects, found by auditing a five-agent benchmark on OpenStreetMap road networks, stated generically: a shared random generator that desynchronises seed-paired comparisons, an ablation-specific reward clip applied unconditionally, a normalisation mismatch that zeroes a reward term, a per-timestep penalty that should fire once per event, and a state dimensionality documented but never wired into the network. We quantify three: a rejection counter inflated up to 125x across agents/cities, a reward term bounded at about $10^{-4}$ of its intended scale, and a 16.6%/16.3% greedy-action divergence from a state-encoding mismatch. Re-analysing a historical ablation, no A1-A2 effect survives family-wise correction; a 56-run campaign confirms the RNG defect&#39;s mechanism directly while showing its correction does not change that conclusion. We provide an eight-item checklist as a low-cost first-pass audit; in a later regeneration, three checks caught two new defects while three further process/artefact defects fell outside its boundary.</p></details>
     </div>
   </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="auditable institutional coordination with episodic memory for robust evacuation under multi-source disruption roman sultimov aamas 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/tcma4845" target="_blank" rel="noopener">Auditable Institutional Coordination with Episodic Memory for Robust Evacuation under Multi-Source Disruption</a></h3>
+<div class="by">Roman Sultimov</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Institutional coordination for evacuation in SUMO with topology shift and robustness; adjacent to traffic simulation and LLM-free coordination.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="autonomous vehicles need social awareness to find optima in multi-agent reinforcement learning routing games anastasia psarou łukasz gorczyca dominik gaweł rafał kucharski aamas 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/fthn6981" target="_blank" rel="noopener">Autonomous Vehicles need Social Awareness to Find Optima in Multi-agent Reinforcement Learning Routing Games</a></h3>
+<div class="by">Anastasia Psarou, Łukasz Gorczyca, Dominik Gaweł, Rafał Kucharski</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Marginal-cost social reward for AV routing games tested on Saint-Arnoult network; adjacent to traffic assignment and simulation work.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-08-06" data-venue="KDD 2026"
+           data-text="bulkshield: a proactive framework for detecting bulk refund booking in ticketing systems seungyoung shin donggeun oh yongho jeon jinju noh iltaeck joo youngtae noh kdd 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3818875" target="_blank" rel="noopener">BulkShield: A Proactive Framework for Detecting Bulk Refund Booking in Ticketing Systems</a></h3>
+<div class="by">Seungyoung Shin, Donggeun Oh, Yongho Jeon, Jinju Noh et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>KDD 2026</span><span class="by">2026-08-06</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">Sequential behaviour-based detection of bulk refund booking in railway ticketing with LLM explanations; public transport analytics with LLM-assisted interpretation.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-01-01" data-venue="EMNLP 2026"
+           data-text="cityreal: human-aligned urban behavior and city dynamics simulation with large-scale llm agents nicolas bougie xiaotong ye narimasa watanabe emnlp 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/2026.emnlp-industry.27" target="_blank" rel="noopener">CityReal: Human-Aligned Urban Behavior and City Dynamics Simulation with Large-Scale LLM Agents</a></h3>
+<div class="by">Nicolas Bougie, Xiaotong Ye, Narimasa Watanabe</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>EMNLP 2026</span><span class="by">2026-01-01</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">LLM-agent urban mobility simulation at city scale with calibration to population statistics; relevant to simulation calibration and LLM agents.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-08-06" data-venue="KDD 2026"
+           data-text="cityweave: weaving user needs and world constraints for personalized and reliable mobility planning ao wang zhiwen chen shen wang qiang xia yi zhou jian li kdd 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3818979" target="_blank" rel="noopener">CityWeave: Weaving User Needs and World Constraints for Personalized and Reliable Mobility Planning</a></h3>
+<div class="by">Ao Wang, Zhiwen Chen, Shen Wang, Qiang Xia et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>KDD 2026</span><span class="by">2026-08-06</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">VLM-based door-to-door mobility planning with routing tools; adjacent to LLM-plus-routing agents for urban transport.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-09-01" data-venue="IJCAI 2026"
+           data-text="column generation for the micro-transit zoning problem hins hu rishav sen jose paolo talusan abhishek kumar dubey áron lászka samitha samaranayake ijcai 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.24963/ijcai.2026/803" target="_blank" rel="noopener">Column Generation for the Micro-Transit Zoning Problem</a></h3>
+<div class="by">Hins Hu, Rishav Sen, Jose Paolo Talusan, Abhishek Kumar Dubey et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>IJCAI 2026</span><span class="by">2026-09-01</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Exact column generation with pricing heuristics for micro-transit zoning; methodologically close to branch-and-price work, though not electrified fleets.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-06-16" data-venue="ACM e-Energy 2026"
+           data-text="forecasting what matters: decision‑focused rl for controlled ev charging with unknown departure times giuseppe gabriele fabio pavirani seyed soroush karimi madahi chris develder acm e-energy 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3744255.3811736" target="_blank" rel="noopener">Forecasting What Matters: Decision‑Focused RL for Controlled EV Charging with Unknown Departure Times</a></h3>
+<div class="by">Giuseppe Gabriele, Fabio Pavirani, Seyed Soroush Karimi Madahi, Chris Develder</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACM e-Energy 2026</span><span class="by">2026-06-16</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">RL EV charging with forecasted unknown departure times; relevant to charging control under uncertainty but not bus-specific.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="llm-guided multi-agent evacuation coordination via episodic memory and cognitive task analysis roman sultimov aleksandr volkov mile mitrovic yury maximov aamas 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/seyr5220" target="_blank" rel="noopener">LLM-Guided Multi-Agent Evacuation Coordination via Episodic Memory and Cognitive Task Analysis</a></h3>
+<div class="by">Roman Sultimov, Aleksandr Volkov, Mile Mitrovic, Yury Maximov</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">LLM Commander issuing routing decisions in a multi-agent evacuation simulation; relevant to LLM agents for transit/emergency decisions, though wildfire focus differs.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-09-01" data-venue="IJCAI 2026"
+           data-text="llm-to-map: transparent conversational tool orchestration for real-time multi-domain simulation marouane benbrahim kavya gautam zonghan zhang zhiqian chen ijcai 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.24963/ijcai.2026/958" target="_blank" rel="noopener">LLM-to-Map: Transparent Conversational Tool Orchestration for Real-Time Multi-Domain Simulation</a></h3>
+<div class="by">Marouane Benbrahim, Kavya Gautam, Zonghan Zhang, Zhiqian Chen</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>IJCAI 2026</span><span class="by">2026-09-01</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">LLM tool orchestration coupling SUMO traffic with PyPSA power flow and V2G for EV charging stress; relevant to agent pipelines and grid integration.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="learning-based policy design for resource planning and pricing in heterogeneous multi-leader-multi-follower systems niloofar aminikalibar aamas 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/bcyl3315" target="_blank" rel="noopener">Learning-Based Policy Design for Resource Planning and Pricing in Heterogeneous Multi-Leader-Multi-Follower Systems</a></h3>
+<div class="by">Niloofar Aminikalibar</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Multi-leader-multi-follower pricing and resource planning motivated by EV charging; relevant to charging economics and grid-facing decisions.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-08-07" data-venue="KDD 2026"
+           data-text="local rules, global efficiency: emergent coordination on large-scale road networks zhenhui jessie li kdd 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3818071" target="_blank" rel="noopener">Local Rules, Global Efficiency: Emergent Coordination on Large-Scale Road Networks</a></h3>
+<div class="by">Zhenhui Jessie Li</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>KDD 2026</span><span class="by">2026-08-07</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Emergent AV coordination on large road networks; relevant to traffic simulation at city scale, though without electrification or bus focus.</p>
+    </div>
+  </article>
   <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-03" data-venue="Transportation Research Part C"
            data-text="managing modular bus operations in a hub-and-spoke network yuxi liu hua wang shuai jia transportation research part c">
     <div class="score s-mid" title="Relevance 6/10">6</div>
@@ -143,6 +407,90 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
         <span>Transportation Research Part C</span><span class="by">2026-11-03</span>
 <span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
       <p class="reason">Modular bus operations in a hub-and-spoke network from Transportation Research Part C; likely relevant to bus fleet operations, though no abstract is available.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-06-08" data-venue="ICAPS 2026"
+           data-text="optimal solutions for the moving target vehicle routing problem via branch-and-price with relaxed continuity anoop bhat geordan m. gutow zhongqiang ren sivakumar rathinam howie choset icaps 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1609/icaps.v36i1.42811" target="_blank" rel="noopener">Optimal Solutions for the Moving Target Vehicle Routing Problem via Branch-and-Price with Relaxed Continuity</a></h3>
+<div class="by">Anoop Bhat, Geordan M. Gutow, Zhongqiang Ren, Sivakumar Rathinam et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ICAPS 2026</span><span class="by">2026-06-08</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Exact branch-and-price with labeling for vehicle routing with moving targets; shares column generation and pricing methods used in their scheduling work.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-03-14" data-venue="AAAI 2026"
+           data-text="optimizing ride-pooling operations with extended pickup and drop-off flexibility hao jiang yixin xu pradeep reddy varakantham aaai 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1609/aaai.v40i45.41208" target="_blank" rel="noopener">Optimizing Ride-Pooling Operations with Extended Pickup and Drop-Off Flexibility</a></h3>
+<div class="by">Hao Jiang, Yixin Xu, Pradeep Reddy Varakantham</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAAI 2026</span><span class="by">2026-03-14</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Ride-pooling matching with flexible pickup points is adjacent vehicle routing with sustainability framing, useful background for fleet scheduling methods.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-05-24" data-venue="AAMAS 2026"
+           data-text="optimizing urban route choice for autonomous vehicles using multi-agent reinforcement learning anastasia psarou aamas 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.65109/jtzd1181" target="_blank" rel="noopener">Optimizing Urban Route Choice for Autonomous Vehicles using Multi-Agent Reinforcement Learning</a></h3>
+<div class="by">Anastasia Psarou</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAMAS 2026</span><span class="by">2026-05-24</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">MARL routing of AVs in microscopic traffic with human drivers and social rewards; adjacent to routing/simulation work but not electric buses.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="EMNLP 2026"
+           data-text="processlight: process supervision for large language model based traffic signal control huaitao zhao tianlong zhou weijie wang jiasheng shi weixiong rao emnlp 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/2026.emnlp-main.1966" target="_blank" rel="noopener">ProcessLight: Process Supervision for Large Language Model Based Traffic Signal Control</a></h3>
+<div class="by">Huaitao Zhao, Tianlong Zhou, Weijie Wang, Jiasheng Shi et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>EMNLP 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM agents for transport/OR</span>      </div>
+      <p class="reason">LLM reasoning with step-level RL for traffic signal control; LLM-based traffic decision-making adjacent to the researcher&#39;s interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-08-06" data-venue="KDD 2026"
+           data-text="tracer: physics-guided causal evidence construction for zero-shot traffic anomaly diagnosis yuhang zhang meng ma ping wang kdd 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3817778" target="_blank" rel="noopener">TRACER: Physics-Guided Causal Evidence Construction for Zero-Shot Traffic Anomaly Diagnosis</a></h3>
+<div class="by">Yuhang Zhang, Meng Ma, Ping Wang</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>KDD 2026</span><span class="by">2026-08-06</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Zero-shot LLM agent diagnosing traffic congestion root causes validated on SUMO; relevant to LLM agents in transport operations.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-09-01" data-venue="IJCAI 2026"
+           data-text="trafficpde: a guidebook to deployable ai-driven transportation systems through the perception-decision-explanation triangle ziyue li ijcai 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.24963/ijcai.2026/908" target="_blank" rel="noopener">TrafficPDE: A Guidebook to Deployable AI-Driven Transportation Systems Through the Perception-Decision-Explanation Triangle</a></h3>
+<div class="by">Ziyue Li</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>IJCAI 2026</span><span class="by">2026-09-01</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Practitioner guidebook on deployable ITS AI covering perception, RL transfer, and explanation; broad background for the researcher.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-03-14" data-venue="AAAI 2026"
+           data-text="uspr: learning a unified solver for profiled routing chuanbo hua federico berto zhikai zhao jiwoo son changhyun kwon jinkyoo park aaai 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1609/aaai.v40i43.41025" target="_blank" rel="noopener">USPR: Learning a Unified Solver for Profiled Routing</a></h3>
+<div class="by">Chuanbo Hua, Federico Berto, Zhikai Zhao, Jiwoo Son et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>AAAI 2026</span><span class="by">2026-03-14</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Learning-based unified solver for profiled vehicle routing with vehicle-client constraints; adjacent to constrained fleet routing.</p>
     </div>
   </article>
   <article class="card" data-topic="llm" data-score="6" data-date="2026-11-02" data-venue="arXiv cs.MA"
@@ -164,16 +512,16 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-04.html" class="cur" aria-current="page">2026-11-04 · 4</a></li>
+    <li><a href="archive/2026-11-04.html" class="cur" aria-current="page">2026-11-04 · 33</a></li>
     <li><a href="archive/2026-11-03.html">2026-11-03 · 3</a></li>
     <li><a href="archive/2026-11-02.html">2026-11-02 · 10</a></li>
   </ul>
 </nav>
 
 <footer>
-  Sources: arXiv, Crossref and OpenAlex metadata for IEEE, Elsevier, INFORMS and Springer Nature journals.
+  Sources: arXiv; IEEE, Elsevier, INFORMS and Springer Nature journals (Crossref, OpenAlex); top CS conferences (OpenAlex; ICML and ICLR via arXiv).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-04 00:31 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-04 02:27 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
