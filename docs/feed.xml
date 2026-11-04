@@ -5,6 +5,38 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[8] A Deep Reinforcement Learning Framework for Real-Time Electric Vehicle Charging Management in IoEV-Enabled Smart Cities</title>
+    <link>https://arxiv.org/abs/2611.01751</link>
+    <guid isPermaLink="false">arxiv:2611.01751</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv cs.LG · Nour-Eddine Moumni, Rachid Alaoui, Driss Kiouach — DQN-based EV charging station selection evaluated in SUMO on OpenStreetMap networks with charging station heterogeneity and outages, closely matching the researcher&#39;s EV charging simulation work.</description>
+  </item>
+  <item>
+    <title>[7] Silent Reward and Environment Defects in EV Charging Simulation Benchmarks: A Diagnostic Checklist</title>
+    <link>https://arxiv.org/abs/2611.01769</link>
+    <guid isPermaLink="false">arxiv:2611.01769</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>arXiv cs.LG · Nour-Eddine Moumni, Rachid Alaoui, Driss Kiouach — Audits SUMO-based RL benchmarks for EV charging assignment, exposing silent simulation defects directly relevant to reliable charging simulation studies.</description>
+  </item>
+  <item>
+    <title>[6] Managing modular bus operations in a hub-and-spoke network</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106101</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106101</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part C · Yuxi Liu, Hua Wang, Shuai Jia — Modular bus operations in a hub-and-spoke network from Transportation Research Part C; likely relevant to bus fleet operations, though no abstract is available.</description>
+  </item>
+  <item>
+    <title>[6] Multi-Modal Multi-Agent System for Bridge Operation and Maintenance based on Large Language Model</title>
+    <link>https://arxiv.org/abs/2611.02738</link>
+    <guid isPermaLink="false">arxiv:2611.02738</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM agents for transport/OR</category>
+    <description>arXiv cs.MA · Xiangyun Luo, Yunkai Zhang, Yong Huang, Stephen Wu et al. — LLM multi-agent system for bridge operation and maintenance, a transport infrastructure application of agentic decision-making.</description>
+  </item>
+  <item>
     <title>[8] Infrastructure planning for inductive charging in electrified shuttle systems</title>
     <link>https://doi.org/10.1016/j.trc.2026.106068</link>
     <guid isPermaLink="false">doi:10.1016/j.trc.2026.106068</guid>

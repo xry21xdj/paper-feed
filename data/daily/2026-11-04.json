@@ -1,0 +1,554 @@
+{
+ "date": "2026-11-04",
+ "fetched": 386,
+ "sources": {
+  "arXiv": 226,
+  "Transportation Research Part B": 2,
+  "Transportation Research Part C": 5,
+  "Transportation Research Part D": 2,
+  "Transportation Research Part E": 21,
+  "Applied Energy": 16,
+  "European Journal of Operational Research": 3,
+  "Computers & Operations Research": 3,
+  "eTransportation": 0,
+  "IEEE Trans. Intelligent Transportation Systems": 2,
+  "IEEE Trans. Smart Grid": 4,
+  "IEEE Trans. Transportation Electrification": 8,
+  "IEEE Trans. Power Systems": 1,
+  "Transportation Science": 0,
+  "Operations Research": 5,
+  "INFORMS Journal on Computing": 1,
+  "Nature Energy": 3,
+  "Nature Communications": 84,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0
+ },
+ "papers": [
+  {
+   "id": "arxiv:2611.01751",
+   "title": "A Deep Reinforcement Learning Framework for Real-Time Electric Vehicle Charging Management in IoEV-Enabled Smart Cities",
+   "url": "https://arxiv.org/abs/2611.01751",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-01",
+   "authors": [
+    "Nour-Eddine Moumni",
+    "Rachid Alaoui",
+    "Driss Kiouach"
+   ],
+   "abstract": "The rapid growth of electric vehicles (EVs) in urban environments demands intelligent, decentralised charging management strategies that operate under strict real-time constraints. This paper proposes an Edge-Intelligent architecture in which each EV selects a charging station (CS) by querying a shared, centrally trained Deep Q-Network (DQN) policy over a lightweight MQTT publish-subscribe backbone; independent per-EV edge inference is the deployment target, not the configuration evaluated here. The reported simulation evaluates that shared DQN policy applied sequentially to each vehicle's observations within a single SUMO run, using MQTT for KPI telemetry while observations are obtained through TraCI. The system is evaluated on two real-world road networks from OpenStreetMap (Rabat Agdal-Hay Riad and Tangier, Morocco); the primary network carries four geolocated public charging stations with heterogeneous power levels (50 kW and 150 kW). Three traffic demand profiles (morning, midday, evening peak) are simulated, and four decision policies are compared: an Adaptive Heuristic, a Tabular Q-Learning agent, the proposed DQN agent, and a Double DQN variant. A multi-seed statistical protocol (7 seeds, Wilcoxon signed-rank test, Cohen's d) evaluates the results. The DQN agent achieves a 6.8% relative improvement in charge rate and a 5.4% increase in delivered energy over the Adaptive Heuristic under Evening Peak demand ($p = 0.016$, Cohen's $d = 0.99$ and $1.51$), while showing no advantage in waiting time; on the second network the heuristic leads on waiting time, so the ranking is not stable across geographies. A scalability analysis shows linear state-space growth with station count and sub-millisecond inference; all runs include intermittent station outages under a Markov failure process.",
+   "topics": [
+    "ebus",
+    "sim"
+   ],
+   "keyword_hits": 2,
+   "score": 8,
+   "topic": "grid",
+   "reason": "DQN-based EV charging station selection evaluated in SUMO on OpenStreetMap networks with charging station heterogeneity and outages, closely matching the researcher's EV charging simulation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.01769",
+   "title": "Silent Reward and Environment Defects in EV Charging Simulation Benchmarks: A Diagnostic Checklist",
+   "url": "https://arxiv.org/abs/2611.01769",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-01",
+   "authors": [
+    "Nour-Eddine Moumni",
+    "Rachid Alaoui",
+    "Driss Kiouach"
+   ],
+   "abstract": "Reinforcement-learning (RL) benchmarks built on microscopic traffic simulators such as SUMO are increasingly used to compare agent architectures for electric vehicle (EV) charging assignment. Unlike crashes, defects in the reward function, the environment's stochastic model, or the state encoding often fail silently: the simulation completes, produces plausible numbers, and the comparison is biased. We report five such defects, found by auditing a five-agent benchmark on OpenStreetMap road networks, stated generically: a shared random generator that desynchronises seed-paired comparisons, an ablation-specific reward clip applied unconditionally, a normalisation mismatch that zeroes a reward term, a per-timestep penalty that should fire once per event, and a state dimensionality documented but never wired into the network. We quantify three: a rejection counter inflated up to 125x across agents/cities, a reward term bounded at about $10^{-4}$ of its intended scale, and a 16.6%/16.3% greedy-action divergence from a state-encoding mismatch. Re-analysing a historical ablation, no A1-A2 effect survives family-wise correction; a 56-run campaign confirms the RNG defect's mechanism directly while showing its correction does not change that conclusion. We provide an eight-item checklist as a low-cost first-pass audit; in a later regeneration, three checks caught two new defects while three further process/artefact defects fell outside its boundary.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "sim",
+   "reason": "Audits SUMO-based RL benchmarks for EV charging assignment, exposing silent simulation defects directly relevant to reliable charging simulation studies.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106101",
+   "title": "Managing modular bus operations in a hub-and-spoke network",
+   "url": "https://doi.org/10.1016/j.trc.2026.106101",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-03",
+   "authors": [
+    "Yuxi Liu",
+    "Hua Wang",
+    "Shuai Jia"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "ebus",
+   "reason": "Modular bus operations in a hub-and-spoke network from Transportation Research Part C; likely relevant to bus fleet operations, though no abstract is available.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02738",
+   "title": "Multi-Modal Multi-Agent System for Bridge Operation and Maintenance based on Large Language Model",
+   "url": "https://arxiv.org/abs/2611.02738",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Xiangyun Luo",
+    "Yunkai Zhang",
+    "Yong Huang",
+    "Stephen Wu",
+    "Hui Li"
+   ],
+   "abstract": "Bridges are critical transportation infrastructure, and reliable operation and maintenance (O&M) is essential for traffic safety and long-term structural performance. However, bridge O&M faces key bottlenecks: no unified architecture coordinates heterogeneous resources; model inferences lack clear links to physical-mechanical laws; and experts' tacit knowledge remains difficult to formalize. This study proposes a knowledge-enhanced autonomy formalization methodology and apply it to construct the Bridge O&M Multi-Modal Multi-Agent System (BOMMA), which integrates heterogeneous diagnostic actions, physics-mechanics-informed representations, long-term memory, and structured experiential knowledge within a coordinated multi-agent workflow, enabling interpretable and traceable scheduling, analysis, and decision-making. On 3,492 multi-source instructions, the proposed method achieves scheduling recalls of 85.37% for simple and 99.40% for composite tasks, with 95.35% BERT F1-score for O&M action reasoning. Ablation studies confirm the contributions of the components in the autonomy. This study bridges general LLM reasoning and specialized bridge O&M requirements.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 6,
+   "topic": "llm",
+   "reason": "LLM multi-agent system for bridge operation and maintenance, a transport infrastructure application of agentic decision-making.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02391",
+   "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse",
+   "url": "https://arxiv.org/abs/2611.02391",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Yimin Tang",
+    "Han Zhang",
+    "Shao-Hung Chan",
+    "Erdem Bıyık",
+    "Sven Koenig",
+    "Jingkai Chen"
+   ],
+   "abstract": "No algorithm is best on all problems, but a real warehouse is a narrow problem: its layout and processes rarely change. Operators still run one general multi-robot planner at many sites, because experts cannot tune it for each one. In this work, which we call Late Autumn, we explore whether LLM coding agents running autonomous research can specialize a general planner for one site, trading generality for throughput, much as post-training adapts a pretrained LLM to one task. We study six campaigns on a lifelong planner that combines task assignment with multi-agent path finding, on a floor modeled on an existing automated warehouse. We find that (1) the agents raise throughput by 22--60%, and the gains hold on unseen seeds; (2) they rediscover known MAPF mechanisms, such as corridor-exit priorities, local guidance, and rollouts, and independent campaigns find the same bottleneck; (3) the gains largely carry over to another layout, a larger fleet, and other service times, shrink with a smaller fleet, and mostly vanish under an outbound-heavy demand mix; and (4) each final patch (0.7k--2.4k lines) is a chain of scored commits with a median step of 27 lines, so experts can review it, and review finds problems that the score misses; some patches multiply planner compute by over 100x. LLM agents can therefore turn each site's bias into extra throughput at little engineering cost, with reviewable patches; we expect experts to shift toward designing insightful metrics and fast simulators that mirror the real problem.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "LLM coding agents specialise a multi-robot warehouse planner via autonomous research; agentic optimisation loop is relevant but not transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02260",
+   "title": "Towards a Theory for the Design of Rules in Multi-Agent Systems: the case of Homogeneous Fleets",
+   "url": "https://arxiv.org/abs/2611.02260",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-01",
+   "authors": [
+    "Matteo Penlington",
+    "Lorenzo Fiaschi",
+    "Raj Kiriti Velicheti",
+    "Andrea Censi",
+    "Emilio Frazzoli"
+   ],
+   "abstract": "The regulation of systems composed of many interacting decentralised agents is a long-standing problem. This problem has typically been resolved by the imposition of rules. Rules resolve the limitations of sub-optimal agents whilst simultaneously aligning the behaviour of the agents with the demands of society. Traffic laws, for example, let a driver cross a junction without seeing around the corner, and transport protocols such as TCP let applications share a network without knowing of one another. The problem is more pressing today, as autonomous systems are deployed in society. In this work, we establish the basis of a system-agnostic theory of rule design for multi-agent systems. We first state the rule design problem (RDP) in its generality. It relates a rule to the set of system performances, defined by the regulator, that the agents deployed under it can attain. However, it is not yet possible to solve the RDP in full generality. As such, we introduce the homogeneous rule design problem (HRDP), in which the agents in each environment are identical, and among other interesting properties, show that under worst-case aggregation the two problems have the same solution, bypassing the combinatorial complexity of the RDP. To solve the RDP under worst-case aggregation we propose Rule Branch and Bound (RuleBnB), an anytime branch-and-bound algorithm. Finally, we illustrate the value of solving the RDP on an autonomous driving case study.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "sim",
+   "reason": "Rule design theory for homogeneous multi-agent fleets with autonomous driving case study; adjacent to fleet regulation and operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trb.2026.103630",
+   "title": "Traffic is loopy- Insights and findings about traffic state hysteresis",
+   "url": "https://doi.org/10.1016/j.trb.2026.103630",
+   "venue": "Transportation Research Part B",
+   "publisher": "Elsevier",
+   "date": "2026-11-03",
+   "authors": [
+    "Benjamin Coifman",
+    "Yuan Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Traffic state hysteresis insights from Transportation Research Part B; general traffic flow background with no abstract available.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02909",
+   "title": "Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration",
+   "url": "https://arxiv.org/abs/2611.02909",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Chengyi Yang",
+    "Qianxin Zhou",
+    "Yang Li"
+   ],
+   "abstract": "Autonomous reaction-mechanism exploration requires proposing reaction steps, preparing three-dimensional structures, and determining which reactant and product a computed saddle point connects. Large language model (LLM) agents can misjudge spatial relationships and confuse a computed structure with the species or step they intended to study. We present Cloudra, a multi-agent framework that constrains mechanistic output through a Delivery DAG of chemical objects. Species nodes carry geometries and bonding topology; elementary-step edges carry transition states and reaction connections between species. Cheminformatics algorithms establish molecular identities and atom correspondences. Deterministic routines measure and transform structures to prepare candidate geometries. Frequency and IRC calculations determine the stationary points found and the species they connect. Agents use these objects to test proposed steps, compare pathways, and revise the mechanism. CloudraBench evaluates the framework's end-to-end mechanism-calculation capability across 50 tasks covering elementary reactions, multistep mechanisms, stereochemical competition, and computational method limitations. Across 200 runs under four workflow configurations, the primary Guided workflow achieves a mean composite score of 0.805, compared with 0.584 for the same-model Standard baseline. On Hard-tier tasks, the Guided mean increases from 0.689 under Standard to 0.958. Under Guided, the self-consistency component reaches its maximum score in 24 of the 40 non-Impossible tasks, compared with seven under Standard. Behavioral analyses examine how the agents use bond and dihedral measurements, optimized structures, and IRC endpoints to revise local mechanistic assignments.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Multi-agent LLM framework for chemical reaction mechanisms; agentic pipeline design is loosely related but domain is chemistry.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02816",
+   "title": "Discovering hierarchical governing equations for community-structured complex network dynamics with LLM agents",
+   "url": "https://arxiv.org/abs/2611.02816",
+   "venue": "arXiv physics.soc-ph",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Jinlei Zhang",
+    "Zixuan Zhang",
+    "Hao Qiu",
+    "Feng Chen",
+    "Jiateng Yin",
+    "Xiaoyong Yan",
+    "Xiaolei Ma",
+    "Hao Sun",
+    "Jianxi Gao",
+    "Lixing Yang",
+    "Ziyou Gao"
+   ],
+   "abstract": "Governing equations provide an interpretable description of the mechanisms underlying complex network dynamics, yet their discovery from observational data remains challenging when shared community-level dynamics coexist with individual-level variations and the relevant functional structures may be absent from the initial candidate library or not explicitly specified in advance. Here we formulate this task as a hierarchical law-discovery problem and introduce SAGE, a large language model-guided self-reflective agent framework for discovering community-shared governing laws and individual-specific dynamical variations. SAGE organizes equation discovery into an iterative Library-Discovery-Review process that first identifies shared community-level structures and then resolves node-specific residual dynamics, while adaptively refining the candidate space to introduce missing dynamical terms when needed. This hierarchical and interpretable formulation enables SAGE to distinguish shared community-level dynamics from individual-level variations and to reveal the mechanisms underlying complex network dynamics. Across two synthetic networks and four real-world networks spanning mobile communication, brain electrophysiology, power grids and urban rail transit, SAGE recovers compact and interpretable governing equations, reproduces observed system dynamics and outperforms representative equation-discovery baselines. The framework remains robust under incomplete observations and can transfer community-level governing laws to nodes with entirely missing observations. These results establish a hierarchical and adaptive approach for disentangling shared and individual dynamical mechanisms in community-structured complex networks.",
+   "topics": [
+    "llm",
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM agents discovering governing equations for networked dynamics, including power grids and urban rail; adjacent to simulation modelling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02833",
+   "title": "Reimagining computational quantum research with AI scientists",
+   "url": "https://arxiv.org/abs/2611.02833",
+   "venue": "arXiv quant-ph",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Yuxuan Du",
+    "Hanqing Zhao",
+    "Xinbiao Wang",
+    "Yiming Lu",
+    "Kaining Zhang",
+    "Dacheng Tao"
+   ],
+   "abstract": "AI scientists are expanding automated research across scientific domains, yet their ability to turn the scientific record into a foundation for autonomous discovery remains elusive. Here we uncover a fundamental barrier to this transition and demonstrate a route to overcome it in computational quantum science, where advances shape both what we can learn from complex quantum systems and what quantum computing can ultimately deliver. To identify this barrier, we introduce OmniQ, an expert-audited virtual research environment that converts published studies into executable reproduction tasks. Across 59 papers spanning classical simulation, quantum algorithms and quantum-property characterization, we systematically evaluate five agentic systems powered by large language models and six third-party agent harnesses. Our findings reveal that current AI scientists often fail to reproduce published results, exposing a fundamental mismatch between what scientific papers communicate and what autonomous agents require. By contrast, human expert intervention can turn these failures into successful reproductions, showing that the missing information can be identified and converted into reusable research experience. Guided by this observation, we develop Residual Agents (RA), a quantum-tailored self-improving AI scientist that distils externally verified workflow repairs into such experience. RA substantially improves research performance under fixed base models and limited adaptation budgets. For example, RA raises DeepSeek V4.1 Flash performance from 68% to 85%, matching Claude Code with Opus 5 at a third of its cost despite using a weaker base model. We integrate all reproduced results into an extensible platform built on the model context protocol, making verified research workflows directly accessible to AI scientists and allowing new scientific papers to be continuously incorporated.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "AI scientist agents reproducing quantum computing papers; agentic methodology is relevant but domain is distant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105368",
+   "title": "From competitors to frenemies: Strategic third-party service entry in a competitive automotive market under dual-credit regulation",
+   "url": "https://doi.org/10.1016/j.tre.2026.105368",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-03",
+   "authors": [
+    "Ruiying Yuan",
+    "Jianan Wang",
+    "Shiqiang Yu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Automotive market competition under dual-credit regulation; policy economics, only tangentially related to EV charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.03068",
+   "title": "PACERec: Progressive Adaptation of LLM Item Embeddings with Collaborative Evidence for Recommendation",
+   "url": "https://arxiv.org/abs/2611.03068",
+   "venue": "arXiv cs.IR",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Junzhao Huang",
+    "Xi Wu",
+    "Zihan Wang",
+    "Zijing Wang",
+    "Ming Wang",
+    "Kang Liu",
+    "Xiaocui Yang",
+    "Shi Feng",
+    "Daling Wang",
+    "Yifei Zhang",
+    "Ting Yang",
+    "Xurui Li"
+   ],
+   "abstract": "Large language model (LLM) embeddings have been increasingly adopted in sequential recommendation to encode static item attributes and alleviate the limitations of item ID embeddings under sparse interactions. However, these embeddings typically capture only static content similarity while neglecting sequential transitions, and since their adaptation quality relies on sparse per-item updates or global geometric calibration, existing methods still struggle to explicitly transfer preceding interaction contexts from frequent to long-tail items under unevenly distributed behavioral evidence, limiting recommendation effectiveness across the catalog. To address this challenge, we propose PACERec, an ID-free progressive adaptation framework that incorporates preceding interaction contexts into semantic representation adaptation by learning a shared velocity field from items with sufficient interactions via frequency-weighted flow matching. In this way, PACERec progressively guides static LLM embeddings toward collaborative behavioral targets while preserving original item semantics, overcoming sparse per-item updates to effectively generalize sequential transition patterns to long-tail items for both user modeling and candidate scoring. Extensive experiments on three real-world datasets across three sequential backbones demonstrate the superiority of our method over competitive baselines in both overall and long-tail recommendation.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Sequential recommendation with LLM item embeddings; no transport or optimisation link, so only superficially relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3728289",
+   "title": "BAKAPE-UIoV: Blockchain-Assisted ECC-Based Authentication and Key Agreement Protocol for UAV-Supported IoV Network",
+   "url": "https://doi.org/10.1109/tits.2026.3728289",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-03",
+   "authors": [
+    "Dipanwita Sadhukhan",
+    "Sangram Ray",
+    "Mou Dasgupta",
+    "Ashok Kumar Das",
+    "Youngho Park"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Blockchain-based authentication protocol for UAV-supported vehicular networks is a cybersecurity topic with no clear link to electric bus operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3738002",
+   "title": "Scanning the Issue",
+   "url": "https://doi.org/10.1109/tits.2026.3738002",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-03",
+   "authors": [
+    "Simona Sacone"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Generic journal issue table-of-contents editorial with no abstract; no identifiable method or application to judge relevance from.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105711",
+   "title": "Understanding how flooding reshapes travel behavior in coastal communities",
+   "url": "https://doi.org/10.1016/j.trd.2026.105711",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-03",
+   "authors": [
+    "Nafis Fuad",
+    "Xiaodong Qian",
+    "William Shuster"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Flooding effects on travel behaviour in coastal communities; not electrified transport or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.03246",
+   "title": "A Common Language for Dynamic Graphs: Interaction Tokenization Enables Foundation Models",
+   "url": "https://arxiv.org/abs/2611.03246",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Fuyuan Ma",
+    "Yili Wang",
+    "Xin He",
+    "Xin Zhang",
+    "Ying Wang",
+    "Xin Wang"
+   ],
+   "abstract": "Dynamic graphs capture evolving interactions in Web systems, including online communication, user engagement, and recommendation. Graph foundation models aim to reuse predictive capabilities across networks, but extending this capability to dynamic graphs faces two challenges. First, node identities are graph-specific, and similar interaction patterns can appear at different temporal and activity scales, making histories difficult to represent consistently across networks. Second, the predictive roles of historical patterns vary across interaction dynamics, limiting transfer from a narrow range of training processes. In this paper, we show that a common interaction language, combined with learning across diverse interaction processes, offers a basis for dynamic graph foundation modeling. We propose CL-DGFM, a Common Language Dynamic Graph Foundation Model for temporal link prediction. Its Dynamic Interaction Tokenizer encodes interaction memory, historical connectivity, and ordered destination transitions into calibrated tabular inputs, making dynamic histories accessible to existing predictors without an additional trainable graph encoder. Its Dynamic Interaction Prior trains a pretrained tabular foundation predictor across diverse synthetic dynamics. Labeled historical context guides prediction, with a Contextual Value Adapter modulating attention values. The model transfers to real graphs without target-graph parameter updates. Experiments on TGB and TGB-Seq demonstrate competitive performance. Further comparisons show that the common language supports basic machine learning and neural models, and enables direct use of frozen tabular foundation models on dynamic graphs.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Dynamic graph foundation model for link prediction; no transport or operations relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02807",
+   "title": "Creating Hybrid Interactive Narrative Systems with LLM: From Formal Description to Evaluation",
+   "url": "https://arxiv.org/abs/2611.02807",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Jules Clerc",
+    "Domitile Lourdeaux",
+    "Mohamed Sallak",
+    "Marc Ravaine"
+   ],
+   "abstract": "Interactive narratives let users shape a story while an Experience Manager (EM) keeps it coherent, balancing player freedom against authorial control. Large Language Models now enable a new generation of hybrid EMs, which combine run-time generation from free-text input with symbolic narrative control. However, their heterogeneity makes them hard to compare: A manager's behaviour is generally tied to the unique and specific scenario in which it operates, and much of its decision-making takes place outside of any explicit and verifiable structure. We address this with an LLM-based narrative platform whose managers are interchangeable modules operating over a shared symbolic world model of facts, operations, and goals. Because every applied operation carries explicit preconditions and effects, each session can be analysed as a plan through a common state-transition representation and evaluated, independently of how the manager works internally, with shared indicators of four properties: player agency, EM controllability, author intent, and robustness. We implement three contrasting managers, based respectively on open generation, Monte Carlo repair, and autonomous characters, and compare them through functional analysis on an interactive Little Red Riding Hood scenario. The results show that no manager dominates on every property, giving authors and EM designers a concrete basis to select a manager according to their priorities.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "LLM-driven interactive narrative managers; unrelated to transport or operations research.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02045",
+   "title": "METER: Matched-Event Calibration for Short-Event EEG Microstate Transition Analysis",
+   "url": "https://arxiv.org/abs/2611.02045",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-01",
+   "authors": [
+    "Abdul Basit",
+    "Eklavya Tomar",
+    "Muhammad Shafique"
+   ],
+   "abstract": "Short cognitive events contain unequal and often sparse transition evidence, so raw EEG microstate distances can reflect finite sampling rather than neural reconfiguration. We introduce METER (Matched-Event Transition Estimation against a Reference), a participant-relative framework that separates marginal occupancy from conditional next-state choice and evaluates each event against duration-conditioned events from a fixed participant-specific reference bank. METER-Jump integrates uncertainty in sparse target and reference transition tables, returning a randomized event rank for testing and a continuous standardized coordinate for association analysis. Using a reproducible three-state representation selected by spatial criteria, we evaluated METER with participant-fitted simulations, estimator ablations, map perturbations, and preprocessing sensitivities. Event-level false-positive rates were 0.044-0.056 across four heterogeneous null mechanisms. By contrast, global cutoffs learned under the participant-fitted null and transferred unchanged to other regimes produced false-positive rates from 0.004 under rare transitions to 0.234 under map perturbation; duration-conditioned ranks remained near 0.05. Detection probability was approximately 0.69 with fixed maps but fell to 0.22 after bootstrap-derived map-assignment perturbation. In 4,175 natural-reading events from 18 participants, no linguistic association survived multiplicity correction in the primary 30-ms analysis, although a 20-ms sensitivity changed one within-stream max-$T$ decision. METER therefore calibrates finite-event departures conditional on a defined microstate sequence, while map assignment, filtering, temporal smoothing, and reference construction remain separate sources of measurement uncertainty.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "sim",
+   "reason": "EEG microstate transition statistics for cognitive events; unrelated to transport or simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02414",
+   "title": "SGR-OPSD: Learning from Subgoal Plans with Graph-Regularized Credit Assignment for Agentic Reinforcement Learning",
+   "url": "https://arxiv.org/abs/2611.02414",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Shu Liu",
+    "Yang Chong",
+    "WenShi Chen",
+    "Man Lan"
+   ],
+   "abstract": "OPSD provides dense supervision for agentic reinforcement learning through privileged information feedback. However, existing privileged information often lacks explicit task-progression planning, while teacher-student log-probability gaps reflect shifts in model preference rather than true task progress. To address these limitations, we propose Subgoal-Guided Graph-Regularized OPSD (SGR-OPSD), a framework that combines subgoal supervision with interaction-derived evidence for turn-level credit assignment. Specifically, SGR-OPSD uses LLM-generated subgoal plans to provide dense action-level guidance, converting them into advantage weights via a constrained, KL-regularized objective. To ground credit in observed outcomes, we construct a Subgoal Progress Graph that estimates empirical returns from sampled transition frequencies. The graph compares empirical action returns against the state average to derive preferences that calibrate the teacher's credit weights. Evaluated on ALFWorld, WebShop, and Search-QA across two model scales (Qwen2.5-3B and 7B), SGR-OPSD consistently outperforms GRPO and strong self-distillation baselines, improving success rates over GRPO by up to 7.4 percentage points and reaching 85.8% on ALFWorld with Qwen2.5-7B. Ablation studies confirm that subgoal guidance and graph-based weight calibration are key to these performance gains.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Agentic RL for ALFWorld and WebShop; no transport or operations relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02849",
+   "title": "TLAPS-Bench: Formally Proving Correctness of Real-World System Specifications with TLA+ Proof System",
+   "url": "https://arxiv.org/abs/2611.02849",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Qian Cheng",
+    "Ruize Tang",
+    "Saad Mohammad Rafid Pial",
+    "Zhizhen Cathy Cai",
+    "Yiming Su",
+    "Jackson Clark",
+    "Munim Thahmid",
+    "Mahdiya Rahman Sukanya",
+    "Chris Newcombe",
+    "Igor Konnov",
+    "Stephan Merz",
+    "Xudong Sun",
+    "Murat Demirbas",
+    "Yu Huang",
+    "Markus Alexander Kuppe",
+    "Tianyin Xu"
+   ],
+   "abstract": "TLAPS-Bench is a benchmark and execution harness for constructing machine-checked proofs for real-world system specifications in TLA+ with agentic AI. Proving correctness of complex system specifications requires discovering inductive invariants, reasoning about intricate state transitions, and decomposing proofs into tractable obligations. TLAPS-Bench provides a proof harness that supports iterative proof development atop the TLA+ Proof System (TLAPS), where agents are equipped with proof tools and libraries, with safeguards against reward hacking. Using the harness, we have employed AI agents to prove desired properties for important system specifications that were not proved before, spanning cache coherence, Byzantine consensus, and write-ahead logs. TLAPS-Bench contains 265 proof targets (each encodes a property to prove) from 95 TLA+ specifications of real-world systems. We evaluated frontier AI agents, represented by Codex with GPT models, on a subset of 70 proof targets across 12 specifications. The highest-scoring model, GPT-6.1 Sol (max), proved 31 (44.3%) proof targets. The results show challenges and opportunities in end-to-end proof development.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Agentic proof generation for TLA+ specifications; no transport or optimisation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.02667",
+   "title": "UPSHIFT: User Preference Steering from Human-AI Interaction Feedback Traces",
+   "url": "https://arxiv.org/abs/2611.02667",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Jingping Wang",
+    "Zhanhao Li",
+    "Shao Zhang",
+    "Shuyue Hu"
+   ],
+   "abstract": "Personalizing large language model assistants requires adapting their responses to individual users, including the selection of content, reasoning approach, level of detail, and form of presentation. Such preferences are often latent, becoming visible only when users respond to an initial answer and request revisions. We investigate whether these feedback trajectories can be converted into a reusable personalization signal without explicit preference profiles or labels, prompt-time access to interaction histories, or model parameter updates. We introduce UPSHIFT (User Preference Steering from Human-AI Interaction Feedback Traces), a training-free method that compares the hidden representations of initial and feedback-conditioned responses within each session, averages the resulting trajectory displacements across a user's sessions, and injects the aggregated preference direction when answering a new query. The method is motivated by the implicit-preference hypothesis: although an individual conversational transition may reflect topic progression or task-specific correction, changes that recur across sessions retain a component that captures how the user wants responses to be adjusted. We validate the preference-representation capability of UPSHIFT on PrefEval. In evaluations with 40 simulated users, every tested configuration improves preference alignment over the unsteered baseline on held-out topics for both Qwen3-8B and Qwen3-32B; the best configuration increases macro-averaged Elo from 1364.0 to 1605.2 and from 1341.9 to 1591.8, respectively. Matched-user and positive-versus-negative controls further demonstrate that these gains arise from the user-specific preference direction and its learned orientation. These results show that interaction histories can provide compact, reusable supervision for lightweight personalization.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Training-free LLM personalisation from feedback traces; no transport relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.03051",
+   "title": "Unlocking Criminal Court Decisions: Flexible Information Extraction for Empirical Legal Research",
+   "url": "https://arxiv.org/abs/2611.03051",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-02",
+   "authors": [
+    "Tomáš Knap",
+    "Ivana Kvapilíková",
+    "Jan Černý",
+    "Klára Bendová",
+    "Jaromír Šavelka",
+    "Vojtěch Pour",
+    "Jakub Drápal"
+   ],
+   "abstract": "Criminal verdicts contain descriptions of criminal behavior that can support quantitative legal research, but structuring them requires attributes and extraction rules that cannot always be fully specified in advance. We present an LLM-based pipeline that builds a structured dataset through attribute exploration, text span extraction, and value normalization, guided by annotation instructions that legal experts can refine. We evaluate it on two traffic offenses: driving under the influence (DUI) and driving despite a ban (DDB). For DUI, revising the instructions was associated with higher extraction accuracy (from 52% to 70% of correctly extracted values) and higher agreement between human annotators. Repeated runs of the same model agreed with each other more than with the gold annotations, showing that consistent output is not necessarily correct, while disagreement between annotators and between models helped reveal unclear instructions. For DDB, where the instructions defined fixed categories and output formats, agreement was high for most attributes.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "LLM information extraction from criminal verdicts for legal research; no transport or optimisation link.",
+   "scored_by": "llm"
+  }
+ ]
+}
