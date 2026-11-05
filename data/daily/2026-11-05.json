@@ -1,0 +1,531 @@
+{
+ "date": "2026-11-05",
+ "fetched": 631,
+ "sources": {
+  "arXiv": 230,
+  "Transportation Research Part B": 1,
+  "Transportation Research Part C": 5,
+  "Transportation Research Part D": 3,
+  "Transportation Research Part E": 28,
+  "Applied Energy": 24,
+  "European Journal of Operational Research": 4,
+  "Computers & Operations Research": 4,
+  "eTransportation": 0,
+  "IEEE Trans. Intelligent Transportation Systems": 2,
+  "IEEE Trans. Smart Grid": 5,
+  "IEEE Trans. Transportation Electrification": 12,
+  "IEEE Trans. Power Systems": 2,
+  "Transportation Science": 0,
+  "Operations Research": 5,
+  "INFORMS Journal on Computing": 0,
+  "Nature Energy": 4,
+  "Nature Communications": 111,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0,
+  "NeurIPS": 0,
+  "AAAI": 57,
+  "IJCAI": 16,
+  "KDD": 45,
+  "AAMAS": 30,
+  "ICAPS": 2,
+  "ACL": 12,
+  "EMNLP": 21,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 8
+ },
+ "papers": [
+  {
+   "id": "doi:10.1016/j.trc.2026.106105",
+   "title": "When does an agentic aggregator add value? Evidence from electric bus depot charging and V2G pricing",
+   "url": "https://doi.org/10.1016/j.trc.2026.106105",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Ali Eslami",
+    "Jônatas Augusto Manzolli",
+    "Luis Miranda-Moreno",
+    "Jiangbo Yu"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus",
+    "llm",
+    "grid"
+   ],
+   "keyword_hits": 5,
+   "score": 8,
+   "topic": "grid",
+   "reason": "Examines an agentic aggregator for e-bus depot charging and V2G pricing, directly matching transport-grid integration and electricity price interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tsg.2026.3749670",
+   "title": "A Convex Value-Function Learning Approach to Coordinating Model-based Distribution Networks with Model-free Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3749670",
+   "venue": "IEEE Trans. Smart Grid",
+   "publisher": "IEEE",
+   "date": "2026-11-02",
+   "authors": [
+    "Linwei Sang",
+    "Yuhang Chen",
+    "Ning Guo",
+    "Chenhui Lin",
+    "Xiaobo Dou",
+    "Qinran Hu",
+    "Zaijun Wu"
+   ],
+   "abstract": "Active distribution networks increasingly host privately owned microgrids and low-voltage distribution transformer areas whose internal models are invisible to the distribution system operator, while the operator retains an accurate physical model of its own feeder. The coordination must accommodate this asymmetric information structure while retaining the available feeder model. This paper proposes a convex value-function learning approach that coordinates the two levels in a hierarchicallearn-then-coordinatemanner, matching each level to its information. The distribution level is model-based: a branch-flow second-order cone program over the true feeder model with hard voltage limits. Each microgrid level is model-free: without exposing any internal model, the microgrid is summarized by its optimal-value function, learned from private optimal-dispatch labels with an input convex neural network (ICNN). The value function of a convex microgrid dispatch is provably convex in the boundary exchange, so the ICNN preserves the target convexity, subject to approximation error, and its epigraph reformulation turns each microgrid response into a small convex program. The two levels are then coordinated by augmented-Lagrangian analytical target cascading (ATC), whose two-block splitting converges to the learned convex optimum under stated feasibility and penalty assumptions, while exchanging boundary targets, responses, and multipliers. Case studies on 33- and 69-bus feeders report maximum held-out errors of 0.352, 0.161, and 0.231 dollars per hour for the original three microgrids. The stressed case requires 494 rounds to meet both residual tolerances with the tested ramp. Forecast-error tests expose the limits of nominal voltage protection.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "grid",
+   "reason": "Coordinates distribution networks with microgrids via convex value-function learning; useful grid coordination method background.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105371",
+   "title": "Analytical modeling of a stop-less modular bus line: Optimization, feasibility, and economies of scale",
+   "url": "https://doi.org/10.1016/j.tre.2026.105371",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Haoran Zhao",
+    "Neema Nassir",
+    "Andres Fielbaum"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "ebus",
+   "reason": "Analytical modelling and optimisation of a stop-less modular bus line; adjacent to bus operations but not electrification-focused.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3750341",
+   "title": "Adaptive Learning-Based Tube Model Predictive Control for Shift Control of Hybrid Electric Vehicles",
+   "url": "https://doi.org/10.1109/tte.2026.3750341",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-04",
+   "authors": [
+    "Xiangwei Rong",
+    "Dehua Shi",
+    "Shaohua Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Learning-based tube MPC for hybrid electric vehicle shift control; electrified vehicle control adjacent to energy-optimal methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04463",
+   "title": "Automated consolidation of dispersed DSO data resources into a consistent digital twin of the distribution grid",
+   "url": "https://arxiv.org/abs/2611.04463",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Fabian Böhm",
+    "Benjamin Sawicki",
+    "Claudio Stucki",
+    "Pulkit Nahata",
+    "Gabriela Hug",
+    "Lukas Ortmann"
+   ],
+   "abstract": "The energy transition causes a growing number of distributed flexible energy resources in the low voltage grid. To utilize that flexibility, automation and control algorithms are needed, which typically are developed in theoretical research. We build a cyberphysical algorithm test bed to bridge the gap between theoretical research and practical application in cooperation with a local DSO in Walenstadt, Switzerland. To obtain suitable monitoring and data analysis capabilities from their existing data landscape, we propose tool-independent data harmonization measures in preparation for a digital twin of the grid. For data extraction from high-security network zones we developed a secure pipeline that implements a logical data diode ensuring one-way traffic only. Furthermore, we established a test community of voluntary prosumer households, whose flexible assets were made accessible through a common backend, giving us actuation capabilities. The presented publish-subscribe architecture is not only suitable to integrate various data sources into a central data collection, but also to manage access privileges of different stakeholders. This could support unbundling of an organization's data flows and the implementation of data space concepts.",
+   "topics": [
+    "sim",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Digital twin and data consolidation for a DSO distribution grid with flexible assets; adjacent to grid integration but not transport-specific.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3750304",
+   "title": "A Foundation Model for Automotive-Grade EV Charging Anomaly Detection via Snippet-Level Attention Learning",
+   "url": "https://doi.org/10.1109/tte.2026.3750304",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-04",
+   "authors": [
+    "Joey Chan",
+    "Haoyu Pan",
+    "Zhen Chen",
+    "Ershun Pan"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "EV charging anomaly detection with a foundation model; touches charging but focuses on anomaly detection rather than scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105369",
+   "title": "From fragmentation to coordination: open innovation in closed-loop electric vehicle battery transportation networks",
+   "url": "https://doi.org/10.1016/j.tre.2026.105369",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Aishwarya V. M.",
+    "Banu Yetkin Ekren",
+    "Vedant Singh"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ebus",
+   "reason": "Open innovation in closed-loop EV battery logistics networks; EV-adjacent network design but not scheduling or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105370",
+   "title": "Modeling and evaluating time-varying user preference of morning rail transit commuters with smart card data",
+   "url": "https://doi.org/10.1016/j.tre.2026.105370",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Tian-Liang Liu",
+    "Pu Xu",
+    "Bingfeng Si",
+    "Wei Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Rail commuter preference modelling from smart card data; public transit data analysis with weak overlap.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04774",
+   "title": "Cooperative Multi-Agent Reinforcement Learning with Submodular Trajectory Rewards",
+   "url": "https://arxiv.org/abs/2611.04774",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Yasaman Zolfimoselo",
+    "Nikolas Geroliminis",
+    "Maryam Kamgarpour"
+   ],
+   "abstract": "We study cooperative multi-agent reinforcement learning with decoupled dynamics and a monotone submodular reward function over joint trajectories. Due to the non-additive reward, an optimal policy may depend on the history of all agents. This dependence makes exact optimization exponential in the horizon and the number of agents. To overcome this challenge while retaining theoretical guarantees, we introduce pre-window curvature $c_m$, which quantifies how states visited more than $m$ steps earlier reduce current marginal gains. Using this curvature to control the error from restricting the policy of each agent to depend only on its last $m+1$ states, we propose a greedy algorithm that exploits the decoupled dynamics to optimize local policies sequentially. For fixed $m$, the algorithm achieves a $\\frac{1-c_m}{2-c_m}$ approximation guarantee up to estimation error, and its computation time is polynomial in the number of agents and the horizon. We recover the known $1/2$-factor approximation for time-additive rewards and obtain an approximation factor no smaller than the known total-curvature bound for a single agent. We formulate multi-agent traffic monitoring as an example of this framework and evaluate our algorithm on it.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Multi-agent submodular RL with a traffic monitoring example; loosely connected to multi-agent optimisation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.05030",
+   "title": "On Revolutionizing Power Systems: Suitability of Quantum Computing-Ready Pipelines for Stochastic Unit Commitment Optimization",
+   "url": "https://arxiv.org/abs/2611.05030",
+   "venue": "arXiv quant-ph",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Ying-Yi Hong",
+    "Dylan Josh Domingo Lopez"
+   ],
+   "abstract": "Modern unit commitment (UC) scenarios, particularly those involving uncertainties from demand fluctuations and renewable energy sources, pose significant challenges to traditional optimization methods due to the large search spaces they encompass. This paper proposes a quantum computing-ready optimization pipeline for deterministic and stochastic UC, integrating classical, quantum-inspired, quantum annealing, and hybrid quantum-classical solvers across test systems, including the IEEE 118-bus system. A novel Quadratic Unconstrained Binary Optimization (QUBO) reformulation accommodates generator scaling and 24-hour scheduling horizons with compact Boolean logic penalties for startup, cooldown, and spinning reserve constraints. A divide-and-conquer strategy and Quantum Computing Monte Carlo (QCMC) simulation address scalability across 27,730 uncertainty scenarios, reducing compilation time by up to two orders of magnitude. Experimental results demonstrate the pipeline's ability to achieve efficient, scalable, and accurate UC optimization under uncertainty: the hybrid quantum method approach matches the classical baseline, reduces stochastic UC runtime from 40.76 to 14.79 hours, and characterizes pure quantum annealing as limited to small systems with 0.22% to 2.18% encoding errors and constraint violations. These results provide an analysis of the scalability and computational practicality of hybrid quantum optimization for generator scheduling in UC.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Quantum-ready stochastic unit commitment for power systems; generic power optimisation with only method-level overlap.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04772",
+   "title": "TactiNavi: Serving and Revising an LLM Game Coach with Explicit Strategy Conditions",
+   "url": "https://arxiv.org/abs/2611.04772",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Qi Liu",
+    "Xiaoyang Yuan",
+    "Zhuomeng Zhang",
+    "Yubin Ruan",
+    "Xinyi Mou",
+    "Wenjin Wang",
+    "Hanying Jiao",
+    "Di Wu",
+    "Jinke Li",
+    "Jingxuan Hong",
+    "Ke Feng",
+    "Zixun Sun"
+   ],
+   "abstract": "A deployed LLM coaching agent answers requests whose correct response depends on player state and game version, so advice that is right for one player can be wrong for the next. We describe TactiNavi, the serving system behind the LLM coach of a commercial open-world game, which makes strategy applicability an explicit artifact shared by offline compilation, online execution, failure diagnosis, and release. An offline compiler turns versioned game evidence and expert guidance into strategy packages with explicit prerequisites, the serving plane evaluates those prerequisites as three-valued conditions over structured player state and records decision traces, and a control plane uses the resulting condition-rule dependencies to validate revisions on held-out traffic before release. In a retrospective evaluation of 1,122 logged coaching turns from three deployment periods, condition-bearing packages raise correctness from 57.9% to 82.0% over atomic facts and reduce strategy misapplication under changed player state from 18.1% to 10.4%, while trace-based claim verification reaches 86.4% precision at a median reply latency of 2.07 s. The deployment also showed that most apparent fixes are generation noise, because an unchanged-system rerun recovers 38.4% of failing turns and only one of 15 shipped revision units passes the release checks retrospectively. We distill these results into lessons on treating applicability as a first-class serving object, sizing traces for later diagnosis, and building the null model into the release path.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM game coach serving system with conditional strategies; LLM deployment patterns but not transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105721",
+   "title": "Economic determinants of cruise-ship operational performance: carbon tax, fuel and onshore-power price",
+   "url": "https://doi.org/10.1016/j.trd.2026.105721",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Guozheng Liu",
+    "La Xiang",
+    "Congbiao Sui",
+    "Yu Ding"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Cruise-ship economics involving onshore power price; marginal link to shore power but not bus or EV work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3750263",
+   "title": "Fault Diagnosis of Rotating Diodes in Multiphase Brushless Excitation Systems: A Knowledge-guided Data-driven Approach",
+   "url": "https://doi.org/10.1109/tte.2026.3750263",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-04",
+   "authors": [
+    "Yuang Cai",
+    "Liangliang Hao",
+    "Yanzhen Zhou",
+    "Jianlin Chen",
+    "Guodu Xiong",
+    "Guang Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Fault diagnosis of rotating diodes in brushless excitation machines is equipment condition monitoring, only superficially related to electric bus operations or transport-grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04437",
+   "title": "WiSI: Wireless-in-the-Loop Self-Improvement",
+   "url": "https://arxiv.org/abs/2611.04437",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Zongxi Liu",
+    "Hongyang Du"
+   ],
+   "abstract": "The growing autonomy of AI agents has enabled self-improvement, where agents iteratively refine their programs through execution feedback and performance evaluation. As these agents increasingly operate in physical environments and rely on wireless connectivity, communication conditions become an integral part of their improvement process. However, existing approaches largely assume ideal communication, overlooking how wireless conditions shape both the feedback that guides program modifications and the evaluation outcomes that determine which modifications survive. This challenge is further complicated by the coupling between agent behavior and wireless connectivity, as agents influence their own communication conditions through mobility and transmission decisions. To address this problem, we propose WiSI, a wireless-in-the-loop self-improvement framework that integrates spatiotemporal wireless channels, edge-assisted perception, and Large Language Model-driven program improvement. By incorporating wireless execution into the improvement loop, WiSI reveals how wireless execution experience shapes the generation and retention of program structures, and investigates the wireless conditions needed for robust improvement. Experiments show that agents improved under ideal links achieve only 40.0% task success under congestion, compared with 77.2% when improved under realistic wireless conditions. More importantly, wireless-aware feedback and selection jointly enable agents to discover and retain communication-efficient program structures that outperform parameter tuning and remain robust even with inaccurate run-time channel observations. We further find that moderate-load or mixed-network evaluation maintains strong performance across deployment conditions, while simplified models preserving link-rate statistics achieve comparable results without detailed spatial channel information.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Wireless-aware LLM program self-improvement for agents; LLM-driven but unrelated to transport operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105360",
+   "title": "Evolution of token-incentivized information sharing in blockchain-driven circular supply chain networks",
+   "url": "https://doi.org/10.1016/j.tre.2026.105360",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Jia-Ying Zhao",
+    "Jingwei Guo",
+    "Zhen-Song Chen",
+    "YueJun Huang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Token incentives in blockchain circular supply chains; no transport electrification or optimisation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105363",
+   "title": "Optimal menu pricing strategies for on-demand service platforms",
+   "url": "https://doi.org/10.1016/j.tre.2026.105363",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-04",
+   "authors": [
+    "Melina Asadi",
+    "Can Baris Cetin",
+    "Georges Zaccour"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Menu pricing for on-demand platforms; pricing economics unrelated to the researcher's core topics.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3750229",
+   "title": "Physicochemical and Discharge Characteristics of Polyimide Insulation with Multilevel Voltages for Aircraft Motor",
+   "url": "https://doi.org/10.1109/tte.2026.3750229",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-04",
+   "authors": [
+    "Hong Lei",
+    "Jianyu Pan",
+    "Haibo Tang",
+    "Jiaxin Li",
+    "Weigen Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Polyimide insulation physicochemistry and discharge behaviour for aircraft motors is materials-level work outside the researcher's scheduling, simulation, or grid interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.05277",
+   "title": "Conformal Prediction at Performative Equilibrium: The Price of Performativity",
+   "url": "https://arxiv.org/abs/2611.05277",
+   "venue": "arXiv math.ST",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Ahmed Mahrous",
+    "Roberto Di Pietro"
+   ],
+   "abstract": "Conformal prediction gives finite-sample coverage when calibration and test points are exchangeable, but exchangeability can fail when deployment changes the data distribution. We study conformal prediction in performative settings, where the deployed predictor affects the data distribution, and seek prediction sets valid at performative equilibrium: coverage must hold under $D(f^\\star)$ for a performatively stable predictor $f^\\star$. Under total-variation $L$-sensitivity of the distribution map, we prove a phase transition at $L=1$. If $L \\ge 1$, no finite-sample procedure can uniformly guarantee both equilibrium-valid coverage and nontrivial prediction sets. If $L<1$, the minimax excess miscoverage over informative procedures is $\\widetildeΩ(1/((1-L)\\sqrt{n}))$, implying a sample-complexity inflation of order $1/(1-L)^2$ for fixed excess miscoverage. Our main technical tool is a transfer theorem: any procedure returning a predictor within $\\varepsilon$ of equilibrium yields equilibrium-valid coverage up to an additive $L\\varepsilon$ term after split-conformal calibration. We instantiate the theorem with two retraining algorithms: a model-free method for discretizable classes and a parametric tail-averaged method that matches the $n$- and $L$-dependence of this rate up to logarithmic factors. Experiments, including semi-synthetic credit scoring, demonstrate the predicted threshold behavior and scaling laws.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Conformal prediction under performativity in statistics; no transport or optimisation application.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.05027",
+   "title": "Haptic Shared Control for Multi-Robot Systems",
+   "url": "https://arxiv.org/abs/2611.05027",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Maxime Bernard"
+   ],
+   "abstract": "Multi-agent systems offer significant advantages in terms of flexibility and redundancy, enabling the efficient distribution of complex tasks among multiple robots. However, their deployment requires advanced control strategies to ensure optimal cooperation between autonomous agents and human operators. We propose a modification of the global connectivity maintenance algorithm to incorporate measurements taken in agent's local frame, using sensors with limited fields of view. This algorithm, responsible for the autonomous behavior of the multi-robot system, is combined with different adaptive supervision strategies, allowing the user to exert control at varying scales over the entire group. (i) Single Agent Control (S): The operator directly controls a single robot, (ii) Pinning Control (P): The operator imposes constraints on multiple robots to influence the group, (iii) Centroid Control (C): The operator acts on the system's center of mass to steer the entire fleet. In conjunction with the connectivity maintenance algorithm, these methods ensure compliance with inter-agent constraints while providing haptic feedback to the user regarding the system's connectivity state. The effectiveness of these approaches was evaluated through a user study, comparing performance with and without haptic feedback across multiple scenarios tailored to the different control modes.",
+   "topics": [
+    "llm",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Haptic shared control for multi-robot connectivity; no transport electrification or OR relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04912",
+   "title": "MiCaDe: Online LiDAR-Camera Miscalibration Change Detection for Autonomous Driving",
+   "url": "https://arxiv.org/abs/2611.04912",
+   "venue": "arXiv cs.CV",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Carlo Sgaravatti",
+    "Riccardo Pieroni",
+    "Matteo Corno",
+    "Sergio M. Savaresi",
+    "Luca Magri",
+    "Giacomo Boracchi"
+   ],
+   "abstract": "Reliable multi-sensor perception in autonomous vehicles requires accurate calibration between cameras and LiDAR. However, calibration drift is often unavoidable in long-term deployments: vibrations, thermal effects, and minor mechanical shocks may alter the relative pose between sensors, leading to systematic errors in downstream fusion tasks. We propose MiCaDe (Miscalibration Change Detection), an online solution detecting when the extrinsic LiDAR-camera calibration parameters are no longer accurate by means of sequential change detection. MiCaDe requires no calibration targets, or modification of the perception stack, providing low false-alarm rates with negligible computational overhead. Our key insight is that 3D and 2D bounding boxes produced by standard object detectors should remain geometrically consistent under correct calibration. By matching cross-modal detections, we derive geometric consistency metrics that serve as sensitive indicators of extrinsic drift. These metrics are aggregated into fixed-size batches and scored against a reference distribution, producing a likelihood stream that is monitored by a Change Point Model (CPM). Crucially, the CPM accumulates statistical evidence over time, enabling detection of subtle drifts that would otherwise go unnoticed. Experiments on multiple long-sequence datasets and on a real-world dataset with physically induced miscalibration confirm reliable detection under diverse conditions. Code available at: https://github.com/CarloSgaravatti/MiCaDe.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "sim",
+   "reason": "LiDAR-camera calibration drift detection for autonomous driving perception; excluded area.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04886",
+   "title": "Modelling lock-in of AI adoption through skill erosion",
+   "url": "https://arxiv.org/abs/2611.04886",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Renaud Lambiotte"
+   ],
+   "abstract": "Generative AI can improve immediate performance but may erode the human skills required for future work. We study a model in which individuals tend to imitate successful peers, while their independent skills grow with practice and erode with reliance on AI. Because each agent's skill reflects their history, non-users and AI users develop different skill distributions, which we derive exactly. Skill erosion can produce bistability and hysteresis between a low-adoption, high-skill state and a high-adoption, low-skill state. When agents rarely change behaviour at random, the two transitions are asymmetric. A single AI user spreads through a population of experts only if AI-assisted work earns more than expert work, whatever the timescale of skill adaptation. A single non-user, by contrast, can lead an AI-dependent population back to independent work only if they regain enough skill before returning to AI, which becomes easier the more persistent behaviours are. As AI improves, adoption can jump abruptly, and a sufficiently long increase in its benefit, such as a period of low prices, can leave a population relying on AI after the benefit has returned to its initial value. Skill erosion thus creates a history-dependent switching cost that can make widespread AI adoption difficult to reverse.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Models AI adoption lock-in via skill erosion; social dynamics with no transport or optimisation content.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.04348",
+   "title": "When Is Fresh AI Stock Analysis Worth It? Allocating a Limited Research Budget Across Price Updates, Deep Forecast Refreshes, and Editorial Reviews of Top Stock Picks",
+   "url": "https://arxiv.org/abs/2611.04348",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-03",
+   "authors": [
+    "Russlan Ramdowar"
+   ],
+   "abstract": "Must long-horizon AI investment research be rewritten every time stock prices move? Using 8,120 production reports on the same 203 stocks across four iPulse AI batches, we compare repricing existing targets, guarding them against price shocks, mechanically resetting old forecast growth, and generating fresh multi-agent reports. Ten matched configurations represent seven investment frameworks. Our primary economic evaluation selects Top 10 USD portfolios using one-year forecasts. Across two unchanged-model windows, guarded reuse averages 2.25%, versus 1.66% for SPY and 4.77% for fresh reports, after modeled trading costs and reference compute charges on a USD 100,000 account. Guarded reuse beats SPY in all three short windows, including the model-change transition. Extending the first holding window to nearly six months reverses the result: guarded reuse returns -11.26%, fresh reports +9.12%, and SPY +3.46%, motivating the thesis half-life question. Supporting quarter-forecast diagnostics show that mechanically re-anchoring old growth paths closes 98% of the MAE improvement over fixed targets, yet Fresh and Reset share only 1-4 of their Top 10 stocks. At Top 30, the unchanged-model portfolio comparison instead favors guarded reuse (4.17% versus 1.88%). Endpoint and concentration tests reveal the influence of horizon choices and exceptional winners. Nine production editions show substantial between-edition turnover, while every final editorial screen retains its own incoming list. Measured token workloads connect refresh costs to shared capital and realized break-even budgets. The resulting architecture separates continuous price monitoring from episodic thesis rebuilding and targeted editorial evidence checks.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "LLM-generated stock research budget allocation; finance domain with no transport relevance.",
+   "scored_by": "llm"
+  }
+ ]
+}

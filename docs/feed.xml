@@ -5,6 +5,30 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[8] When does an agentic aggregator add value? Evidence from electric bus depot charging and V2G pricing</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106105</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106105</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Transportation Research Part C · Ali Eslami, Jônatas Augusto Manzolli, Luis Miranda-Moreno, Jiangbo Yu — Examines an agentic aggregator for e-bus depot charging and V2G pricing, directly matching transport-grid integration and electricity price interests.</description>
+  </item>
+  <item>
+    <title>[6] A Convex Value-Function Learning Approach to Coordinating Model-based Distribution Networks with Model-free Microgrids</title>
+    <link>https://doi.org/10.1109/tsg.2026.3749670</link>
+    <guid isPermaLink="false">doi:10.1109/tsg.2026.3749670</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Smart Grid · Linwei Sang, Yuhang Chen, Ning Guo, Chenhui Lin et al. — Coordinates distribution networks with microgrids via convex value-function learning; useful grid coordination method background.</description>
+  </item>
+  <item>
+    <title>[6] Analytical modeling of a stop-less modular bus line: Optimization, feasibility, and economies of scale</title>
+    <link>https://doi.org/10.1016/j.tre.2026.105371</link>
+    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105371</guid>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part E · Haoran Zhao, Neema Nassir, Andres Fielbaum — Analytical modelling and optimisation of a stop-less modular bus line; adjacent to bus operations but not electrification-focused.</description>
+  </item>
+  <item>
     <title>[9] Distributionally robust operational planning for mixed charging and decentralized swapping</title>
     <link>https://doi.org/10.1016/j.tre.2026.105361</link>
     <guid isPermaLink="false">doi:10.1016/j.tre.2026.105361</guid>
