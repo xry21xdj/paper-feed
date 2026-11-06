@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-05</h2>
-  <span class="meta">3 relevant of 22 screened · 631 new papers fetched</span>
+  <h2>Today · 2026-11-06</h2>
+  <span class="meta">5 relevant of 30 screened · 588 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">3</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">5</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">3</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,40 +107,66 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-04" data-venue="Transportation Research Part C"
-           data-text="when does an agentic aggregator add value? evidence from electric bus depot charging and v2g pricing ali eslami jônatas augusto manzolli luis miranda-moreno jiangbo yu transportation research part c">
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-05" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="bi-level multi-objective electric vehicle charging infrastructure planning for private developers considering ev charging choices jinhao li hao wang hai l vu sarah goodwin mark wallace ieee trans. transportation electrification">
     <div class="score s-hi" title="Relevance 8/10">8</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.trc.2026.106105" target="_blank" rel="noopener">When does an agentic aggregator add value? Evidence from electric bus depot charging and V2G pricing</a></h3>
-<div class="by">Ali Eslami, Jônatas Augusto Manzolli, Luis Miranda-Moreno, Jiangbo Yu</div>      <div class="venue">
-        <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part C</span><span class="by">2026-11-04</span>
-<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Examines an agentic aggregator for e-bus depot charging and V2G pricing, directly matching transport-grid integration and electricity price interests.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-02" data-venue="IEEE Trans. Smart Grid"
-           data-text="a convex value-function learning approach to coordinating model-based distribution networks with model-free microgrids linwei sang yuhang chen ning guo chenhui lin xiaobo dou qinran hu zaijun wu ieee trans. smart grid">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://doi.org/10.1109/tsg.2026.3749670" target="_blank" rel="noopener">A Convex Value-Function Learning Approach to Coordinating Model-based Distribution Networks with Model-free Microgrids</a></h3>
-<div class="by">Linwei Sang, Yuhang Chen, Ning Guo, Chenhui Lin et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1109/tte.2026.3750587" target="_blank" rel="noopener">Bi-Level Multi-Objective Electric Vehicle Charging Infrastructure Planning for Private Developers Considering EV Charging Choices</a></h3>
+<div class="by">Jinhao Li, Hao Wang, Hai L Vu, Sarah Goodwin et al.</div>      <div class="venue">
         <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Smart Grid</span><span class="by">2026-11-02</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Coordinates distribution networks with microgrids via convex value-function learning; useful grid coordination method background.</p>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-05</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Bi-level planning of EV charging infrastructure accounting for driver charging choices in an IEEE transportation electrification venue, close to charging infrastructure planning interests.</p>
     </div>
   </article>
-  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-04" data-venue="Transportation Research Part E"
-           data-text="analytical modeling of a stop-less modular bus line: optimization, feasibility, and economies of scale haoran zhao neema nassir andres fielbaum transportation research part e">
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-05" data-venue="Transportation Research Part C"
+           data-text="bus bunching mitigation through modular technology: a unified strategy with bus splitting and modular substitution anran dai kaidi yang transportation research part c">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106111" target="_blank" rel="noopener">Bus bunching mitigation through modular technology: A unified strategy with bus splitting and modular substitution</a></h3>
+<div class="by">Anran Dai, Kaidi Yang</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part C</span><span class="by">2026-11-05</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Bus bunching mitigation via bus splitting and modular substitution directly addresses transit operations and fleet strategy.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-05" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="coordinated scheduling of a hydrogen-assisted integrated energy-transportation system shijie yang peng li zelong zhang lei wang yuhua du yigeng huangfu ieee trans. transportation electrification">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tte.2026.3750722" target="_blank" rel="noopener">Coordinated Scheduling of a Hydrogen-Assisted Integrated Energy-Transportation System</a></h3>
+<div class="by">Shijie Yang, Peng Li, Zelong Zhang, Lei Wang et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-05</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Coordinated scheduling of a hydrogen-assisted integrated energy-transportation system addresses joint transport-energy optimisation, closely matching transport-grid integration interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-04" data-venue="arXiv eess.SY"
+           data-text="analyzing simultaneous charging factors of electric vehicles using monte carlo simulation: a case study in phu quoc city, vietnam tien khai nguyen trong nghia le arxiv eess.sy">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.tre.2026.105371" target="_blank" rel="noopener">Analytical modeling of a stop-less modular bus line: Optimization, feasibility, and economies of scale</a></h3>
-<div class="by">Haoran Zhao, Neema Nassir, Andres Fielbaum</div>      <div class="venue">
-        <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part E</span><span class="by">2026-11-04</span>
-<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Analytical modelling and optimisation of a stop-less modular bus line; adjacent to bus operations but not electrification-focused.</p>
+      <h3><a href="https://arxiv.org/abs/2611.06145" target="_blank" rel="noopener">Analyzing Simultaneous Charging Factors of Electric Vehicles Using Monte Carlo Simulation: A Case Study in Phu Quoc City, Vietnam</a></h3>
+<div class="by">Tien Khai Nguyen, Trong Nghia Le</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-04</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Monte Carlo estimate of simultaneous EV charging including electric buses, informing transformer sizing and time-of-use planning; adjacent to bus depot grid impact.</p>
+      <details><summary>Abstract</summary><p>This study estimates the simultaneous charging factor (SCF) of electric vehicles (EVs) in Phu Quoc City, Vietnam, using a Monte Carlo simulation. Three planning scenarios (2030, 2035, and 2040) are developed from population-based EV uptake assumptions and vehicle-specific charging probability profiles over 24 hours, reflecting distinct operating patterns of motorbikes, cars, taxis, and buses. For each vehicle class and scenario, 1,000 simulation runs are performed to compute SCF and its uncertainty, reported via 95% confidence intervals. Results indicate that SCF decreases as EV penetration increases, implying more temporally dispersed charging demand and a reduced likelihood of extreme coincidence. For electric buses, SCF declines from 0.76 (2030) to 0.59 (2040), and other vehicle groups show similarly decreasing trends across the horizon. These SCF estimates provide practical inputs for grid-aware charging infrastructure planning, including diversity factors for sizing distribution transformers and feeders, identifying peak-hour stress, and informing demand management measures such as time of use tariffs and basic smart charging controls.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-04" data-venue="arXiv cs.CE"
+           data-text="intersim: innovative intersection digital twins for human-in-the-loop driving simulation luyang jiang chuheng wei yaguang li shaoqi wang yupeng zhou hyunsoo yun xishun liao brandon pitts ziran wang arxiv cs.ce">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.05968" target="_blank" rel="noopener">InterSim: Innovative Intersection Digital Twins for Human-in-the-Loop Driving Simulation</a></h3>
+<div class="by">Luyang Jiang, Chuheng Wei, Yaguang Li, Shaoqi Wang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-04</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Unity-based human-in-the-loop intersection digital twin with surrogate safety and eco-driving studies; relevant simulation methodology but not calibrated bus operations.</p>
+      <details><summary>Abstract</summary><p>Innovative intersection designs can improve roadway safety and operational efficiency, but their uncommon geometries may create challenges for driver comprehension during early deployment. Evaluating these designs through full-scale field implementation can also be costly. This paper presents InterSim, a Unity game engine-based human-in-the-loop (HITL) driving simulator that constructs digital twins of site-specific innovative intersections in a virtual environment. InterSim links the real world and the simulation world through two closed cycles: a digital twin cycle that builds each intersection twin from agency design and traffic data and returns evidence from simulation to the agency, and an HITL cycle in which human drivers or automated driving algorithms operate the ego vehicle under identical scenario conditions. The research capabilities of InterSim are demonstrated through two case studies: a surrogate safety study compares post-encroachment time distributions between a Reduced Conflict Intersection and a standard intersection under different traffic volumes; an eco-driving study compares human drivers with a rule-based agent using vehicle-to-infrastructure information and reveals differences in emission and driving behavior. These studies demonstrate that InterSim provides a reusable digital twin platform for investigating innovative intersection designs from diverse perspectives. Demo video and open-source code can be accessed at https://purduedigitaltwin.github.io/InterSim/</p></details>
     </div>
   </article>
 </main>
@@ -149,7 +175,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-05.html" class="cur" aria-current="page">2026-11-05 · 3</a></li>
+    <li><a href="archive/2026-11-06.html" class="cur" aria-current="page">2026-11-06 · 5</a></li>
+    <li><a href="archive/2026-11-05.html">2026-11-05 · 3</a></li>
     <li><a href="archive/2026-11-04.html">2026-11-04 · 33</a></li>
     <li><a href="archive/2026-11-03.html">2026-11-03 · 3</a></li>
     <li><a href="archive/2026-11-02.html">2026-11-02 · 10</a></li>
@@ -159,7 +186,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS and Springer Nature journals (Crossref, OpenAlex); top CS conferences (OpenAlex; ICML and ICLR via arXiv).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-05 00:48 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-06 00:54 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>

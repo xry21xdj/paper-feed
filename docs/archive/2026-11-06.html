@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Bus &amp; Transport Research Feed</title>
+<meta name="description" content="Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration">
+<link rel="alternate" type="application/rss+xml" title="E-Bus &amp; Transport Research Feed" href="../feed.xml">
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --ink: #1d1f23; --muted: #62666d; --line: #e3e3df;
+  --accent: #2f5bd3; --chip: #eef1f8;
+  --hi: #1f7a4d; --hi-bg: #e3f3ea; --mid: #8a6a12; --mid-bg: #faf1d7; --lo: #62666d; --lo-bg: #ececea;
+  --arxiv: #b31b1b; --elsevier: #e9711c; --ieee: #00629b; --informs: #6a3d9a; --springer: #0f7f74; --conf: #3d6b1f; --other: #62666d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+    --accent: #8ea8ff; --chip: #262b35;
+    --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+    --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --conf: #a6d97a; --other: #9a9ea6;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+  --accent: #8ea8ff; --chip: #262b35;
+  --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+  --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --conf: #a6d97a; --other: #9a9ea6;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 28px 16px 64px; }
+header h1 { font-size: 1.55rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--muted); }
+.daybar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 22px 0 14px; }
+.daybar h2 { margin: 0; font-size: 1.15rem; }
+.daybar .meta { color: var(--muted); font-size: 0.88rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 18px; }
+.chip { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip .n { opacity: 0.7; margin-left: 4px; }
+.controls input, .controls select { font: inherit; font-size: 0.88rem; padding: 6px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.controls input { flex: 1 1 180px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+  margin-bottom: 10px; display: grid; grid-template-columns: 44px 1fr; gap: 0 14px; }
+.score { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center;
+  font-weight: 700; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.s-hi { color: var(--hi); background: var(--hi-bg); }
+.s-mid { color: var(--mid); background: var(--mid-bg); }
+.s-lo { color: var(--lo); background: var(--lo-bg); }
+.card h3 { margin: 0 0 3px; font-size: 1.02rem; line-height: 1.35; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.by { color: var(--muted); font-size: 0.85rem; }
+.venue { font-size: 0.83rem; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.pub { font-weight: 600; }
+.pub.arxiv { color: var(--arxiv); } .pub.elsevier { color: var(--elsevier); } .pub.ieee { color: var(--ieee); }
+.pub.informs { color: var(--informs); } .pub.springer { color: var(--springer); } .pub.conf { color: var(--conf); } .pub.other { color: var(--other); }
+.tag { font-size: 0.75rem; background: var(--chip); border-radius: 6px; padding: 1px 7px; color: var(--muted); }
+.reason { margin: 8px 0 0; }
+details { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
+details summary { cursor: pointer; }
+.empty { color: var(--muted); padding: 28px 0; text-align: center; }
+.archive { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+.archive h2 { font-size: 1rem; margin: 0 0 10px; }
+.archive ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.archive a { display: inline-block; padding: 4px 10px; border-radius: 8px; background: var(--surface);
+  border: 1px solid var(--line); font-size: 0.85rem; text-decoration: none; color: var(--ink); }
+.archive a.cur { border-color: var(--accent); color: var(--accent); }
+footer { margin-top: 28px; color: var(--muted); font-size: 0.8rem; }
+.theme { float: right; }
+@media (max-width: 520px) {
+  .card { grid-template-columns: 1fr; }
+  .score { width: auto; height: auto; justify-self: start; padding: 2px 10px; margin-bottom: 6px; font-size: 0.95rem; }
+}
+</style>
+<script>
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <button class="chip theme" id="theme" type="button" aria-label="Toggle colour theme">◐</button>
+  <h1>E-Bus &amp; Transport Research Feed</h1>
+  <p>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</p>
+</header>
+
+<div class="daybar">
+  <h2>Today · 2026-11-06</h2>
+  <span class="meta">5 relevant of 30 screened · 588 new papers fetched</span>
+</div>
+
+<div class="controls" role="group" aria-label="Filters">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">5</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">3</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <select id="sort" aria-label="Sort">
+    <option value="score">By relevance</option>
+    <option value="date">By date</option>
+    <option value="venue">By venue</option>
+  </select>
+</div>
+
+<main id="list">
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-05" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="bi-level multi-objective electric vehicle charging infrastructure planning for private developers considering ev charging choices jinhao li hao wang hai l vu sarah goodwin mark wallace ieee trans. transportation electrification">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tte.2026.3750587" target="_blank" rel="noopener">Bi-Level Multi-Objective Electric Vehicle Charging Infrastructure Planning for Private Developers Considering EV Charging Choices</a></h3>
+<div class="by">Jinhao Li, Hao Wang, Hai L Vu, Sarah Goodwin et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-05</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Bi-level planning of EV charging infrastructure accounting for driver charging choices in an IEEE transportation electrification venue, close to charging infrastructure planning interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-05" data-venue="Transportation Research Part C"
+           data-text="bus bunching mitigation through modular technology: a unified strategy with bus splitting and modular substitution anran dai kaidi yang transportation research part c">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106111" target="_blank" rel="noopener">Bus bunching mitigation through modular technology: A unified strategy with bus splitting and modular substitution</a></h3>
+<div class="by">Anran Dai, Kaidi Yang</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part C</span><span class="by">2026-11-05</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Bus bunching mitigation via bus splitting and modular substitution directly addresses transit operations and fleet strategy.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-05" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="coordinated scheduling of a hydrogen-assisted integrated energy-transportation system shijie yang peng li zelong zhang lei wang yuhua du yigeng huangfu ieee trans. transportation electrification">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tte.2026.3750722" target="_blank" rel="noopener">Coordinated Scheduling of a Hydrogen-Assisted Integrated Energy-Transportation System</a></h3>
+<div class="by">Shijie Yang, Peng Li, Zelong Zhang, Lei Wang et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-05</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Coordinated scheduling of a hydrogen-assisted integrated energy-transportation system addresses joint transport-energy optimisation, closely matching transport-grid integration interests.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-04" data-venue="arXiv eess.SY"
+           data-text="analyzing simultaneous charging factors of electric vehicles using monte carlo simulation: a case study in phu quoc city, vietnam tien khai nguyen trong nghia le arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.06145" target="_blank" rel="noopener">Analyzing Simultaneous Charging Factors of Electric Vehicles Using Monte Carlo Simulation: A Case Study in Phu Quoc City, Vietnam</a></h3>
+<div class="by">Tien Khai Nguyen, Trong Nghia Le</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-04</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Monte Carlo estimate of simultaneous EV charging including electric buses, informing transformer sizing and time-of-use planning; adjacent to bus depot grid impact.</p>
+      <details><summary>Abstract</summary><p>This study estimates the simultaneous charging factor (SCF) of electric vehicles (EVs) in Phu Quoc City, Vietnam, using a Monte Carlo simulation. Three planning scenarios (2030, 2035, and 2040) are developed from population-based EV uptake assumptions and vehicle-specific charging probability profiles over 24 hours, reflecting distinct operating patterns of motorbikes, cars, taxis, and buses. For each vehicle class and scenario, 1,000 simulation runs are performed to compute SCF and its uncertainty, reported via 95% confidence intervals. Results indicate that SCF decreases as EV penetration increases, implying more temporally dispersed charging demand and a reduced likelihood of extreme coincidence. For electric buses, SCF declines from 0.76 (2030) to 0.59 (2040), and other vehicle groups show similarly decreasing trends across the horizon. These SCF estimates provide practical inputs for grid-aware charging infrastructure planning, including diversity factors for sizing distribution transformers and feeders, identifying peak-hour stress, and informing demand management measures such as time of use tariffs and basic smart charging controls.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-04" data-venue="arXiv cs.CE"
+           data-text="intersim: innovative intersection digital twins for human-in-the-loop driving simulation luyang jiang chuheng wei yaguang li shaoqi wang yupeng zhou hyunsoo yun xishun liao brandon pitts ziran wang arxiv cs.ce">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.05968" target="_blank" rel="noopener">InterSim: Innovative Intersection Digital Twins for Human-in-the-Loop Driving Simulation</a></h3>
+<div class="by">Luyang Jiang, Chuheng Wei, Yaguang Li, Shaoqi Wang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-04</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Unity-based human-in-the-loop intersection digital twin with surrogate safety and eco-driving studies; relevant simulation methodology but not calibrated bus operations.</p>
+      <details><summary>Abstract</summary><p>Innovative intersection designs can improve roadway safety and operational efficiency, but their uncommon geometries may create challenges for driver comprehension during early deployment. Evaluating these designs through full-scale field implementation can also be costly. This paper presents InterSim, a Unity game engine-based human-in-the-loop (HITL) driving simulator that constructs digital twins of site-specific innovative intersections in a virtual environment. InterSim links the real world and the simulation world through two closed cycles: a digital twin cycle that builds each intersection twin from agency design and traffic data and returns evidence from simulation to the agency, and an HITL cycle in which human drivers or automated driving algorithms operate the ego vehicle under identical scenario conditions. The research capabilities of InterSim are demonstrated through two case studies: a surrogate safety study compares post-encroachment time distributions between a Reduced Conflict Intersection and a standard intersection under different traffic volumes; an eco-driving study compares human drivers with a rule-based agent using vehicle-to-infrastructure information and reveals differences in emission and driving behavior. These studies demonstrate that InterSim provides a reusable digital twin platform for investigating innovative intersection designs from diverse perspectives. Demo video and open-source code can be accessed at https://purduedigitaltwin.github.io/InterSim/</p></details>
+    </div>
+  </article>
+</main>
+<p class="empty" id="none" hidden>No papers match this filter.</p>
+
+<nav class="archive" aria-label="Previous days">
+  <h2>Previous days</h2>
+  <ul>
+    <li><a href="../archive/2026-11-06.html" class="cur" aria-current="page">2026-11-06 · 5</a></li>
+    <li><a href="../archive/2026-11-05.html">2026-11-05 · 3</a></li>
+    <li><a href="../archive/2026-11-04.html">2026-11-04 · 33</a></li>
+    <li><a href="../archive/2026-11-03.html">2026-11-03 · 3</a></li>
+    <li><a href="../archive/2026-11-02.html">2026-11-02 · 10</a></li>
+  </ul>
+</nav>
+
+<footer>
+  Sources: arXiv; IEEE, Elsevier, INFORMS and Springer Nature journals (Crossref, OpenAlex); top CS conferences (OpenAlex; ICML and ICLR via arXiv).
+  Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
+  Updated 2026-11-06 00:54 UTC · <a href="../feed.xml">RSS</a></footer>
+</div>
+
+<script>
+(() => {
+  const btn = document.getElementById("theme");
+  btn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+
+  const list = document.getElementById("list");
+  if (!list) return;
+  const cards = [...list.querySelectorAll(".card")];
+  const chips = [...document.querySelectorAll(".chip[data-topic]")];
+  const q = document.getElementById("q"), sort = document.getElementById("sort"), none = document.getElementById("none");
+  let topic = "";
+
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const c of cards) {
+      const ok = (!topic || c.dataset.topic === topic) && (!term || c.dataset.text.includes(term));
+      c.hidden = !ok; shown += ok;
+    }
+    none.hidden = shown > 0;
+  }
+  chips.forEach(ch => ch.addEventListener("click", () => {
+    topic = ch.dataset.topic;
+    chips.forEach(x => x.setAttribute("aria-pressed", String(x === ch)));
+    apply();
+  }));
+  q.addEventListener("input", apply);
+  sort.addEventListener("change", () => {
+    const key = sort.value;
+    const cmp = {
+      score: (a, b) => b.dataset.score - a.dataset.score,
+      date: (a, b) => b.dataset.date.localeCompare(a.dataset.date) || b.dataset.score - a.dataset.score,
+      venue: (a, b) => a.dataset.venue.localeCompare(b.dataset.venue) || b.dataset.score - a.dataset.score,
+    }[key];
+    cards.sort(cmp).forEach(c => list.appendChild(c));
+  });
+})();
+</script>
+</body>
+</html>

@@ -5,6 +5,46 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[8] Bi-Level Multi-Objective Electric Vehicle Charging Infrastructure Planning for Private Developers Considering EV Charging Choices</title>
+    <link>https://doi.org/10.1109/tte.2026.3750587</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3750587</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Jinhao Li, Hao Wang, Hai L Vu, Sarah Goodwin et al. — Bi-level planning of EV charging infrastructure accounting for driver charging choices in an IEEE transportation electrification venue, close to charging infrastructure planning interests.</description>
+  </item>
+  <item>
+    <title>[8] Bus bunching mitigation through modular technology: A unified strategy with bus splitting and modular substitution</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106111</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106111</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part C · Anran Dai, Kaidi Yang — Bus bunching mitigation via bus splitting and modular substitution directly addresses transit operations and fleet strategy.</description>
+  </item>
+  <item>
+    <title>[7] Coordinated Scheduling of a Hydrogen-Assisted Integrated Energy-Transportation System</title>
+    <link>https://doi.org/10.1109/tte.2026.3750722</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3750722</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Shijie Yang, Peng Li, Zelong Zhang, Lei Wang et al. — Coordinated scheduling of a hydrogen-assisted integrated energy-transportation system addresses joint transport-energy optimisation, closely matching transport-grid integration interests.</description>
+  </item>
+  <item>
+    <title>[6] Analyzing Simultaneous Charging Factors of Electric Vehicles Using Monte Carlo Simulation: A Case Study in Phu Quoc City, Vietnam</title>
+    <link>https://arxiv.org/abs/2611.06145</link>
+    <guid isPermaLink="false">arxiv:2611.06145</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Tien Khai Nguyen, Trong Nghia Le — Monte Carlo estimate of simultaneous EV charging including electric buses, informing transformer sizing and time-of-use planning; adjacent to bus depot grid impact.</description>
+  </item>
+  <item>
+    <title>[6] InterSim: Innovative Intersection Digital Twins for Human-in-the-Loop Driving Simulation</title>
+    <link>https://arxiv.org/abs/2611.05968</link>
+    <guid isPermaLink="false">arxiv:2611.05968</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>arXiv cs.CE · Luyang Jiang, Chuheng Wei, Yaguang Li, Shaoqi Wang et al. — Unity-based human-in-the-loop intersection digital twin with surrogate safety and eco-driving studies; relevant simulation methodology but not calibrated bus operations.</description>
+  </item>
+  <item>
     <title>[8] When does an agentic aggregator add value? Evidence from electric bus depot charging and V2G pricing</title>
     <link>https://doi.org/10.1016/j.trc.2026.106105</link>
     <guid isPermaLink="false">doi:10.1016/j.trc.2026.106105</guid>
