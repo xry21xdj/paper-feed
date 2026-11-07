@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-07</h2>
-  <span class="meta">2 relevant of 10 screened · 376 new papers fetched</span>
+  <h2>Today · 2026-11-08</h2>
+  <span class="meta">2 relevant of 14 screened · 493 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
   <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">2</span></button>
-<button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM agents for transport/OR<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,28 +107,28 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-06" data-venue="IEEE Trans. Transportation Electrification"
-           data-text="robust coupled power transportation network equilibrium for heterogeneous electric vehicles considering charging station utilization wenxu xiang su su qiujiang liu xiaobo nie xuehui du zhi pei yingya liu qingxue kong ieee trans. transportation electrification">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-07" data-venue="Transportation Research Part C"
+           data-text="multi-source data-driven electric bus wireless charging scheduling and facility location problem: a physics-informed benders decomposition algorithm taolue chen hongshen chen xingwei xu jinjun tang hongxing chen benxiao lou transportation research part c">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://doi.org/10.1109/tte.2026.3751065" target="_blank" rel="noopener">Robust Coupled Power Transportation Network Equilibrium for Heterogeneous Electric Vehicles Considering Charging Station Utilization</a></h3>
-<div class="by">Wenxu Xiang, Su Su, Qiujiang Liu, Xiaobo Nie et al.</div>      <div class="venue">
-        <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-06</span>
-<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Couples power and transport networks with heterogeneous EVs and charging station utilisation, touching charging infrastructure and transport-grid integration.</p>
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106122" target="_blank" rel="noopener">Multi-source data-driven electric bus wireless charging scheduling and facility location problem: A physics-informed Benders decomposition algorithm</a></h3>
+<div class="by">Taolue Chen, Hongshen Chen, Xingwei Xu, Jinjun Tang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part C</span><span class="by">2026-11-07</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Electric bus wireless charging scheduling and facility location with Benders decomposition directly matches the researcher&#39;s e-bus charging optimisation work.</p>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-06" data-venue="Transportation Research Part E"
-           data-text="llm-aided heuristic for the extended truck-drone-collection station delivery problem with dual-mode collaboration and drone multi-visit yixuan zhai ping chen jianhua xiao liujiang kang qianlong wang transportation research part e">
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-07" data-venue="Transportation Research Part C"
+           data-text="a day-to-day travel time anticipation and learning framework under imperfect information dimitrios pappelis emmanouil chaniotakis transportation research part c">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.tre.2026.105366" target="_blank" rel="noopener">LLM-aided heuristic for the extended truck-drone-collection station delivery problem with dual-mode collaboration and drone multi-visit</a></h3>
-<div class="by">Yixuan Zhai, Ping Chen, Jianhua Xiao, Liujiang Kang et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106121" target="_blank" rel="noopener">A day-to-day travel time anticipation and learning framework under imperfect information</a></h3>
+<div class="by">Dimitrios Pappelis, Emmanouil Chaniotakis</div>      <div class="venue">
         <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part E</span><span class="by">2026-11-06</span>
-<span class="tag">LLM agents for transport/OR</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Uses an LLM-aided heuristic for a truck-drone routing problem; relevant to LLM+optimisation methods but the drone delivery setting is not electrified transit.</p>
+        <span>Transportation Research Part C</span><span class="by">2026-11-07</span>
+<span class="tag">Traffic simulation &amp; calibration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Day-to-day travel time learning under imperfect information is adjacent traffic modelling useful as background for simulation behaviour.</p>
     </div>
   </article>
 </main>
@@ -137,7 +137,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-07.html" class="cur" aria-current="page">2026-11-07 · 2</a></li>
+    <li><a href="archive/2026-11-08.html" class="cur" aria-current="page">2026-11-08 · 2</a></li>
+    <li><a href="archive/2026-11-07.html">2026-11-07 · 2</a></li>
     <li><a href="archive/2026-11-06.html">2026-11-06 · 5</a></li>
     <li><a href="archive/2026-11-05.html">2026-11-05 · 3</a></li>
     <li><a href="archive/2026-11-04.html">2026-11-04 · 33</a></li>
@@ -149,7 +150,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS and Springer Nature journals (Crossref, OpenAlex); top CS conferences (OpenAlex; ICML and ICLR via arXiv).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-07 00:01 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-07 23:32 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>

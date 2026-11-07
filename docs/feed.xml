@@ -5,6 +5,22 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[9] Multi-source data-driven electric bus wireless charging scheduling and facility location problem: A physics-informed Benders decomposition algorithm</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106122</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106122</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part C · Taolue Chen, Hongshen Chen, Xingwei Xu, Jinjun Tang et al. — Electric bus wireless charging scheduling and facility location with Benders decomposition directly matches the researcher&#39;s e-bus charging optimisation work.</description>
+  </item>
+  <item>
+    <title>[6] A day-to-day travel time anticipation and learning framework under imperfect information</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106121</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106121</guid>
+    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>Transportation Research Part C · Dimitrios Pappelis, Emmanouil Chaniotakis — Day-to-day travel time learning under imperfect information is adjacent traffic modelling useful as background for simulation behaviour.</description>
+  </item>
+  <item>
     <title>[7] Robust Coupled Power Transportation Network Equilibrium for Heterogeneous Electric Vehicles Considering Charging Station Utilization</title>
     <link>https://doi.org/10.1109/tte.2026.3751065</link>
     <guid isPermaLink="false">doi:10.1109/tte.2026.3751065</guid>
