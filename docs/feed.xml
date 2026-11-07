@@ -5,6 +5,22 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
   <item>
+    <title>[7] Robust Coupled Power Transportation Network Equilibrium for Heterogeneous Electric Vehicles Considering Charging Station Utilization</title>
+    <link>https://doi.org/10.1109/tte.2026.3751065</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3751065</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Wenxu Xiang, Su Su, Qiujiang Liu, Xiaobo Nie et al. — Couples power and transport networks with heterogeneous EVs and charging station utilisation, touching charging infrastructure and transport-grid integration.</description>
+  </item>
+  <item>
+    <title>[6] LLM-aided heuristic for the extended truck-drone-collection station delivery problem with dual-mode collaboration and drone multi-visit</title>
+    <link>https://doi.org/10.1016/j.tre.2026.105366</link>
+    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105366</guid>
+    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM agents for transport/OR</category>
+    <description>Transportation Research Part E · Yixuan Zhai, Ping Chen, Jianhua Xiao, Liujiang Kang et al. — Uses an LLM-aided heuristic for a truck-drone routing problem; relevant to LLM+optimisation methods but the drone delivery setting is not electrified transit.</description>
+  </item>
+  <item>
     <title>[8] Bi-Level Multi-Objective Electric Vehicle Charging Infrastructure Planning for Private Developers Considering EV Charging Choices</title>
     <link>https://doi.org/10.1109/tte.2026.3750587</link>
     <guid isPermaLink="false">doi:10.1109/tte.2026.3750587</guid>
