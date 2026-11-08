@@ -8,12 +8,14 @@ import xml.etree.ElementTree as ET
 
 import httpx
 
+from feed.filter import all_keywords
 from feed.models import Paper, clean
 
 API = "https://export.arxiv.org/api/query"
 NS = {"a": "http://www.w3.org/2005/Atom", "x": "http://arxiv.org/schemas/atom"}
 VENUES = ("NeurIPS", "ICML", "ICLR", "AAAI", "IJCAI", "KDD", "AAMAS", "ICAPS", "ACL", "EMNLP", "NAACL",
-          "ITSC", "e-Energy", "CPAIOR", "WWW", "CDC", "ACC")
+          "ITSC", "e-Energy", "CPAIOR", "WWW", "CDC", "ACC", "GECCO", "CIKM", "SIGSPATIAL", "ICCPS",
+          "BuildSys", "AISTATS", "UAI", "COLM")
 # "Accepted at ICLR 2026", "NeurIPS'25 camera-ready", ... but not workshop papers.
 VENUE_RE = re.compile(r"\b(" + "|".join(re.escape(v) for v in VENUES) + r")\s*['’]?\s*((?:20)?\d\d)\b")
 
@@ -36,7 +38,7 @@ def _term(kw: str) -> str:
 
 def fetch(cfg: dict, since: dt.date, client: httpx.Client) -> list[Paper]:
     cats = " OR ".join(f"cat:{c}" for c in cfg["arxiv"]["categories"])
-    keywords = sorted({k for t in cfg["topics"].values() for k in t["keywords"]})
+    keywords = all_keywords(cfg)
     # arXiv's query length is limited, so split the keywords into a few queries.
     chunks = [keywords[i:i + 15] for i in range(0, len(keywords), 15)]
     per_query = max(50, cfg["arxiv"]["max_results"] // len(chunks))

@@ -2,7 +2,7 @@
 
 site:
   title: "E-Bus & Transport Research Feed"
-  subtitle: "Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration"
+  subtitle: "Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration"
   author: "Renyou Xie, UNSW"
   base_url: "https://xry21xdj.github.io/paper-feed/"   # used in feed.xml links
 
@@ -18,10 +18,18 @@ profile: |
     surrogates, identifiability analysis; validation on blind hold-out data; energy consumption of buses.
   - LLM agents for transport and operations research: agents that run simulation/optimisation pipelines,
     LLM + optimisation, multi-agent LLM decision making for transit disruptions and emergencies.
+  - Agentic AI in general (top AI venues: NeurIPS, ICML, ICLR, AAAI, IJCAI, AAMAS): LLM agents that plan,
+    use tools and write code, multi-agent LLM systems, agent workflows for scientific/engineering tasks,
+    evaluation and reliability of agents. Relevant even without a transport application; most relevant
+    when the agents plan, optimise, run simulations or make operational decisions.
+  - AI for optimisation: learning to optimise, neural combinatorial optimisation (routing, scheduling),
+    ML-guided MILP solving (learning to branch/cut, learned heuristics, warm starts), LLMs that formulate
+    optimisation models or design heuristics/algorithms, RL for scheduling and dispatching.
   - Transport-grid integration: bus depot and opportunity charging impact on distribution networks,
     V2G, aggregators, charging flexibility, electricity price uncertainty (e.g. AEMO NEM).
   Less relevant: battery chemistry/materials, private-car consumer adoption surveys, autonomous-driving
-  perception, freight-only logistics without electrification, generic deep learning without transport.
+  perception, freight-only logistics without electrification, generic deep learning or LLM papers
+  (pre-training, fine-tuning, vision, chat benchmarks) that are neither agentic nor about optimisation.
 
 topics:
   ebus:
@@ -36,9 +44,31 @@ topics:
                bayesian optimization, bayesian optimisation, surrogate model, gaussian process,
                GTFS, bus line, bus route, travel time, dwell time, transit simulation, digital twin]
   llm:
-    label: "LLM agents for transport/OR"
-    keywords: [large language model, LLM, language agent, multi-agent, agentic, foundation model,
-               GPT, generative AI]
+    label: "LLM & agentic AI"
+    keywords: [large language model, LLM, language model, multi-agent, foundation model, GPT, generative AI]
+    # Enough on their own: no transport/optimisation context needed.
+    free_keywords: [agentic, AI agent, LLM agent, LLM-based agent, language agent, autonomous agent,
+                    multi-agent LLM, agent workflow, agentic workflow, tool-augmented, tool use, tool-use]
+    # Besides anchor_keywords below, these also count as context for this topic.
+    anchors: [optimization problem, optimisation problem, combinatorial optimization,
+              combinatorial optimisation, mathematical optimization, mathematical optimisation,
+              operations research, MILP, mixed-integer, integer programming, linear programming,
+              scheduling, routing, solver, heuristic, simulation, decision-making, decision making]
+  ai4opt:
+    label: "AI for optimisation"
+    keywords: [combinatorial optimization, combinatorial optimisation, mixed-integer, MILP, integer programming,
+               linear programming, routing problem, scheduling problem, optimization problem,
+               optimisation problem, branch-and-bound, branch and bound, metaheuristic, heuristic design,
+               solver, dispatching]
+    free_keywords: [learning to optimize, learning to optimise, learning-to-optimize, L2O,
+                    neural combinatorial optimization, neural combinatorial optimisation, learning to branch, learning to cut, learning-augmented,
+                    neural solver, neural heuristic, optimization modeling, optimisation modelling,
+                    optimization formulation, automated heuristic design, automatic heuristic design,
+                    algorithm discovery, evolution of heuristics, AI for optimization, AI for optimisation,
+                    machine learning for optimization, ML for optimization]
+    anchors: [machine learning, deep learning, reinforcement learning, neural network, graph neural,
+              GNN, transformer, LLM, large language model, language model, learning-based, learned,
+              data-driven, generative, imitation learning]
   grid:
     label: "Transport-grid integration"
     keywords: [vehicle-to-grid, V2G, grid integration, distribution network, power grid, aggregator,
@@ -46,15 +76,16 @@ topics:
                power system, renewable]
 
 # A candidate must also mention at least one anchor term (transport / EV context), otherwise
-# generic LLM, calibration or power-system papers would flood the feed. Papers from journals marked
-# `anchor: true` (transport journals) skip this check.
+# generic LLM, calibration or power-system papers would flood the feed. Exceptions: a topic's
+# `free_keywords` need no context, its `anchors` count as context for that topic, and papers from
+# journals/conferences marked `anchor: true` (transport venues) skip the check.
 anchor_keywords: [bus, buses, transit, public transport, vehicle, EV, EVs, electric vehicle, charging,
                   charger, traffic, mobility, fleet, transportation, transport network, road network,
                   ride-hailing, vehicle routing]
 
 arxiv:
-  categories: [math.OC, eess.SY, cs.AI, cs.MA, cs.LG, cs.CE, physics.soc-ph]
-  max_results: 400
+  categories: [math.OC, eess.SY, cs.AI, cs.MA, cs.LG, cs.CE, cs.NE, physics.soc-ph]
+  max_results: 1000
 
 # Journals: fetched from Crossref by ISSN. `gated: true` = high-volume journal, keep only papers
 # that hit at least two keywords. `anchor: true` = transport journal (see anchor_keywords).
@@ -79,28 +110,49 @@ journals:
   - {name: "Public Transport", anchor: true, publisher: Springer Nature, issn: 1613-7159}
   - {name: "OR Spectrum", publisher: Springer Nature, issn: 0171-6468}
   - {name: "Transportation", anchor: true, publisher: Springer Nature, issn: 0049-4488}
+  - {name: "ACM Trans. Intelligent Systems and Technology", publisher: ACM, issn: 2157-6904}
+  - {name: "ACM Trans. Evolutionary Learning and Optimization", publisher: ACM, issn: 2688-299X}
+  - {name: "ACM Trans. Knowledge Discovery from Data", publisher: ACM, issn: 1556-4681}
+  - {name: "ACM Trans. Spatial Algorithms and Systems", publisher: ACM, issn: 2374-0353}
+  - {name: "ACM Trans. Cyber-Physical Systems", publisher: ACM, issn: 2378-962X}
+  - {name: "ACM Trans. Autonomous and Adaptive Systems", publisher: ACM, issn: 1556-4665}
+  - {name: "ACM Trans. Modeling and Computer Simulation", publisher: ACM, issn: 1049-3301}
+  - {name: "ACM Journal on Autonomous Transportation Systems", anchor: true, publisher: ACM, issn: 2833-0528}
+  - {name: "ACM Computing Surveys", publisher: ACM, issn: 0360-0300, gated: true}
 
-# Conferences: fetched from OpenAlex by source ID (https://api.openalex.org/sources?search=<name>).
-# ICML and ICLR are not indexed there (OpenReview/PMLR); their papers reach the feed through arXiv,
-# tagged with the venue when the arXiv comment says "accepted at ICML 2026" etc.
+# NeurIPS, ICML and ICLR publish their full accepted-paper lists on the conference websites (titles
+# and authors, no abstracts); abstracts are looked up on OpenAlex, usually from the arXiv version.
+paper_lists:
+  - {name: NeurIPS, url: "https://neurips.cc/static/virtual/data/neurips-{year}-orals-posters.json"}
+  - {name: ICML, url: "https://icml.cc/static/virtual/data/icml-{year}-orals-posters.json"}
+  - {name: ICLR, url: "https://iclr.cc/static/virtual/data/iclr-{year}-orals-posters.json"}
+
+# Other conferences: fetched from OpenAlex by source ID (https://api.openalex.org/sources?search=<name>).
 conferences:
   # AI / ML
   - {name: NeurIPS, openalex: S4363606243}
   - {name: AAAI, openalex: S4210191458}
   - {name: IJCAI, openalex: S4306419999}
-  - {name: KDD, openalex: S4363608767}
-  # agents, planning, LLMs
+  # agents, planning, optimisation, LLMs
   - {name: AAMAS, openalex: S4306417597}
   - {name: ICAPS, openalex: S4387283601}
+  - {name: ACM GECCO, openalex: S4363608932}
   - {name: ACL, openalex: S4393915740}
   - {name: EMNLP, openalex: S4363608991}
-  # transport, energy
+  # ACM data mining, web, spatial
+  - {name: ACM KDD, openalex: S4363608767}
+  - {name: ACM WWW, openalex: S7407088480}
+  - {name: ACM CIKM, openalex: S4393918199}
+  - {name: ACM SIGSPATIAL, openalex: S7407088447}
+  # transport, energy, cyber-physical systems
   - {name: IEEE ITSC, openalex: S4363607737, anchor: true}
   - {name: ACM e-Energy, openalex: S7407086837}
+  - {name: ACM BuildSys, openalex: S7407086927}
+  - {name: ACM/IEEE ICCPS, openalex: S7407086865}
 
 fetch:
   days_back: 3           # overlap window; already-seen papers are skipped
-  max_candidates: 300    # cap on papers sent to Claude per day
+  max_candidates: 1000   # cap on papers sent to Claude per day (the rest wait for the next day)
 
 scoring:
   use_llm: true          # false = keyword scores only (no API key or credit needed)

@@ -3,7 +3,7 @@
 <channel>
   <title>E-Bus &amp; Transport Research Feed</title>
   <link>https://xry21xdj.github.io/paper-feed/</link>
-  <description>Daily papers on electric-bus operations, traffic simulation, LLM agents and grid integration</description>
+  <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
     <title>[9] Multi-source data-driven electric bus wireless charging scheduling and facility location problem: A physics-informed Benders decomposition algorithm</title>
     <link>https://doi.org/10.1016/j.trc.2026.106122</link>
@@ -33,7 +33,7 @@
     <link>https://doi.org/10.1016/j.tre.2026.105366</link>
     <guid isPermaLink="false">doi:10.1016/j.tre.2026.105366</guid>
     <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>Transportation Research Part E · Yixuan Zhai, Ping Chen, Jianhua Xiao, Liujiang Kang et al. — Uses an LLM-aided heuristic for a truck-drone routing problem; relevant to LLM+optimisation methods but the drone delivery setting is not electrified transit.</description>
   </item>
   <item>
@@ -129,7 +129,7 @@
     <link>https://doi.org/10.1145/3770855.3818649</link>
     <guid isPermaLink="false">doi:10.1145/3770855.3818649</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>KDD 2026 · Roman Sultimov, Daniil Efimov, Mikhail Kuzin, Ivan Novikov et al. — Mines reusable decision episodes from SUMO urban evacuation simulations for safety-critical traffic decisions; closely matches simulation-based multi-agent decision support.</description>
   </item>
   <item>
@@ -225,7 +225,7 @@
     <link>https://doi.org/10.1145/3770855.3818875</link>
     <guid isPermaLink="false">doi:10.1145/3770855.3818875</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>KDD 2026 · Seungyoung Shin, Donggeun Oh, Yongho Jeon, Jinju Noh et al. — Sequential behaviour-based detection of bulk refund booking in railway ticketing with LLM explanations; public transport analytics with LLM-assisted interpretation.</description>
   </item>
   <item>
@@ -241,7 +241,7 @@
     <link>https://doi.org/10.1145/3770855.3818979</link>
     <guid isPermaLink="false">doi:10.1145/3770855.3818979</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>KDD 2026 · Ao Wang, Zhiwen Chen, Shen Wang, Qiang Xia et al. — VLM-based door-to-door mobility planning with routing tools; adjacent to LLM-plus-routing agents for urban transport.</description>
   </item>
   <item>
@@ -265,7 +265,7 @@
     <link>https://doi.org/10.65109/seyr5220</link>
     <guid isPermaLink="false">doi:10.65109/seyr5220</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>AAMAS 2026 · Roman Sultimov, Aleksandr Volkov, Mile Mitrovic, Yury Maximov — LLM Commander issuing routing decisions in a multi-agent evacuation simulation; relevant to LLM agents for transit/emergency decisions, though wildfire focus differs.</description>
   </item>
   <item>
@@ -273,7 +273,7 @@
     <link>https://doi.org/10.24963/ijcai.2026/958</link>
     <guid isPermaLink="false">doi:10.24963/ijcai.2026/958</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>IJCAI 2026 · Marouane Benbrahim, Kavya Gautam, Zonghan Zhang, Zhiqian Chen — LLM tool orchestration coupling SUMO traffic with PyPSA power flow and V2G for EV charging stress; relevant to agent pipelines and grid integration.</description>
   </item>
   <item>
@@ -329,7 +329,7 @@
     <link>https://doi.org/10.18653/2026.emnlp-main.1966</link>
     <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1966</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>EMNLP 2026 · Huaitao Zhao, Tianlong Zhou, Weijie Wang, Jiasheng Shi et al. — LLM reasoning with step-level RL for traffic signal control; LLM-based traffic decision-making adjacent to the researcher&#39;s interests.</description>
   </item>
   <item>
@@ -361,7 +361,7 @@
     <link>https://arxiv.org/abs/2611.02738</link>
     <guid isPermaLink="false">arxiv:2611.02738</guid>
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.MA · Xiangyun Luo, Yunkai Zhang, Yong Huang, Stephen Wu et al. — LLM multi-agent system for bridge operation and maintenance, a transport infrastructure application of agentic decision-making.</description>
   </item>
   <item>
@@ -441,7 +441,7 @@
     <link>https://arxiv.org/abs/2610.40503</link>
     <guid isPermaLink="false">arxiv:2610.40503</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.AI · Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao — LLM-driven world-model construction with Lean proofs for reachability; a generic agent paper with limited transport or OR overlap despite its agentic framing.</description>
   </item>
   <item>
@@ -465,7 +465,7 @@
     <link>https://arxiv.org/abs/2610.39275</link>
     <guid isPermaLink="false">arxiv:2610.39275</guid>
     <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM agents for transport/OR</category>
+    <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.AI · Chan-Eui Song, Jeremy J. Michalek, Christopher McComb — Integrates LLM guidance with black-box solvers for simulation-based redesign on an EV battery case; relevant LLM-plus-optimisation method.</description>
   </item>
 </channel>

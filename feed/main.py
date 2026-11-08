@@ -21,7 +21,7 @@ import yaml
 from feed import build, score
 from feed.filter import KeywordFilter
 from feed.models import Paper
-from feed.sources import arxiv, crossref, openalex
+from feed.sources import arxiv, crossref, openalex, paper_lists
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -59,6 +59,14 @@ def fetch_all(cfg: dict, since: dt.date, today: dt.date) -> tuple[list[tuple[Pap
             except (httpx.HTTPError, ValueError, KeyError) as e:
                 print(f"  {j['name']} failed: {e}")
                 counts[j["name"]] = -1
+        for pl in cfg.get("paper_lists", []):
+            try:
+                got = paper_lists.fetch(pl, today, client)
+                out += [(p, pl) for p in got]
+                counts[pl["name"] + " (paper list)"] = len(got)
+            except (httpx.HTTPError, ValueError, KeyError) as e:
+                print(f"  {pl['name']} paper list failed: {e}")
+                counts[pl["name"] + " (paper list)"] = -1
         try:
             for name, got in openalex.fetch_conferences(cfg, today, client).items():
                 conf = next(c for c in cfg["conferences"] if c["name"] == name)
