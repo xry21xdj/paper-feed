@@ -5,6 +5,1254 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[8] AgentSense: LLMs Empower Generalizable and Explainable Web-Based Participatory Urban Sensing</title>
+    <link>https://doi.org/10.1145/3774904.3792406</link>
+    <guid isPermaLink="false">doi:10.1145/3774904.3792406</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM WWW 2026 · Xusen Guo, Mingxing Peng, Xixuan Hao, Xingchen Zou et al. — Multi-agent LLM evolution refining urban sensing task assignment with explanations; combines agentic LLMs with planning and mobility data.</description>
+  </item>
+  <item>
+    <title>[8] AlphaSearch: Agentic AI for Price Arbitrage in Energy Systems</title>
+    <link>https://doi.org/10.1145/3770855.3818957</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818957</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM KDD 2026 · Millend Roy, Vladimir Pyltsov — Agentic AI framework for battery arbitrage under wholesale electricity price uncertainty, benchmarking optimisation and RL dispatch; close to the researcher&#39;s energy and price-uncertainty interests.</description>
+  </item>
+  <item>
+    <title>[8] CALM: Co-evolution of Algorithms and Language Model for Automatic Heuristic Design</title>
+    <link>https://openreview.net/forum?id=x6bG2Hoqdf</link>
+    <guid isPermaLink="false">iclr:2026:7a60da111333447a4ab4bb31897e314c</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICLR 2026 · Ziyao Huang, Weiwei Wu, Kui Wu, Wei-Bin Lee et al. — Co-evolves algorithms and language models for automatic heuristic design, closely aligned with LLM-designed heuristics for optimisation.</description>
+  </item>
+  <item>
+    <title>[8] Counterfactual Planning for Generalizable Agents’ Actions</title>
+    <link>https://doi.org/10.1609/aaai.v40i35.40184</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i35.40184</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Jiarun Fu, Lizhong Ding, Qiuning Wei, Yuhan Guo et al. — Keyword match: LLM &amp; agentic AI</description>
+  </item>
+  <item>
+    <title>[8] Evolving Interdependent Operators with Large Language Models for Multi-Objective Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=4AUtM4wsfE</link>
+    <guid isPermaLink="false">icml:2026:fe41bb826b6a3cd35fe36744936400b9</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICML 2026 · Junhao Qiu, Xin Chen, LiangGE, Liyong Lin et al. — LLMs evolve interdependent operators for multi-objective combinatorial optimisation, directly matching LLM-designed heuristics for scheduling-type problems.</description>
+  </item>
+  <item>
+    <title>[8] FormuEvo: LLM-Guided Evolution for Discovering Solver-Efficient Mixed-Integer Programming Formulations</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.221</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.221</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Haofeng Yuan, Jianing Peng, Jieyi Bi, Ni Zhang et al. — LLM-guided evolution discovers solver-efficient MIP formulations using solver feedback; directly on LLM-driven MILP modelling the researcher would build on.</description>
+  </item>
+  <item>
+    <title>[8] From Walls to Synergy: A Joint LLM-Evolution Framework for MILP Solvers</title>
+    <link>https://openreview.net/forum?id=NvJ3gFAFu1</link>
+    <guid isPermaLink="false">neurips:2026:70803c1acb1ee113c07ec6bddc4929bd</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Ziao Guo, Yuan Feng, Chenhao Ying, Junchi Yan — Joint LLM-evolution framework to improve MILP solvers; directly matches ML-guided MILP solving and LLM-designed heuristics.</description>
+  </item>
+  <item>
+    <title>[8] LLM-guided Cutting-plane Management for Mixed-integer Linear Programming</title>
+    <link>https://doi.org/10.24963/ijcai.2026/736</link>
+    <guid isPermaLink="false">doi:10.24963/ijcai.2026/736</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IJCAI 2026 · Zetao Zheng, Zhe Wang, Jie Shao — LLM-guided cut selection and separator configuration inside MILP branch-and-bound, closely matching ML-guided MILP solving interests.</description>
+  </item>
+  <item>
+    <title>[8] Learn to Coordinate City-Scale Virtual Power Plants: A Reasoning-Guided Evolutionary Framework for Hierarchical Heterogeneous Device Scheduling</title>
+    <link>https://doi.org/10.1145/3770855.3818440</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818440</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM KDD 2026 · Jinwei Zeng, Guozhen Zhang, Minbo Ma, Hongyuan Su et al. — LLM-driven evolutionary program search for city-scale virtual power plant scheduling under price signals; close to the researcher&#39;s grid and scheduling interests.</description>
+  </item>
+  <item>
+    <title>[8] Learn to Relax with Large Language Models: Solving Constraint Optimization Problems via Bidirectional Coevolution</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.48</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.48</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACL 2026 · Beidan Liu, Zhengqiu Zhu, Chen Gao, Tianle Pu et al. — LLM-driven constraint relaxation with MCTS and evolutionary coevolution for constraint optimisation; strong match for LLM plus OR methods.</description>
+  </item>
+  <item>
+    <title>[8] Learning Distributed Scheduling via LLM-Augmented Reinforcement Learning</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42883</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42883</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICAPS 2026 · Yun LIU, Yuqi Feng, Jiahao Fan, Shangce Gao et al. — LLM-augmented RL for distributed flexible job-shop scheduling with makespan gains; directly on learned scheduling and dispatching.</description>
+  </item>
+  <item>
+    <title>[8] SeqDiCO: Sequence-oriented Diffusion for Scale-Generalizable Neural Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=osLraeFVlW</link>
+    <guid isPermaLink="false">neurips:2026:0f304eddb4ad6007a3093fd6d963a1d2</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Yu Wang, Qiaolin Lu, Yang Wu, Bohao Qu et al. — Diffusion-based neural combinatorial optimisation that generalises across scales; directly relevant to learned routing and scheduling methods.</description>
+  </item>
+  <item>
+    <title>[7] Accountable AI with Grounded, Faithful, Consistent, Actionable Rationales: A Case Study in Clinical Trial Matching with VERDICT</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.2598</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.2598</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Zikai Zhou, Yufei Jin, Yilin Xu, Yu-Chiang Wang et al. — LLM agent translates decision tasks into SMT and MaxSMT solver models, a model-formulation approach to constrained decisions relevant to LLM-plus-optimisation work, though in clinical matching.</description>
+  </item>
+  <item>
+    <title>[7] AgentSwift: Efficient LLM Agent Design via Value-Guided Hierarchical Search</title>
+    <link>https://doi.org/10.1609/aaai.v40i38.40453</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i38.40453</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Yu Li, Lehui Li, Zhihao Wu, Qingmin Liao et al. — Automated LLM agent design via hierarchical MCTS with value model to cut evaluation cost; method directly relevant to agent design search.</description>
+  </item>
+  <item>
+    <title>[7] Bridging LLMs and SAT Solving: Automated Evolution of High-Performance Heuristics</title>
+    <link>https://doi.org/10.24963/ijcai.2026/257</link>
+    <guid isPermaLink="false">doi:10.24963/ijcai.2026/257</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IJCAI 2026 · Mao Luo, Hang Ding, Chu-Min Li, Junjie Zhang et al. — LLM-driven evolution of SAT solver heuristics, a learned-heuristic approach to combinatorial optimisation that matches the researcher&#39;s ML-guided solving interests.</description>
+  </item>
+  <item>
+    <title>[7] CO-Bench: Benchmarking Language Model Agents in Algorithm Search for Combinatorial Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i39.40596</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i39.40596</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Weiwei Sun, Shengyu Feng, Shanda Li, Yiming Yang — Benchmark for LLM agents designing algorithms for combinatorial optimisation problems, directly relevant to agentic optimisation research.</description>
+  </item>
+  <item>
+    <title>[7] CoCo-MILP: Inter-Variable Contrastive and Intra-Constraint Competitive MILP Solution Prediction</title>
+    <link>https://doi.org/10.1609/aaai.v40i29.39675</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i29.39675</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Tianle Pu, Jianing Li, Yingying Gao, Shixuan Liu et al. — GNN-based MILP solution prediction with contrastive loss; ML-guided MILP solving close to their optimisation interests.</description>
+  </item>
+  <item>
+    <title>[7] DRAGON: LLM-Driven Decomposition and Reconstruction Agents for Large-Scale Combinatorial Optimization</title>
+    <link>https://doi.org/10.65109/sbay6258</link>
+    <guid isPermaLink="false">doi:10.65109/sbay6258</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · Chen Shengkai, Zhiguang Cao, Jie Zhou, Yizhi Wu et al. — LLM agents decompose and reconstruct large routing problems with feedback memory, relevant to LLM-based optimisation pipelines and large-scale routing.</description>
+  </item>
+  <item>
+    <title>[7] Demo Abstract: LogiEx: An Interactive Logic-Guided LLM Framework for Explainable Transit Planning</title>
+    <link>https://doi.org/10.1109/iccps68698.2026.00033</link>
+    <guid isPermaLink="false">doi:10.1109/iccps68698.2026.00033</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM/IEEE ICCPS 2026 · Ziyan An, Xia Wang, Hendrik Baier, Zirong Chen et al. — LLM with formal logic explains MCTS planning for transit planning; directly touches transit operations and LLM-plus-planning explainability.</description>
+  </item>
+  <item>
+    <title>[7] Eliciting Chain-of-Thought in Base LLMs via Gradient-Based Representation Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i40.40669</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i40.40669</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Zijian Wang, Yanxiang Ma, Chang Xu — Keyword match: LLM &amp; agentic AI, AI for optimisation</description>
+  </item>
+  <item>
+    <title>[7] FLARE: Verifying MILP Reformulations with LLM-Based Formal Proof Synthesis</title>
+    <link>https://openreview.net/forum?id=sZLQvatATh</link>
+    <guid isPermaLink="false">neurips:2026:8ac8abb13b9fe96f24fe2cab11a18fc2</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Henry Robbins, Connor Lawless, Madeleine Udell, Ellen Vitercik — LLM-based verification of MILP reformulations via formal proofs; directly tied to MILP decomposition and reformulation methods the researcher uses.</description>
+  </item>
+  <item>
+    <title>[7] Federated Distributionally Robust Neural Combinatorial Optimization with Convergence Guarantees</title>
+    <link>https://openreview.net/forum?id=1JoBgRVNAk</link>
+    <guid isPermaLink="false">neurips:2026:ee89223a2b625b5152132ed77abbcc79</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Ryunosuke Hamada, Daisuke Hatano, Yuichi Takano — Federated distributionally robust neural combinatorial optimisation with convergence guarantees; relevant to learned routing/scheduling solvers and robust optimisation under uncertainty.</description>
+  </item>
+  <item>
+    <title>[7] G-STAR: Graph-based Scheduling with Trace-driven Adaptive Routing for Industrial LLM-based Multi-Agent Systems</title>
+    <link>https://doi.org/10.1145/3770855.3818421</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818421</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Jiabao Song, Yu Xia, Beibei Kong, Lei Cheng et al. — Graph-based GNN scheduling and routing for LLM multi-agent systems with latency and concurrency constraints; agentic orchestration close to operational decision making.</description>
+  </item>
+  <item>
+    <title>[7] GenePlan: Evolving Better Generalized PDDL Plans Using Large Language Models</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42885</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42885</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICAPS 2026 · Andrew Murray, Danial Dervovic, Alberto Pozanco, Michael Cashmore — LLM-evolved generalized PDDL planners minimising plan length; LLM-designed heuristics for planning closely matches AI-for-optimisation interests.</description>
+  </item>
+  <item>
+    <title>[7] Generative Branching for Mixed-Integer Linear Programming</title>
+    <link>https://doi.org/10.1609/aaai.v40i17.38450</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i17.38450</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Ruobing Wang, Xin Li, Yangchuan Wang, Zijian Zhang et al. — Diffusion-based learned branching for MILP branch-and-bound; directly on ML-guided MILP solving relevant to their decomposition work.</description>
+  </item>
+  <item>
+    <title>[7] Harmonizing Real-Time Constraints and Long-Horizon Reasoning: An Asynchronous Agentic Framework for Dynamic Scheduling</title>
+    <link>https://doi.org/10.24963/ijcai.2026/684</link>
+    <guid isPermaLink="false">doi:10.24963/ijcai.2026/684</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IJCAI 2026 · Shijie Cao, Yuan Yuan, Jing Liu — LLM-synthesised dispatching heuristics with asynchronous agents for dynamic job-shop scheduling; close to scheduling and agentic operational decisions.</description>
+  </item>
+  <item>
+    <title>[7] HeuriGym: An Agentic Benchmark for LLM-Crafted Heuristics in Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=HWxHUO15Yy</link>
+    <guid isPermaLink="false">iclr:2026:82d7f56432e27700a4f968ccc1d65038</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICLR 2026 · Hongzheng Chen, Yingheng Wang, Yaohui Cai, Hins Hu et al. — Agentic benchmark for LLM-crafted heuristics in combinatorial optimisation, a method the researcher would want to evaluate against.</description>
+  </item>
+  <item>
+    <title>[7] HiFo-Prompt: Prompting with Hindsight and Foresight for LLM-based Automatic Heuristic Design</title>
+    <link>https://openreview.net/forum?id=imSLzfZ6av</link>
+    <guid isPermaLink="false">iclr:2026:b06adb3b28dfa2c9ac6234ee77e09f39</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICLR 2026 · ChentongChen, Mengyuan Zhong, Jialong Shi, Jianyong Sun et al. — Prompting strategy for LLM-based automatic heuristic design, directly relevant to LLM-generated heuristics for optimisation problems.</description>
+  </item>
+  <item>
+    <title>[7] HiveMind: Contribution-Guided Online Prompt Optimization of LLM Multi-Agent Systems</title>
+    <link>https://doi.org/10.1609/aaai.v40i35.40222</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i35.40222</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Yihan Xia, Taotao Wang, ShengLi Zhang, Zhangyuhua Weng et al. — Shapley-based credit assignment and online prompt optimisation for LLM multi-agent workflows with reduced LLM calls; directly relevant to agentic systems.</description>
+  </item>
+  <item>
+    <title>[7] Landscape-aware Automated Algorithm Design: An Efficient Framework for Real-world Optimization</title>
+    <link>https://doi.org/10.1145/3795095.3805094</link>
+    <guid isPermaLink="false">doi:10.1145/3795095.3805094</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM GECCO 2026 · Haoran Yin, Shuaiqun Pan, Zhao Wei, Jian Cheng Wong et al. — LLM-driven automated algorithm design using GP proxy functions to avoid costly real-world evaluations; directly addresses expensive optimisation evaluation.</description>
+  </item>
+  <item>
+    <title>[7] Learning Branching Policies for MILPs with Proximal Policy Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i29.39619</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i29.39619</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Abdelouahed Ben Mhamed, Assia Kamal Idrissi, Amal El Fallah Seghrouchni — Applies PPO to learn MILP branching policies for branch-and-bound, directly relevant to learning-augmented exact methods the researcher follows.</description>
+  </item>
+  <item>
+    <title>[7] Learning to Reduce Search Space for Generalizable Neural Routing Solver</title>
+    <link>https://doi.org/10.1145/3770855.3818173</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818173</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM KDD 2026 · Changliang Zhou, Xi Lin, Zhenkun Wang, Qingfu Zhang — Learned dynamic search-space reduction for neural VRP solvers scaling to 10M nodes; a neural combinatorial optimisation method the researcher would read.</description>
+  </item>
+  <item>
+    <title>[7] MM-OptBench: A Solver-Grounded Benchmark for Multimodal Optimization Modeling</title>
+    <link>https://openreview.net/forum?id=A3g2i6LYgQ</link>
+    <guid isPermaLink="false">neurips:2026:ec5decca5ed3d6b8079e2e7e7bacc9f2</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Zhong Li, Qi Huang, Yuxuan Zhu, Mohammad Mohammadi Amiri et al. — Solver-grounded benchmark for multimodal optimisation modelling, relevant to LLMs that formulate optimisation models for MILP-style problems.</description>
+  </item>
+  <item>
+    <title>[7] MOTIF: Multi-strategy Optimization via Turn-based Interactive Framework</title>
+    <link>https://doi.org/10.1609/aaai.v40i43.41028</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i43.41028</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Nguyen Viet Tuan Kiet, Tung M. Dao, Cong Dao Tran, Huynh Thi Thanh Binh — LLM agents jointly design solver components via MCTS for combinatorial optimization, directly matching LLM-driven heuristic design interests.</description>
+  </item>
+  <item>
+    <title>[7] Meta-Prompt Optimization for LLM-Based Sequential Decision Making</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1266</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1266</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Mingze Kong, Zhiyong Wang, Yao Shu, Zhongxiang Dai — Automatically optimises LLM meta-prompts for sequential decision making such as Bayesian optimisation and bandits, using adversarial bandit methods; a clear learning-to-optimise method.</description>
+  </item>
+  <item>
+    <title>[7] NL ⇒ Schedule: Evaluate Multitask Scheduling Capability of Large Language Models</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1648</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1648</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACL 2026 · Wenrui Liao, Weihong Du, Yi Li, Hongru Liang et al. — LLM multi-agent framework for natural-language multitask scheduling compared with LLM+solver methods; directly on scheduling and optimisation.</description>
+  </item>
+  <item>
+    <title>[7] Operational Decision Support for Evacuating Nursing Home Residents: A Hamburg Benchmark and Metaheuristic Comparison Under a 5-Minute Time Budget</title>
+    <link>https://doi.org/10.1145/3795095.3805113</link>
+    <guid isPermaLink="false">doi:10.1145/3795095.3805113</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM GECCO 2026 · Nick Alexander, Milva Tannenbaum, Jörg Rainer Noennig — Emergency evacuation vehicle routing benchmark with metaheuristics under time budget and decision support; operational fleet routing similar to bus operations.</description>
+  </item>
+  <item>
+    <title>[7] PACE: Partial-state Amortized Constraint Editing for Neural Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=sJ8pDLLENR</link>
+    <guid isPermaLink="false">neurips:2026:28846bbee2bc821b9029e0f0877fa022</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Bohao Li, Chenhao Yuan, Ying Li, Pei He et al. — Amortized constraint editing for neural combinatorial optimisation; addresses constrained routing/scheduling learned solvers the researcher would find useful.</description>
+  </item>
+  <item>
+    <title>[7] Planning in Branch-and-Bound: Model-Based Reinforcement Learning for Exact Combinatorial Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i30.39759</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i30.39759</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Paul Strang, Zacharie Alès, Côme Bissuel, Olivier Juan et al. — Model-based RL for branching in MILP branch-and-bound; directly on learning-augmented exact MILP solving the researcher cares about.</description>
+  </item>
+  <item>
+    <title>[7] Programming over Thinking: Efficient and Robust Multi-Constraint Planning</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.2028</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.2028</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Derrick Goh Xin Deik, Quanyu Long, Zhengyuan Liu, Nancy F. Chen et al. — LLM generates reusable solver code for multi-constraint planning, a formulation-and-solve approach aligned with LLM plus optimisation.</description>
+  </item>
+  <item>
+    <title>[7] Rule-Bottleneck RL: Learning to Decide and Explain for Sequential Resource Allocation via LLM Agents in Public Health</title>
+    <link>https://doi.org/10.24963/ijcai.2026/835</link>
+    <guid isPermaLink="false">doi:10.24963/ijcai.2026/835</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>IJCAI 2026 · Guojun Xiong, Mauricio Tec, Haichuan Wang, Francesca Dominici et al. — LLM agent with RL-optimised rule selection for sequential resource allocation with explainability; closely matches agentic plus RL scheduling interests.</description>
+  </item>
+  <item>
+    <title>[7] SPACE: Unifying Symmetric and Asymmetric Routing Problems for Generalist Neural Solver</title>
+    <link>https://openreview.net/forum?id=7ncFxVZuOq</link>
+    <guid isPermaLink="false">neurips:2026:8d31e1ca580336797fc5c552cc86b96b</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Rongsheng Chen, Changliang Zhou, Canhong Yu, Yuanyao Chen et al. — Generalist neural solver for symmetric and asymmetric routing problems; neural combinatorial optimisation that the researcher would want to read.</description>
+  </item>
+  <item>
+    <title>[7] SUMO-SimQA: A Benchmark for LLM Cross-File Reasoning over Traffic Simulation Files</title>
+    <link>https://doi.org/10.1145/3799682.3839980</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3839980</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>ACM CIKM 2026 · Jeeyun Chang, Taeyoung Yun, Minwoo Jeong, Jinkyoo Park et al. — Benchmark for LLM reasoning over SUMO traffic simulation files with a plan-execute-revise agent, directly relevant to simulation pipelines and agents.</description>
+  </item>
+  <item>
+    <title>[7] Scale-Net: A Hierarchical U-Net Framework for Cross-Scale Generalization in Multi-Task Vehicle Routing</title>
+    <link>https://doi.org/10.1609/aaai.v40i17.38444</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i17.38444</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Suyu Liu, Zhiguang Cao, Nan Yin, Yew-Soon Ong — Hierarchical U-Net neural solver for multi-task VRP variants with scale generalisation; directly relevant to neural combinatorial routing methods.</description>
+  </item>
+  <item>
+    <title>[7] See to Solve: A Geometry-Aware Vision-Language Agent for Real-World Routing Problem</title>
+    <link>https://doi.org/10.1145/3770855.3818894</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818894</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM KDD 2026 · Wentao Zhang, Jingyuan Wang, Zetong Zhou, Jiahao Ji et al. — VLM agent constructs solutions to real-world vehicle routing problems autoregressively with RL fine-tuning; directly learning-to-solve routing with generalisation across cities.</description>
+  </item>
+  <item>
+    <title>[7] Sumo x PyPSA: Interactive Web Demo of Real-Time Urban Power-Traffic Co-Simulation with Vehicle-to-Grid</title>
+    <link>https://doi.org/10.1145/3774905.3793131</link>
+    <guid isPermaLink="false">doi:10.1145/3774905.3793131</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM WWW 2026 · Marouane Benbrahim, Xin Fang, Zhiqian Chen — Co-simulation of urban power grid and traffic with V2G emergency response; directly matches transport-grid integration interests.</description>
+  </item>
+  <item>
+    <title>[7] TPS-Bench: Evaluating AI Agents’ Tool Planning &amp; Scheduling Abilities in Compounding Tasks</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1614</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1614</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Hanwen Xu, XuYao Huang, Yuzhe Liu, Zhijie Deng — Benchmarks LLM agents on tool planning and scheduling of compounding tasks with execution-time efficiency; closely matches agentic scheduling interests.</description>
+  </item>
+  <item>
+    <title>[7] Vehicle Routing Problem with Resource-Constrained Pickup and Delivery: A Heuristic-Informed BRKGA with Pattern-Based Analysis</title>
+    <link>https://doi.org/10.1145/3795095.3805185</link>
+    <guid isPermaLink="false">doi:10.1145/3795095.3805185</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM GECCO 2026 · Manbir S. Sodhi, Romesh Prasad — Routing problem with resource-constrained pickup and delivery solved by BRKGA; vehicle routing heuristic close to their fleet scheduling methods.</description>
+  </item>
+  <item>
+    <title>[6] $\texttt{Multi}^2$: Hierarchical Multi-Agent Decision-Making with LLM-Based Agents in Interactive Environments</title>
+    <link>https://openreview.net/forum?id=H0tMEp0ZmO</link>
+    <guid isPermaLink="false">icml:2026:37740d59bb0eb7b4493725b2e0e5289b</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ICML 2026 · Sangeun Park, Minhae Kwon — Hierarchical multi-agent LLM decision-making in interactive environments; relevant to multi-agent operational decisions.</description>
+  </item>
+  <item>
+    <title>[6] 1ShotBench: Demonstrating One-Shot Prompt Reproducibility for Autonomous Coding Agents</title>
+    <link>https://doi.org/10.1145/3799682.3840271</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3840271</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM CIKM 2026 · Neng Li, Yijun Ge, Xueguang Ma, Jimmy Lin — Reproducibility toolkit for running the same spec across autonomous coding agents and comparing workflows, cost and correctness; agentic but not optimisation-focused.</description>
+  </item>
+  <item>
+    <title>[6] A General Highly Accurate Online Planning Method Integrating Large Language Models into Nested Rollout Policy Adaptation for Dialogue Tasks</title>
+    <link>https://doi.org/10.1609/aaai.v40i39.40638</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i39.40638</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Hui Wang, Fafa Zhang, Xiaoyu Zhang, Chaoxu Mu — LLM-driven nested Monte Carlo planning for goal-oriented dialogue; an agentic planning method adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] A Unified Knowledge Embedded Reinforcement Learning-based Framework for Generalized Capacitated Vehicle Routing Problems</title>
+    <link>https://doi.org/10.24963/ijcai.2026/691</link>
+    <guid isPermaLink="false">doi:10.24963/ijcai.2026/691</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IJCAI 2026 · Wen Wang, Xiangchen Wu, Liang Wang, Hao Hu et al. — Knowledge-embedded RL for generalized CVRP variants with DP subproblem; relevant to routing optimisation methods but not electrified or agentic.</description>
+  </item>
+  <item>
+    <title>[6] AI Agent Systems for Supply Chains: Structured Decision Prompts and Memory Retrieval</title>
+    <link>https://doi.org/10.65109/ujum3065</link>
+    <guid isPermaLink="false">doi:10.65109/ujum3065</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Konosuke Yoshizato, Kazuma Shimizu, Ryota Higa, Takanobu Otsuka — LLM multi-agent system for inventory ordering policies with memory retrieval; agentic operational decision-making close to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1105</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1105</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Jie Ding, Rui Sun, Xinyuan Zhang, Zeyu Zhang et al. — Agentic deep research framework distilling procedural skills with GRPO and test-time RL; relevant agent learning method, though not operational decision-making.</description>
+  </item>
+  <item>
+    <title>[6] Accelerated Adaptive Decision Making for Autonomous Agents: Optimization and Coverage</title>
+    <link>https://doi.org/10.65109/arnt2761</link>
+    <guid isPermaLink="false">doi:10.65109/arnt2761</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · Zakaria Shams Siam — Adaptive black-box decision making with Gaussian-process UCB acquisition under budgets for agentic discovery; adjacent to surrogate-based calibration.</description>
+  </item>
+  <item>
+    <title>[6] AdaCon: Learning Adaptive Trust Regions for Consistent LLM Agent Reasoning</title>
+    <link>https://doi.org/10.1145/3799682.3840027</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3840027</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM CIKM 2026 · Hao Chen, Xinke Jiang, Kaiqi Huang, Jianbin Jiao — Online critic deciding which LLM agent proposals to execute for long-horizon consistency; agent decision-making relevant to operational agentic AI.</description>
+  </item>
+  <item>
+    <title>[6] AgenTracer-v2: Agentic Failure Tracer for LLM Agentic Systems</title>
+    <link>https://openreview.net/forum?id=HyejvL5c6c</link>
+    <guid isPermaLink="false">neurips:2026:0fe8cb44a57dd5e75e5d3910086c45eb</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Guibin Zhang, Haoyu Lu, Junhao Wang, He Zhu et al. — Failure tracing for LLM agentic systems; reliability of agents is relevant background for multi-agent operational decision making.</description>
+  </item>
+  <item>
+    <title>[6] AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?</title>
+    <link>https://openreview.net/forum?id=l05DseqvuD</link>
+    <guid isPermaLink="false">iclr:2026:8a50bae297807da9e97722a0b3fd8f27</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ICLR 2026 · Guibin Zhang, Junhao Wang, Junjie Chen, Wangchunshu Zhou et al. — Failure attribution in LLM agentic systems; relevant to agent reliability evaluation, though not optimisation or transport-specific.</description>
+  </item>
+  <item>
+    <title>[6] Agent-R1: A Unified and Modular Framework for Agentic Reinforcement Learning</title>
+    <link>https://doi.org/10.1145/3799682.3840255</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3840255</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM CIKM 2026 · Mingyue Cheng, Shuo Yu, Daoyu Wang, Qingchuan Li et al. — Modular framework for agentic RL with step-level trajectory inspection; a general agentic tooling method the researcher may use for agent work.</description>
+  </item>
+  <item>
+    <title>[6] AgentAbstain: Do LLM Agents Know When Not to Act?</title>
+    <link>https://openreview.net/forum?id=Iee7eL6QV0</link>
+    <guid isPermaLink="false">neurips:2026:31c0c178a9fc26ffecffd8670e6d746d</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 (oral) · Xun Liu, Yi Evie Zhang, Vira Kasprova, Parisa Rabbani et al. — Studies whether LLM agents abstain from acting; relevant to reliability of operational decisions made by agents.</description>
+  </item>
+  <item>
+    <title>[6] AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.2400</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.2400</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Wenbo Gao, Renxi Liu, Xian Yu Wang, Fang Guo et al. — Self-reflection-driven coordination between small and large LLMs for efficient multi-step agents; agentic cost-quality routing with some decision-making relevance.</description>
+  </item>
+  <item>
+    <title>[6] AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.166</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.166</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Mingquan Liu, Jiangyu Chen, Hanqun Cao, Xujun Zhang et al. — Multi-agent LLM closed-loop search over executable code with MCTS allocation; agentic search and code-writing for scientific ML, relevant to LLM-driven optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Agentic CLEAR: Automating Multi-Level Evaluation of LLM Agents</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-demo.74</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-demo.74</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Asaf Yehudai, Lilach Eden, Michal Shmueli-Scheuer — Automated multi-level evaluation of LLM agent behaviour; useful for reliability and evaluation of agents that run pipelines.</description>
+  </item>
+  <item>
+    <title>[6] Agentic LLMs and Distributed Constraint Reasoning: A Symbiotic Perspective for Neurosymbolic Multi-Agent Systems</title>
+    <link>https://doi.org/10.65109/ynzm5391</link>
+    <guid isPermaLink="false">doi:10.65109/ynzm5391</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · Gauthier Picard, William Yeoh, Roie Zivan — Position paper linking LLM agents with distributed constraint reasoning for coordination and resource allocation; relevant to neurosymbolic optimisation.</description>
+  </item>
+  <item>
+    <title>[6] AlphaOPT: Formulating Optimization Programs with Self-Improving LLM Experience Library</title>
+    <link>https://doi.org/10.1145/3770855.3817974</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3817974</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM KDD 2026 · Minwei Kong, Ao Qu, Xiaotong Guo, Wenbin Ouyang et al. — LLM self-improving experience library for formulating optimisation models from solver feedback; directly relevant to LLMs formulating MILP models.</description>
+  </item>
+  <item>
+    <title>[6] An Automated Multi-Agent Search-then-Evolution Framework for Lifetime Value Prediction</title>
+    <link>https://doi.org/10.1145/3799682.3841119</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3841119</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM CIKM 2026 · Chaowei Wu, Huazhu Chen, Qirui Yang, Jiahui Li et al. — Multi-agent LLM system generating and evolving pipeline code via MCTS and evolutionary search; agentic search methods relevant to the researcher, though applied to LTV prediction.</description>
+  </item>
+  <item>
+    <title>[6] AutoTool: Efficient Tool Selection for Large Language Model Agents</title>
+    <link>https://doi.org/10.1609/aaai.v40i37.40389</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i37.40389</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Jingyi Jia, Qinbin Li — Graph-based tool selection that reduces repeated LLM calls in agents; cost-efficient agent decision-making the researcher would likely want to read.</description>
+  </item>
+  <item>
+    <title>[6] Automated Creation and Enrichment Framework for Improved Invocation of Enterprise APIs as Tools</title>
+    <link>https://doi.org/10.1609/aaai.v40i47.41454</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i47.41454</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Prerna Agarwal, Himanshu Gupta, Soujanya Soni, Rohith Dwarakanath Vallam et al. — Automates converting enterprise APIs into LLM agent tools with dynamic tool shortlisting; agentic tool-use infrastructure, adjacent to the researcher&#39;s agent interests.</description>
+  </item>
+  <item>
+    <title>[6] Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents</title>
+    <link>https://openreview.net/forum?id=L3A07XNiPc</link>
+    <guid isPermaLink="false">neurips:2026:2e6d941e3bc2dbd3f122040f056b6718</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Kaixuan Liu, GUOJUN XIONG, Weinan Zhang, Shengpu Tang — Diffusion world models for off-policy evaluation of LLM agents; evaluation of agent policies that could inform decision-making agents.</description>
+  </item>
+  <item>
+    <title>[6] A²Flow: Automating Agentic Workflow Generation via Self-Adaptive Abstraction Operators</title>
+    <link>https://doi.org/10.1609/aaai.v40i35.40240</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i35.40240</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Mingming Zhao, Xing Wei, Yuanqi Shao, Kaiwen Zhou et al. — Automates agentic workflow generation with reusable abstraction operators; agent design that plans and builds workflows, adjacent to their interests.</description>
+  </item>
+  <item>
+    <title>[6] BAMAS: Structuring Budget-Aware Multi-Agent Systems</title>
+    <link>https://doi.org/10.1609/aaai.v40i35.40226</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i35.40226</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Liming Yang, Junyu Luo, Xuanzhe Liu, Yiling Lou et al. — Budget-aware multi-agent system using ILP for LLM selection and RL for topology; agentic design with optimisation component.</description>
+  </item>
+  <item>
+    <title>[6] BWOR: A Bilingual Benchmark for Modeling and Solving Operations Research Problems from Natural Language</title>
+    <link>https://doi.org/10.1145/3799682.3840171</link>
+    <guid isPermaLink="false">doi:10.1145/3799682.3840171</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM CIKM 2026 · Bowen Zhang, Pengcheng Luo, Genke Yang, Boon‐Hee Soong et al. — Benchmark for LLMs formulating and solving OR problems as solver code; directly relevant to LLM-driven optimisation modelling.</description>
+  </item>
+  <item>
+    <title>[6] Beyond Accuracy: A Diagnostic Benchmark for Hypothesis-Driven Experiment Planning in LLM Agents</title>
+    <link>https://openreview.net/forum?id=VZAGnyBRvm</link>
+    <guid isPermaLink="false">neurips:2026:73f490f3f868edbcd80b5d3f7cedc403</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Ryo Kuroki, Amin Mansouri, Philippe Schwaller — Benchmark for LLM agents planning experiments; agentic planning and decision making is adjacent to the researcher&#39;s agent interests, though no optimisation focus is evident.</description>
+  </item>
+  <item>
+    <title>[6] Beyond ReAct: A Planner-Centric Framework for Complex Tool-Augmented LLM Reasoning</title>
+    <link>https://doi.org/10.1609/aaai.v40i40.40676</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i40.40676</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Xiaolong Wei, Yuehu Dong, Xin Wang, Xingyu Zhang et al. — Planner-centric DAG planning and tool orchestration for LLM agents trained with GRPO; relevant to agentic planning and multi-step decision making.</description>
+  </item>
+  <item>
+    <title>[6] Boosting Cross-problem Generalization in Diffusion-Based Neural Combinatorial Solver via Inference Time Adaptation</title>
+    <link>https://doi.org/10.1609/aaai.v40i43.40948</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i43.40948</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Haoyu Lei, Kaiwen Zhou, Yinchuan Li, Zhitang Chen et al. — Diffusion-based neural combinatorial optimisation with zero-shot cross-problem transfer on TSP variants; relevant to learning-to-optimise routing.</description>
+  </item>
+  <item>
+    <title>[6] Bridging Synthetic and Real Routing Problems via LLM-Guided Instance Generation and Progressive Adaptation</title>
+    <link>https://doi.org/10.1609/aaai.v40i43.40982</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i43.40982</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Jianghan Zhu, Yaoxin Wu, Zhuoyi Lin, Zhengyuan Zhang et al. — Neural routing solver generalization to real TSPLib/CVRPLib instances; useful background on neural combinatorial optimization, though not agentic or transit-specific.</description>
+  </item>
+  <item>
+    <title>[6] Can Vibe Coding Beat Graduate CS Students? An LLM vs. Human Coding Tournament on Market-driven Strategic Planning</title>
+    <link>https://doi.org/10.65109/seot8410</link>
+    <guid isPermaLink="false">doi:10.65109/seot8410</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · Panayiotis Danassis, Naman Goel — Benchmarks LLM-coded agents on auction pickup-delivery routing with capacitated planners, close to vehicle routing and LLM-generated heuristics.</description>
+  </item>
+  <item>
+    <title>[6] Can Workflow Search Be Amortized? Demonstration-Guided Synthesis of LLM Agent Workflows</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1916</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1916</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Shiyi Du, Jiayuan Liu, Weihua Du, Yue Huang et al. — Amortised LLM-based workflow synthesis reusing search trajectories; relates to automated design of agent workflows and learning to optimise.</description>
+  </item>
+  <item>
+    <title>[6] Co-Layout: LLM-driven Co-optimization for Interior Layout</title>
+    <link>https://doi.org/10.1609/aaai.v40i17.38452</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i17.38452</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Chucheng Xiang, Rucha Bao, Biyin Feng, Wenzheng Wu et al. — Combines LLM-extracted constraints with grid-based integer programming and coarse-to-fine solving; relevant to LLM-driven optimisation model formulation.</description>
+  </item>
+  <item>
+    <title>[6] CoS: Towards Optimal Event Scheduling via Chain-of-Scheduling</title>
+    <link>https://doi.org/10.1609/aaai.v40i19.38684</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i19.38684</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Yiming Zhao, Jiwei Tang, Shimin Di, Libin Zheng et al. — LLM framework for event scheduling under time and geographic constraints; an LLM-based scheduling approach relevant to AI-for-optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Conformal Constrained Policy Optimization for Cost-Effective LLM Agents</title>
+    <link>https://doi.org/10.1609/aaai.v40i30.39739</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i30.39739</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Wenwen Si, Sooyong Jang, Insup Lee, Osbert Bastani — Cost-aware LLM agent orchestration with conformal reliability guarantees and RL; agentic and cost-minimising, relevant background but not optimisation of operations.</description>
+  </item>
+  <item>
+    <title>[6] Conformal LLM Routing with Distribution-Free Safety Guarantees</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-srw.70</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-srw.70</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Iqtedar Uddin, André Bauer — Conformal guarantees for LLM routing between cheap and expensive models; cost-performance decision-making with formal safety bounds is adjacent to the researcher&#39;s stochastic optimisation interests.</description>
+  </item>
+  <item>
+    <title>[6] DIANOIA: Diagnostic Decomposition and Joint Optimization for Multi-Agent Reasoning</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1446</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1446</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Yiming Yang, Zhuoyuan Li, Fanxiang Zeng, Hao Fu et al. — Diagnostic framework for multi-agent LLM design with channel-aware token allocation; adjacent to agentic system design but not optimisation or transport.</description>
+  </item>
+  <item>
+    <title>[6] DeepAgent: A General Reasoning Agent with Scalable Toolsets</title>
+    <link>https://doi.org/10.1145/3774904.3792460</link>
+    <guid isPermaLink="false">doi:10.1145/3774904.3792460</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM WWW 2026 · Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Guanting Dong et al. — General reasoning agent with tool discovery and RL training for tool use; relevant agentic AI method the researcher would want to read.</description>
+  </item>
+  <item>
+    <title>[6] DeepOR: A Deep Reasoning Foundation Model for Optimization Modeling</title>
+    <link>https://doi.org/10.1609/aaai.v40i40.40699</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i40.40699</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Ziyang Xiao, Yuan Jessica Wang, Xiongwei Han, Shisi Guan et al. — Reasoning LLM for optimisation modelling trained with solver-feedback RL; relevant to LLM-based formulation of optimisation models.</description>
+  </item>
+  <item>
+    <title>[6] Deploying Programmatic Tool Calling for Large-Scale Agentic Systems</title>
+    <link>https://doi.org/10.18653/2026.emnlp-industry.78</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-industry.78</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Nhan Nguyen, Hadi Habibzadeh, Ahmad Magdy Eid — Production programmatic tool calling with AST validation for agents; practical agent systems engineering with no optimisation or transport content.</description>
+  </item>
+  <item>
+    <title>[6] Dialogue is the Plan: From Interface to Joint Action in Agentic AI</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-short.63</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-short.63</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Mert İnan, Malihe Alikhani, Anthony Sicilia — Argues dialogue should be part of agent planning loop with commitments and clarification; relevant to multi-agent coordination in operations but conceptual.</description>
+  </item>
+  <item>
+    <title>[6] Difficulty-Aware Agentic Orchestration for Query-Specific Multi-Agent Workflows</title>
+    <link>https://doi.org/10.1145/3774904.3792240</link>
+    <guid isPermaLink="false">doi:10.1145/3774904.3792240</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM WWW 2026 · Jinwei Su, Qizhen Lan, Yinghui Xia, Lifan Sun et al. — Query-specific multi-agent workflow generation with cost-aware LLM routing and difficulty estimation; relevant to adaptive agent orchestration trade-offs.</description>
+  </item>
+  <item>
+    <title>[6] DualLane: Fast and Reliable LLM Agents for Interactive AIOps via Dual-Path Planning</title>
+    <link>https://doi.org/10.1145/3770855.3818380</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818380</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Haoyu Wang, Wenxuan Ma, Bing Hu, Haozhe Li et al. — Dual-path LLM agent planning for AIOps operations with deployment; agentic operational decision-making somewhat close to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] Eluna: An Agentic LLM System for Automating Warehouse Operations with Reasoning and Task Execution</title>
+    <link>https://doi.org/10.18653/2026.emnlp-industry.159</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-industry.159</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Ning Liu, P Aditya Sreekar, Kalle Kujanpää, Zhaoxuan Zhu et al. — Graph-guided multi-agent system executing SOPs in warehouse operations; operational agentic decision-making relevant to transit disruption agents.</description>
+  </item>
+  <item>
+    <title>[6] EvoDS: Self-Evolving Autonomous Data Science Agent with Skill Learning and Context Management</title>
+    <link>https://doi.org/10.1145/3770855.3818002</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3818002</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Zherui Yang, Fan Liu, Yansong Ning, Hao Liu — Self-evolving data-science agent that writes and reuses skills with learned context control; agentic code-running pipelines relevant to the researcher&#39;s agent interests.</description>
+  </item>
+  <item>
+    <title>[6] Exploring LLM-Powered Agents for Modeling Thermal Dynamics of Buildings</title>
+    <link>https://doi.org/10.1145/3744256.3812580</link>
+    <guid isPermaLink="false">doi:10.1145/3744256.3812580</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM BuildSys 2026 · Krzysztof Walczak, Mario E. Berges — LLM agents automate hybrid physics-neural building thermal modelling; agentic scientific workflow in energy systems, adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] FEDOT.MAS: Generating Multi-Agent Systems for Complex Tasks with Multi-Stage Validation</title>
+    <link>https://doi.org/10.65109/ooig5670</link>
+    <guid isPermaLink="false">doi:10.65109/ooig5670</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Dmitry Gilemkhanov, Vadim A. Potemkin, Maria Zaitseva, Ilia Revin et al. — Generates complete multi-agent systems from natural language via staged validation; agent-workflow generation relevant to agentic AI interest.</description>
+  </item>
+  <item>
+    <title>[6] ForesightSafety-SAGE: A Fully Automated Scenario Generation and Safety Evaluation Framework for LLM Agents</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.277</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.277</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Lu Jia, Haibo Tong, Feifei Zhao, Jindong Li et al. — Automated scenario generation and safety evaluation of LLM agents during task execution; relevant to agent reliability evaluation but not optimisation or transport.</description>
+  </item>
+  <item>
+    <title>[6] GAPS: Global-Aware Prediction-driven Scheduling for Large-Scale LLM Inference</title>
+    <link>https://doi.org/10.65109/yptr3460</link>
+    <guid isPermaLink="false">doi:10.65109/yptr3460</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · Zhengyu Liu, Fan Zhang, Fengzhe Zhang, Shuaikang Hou — Predictive global scheduler for LLM inference clusters with discrete-event simulation; scheduling methodology is transferable to fleet scheduling ideas.</description>
+  </item>
+  <item>
+    <title>[6] Graph-of-Agents: A Graph-based Framework for Multi-Agent LLM Collaboration</title>
+    <link>https://openreview.net/forum?id=34cANdsHKV</link>
+    <guid isPermaLink="false">iclr:2026:1918451bbab7610b0e3f80ec60c76411</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ICLR 2026 · Sukwon Yun, Jie Peng, Pingzhi Li, Wendong Fan et al. — Graph-based multi-agent LLM collaboration framework; relevant to multi-agent LLM decision making, though not clearly operational planning.</description>
+  </item>
+  <item>
+    <title>[6] Graph-of-Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.2614</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.2614</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Dawei Liu, Zongxia Li, Hongyang Du, Xiyang Wu et al. — Dependency-aware graph retrieval of skills for LLM agents using PageRank; agentic tooling relevant to planning but not optimisation of operations.</description>
+  </item>
+  <item>
+    <title>[6] GraphPlanner: Graph Memory-Augmented Agentic Routing for Multi-Agent LLMs</title>
+    <link>https://openreview.net/forum?id=ZdGB7MNQDT</link>
+    <guid isPermaLink="false">iclr:2026:f84b89bcf33c161bdaa19c925928f74d</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ICLR 2026 · Tao Feng, Haozhen Zhang, Zijie Lei, Peixuan Han et al. — Agentic routing among multi-agent LLMs using graph memory; adjacent to agent orchestration and decision making, with routing being a loose connection.</description>
+  </item>
+  <item>
+    <title>[6] Grounding LLM Agent Intent in Multi-Module Environments with Executable Action Programs</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.2226</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.2226</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Jun Zhang, Boyuan Sun, Jinghua Piao, Haoyu Huang et al. — Executable action programs let LLM agents ground intents into multi-module actions with validation and reuse; agents acting on environments via programs.</description>
+  </item>
+  <item>
+    <title>[6] HiVA: Self-organized Hierarchical Variable Agent via Goal-driven Semantic-Topological Evolution</title>
+    <link>https://doi.org/10.1609/aaai.v40i3.37190</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i3.37190</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Jinzhou Tang, Jusheng Zhang, Qinhan Lv, Sidi Liu et al. — Self-organising hierarchical LLM agent workflows optimised via textual gradients; agentic workflow design useful for their agent research.</description>
+  </item>
+  <item>
+    <title>[6] HyCO: A Hybrid Neural Solver for Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=ncwBmlZFlv</link>
+    <guid isPermaLink="false">neurips:2026:0ffb8460d08197d28aaf795711fc8f65</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Yuheng Li, Di Yang, Haipeng Chen, Yanhai Xiong — Hybrid neural solver for combinatorial optimisation; relevant to neural routing and scheduling methods the researcher may build on.</description>
+  </item>
+  <item>
+    <title>[6] Insight-Driven Search: A Framework for Multi-objective Automated Heuristic Design with Large Language Models</title>
+    <link>https://openreview.net/forum?id=4hPzFmpJng</link>
+    <guid isPermaLink="false">neurips:2026:97bf6036e7669246dad4e84d1abec531</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Shunyu Yao, Fei Liu, Ji Cheng, Mingxuan Yuan et al. — Multi-objective LLM-driven automated heuristic design; LLMs designing optimisation heuristics matches the researcher&#39;s AI-for-optimisation interest, though no abstract is available.</description>
+  </item>
+  <item>
+    <title>[6] Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour</title>
+    <link>https://doi.org/10.65109/mcsd1905</link>
+    <guid isPermaLink="false">doi:10.65109/mcsd1905</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>AAMAS 2026 · Bálint Gyevnár, Christopher G. Lucas, Stefano V. Albrecht, Shay B. Cohen — LLM agents interrogate a driving simulator with counterfactual queries to explain multi-agent behaviour; simulation-based agentic analysis, though explanation-focused.</description>
+  </item>
+  <item>
+    <title>[6] Integrating Strengths of Different Multi-Agent Workflows via Step-Aware Hybrid Topology Planning</title>
+    <link>https://openreview.net/forum?id=KvZcSEq1b8</link>
+    <guid isPermaLink="false">neurips:2026:f2671992766736eaee5018a1de716c86</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Jingxuan Yu, Ju Jia, Yiqian Chen, Yuchong Chen et al. — Hybrid topology planning across multi-agent workflows; relevant multi-agent LLM orchestration method, abstract unavailable.</description>
+  </item>
+  <item>
+    <title>[6] Interpreting Neural Combinatorial Optimization via Evolving Programmatic Bottlenecks</title>
+    <link>https://openreview.net/forum?id=8fI7m5Dxno</link>
+    <guid isPermaLink="false">neurips:2026:a6df0bdb9111011bb923c11b2bc2e5fd</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Haocheng Duan, Yuxin Guo, Jieyi Bi, Anqi Xie et al. — Interprets neural combinatorial optimisation solvers via programmatic bottlenecks; relevant to learned routing and scheduling methods.</description>
+  </item>
+  <item>
+    <title>[6] Justitia: Fair and Efficient Scheduling of Task-parallel LLM Agents with Selective Pampering</title>
+    <link>https://openreview.net/forum?id=4goa2ZsfNl</link>
+    <guid isPermaLink="false">neurips:2026:74af29e4a58ef5b90a184d5264d47342</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Mingyan Yang, Guanjie Wang, Manqi Luo, Yifei Liu et al. — Fair scheduling of task-parallel LLM agents; scheduling of agent workloads is an operations-style problem relevant to agentic systems.</description>
+  </item>
+  <item>
+    <title>[6] LEGOMem: Modular Procedural Memory for Multi-agent LLM Systems for Workflow Automation</title>
+    <link>https://doi.org/10.65109/vlua1303</link>
+    <guid isPermaLink="false">doi:10.65109/vlua1303</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Dongge Han, Camille Couturier, Daniel Madrigal Diaz, Xuchao Zhang et al. — Procedural memory for multi-agent LLM workflow automation with orchestrator planning; relevant agentic planning but not optimisation or transport.</description>
+  </item>
+  <item>
+    <title>[6] LLM-as-Scheduler: Agentic Workflow Dynamic Scheduling</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.581</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.581</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Dawei Xiang, Kexin Chu, Wenyan Xu, Wenhui Zhang et al. — Dynamically routes queries through agentic workflows to cut latency and tokens; a scheduling-flavoured agent orchestration method of moderate relevance.</description>
+  </item>
+  <item>
+    <title>[6] LLM4LLM: Bridging Kernel Benchmarks and Real Deployment via Closed-Loop Agentic Optimization</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.859</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.859</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Hui Zeng, Pengfei Yang, Yanxin Chen, Fusong Ju et al. — Closed-loop agentic LLM optimisation of inference kernels; agents that search and optimise code, though not on transport or scheduling.</description>
+  </item>
+  <item>
+    <title>[6] Learning What to Retain: Gated-Memory Routing for Efficient Collaboration in Multi-Agent LLM Systems</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1735</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1735</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Rakibul Hasan Rajib, Mengxing Zheng, Qian Lou — Learned memory gating and routing for multi-agent LLM orchestration with adaptive halting; agentic coordination relevant to operational decision systems.</description>
+  </item>
+  <item>
+    <title>[6] Learning-Guided Simulated Annealing for the Capacitated Vehicle Routing Problem</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42875</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42875</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICAPS 2026 · Jules Andretti, Jérémie Cabessa, Yann Strozecki — Learned RL move-selection inside simulated annealing for CVRP; relevant learning-augmented metaheuristic for routing, adjacent to their scheduling work.</description>
+  </item>
+  <item>
+    <title>[6] LightAutoDS-Tab: Multi-AutoML Agentic System for Tabular Data</title>
+    <link>https://doi.org/10.65109/qbky1209</link>
+    <guid isPermaLink="false">doi:10.65109/qbky1209</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAMAS 2026 · A.P. Lapin, Igor Hromov, S.N. Chumakov, Mile Mitrovic et al. — LLM agents generate code orchestrating AutoML tools for tabular pipelines; LLM-driven pipeline design resembles automated model formulation.</description>
+  </item>
+  <item>
+    <title>[6] MACC: Multi-Agent Collaborative Competition for Scientific Exploration</title>
+    <link>https://doi.org/10.65109/jlge7606</link>
+    <guid isPermaLink="false">doi:10.65109/jlge7606</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Satoshi Oyama, Yuko Sakurai, Hisashi Kashima — Multi-agent LLM institutional architecture with blackboard workspace and incentives for scientific exploration; agentic and relevant to multi-agent coordination, though not optimisation-focused.</description>
+  </item>
+  <item>
+    <title>[6] MARS: Multi-Agent Adaptive Reasoning with Socratic Guidance for Automated Prompt Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i19.38668</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i19.38668</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Jian Dong Zhang, Zhangqi Wang, Haiping Zhu, Kangda Cheng et al. — Multi-agent LLM framework framed as POMDP for automated prompt optimisation; relates to LLM-driven optimisation and search efficiency.</description>
+  </item>
+  <item>
+    <title>[6] MDForge: Agentic Molecular Dynamics Pipeline Design under Sparse Simulator Feedback</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.672</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.672</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Zehong Wang, Yijun Ma, Connor R. Schmidt, Tianyi Ma et al. — LLM agent designs MD simulation pipelines via code generation and verbal reward; agentic simulation pipeline design, though in molecular science.</description>
+  </item>
+  <item>
+    <title>[6] OLIVIA: Online Learning via Inference-time Action Adaptation</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.764</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.764</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Shuying Yu, Junda Wu, Xintong Li, Nikki Lijing Kuang et al. — Replaces LLM action-selection head with LinUCB contextual bandit for online adaptation; decision-layer learning relevant to agentic action selection.</description>
+  </item>
+  <item>
+    <title>[6] OR-R1: Automating Modeling and Solving of Operations Research Optimization Problem via Test-Time Reinforcement Learning</title>
+    <link>https://doi.org/10.1609/aaai.v40i1.36983</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i1.36983</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Zezhen Ding, Zhen Tan, Jiheng Zhang, Tianlong Chen — LLM framework that formulates and solves OR optimisation models via RL; relevant to LLM-based modelling but not to electric transport problems.</description>
+  </item>
+  <item>
+    <title>[6] OSCAR: Optimization-Steered Agentic Planning for Composed Image Retrieval</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.380</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.380</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Teng Wang, Rong Shan, Jianghao Lin, Junjie Wu et al. — Formulates agentic retrieval planning as mixed-integer programming with optimal trajectories; optimisation-steered agent planning close to the ai4opt interests.</description>
+  </item>
+  <item>
+    <title>[6] On Time, Within Budget: Constraint-Driven Online Resource Allocation for Agentic Workflows</title>
+    <link>https://openreview.net/forum?id=9n93yn1m1m</link>
+    <guid isPermaLink="false">neurips:2026:8f1bac3967e0ff70ebc09d8ca5e08633</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Xinglin Wang, Zishen Liu, Shaoxiong Feng, Peiwen Yuan et al. — Constraint-driven online resource allocation for agentic workflows; budgeted allocation resembles scheduling optimisation.</description>
+  </item>
+  <item>
+    <title>[6] OptiMAS: Automatically Optimize Multi-Agent System</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.470</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.470</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Yuxin Cheng, Chang Liu, Hanxin Yu, Haochen Tan et al. — Automated optimisation of multi-agent system architectures with LLM agents; agentic design relevant to the researcher&#39;s agentic AI interests.</description>
+  </item>
+  <item>
+    <title>[6] OptiSkill: A Hierarchical and Evolving SkillBank for LLM-Based Optimization Modeling</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1316</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1316</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>EMNLP 2026 · Ruiqing Zhao, Rui Liu, Yuan Zuo, Huarong Zhang et al. — Evolving skill bank that helps LLM agents write optimisation models from natural language; directly on LLM-based OR modelling, though not transport.</description>
+  </item>
+  <item>
+    <title>[6] Optimize Once, Execute Fast: Latency-Aware Multi-Agent Workflow Learning for Recurrent Queries</title>
+    <link>https://openreview.net/forum?id=Bc8w5Uu2cF</link>
+    <guid isPermaLink="false">neurips:2026:ba3abb2c0cb388f3cd4e77de3c78ff51</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Enpei Zhang, Feiyu Qu, Zheng Huang, Dawei Zhou et al. — Latency-aware multi-agent workflow learning with optimised workflows; optimisation of agent pipelines is a useful method reference.</description>
+  </item>
+  <item>
+    <title>[6] Pareto-Grid-Guided Large Language Models for Fast and High-Quality Heuristics Design in Multi-Objective Combinatorial Optimization</title>
+    <link>https://doi.org/10.1609/aaai.v40i43.41024</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i43.41024</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Ha Minh Hieu, Hung Phan, Tung Duy Doan, Tung M. Dao et al. — LLM-driven evolution of heuristics for multi-objective combinatorial optimisation with runtime focus; relevant LLM heuristic design method.</description>
+  </item>
+  <item>
+    <title>[6] Physics-Informed Autonomous LLM Agents for Explainable Power Electronics Modulation Design</title>
+    <link>https://doi.org/10.1609/aaai.v40i47.41441</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i47.41441</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Junhua Liu, Fanfan Lin, Xinze Li, Shuai Zhao et al. — LLM agent that plans and runs physics-informed simulation and optimisation for power converter design; agentic design automation in energy systems.</description>
+  </item>
+  <item>
+    <title>[6] Planning in the LLM Era: Building for Reliability and Efficiency</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42851</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42851</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICAPS 2026 · Michael Katz, Harsha Kokel, Kavitha Srinivas, Shirin Sohrabi — Survey-style perspective on LLMs generating symbolic planners and solvers for reliable efficient planning; relevant to LLM-built optimisation methods.</description>
+  </item>
+  <item>
+    <title>[6] Predefined-Tool Execution for Reliable LLM Agents in Semiconductor Lot Analysis</title>
+    <link>https://doi.org/10.18653/2026.emnlp-industry.102</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-industry.102</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Nirupama Vijayaraghavan Malolan, Duc V. Le — Predefined tool execution for reliable LLM agents doing structured data analysis; relevant architecture for dependable agent-driven decisions.</description>
+  </item>
+  <item>
+    <title>[6] Predicting What Changes: Causal Delta World Models for Risk-Aware LLM Agent Planning</title>
+    <link>https://openreview.net/forum?id=AiYvJPM2Oy</link>
+    <guid isPermaLink="false">neurips:2026:fca770bbc016b9f553eddcbad569617d</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Guo Yue, YANG LIU, Donghui Zhang, Tang Qingkang et al. — Causal world models for risk-aware LLM agent planning; planning under risk could inform agentic operational decision making.</description>
+  </item>
+  <item>
+    <title>[6] Procedural Knowledge Improves Agentic LLM Workflows</title>
+    <link>https://doi.org/10.65109/vevz5917</link>
+    <guid isPermaLink="false">doi:10.65109/vevz5917</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Vincent Hsiao, Mak Roberts, Leslie Smith — Shows procedural HTN knowledge boosts LLM agent planning on agentic tasks; relevant agentic planning method, though not transport-specific.</description>
+  </item>
+  <item>
+    <title>[6] RASO: Role-Aware Shared Reflection for Multi-Agent Orchestration in E-Commerce Long-Horizon Planning</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42873</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42873</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ICAPS 2026 · Kangjia Niu, Yanning Zhang, Xiuchong Wang, Chennan Ma et al. — Multi-agent LLM orchestration for long-horizon operational planning with credit assignment; agentic planning with operational decisions.</description>
+  </item>
+  <item>
+    <title>[6] REALM-Bench: A Benchmark for Evaluating Multi-Agent Systems on Real-world, Dynamic Planning and Scheduling Tasks</title>
+    <link>https://doi.org/10.1145/3770854.3785692</link>
+    <guid isPermaLink="false">doi:10.1145/3770854.3785692</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Longling Geng, Edward Y. Chang — Benchmark for multi-agent LLM planning and scheduling under disruptions, comparing scheduling heuristics; relevant to agentic operational decisions though not transport-specific.</description>
+  </item>
+  <item>
+    <title>[6] RESPOND: Realistic Environment Simulation of Population and Natural Disasters with LLM-Driven Agents</title>
+    <link>https://doi.org/10.1609/aaai.v40i48.42384</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i48.42384</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>AAAI 2026 · Roman Sultimov, Mikhail Mozikov, Dmitrii Abramov, Mariia Kovalchuk et al. — LLM multi-agent simulation of population response to floods with evacuation flows; agent-based simulation with operational decision outputs, adjacent to the researcher&#39;s work.</description>
+  </item>
+  <item>
+    <title>[6] RESPOND: Realistic Environment Simulation of Population and Natural Disasters with LLM-Driven Agents (Student Abstract)</title>
+    <link>https://doi.org/10.1609/aaai.v40i48.42283</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i48.42283</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>AAAI 2026 · Roman Sultimov, Mikhail Mozikov, Dmitrii Abramov, Mariia Kovalchuk et al. — Student abstract of the RESPOND LLM-agent disaster evacuation simulator; agent-based simulation with operational outputs, adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] RelAgent: LLM Agents as Data Scientists for Relational Learning</title>
+    <link>https://openreview.net/forum?id=YRrJHyYg9F</link>
+    <guid isPermaLink="false">neurips:2026:544a66d5696a6e07b69dc8df98d6f825</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Xingyue Huang, Louis Tichelman, Jinwoo Kim, Krzysztof Olejniczak et al. — LLM agents acting as data scientists for relational learning; agents running end-to-end modelling pipelines, a useful agentic workflow reference.</description>
+  </item>
+  <item>
+    <title>[6] SILO-BENCH: A Scalable Environment for Evaluating Distributed Coordination in Multi-Agent LLM Systems</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1354</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1354</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Yuzhe Zhang, Feiran Liu, Yi Shan, Xinyi Huang et al. — Benchmark for distributed coordination among multi-agent LLM systems; relevant to multi-agent decision making for operations.</description>
+  </item>
+  <item>
+    <title>[6] Scaling Agentic Capabilities via Grounded Interaction Synthesis</title>
+    <link>https://doi.org/10.1145/3770855.3817660</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3817660</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Wenhang Shi, Jinhao Dong, Yiren Chen, Zhe Zhao et al. — Synthesizes agentic tool-use training data from MCP servers; adjacent to agentic AI work but not about planning, optimisation or simulation.</description>
+  </item>
+  <item>
+    <title>[6] Scaling Up Cooperative Multi-Agent Reinforcement Learning Through Hierarchical Heterogeneous Modular Architectures</title>
+    <link>https://doi.org/10.1609/aaai.v40i48.42150</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i48.42150</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Minghong Geng — Hierarchical multi-agent RL with LLM zero-shot planning for scaling coordination; RL scheduling and dispatch-style control is adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] Signal-Aware Workload Shifting Algorithms with Uncertainty-Quantified Predictors</title>
+    <link>https://doi.org/10.1145/3744255.3798123</link>
+    <guid isPermaLink="false">doi:10.1145/3744255.3798123</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM e-Energy 2026 · Ezra Johnson, Adam Lechowicz, Mohammad Hajiesmaili — Online workload shifting under electricity price and carbon forecast uncertainty; relevant to time-of-use tariff and price-uncertainty decision making.</description>
+  </item>
+  <item>
+    <title>[6] SimRetail: A Persona-Informed Multi-Agent System for Autonomous Retail Assortment Planning</title>
+    <link>https://doi.org/10.65109/smuk4801</link>
+    <guid isPermaLink="false">doi:10.65109/smuk4801</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Sowmya Podila, Andrew Yang, Bo Shen, Matthew S. Nokleby — Multi-agent LLM system with planning and specialist tools for assortment optimisation; agentic decision-making with optimisation flavour.</description>
+  </item>
+  <item>
+    <title>[6] Small RL Controller, Large Language Model: RL-Guided Adaptive Sampling for Test-Time Scaling</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1670</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1670</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Runpeng Dai, Tong Zheng, Rui Liu, Chengsong Huang et al. — RL-trained controller decides when an LLM should stop sampling under cost and latency budgets, an adjacent optimisation-for-LLM method with a Lagrangian view.</description>
+  </item>
+  <item>
+    <title>[6] Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents</title>
+    <link>https://openreview.net/forum?id=9url1EFMaU</link>
+    <guid isPermaLink="false">neurips:2026:665ff68447af51236240372e4ce5a774</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Deyuan (Mike) He, Ankush Desai, Sharad Malik, Aarti Gupta — Formally verified planning with runtime enforcement for LLM agents; planning-focused safety that could inform operational agent decisions.</description>
+  </item>
+  <item>
+    <title>[6] Step-TP: A Grounded, Step-Level Dataset with Chain-of-Thought Reasoning for LLM-Guided Tensor Program Optimization</title>
+    <link>https://doi.org/10.1145/3770855.3817484</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3817484</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM KDD 2026 · Mengfan Liu, Da Zheng, Junwei Su, Chuan Wu — LLM-guided step-level dataset for tensor program optimisation with verifiable transformation decisions; relevant to LLM-driven combinatorial optimisation and learning to optimise.</description>
+  </item>
+  <item>
+    <title>[6] Successor-Generator Planning with LLM-generated Heuristics</title>
+    <link>https://doi.org/10.1609/icaps.v36i1.42843</link>
+    <guid isPermaLink="false">doi:10.1609/icaps.v36i1.42843</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICAPS 2026 · Alexander Tuisov, Yonatan Vernik, Alexander Shleyfman — LLM-generated heuristics for deterministic planning integrated into heuristic search; LLM-designed heuristics relevant to their optimisation interests.</description>
+  </item>
+  <item>
+    <title>[6] TRACE-GRPO: Teacher-Refined Advantage Credit Estimation for Long-Horizon Agentic RL</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1522</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1522</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Yuchen Liu, Tianchu Yao, Deshu Chen, Yinghao Zhang et al. — Credit assignment for agentic RL post-training of LLM agents; general agentic method with no optimisation-of-operations application.</description>
+  </item>
+  <item>
+    <title>[6] Tapas Are Free! Training-Free Adaptation of Programmatic Agents via LLM-Guided Program Synthesis in Dynamic Environments</title>
+    <link>https://doi.org/10.1609/aaai.v40i35.40189</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i35.40189</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAAI 2026 · Jinwei Hu, Yi Dong, Youcheng Sun, Xiaowei Huang — LLM-guided program synthesis to adapt agent action programs at runtime in dynamic environments; relevant to LLM-driven decision-making and agentic operations.</description>
+  </item>
+  <item>
+    <title>[6] Task Assignment meets Annotator Modeling: Human-LLM Collaborative Annotation with Constraints</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-srw.79</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-srw.79</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACL 2026 · Kei Moriyama, Kouta Nakayama, Yukino Baba — Assigns annotation tasks to humans and LLMs via a linear programming formulation under constraints; optimisation-based allocation adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] Tool-Making and Self-Evolving LLM Agents in Low-Latency Systems</title>
+    <link>https://doi.org/10.18653/2026.emnlp-industry.154</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-industry.154</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Kalle Kujanpää, Ning Liu, Shahnawaz Alam, Yeshwanth Reddy Sura et al. — Agents compile repeated procedural steps into validated tools for low-latency production systems; relevant to agents that make operational decisions.</description>
+  </item>
+  <item>
+    <title>[6] ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1573</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1573</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Marianne Menglin Liu, Daniel Garcia, Fjona Parllaku, Vikas Upadhyay et al. — Tool merging and context-aware filtering for LLM agent tool use; agentic tool-use method useful background for agents that run pipelines.</description>
+  </item>
+  <item>
+    <title>[6] Towards Efficient Constraint Handling in Neural Solvers for Routing Problems</title>
+    <link>https://openreview.net/forum?id=raDFGuQxvD</link>
+    <guid isPermaLink="false">iclr:2026:2c26f9a59b0ba61233e6fc0af8e47f14</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ICLR 2026 · Jieyi Bi, Zhiguang Cao, Jianan Zhou, Wen Song et al. — Neural VRP solver with constraint handling; relevant to learned routing and scheduling methods, though no abstract is available to confirm details.</description>
+  </item>
+  <item>
+    <title>[6] Towards Foresighted AI Cooperators with LLM-driven Decision-Time Planning</title>
+    <link>https://doi.org/10.65109/xalp4331</link>
+    <guid isPermaLink="false">doi:10.65109/xalp4331</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>AAMAS 2026 · Yuheng Jing, Kai Li, Bingyun Liu, Ziwen Zhang et al. — LLM-driven decision-time planning for cooperative agents using simulated trajectories; planning-based agent method adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
+    <title>[6] Towards Systematic Generalization for Power Grid Optimization Problems</title>
+    <link>https://doi.org/10.1145/3770855.3819020</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3819020</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM KDD 2026 · Zeeshan Memon, Yijiang Li, Hongwei Jin, Kibaek Kim et al. — Learning framework jointly modelling ACOPF and unit commitment with graph backbone and cross-topology generalisation; relevant to power-system optimisation learning.</description>
+  </item>
+  <item>
+    <title>[6] Treat Domain-Specific Languages as Design Variables in LLM Agents</title>
+    <link>https://openreview.net/forum?id=QjRcgONOvF</link>
+    <guid isPermaLink="false">neurips:2026:63923f49e5241343aa7acb6a06a751e7</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Letian Li, Wenyuan Jiang, Xin Yang, Shuzhao Xie et al. — Treats domain-specific languages as design variables for LLM agents; could inform LLM formulation of optimisation models, abstract unavailable.</description>
+  </item>
+  <item>
+    <title>[6] UECO: A Unified Encoder with Structure-Aware Attention Mixture via Iterative Edge Evolving for Neural Combinatorial Optimization</title>
+    <link>https://openreview.net/forum?id=M2lqt23VO7</link>
+    <guid isPermaLink="false">neurips:2026:91dacc0f5b8d3192aa89bc86db450dc1</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>NeurIPS 2026 · Wenzheng Pan, Shuyi Yan, Nuoyan Chen, Yiyang Qu et al. — Unified encoder with structure-aware attention for neural combinatorial optimisation; useful learned-solver background for routing and scheduling.</description>
+  </item>
+  <item>
+    <title>[6] UMAS: System-Level Uncertainty Quantification for Multi-Agent LLM Systems</title>
+    <link>https://openreview.net/forum?id=z4D5fgtmEo</link>
+    <guid isPermaLink="false">neurips:2026:08c3f0a75275393e5a8dfeb7c6e32bae</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Hanwen Li, Jinhao Duan, Xiaoshuang Shi, Yue Zhang et al. — System-level uncertainty quantification for multi-agent LLM systems; useful for reliability of agent decisions in operational pipelines.</description>
+  </item>
+  <item>
+    <title>[6] VORTEX: Aligning Task Utility and Human Preferences Through LLM-Guided Reward Shaping</title>
+    <link>https://doi.org/10.1609/aaai.v40i32.39931</link>
+    <guid isPermaLink="false">doi:10.1609/aaai.v40i32.39931</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>AAAI 2026 · Guojun Xiong, Milind Tambe — LLM-generated reward shaping for multi-objective allocation solvers, closely related to LLMs steering optimisation models.</description>
+  </item>
+  <item>
+    <title>[6] Weaving Visual Narratives: Agentic Image Bundle Composition Beyond Atomic Visual Matching</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.1488</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.1488</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Rong Shan, Tianyi Xu, Congmin Zheng, Wenteng Chen et al. — Agentic LLM search composing image bundles via incremental hyperedge discovery; agentic and combinatorial but outside transport or optimisation focus.</description>
+  </item>
+  <item>
+    <title>[6] When Search Becomes Memory: Accelerating Robot Design Discovery with Self-Evolving Skills</title>
+    <link>https://doi.org/10.18653/2026.emnlp-main.368</link>
+    <guid isPermaLink="false">doi:10.18653/2026.emnlp-main.368</guid>
+    <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>EMNLP 2026 · Yunfei Wang, Xiaohao Xu, Yang Li, Xiaonan Huang — Self-evolving LLM agent builds skill library guiding evolutionary design search; LLM-guided search with simulator feedback is close to the researcher&#39;s ai4opt interests.</description>
+  </item>
+  <item>
     <title>[9] Multi-source data-driven electric bus wireless charging scheduling and facility location problem: A physics-informed Benders decomposition algorithm</title>
     <link>https://doi.org/10.1016/j.trc.2026.106122</link>
     <guid isPermaLink="false">doi:10.1016/j.trc.2026.106122</guid>
@@ -387,86 +1635,6 @@
     <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     <category>E-bus scheduling &amp; charging</category>
     <description>Computers &amp; Operations Research · Ming Liu, Lutian Wang, Lihua Sun, Feifeng Zheng — Integrates charging load prediction with mobile charging station scheduling; relevant to charging scheduling and learning-augmented optimisation, though not explicitly electric buses.</description>
-  </item>
-  <item>
-    <title>[9] Voltage Safety-Aware EV Charging Coordination in Distribution Network via Graph-Enhanced Safe MARL with Dedicated Critics</title>
-    <link>https://doi.org/10.1109/tte.2026.3748620</link>
-    <guid isPermaLink="false">doi:10.1109/tte.2026.3748620</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>IEEE Trans. Transportation Electrification · Chenghao Huang, Jiarong Fan, Weiqing Wang, Hao Wang — Graph-enhanced safe multi-agent RL for EV charging coordination with voltage safety in distribution networks, directly on the grid integration problem.</description>
-  </item>
-  <item>
-    <title>[8] Electric Vehicle Scheduling and Carbon-Aware Energy Dispatch for Charging Stations</title>
-    <link>https://arxiv.org/abs/2610.36426</link>
-    <guid isPermaLink="false">arxiv:2610.36426</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>arXiv eess.SY · Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al. — Greedy vehicle scheduling and TD3 battery dispatch for charging stations with PV and carbon-aware costs, directly relevant to charger scheduling and energy cost.</description>
-  </item>
-  <item>
-    <title>[7] Cooperative EV Charging Assignment Using Multi-Agent Reinforcement Learning: A Comparison of QMIX and Independent Q-Learning Under Urban Traffic Uncertainty</title>
-    <link>https://arxiv.org/abs/2610.38053</link>
-    <guid isPermaLink="false">arxiv:2610.38053</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>arXiv cs.MA · Nour-Eddine Moumni, Rachid Alaoui, Driss Kiouach — QMIX versus IQL multi-agent RL for EV charging assignment across stations in SUMO, a clear method and application match.</description>
-  </item>
-  <item>
-    <title>[7] Dual-Agent Reinforcement Learning for Vehicle Scheduling and Multi-Energy Dispatch in Electric-Hydrogen-Transport Systems</title>
-    <link>https://arxiv.org/abs/2610.40116</link>
-    <guid isPermaLink="false">arxiv:2610.40116</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>arXiv eess.SY · Fulong Yao, Yiming Xu, Maurizio Albano, Liana Cipcigan et al. — Couples electric bus-like vehicle scheduling with multi-energy dispatch using RL, directly touching the researcher&#39;s scheduling and energy-coupling interests.</description>
-  </item>
-  <item>
-    <title>[6] Chance constrained optimization of hub transport systems</title>
-    <link>https://doi.org/10.1016/j.cor.2026.107709</link>
-    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107709</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Computers &amp; Operations Research · Max Bourgeat, Öykü Naz Attila, Rémy Chevrier, Quentin Cappart et al. — Chance-constrained shuttle routing solved by column generation under travel-time uncertainty; method close to the researcher&#39;s, though not electrified.</description>
-  </item>
-  <item>
-    <title>[6] Electrified cross-carrier platooning for long-haul freight: Charging coordination and stable cost allocation</title>
-    <link>https://doi.org/10.1016/j.trd.2026.105705</link>
-    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105705</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>Transportation Research Part D · Rui Zheng, Yu Zhou, Chuan Ding, Mi Gan et al. — Electrified freight platooning with charging coordination and cost allocation shares optimisation and charging themes, though it targets long-haul trucks.</description>
-  </item>
-  <item>
-    <title>[6] Algebraic World Model: From Exploration to Proofs</title>
-    <link>https://arxiv.org/abs/2610.40503</link>
-    <guid isPermaLink="false">arxiv:2610.40503</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM &amp; agentic AI</category>
-    <description>arXiv cs.AI · Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao — LLM-driven world-model construction with Lean proofs for reachability; a generic agent paper with limited transport or OR overlap despite its agentic framing.</description>
-  </item>
-  <item>
-    <title>[6] Distribution Grid Reconfiguration and Restoration via Linearizable Multi-phase Power Flow Modeling</title>
-    <link>https://arxiv.org/abs/2610.36252</link>
-    <guid isPermaLink="false">arxiv:2610.36252</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>arXiv eess.SY · Young-ho Cho, Hao Zhu — MILP-compatible neural power-flow model for distribution network reconfiguration and restoration; relevant to grid integration and MILP formulations.</description>
-  </item>
-  <item>
-    <title>[6] GNN-Guided Network Reduction for Centralized Urban Traffic Routing</title>
-    <link>https://arxiv.org/abs/2610.36981</link>
-    <guid isPermaLink="false">arxiv:2610.36981</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Traffic simulation &amp; calibration</category>
-    <description>arXiv cs.LG · Nikolai Antonov, Lukáš Chrpa, Andrii Nyporko, Jan Hůla — GNN-guided network reduction for MILP-based urban traffic routing; traffic-optimisation methods that the researcher may find useful.</description>
-  </item>
-  <item>
-    <title>[6] LLM-Assisted Optimization for Simulation-Based Redesign</title>
-    <link>https://arxiv.org/abs/2610.39275</link>
-    <guid isPermaLink="false">arxiv:2610.39275</guid>
-    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM &amp; agentic AI</category>
-    <description>arXiv cs.AI · Chan-Eui Song, Jeremy J. Michalek, Christopher McComb — Integrates LLM guidance with black-box solvers for simulation-based redesign on an EV battery case; relevant LLM-plus-optimisation method.</description>
   </item>
 </channel>
 </rss>
