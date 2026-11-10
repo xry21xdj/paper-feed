@@ -5,6 +5,86 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[8] Traffic-energy coordinated planning of highway self-contained energy system for electric vehicle hosting capacity enhancement under multiple uncertainties</title>
+    <link>https://doi.org/10.1016/j.trc.2026.106119</link>
+    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106119</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Transportation Research Part C · Yujiang Ye, Shunde Xuan, Ruifeng Shi, Xiaolei Ma et al. — Coordinates highway energy systems with EV hosting capacity under uncertainty, combining traffic and energy planning relevant to e-bus charging and grid integration.</description>
+  </item>
+  <item>
+    <title>[7] A Deep Graph Learning Approach for Large-Scale Hub-Based Truck Platoon Coordination Problem</title>
+    <link>https://doi.org/10.1109/tits.2026.3742013</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3742013</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Bingci Liu, Na Wu, Ruixuan Zhang, Zhigang Xu et al. — Deep graph learning for large-scale hub-based truck platoon coordination; neural approach to a routing and coordination optimisation problem.</description>
+  </item>
+  <item>
+    <title>[7] An Accelerated Column Generation Approach With Adaptive Large Neighborhood Search for Time-Coupled Drone Scheduling in Real-Time Vessel Emission Monitoring</title>
+    <link>https://doi.org/10.1109/tits.2026.3747992</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3747992</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Hao Li, Bo Liu, Wenchao Xue, Haitao Fang — Column generation with adaptive large neighbourhood search for time-coupled drone scheduling, close to the researcher&#39;s decomposition methods.</description>
+  </item>
+  <item>
+    <title>[7] Balanced Decoding of Constructive Neural Solvers for Vehicle Routing Problems</title>
+    <link>https://doi.org/10.1109/tits.2026.3739787</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3739787</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Pengzhi Cheng, Chaoyang Wang, Jingze Li, Weiwei Sun — Neural constructive solvers for vehicle routing; a learning-to-optimise method the researcher would want to read, though the abstract is unavailable.</description>
+  </item>
+  <item>
+    <title>[7] Decision-Aware Load Forecasting and State Estimation for EV-Integrated Transportation–Power Systems Using Physics-Informed Graph Networks</title>
+    <link>https://doi.org/10.1109/tte.2026.3751026</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3751026</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Shuying Lai, Yuechuan Tao, Zhao Yang Dong, Shaohua Yang et al. — Load forecasting and state estimation for EV-integrated transport-power systems; directly on transport-grid integration.</description>
+  </item>
+  <item>
+    <title>[7] Terminal-Feedback Receding-Horizon Control for Energy and Motion-Sickness-Aware Battery Electric Vehicle Car-Following</title>
+    <link>https://doi.org/10.1109/tits.2026.3748110</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3748110</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Shihui Wang, Zhongcheng Liu, Yibo Yi — Receding-horizon control for energy-aware battery EV car-following; relevant control and energy-consumption method for electric vehicle operations.</description>
+  </item>
+  <item>
+    <title>[7] Urban Air Mobility Fleet Management Under Uncertainty: A Deep Reinforcement Learning Approach</title>
+    <link>https://doi.org/10.1109/tits.2026.3743377</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3743377</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Emin Burak Onat, Shangqing Cao, Mark Hansen, Raja Sengupta — Deep RL for urban air mobility fleet management under uncertainty; close to fleet dispatch and RL-based operational decisions the researcher studies.</description>
+  </item>
+  <item>
+    <title>[6] A TD3 Control Framework for Real-Time Multi-Objective Energy Management in Catenary-Powered Electric Trucks</title>
+    <link>https://doi.org/10.1109/tte.2026.3751936</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3751936</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Transportation Electrification · Qianlin Wang, Ziwei Zhou, Yan Xu, Zhongbei Tian et al. — TD3 reinforcement learning for real-time multi-objective energy management in electric trucks relates to RL-based dispatching and energy optimisation, though it is trucks rather than buses.</description>
+  </item>
+  <item>
+    <title>[6] Represented but Not Used: Value-Policy Dissociation in LLM Agents</title>
+    <link>https://arxiv.org/abs/2611.10457</link>
+    <guid isPermaLink="false">arxiv:2611.10457</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Yuzhang Luo, Mohamed Aghzal, Liangming Pan, Ziyu Yao — Studies whether LLM agents represent action value and use it in decisions, an agent decision-making question adjacent to planning, though not transport or optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Tail-risk-aware Agent Safety: Constraining Tail Risks Across Multi-step LLM Agent Workflows</title>
+    <link>https://arxiv.org/abs/2611.10411</link>
+    <guid isPermaLink="false">arxiv:2611.10411</guid>
+    <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Shilong Pan, Zhiliang Tian, Zihan Chen, Wentao Zou et al. — Tail-risk safety framework for multi-step LLM agent workflows modelled as an MDP, relevant to agentic workflow reliability and sequential decisions.</description>
+  </item>
+  <item>
     <title>[9] COMPASS: Composable Policy-Amortized Structured Search for LLM-Based Optimization Modeling</title>
     <link>https://openreview.net/forum?id=jF68qSbugj</link>
     <guid isPermaLink="false">neurips:2026:89f53faf95dedd155d17d200c2f2df2e</guid>
@@ -3499,30 +3579,6 @@
     <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.MA · Xiangyun Luo, Yunkai Zhang, Yong Huang, Stephen Wu et al. — LLM multi-agent system for bridge operation and maintenance, a transport infrastructure application of agentic decision-making.</description>
-  </item>
-  <item>
-    <title>[8] Infrastructure planning for inductive charging in electrified shuttle systems</title>
-    <link>https://doi.org/10.1016/j.trc.2026.106068</link>
-    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106068</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Transportation Research Part C · Paul Bischoff, Salma Hammani, Maximilian Schiffer — Infrastructure planning for inductive charging in electrified shuttle systems directly addresses electric transit charging infrastructure decisions.</description>
-  </item>
-  <item>
-    <title>[6] A real-time transit signal priority control method based on stochastic shockwave profile model for multi-line bus systems</title>
-    <link>https://doi.org/10.1016/j.tre.2026.105358</link>
-    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105358</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Traffic simulation &amp; calibration</category>
-    <description>Transportation Research Part E · Pengjie Liu, Yanzhan Chen, Ruiguang Liu, Fan Yu et al. — Real-time transit signal priority for multi-line bus systems using stochastic shockwave modelling; relevant bus operations control with adjacent simulation methods.</description>
-  </item>
-  <item>
-    <title>[6] Learning-oriented approach for integrated charging load prediction and mobile charging station scheduling</title>
-    <link>https://doi.org/10.1016/j.cor.2026.107716</link>
-    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107716</guid>
-    <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Computers &amp; Operations Research · Ming Liu, Lutian Wang, Lihua Sun, Feifeng Zheng — Integrates charging load prediction with mobile charging station scheduling; relevant to charging scheduling and learning-augmented optimisation, though not explicitly electric buses.</description>
   </item>
 </channel>
 </rss>

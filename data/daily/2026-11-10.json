@@ -1,0 +1,1561 @@
+{
+ "date": "2026-11-10",
+ "fetched": 25241,
+ "sources": {
+  "arXiv": 44,
+  "Transportation Research Part B": 0,
+  "Transportation Research Part C": 5,
+  "Transportation Research Part D": 4,
+  "Transportation Research Part E": 0,
+  "Applied Energy": 15,
+  "European Journal of Operational Research": 3,
+  "Computers & Operations Research": 1,
+  "eTransportation": 0,
+  "IEEE Trans. Intelligent Transportation Systems": 37,
+  "IEEE Trans. Smart Grid": 4,
+  "IEEE Trans. Transportation Electrification": 8,
+  "IEEE Trans. Power Systems": 3,
+  "Transportation Science": 0,
+  "Operations Research": 1,
+  "INFORMS Journal on Computing": 0,
+  "Nature Energy": 1,
+  "Nature Communications": 36,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": 0,
+  "ACM Trans. Evolutionary Learning and Optimization": 0,
+  "ACM Trans. Knowledge Discovery from Data": 1,
+  "ACM Trans. Spatial Algorithms and Systems": 2,
+  "ACM Trans. Cyber-Physical Systems": 0,
+  "ACM Trans. Autonomous and Adaptive Systems": 0,
+  "ACM Trans. Modeling and Computer Simulation": 0,
+  "ACM Journal on Autonomous Transportation Systems": 0,
+  "ACM Computing Surveys": 1,
+  "NeurIPS (paper list)": 9276,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 778,
+  "IJCAI": 156,
+  "AAMAS": 354,
+  "ICAPS": 29,
+  "ACM GECCO": 29,
+  "ACL": 528,
+  "EMNLP": 791,
+  "ACM KDD": 283,
+  "ACM WWW": 163,
+  "ACM CIKM": 164,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 15,
+  "ACM BuildSys": 11,
+  "ACM/IEEE ICCPS": 10
+ },
+ "papers": [
+  {
+   "id": "doi:10.1016/j.trc.2026.106119",
+   "title": "Traffic-energy coordinated planning of highway self-contained energy system for electric vehicle hosting capacity enhancement under multiple uncertainties",
+   "url": "https://doi.org/10.1016/j.trc.2026.106119",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-09",
+   "authors": [
+    "Yujiang Ye",
+    "Shunde Xuan",
+    "Ruifeng Shi",
+    "Xiaolei Ma",
+    "Zhuangzhuang Liu",
+    "Limin Jia"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 8,
+   "topic": "grid",
+   "reason": "Coordinates highway energy systems with EV hosting capacity under uncertainty, combining traffic and energy planning relevant to e-bus charging and grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742013",
+   "title": "A Deep Graph Learning Approach for Large-Scale Hub-Based Truck Platoon Coordination Problem",
+   "url": "https://doi.org/10.1109/tits.2026.3742013",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Bingci Liu",
+    "Na Wu",
+    "Ruixuan Zhang",
+    "Zhigang Xu",
+    "Liyuan Zhao",
+    "Lichen Luo"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Deep graph learning for large-scale hub-based truck platoon coordination; neural approach to a routing and coordination optimisation problem.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747992",
+   "title": "An Accelerated Column Generation Approach With Adaptive Large Neighborhood Search for Time-Coupled Drone Scheduling in Real-Time Vessel Emission Monitoring",
+   "url": "https://doi.org/10.1109/tits.2026.3747992",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Hao Li",
+    "Bo Liu",
+    "Wenchao Xue",
+    "Haitao Fang"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Column generation with adaptive large neighbourhood search for time-coupled drone scheduling, close to the researcher's decomposition methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3739787",
+   "title": "Balanced Decoding of Constructive Neural Solvers for Vehicle Routing Problems",
+   "url": "https://doi.org/10.1109/tits.2026.3739787",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Pengzhi Cheng",
+    "Chaoyang Wang",
+    "Jingze Li",
+    "Weiwei Sun"
+   ],
+   "abstract": "",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 3,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Neural constructive solvers for vehicle routing; a learning-to-optimise method the researcher would want to read, though the abstract is unavailable.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751026",
+   "title": "Decision-Aware Load Forecasting and State Estimation for EV-Integrated Transportation–Power Systems Using Physics-Informed Graph Networks",
+   "url": "https://doi.org/10.1109/tte.2026.3751026",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Shuying Lai",
+    "Yuechuan Tao",
+    "Zhao Yang Dong",
+    "Shaohua Yang",
+    "Hongjun Gao",
+    "Chaoqiang Jiang"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "grid",
+   "reason": "Load forecasting and state estimation for EV-integrated transport-power systems; directly on transport-grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3748110",
+   "title": "Terminal-Feedback Receding-Horizon Control for Energy and Motion-Sickness-Aware Battery Electric Vehicle Car-Following",
+   "url": "https://doi.org/10.1109/tits.2026.3748110",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Shihui Wang",
+    "Zhongcheng Liu",
+    "Yibo Yi"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 7,
+   "topic": "ebus",
+   "reason": "Receding-horizon control for energy-aware battery EV car-following; relevant control and energy-consumption method for electric vehicle operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3743377",
+   "title": "Urban Air Mobility Fleet Management Under Uncertainty: A Deep Reinforcement Learning Approach",
+   "url": "https://doi.org/10.1109/tits.2026.3743377",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Emin Burak Onat",
+    "Shangqing Cao",
+    "Mark Hansen",
+    "Raja Sengupta"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Deep RL for urban air mobility fleet management under uncertainty; close to fleet dispatch and RL-based operational decisions the researcher studies.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751936",
+   "title": "A TD3 Control Framework for Real-Time Multi-Objective Energy Management in Catenary-Powered Electric Trucks",
+   "url": "https://doi.org/10.1109/tte.2026.3751936",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Qianlin Wang",
+    "Ziwei Zhou",
+    "Yan Xu",
+    "Zhongbei Tian",
+    "William Z. Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "ai4opt",
+   "reason": "TD3 reinforcement learning for real-time multi-objective energy management in electric trucks relates to RL-based dispatching and energy optimisation, though it is trucks rather than buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10457",
+   "title": "Represented but Not Used: Value-Policy Dissociation in LLM Agents",
+   "url": "https://arxiv.org/abs/2611.10457",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Yuzhang Luo",
+    "Mohamed Aghzal",
+    "Liangming Pan",
+    "Ziyu Yao"
+   ],
+   "abstract": "Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this computation in Qwen2.5-7B-Instruct, Qwen2.5-32B-Instruct, and GPT-OSS-20B across a partially observed Grid environment and WebShop, a simulated web shopping environment. We find that the relative values of candidate actions are linearly decodable from intermediate hidden states, including at states where the policy prefers a worse action. We call this gap between value representation and policy choice value-policy dissociation. To investigate how represented value relates to action selection, we compare direct interventions along the value readout direction with Natural Value Transport (NVT), a transformation learned from hidden state changes that naturally result from differences in action value. While readout-direction interventions have limited and inconsistent effects, NVT more consistently influences action preferences, particularly at later layers. We also test a closed-loop controller that uses the value readout as a sensor and NVT as an actuator, observing improvements in task outcomes. These results suggest that LLM agents can represent useful prospective value without reliably translating it into policy choice.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 5,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Studies whether LLM agents represent action value and use it in decisions, an agent decision-making question adjacent to planning, though not transport or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10411",
+   "title": "Tail-risk-aware Agent Safety: Constraining Tail Risks Across Multi-step LLM Agent Workflows",
+   "url": "https://arxiv.org/abs/2611.10411",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Shilong Pan",
+    "Zhiliang Tian",
+    "Zihan Chen",
+    "Wentao Zou",
+    "Weiguo Chen",
+    "DongSheng Li"
+   ],
+   "abstract": "LLM-based agents extend LLMs with tool calls, memory, planning, and retrieval to act in external environments, but they are vulnerable to attacks at different workflow steps. Existing defenses, including prompt engineering and post-training alignment, primarily improve LLM-only safety and often overlook risks that arise from multi-step execution. External verification adds guardrails to check each step separately, but it typically ignores how risks can propagate across steps. We argue that we should consider risk transitions across dependent steps through the agent workflow, rather than separate verification on a single step. In this paper, we propose \\textbf{T}ail-risk-aware \\textbf{A}gent \\textbf{S}afety (TAS), a tail-risk-aware safety framework that models agent workflow safety as a sequence of dependent safety states and constrains the rare but extreme risks (i.e., tail risk) with a shared budget. TAS first models safety-state transitions sequentially along the workflow as an MDP to trace risk propagation, then measures a tail-sensitive risk to target rare but high-cost risks (i.e., tail risk), and constrains the risk with a shared budget to derive a step-wise safety strategy. By constraining tail risk rather than the overall average, TAS suppresses rare high-cost failures while preserving utility in normal cases. Experiments show that TAS achieves better performance compared with eleven baselines across three benchmarks.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Tail-risk safety framework for multi-step LLM agent workflows modelled as an MDP, relevant to agentic workflow reliability and sequential decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747338",
+   "title": "BEV-Enabled Multi-Objective Eco-Driving for Intelligent Connected Vehicles in Urban Congestion",
+   "url": "https://doi.org/10.1109/tits.2026.3747338",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Mei Yan",
+    "Haowen Yao",
+    "Menglin Li",
+    "Jingda Wu",
+    "Hongwen He"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "ebus",
+   "reason": "Eco-driving for connected vehicles with BEV energy objectives; adjacent energy-efficient vehicle control rather than bus scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751282",
+   "title": "Commercial-EV Mobility-Feasible V2G Opportunity: Survey and BMS Evidence",
+   "url": "https://doi.org/10.1109/tte.2026.3751282",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Younggyu Hwang",
+    "Hyeongyu Son",
+    "Musu Kim",
+    "Minjae Park",
+    "Junhyung Lee",
+    "Sekyung Han"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Commercial EV mobility and V2G opportunity using BMS evidence; relevant to fleet charging flexibility, though survey-oriented.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746314",
+   "title": "Mathematical Formulation and Discrete Rapid-Exploring Random Tree Framework for Cooperative Multi-Agent Pathfinding",
+   "url": "https://doi.org/10.1109/tits.2026.3746314",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Jianbin Xin",
+    "Yuze Duan",
+    "Hongcai Wu",
+    "Andrea D'Ariano",
+    "Jing Liang"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "ai4opt",
+   "reason": "Mathematical formulation and REST-based framework for cooperative multi-agent pathfinding; optimisation-based and adjacent to scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tsg.2026.3751494",
+   "title": "A Quantitative Method for the Demand Response Potential of 5G Base Station Clusters Under Dynamic Traffic and Thermal Conditions",
+   "url": "https://doi.org/10.1109/tsg.2026.3751494",
+   "venue": "IEEE Trans. Smart Grid",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Yu Guo",
+    "Tianguang Lu",
+    "Yansong Mei",
+    "Haokun Liu"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Demand response potential of 5G base stations; grid flexibility is related, but the load type is not transport electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741594",
+   "title": "A Signal Control Diagnosis Method Leveraging BiasSVD-Based Recommendation System for Urban Arterials",
+   "url": "https://doi.org/10.1109/tits.2026.3741594",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Hao Wu",
+    "Peizhe Kang",
+    "Chaopeng Tan",
+    "Edward Chung",
+    "Keshuang Tang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Recommender-style diagnosis of arterial signal control; loosely adjacent to traffic operations but not simulation calibration or electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742981",
+   "title": "A Trajectory-Based Unified Traffic Flow Estimation Model Handling Both Interrupted and Uninterrupted Flow",
+   "url": "https://doi.org/10.1109/tits.2026.3742981",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Binghong Jiang",
+    "Zhiheng Li",
+    "Boqi Li",
+    "Li Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Trajectory-based traffic flow estimation across interrupted and uninterrupted flow; useful background for traffic data and modelling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747649",
+   "title": "Context-Aware Deep Generative Modeling for Synthetic Nonrecurrent Traffic Incident Data",
+   "url": "https://doi.org/10.1109/tits.2026.3747649",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Collin Meese",
+    "Danielle Lee",
+    "Kurt Hammen",
+    "Mark Nejad"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Deep generative synthesis of traffic incident data; could inform simulation scenarios but is a generative modelling method.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746766",
+   "title": "Deep Reinforcement Learning-Based Cooperative Highway Merging Sequence and Trajectory Co-Optimization With Transformer",
+   "url": "https://doi.org/10.1109/tits.2026.3746766",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Weichao Zhuang",
+    "Chen Jiang",
+    "Hao Sun",
+    "Bingbing Li",
+    "Haoji Liu",
+    "Sunan Zhang",
+    "Hao Zhang",
+    "Boli Chen",
+    "Guodong Yin"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "DRL with transformer for merging sequence and trajectory co-optimisation; learned scheduling and dispatching adjacent to the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747818",
+   "title": "Prediction of Public Bike Sharing Demand Based on Multi-View Spatiotemporal Graph Convolutional Network",
+   "url": "https://doi.org/10.1109/tits.2026.3747818",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Guangnian Xiao",
+    "Yuanshuai Ou",
+    "Hailin Tong",
+    "Ruijing Wu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Graph convolutional demand forecasting for bike sharing; spatiotemporal forecasting adjacent to fleet demand but not electrified transit.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3743338",
+   "title": "Spatio-Temporal Cooperative Multi-Agent Reinforcement Learning for Intelligent Traffic Signal Control",
+   "url": "https://doi.org/10.1109/tits.2026.3743338",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Shixiang Tang",
+    "Weiqiang Jin",
+    "Jingjing Yang",
+    "Biao Zhao"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Multi-agent RL for traffic signal control; RL for dispatching-style control is adjacent but signal control is outside core interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10453",
+   "title": "BunshinRL: Splitting Live Agent Workspaces for Memory-Efficient Agentic RL",
+   "url": "https://arxiv.org/abs/2611.10453",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Yutong Huang",
+    "Vikranth Srivatsa",
+    "Alex Asch",
+    "Yiying Zhang"
+   ],
+   "abstract": "Agentic reinforcement learning (RL) rollouts interleave model reasoning with tool calls in persistent workspaces. Scaling these rollouts incurs substantial memory costs for concurrent environments, while slow tool calls delay entire rollout batches. We present BunshinRL, an agentic RL rollout system that exploits shared environment state and recurring tool calls through three techniques: memory sharing across environments, tool-prefix caching, and speculative tool execution. These techniques build on BunshinFork, a novel live whole-workspace forking mechanism for containers. BunshinFork reconstructs process trees, shares memory copy-on-write, and preserves file, communication, and GUI state, enabling cached-state reuse and rollback after incorrect speculation. We implement BunshinRL and BunshinFork through Linux kernel module and CRIU modifications. BunshinRL reduces peak memory by up to 43%, total memory consumption by up to 51%, and end-to-end rollout latency by 23%.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Systems work on memory-efficient agentic RL rollouts with workspace forking; agentic infrastructure but not about planning or optimisation decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10394",
+   "title": "Crustify: Repository-Level Generation of Safe Rust Bindings with LLM Agents and Coverage-Guided Testing",
+   "url": "https://arxiv.org/abs/2611.10394",
+   "venue": "arXiv cs.PL",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Marius Momeu",
+    "Marius Arvinte",
+    "Cory Cornelius",
+    "Koushik Sen"
+   ],
+   "abstract": "Wrapping C code in a safe Rust interface lets Rust applications use it without writing unsafe code, until the code itself is migrated to Rust. Such bindings are tedious and error-prone to write, however: their internals use unsafe code that the Rust compiler does not check, so a single mistake can introduce undefined behavior (UB), and they have so far been written mostly by hand. We present Crustify, an agentic co-translator that generates safe Rust bindings for repository-level C libraries. Crustify schedules a target's types and symbols into dependency-ordered waves of independent batches that agents bind concurrently. Its agents derive the ownership and lifecycle contract of every pointer and type they wrap, check each binding with coverage-guided equivalence and UB tests under sanitizers and Miri, and review every wave. They build on three tools that we contribute: (a) ffibox, Rust primitives for C/Rust interop that mirror Box, Arc, and Vec for C objects without ever forming a reference to memory that C may alias; (b) Wavefront, a neuro-symbolic static analyzer that orders a target's items by their dependencies, including those that casts and type-erased pointers hide; and (c) ffimap, a rustc-based analysis that maps the unsafe surface of bindings. On libgit2 and ffmpeg, with one developer in the loop, Crustify generated safe bindings for 41.9% and 42.8% of their public APIs in about 51.9 and 58.9 hours. On the interface consumers are expected to use, only 1.6% and 0.4% of the bindings' public functions are unsafe, and only 0.1% and 0.6% have a raw pointer in their signature. Their tests cover 98.92% and 99.07% of the Rust code and 45.95% and 67.20% of libgit2 and of ffmpeg's libavutil, and the reviewers fixed 8 and 13 defects that caused UB reachable from Rust. To our knowledge, this is the first work to automate the generation of safe Rust bindings for C libraries.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Agentic LLM system generating safe Rust bindings; agentic code generation is tangential to the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10468",
+   "title": "Dynamic State Estimation from Sparse PMUs via Physics-Informed Graph Neural Operators",
+   "url": "https://arxiv.org/abs/2611.10468",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Huy Hoang Le",
+    "Haoguang Wang",
+    "Christian Moya",
+    "Marcos Netto",
+    "Guang Lin"
+   ],
+   "abstract": "This paper proposes a physics-informed graph neural operator for power system dynamic state estimation. From a sparse, intermittent measurement window at a few generator buses, the operator estimates the rotor-angle and speed trajectories of all machines, unmeasured ones included, in one forward pass. A graph-attention encoder processes the measurements, and the swing equations are imposed as a hard constraint or as a soft one with a learned correction that absorbs model errors. It is trained on simulated measurements, without state labels. With several phasor measurement units, masked training hides one from the input but keeps it in the loss. On four transmission systems, simulations show that the operator is the most accurate estimator that neither optimizes per scenario nor uses state labels, except on the smallest system at large model errors, where tuned Kalman smoothers are better. Networks trained on simulated states are more accurate on the two smallest systems but not on the 118-bus system, where the operator is faster and more accurate than hard-constrained moving-horizon estimation. Under model errors, it matches or outperforms an optimization-based benchmark at a fraction of its cost. The results hold for a detailed machine model with exact parameters seen only through voltage phasors.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Physics-informed neural estimation of power system dynamic states from sparse PMUs; touches grid modelling but not transport electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10487",
+   "title": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
+   "url": "https://arxiv.org/abs/2611.10487",
+   "venue": "arXiv math.OC · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Duo Zhou",
+    "Hesun Chen",
+    "Xiangru Zhong",
+    "Grani A. Hanasusanto",
+    "Huan Zhang"
+   ],
+   "abstract": "We present a novel GPU-accelerated global solver for constrained nonlinear programming (NLP) inspired by the efficient linear bound propagation framework in neural network (NN) verification. Existing work on NN verification, a problem that can be cast as feasibility detection for a nonlinear objective, demonstrated orders-of-magnitude speedups with the linear bound propagation-based framework when compared to traditional solvers. Extending this paradigm to global nonlinear programming requires addressing many challenges: a global constrained NLP solver must effectively exploit all, possibly unstructured, nonlinear constraints to improve the objective, whereas NN verification typically handles simple input box constraints over a well-structured NN and does not directly optimize an objective function. We address these challenges by fully exploiting the linear bounds produced by bound propagation: these linear bounds can be viewed as relaxations of nonlinear constraints and used to provide lower bounds, check infeasibility, and guide the search for a primal solution. In addition, we propose tighter linear relaxations for bilinear, quotient, and other commonly used nonlinear functions in NLP problems, and a projected augmented Lagrangian method tightly coupled to our dual solving procedure to produce primal solutions. Our method solves 421 of 505 bounded and continuous NLP problems in the GAMS and MINLPLib benchmarks under a 180-second limit, more than each of the six global solvers we compare with, including Gurobi and BARON (commercial), and SCIP (open-source). Sixteen of these problems are certified by none of the six global solvers; all of them contain exponential, logarithmic, or trigonometric terms, which are often challenging for traditional approaches. Project webpage is at https://verified-intelligence.github.io/GEAR.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "GPU global solver for bounded nonlinear programs using linear bound propagation; relevant to MILP/global optimisation methods but not learning-based.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10395",
+   "title": "The Limits of Information-Flow Control Enforcement for Agentic Systems",
+   "url": "https://arxiv.org/abs/2611.10395",
+   "venue": "arXiv cs.CR",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Jonathan Gregory",
+    "Kyle Domico",
+    "Kunyang Li",
+    "Jean-Charles Noirot Ferrand",
+    "Patrick McDaniel"
+   ],
+   "abstract": "Information-flow control (IFC) is a promising approach to enforce policy in agentic AI systems. However, IFC suffers from label creep, a phenomenon where monotonically increasing security labels propagate through a system and progressively limit its utility. Label creep in agentic AI systems can be mitigated using two major strategies: (1) improved system design and (2) label declassification. In this paper, we characterize how far system design alone can mitigate label creep in agentic systems. Specifically, we measure how system topology, scale, and agent composition affect utility loss and security enforcement cost proxies for conservative IFC enforcement in a stateful agentic system simulator. We develop a pipeline to systematically vary these features and measure their impacts on label propagation. Our results demonstrate strong associations between structural graph features and our IFC utility loss metric (up to a Spearman correlation $|ρ|$ of $0.96$) and show that system size and tool allocation substantially affect how labels propagate. These findings identify design choices to reduce IFC utility loss, but they also demonstrate that system design alone cannot fully prevent utility loss due to monotonic label propagation. This motivates the development of label declassification mechanisms that aid these design choices and diminish IFC utility cost.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Information-flow control in agentic systems with label creep; agent security design, only loosely connected to operational decision-making.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10412",
+   "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+   "url": "https://arxiv.org/abs/2611.10412",
+   "venue": "arXiv cs.AI · EMNLP 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Zhixun Chen",
+    "Ming Li",
+    "Anjie Liu",
+    "Xiaoyuan Zhang",
+    "Quanyu Dai",
+    "Huangxun Chen"
+   ],
+   "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Benchmark of multi-turn user-requirement tracking in chat LLMs; generic conversational evaluation rather than agentic planning or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742348",
+   "title": "2S-ELATP: Two-Stage LLM-Augmented Trajectory Prediction With Ego-Centric Semantic Reasoning",
+   "url": "https://doi.org/10.1109/tits.2026.3742348",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Yiming Huang",
+    "Faliang Chang",
+    "Chunsheng Liu",
+    "Jun Zhou",
+    "Penghui Hao"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM-augmented vehicle trajectory prediction; perception-style prediction with no optimisation or transport operations link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747465",
+   "title": "Analysis and Simulation of Cooperative Buffer Strategies for Traffic Wave Mitigation",
+   "url": "https://doi.org/10.1109/tits.2026.3747465",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Raphael Korbmacher",
+    "Daniel Straub",
+    "Antoine Tordeux",
+    "Claudia Totzeck"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Traffic wave mitigation via cooperative buffers; microscopic traffic analysis that is somewhat adjacent to simulation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742780",
+   "title": "Assessing Traffic Facilities With Dual-Agents: Interpretable Road Hazard Evaluation via Regulation-Enhanced Reasoning With LLM",
+   "url": "https://doi.org/10.1109/tits.2026.3742780",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Lu Gan",
+    "Chen Yan",
+    "Qiyuan Gao",
+    "Qi Wang",
+    "Weibin Zhang"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM dual-agent road hazard assessment; LLM reasoning applied to road infrastructure with no optimisation or agent operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3745908",
+   "title": "Data-Driven Online Mass Estimation of Heavy-Duty Truck Using Multi-Task Learning and Low-Frequency Cloud Data",
+   "url": "https://doi.org/10.1109/tits.2026.3745908",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Rui Song",
+    "Bin Li",
+    "Qiao Wang",
+    "Chunxiao Feng",
+    "Chenyang Hu",
+    "Hajar Riad"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Online mass estimation of heavy-duty trucks from cloud data; vehicle state estimation with weak link to electric bus energy.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3738669",
+   "title": "End-to-End Autonomous Driving: An Analytical Survey Through the Structure–Capability Framework",
+   "url": "https://doi.org/10.1109/tits.2026.3738669",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Xinyu Wang",
+    "Bingli Zhang",
+    "Xiaomin Zhao",
+    "Can Xu",
+    "Junzhao Jiang",
+    "Chongfeng Wei"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Survey of end-to-end autonomous driving architectures; general background without agentic or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741214",
+   "title": "Observability-Driven Sensor Placement and Delay-Resilient Kalman Filtering for Traffic State Estimation on Ring Roads",
+   "url": "https://doi.org/10.1109/tits.2026.3741214",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Mohammad Azimi",
+    "Shima Sadat Mousavi",
+    "Hajar Atrianfar",
+    "Kevin Riehl",
+    "Anastasios Kouvelas"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Sensor placement and Kalman filtering for traffic state estimation; estimation method adjacent to simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751399",
+   "title": "Optimization Guideline for Planar Transformer in High-Power Density EV On-Board Charger",
+   "url": "https://doi.org/10.1109/tte.2026.3751399",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Seong-Yong Hong",
+    "Hyeong-Seok Oh",
+    "Jong-Eun Byun",
+    "Jae-Bum Lee"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Planar transformer design guideline for EV on-board chargers is power electronics hardware, only loosely connected to charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1145/3770855.3817850",
+   "title": "Rejectors in the Wild: Deployment Barriers for LLM Rejectors",
+   "url": "https://doi.org/10.1145/3770855.3817850",
+   "venue": "ACM KDD 2026",
+   "publisher": "Conference",
+   "date": "2026-08-06",
+   "authors": [
+    "Erik Schönwälder",
+    "Claudio Hartmann",
+    "Wolfgang Lehner"
+   ],
+   "abstract": "Despite strong benchmark performance, LLM hallucinations hinder reliable deployment in high-risk domains like medicine. Selective prediction can mitigate this by abstaining when an answer is likely incorrect. In black-box, closed-weight API settings or under tight cost constraints, this is naturally implemented via separated rejectors. In this setup, a lightweight rejector filters inputs, calling the black-box LLM only for accepted queries and abstaining otherwise. Yet even this practical design has important limitations, which we study and overcome through three contributions: (I) a human-annotation study showing that the way we define ''correct'' can drastically change which rejector appears reliable, (II) a large-scale 95×95 cross-model transfer analysis revealing structured redundancies between rejectors across LLMs, and (III) a shift from abstention to selective execution. By exploiting redundancies between LLMs, we propose two pruning strategies that build a compact, diversity-preserving LLM pool and a router that selects the most reliable model per query, outperforming common routing baselines.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM rejector routing and pruning for selective prediction; model-selection routing is only loosely related to agentic or optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3740283",
+   "title": "Security of Deep Reinforcement Learning for Autonomous Driving: A Survey",
+   "url": "https://doi.org/10.1109/tits.2026.3740283",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Ambra Demontis",
+    "Srishti Gupta",
+    "Maura Pintor",
+    "Luca Demetrio",
+    "Kathrin Grosse",
+    "Hsiao-Ying Lin",
+    "Chengfang Fang",
+    "Battista Biggio",
+    "Fabio Roli"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Survey on security of deep RL for autonomous driving; only tangentially related to agent reliability for operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3733581",
+   "title": "Self-Interest and Systemic Benefits: Emergence of Collective Rationality in Mixed Autonomy Traffic Through Deep Reinforcement Learning",
+   "url": "https://doi.org/10.1109/tits.2026.3733581",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Di Chen",
+    "Jia Li",
+    "Michael Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Deep RL in mixed autonomy traffic for collective rationality; RL-based traffic control with limited optimisation or fleet relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742851",
+   "title": "ShibuyaSocial: Multi-Scale Model of Pedestrian Flows in Scramble Crossing",
+   "url": "https://doi.org/10.1109/tits.2026.3742851",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Akihiro Sakurai",
+    "Naoya Kajio",
+    "Ko Yamamoto"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Multi-scale pedestrian flow model of a crossing; pedestrian rather than transit or simulation-calibration focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10418",
+   "title": "Beyond Query Similarity: Safety-Conditioned Cache Routing for LLM Response Reuse",
+   "url": "https://arxiv.org/abs/2611.10418",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Shilong Pan",
+    "Zhiliang Tian",
+    "Weiguo Chen",
+    "Zihan Chen",
+    "DongSheng Li"
+   ],
+   "abstract": "Semantic response caching reuses a cached response for a semantically similar query to improve LLM inference efficiency. However, query similarity alone can lead to unsafe reuse when safety conditions change. Existing approaches improve cache safety through stricter similarity checks, context-aware validation, or response verification, yet they may still miss safety conflicts between the cached response and the new request or introduce unnecessary verification overhead. We argue that safe and efficient semantic caching requires a reuse policy that makes the cached response's safety conditions explicit and uses them to guide the reuse decision with a balance between safety and utility. In this paper, we propose SafeCache, a safety-aware framework that separates candidate retrieval from safety approval and formulates semantic response reuse as a safety-conditioned routing problem. SafeCache matches each cached-response condition against the new request and aggregates the per-condition mismatches into an overall risk score. A separate contradiction guard prevents explicit conflicts from being diluted by strong matches. It further estimates matching uncertainty and calibrates the routing policy under a required unsafe-reuse target and a verifier-call budget to choose among direct reuse, selective verification, or regeneration. Experiments show that SafeCache achieves the better safety-utility trade-off among the evaluated baselines, enabling safer response reuse at comparable cache utility.",
+   "topics": [
+    "llm",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Safety-aware semantic cache routing for LLM responses; a routing policy with little overlap with the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10404",
+   "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+   "url": "https://arxiv.org/abs/2611.10404",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Yuntao Gui"
+   ],
+   "abstract": "Frontier agentic LLMs are trained on verifiable rewards in reinforcement learning (RL) environments built from real software repositories. A passing test suite is treated as the reward for solving the task. We show that, on hard problems, frontier models often satisfy these rewards by obtaining the answer instead of deriving it, known as reward hacking. Prior reports document this behavior on public benchmarks. We test its persistence on unseen problems. In a hardened environment where the answer cannot leak, nearly every model we tested attempted to recover the answer, escalating through tiers of increasingly specialized exploitation: mining the repository history for the upstream fix, inspecting the git object store directly, and sweeping the filesystem for a possible newer copy of the source or hidden tests. These attempts were concentrated on the hardest problems, and the models differed in whether, how often, and how deeply they escalated. Our position is that this behavior is a learned shortcut, acquired in RL environments that leak the answer, not a sign of intelligence. We release agent traces for these models to support further study at https://huggingface.co/datasets/logitly-ai/reward-hacking-raw-v1.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Studies reward hacking by frontier coding agents; tangentially relevant to agent reliability but not to the researcher's transport or optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10469",
+   "title": "Hibana: Fast Agentic Inference on Unified-Memory Devices",
+   "url": "https://arxiv.org/abs/2611.10469",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Yahya Emara",
+    "Chi-Chih Chang",
+    "Anthony Fei",
+    "Ahmed F. AbouElhamayed",
+    "Chong-Yan Chen",
+    "Hung-Yueh Chiang",
+    "Kai-Chiang Wu",
+    "Mohamed S. Abdelfattah"
+   ],
+   "abstract": "Local AI promises capable personal assistants that run on users' own devices, keeping data and computation under their control. Open-weight models that fit on local devices can now handle practical tasks such as coding. Yet current inference engines fall short. Popular engines such as vLLM and SGLang target datacenter GPUs with dedicated host memory, while local engines underuse the memory hierarchy of unified-memory devices. We present Hibana, an inference engine for unified-memory devices that co-optimizes model representation, memory management, and decoding strategy. Model surgery, the process of editing a trained model's architecture to suit its hardware, changes how the model computes, shrinking its memory footprint and data movement. Unified-memory management preserves each agent's state across turns, so long-running agents can resume instantly instead of recomputing their state. Adaptive speculation generates several tokens per step. Hibana codesigns these features around the shared memory capacity and limited bandwidth of unified-memory systems-on-chip to support local multi-agent workloads. On a single DGX Spark serving Qwen and Nemotron models of up to 125B parameters, Hibana completes up to 3.4$\\times$ more agentic tasks per hour and delivers up to 3.9$\\times$ higher decoding throughput than other established frameworks such as vLLM, NVIDIA Flare, llama.cpp, and TensorFold. Code is available at https://github.com/sharar-project/hibana.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Inference engine for local agentic workloads on unified memory; systems focus with little connection to optimisation or transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10414",
+   "title": "Track or Follow? A Jev-Compatible Multi-Agent Trading System When Web News Lags the Market",
+   "url": "https://arxiv.org/abs/2611.10414",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Yebo Feng",
+    "Guangyan Gan",
+    "Liangrui Pan",
+    "Ruichao Liang",
+    "Cong Wu",
+    "Jiahua Xu",
+    "Yang Liu"
+   ],
+   "abstract": "LLM agents increasingly trade on the Web news they read, yet much Web news about listed firms is published after, and about, the price move it reports, so a reader can agree with the market by following it instead of reading the event. We ask whether LLM judgments of Web news track the market's reaction to the reported event or follow it. To answer, we built a multi-agent trading system whose agents share only point-in-time stores and answer typed questions through the interface of Jev, a hosted typed decision model; code sets every position under a proved bound on how far text can move it. In a hash-committed test of a Jev-compatible reader built from a pinned LLM's option probabilities, item judgments track announcement-window abnormal returns (weekly Spearman 0.119), also after the LLM's release, and event types agree with the issuers' 8-K filings (AUC 0.833); Jev's judgments of news published after its own release track the reaction as well (descriptive). Exploratory analyses show where the association comes from: 72% of earnings news items appear after the issuer's filing, contributor-written items often report the price move, and from the first trade after publication the association falls to 0.023. At a weekly horizon, the confirmatory test detects no rank information over code-only features. Under attack, decision cards traced 88% of successful attacks to the planted item. We propose that market-graded tests of Web-text readers report the criterion from publication, not only from the event.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM trading agents reading news; finance-focused with no transport, optimisation, or simulation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751457",
+   "title": "An Adaptive Virtual Admittance Adjustment Method for Enhancing the Stability of Wound-Rotor Synchronous Generator with CPLs in More Electric Aircraft",
+   "url": "https://doi.org/10.1109/tte.2026.3751457",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Yiming Yao",
+    "Yiwei Yang",
+    "Zhuoran Zhang",
+    "Yankun Wang",
+    "Jincai Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Stability control of generators with constant power loads in more electric aircraft is power electronics, not transport-grid integration of electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3749423",
+   "title": "BPMamba: Bidirectional Propagation Mamba Model for Autonomous Vehicle Trajectory Prediction",
+   "url": "https://doi.org/10.1109/tits.2026.3749423",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Zhichao Cui",
+    "Haifeng Xu",
+    "Chi Zhang",
+    "Fangfang Xu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Autonomous vehicle trajectory prediction with Mamba architecture; neither transit electrification nor agentic or optimisation focused.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742396",
+   "title": "Bridging Simulation and Reality: A Latent Alignment World Model for End-to-End Autonomous Driving",
+   "url": "https://doi.org/10.1109/tits.2026.3742396",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Jiatong Du",
+    "Ye Li",
+    "Huailong Peng",
+    "Meng Li",
+    "Yanjun Huang",
+    "Hong Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "World model for end-to-end autonomous driving; generative driving perception rather than agents or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3748571",
+   "title": "CoSMIC: A Cognitively-Inspired System With Memory Interpretability and Consolidation in Autonomous Driving",
+   "url": "https://doi.org/10.1109/tits.2026.3748571",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Chien-Wen Sun",
+    "Chih-Wei Tseng",
+    "Yu-Chen Lin",
+    "Bing-Fei Wu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Memory and consolidation system for autonomous driving; cognitive-agent flavour but mainly driving perception and decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751942",
+   "title": "Compensation Network Comparison for Weight Minimization in Automotive WPT System Equipped with a Shielding Coil",
+   "url": "https://doi.org/10.1109/tte.2026.3751942",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Wassim Boumerdassi",
+    "Tommaso Campi",
+    "Lionel Pichon",
+    "Silvano Cruciani",
+    "Mohamed Bensetti",
+    "Francesca Maradei",
+    "Mauro Feliziani"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Automotive wireless power transfer compensation network design is hardware circuit work, only tangentially related to charging infrastructure.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3751484",
+   "title": "Comprehensive Analysis and Adaptive Suppression of Post-Demagnetization Speed and Torque Ripples in PMSM Drives",
+   "url": "https://doi.org/10.1109/tte.2026.3751484",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Zekai Lyu",
+    "Aten Man Ho Chau",
+    "Haolan Zhan",
+    "Litao Dai",
+    "Ka Chung Wong",
+    "Shuangxia Niu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ebus",
+   "reason": "PMSM drive torque ripple suppression is motor control, far from the researcher's scheduling, simulation, and optimisation interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742726",
+   "title": "From Semantic-Calibration to Decoupling-Fusion: Hierarchical Multi-Modal Complementarity for RGB-T Tracking in Road Traffic Scenarios",
+   "url": "https://doi.org/10.1109/tits.2026.3742726",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Xin Zhang",
+    "Yang Li",
+    "Binyi Su",
+    "Yanxia Jin",
+    "Haiyong Chen"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "sim",
+   "reason": "RGB-thermal object tracking for road traffic; computer vision with no simulation or optimisation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3740049",
+   "title": "Geo-ORBIT: A Federated Digital Twin Framework for Scene-Adaptive Lane Geometry Detection",
+   "url": "https://doi.org/10.1109/tits.2026.3740049",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Rei Tamaru",
+    "Pei Li",
+    "Bin Ran"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Lane geometry detection with federated digital twins; perception-focused and not relevant to bus operations or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742534",
+   "title": "Human-Interactive Anomaly Detection Benchmark in Real-Transportation Scenarios",
+   "url": "https://doi.org/10.1109/tits.2026.3742534",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Yan Cai",
+    "Junyu Lu",
+    "Ruhao Liu",
+    "Shang Wang",
+    "Shicheng Zhang",
+    "Yuzhe Zhou",
+    "Yang Rao",
+    "Yi Xie",
+    "Huaidong Zhang",
+    "Xuemiao Xu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Anomaly detection benchmark on real transport scenes; vision-oriented and outside the researcher's core areas.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3725462",
+   "title": "Manifold-Guided Lifelong Trajectory Prediction With Isotropic Spatial-Aware Attention for Autonomous Vehicles",
+   "url": "https://doi.org/10.1109/tits.2026.3725462",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Wen Hu",
+    "Pingyi Zhang",
+    "Bangji Zhang",
+    "Yang Wu",
+    "Zejian Deng",
+    "Dongpu Cao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Lifelong trajectory prediction for autonomous vehicles; motion forecasting with little link to fleet or optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747304",
+   "title": "MapDiffuser: An HD-Map-Guided Diffusion Framework for Robust Multi-Modal Perception in Complex Scenarios",
+   "url": "https://doi.org/10.1109/tits.2026.3747304",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Fuxin Xie",
+    "Jian Zhou",
+    "Rui Yang",
+    "Ziqin Yang",
+    "Bijun Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "HD-map-guided diffusion for multi-modal perception in driving; perception work outside the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3743564",
+   "title": "Seeing Complexity Like a Controller: A Task-Based, Airspace-Independent Air Traffic Complexity Model",
+   "url": "https://doi.org/10.1109/tits.2026.3743564",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Bruno Antulov-Fantulin",
+    "Biljana Juričić",
+    "Tomislav Radišić",
+    "Karolina Krajček Nikolić"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Air traffic complexity modelling for controllers; aviation domain with weak connection to bus operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105730",
+   "title": "Spatial coopetition between shared autonomous vehicle services and metro railway",
+   "url": "https://doi.org/10.1016/j.trd.2026.105730",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-10",
+   "authors": [
+    "Yanan Liu",
+    "Wen Zeng"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ebus",
+   "reason": "Competition between shared autonomous vehicles and metro; transit planning adjacent but not electrification or scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3740948",
+   "title": "String Stability of High-Altitude Heterogeneous Vehicle Platoons: Drivetrain-Aware Dynamics, Communication Degradation, and Variable Time Headway",
+   "url": "https://doi.org/10.1109/tits.2026.3740948",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Jianqiang Wang",
+    "Boyu Tang",
+    "Wenlong Zhao",
+    "Chenglin Liu",
+    "Haigen Min"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Vehicle platoon string stability with drivetrain dynamics; control theory adjacent to vehicle energy modelling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10366",
+   "title": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+   "url": "https://arxiv.org/abs/2611.10366",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Qizhao Chen",
+    "Yuanhong Zeng",
+    "Shoh Nishino",
+    "Anushri Dixit"
+   ],
+   "abstract": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "VLM-based embodied object navigation with conformal calibration; calibration idea is interesting but the domain is robotics navigation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10389",
+   "title": "From Task Affinities to Optimal Allocations: Probabilistic Graphical Modelling for Supervised Finetuning",
+   "url": "https://arxiv.org/abs/2611.10389",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Prateek Chanda",
+    "Saral Sureka",
+    "Krishnateja Killamsetty",
+    "Ganesh Ramakrishnan"
+   ],
+   "abstract": "Supervised fine-tuning over a large pool of heterogeneous tasks is often computationally expensive, leading practitioners to train language models on a fixed training budget of carefully chosen SFT tasks. Thus, achieving strong downstream performance hinges on selecting an effective subset of tasks, or equivalently, identifying an optimal task mixture under a fixed budget constraint. In practice, supervised finetuning mixtures are often determined using simple heuristics (e.g., uniform or size-proportional sampling) that ignore task interactions, which can hurt transfer and waste budget on redundant task sources. We introduce TASKMIXPGM, a framework for learning continuous task mixtures through energy-based modelling over SFT tasks. Each task forms a node in a Markov random field, with unary potentials capturing task utility and pairwise potentials modelling inter-task relationships via behavioral divergences between predictive distributions of single-task fine-tuned models. Optimizing this objective yields task mixtures that balance utility, coverage, and redundancy. We further show that the induced set function defined over the set of such tasks is weakly submodular under budget constraints, enabling approximation guarantees for discrete task selection. Empirically, we provide a fixed, benchmark-independent mixture that improves over heuristic mixing across multiple model families and different training budgets. TASKMIXPGM also uncovers interpretable structure in task interactions, revealing complementarities and redundancies that inform effective SFT mixtures.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Task-mixture selection for LLM supervised finetuning via graphical models; generic LLM training with only a loose optimisation flavour.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10423",
+   "title": "Mental Imagery That Matters: Curing Latent Collapse in Multimodal Reasoning",
+   "url": "https://arxiv.org/abs/2611.10423",
+   "venue": "arXiv cs.CV · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Mi Luo",
+    "Rohan Dugad",
+    "Zihui Xue",
+    "Alex Dimakis",
+    "Kristen Grauman"
+   ],
+   "abstract": "Mental simulation, the ability to reason by constructing and updating internal visual states, is central to flexible human cognition, but remains elusive in current multimodal large language models. Latent multimodal reasoning offers a promising route toward this capability by interleaving text with continuous visual latent blocks, allowing models to maintain internal visual workspaces without decoding them into pixels. In this paper, we ask whether these latent visual states actually matter. Through a direct perturbation analysis across representative latent-reasoning MLLMs, we find that they often do not: dropping, replacing, or shuffling generated visual latents has only minor effects on the model's own final-answer probability, while equivalent perturbations to the linguistic reasoning trace are substantially more damaging. We call this failure mode Mental Simulation Collapse (MSC): the model appears to perform interleaved visual reasoning, but routes most answer-relevant computation through text. We further diagnose that MSC follows naturally from existing training objectives: visual alignment can make generated latents resemble helper-image embeddings, but it does not require the decoder to rely on them; subsequent text-only supervision further leaves the semantic role of the latent pathway unidentifiable. To address this, we introduce AnchorSim (Anchored Mental Simulation), a contrastive distillation framework that trains models to make their generated visual latents consequential. Across multiple visual reasoning benchmarks, AnchorSim improves performance, while diagnostic re-evaluation shows that visual perturbations now meaningfully affect predictions. Our results expose a fundamental failure mode of latent multimodal reasoning and demonstrate that mental simulation must be anchored to model behavior in order to matter.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Multimodal latent visual reasoning in MLLMs; generic vision-language work that is neither agentic nor about optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10349",
+   "title": "SituRecBench: Evaluating Frontier Models as Situated Recommendation Assistants in 3D Environments",
+   "url": "https://arxiv.org/abs/2611.10349",
+   "venue": "arXiv cs.AI · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Jingtong Yang",
+    "Dongding Lin",
+    "Jian Wang",
+    "Wenjie Li"
+   ],
+   "abstract": "Recommender systems are transitioning from static retrieval engines into interactive assistants grounded in physical environments. However, current studies largely neglect the combined complexities of spatial navigation, visual grounding, and multi-turn social interaction. To bridge this gap, we introduce SituRecBench, an interactive benchmark for evaluating frontier vision-language models (VLMs) as situated recommendation assistants within high-fidelity 3D environments. We reformulate recommendation as a situated assistance process in which an assistant interacts with a user while sharing the user's egocentric view. Our benchmark simulates real-world shopping environments (e.g., supermarkets and home furnishings stores), requiring assistants to elicit preferences, ground recommendations in the environment, and guide the user to relevant locations through dialogue. The benchmark evaluates dialogue quality, recommendation utility, and navigation effectiveness through a unified interactive protocol. Extensive experiments reveal persistent challenges in spatial grounding and preference elicitation, highlighting limitations in their ability to integrate global contextual information with local observations. SituRecBench provides a rigorous foundation for advancing the development of situated assistants in the real world.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Benchmark for VLM recommendation assistants in 3D shops; generic LLM evaluation with no optimisation or transport link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747321",
+   "title": "Collaborative Vision Mamba With Receptive Field Priors for Real-World Train Crash Perception",
+   "url": "https://doi.org/10.1109/tits.2026.3747321",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Yanjie Wen",
+    "Ping Xu",
+    "Xin Ma",
+    "Min Jiang",
+    "Wangtu Xu",
+    "Sitong Yang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Vision model for train crash perception; perception work outside the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746598",
+   "title": "DiHMap: Direction-Consistent Hybrid Learning for Vectorized HD Map Construction",
+   "url": "https://doi.org/10.1109/tits.2026.3746598",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Guirong Zhang",
+    "Yingfeng Cai",
+    "Hai Wang",
+    "Ze Liu",
+    "Qingchao Liu",
+    "Tong Luo",
+    "Long Chen"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Vectorized HD map construction; perception work with no link to the researcher's focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3717363",
+   "title": "FAST-IDS: A Fast Two-Stage Intrusion Detection System With Hybrid Compression for Real-Time Threat Detection in Connected and Autonomous Vehicles",
+   "url": "https://doi.org/10.1109/tits.2026.3717363",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "S. Devika",
+    "Vishnu Hari",
+    "Pratik Narang",
+    "Tejasvi Alladi",
+    "Vinay Chamola"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Intrusion detection for connected vehicles; cybersecurity unrelated to the researcher's core topics.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746535",
+   "title": "LIORNet: Self-Supervised LiDAR Snow Removal Framework for Autonomous Driving Under Adverse Weather Conditions",
+   "url": "https://doi.org/10.1109/tits.2026.3746535",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Ji-il Park",
+    "Inwook Shim"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Self-supervised LiDAR snow removal for autonomous driving; perception work outside the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3752254",
+   "title": "Partial Discharge Performance of PEEK-Insulated Hairpin Wires for Automotive and Aerospace Electrical Machines",
+   "url": "https://doi.org/10.1109/tte.2026.3752254",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Hadi Naderiallaf",
+    "Michele Degano",
+    "David Gerada",
+    "Tao Yang",
+    "Christopher Gerada"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "ebus",
+   "reason": "Insulation partial discharge testing of PEEK hairpin wires in machine windings is hardware material work with no link to bus scheduling or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746748",
+   "title": "Traffic Image Restoration Under Adverse Weather via Frequency-Aware Mamba",
+   "url": "https://doi.org/10.1109/tits.2026.3746748",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-09",
+   "authors": [
+    "Liwen Pan",
+    "Longguang Wang",
+    "Guangwei Gao",
+    "Jun Wang",
+    "Jun Shi",
+    "Juncheng Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Image restoration of traffic scenes under adverse weather; computer vision with no transport operations link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.10334",
+   "title": "Reproducible LoRA Inference Through Deterministic Split-K Reduction",
+   "url": "https://arxiv.org/abs/2611.10334",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-07",
+   "authors": [
+    "Dhayaneshwar Balusamy",
+    "Ankur Mohan"
+   ],
+   "abstract": "Reproducibility is important for LoRA-adapted language models used in repeated evaluation, auditing, and decision-making. However, Split-K kernels used to introduce parallelism in low-rank LoRA multiplications can have the unintended consequence of numerical nondeterminism when partial results are combined using floating-point atomic additions. We investigate this non-determinism in vLLM across GSM8K mathematical reasoning, MBPP code generation, and Jev-style structured toxicity decisions on Civil Comments and introduce a deterministic Triton Split-K implementation. Under identical-input replay, Atomic Split-K=8 produces different FP32 shrink outputs in 97.61% of comparisons, while our Deterministic Split-K=8 shows no observed variation. Repeated atomic inference changes generated outputs in 17.30% of GSM8K and 14.96% of MBPP comparisons, sometimes altering task correctness. Structured-decision probabilities vary in 81.47% of atomic comparisons, with decision flips. Controlled tracing demonstrates how shrink-output differences propagate into the KV cache and how accumulated cache differences can change token decisions and final answers. Our deterministic Triton Split-K=8 implementation preserves parallelism, achieving 16.8-21.1% latency-based speedup over unsplit reduction with only 1.02-2.62% additional latency relative to Atomic Split-K=8.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Numerical nondeterminism in LoRA inference kernels; systems detail with no relevance to the researcher's interests.",
+   "scored_by": "llm"
+  }
+ ]
+}
