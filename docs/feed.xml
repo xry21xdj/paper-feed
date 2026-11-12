@@ -5,6 +5,110 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[8] Data-Driven Robust Dynamic Wireless Charging Lane Planning with Tunable Profit--Risk Trade-off and Modified User Equilibrium</title>
+    <link>https://arxiv.org/abs/2611.13538</link>
+    <guid isPermaLink="false">arxiv:2611.13538</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Xin Cui, Yujun Lin, Ziang Liu, Francis Yunhe Hou et al. — Robust two-stage planning of dynamic wireless charging lanes with EV routing, SoC dynamics and coupled traffic-power networks directly fits transport-grid integration.</description>
+  </item>
+  <item>
+    <title>[7] Autonomous Optimization of Numerical Algorithms by an AI Agent: Application to Atomistic Simulation</title>
+    <link>https://arxiv.org/abs/2611.13143</link>
+    <guid isPermaLink="false">arxiv:2611.13143</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv physics.chem-ph · Jeheon Woo — An LLM coding agent in automated loops improves numerical optimizers that need fewer force evaluations, closely matching LLM-designed algorithms and agentic optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Physics-Aware Multi-Timescale Hierarchical Coordinated Control for Heavy-Duty Electric Commercial Vehicles</title>
+    <link>https://doi.org/10.1016/j.etran.2026.100651</link>
+    <guid isPermaLink="false">doi:10.1016/j.etran.2026.100651</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>eTransportation · Jiaqi Xu, Cheng Lin, Xiao Yu, Jinhua Wen et al. — Multi-timescale hierarchical control for heavy-duty electric commercial vehicles; close to e-fleet operations though title suggests control rather than scheduling.</description>
+  </item>
+  <item>
+    <title>[6] Risk-Aware Distributed Economic MPC for Microgrid Energy Management Using Tube-Cooperative Hierarchical Coordination</title>
+    <link>https://doi.org/10.1109/tsg.2026.3750915</link>
+    <guid isPermaLink="false">doi:10.1109/tsg.2026.3750915</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Smart Grid · Muhammad A. Khan, Jiefeng Hu, Jawad Hameed, Yinghao Shan et al. — Distributed risk-aware MPC for microgrids with EV charging under CVaR and ADMM; relevant to transport-grid integration and EV charging coordination.</description>
+  </item>
+  <item>
+    <title>[6] Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations</title>
+    <link>https://arxiv.org/abs/2611.14514</link>
+    <guid isPermaLink="false">arxiv:2611.14514</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · NeurIPS 2026 · Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun — LLM discovery agents using contrast sets to choose experiments under budget is agentic decision-making with search guidance, adjacent to operational agents.</description>
+  </item>
+  <item>
+    <title>[6] Data-driven regional traffic simulation from heterogeneous mobility sources</title>
+    <link>https://arxiv.org/abs/2611.13947</link>
+    <guid isPermaLink="false">arxiv:2611.13947</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Traffic simulation &amp; calibration</category>
+    <description>arXiv physics.soc-ph · Federico Bellisardi, Chiara Mizzi, Alessandro Fabbri, Davide Micheli et al. — Agent-based regional traffic simulator calibrated with heterogeneous mobility data and validated on held-out sensors; adjacent to the researcher&#39;s simulation and validation work.</description>
+  </item>
+  <item>
+    <title>[6] Discrete Model-Based Diffusion for Combinatorial Optimization in Multi-Robot Task Allocation</title>
+    <link>https://arxiv.org/abs/2611.13382</link>
+    <guid isPermaLink="false">arxiv:2611.13382</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.RO · Haejoon Lee, Thomas Marshall Vielmetti, Xinyi Wang, Dimitra Panagou — Training-free discrete diffusion sampling for NP-hard multi-robot task allocation and scheduling, competitive with MILP; method-adjacent to combinatorial scheduling.</description>
+  </item>
+  <item>
+    <title>[6] Energy- and Time-Efficient Multi-Vehicle Trajectory Planning Using Augmented DAG Search in Configuration Space</title>
+    <link>https://arxiv.org/abs/2611.14299</link>
+    <guid isPermaLink="false">arxiv:2611.14299</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv eess.SY · Amirreza Akbari, Galina Sidorenko, Johan Thunberg — Energy-aware multi-vehicle trajectory planning with DAG search and MPC at intersections; energy-time trade-off and scalability relevant to vehicle scheduling.</description>
+  </item>
+  <item>
+    <title>[6] EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities</title>
+    <link>https://arxiv.org/abs/2611.14356</link>
+    <guid isPermaLink="false">arxiv:2611.14356</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.OS · Zhengxiang Huang, Yujie Sun, Shengheng Chen, Zhaode Wang et al. — Agentic system automating cross-layer LLM engine enablement with iterative debugging is a relevant agent-for-engineering workflow, not transport or optimisation.</description>
+  </item>
+  <item>
+    <title>[6] From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings</title>
+    <link>https://arxiv.org/abs/2611.13015</link>
+    <guid isPermaLink="false">arxiv:2611.13015</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Yuhan Tang, Ke Fan, Xinkai Zou, Baichuan Mo et al. — Benchmarks LLM agents planning optimisation-based schedules like driver assignment and asking for missing decision information, relevant to agentic operational decisions.</description>
+  </item>
+  <item>
+    <title>[6] PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles</title>
+    <link>https://arxiv.org/abs/2611.14242</link>
+    <guid isPermaLink="false">arxiv:2611.14242</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.MA · Javier Hernandez, Andrew D. Wilson — Studies failure modes of collaborating LLM agents in cooperative tasks and derives a taxonomy; relevant to multi-agent reliability but not optimisation or transport.</description>
+  </item>
+  <item>
+    <title>[6] Teaching the Harness: Student-Aware Skill Transfer for LLM Agents</title>
+    <link>https://arxiv.org/abs/2611.13144</link>
+    <guid isPermaLink="false">arxiv:2611.13144</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Chang Liu, Bo Wu — Teacher LLM builds student-aware skills for LLM agents with a tool harness and action budget; agentic method relevant to the researcher&#39;s agent work.</description>
+  </item>
+  <item>
+    <title>[6] Unified Optimization of Traffic Signal and Lane Channelization for an Isolated Intersection Using Reinforcement Learning</title>
+    <link>https://arxiv.org/abs/2611.13599</link>
+    <guid isPermaLink="false">arxiv:2611.13599</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.LG · Jiwon Kang, Jiyoung Kim, Hyunseok Jun, Keemin Sohn — Deep Q-network jointly optimising traffic signals and lane channelization, a RL approach to a joint MILP-style design problem; adjacent to the researcher&#39;s interests.</description>
+  </item>
+  <item>
     <title>[8] MAC+: Mobility-Aware Co-Expansion Planning for Distribution Grid and Electric Vehicle Charging Infrastructure</title>
     <link>https://arxiv.org/abs/2611.11791</link>
     <guid isPermaLink="false">arxiv:2611.11791</guid>
@@ -3427,30 +3531,6 @@
     <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
     <category>Traffic simulation &amp; calibration</category>
     <description>arXiv cs.CE · Luyang Jiang, Chuheng Wei, Yaguang Li, Shaoqi Wang et al. — Unity-based human-in-the-loop intersection digital twin with surrogate safety and eco-driving studies; relevant simulation methodology but not calibrated bus operations.</description>
-  </item>
-  <item>
-    <title>[8] When does an agentic aggregator add value? Evidence from electric bus depot charging and V2G pricing</title>
-    <link>https://doi.org/10.1016/j.trc.2026.106105</link>
-    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106105</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>Transportation Research Part C · Ali Eslami, Jônatas Augusto Manzolli, Luis Miranda-Moreno, Jiangbo Yu — Examines an agentic aggregator for e-bus depot charging and V2G pricing, directly matching transport-grid integration and electricity price interests.</description>
-  </item>
-  <item>
-    <title>[6] A Convex Value-Function Learning Approach to Coordinating Model-based Distribution Networks with Model-free Microgrids</title>
-    <link>https://doi.org/10.1109/tsg.2026.3749670</link>
-    <guid isPermaLink="false">doi:10.1109/tsg.2026.3749670</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>IEEE Trans. Smart Grid · Linwei Sang, Yuhang Chen, Ning Guo, Chenhui Lin et al. — Coordinates distribution networks with microgrids via convex value-function learning; useful grid coordination method background.</description>
-  </item>
-  <item>
-    <title>[6] Analytical modeling of a stop-less modular bus line: Optimization, feasibility, and economies of scale</title>
-    <link>https://doi.org/10.1016/j.tre.2026.105371</link>
-    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105371</guid>
-    <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Transportation Research Part E · Haoran Zhao, Neema Nassir, Andres Fielbaum — Analytical modelling and optimisation of a stop-less modular bus line; adjacent to bus operations but not electrification-focused.</description>
   </item>
 </channel>
 </rss>
