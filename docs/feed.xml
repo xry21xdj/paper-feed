@@ -5,6 +5,30 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[7] The Robust Time-Dependent Vehicle Routing Problem with Time Windows and Budget Uncertainty</title>
+    <link>https://doi.org/10.1287/trsc.2025.0387</link>
+    <guid isPermaLink="false">doi:10.1287/trsc.2025.0387</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Science · Igor Malheiros, Michael Poss, Anand Subramanian, Vitor Nesello — Robust time-dependent VRPTW with branch-and-cut and budget uncertainty; method family closely matches their robust routing and scheduling interests.</description>
+  </item>
+  <item>
+    <title>[6] Alternating Methods for Large-Scale AC Optimal Power Flow with Unit Commitment</title>
+    <link>https://doi.org/10.1287/opre.2025.1935</link>
+    <guid isPermaLink="false">doi:10.1287/opre.2025.1935</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Operations Research · Matthew Brun, Thomas Lee, Dirk Lauinger, Xin Chen et al. — Large-scale SCUC-ACOPF decomposition with ADMM; power-system optimisation adjacent to their grid and decomposition interests.</description>
+  </item>
+  <item>
+    <title>[6] Deep reinforcement learning for home health care routing and scheduling problem with interdependent services</title>
+    <link>https://doi.org/10.1016/j.tre.2026.105376</link>
+    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105376</guid>
+    <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>Transportation Research Part E · Yaoxin Wu, Yuwei Gu, Ping He, Rong Cheng et al. — Deep RL for home health care routing and scheduling; learning-based scheduling close to their RL for scheduling interest, though abstract is missing.</description>
+  </item>
+  <item>
     <title>[8] Data-Driven Robust Dynamic Wireless Charging Lane Planning with Tunable Profit--Risk Trade-off and Modified User Equilibrium</title>
     <link>https://arxiv.org/abs/2611.13538</link>
     <guid isPermaLink="false">arxiv:2611.13538</guid>
@@ -3491,46 +3515,6 @@
     <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
     <category>LLM &amp; agentic AI</category>
     <description>Transportation Research Part E · Yixuan Zhai, Ping Chen, Jianhua Xiao, Liujiang Kang et al. — Uses an LLM-aided heuristic for a truck-drone routing problem; relevant to LLM+optimisation methods but the drone delivery setting is not electrified transit.</description>
-  </item>
-  <item>
-    <title>[8] Bi-Level Multi-Objective Electric Vehicle Charging Infrastructure Planning for Private Developers Considering EV Charging Choices</title>
-    <link>https://doi.org/10.1109/tte.2026.3750587</link>
-    <guid isPermaLink="false">doi:10.1109/tte.2026.3750587</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>IEEE Trans. Transportation Electrification · Jinhao Li, Hao Wang, Hai L Vu, Sarah Goodwin et al. — Bi-level planning of EV charging infrastructure accounting for driver charging choices in an IEEE transportation electrification venue, close to charging infrastructure planning interests.</description>
-  </item>
-  <item>
-    <title>[8] Bus bunching mitigation through modular technology: A unified strategy with bus splitting and modular substitution</title>
-    <link>https://doi.org/10.1016/j.trc.2026.106111</link>
-    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106111</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Transportation Research Part C · Anran Dai, Kaidi Yang — Bus bunching mitigation via bus splitting and modular substitution directly addresses transit operations and fleet strategy.</description>
-  </item>
-  <item>
-    <title>[7] Coordinated Scheduling of a Hydrogen-Assisted Integrated Energy-Transportation System</title>
-    <link>https://doi.org/10.1109/tte.2026.3750722</link>
-    <guid isPermaLink="false">doi:10.1109/tte.2026.3750722</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>IEEE Trans. Transportation Electrification · Shijie Yang, Peng Li, Zelong Zhang, Lei Wang et al. — Coordinated scheduling of a hydrogen-assisted integrated energy-transportation system addresses joint transport-energy optimisation, closely matching transport-grid integration interests.</description>
-  </item>
-  <item>
-    <title>[6] Analyzing Simultaneous Charging Factors of Electric Vehicles Using Monte Carlo Simulation: A Case Study in Phu Quoc City, Vietnam</title>
-    <link>https://arxiv.org/abs/2611.06145</link>
-    <guid isPermaLink="false">arxiv:2611.06145</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>arXiv eess.SY · Tien Khai Nguyen, Trong Nghia Le — Monte Carlo estimate of simultaneous EV charging including electric buses, informing transformer sizing and time-of-use planning; adjacent to bus depot grid impact.</description>
-  </item>
-  <item>
-    <title>[6] InterSim: Innovative Intersection Digital Twins for Human-in-the-Loop Driving Simulation</title>
-    <link>https://arxiv.org/abs/2611.05968</link>
-    <guid isPermaLink="false">arxiv:2611.05968</guid>
-    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Traffic simulation &amp; calibration</category>
-    <description>arXiv cs.CE · Luyang Jiang, Chuheng Wei, Yaguang Li, Shaoqi Wang et al. — Unity-based human-in-the-loop intersection digital twin with surrogate safety and eco-driving studies; relevant simulation methodology but not calibrated bus operations.</description>
   </item>
 </channel>
 </rss>

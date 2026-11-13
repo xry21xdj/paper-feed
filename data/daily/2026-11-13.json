@@ -1,0 +1,360 @@
+{
+ "date": "2026-11-13",
+ "fetched": 25378,
+ "sources": {
+  "arXiv": 198,
+  "Transportation Research Part B": 0,
+  "Transportation Research Part C": 2,
+  "Transportation Research Part D": 5,
+  "Transportation Research Part E": 5,
+  "Applied Energy": 10,
+  "European Journal of Operational Research": 5,
+  "Computers & Operations Research": 2,
+  "eTransportation": 3,
+  "IEEE Trans. Intelligent Transportation Systems": 4,
+  "IEEE Trans. Smart Grid": 3,
+  "IEEE Trans. Transportation Electrification": 7,
+  "IEEE Trans. Power Systems": 1,
+  "Transportation Science": 3,
+  "Operations Research": 4,
+  "INFORMS Journal on Computing": 3,
+  "Nature Energy": 3,
+  "Nature Communications": 52,
+  "Public Transport": 0,
+  "OR Spectrum": 1,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": 4,
+  "ACM Trans. Evolutionary Learning and Optimization": 0,
+  "ACM Trans. Knowledge Discovery from Data": 5,
+  "ACM Trans. Spatial Algorithms and Systems": 0,
+  "ACM Trans. Cyber-Physical Systems": 0,
+  "ACM Trans. Autonomous and Adaptive Systems": 1,
+  "ACM Trans. Modeling and Computer Simulation": 0,
+  "ACM Journal on Autonomous Transportation Systems": 0,
+  "ACM Computing Surveys": 2,
+  "NeurIPS (paper list)": 9276,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 776,
+  "IJCAI": 155,
+  "AAMAS": 352,
+  "ICAPS": 29,
+  "ACM GECCO": 29,
+  "ACL": 524,
+  "EMNLP": 785,
+  "ACM KDD": 281,
+  "ACM WWW": 161,
+  "ACM CIKM": 163,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 15,
+  "ACM BuildSys": 11,
+  "ACM/IEEE ICCPS": 10
+ },
+ "papers": [
+  {
+   "id": "doi:10.1287/trsc.2025.0387",
+   "title": "The Robust Time-Dependent Vehicle Routing Problem with Time Windows and Budget Uncertainty",
+   "url": "https://doi.org/10.1287/trsc.2025.0387",
+   "venue": "Transportation Science",
+   "publisher": "INFORMS",
+   "date": "2026-11-12",
+   "authors": [
+    "Igor Malheiros",
+    "Michael Poss",
+    "Anand Subramanian",
+    "Vitor Nesello"
+   ],
+   "abstract": "The vehicle routing problem with time windows (VRPTW) is a classical problem with many applications. In practice, travel times are time dependent because of traffic and uncertain events, such as accidents, weather, and road work. If these features are ignored, routes planned in advance may become infeasible. Although routing models incorporating time-dependent travel times typically rely on historical traffic data from location service providers, they do not capture uncertainty, and integrating real-time updates during execution remains difficult. This work introduces the robust time-dependent VRPTW, which uses robust optimization to handle uncertainty in time-dependent travel times. We study its computational properties and develop innovative exact approaches, including compact formulations, decomposition strategies, and a branch-and-cut algorithm with lazy cut generation. We also propose a primal heuristic based on iterated local search for larger instances. Experiments on adapted benchmark and real-world instances evaluate the algorithms and the model’s robustness. The best exact method solves about 78% of the instances to optimality within one hour. Simulations on real-world data show that the proposed model reduces infeasibilities compared with existing approaches while maintaining reasonable costs and computational times. These results provide planners and operators with more reliable schedules under uncertain traffic conditions, demonstrating the practical value of robustness in time-dependent vehicle routing. Funding: This work was supported by the Conselho Nacional de Desenvolvimento Científico e Tecnológico [Grants 309580/2021-8, 406245/2021-5, and 409595/2025-0] and the Association Nationale de la Recherche et de la Technologie [Grant CIFRE: 2021/1269]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2025.0387 .",
+   "topics": [
+    "sim",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 7,
+   "topic": "ebus",
+   "reason": "Robust time-dependent VRPTW with branch-and-cut and budget uncertainty; method family closely matches their robust routing and scheduling interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1287/opre.2025.1935",
+   "title": "Alternating Methods for Large-Scale AC Optimal Power Flow with Unit Commitment",
+   "url": "https://doi.org/10.1287/opre.2025.1935",
+   "venue": "Operations Research",
+   "publisher": "INFORMS",
+   "date": "2026-11-12",
+   "authors": [
+    "Matthew Brun",
+    "Thomas Lee",
+    "Dirk Lauinger",
+    "Xin Chen",
+    "Xu Andy Sun"
+   ],
+   "abstract": "Security-constrained unit commitment with alternating current optimal power flow (SCUC-ACOPF) is a central problem in power grid operations that optimizes commitment and dispatch of generators under a physically accurate power transmission model while encouraging robustness against component failures. SCUC-ACOPF requires solving large-scale problems that involve multiple time periods and networks with thousands of buses within strict time limits. In this work, we study a detailed SCUC-ACOPF model with a rich set of features of modern power grids, including price-sensitive load, reserve products, transformer controls, and energy-limited devices. We propose a decomposition scheme and a penalty alternating direction method to find high-quality solutions to this model. Our methodology leverages spatial and temporal decomposition, separating the problem into a set of mixed-integer linear programs for each bus and a set of continuous nonlinear programs for each time period. To improve the performance of the algorithm, we introduce a variety of heuristics, including restrictions of temporal linking constraints, a second-order cone relaxation, and a contingency screening algorithm. We quantify the quality of feasible solutions through a dual bound from a second-order cone program. To evaluate our algorithm, we use large-scale test cases from Challenge 3 of the U.S. Department of Energy s Grid Optimization Competition that resemble real power grid data under a variety of operating conditions and decision horizons. The experiments yield feasible solutions with an average optimality gap of 1.33%, demonstrating that this approach generates near-optimal solutions within stringent time limits.",
+   "topics": [
+    "ai4opt",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "grid",
+   "reason": "Large-scale SCUC-ACOPF decomposition with ADMM; power-system optimisation adjacent to their grid and decomposition interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105376",
+   "title": "Deep reinforcement learning for home health care routing and scheduling problem with interdependent services",
+   "url": "https://doi.org/10.1016/j.tre.2026.105376",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Yaoxin Wu",
+    "Yuwei Gu",
+    "Ping He",
+    "Rong Cheng",
+    "Lu Zhang",
+    "Yingqian Zhang",
+    "Zhiguang Cao"
+   ],
+   "abstract": "",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "ai4opt",
+   "reason": "Deep RL for home health care routing and scheduling; learning-based scheduling close to their RL for scheduling interest, though abstract is missing.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1287/trsc.2025.0447",
+   "title": "Consolidation in Crowdshipping with Scheduled Transfer Lines: A Surrogate-Based Network Design Framework",
+   "url": "https://doi.org/10.1287/trsc.2025.0447",
+   "venue": "Transportation Science",
+   "publisher": "INFORMS",
+   "date": "2026-11-12",
+   "authors": [
+    "Ramazan Çevik",
+    "Ali Şardağ",
+    "Barış Yıldız"
+   ],
+   "abstract": "Crowdshipping has gained attention as an emerging delivery model thanks to advantages such as flexibility and an asset-light structure. Yet, it chronically suffers from a lack of mechanisms to create and exploit consolidation opportunities, limiting its efficiency and scalability. This work contributes to the literature in two ways: first, by introducing a novel consolidation concept that augments crowdshipping networks with dedicated scheduled delivery lines and second, by developing a new methodology for solving complex network design problems exemplified by the case studied in this paper, where design decisions needs to be made while taking complex operational dynamics into account, yet realistic representations of these dynamics are difficult to incorporate compactly into mathematical models. To address this challenge, we embed a neural network surrogate within a mathematical programming framework. The surrogate is based on a novel architecture that explicitly exploits the binary nature of design decisions, a feature common to many such problems. We establish theoretical guarantees regarding approximation accuracy and proximity to the true optimum. Numerical experiments with real-world data demonstrate both the practical benefits of the proposed hybrid delivery model—reducing costs, traffic, and emissions—and the computational advantages of the proposed solution framework. Funding: This study was supported by the European Research Council [Grant 101076231 as a part of the GoodMobility project ( https://goodmobility.ku.edu.tr )].",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Crowdshipping network design with neural network surrogate in a MILP; ML-embedded optimisation adjacent but not electrified transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105378",
+   "title": "Joint optimization of congestion pricing and lane reversal strategies for heterogeneous CAVs",
+   "url": "https://doi.org/10.1016/j.tre.2026.105378",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Tongfei Li",
+    "Jiabao Yan",
+    "Min Xu",
+    "Huijun Sun",
+    "Jianjun Wu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Congestion pricing and lane reversal for CAVs; traffic-control modelling adjacent to simulation and optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tpwrs.2026.3751154",
+   "title": "Topology-Aware Convex Graph Learning for Optimal Power Flow With Zero-Shot Generalization",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3751154",
+   "venue": "IEEE Trans. Power Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-10",
+   "authors": [
+    "Yunyi Li",
+    "Zhaoyu Wang"
+   ],
+   "abstract": "The increasing integration of distributed energy resources (DERs) poses significant challenges for real-time and scalable solutions to the optimal power flow (OPF) problem. Traditional OPF solvers, while mathematically rigorous, often suffer from heavy computational burdens when faced with high-dimensional distribution networks and frequent topology reconfigurations. Recent advances in graph neural networks (GNNs) offer data-driven power flow surrogate models that leverage the underlying graph structure of power systems. However, existing GNN-based approaches face two critical limitations: (i) a lack of convexity guarantees, which limits the integration of GNN-based power flow models and the downstream optimization tasks; and (ii) insufficient generalization to switching configurations not represented during training, which restricts their practical deployment in distribution networks with frequent topology changes. To address these challenges, this paper proposes a novelConvexGraphSAGEmodel that integrates convex power flow mapping into the inductive graph neural network architecture, thereby forming a power flow surrogate that guarantees a convex mapping and merits excellent generalization ability. To balance training effort with generalization of the ConvexGraphSAGE model, a composite clustering metric is proposed to systematically select representative switching configurations for training, thereby improving the model's zero-shot generalization to unseen switching configurations. To further enhance the feasibility of OPF solutions, a risk-sample-mining-based iterative data enhancement strategy is designed to expand training datasets to effectively support subsequent retraining. Numerical experiments demonstrate that the proposed approach significantly reduces computational effort while guaranteeing competitive accuracy across seen and unseen switching configurations of the test feeder.",
+   "topics": [
+    "sim",
+    "ai4opt",
+    "grid"
+   ],
+   "keyword_hits": 4,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Convex GNN surrogate for distribution-network OPF with topology changes; touches DER grid integration but not transport or bus electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1145/3838183",
+   "title": "Hybrid Clinician-in-the-Loop Monitoring System for LLM Conversational Agents",
+   "url": "https://doi.org/10.1145/3838183",
+   "venue": "ACM Trans. Intelligent Systems and Technology",
+   "publisher": "ACM",
+   "date": "2026-11-12",
+   "authors": [
+    "Chaewon Yun",
+    "Rodrigo Bermudez Schettino",
+    "Brooke C. Schneider",
+    "Simone Kühn",
+    "Jürgen Gallinat",
+    "Ronald Ashri",
+    "Iyad Rahwan"
+   ],
+   "abstract": "Large language models (LLMs) are increasingly deployed as conversational agents, owing to their ability to sustain coherent interactions. However, the stochastic nature of LLMs and well-documented risks such as hallucinations and unsafe outputs pose significant challenges for ensuring safe deployment. We introduce a novel monitoring system that we designed and implemented to tackle these challenges in deployments of LLM conversational agents. Our system combines expertise from psychiatry and computer science to support risk detection and multi-stakeholder decision-making. The system consists of two main modules: continuous regression testing and real-time monitoring. Regression testing leverages multi-turn synthetic conversations to evaluate the safety of LLMs in deployment and runs automatically in a continuous integration pipeline. Real-time monitoring incorporates both manual and automated evaluation of user-model interactions, including efficient evaluation from mental health professionals via a web-based interface. To demonstrate how our system works in practice, we conducted a preregistered online behavioral experiment ‘AI Safety Challenge’ as a case study, which demonstrates the feasibility of our system in live operation and suggests a modest efficiency gain under a fixed expert review budget. Our monitoring system functions as a platform where different types of expertise can be combined. Clinical expertise informs dataset design, evaluation procedures, and real-time monitoring, complementing computational safety metrics to deliver a robust monitoring infrastructure. Best practices and state-of-the-art methods from computer science are employed to build a robust and scalable architecture. Executable code 1 and datasets 2 are provided to support reuse, extension, and reproducibility in future applications. Warning: This paper includes model-generated outputs that may be offensive or distressing, including references to self-harm.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Clinician-in-the-loop monitoring of LLM chatbots for safety; generic LLM evaluation without agentic planning or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1145/3859364",
+   "title": "A Survey on LLMs from a Human-Centric Perspective",
+   "url": "https://doi.org/10.1145/3859364",
+   "venue": "ACM Computing Surveys",
+   "publisher": "ACM",
+   "date": "2026-11-12",
+   "authors": [
+    "Jing Yi Wang",
+    "Nicholas Sukiennik",
+    "Tong Li",
+    "Weikang Su",
+    "Qianyue Hao",
+    "Zihan Huang",
+    "Jingbo Xu",
+    "Fengli Xu",
+    "Yong Li"
+   ],
+   "abstract": "The rapid evolution of large language models (LLMs) has positioned them as powerful computational instruments for human-centered research and applications, spanning tasks involving cognition, decision-making, and social interaction. This survey examines LLMs from a human-centric perspective organized around individual and collective levels. We first review LLM competencies across perception, analysis, integration, execution, and social interaction, highlighting both their demonstrated capabilities and the evaluation conditions under which these capabilities are observed. We then explore how LLMs are used across behavioral science, psychology, linguistics, political science, economics, and sociology as research tools, behavioral simulators, and objects of inquiry, covering both individual behavior and collective social processes. Finally, we identify challenges and future research directions, such as improving LLM adaptability, affective-to-behavior evaluation, and cultural sensitivity, while addressing inherent biases and enhancing frameworks for human-AI collaboration. This survey aims to provide a foundational understanding of LLMs from a human-centric perspective, offering insights into their current capabilities and potential for future development.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Human-centric survey of LLMs in social science; generic LLM background with no agentic or optimisation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105727",
+   "title": "Evaluating unmanned courier stations for green last-mile delivery: a network psychometric analysis",
+   "url": "https://doi.org/10.1016/j.trd.2026.105727",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Zhaotong Li",
+    "Kum Fai Yuen",
+    "Chee-Chong Teo"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ai4opt",
+   "reason": "Psychometric network analysis of unmanned courier stations; not electrification or optimisation-focused from title alone.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105718",
+   "title": "Road-focused flood depth and velocity prediction using deep learning for transportation resilience",
+   "url": "https://doi.org/10.1016/j.trd.2026.105718",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Ahmad ALBarqawi",
+    "Viravid Na Nagara",
+    "Ahmad Ibrahim",
+    "Ashish Borgaonkar",
+    "Camille Kamga",
+    "Hani Nassif",
+    "Abdallah Khreishah",
+    "Michel Boufadel"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Deep learning flood depth prediction for road resilience; outside their electric-bus or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3753337",
+   "title": "Robust Optimization Design of PMSLM Based on Two-stage Kriging Model",
+   "url": "https://doi.org/10.1109/tte.2026.3753337",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-12",
+   "authors": [
+    "Fei Dong",
+    "Wenjun Wang",
+    "Jing Zhao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Kriging-based robust design of a PM linear motor; electric machine design with no scheduling or transport operations link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105377",
+   "title": "Dynamic transmission effects of shipping news sentiment on port congestion: A multi-regional empirical study",
+   "url": "https://doi.org/10.1016/j.tre.2026.105377",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Haoqing Sun",
+    "Zhuo Sun",
+    "Jiaju Han",
+    "Xinrui Jing"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Empirical study of shipping news sentiment and port congestion; unrelated to their research areas.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.etran.2026.100652",
+   "title": "Spatially heterogeneous solid electrolyte interphase degradation reconstructs incipient self-heating pathways in aged lithium-ion power batteries",
+   "url": "https://doi.org/10.1016/j.etran.2026.100652",
+   "venue": "eTransportation",
+   "publisher": "Elsevier",
+   "date": "2026-11-12",
+   "authors": [
+    "Ying Luo",
+    "Ni Lin",
+    "Yiwen Zhao",
+    "Qiang Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Battery degradation and self-heating chemistry in aged cells; battery materials work they consider less relevant.",
+   "scored_by": "llm"
+  }
+ ]
+}
