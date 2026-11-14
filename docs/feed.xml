@@ -5,6 +5,182 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[9] A Network Flow Approach to Battery Electric Bus Charge Scheduling and Battery Health Conscious Optimization</title>
+    <link>https://doi.org/10.1109/tits.2026.3741076</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3741076</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Matthew J. Hansen, Greg Droge, Jake Gunther — Network flow approach to battery electric bus charge scheduling with battery health; directly on the researcher&#39;s core e-bus charging and ageing problem.</description>
+  </item>
+  <item>
+    <title>[9] A Joint LLM and Optimization Agent Solution for Drone Scheduling in Victim Search Missions</title>
+    <link>https://arxiv.org/abs/2611.16524</link>
+    <guid isPermaLink="false">arxiv:2611.16524</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv eess.SY · Yinghao Zhang, Yalin Liu, Hong-Ning Dai, Yan Zhang et al. — Joint LLM and optimizer agent schedules drones under energy constraints for search missions, directly matching LLM+optimisation operational scheduling.</description>
+  </item>
+  <item>
+    <title>[8] Agreement Is Not Assurance: Evidence-Independent Safety Gates for Agentic AI in DER-Rich Distribution Grids</title>
+    <link>https://arxiv.org/abs/2611.15363</link>
+    <guid isPermaLink="false">arxiv:2611.15363</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Qianxue Xia — Safety gates for LLM agents making voltage-constrained DER export decisions in distribution grids, directly on transport-grid integration and agentic operations.</description>
+  </item>
+  <item>
+    <title>[8] Optimal Seat Movement Strategies Among Modular Bus Units</title>
+    <link>https://arxiv.org/abs/2611.16357</link>
+    <guid isPermaLink="false">arxiv:2611.16357</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>arXiv cs.CE · Shiyue Wang, Yuhao Liu, Zhibin Chen, Mingyang Pei et al. — Seat reconfiguration in modular bus units via exact MILP and decomposition DP; directly on bus operations with optimisation methods the researcher uses.</description>
+  </item>
+  <item>
+    <title>[6] Multi-Objective Optimization for Train Timetable Rescheduling With Appropriate Robustness Against Uncertain Arrival Deviations</title>
+    <link>https://doi.org/10.1109/tits.2026.3746633</link>
+    <guid isPermaLink="false">doi:10.1109/tits.2026.3746633</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>IEEE Trans. Intelligent Transportation Systems · Yukun Wang, Xuewu Dai, Yixiang Yue, Dongliang Cui et al. — Multi-objective train timetable rescheduling under uncertain arrival deviations is robust optimisation close to their stochastic scheduling methods, though rail rather than bus.</description>
+  </item>
+  <item>
+    <title>[6] Multi-agent deep reinforcement learning for novel cross-domain dynamic integrated scheduling problem considering spare parts production and equipment operation</title>
+    <link>https://doi.org/10.1016/j.cor.2026.107730</link>
+    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107730</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>Computers &amp; Operations Research · Yong Lei, Qianwang Deng, Kaidan Deng, Juan Zhou et al. — Multi-agent deep RL for integrated dynamic scheduling in Computers &amp; OR; scheduling with RL is relevant method-wise, domain unclear without abstract.</description>
+  </item>
+  <item>
+    <title>[6] Physics-informed energy-consumption prediction and charging-demand gap identification for logistics electric vehicles</title>
+    <link>https://doi.org/10.1016/j.trd.2026.105724</link>
+    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105724</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Transportation Research Part D · Muhammad Asim Ayaz, Irfan Ullah, Quan Yuan, Chao Yang et al. — Physics-informed energy prediction and charging-demand gaps for logistics EVs; relevant to electrified fleet charging needs.</description>
+  </item>
+  <item>
+    <title>[6] AgentSSL: Can MLE Agents Leverage Unlabeled Data?</title>
+    <link>https://arxiv.org/abs/2611.17323</link>
+    <guid isPermaLink="false">arxiv:2611.17323</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · NeurIPS 2026 · Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson et al. — MLE agents synthesise SSL programs via search and benchmark program selection; agentic program search fits the researcher&#39;s agentic AI interest.</description>
+  </item>
+  <item>
+    <title>[6] AgentiGrid: Agentic AI for Steady State and Transient Studies</title>
+    <link>https://arxiv.org/abs/2611.14854</link>
+    <guid isPermaLink="false">arxiv:2611.14854</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv eess.SY · Eve Tsybina, Selma Grebovic, Samim Konjicija, Kaleb Brunhoeber et al. — Agentic AI running phasor-domain power system simulations and counterfactual studies; agents that run simulations match the researcher&#39;s agentic interest, though the domain is grid stability.</description>
+  </item>
+  <item>
+    <title>[6] Agentic Computational Algebra</title>
+    <link>https://arxiv.org/abs/2611.16073</link>
+    <guid isPermaLink="false">arxiv:2611.16073</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.LG · Ryan A. Anderson, Matthew Trager, Ben Bowman, Wei Xia et al. — Agents discover and reuse structure to speed up computational algebra; agentic solver-building with time-cost focus, adjacent to optimisation work.</description>
+  </item>
+  <item>
+    <title>[6] Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity</title>
+    <link>https://arxiv.org/abs/2611.15838</link>
+    <guid isPermaLink="false">arxiv:2611.15838</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.AI · Eduardo de Avila-Armenta, Raúl Alejandro Aquino-Ibarra, Jorge Octavio Nicolás-Díaz, Umberto Leon-Dominguez — Tournament of negotiation agents including RL and LLMs in a matching market; relevant to strategy learning and market mechanisms but not to scheduling or transit.</description>
+  </item>
+  <item>
+    <title>[6] Dual Representation Enhanced Diffusion Policy for Flexible Job Shop Scheduling</title>
+    <link>https://arxiv.org/abs/2611.15246</link>
+    <guid isPermaLink="false">arxiv:2611.15246</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.LG · Yunyi Zhao, Wei Zhang, Cheng Xiang, Vadakkepat Prahlad et al. — Diffusion-policy RL for flexible job-shop scheduling; learned scheduling policy relevant to RL dispatching and scheduling methods.</description>
+  </item>
+  <item>
+    <title>[6] Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</title>
+    <link>https://arxiv.org/abs/2611.16082</link>
+    <guid isPermaLink="false">arxiv:2611.16082</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv physics.flu-dyn · Yi Liu, Xiantao Fan, Mingqi Xu, Jian-Xun Wang — LLM agents search closure forms with differentiable CFD gradients; agentic bilevel optimisation is relevant method-wise but the application is turbulence, not transport.</description>
+  </item>
+  <item>
+    <title>[6] HALight: Heterogeneous Multi-Agent Reinforcement Learning for Traffic Signal Control under Lane-Level Missing Observations</title>
+    <link>https://arxiv.org/abs/2611.16574</link>
+    <guid isPermaLink="false">arxiv:2611.16574</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.LG · Chenkai Hu, Yingqian Zhang, Ming Xie, Yi Fang et al. — Heterogeneous multi-agent RL for traffic signal control with missing sensor data; RL for urban traffic operations is closely adjacent.</description>
+  </item>
+  <item>
+    <title>[6] Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent</title>
+    <link>https://arxiv.org/abs/2611.15268</link>
+    <guid isPermaLink="false">arxiv:2611.15268</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.CL · Yujia Zhang, Xinqi Ren, Shixiong Zhou, Jia Meng — Teacher-free agent improvement from deployment logs with RL and rule induction; agentic self-improvement method with policy-following tool use.</description>
+  </item>
+  <item>
+    <title>[6] LLM-Enhanced Deep Reinforcement Learning with Human-in-the-Loop Calibration for Real-Time Optimal Power Flow</title>
+    <link>https://arxiv.org/abs/2611.15003</link>
+    <guid isPermaLink="false">arxiv:2611.15003</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Jiayang Tu, Bozhen Jiang, Bojun Du, Yunxiao Ling et al. — LLM-enhanced DRL with human calibration for real-time OPF; combines learned control and language feedback for power system operation.</description>
+  </item>
+  <item>
+    <title>[6] MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks</title>
+    <link>https://arxiv.org/abs/2611.15754</link>
+    <guid isPermaLink="false">arxiv:2611.15754</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.MA · Daniela Gottesman, Gal Yona, Ori Ram, Zorik Gekhman et al. — Automated evolution of multi-agent LLM harnesses by a coding agent; relevant to agentic system design and multi-agent orchestration.</description>
+  </item>
+  <item>
+    <title>[6] Quantifying the Cost of Restoring AC Feasibility for Approximate Optimal Power Flow Solutions</title>
+    <link>https://arxiv.org/abs/2611.15706</link>
+    <guid isPermaLink="false">arxiv:2611.15706</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>arXiv eess.SY · Sanjay Johnson, Sungho Shin — Quantifies cost of restoring AC feasibility for approximate OPF solutions; relevant power-system dispatch and DC approximation issues, though not transport-specific.</description>
+  </item>
+  <item>
+    <title>[6] RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving</title>
+    <link>https://arxiv.org/abs/2611.14949</link>
+    <guid isPermaLink="false">arxiv:2611.14949</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Binghang Lu, Lang Cao, Changhong Mou, Yige Sun et al. — Recursively self-improving LLM agents with validation gates for PDE solver configuration; agentic pipeline design relevant, but scientific computing domain.</description>
+  </item>
+  <item>
+    <title>[6] SciSelect-Gym: An Environment and Benchmark for Active Learning and Bayesian Optimization Configuration Selection</title>
+    <link>https://arxiv.org/abs/2611.15154</link>
+    <guid isPermaLink="false">arxiv:2611.15154</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.CE · Ying-Peng Tang, Tianle Zhang, Wanlong Fang, Ng Jing Xiang et al. — Benchmarks LLM-guided selection of AL/BO configurations for iterative screening, touching on LLM-driven optimisation configuration choices.</description>
+  </item>
+  <item>
+    <title>[6] Singularity-Bench: Can Agents Build Agents?</title>
+    <link>https://arxiv.org/abs/2611.16591</link>
+    <guid isPermaLink="false">arxiv:2611.16591</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Yang Zhou, Krish Agarwal, Zhuoming Chen, Zerui Wang et al. — Benchmark evaluating whether agents can build AI systems end-to-end; agentic and tool-using, relevant background on agent evaluation and reliability rather than optimisation.</description>
+  </item>
+  <item>
+    <title>[6] SwarmSafe-Delta: Isolating Message Effects on LLM Agent Safety</title>
+    <link>https://arxiv.org/abs/2611.16123</link>
+    <guid isPermaLink="false">arxiv:2611.16123</guid>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.MA · Junru Zhu — Controlled protocol measuring how upstream messages affect safety of multi-agent LLM teams; relevant to multi-agent decision making under operational constraints.</description>
+  </item>
+  <item>
     <title>[7] The Robust Time-Dependent Vehicle Routing Problem with Time Windows and Budget Uncertainty</title>
     <link>https://doi.org/10.1287/trsc.2025.0387</link>
     <guid isPermaLink="false">doi:10.1287/trsc.2025.0387</guid>
@@ -3499,22 +3675,6 @@
     <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
     <category>Traffic simulation &amp; calibration</category>
     <description>Transportation Research Part C · Dimitrios Pappelis, Emmanouil Chaniotakis — Day-to-day travel time learning under imperfect information is adjacent traffic modelling useful as background for simulation behaviour.</description>
-  </item>
-  <item>
-    <title>[7] Robust Coupled Power Transportation Network Equilibrium for Heterogeneous Electric Vehicles Considering Charging Station Utilization</title>
-    <link>https://doi.org/10.1109/tte.2026.3751065</link>
-    <guid isPermaLink="false">doi:10.1109/tte.2026.3751065</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Transport-grid integration</category>
-    <description>IEEE Trans. Transportation Electrification · Wenxu Xiang, Su Su, Qiujiang Liu, Xiaobo Nie et al. — Couples power and transport networks with heterogeneous EVs and charging station utilisation, touching charging infrastructure and transport-grid integration.</description>
-  </item>
-  <item>
-    <title>[6] LLM-aided heuristic for the extended truck-drone-collection station delivery problem with dual-mode collaboration and drone multi-visit</title>
-    <link>https://doi.org/10.1016/j.tre.2026.105366</link>
-    <guid isPermaLink="false">doi:10.1016/j.tre.2026.105366</guid>
-    <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM &amp; agentic AI</category>
-    <description>Transportation Research Part E · Yixuan Zhai, Ping Chen, Jianhua Xiao, Liujiang Kang et al. — Uses an LLM-aided heuristic for a truck-drone routing problem; relevant to LLM+optimisation methods but the drone delivery setting is not electrified transit.</description>
   </item>
 </channel>
 </rss>

@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-13</h2>
-  <span class="meta">3 relevant of 13 screened · 25378 new papers fetched</span>
+  <h2>Today · 2026-11-14</h2>
+  <span class="meta">22 relevant of 133 screened · 25551 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">3</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">22</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">2</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">10</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">6</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">4</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,40 +107,286 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="ebus" data-score="7" data-date="2026-11-12" data-venue="Transportation Science"
-           data-text="the robust time-dependent vehicle routing problem with time windows and budget uncertainty igor malheiros michael poss anand subramanian vitor nesello transportation science">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-13" data-venue="IEEE Trans. Intelligent Transportation Systems"
+           data-text="a network flow approach to battery electric bus charge scheduling and battery health conscious optimization matthew j. hansen greg droge jake gunther ieee trans. intelligent transportation systems">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://doi.org/10.1287/trsc.2025.0387" target="_blank" rel="noopener">The Robust Time-Dependent Vehicle Routing Problem with Time Windows and Budget Uncertainty</a></h3>
-<div class="by">Igor Malheiros, Michael Poss, Anand Subramanian, Vitor Nesello</div>      <div class="venue">
-        <span class="pub informs">INFORMS</span>
-        <span>Transportation Science</span><span class="by">2026-11-12</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">Robust time-dependent VRPTW with branch-and-cut and budget uncertainty; method family closely matches their robust routing and scheduling interests.</p>
+      <h3><a href="https://doi.org/10.1109/tits.2026.3741076" target="_blank" rel="noopener">A Network Flow Approach to Battery Electric Bus Charge Scheduling and Battery Health Conscious Optimization</a></h3>
+<div class="by">Matthew J. Hansen, Greg Droge, Jake Gunther</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Intelligent Transportation Systems</span><span class="by">2026-11-13</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Network flow approach to battery electric bus charge scheduling with battery health; directly on the researcher&#39;s core e-bus charging and ageing problem.</p>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-12" data-venue="Operations Research"
-           data-text="alternating methods for large-scale ac optimal power flow with unit commitment matthew brun thomas lee dirk lauinger xin chen xu andy sun operations research">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
+  <article class="card" data-topic="llm" data-score="9" data-date="2026-11-12" data-venue="arXiv eess.SY"
+           data-text="a joint llm and optimization agent solution for drone scheduling in victim search missions yinghao zhang yalin liu hong-ning dai yan zhang qubeijian wang bishenghui tao yaohan li arxiv eess.sy">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://doi.org/10.1287/opre.2025.1935" target="_blank" rel="noopener">Alternating Methods for Large-Scale AC Optimal Power Flow with Unit Commitment</a></h3>
-<div class="by">Matthew Brun, Thomas Lee, Dirk Lauinger, Xin Chen et al.</div>      <div class="venue">
-        <span class="pub informs">INFORMS</span>
-        <span>Operations Research</span><span class="by">2026-11-12</span>
+      <h3><a href="https://arxiv.org/abs/2611.16524" target="_blank" rel="noopener">A Joint LLM and Optimization Agent Solution for Drone Scheduling in Victim Search Missions</a></h3>
+<div class="by">Yinghao Zhang, Yalin Liu, Hong-Ning Dai, Yan Zhang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-12</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Joint LLM and optimizer agent schedules drones under energy constraints for search missions, directly matching LLM+optimisation operational scheduling.</p>
+      <details><summary>Abstract</summary><p>Victim search in wilderness areas is time-critical. Drones enable rapid area search, but scheduling them is challenging because victims may continue moving, detection results are uncertain, and effective decisions must combine structured mission information with unstructured contextual clues and domain knowledge. To address this, we propose an agent-aided drone scheduling system. The system employs an agent at the ground control station (GCS) to coordinate multiple drones over successive search cycles. In each cycle, the agent applies a scheduling policy that combines a large language model (LLM) for reasoning about where to search with an optimizer for determining how to dispatch the drones under energy constraints. Simulation results show that the proposed system consistently completes the victim-search mission, whereas none of the six non-LLM baselines does so and direct LLM scheduling is considerably less reliable. The source code is publicly available at https://github.com/1643204431/llm-uav-victim-search.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-11" data-venue="arXiv eess.SY"
+           data-text="agreement is not assurance: evidence-independent safety gates for agentic ai in der-rich distribution grids qianxue xia arxiv eess.sy">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15363" target="_blank" rel="noopener">Agreement Is Not Assurance: Evidence-Independent Safety Gates for Agentic AI in DER-Rich Distribution Grids</a></h3>
+<div class="by">Qianxue Xia</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-11</span>
 <span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Large-scale SCUC-ACOPF decomposition with ADMM; power-system optimisation adjacent to their grid and decomposition interests.</p>
+      <p class="reason">Safety gates for LLM agents making voltage-constrained DER export decisions in distribution grids, directly on transport-grid integration and agentic operations.</p>
+      <details><summary>Abstract</summary><p>Physics-based safety gates for large language model (LLM) agents can approve unsafe actions when the agent and gate rely on the same corrupted measurements or network records. We formulate this shared-evidence failure for voltage-constrained distributed energy resource (DER) export decisions and analyze how nearly critical DER telemetry can bias state estimation while evading residual-based bad-data detection. We propose evidence-independent verification (EIV), which combines advanced metering infrastructure (AMI) voltage readings, measurement selection based on predicted voltage rise, and bounded physical probes. An IEEE 123-bus hidden-truth testbed evaluates 1,654 near-limit requests under telemetry attacks and record errors. For telemetry attacks targeting the nominal gate, an AC-twin gate with bad-data detection approved 95% of unsafe requests, compared with 3.1% for EIV; EIV rejected 22% of safe clean requests. At matched false-rejection settings, direct AMI checks outperformed incorporating the same readings into state estimation. Gate-targeted attacks exposed a vulnerability in telemetry-based response prediction. Command-based prediction removed that route, but targeted attacks on fresh validation cases still produced a 20% unsafe-approval rate under the tested attack pool. LLM agents frequently sought independent evidence voluntarily, but injected instructions and phase-label errors caused unsafe decisions. When offered the EIV checker as a tool, they used it in 93-100% of episodes; mandatory use did not reduce observed violations, which primarily reflected checker errors. These results distinguish enforcement of verification from reliability of the verifier itself.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-12" data-venue="Transportation Research Part E"
-           data-text="deep reinforcement learning for home health care routing and scheduling problem with interdependent services yaoxin wu yuwei gu ping he rong cheng lu zhang yingqian zhang zhiguang cao transportation research part e">
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-12" data-venue="arXiv cs.CE"
+           data-text="optimal seat movement strategies among modular bus units shiyue wang yuhao liu zhibin chen mingyang pei changhong lu arxiv cs.ce">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16357" target="_blank" rel="noopener">Optimal Seat Movement Strategies Among Modular Bus Units</a></h3>
+<div class="by">Shiyue Wang, Yuhao Liu, Zhibin Chen, Mingyang Pei et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-12</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Seat reconfiguration in modular bus units via exact MILP and decomposition DP; directly on bus operations with optimisation methods the researcher uses.</p>
+      <details><summary>Abstract</summary><p>Movable seats enable passengers to transfer between coupled modular bus units while remaining seated, but require physical reconfiguration that existing modular transit models largely abstract away. We model seat reconfiguration as a colored generalized sliding-tile puzzle on the physical track graph, capturing simultaneous movements, seat indistinguishability within destination groups, and vertex, edge, and corner-following conflicts. A lexicographic objective minimizes makespan first and then the sum of costs (SoC), which penalizes movements and waiting at non-target positions. We develop an exact time-expanded mixed-integer linear programming formulation and a Boundary-Sequence Dynamic Programming (BSDP) algorithm. BSDP decomposes the problem at single-edge module interfaces and coordinates local schedules through compressed boundary-crossing sequences, provably preserving feasibility and optimal costs. On two- and three-module benchmarks, BSDP achieves mean per-instance speedups of 3.24x and 6.30x over Gurobi, respectively. In fixed-horizon tests with four to seven modules, both methods start from identical greedy schedules and receive a 300 s budget. BSDP obtains lower final SoC than Gurobi on 197 of 200 instances and ties on three, reducing mean final SoC by 17.93%-69.07% across the four size classes. Geometry sensitivity and ablation studies further clarify the contribution of boundary compression to computational performance. The framework links seat reconfiguration to the timing and operational cost of modular bus decoupling.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-13" data-venue="IEEE Trans. Intelligent Transportation Systems"
+           data-text="multi-objective optimization for train timetable rescheduling with appropriate robustness against uncertain arrival deviations yukun wang xuewu dai yixiang yue dongliang cui guoqi feng shengping yu ieee trans. intelligent transportation systems">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.tre.2026.105376" target="_blank" rel="noopener">Deep reinforcement learning for home health care routing and scheduling problem with interdependent services</a></h3>
-<div class="by">Yaoxin Wu, Yuwei Gu, Ping He, Rong Cheng et al.</div>      <div class="venue">
-        <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part E</span><span class="by">2026-11-12</span>
+      <h3><a href="https://doi.org/10.1109/tits.2026.3746633" target="_blank" rel="noopener">Multi-Objective Optimization for Train Timetable Rescheduling With Appropriate Robustness Against Uncertain Arrival Deviations</a></h3>
+<div class="by">Yukun Wang, Xuewu Dai, Yixiang Yue, Dongliang Cui et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Intelligent Transportation Systems</span><span class="by">2026-11-13</span>
 <span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Deep RL for home health care routing and scheduling; learning-based scheduling close to their RL for scheduling interest, though abstract is missing.</p>
+      <p class="reason">Multi-objective train timetable rescheduling under uncertain arrival deviations is robust optimisation close to their stochastic scheduling methods, though rail rather than bus.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-13" data-venue="Computers &amp; Operations Research"
+           data-text="multi-agent deep reinforcement learning for novel cross-domain dynamic integrated scheduling problem considering spare parts production and equipment operation yong lei qianwang deng kaidan deng juan zhou qiang luo jingxing zhang computers &amp; operations research">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.cor.2026.107730" target="_blank" rel="noopener">Multi-agent deep reinforcement learning for novel cross-domain dynamic integrated scheduling problem considering spare parts production and equipment operation</a></h3>
+<div class="by">Yong Lei, Qianwang Deng, Kaidan Deng, Juan Zhou et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Computers &amp; Operations Research</span><span class="by">2026-11-13</span>
+<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Multi-agent deep RL for integrated dynamic scheduling in Computers &amp; OR; scheduling with RL is relevant method-wise, domain unclear without abstract.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-13" data-venue="Transportation Research Part D"
+           data-text="physics-informed energy-consumption prediction and charging-demand gap identification for logistics electric vehicles muhammad asim ayaz irfan ullah quan yuan chao yang wei zhao ali alhawiti transportation research part d">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trd.2026.105724" target="_blank" rel="noopener">Physics-informed energy-consumption prediction and charging-demand gap identification for logistics electric vehicles</a></h3>
+<div class="by">Muhammad Asim Ayaz, Irfan Ullah, Quan Yuan, Chao Yang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part D</span><span class="by">2026-11-13</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Physics-informed energy prediction and charging-demand gaps for logistics EVs; relevant to electrified fleet charging needs.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-12" data-venue="arXiv cs.AI · NeurIPS 2026"
+           data-text="agentssl: can mle agents leverage unlabeled data? ethan lin akanksha sarkar ziang liu kristin branson jennifer j. sun arxiv cs.ai · neurips 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.17323" target="_blank" rel="noopener">AgentSSL: Can MLE Agents Leverage Unlabeled Data?</a></h3>
+<div class="by">Ethan Lin, Akanksha Sarkar, Ziang Liu, Kristin Branson et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI · NeurIPS 2026</span><span class="by">2026-11-12</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">MLE agents synthesise SSL programs via search and benchmark program selection; agentic program search fits the researcher&#39;s agentic AI interest.</p>
+      <details><summary>Abstract</summary><p>Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlabeled data is abundant. In this work, we introduce Agentic Semi-Supervised Learning (AgentSSL), framing SSL as a program search problem and studying how agents navigate this space under limited supervision. We find that even under weak feedback and matched compute, agents can synthesize code that combines and adapts established SSL techniques, exceeding the strongest human-engineered baselines in 8 of 12 settings by up to +21.8%. However, our results identify program selection as a critical bottleneck in AgentSSL, where performance drops by as much as 47% when selecting based on the agent&#39;s feedback metric. To systematically study this bottleneck, we introduce ProgramSelectBench, a large-scale benchmark with a combined total of 16,977 agent-generated and human-engineered SSL programs, and evaluate both unsupervised and active program selection methods. We further evaluate AgentSSL on real-world ecology detection tasks, highlighting the opportunities and challenges of transferring agent-discovered strategies beyond controlled benchmarks.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv eess.SY"
+           data-text="agentigrid: agentic ai for steady state and transient studies eve tsybina selma grebovic samim konjicija kaleb brunhoeber slaven peles arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.14854" target="_blank" rel="noopener">AgentiGrid: Agentic AI for Steady State and Transient Studies</a></h3>
+<div class="by">Eve Tsybina, Selma Grebovic, Samim Konjicija, Kaleb Brunhoeber et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Agentic AI running phasor-domain power system simulations and counterfactual studies; agents that run simulations match the researcher&#39;s agentic interest, though the domain is grid stability.</p>
+      <details><summary>Abstract</summary><p>As power systems worldwide struggle to meet in- creasing loads or higher penetration of inverter based resources, dynamic studies become of increasing importance. The rise of artificial intelligence (AI) capabilities allows to automate some of these resource intensive studies. Coupled with parallel computing, AI is a promising technology to conduct transient and stability studies on an unprecedented scale. This study provides a proof of concept agentic AI capable of parallel or sequential execution of phasor domain studies for a 10,000 bus system. The agent first executes a standalone simulation of a three phase symmetric fault and then executes a series of actions, by first adding a large load to a bus and then applying the fault to the same bus to stress the system. The results of the agentic simulation are consistent with human counterfactual across four vendor backends.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.LG"
+           data-text="agentic computational algebra ryan a. anderson matthew trager ben bowman wei xia stefano soatto arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16073" target="_blank" rel="noopener">Agentic Computational Algebra</a></h3>
+<div class="by">Ryan A. Anderson, Matthew Trager, Ben Bowman, Wei Xia et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Agents discover and reuse structure to speed up computational algebra; agentic solver-building with time-cost focus, adjacent to optimisation work.</p>
+      <details><summary>Abstract</summary><p>We explore the use of AI agents for solving computational problems in algebra. For the problems we consider, the main challenge is not correctness but \emph{time}: general-purpose algorithms are guaranteed to provide correct solutions but can be prohibitively slow, while reformulations that exploit special structure often allow solving a problem much faster. We propose to use this setting to evaluate how effectively agents discover and exploit structure within and across tasks to reduce computational costs. More broadly, computational algebra supplies infinitely many problems with independently verifiable answers and systematically controllable structure and difficulty. To illustrate these possibilities, we use benchmark families of systems with controlled shared structure and evaluate agents in three settings: solving independent instances, solving online streams of related instances using persistent memory, and compiling a fast reusable solver for a known problem family. Our experiments show that (i) agents can extend the range of systems solvable within a fixed budget, although reasoning overhead can sometimes outweigh computational savings; (ii) memory can reduce the cost of repeated solving but may preserve suboptimal strategies; (iii) compilation produces faster reusable solvers but at substantial upfront cost. Overall, computational algebra offers concrete, measurable targets for improving how agents discover and reuse structure.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.AI"
+           data-text="before ai agents negotiate for us: a competitive tournament of rule-based, search, optimization, learned, and language-model negotiators under scarcity eduardo de avila-armenta raúl alejandro aquino-ibarra jorge octavio nicolás-díaz umberto leon-dominguez arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15838" target="_blank" rel="noopener">Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity</a></h3>
+<div class="by">Eduardo de Avila-Armenta, Raúl Alejandro Aquino-Ibarra, Jorge Octavio Nicolás-Díaz, Umberto Leon-Dominguez</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-11</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Tournament of negotiation agents including RL and LLMs in a matching market; relevant to strategy learning and market mechanisms but not to scheduling or transit.</p>
+      <details><summary>Abstract</summary><p>Automated bilateral negotiation underlies two-sided matching markets such as freight brokering, where many shippers and carriers negotiate price before a matching mechanism decides who is paired with whom. Prior strategy comparisons typically use isolated one-on-one duels or a single fixed market, so they cannot show how a strategy behaves against several live rivals under a changing balance of supply and demand. We built nine negotiation architectures spanning rule-based, search-based, optimization-based, imitation-learning, and reinforcement-learning families, and ran all nine simultaneously on both sides of a Gale-Shapley matching market under a balanced condition and two scarcity conditions rotated across all 36 exclusion pairs. In the balanced carrier market, an imitation-learned engine (ML2), a reinforcement-learning policy trained only on isolated negotiations (RL), and an expected-utility optimization engine (OPT) formed a statistically tied top group, and no architecture led in every condition and role. RL beat all eight carrier rivals when carriers were scarce, but its match rate collapsed from 62% to 16% when shippers were scarce and it had to compete with the other carrier agents for demand. A second reinforcement-learning policy trained against rival agents (RL2) kept its match rate above 91% in every condition, yet lost on realized payoff to all eight shipper-side rivals in two of the three conditions, traced to a confirmed train/deployment feature mismatch. We also tested nine large language models (LLMs), from 1 to 72 billion parameters, under the same protocol: they lost significantly to the two strongest engines (OPT2 and ML2) in 32 of 36 comparisons and won none. These results show that isolated or single-condition evaluation can hide failure modes that a many-sided, scarcity-varying, statistically corrected tournament exposes directly.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.LG"
+           data-text="dual representation enhanced diffusion policy for flexible job shop scheduling yunyi zhao wei zhang cheng xiang vadakkepat prahlad zuming liu arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15246" target="_blank" rel="noopener">Dual Representation Enhanced Diffusion Policy for Flexible Job Shop Scheduling</a></h3>
+<div class="by">Yunyi Zhao, Wei Zhang, Cheng Xiang, Vadakkepat Prahlad et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-11</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Diffusion-policy RL for flexible job-shop scheduling; learned scheduling policy relevant to RL dispatching and scheduling methods.</p>
+      <details><summary>Abstract</summary><p>The Flexible Job-Shop Scheduling Problem (FJSP) is a fundamental and challenging optimization problem in smart manufacturing. Although recent deep reinforcement learning (DRL) approaches can learn effective scheduling policies through interaction with the environment, their performance often degrades as problem scale and processing-time uncertainty increase. In this paper, we propose DredRL, a dual representation enhanced diffusion-policy reinforcement learning scheduler. DredRL first constructs enhanced dual representations of operations and machines through self- and cross-attention mechanisms to capture both intra-entity and inter-entity dependencies. A diffusion model is further employed as the policy network, generating scheduling decisions through iterative denoising conditioned on the encoded state to enhance policy expressiveness and robustness. Extensive experiments on synthetic, public, large-scale, and stochastic FJSP benchmarks demonstrate that DredRL outperforms state-of-the-art learning-based schedulers across most configurations. Compared with SOTA learning-based methods, DredRL reduces makespan by up to 5.44% on synthetic instances. It also achieves the best learning-based performance on three of four public benchmarks and outperforms the stochasticity-aware algorithms on stochastic benchmarks. These results demonstrate that combining enhanced dual representations with diffusion-based policies provides an effective and robust approach for large scale scalable FJSP scheduling in complicated environment.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv physics.flu-dyn"
+           data-text="gradient-aware ai agents for autonomous turbulence model discovery via differentiable cfd yi liu xiantao fan mingqi xu jian-xun wang arxiv physics.flu-dyn">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16082" target="_blank" rel="noopener">Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</a></h3>
+<div class="by">Yi Liu, Xiantao Fan, Mingqi Xu, Jian-Xun Wang</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv physics.flu-dyn</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM agents search closure forms with differentiable CFD gradients; agentic bilevel optimisation is relevant method-wise but the application is turbulence, not transport.</p>
+      <details><summary>Abstract</summary><p>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization, and nearly all fix the closure form in advance, learning only its parameters. In this work, we introduce a gradient-aware agentic framework that poses closure discovery as a bilevel problem: a multi-agent large language model (LLM) system searches over closure forms, while a GPU-native differentiable computational fluid dynamics (CFD) solver supplies gradients, making differentiable a posteriori learning an action of the autonomous AI agent. For each proposal, the agents construct a differentiable training program by embedding the analytical, neural, or hybrid closure in the solver, implementing a differentiable objective, and validating the gradient path. They then decide whether to evaluate the closure, compute its parameter sensitivities, or train it a posteriori, select the optimization settings, and revise subsequent proposals using the simulation outcomes and returned gradients. Truncated-horizon gradients make this training usable under chaotic dynamics for closures with tens of thousands of parameters. Demonstrations include dissipation-law and subgrid-scale closure discovery in two-dimensional turbulence and wall-model discovery for large-eddy simulation of three-dimensional channel flow. With gradient-based training, the agent recovers reference coefficients that forward evaluation alone does not reach within the same budget, and autonomously discovers and trains analytical and neural closures that improve agreement with the targeted reference statistics. These results demonstrate the feasibility of end-to-end autonomous turbulence model development in time-resolved flows.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-12" data-venue="arXiv cs.LG"
+           data-text="halight: heterogeneous multi-agent reinforcement learning for traffic signal control under lane-level missing observations chenkai hu yingqian zhang ming xie yi fang chengxiang jin chao li arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16574" target="_blank" rel="noopener">HALight: Heterogeneous Multi-Agent Reinforcement Learning for Traffic Signal Control under Lane-Level Missing Observations</a></h3>
+<div class="by">Chenkai Hu, Yingqian Zhang, Ming Xie, Yi Fang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-12</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Heterogeneous multi-agent RL for traffic signal control with missing sensor data; RL for urban traffic operations is closely adjacent.</p>
+      <details><summary>Abstract</summary><p>Multi-agent reinforcement learning has shown great promise for traffic signal control. However, most existing methods rely on two key assumptions: (i) agents are assumed to be homogeneous with unified observation/action spaces; (ii) full and reliable lane-level traffic observations are available to all agents. In practice, urban road networks exhibit substantial structural heterogeneity (e.g., lane configurations and phase designs), while sensor failures and incomplete detector coverage often result in missing incoming lane measurements. Such issues can severely impair coordination and destabilize learning. To address these challenges, we propose HALight, a communication-enhanced heterogeneous multi-agent reinforcement learning framework for traffic signal control under lane-level missing observations. HALight supports intersection-specific observation and action modeling to accommodate heterogeneous intersections, and incorporates a lightweight one-hop neighborhood communication module to enrich spatial context when lane-level observations are partially unavailable. Moreover, HALight adopts a sequential policy update scheme to improve coordination among heterogeneous agents. Experimental results on two real-world road networks demonstrate that HALight outperforms representative homogeneous and heterogeneous baselines in terms of traffic efficiency and convergence behavior. The code and datasets used in this work are available at https://github.com/Huchenkaii/HALight.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.CL"
+           data-text="knowledge in the harness, reliability in the weights: teacher-free co-evolution of an llm agent yujia zhang xinqi ren shixiong zhou jia meng arxiv cs.cl">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15268" target="_blank" rel="noopener">Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent</a></h3>
+<div class="by">Yujia Zhang, Xinqi Ren, Shixiong Zhou, Jia Meng</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CL</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Teacher-free agent improvement from deployment logs with RL and rule induction; agentic self-improvement method with policy-following tool use.</p>
+      <details><summary>Abstract</summary><p>Small open models suit private customer-service deployments but trail frontier models in two ways: they miss what the written policy requires in a given situation, and they act inconsistently on what they know. We study whether such a model can close both gaps from its own deployment logs and their reference outcomes, without a stronger teacher model. Our starting point is a Gemma 4 12B agent that reads its domain policy from on-demand skills rather than from its system prompt. In each round, the deployed system serves a fresh batch of tasks; the base model diagnoses failed conversations and writes rules into the skills, and a rule survives only if it passes code checks, counterexample self-review, a paired retest, and a noise-calibrated validation gate. Reinforcement learning (GRPO) then trains a LoRA adapter on complete multi-turn, tool-using conversations. On the retail and airline domains of $τ^2$-bench, without training or selecting on official tasks, the agent after two rounds improves on this starting point by 12.5 pass$^1$ points in retail and 19.5 in airline, and by 18.4 and 22.0 pass$^4$ points. It also exceeds the benchmark&#39;s reference agent, which runs the same model with the whole policy in its system prompt, by 11.8 and 8.0 pass$^1$ points and by 22.8 and 16.0 pass$^4$ points, closing most of the gap to three frontier models under the same protocol. A $2\times2$ ablation shows that the rules rescue tasks the agent never solved and carry policy knowledge that RL with the rules in context does not internalize, whereas the trained weights make solved tasks reliable.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-11" data-venue="arXiv eess.SY"
+           data-text="llm-enhanced deep reinforcement learning with human-in-the-loop calibration for real-time optimal power flow jiayang tu bozhen jiang bojun du yunxiao ling ershun du qin wang arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15003" target="_blank" rel="noopener">LLM-Enhanced Deep Reinforcement Learning with Human-in-the-Loop Calibration for Real-Time Optimal Power Flow</a></h3>
+<div class="by">Jiayang Tu, Bozhen Jiang, Bojun Du, Yunxiao Ling et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-11</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">LLM-enhanced DRL with human calibration for real-time OPF; combines learned control and language feedback for power system operation.</p>
+      <details><summary>Abstract</summary><p>Real-time optimal power flow (RT-OPF) requires fast and reliable decision-making under time-varying operating conditions. However, many practical operating preferences and safety related requirements are difficult to encode using conventional numerical rewards alone, which limits the effectiveness and controllability of deep reinforcement learning (DRL) for RT-OPF. To address this issue, this paper proposes an LLM-enhanced DRL framework with human-in-the-loop (HITL) for RT-OPF. The proposed method augments the physics-based reward with sparse language evaluative feedback during offline training, so that semantic operational requirements can be incorporated into policy learning. To improve reliability in RT-OPF, a selective HITL calibration mechanism is further introduced to inspect and correct questionable LLM judgments before they continuously shape the learning process. Case studies on the IEEE 30-bus and IEEE 118-bus systems show that LLM feedback improves policy safety over vanilla TD3, while further HITL calibration achieves the best overall performance and more stable training behavior. These results demonstrate the effectiveness of combining language guidance and expert calibration for RT-OPF.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.MA"
+           data-text="multiloop: evolving multi-agent harnesses for complex information-seeking tasks daniela gottesman gal yona ori ram zorik gekhman jonathan herzig mor geva roee aharoni arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15754" target="_blank" rel="noopener">MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks</a></h3>
+<div class="by">Daniela Gottesman, Gal Yona, Ori Ram, Zorik Gekhman et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Automated evolution of multi-agent LLM harnesses by a coding agent; relevant to agentic system design and multi-agent orchestration.</p>
+      <details><summary>Abstract</summary><p>The performance of LLM-based agents depends not only on the underlying model but also on the harness: the prompts, tools, and orchestration logic around it. Recent works automate harness optimization with coding agents that analyze execution traces, diagnose failures, and edit the harness code; however, those focused on single-agent systems. Multi-agent harnesses are harder to optimize as fixing them requires changing how agents interact in addition to how each behaves. We study whether automated harness optimization can diagnose and repair failures in multi-agent systems through a case study on complex information-seeking tasks from DeepSearchQA [Gupta et al., 2026]. We apply MULTILOOP, a simple optimization loop in which a coding agent iteratively analyzes, evaluates and edits the harness. With only 10 training samples, the evolved harness improves accuracy by 4.6% over the base harness and by 3.2% over the best single-agent system. However, a taxonomy of failure modes before and after optimization shows that the orchestration failures that characterize multi-agent systems largely persist. Our findings motivate harness optimization methods that encourage structural changes to how agents delegate tasks and share information.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-11" data-venue="arXiv eess.SY"
+           data-text="quantifying the cost of restoring ac feasibility for approximate optimal power flow solutions sanjay johnson sungho shin arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15706" target="_blank" rel="noopener">Quantifying the Cost of Restoring AC Feasibility for Approximate Optimal Power Flow Solutions</a></h3>
+<div class="by">Sanjay Johnson, Sungho Shin</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-11</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Quantifies cost of restoring AC feasibility for approximate OPF solutions; relevant power-system dispatch and DC approximation issues, though not transport-specific.</p>
+      <details><summary>Abstract</summary><p>Power system operations rely on approximate solutions of the AC optimal power flow problem, most notably the DC optimal power flow used in security-constrained unit commitment and economic dispatch, while convex relaxations, machine learning surrogates, and other approximations are studied extensively in the academic literature. Because these approximations neglect or relax parts of the AC power flow equations, their solutions must be adjusted before dispatch; for example, the DC optimal power flow, which neglects transmission losses, reactive power, and voltage magnitude variations, is known to produce solutions that are always infeasible. The cost of this adjustment is not adequately understood. This paper proposes a method that quantifies, for any approximate solution, the minimum cost of the adjustments that restore AC feasibility, which is a lower bound on the cost of the heuristic adjustments used in practice. We apply it to the DC optimal power flow, the second-order cone and quadratic convex relaxations, and the AC optimal power flow solved to a loose relative tolerance of $10^{-4}$ instead of $10^{-8}$. Relative to the AC optimal power flow solution obtained from a local nonlinear optimization solver, and even with the minimum adjustment, the DC optimal power flow requires adjusting, on average, generators that account for 15.6% of total generation capacity and incurs a 1.10% cost increase; the convex relaxations require more adjustment (17.2% and 16.9%) but smaller cost increases (0.68% and 0.78%); and the loose-tolerance AC optimal power flow requires 6.1% and incurs 0.42%. These results indicate significant value in operating markets directly on the AC optimal power flow, which avoids the distortion of the dispatch and prices caused by heuristic feasibility restoration.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.AI"
+           data-text="rsi-pdebench: a benchmark for self-improving agents in pde solving binghang lu lang cao changhong mou yige sun cindy xiangrui kong zheyuan deng tian yuan bing hu runyu zhang na lu guang lin arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.14949" target="_blank" rel="noopener">RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving</a></h3>
+<div class="by">Binghang Lu, Lang Cao, Changhong Mou, Yige Sun et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-11</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Recursively self-improving LLM agents with validation gates for PDE solver configuration; agentic pipeline design relevant, but scientific computing domain.</p>
+      <details><summary>Abstract</summary><p>Identifying and solving partial differential equations (PDEs) from sampled solution data often requires substantial expert effort in equation discovery, coefficient estimation, and numerical solver configuration, especially under noise and distribution shifts. Can large language model (LLM) agents automate this workflow accurately and efficiently? To investigate this question, we introduce \bench{}, a benchmark of 1,001 cases spanning 42 equation templates, including both classical and fractional PDEs. It provides three evaluation settings: Full evaluates performance on noise-free solution data; Noisy tests robustness to Gaussian noise with an RMS equal to 50\% of the clean-signal RMS; and Hard-OOD tests challenging out-of-distribution generalization to unseen equation templates and shifted coefficient ranges. We further introduce RSI-PDE, a recursively self-improving agent harness that shortlists candidate equations by residual loss, uses relative $L^2$ feedback to refine coefficients and numerical solvers, and applies a validation gate to policy and memory updates. We compare RSI-PDE with single-run baselines and native agent harnesses (Claude Code or Codex) across four frontier models. Across the three settings, RSI-PDE improves the pass rate averaged across the four models by 106.5--181.9\% relative to single-run baselines and by 3.0--19.6\% relative to native harnesses, while reducing total recorded model calls by 46.9\% across the 12 model--setting pairs. These results highlight the potential of validated recursive self-improvement in LLM agents to advance scientific computing.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-11" data-venue="arXiv cs.CE"
+           data-text="sciselect-gym: an environment and benchmark for active learning and bayesian optimization configuration selection ying-peng tang tianle zhang wanlong fang ng jing xiang alvin chan arxiv cs.ce">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.15154" target="_blank" rel="noopener">SciSelect-Gym: An Environment and Benchmark for Active Learning and Bayesian Optimization Configuration Selection</a></h3>
+<div class="by">Ying-Peng Tang, Tianle Zhang, Wanlong Fang, Ng Jing Xiang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-11</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Benchmarks LLM-guided selection of AL/BO configurations for iterative screening, touching on LLM-driven optimisation configuration choices.</p>
+      <details><summary>Abstract</summary><p>In many scientific tasks, scientists repeatedly choose a small set of candidates to test, learn from the results, and use the observations to guide the next selection. Methods based on active learning~(AL) or Bayesian optimization~(BO) have been proposed for these iterative screening campaigns with a surrogate model. Yet, selecting the surrogate model and acquisition function for a new dataset remains challenging due to limited empirical evidence, while the effectiveness of large language models (LLMs) in making such decisions remains unclear. To address these gaps, we introduce SciSelect-Gym, an environment for simulating AL/BO data selection campaigns and evaluating configuration choices. We conducted simulations of AL/BO data selection campaigns across several settings and more than 100 molecular datasets. Using completed simulation campaigns as context improves LLM recommendation shortlists on held-out datasets more consistently than it improves the quality of their first choice. SciSelect-Gym provides a simulation platform and recommendation protocols for learning how to choose configurations before an acquisition campaign. An implemented agent use case connects these campaign records and simulation tools to LLM-generated configuration-selection policies. The code is provided as supplementary material.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-12" data-venue="arXiv cs.AI"
+           data-text="singularity-bench: can agents build agents? yang zhou krish agarwal zhuoming chen zerui wang zhenyu zhang wenshuang li xinpeng wei zhichen zeng jingyu liu jue wang sen wu ziheng jiang zhen dong han cai binhang yuan ying sheng ce zhang bo li beidi chen arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16591" target="_blank" rel="noopener">Singularity-Bench: Can Agents Build Agents?</a></h3>
+<div class="by">Yang Zhou, Krish Agarwal, Zhuoming Chen, Zerui Wang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-12</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Benchmark evaluating whether agents can build AI systems end-to-end; agentic and tool-using, relevant background on agent evaluation and reliability rather than optimisation.</p>
+      <details><summary>Abstract</summary><p>Frontier AI agents increasingly succeed on realistic, long-horizon tasks and are beginning to improve the systems through which they operate. Yet existing benchmarks often restrict agents to narrow action spaces, use simplified environments, or rely on verification methods that are unreliable for evaluating arbitrary agent-generated systems. We introduce Singularity-Bench, an open-ended benchmark for autonomous AI development with six end-to-end tasks spanning pre-training, mid-training, post-training, inference, the agent harness, and cluster orchestration. Each task requires agents to implement core systems from a minimal starting point and evaluates them against mature human-engineered baselines on identical hardware. Additionally, through extensive red-teaming covering 9 of the 10 categories in the OWASP Top 10 for Agentic Applications, we expose reward-hacking vulnerabilities in the conventional Harbor framework and develop Breakwater, an extension of Harbor that blocks all attacks tested in our study. Across 11 agents built from 7 frontier models and 2 harnesses, Opus 5.5 with Claude Code matches or outperforms the human baseline on all six tasks with a Singularity-Index of 1.25, suggesting it may have the skills needed to reach the singularity. The remaining agents average only 0.58. Our vision is for Singularity-Bench to track how much of AI development agents can already automate and when they may transition from assisting to taking end-to-end responsibility for building stronger successors.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-12" data-venue="arXiv cs.MA"
+           data-text="swarmsafe-delta: isolating message effects on llm agent safety junru zhu arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.16123" target="_blank" rel="noopener">SwarmSafe-Delta: Isolating Message Effects on LLM Agent Safety</a></h3>
+<div class="by">Junru Zhu</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-12</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Controlled protocol measuring how upstream messages affect safety of multi-agent LLM teams; relevant to multi-agent decision making under operational constraints.</p>
+      <details><summary>Abstract</summary><p>When a tool-using LLM agent team violates policy, aggregate outcomes do not reveal whether an upstream message changed the executor&#39;s action. We introduce SwarmSafe-Delta, a paired executable protocol that freezes upstream computation, varies real, hidden, and format-matched placebo delivery, and scores a single committed action against deterministic benign and risky policy states under preassigned budgets. Across four models and constructed optional tasks, real delivery at $N=4$ produces 21.4% risky-world violations, versus 5.0% with placebo and 1.0% with hidden delivery (paired differences +16.4 and +20.3 percentage points). Real delivery also improves benign task success, illustrating that suppressing communication sacrifices utility. In a second regime constructed to require an upstream lookup route, real delivery improves safe completion by 74.2 points relative to hidden delivery. These effects quantify message-delivery contrasts under specified information dependencies, not naturally occurring failure rates. Exploratory action-level analyses show that the effect depends strongly on whether the upstream message recommends a prerequisite check or direct execution; model differences also largely track these message compositions. The contribution is a controlled, execution-grounded measurement protocol rather than a general claim that agent communication is harmful or protective.</p></details>
     </div>
   </article>
 </main>
@@ -149,7 +395,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-13.html" class="cur" aria-current="page">2026-11-13 · 3</a></li>
+    <li><a href="archive/2026-11-14.html" class="cur" aria-current="page">2026-11-14 · 22</a></li>
+    <li><a href="archive/2026-11-13.html">2026-11-13 · 3</a></li>
     <li><a href="archive/2026-11-12.html">2026-11-12 · 13</a></li>
     <li><a href="archive/2026-11-11.html">2026-11-11 · 17</a></li>
     <li><a href="archive/2026-11-10.html">2026-11-10 · 10</a></li>
@@ -167,7 +414,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-13 01:00 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-14 00:50 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
