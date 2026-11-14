@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-15",
+ "fetched": 25398,
+ "sources": {
+  "arXiv": 175,
+  "Transportation Research Part B": 0,
+  "Transportation Research Part C": 0,
+  "Transportation Research Part D": 7,
+  "Transportation Research Part E": 5,
+  "Applied Energy": 1,
+  "European Journal of Operational Research": 9,
+  "Computers & Operations Research": 4,
+  "eTransportation": 1,
+  "IEEE Trans. Intelligent Transportation Systems": 8,
+  "IEEE Trans. Smart Grid": 4,
+  "IEEE Trans. Transportation Electrification": 7,
+  "IEEE Trans. Power Systems": 2,
+  "Transportation Science": 3,
+  "Operations Research": 3,
+  "INFORMS Journal on Computing": 0,
+  "Nature Energy": 0,
+  "Nature Communications": 83,
+  "Public Transport": 0,
+  "OR Spectrum": 1,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": 4,
+  "ACM Trans. Evolutionary Learning and Optimization": 0,
+  "ACM Trans. Knowledge Discovery from Data": 4,
+  "ACM Trans. Spatial Algorithms and Systems": 0,
+  "ACM Trans. Cyber-Physical Systems": 0,
+  "ACM Trans. Autonomous and Adaptive Systems": 0,
+  "ACM Trans. Modeling and Computer Simulation": 0,
+  "ACM Journal on Autonomous Transportation Systems": 0,
+  "ACM Computing Surveys": 5,
+  "NeurIPS (paper list)": 9276,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 779,
+  "IJCAI": 156,
+  "AAMAS": 353,
+  "ICAPS": 29,
+  "ACM GECCO": 29,
+  "ACL": 527,
+  "EMNLP": 790,
+  "ACM KDD": 284,
+  "ACM WWW": 161,
+  "ACM CIKM": 164,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 15,
+  "ACM BuildSys": 11,
+  "ACM/IEEE ICCPS": 10
+ },
+ "papers": [
+  {
+   "id": "doi:10.1016/j.trd.2026.105728",
+   "title": "Data-driven planning of electric truck charging stations with heterogeneous driving ranges",
+   "url": "https://doi.org/10.1016/j.trd.2026.105728",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-14",
+   "authors": [
+    "Hailin Tong",
+    "Guangnian Xiao",
+    "Yuandong Liu",
+    "Jiapei Li"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "ebus",
+   "reason": "Data-driven planning of electric truck charging stations with heterogeneous ranges; close to charging infrastructure planning for electrified fleets, though trucks rather than buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.cor.2026.107737",
+   "title": "Low-carbon distributed flexible job shop scheduling with AGV transport and charging under time-varying electricity prices and grid carbon intensity: an improved multi-objective evolutionary algorithm",
+   "url": "https://doi.org/10.1016/j.cor.2026.107737",
+   "venue": "Computers & Operations Research",
+   "publisher": "Elsevier",
+   "date": "2026-11-14",
+   "authors": [
+    "Liao Ran",
+    "Yao Lu",
+    "Guanyu Chen",
+    "Xianming Wu",
+    "Taihua Zhang"
+   ],
+   "abstract": "",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "ebus",
+   "reason": "Low-carbon flexible job shop scheduling with AGV transport and charging under time-varying prices; relevant scheduling-with-charging and multi-objective evolutionary methods, though in manufacturing.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105374",
+   "title": "Strategic service deployment on the aggregation platform in ride-hailing markets",
+   "url": "https://doi.org/10.1016/j.tre.2026.105374",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-14",
+   "authors": [
+    "Chenwei Xu",
+    "Gang Li",
+    "Chuangyin Dang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Strategic service deployment on ride-hailing aggregation platforms; operations and market design, only loosely related to the researcher's scheduling work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tpwrs.2026.3753843",
+   "title": "Decentralized Stability-Constrained Optimal Power Flow for Inverter-Based Power Systems",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3753843",
+   "venue": "IEEE Trans. Power Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-13",
+   "authors": [
+    "Shigeng Wang",
+    "Sijia Geng"
+   ],
+   "abstract": "Future inverter-dominated power systems feature higher variability and more stressed operating conditions, which motivates the consideration of stability in operational settings. Existing approaches to stability-constrained OPF often rely on eigenvalue calculation, global model information, or dynamic evaluation inside optimization formulation, which are computationally intensive and difficult to scale. This paper proposes the first decentralized stability-constrained OPF framework for inverter-based power systems. The key novelty lies in the incorporation of a class of algebraic decentralized small-signal stability criteria that admits tractable representations in steady-state variables and is therefore suitable for optimization. The decentralized stability condition is based on local voltage differences and enables clear theoretical and practical economic interpretation of the stability contribution from each inverter. We define a Nodal Stability Shadow Price (NSSP) for each inverter, and characterize the role of these stability constraints through their associated shadow prices, enabling a nodal interpretation of their economic impacts. It is proved that under active-power-only objectives in lossless networks, binding stability constraints may occur but will admit zero shadow prices if all other operational constraints are inactive. Most importantly, we reveal the importance of considering the opportunity cost of reactive power for inverter-based resources (IBRs) that have limited capacity. When reactive power costs are considered, stability constraints can carry strictly positive shadow prices and admit meaningful economic impacts.",
+   "topics": [
+    "ai4opt",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Decentralized stability-constrained OPF for inverter-based systems; power-system stability theory with no transport or EV link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tsg.2026.3753224",
+   "title": "PV Hosting Capacity Enhancement in Distribution Network via Multi-Objective Volt/Var Control with a Voltage Rise Index",
+   "url": "https://doi.org/10.1109/tsg.2026.3753224",
+   "venue": "IEEE Trans. Smart Grid",
+   "publisher": "IEEE",
+   "date": "2026-11-12",
+   "authors": [
+    "Yunqing Zhang",
+    "Cuo Zhang",
+    "Qijun Liang",
+    "Firdous UI Nazir"
+   ],
+   "abstract": "In distribution networks, characterized by high photovoltaic (PV) penetration, oversupply of PV power can induce overvoltage issues with voltage fluctuations. The rapid expansion of PV installations thus highlights the importance of improving hosting capacity (HC) of distribution networks. The existing HC enhancement methods ignore impacts of system-wide renewable power generation on voltage control and enforce overly conservative voltage bounds, thereby underutilizing network operational flexibility to enhance PV HC. To address the gaps, this paper proposed a voltage rise index (VRI) that quantifies voltage dynamics caused by ramp-up PV power generation. A reduced VRI means more PV generation can be hosted by a distribution network. VRI is then embedded as a minimization objective in a multi-objective PV inverter-based Volt/Var control method, formulated via a branch flow based optimization model with second-order cone relaxation. Moreover, an efficient iterative solution algorithm is developed to handle nonlinearity and nonconvexity in the VRI optimization model. The proposed method is verified on both 33-bus and IEEE 123-bus distribution system with high PV penetration. Comparative case studies under PV ramp-up scenarios demonstrate high effectiveness of VRI that not only enhances voltage control performance but also provides a novel insight into voltage margin based HC definition and enhancement.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Volt/Var control for PV hosting capacity in distribution networks; touches grid integration but not transport electrification or bus charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105750",
+   "title": "A transport–environment–receptor screening framework for ballast-water monitoring priorities in Arctic-linked shipping to Chinese ports",
+   "url": "https://doi.org/10.1016/j.trd.2026.105750",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-14",
+   "authors": [
+    "Yang Yang",
+    "Liehui Wang",
+    "Xin Zhao",
+    "Qiang Mei",
+    "Rongxin Song",
+    "Qin Zhou"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Ballast-water monitoring screening for Arctic shipping; environmental transport screening with no electrification or optimisation method overlap.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tsg.2026.3753477",
+   "title": "Flexible Consistency Scheduling Strategy for BTB-DC Electric Springs in DC Microgrids",
+   "url": "https://doi.org/10.1109/tsg.2026.3753477",
+   "venue": "IEEE Trans. Smart Grid",
+   "publisher": "IEEE",
+   "date": "2026-11-12",
+   "authors": [
+    "Li Liu",
+    "Mingsheng Shan",
+    "Yazheng Feng",
+    "Jianhua Gong",
+    "Xinzhang Wu",
+    "Shenwang Li"
+   ],
+   "abstract": "Back-to-back DC electric springs (BTB-DC-ES) have been proven to be a low-cost, flexible, and effective solution for stabilizing fluctuating critical loads (CLs) voltages caused by renewable energy. It consists of electric springs (ESs) connected in series with CLs (CL-ESs), ESs connected in series with non-critical loads (NCLs) (NCL-Es), and a common bus capacitor bank. BTB-DC-ES transfers active power among NCL-ESs and CL-ESs. Multiple NCL-ESs need to share the compensation power, but how to determine appropriate allocation levels for individual units remains unresolved. To address this problem, a consistency optimization model is developed. The model consists of three evaluation functions for voltage, current, and power consistency of NCL-ESs. These functions help constrain and improve BTB-DC-ES and DC microgrid's consistency performance. Based on this model, the Flexible Consistency Scheduling (FCS) strategy is proposed. FCS is implemented using two approaches: Multi-Objective Particle Swarm Optimization (MOPSO) generates a set of Pareto-optimal solutions without weight selection, while the weighted-sum method with Particle Swarm Optimization (PSO) allows the weights of voltage, current, and power consistency to be adjusted according to system requirements. Simulation and experimental results verify the effectiveness of FCS in coordinating NCL-ES units. By selecting appropriate Pareto solutions or adjusting weights, the strategy flexibly prioritizes voltage, current, or power consistency to meet diverse requirements, thereby improving overall system performance and stability.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Electric springs and DC microgrid voltage stabilisation with consistency scheduling; power electronics focus with no transport relevance.",
+   "scored_by": "llm"
+  }
+ ]
+}

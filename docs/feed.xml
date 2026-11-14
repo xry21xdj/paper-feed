@@ -5,6 +5,22 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[7] Data-driven planning of electric truck charging stations with heterogeneous driving ranges</title>
+    <link>https://doi.org/10.1016/j.trd.2026.105728</link>
+    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105728</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part D · Hailin Tong, Guangnian Xiao, Yuandong Liu, Jiapei Li — Data-driven planning of electric truck charging stations with heterogeneous ranges; close to charging infrastructure planning for electrified fleets, though trucks rather than buses.</description>
+  </item>
+  <item>
+    <title>[7] Low-carbon distributed flexible job shop scheduling with AGV transport and charging under time-varying electricity prices and grid carbon intensity: an improved multi-objective evolutionary algorithm</title>
+    <link>https://doi.org/10.1016/j.cor.2026.107737</link>
+    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107737</guid>
+    <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Computers &amp; Operations Research · Liao Ran, Yao Lu, Guanyu Chen, Xianming Wu et al. — Low-carbon flexible job shop scheduling with AGV transport and charging under time-varying prices; relevant scheduling-with-charging and multi-objective evolutionary methods, though in manufacturing.</description>
+  </item>
+  <item>
     <title>[9] A Network Flow Approach to Battery Electric Bus Charge Scheduling and Battery Health Conscious Optimization</title>
     <link>https://doi.org/10.1109/tits.2026.3741076</link>
     <guid isPermaLink="false">doi:10.1109/tits.2026.3741076</guid>
@@ -3659,22 +3675,6 @@
     <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
     <category>LLM &amp; agentic AI</category>
     <description>EMNLP 2026 · Yunfei Wang, Xiaohao Xu, Yang Li, Xiaonan Huang — Self-evolving LLM agent builds skill library guiding evolutionary design search; LLM-guided search with simulator feedback is close to the researcher&#39;s ai4opt interests.</description>
-  </item>
-  <item>
-    <title>[9] Multi-source data-driven electric bus wireless charging scheduling and facility location problem: A physics-informed Benders decomposition algorithm</title>
-    <link>https://doi.org/10.1016/j.trc.2026.106122</link>
-    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106122</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Transportation Research Part C · Taolue Chen, Hongshen Chen, Xingwei Xu, Jinjun Tang et al. — Electric bus wireless charging scheduling and facility location with Benders decomposition directly matches the researcher&#39;s e-bus charging optimisation work.</description>
-  </item>
-  <item>
-    <title>[6] A day-to-day travel time anticipation and learning framework under imperfect information</title>
-    <link>https://doi.org/10.1016/j.trc.2026.106121</link>
-    <guid isPermaLink="false">doi:10.1016/j.trc.2026.106121</guid>
-    <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-    <category>Traffic simulation &amp; calibration</category>
-    <description>Transportation Research Part C · Dimitrios Pappelis, Emmanouil Chaniotakis — Day-to-day travel time learning under imperfect information is adjacent traffic modelling useful as background for simulation behaviour.</description>
   </item>
 </channel>
 </rss>
