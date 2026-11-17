@@ -1,0 +1,622 @@
+{
+ "date": "2026-11-17",
+ "fetched": 25234,
+ "sources": {
+  "arXiv": 45,
+  "Transportation Research Part B": 0,
+  "Transportation Research Part C": 4,
+  "Transportation Research Part D": 2,
+  "Transportation Research Part E": 1,
+  "Applied Energy": 22,
+  "European Journal of Operational Research": 6,
+  "Computers & Operations Research": 1,
+  "eTransportation": 0,
+  "IEEE Trans. Intelligent Transportation Systems": 9,
+  "IEEE Trans. Smart Grid": 0,
+  "IEEE Trans. Transportation Electrification": 0,
+  "IEEE Trans. Power Systems": 0,
+  "Transportation Science": 0,
+  "Operations Research": 1,
+  "INFORMS Journal on Computing": 0,
+  "Nature Energy": 0,
+  "Nature Communications": 62,
+  "Public Transport": 0,
+  "OR Spectrum": 0,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": 1,
+  "ACM Trans. Evolutionary Learning and Optimization": 0,
+  "ACM Trans. Knowledge Discovery from Data": 0,
+  "ACM Trans. Spatial Algorithms and Systems": 0,
+  "ACM Trans. Cyber-Physical Systems": 0,
+  "ACM Trans. Autonomous and Adaptive Systems": 0,
+  "ACM Trans. Modeling and Computer Simulation": 0,
+  "ACM Journal on Autonomous Transportation Systems": 0,
+  "ACM Computing Surveys": 5,
+  "NeurIPS (paper list)": 9276,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 778,
+  "IJCAI": 156,
+  "AAMAS": 353,
+  "ICAPS": 29,
+  "ACM GECCO": 29,
+  "ACL": 528,
+  "EMNLP": 791,
+  "ACM KDD": 284,
+  "ACM WWW": 163,
+  "ACM CIKM": 164,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 15,
+  "ACM BuildSys": 11,
+  "ACM/IEEE ICCPS": 10
+ },
+ "papers": [
+  {
+   "id": "arxiv:2611.19041",
+   "title": "Learning-Enhanced Reduce-Repair-Refine-Optimize Framework for Real-Time Train Platforming",
+   "url": "https://arxiv.org/abs/2611.19041",
+   "venue": "arXiv math.OC",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Md Tabish Haque",
+    "Sebastian Sehmisch",
+    "Christopher Szymula",
+    "Nikola Bešinović"
+   ],
+   "abstract": "Real-time train platforming under disruptions requires rapid revision of routing, platforming, and timing decisions. Dense traffic and shared infrastructure create tightly coupled conflicts, making real-time optimization computationally demanding. This paper proposes a learning-enhanced Reduce-Repair-Refine-Optimize framework that reduces and selectively relaxes the routing search space to balance computational efficiency, feasibility, and solution quality. The reduction stage constructs a restricted MILP by fixing selected routing decisions using route-specific predictive models and thresholds, thereby accounting for heterogeneity across routes. Two adaptive mechanisms subsequently modify the reduced search space: repair selectively releases route fixings to restore feasibility, while refinement releases additional fixings to recover routing alternatives and improve solution quality without reverting to the unrestricted problem. Computational experiments on real-life disrupted station-area instances show that the framework matches or improves upon a recent rTPP heuristic in more than 80% of instances within 60~s. Under the common 180~s budget, the framework obtains strictly better terminal incumbents than the unrestricted MILP in 56.7% of all instances and 77.4% of hard instances. Moreover, it obtains better terminal incumbents than an otherwise identical variant without refinement in 71.9% of hard instances. The results demonstrate that learning-based search-space reduction is most effective when the reduced search space remains adaptable during optimization, enabling high-quality feasible solutions within the real-time computation budget.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Learning-enhanced reduce-repair-refine MILP framework for real-time train platforming; close to the researcher's learning-augmented MILP and disruption work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19105",
+   "title": "Can Agentic LLMs Write Task-Based Parallel Code? A Study of OpenMP Tasking, HPX, StarPU and TTG",
+   "url": "https://arxiv.org/abs/2611.19105",
+   "venue": "arXiv cs.DC",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Linus Bantel",
+    "Anna-Lena Roth",
+    "Tim Thüring",
+    "Jonas Posner",
+    "Dirk Pflüger"
+   ],
+   "abstract": "Task-based programming offers more expressive power than loop-level parallelism, but the runtimes providing it differ widely in API style, maturity, and the amount of public code to learn from. This paper asks how well LLM agents write C++ for four of them: OpenMP Tasking, HPX, StarPU, and TTG. Instead of single one-shot prompts, we use an agentic workflow in which the model edits files, compiles, and runs its kernels until it reproduces a reference output. Five locally hosted open-weight LLM implement seven HPC kernels, including matrix multiplication, Cholesky and LU factorization, in all four frameworks and a serial baseline to verify their understanding of the problem in general. Every kernel is evaluated independently for correctness at each concurrency level, strong scaling, and peak memory. Model capability dominates the outcome: three models produce correct, genuinely task-parallel kernels in 57-82% of the cases, while two models rarely compile their own code and almost never succeed. For the capable models, OpenMP Tasking and HPX are handled most reliably, StarPU is close behind, and TTG trails. The best generated GEMM and factorization kernels match or exceed the multithreaded OpenBLAS/LAPACK reference. However, correctness overstates parallel quality: several \"parallel\" kernels contain no parallelism at all; and serialized task graphs and unsuitable task granularity remain common.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Evaluates agentic LLMs that edit, compile and run code in an iterative loop, relevant to agentic workflows though focused on HPC parallel programming.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19037",
+   "title": "The Critic Can Hurt: On the Safety of Critics in LLM-Guided AutoML Search",
+   "url": "https://arxiv.org/abs/2611.19037",
+   "venue": "arXiv cs.LG · KDD 2027",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Gaoyuan Du",
+    "Xiaoyang Liu",
+    "Rex Zhou",
+    "Dengdu Jiang",
+    "Rong Fu",
+    "Meng Ding",
+    "Defu Cao"
+   ],
+   "abstract": "LLM critics increasingly steer iterative search in agentic AutoML, prompt optimization, and self-refinement--evaluated for whether they help, but rarely for whether they can hurt. We isolate the critic's marginal effect through a four-arm audit and characterize the loop's tolerance through controlled fault injection. We show a naive 8B critic drives search below the no-critic random-search floor on 7 of 8 tabular datasets, losing up to 0.245 AUC in the worst case; the magnitude varies strongly with dataset, frontier, and budget. When: stronger critics attenuate the loss on the evaluated suite, without establishing a universal capability threshold. Why: controlled fault injection shows that non-directional errors are nearly costless under best-so-far search, whereas directional errors consume finite search opportunities; an idealized effective-sample calculation yields a necessary condition, $q(m-1) > β$, not a deployment certificate. How: a simple observable validation gate and a learned detector can reduce realized loss, but neither is guaranteed to preserve the full-budget no-critic baseline. We will release CRITFAULT, to our knowledge the first benchmark for detecting harmful critic feedback in AutoML. A critic is not a free addition: audit before trusting, and gate when capability or verification is insufficient.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Studies LLM critics steering iterative AutoML search and their harmful effects; relevant to agent reliability in optimisation loops.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19123",
+   "title": "Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster?",
+   "url": "https://arxiv.org/abs/2611.19123",
+   "venue": "arXiv cs.SE",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Abhishek Rai"
+   ],
+   "abstract": "Model Context Protocol (MCP) gateways manage tool catalogs for language model agents using two primary paradigms: code mode where agents write scripts against tool stubs and decision layers which are cheap routers that preselect tool subsets. Using a controlled harness across 12 servers, up to 1,958 distractor tools, and three open-weight agents including Qwen, Gemma, and Nemotron, we present a preregistered evaluation on a sealed test split to determine when each approach succeeds. Code mode substantially outperforms plain MCP, cutting token usage by 70 to 90 percent while significantly boosting utility. Declaring return-shape hints in code mode stubs is a first-order variable, swinging success by up to 39.5 points for lower-performing agents, an effect larger than adding a router. The central hypothesis that a decision layer in front of code mode beats code mode alone is not confirmed, showing minor, statistically non-significant improvements for weaker agents and a slight cost for the strongest. We publicly release our harness, a finetuned 4B tool selection model, and all evaluation traces to support robust community experimentation on local AI privacy and agent architectures.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Evaluates tool-use cost and speed for LLM agents via code mode and routing; relevant to agent tool-use efficiency.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19061",
+   "title": "Large Language Models for AI Infrastructure",
+   "url": "https://arxiv.org/abs/2611.19061",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Bolin Shen",
+    "Shaoyi Huang",
+    "Yushun Dong"
+   ],
+   "abstract": "Large language models (LLMs) are increasingly used to design, optimize, and operate the infrastructure behind AI training and serving, yet the literature remains fragmented across hardware design, machine learning systems, electronic design automation, and high-performance computing. We present a comprehensive survey of LLM-assisted AI infrastructure across its lifecycle, from accelerator design and kernel engineering to compilation, deployment, operations, data management, and energy optimization. We organize the literature by the primary resource the LLM manages: artifact-centric methods for computational artifacts, operational-centric methods for deployment context and system state, and resource-centric methods for data and energy. These categories span the lifecycle and cover AI-specific concerns such as distributed-training configuration, inference serving, GPU-cluster scheduling, and data loading. Building on this taxonomy, we conduct a cross-study quantitative synthesis of reported results. Because studies adopt heterogeneous benchmarks, baselines, hardware, and metrics, we compare methods only where evaluation conditions permit and align results along common dimensions: functional correctness, execution performance, throughput, resource and energy consumption, operational outcomes, and optimization cost, keeping each result's native metric, baseline, and setting rather than collapsing them into a single score. This comparison reveals where LLM-driven methods yield consistent gains, how reported gains in workload orchestration depend on the evaluation environment, from simulators to real clusters and production, and where evidence is still lacking. Together, the taxonomy, lifecycle perspective, and quantitative evaluation provide an evidence-grounded reference for LLM-driven engineering of AI infrastructure.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 5,
+   "topic": "ai4opt",
+   "reason": "Survey of LLM-assisted AI infrastructure including scheduling and orchestration; useful background on LLM-driven operations and optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19140",
+   "title": "When the Mythical Man-Month Meets Agentic Web Systems: Structured Coordination for Scalable Development",
+   "url": "https://arxiv.org/abs/2611.19140",
+   "venue": "arXiv cs.SE",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Zhiyao Wu",
+    "Zi Liang",
+    "Haibo Hu"
+   ],
+   "abstract": "As agentic systems are increasingly deployed to support complex Web tasks, multi-agent architectures offer greater parallelism, specialization, and task coverage. However, increasing the number of agents does not necessarily improve system performance, as communication, synchronization, redundant work, and coordination overhead may offset the benefits of additional agents. This presents a fundamental scaling challenge for agentic Web systems: how can agent populations be organized to balance task performance and coordination costs? To address this challenge, we systematically investigate the relationship between agent population size, per-agent token consumption, and coordination overhead in collaborative agentic systems. Experiments on complex Web-oriented software development tasks reveal a non-linear scaling pattern: per-agent token consumption initially decreases as the agent population grows, but eventually exhibits diminishing returns. Motivated by these findings, we introduce the Surgical Team Model (STM), a structured coordination framework that organizes agents through role specialization, constrained inter-agent communication, and coordinator-mediated task aggregation. Experiments on full-stack Web application development tasks show that STM achieves competitive task completion quality and comparable token consumption relative to representative baselines, while incurring higher execution latency.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Coordination and scaling of multi-agent LLM systems for web development; relevant to multi-agent design though not operational decision making.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3745286",
+   "title": "Integrated Noise and Safety Management in UAM via a Unified Reinforcement Learning Framework",
+   "url": "https://doi.org/10.1109/tits.2026.3745286",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Surya Murthy",
+    "Zhenyu Gao",
+    "John-Paul Clarke",
+    "Ufuk Topcu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Uses unified reinforcement learning for urban air mobility noise and safety trade-offs; RL-based operational decision-making is loosely related to the researcher's scheduling interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19108",
+   "title": "Guiding AI Agents to Generate Conjectures by Encoding How Theorems Build on One Another",
+   "url": "https://arxiv.org/abs/2611.19108",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Hita Kambhamettu",
+    "Daniel Krashen",
+    "Lyle Ungar"
+   ],
+   "abstract": "Recently, LLMs have been making headlines, and headway, in mathematical research. Much of this work focuses on proving existing open conjectures. Deciding what to prove is harder and less studied, because of the lack of a clear criterion for what makes a conjecture worth pursuing. We present a method for conjecture generation that builds on the observation that mathematical theorems build on one another: new theorems can modify the setting or hypotheses of earlier theorems, strengthen their conclusions, or extend their scope. We encode these relationships in a new kind of graph, the Theorem Evolution Graph (TEG), which we instantiate as an online search method for LLM agents. An agent builds a TEG in two steps: (1) identifying relevant theorems from papers found by following citations backward and forward from a seed paper; and (2) comparing those theorems to record how one builds on another. LLM judges and an expert mathematician preferred TEG-generated conjectures over those from an unconstrained baseline. LLM judges favored TEG conjectures for significance, ambition, and insight, and favored baseline conjectures for plausibility. Ablations suggest a benefit from constructing and using a TEG even when the available papers are fixed.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 4,
+   "topic": "llm",
+   "reason": "LLM agents generating mathematical conjectures via theorem graphs; agentic but far from optimisation or transport applications.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19212",
+   "title": "Site-Specific Cell Shaping: An Agentic Framework",
+   "url": "https://arxiv.org/abs/2611.19212",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Zhuo Xu",
+    "Zhaolin Wang",
+    "Yuanwei Liu"
+   ],
+   "abstract": "An agentic framework is proposed for cell shaping in future sixth-generation (6G) wireless network planning. Cell shaping controls the coverage and interferences of base stations (BSs) through antenna parameters configuration, providing an important means of improving coverage. In contrast to conventional approaches that reply on costly performance evaluations, the proposed framework achieves intelligent and efficient antenna configuration through a perception-reasoning-reflection loop. Specifically, a Configuration Agent combines scene information, evaluation history, and reflection feedback to generate antenna configuration proposals. Then, a ray tracing(RT)-based evaluator assesses these proposals and returns a structured performance summary. Next, a Reflection Agent interprets these results to diagnose site-specific performance deficiencies, recommend feasible configuration adjustments, and accumulate conditional experience. Through this iterative process, the framework accumulates site-specific experience and progressively refines antenna configurations without human-in-the-loop intervention. Simulations in real-world urban scenarios demonstrate that the proposed framework achieves lower outage probabilities than the considered benchmark methods, highlighting the effectiveness of agentic reasoning and reflection in translating site-specific performance feedback and accumulated experience into adaptive antenna configuration decisions.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Agentic perception-reasoning-reflection loop for antenna configuration; agentic optimisation loop in a wireless setting.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3744202",
+   "title": "Fairness-Promoting Strategies for CAVs in Lane-Free Traffic",
+   "url": "https://doi.org/10.1109/tits.2026.3744202",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Kimia Chavoshi",
+    "Antonella Ferrara",
+    "Anastasios Kouvelas"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Fairness strategies for connected automated vehicles in lane-free traffic; a traffic-control topic that is adjacent to but not aligned with the researcher's bus-fleet and simulation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19179",
+   "title": "Isolating Perception for Multi-View Planning under Occlusion-Induced Partial Observability",
+   "url": "https://arxiv.org/abs/2611.19179",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Kevin Nguyen",
+    "Ceyhun Efe Kayan",
+    "Feng Liu",
+    "Li Zhang"
+   ],
+   "abstract": "Vision-language models (VLMs) are beginning to saturate visual planning benchmarks, yet they fail to resolve depth ambiguity and degrade sharply with problem size under occlusion-induced partial observability (PO). We introduce BW-PO based on the Blocksworld domain, a controlled benchmark that reduces existing VLM planners and formalizers to near-zero performance, and propose VLM-as-perceiver, a paradigm that narrows the VLM's role to local perception while delegating cross-view evidence reconciliation and plan generation to external solvers. Across model-specific challenging subsets of BW-PO, this raises plan success from 1% to 97% for Gemma-4-31B, 0% to 95% for Qwen3.5-122B-A10B, and 3% to 84% for Gemini-3.1-Pro. Isolating perception in this way separates two bottlenecks that are otherwise entangled: reconciliation under depth ambiguity, and completeness of visual extraction under scene density.",
+   "topics": [
+    "llm",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "VLM perception paired with external solvers for planning under occlusion; loosely related to LLM-plus-solver designs.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19029",
+   "title": "SurveyWeave: An Agentic Framework for Automated Survey Generation",
+   "url": "https://arxiv.org/abs/2611.19029",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Franklin Zhang",
+    "Xiao Yang",
+    "Xin Luna Dong",
+    "Juhua Hu"
+   ],
+   "abstract": "Surveys help researchers keep up with fast-moving fields, but they take weeks to months to write. Automated survey generation (AutoSurvey) can alleviate this situation, but it is challenging to draw on hundreds to thousands of precisely scoped papers, choose among many valid structures, and stay faithful to its sources while offering insights. We present SurveyWeave, an agentic architecture that decomposes the problem into four tasks coordinated by three agents, each reviewing others' work and conducting revisions based on feedback. We also introduce WeaveEval, a five-dimension evaluation grounded in prior surveys. A comprehensive comparison shows that SurveyWeave outperforms Codex by 8 points and the strongest AutoSurvey baseline by 6 points.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Agentic multi-agent pipeline for automated survey writing; agentic but unrelated to optimisation or transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106158",
+   "title": "A three-stage framework for suspected taxi fraud detection and multi-dimensional interpretation on taxi order data",
+   "url": "https://doi.org/10.1016/j.trc.2026.106158",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-16",
+   "authors": [
+    "Haobo Sun",
+    "Yu Dong",
+    "Rui Zhang",
+    "Weiping Tong",
+    "Xiangyu Xu",
+    "Zhiyuan Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Taxi fraud detection on order data; transport data analytics with no abstract to confirm links to bus operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3742589",
+   "title": "An Energy-Saving Oriented Control Technique for Heavy-Duty Vehicle Platoon Experiencing Communication Delays Based on Quadratic Programming-Free Algorithm With Optimized Type-II Fuzzy System",
+   "url": "https://doi.org/10.1109/tits.2026.3742589",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Muyao Wang",
+    "Chao Yang",
+    "Liuquan Yang",
+    "Xuelong Du",
+    "Ruihu Chen",
+    "Weida Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Heavy-vehicle platoon energy-saving control; vehicle control and energy, only tangentially related.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3729457",
+   "title": "Explainable Driving Safety Boundary Augmentation for Automated Vehicles: A Knowledge Distillation Approach",
+   "url": "https://doi.org/10.1109/tits.2026.3729457",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Haowei Xu",
+    "Yougang Bian",
+    "Hongmao Qin",
+    "Yang Li",
+    "Xin Chen",
+    "Jingyi Zhang",
+    "Songyuan Tang",
+    "Jingjia Teng",
+    "Manjiang Hu",
+    "Hua Zhang",
+    "Jinjin Shao",
+    "Hao Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Covers explainable safety boundaries for automated vehicles via knowledge distillation; only superficially related to bus scheduling, simulation calibration, or agentic optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3747349",
+   "title": "Latency-Compensated Digital Twin Visualization for Teleoperated Driving: A Comprehensive Field Evaluation",
+   "url": "https://doi.org/10.1109/tits.2026.3747349",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Jon Ander Iñiguez de Gordoa",
+    "Josu Pérez",
+    "Martí Sánchez",
+    "Mikel García",
+    "Gorka Velez",
+    "Andoni Mujika"
+   ],
+   "abstract": "",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Digital twin visualisation for teleoperated driving; not related to bus scheduling or simulation calibration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19043",
+   "title": "More Context, Mixed Results: Evaluating LLMs for Identifier Recovery and Code Deobfuscation",
+   "url": "https://arxiv.org/abs/2611.19043",
+   "venue": "arXiv cs.SE",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Simon Queyrut",
+    "Valerio Schiavoni",
+    "Giuseppe Antonio Di Luna",
+    "Daniele Cono D'Elia",
+    "Leonardo Querzoni",
+    "Pascal Felber"
+   ],
+   "abstract": "Source code is often obfuscated through identifier renaming, incentivizing reverse engineers to develop techniques for recovering meaningful names. To assess how LLMs compare with these techniques, we evaluate 4 traditional baselines and 3 LLMs (Qwen, OLMo and DeepSeek) on identifier detection and semantic recovery across 51 recent Java projects, 3 obfuscators, and 6 context/retrieval settings. LLMs generally outperform traditional techniques on both tasks, but benefit from different forms of context and settings: agentic retrieval yields the strongest detection results, reaching 91.56% $F_1$, while enclosing-class context generally improves semantic recovery at a higher token cost. Despite these gains, exact recovery peaks at 16.42% overall (under one-hop context) and 32.93% for field names (under repository retrieval), which are the easiest to recover. Class identifiers are the hardest to detect, with a mean detection $F_1$ of 48.48% across models, settings and obfuscators. More context is not always beneficial: larger methods hinder semantic recovery. Beyond identifier renaming, our experiments show that control-flow obfuscation degrades both tasks more than string encryption. Our findings provide useful ad hoc insights for reverse engineers choosing models and context strategies to deobfuscate code snippets.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "LLM identifier recovery for code deobfuscation; general code-LLM evaluation with no agentic optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3745265",
+   "title": "Blockchain-Based Regulatory Computing Framework for Privacy-Preserving Data Sharing Among Intelligent Vehicles",
+   "url": "https://doi.org/10.1109/tits.2026.3745265",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Ming Li",
+    "Haolun Huang",
+    "Yuhui Su"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Blockchain-based privacy-preserving data sharing among intelligent vehicles; no link to electric bus operations, charging, or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3728479",
+   "title": "Images Assist You More: Cross-Modal Self-Supervised Learning for Autonomous Driving LiDAR Point Clouds",
+   "url": "https://doi.org/10.1109/tits.2026.3728479",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Yao Wu",
+    "Jianxiang Xie",
+    "Zhengyu Li",
+    "Yachao Zhang",
+    "Yanyun Qu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Self-supervised LiDAR point cloud learning for autonomous driving perception; explicitly less relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3749289",
+   "title": "LiteFusion: Taming 3-D Object Detectors From Vision-Based to Multi-Modal With Minimal Adaptation",
+   "url": "https://doi.org/10.1109/tits.2026.3749289",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Xiangxuan Ren",
+    "Zhongdao Wang",
+    "Pin Tang",
+    "Guoqing Wang",
+    "Jilai Zheng",
+    "Chao Ma"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "3-D object detection for autonomous driving perception; explicitly less relevant to the researcher.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3748479",
+   "title": "Situation Awareness-Enhanced Spoofing Cancellation for Train Positioning Using GNSS",
+   "url": "https://doi.org/10.1109/tits.2026.3748479",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-16",
+   "authors": [
+    "Si-Qi Wang",
+    "Jiang Liu",
+    "Bai-Gen Cai",
+    "Ying-Ying Li",
+    "De-Biao Lu",
+    "Wei Jiang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "GNSS spoofing cancellation for train positioning; rail positioning security, not relevant to the researcher's topics.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19166",
+   "title": "LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models",
+   "url": "https://arxiv.org/abs/2611.19166",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "S M Rayeed",
+    "Charles V. Stewart",
+    "Yao Ma"
+   ],
+   "abstract": "Every medication comes with two types of medical facts: indications, which describe what conditions the drug treats (benefits), and contraindications, which describe who must avoid it to prevent serious harm (safety limits). Although contraindications are critical for patient safety and FDA regulations require listing them as rigorously as indications, we find that contraindications are far less documented than indications in general prose. In this paper, we measure how often these texts contain both facts across 574 drugs from PrimeKG by comparing a drug's indications against its own contraindications. Across Wikipedia articles and PubMed abstracts, we find that reference prose names a drug's benefits about twice as often as its safety limits (within-drug odds ratio 2.19). We call this documentation gap LABEL (Literature Asymmetry between Efficacy and Limits). Language models mirror this gap. As we scale Qwen2.5 from 0.5B to 14B, accuracy on indications rises by 18.3 points, whereas accuracy on contraindications remains flat near random guessing. However, when we provide models with a retrieved passage that states the answer, they use safety facts just as effectively as benefits. Furthermore, routing safety questions to official FDA labels boosts accuracy by 15.8 points whenever the label states the fact. Overall, our findings show that models fail on medication safety not because they cannot reason about risk, but because free-text corpora lack safety facts. Clinical AI systems should therefore route medication-safety questions to official regulatory labels and structured databases rather than relying on general public records. Code and data are available at https://github.com/SMRayeed/LABEL.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Measures drug-safety documentation gaps in LLM knowledge; no relevance to agents, optimisation or transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19200",
+   "title": "LogT: Logically Think with Images for Visual Search",
+   "url": "https://arxiv.org/abs/2611.19200",
+   "venue": "arXiv cs.LG · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Yanjun Fu",
+    "Quanzeng You",
+    "Jiadong Guo",
+    "Yujie Lu",
+    "Sai Charitha Akula",
+    "Haiping Wu",
+    "Miao Liu",
+    "Sanghamitra Dutta",
+    "Lu Yuan"
+   ],
+   "abstract": "Thinking with images empowers vision-language models (VLMs) to use an external Zoom-in tool for fine-grained visual search. Recent works employ supervised fine-tuning (SFT) and reinforcement learning (RL) with tool-specific designs to enable such capabilities. However, achieving logical reasoning alongside accurate and efficient tool use remains a significant challenge. To address this, we shift the focus away from increasing RL complexity and instead identify SFT data quality as a key bottleneck. We then propose LogT (short for Logically Think with Images), a fully automated SFT data engine that explicitly enforces logic-chain-guided reasoning. LogT generates an SFT dataset featuring challenging, visually grounded questions and structured tool-use traces with human-like logic. We validate our approach by fine-tuning two base models, Qwen2.5-VL-7B and InternVL3.5-8B, on the dataset and evaluating them across seven benchmark test sets. We show that LogT-SFT based on Qwen2.5-VL-7B outperforms the state-of-the-art trained with both SFT and RL, despite using 3.1$\\times$ less data and $>120\\times$ fewer GPU hours. Furthermore, applying a simple RL recipe without tool-specific design on LogT-SFT yields a model that surpasses prior methods with complex RL setups by a substantial 9.59-point margin. In addition to strong performance gains, our model exhibits higher tool-use accuracy and efficiency, as well as more structured and logically consistent reasoning traces, directly validating the effectiveness of our approach.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Vision-language model SFT for visual search; generic multimodal work with no agentic planning or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.19072",
+   "title": "Nahual: A Sequence Model for Language and Atoms",
+   "url": "https://arxiv.org/abs/2611.19072",
+   "venue": "arXiv cs.LG · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-14",
+   "authors": [
+    "Austin H. Cheng",
+    "Marcel Müller",
+    "Andreas Burger",
+    "Yeonghun Kang",
+    "Tsz Wai Ko",
+    "Marta Skreta",
+    "Luka Mucko",
+    "Ella Miray Rajaonson",
+    "Cher Tian Ser",
+    "Jérôme F. Gonthier",
+    "Alex Zook",
+    "Varinia Bernales",
+    "Alán Aspuru-Guzik"
+   ],
+   "abstract": "Generative models play a rapidly growing role in the design and simulation of molecules. The most widely used applications of generative models are in large language models (LLMs), owing to the natural flexibility of language for specifying and answering queries. However, generalist LLMs do not effectively handle large sets of 3D coordinates, whereas specialist generative models of 3D molecules cannot reach the controllability afforded by language. To bridge these capabilities, we propose Nahual, a decoder-only autoregressive diffusion model for any sequence of text and 3D molecules. To enable expressive autoregression on continuous coordinates, we propose next-token diffusion, whereby a causal transformer denoises each token while attending to the clean tokens before it, without increasing context size. We train Nahual on a curated set of twelve 3D chemistry tasks ranging from microsolvation to molecular conformer search to adsorption on metal surfaces, with associated evaluation metrics and baselines. The result is a single set of end-to-end-trained weights that simultaneously performs all tasks and surpasses state-of-the-art models specialized for crystal structure prediction and property-conditional molecule generation. Our results demonstrate the viability of scaling generalist decoder-only models for native multimodal understanding and generation across language and chemistry. Code is available at https://github.com/the-matter-lab/nahual.",
+   "topics": [
+    "llm",
+    "grid"
+   ],
+   "keyword_hits": 3,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Generative molecular sequence model for chemistry; no agentic or optimisation relevance to the researcher.",
+   "scored_by": "llm"
+  }
+ ]
+}

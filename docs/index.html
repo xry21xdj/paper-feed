@@ -92,16 +92,68 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-16</h2>
-  <span class="meta">0 relevant of 3 screened · 25186 new papers fetched</span>
+  <h2>Today · 2026-11-17</h2>
+  <span class="meta">3 relevant of 24 screened · 25234 new papers fetched</span>
 </div>
 
-<p class="empty">No new papers above the relevance threshold today (3 screened). Check the previous days below.</p>
+<div class="controls" role="group" aria-label="Filters">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">3</span></button>
+<button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">2</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <select id="sort" aria-label="Sort">
+    <option value="score">By relevance</option>
+    <option value="date">By date</option>
+    <option value="venue">By venue</option>
+  </select>
+</div>
+
+<main id="list">
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-14" data-venue="arXiv math.OC"
+           data-text="learning-enhanced reduce-repair-refine-optimize framework for real-time train platforming md tabish haque sebastian sehmisch christopher szymula nikola bešinović arxiv math.oc">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.19041" target="_blank" rel="noopener">Learning-Enhanced Reduce-Repair-Refine-Optimize Framework for Real-Time Train Platforming</a></h3>
+<div class="by">Md Tabish Haque, Sebastian Sehmisch, Christopher Szymula, Nikola Bešinović</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv math.OC</span><span class="by">2026-11-14</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Learning-enhanced reduce-repair-refine MILP framework for real-time train platforming; close to the researcher&#39;s learning-augmented MILP and disruption work.</p>
+      <details><summary>Abstract</summary><p>Real-time train platforming under disruptions requires rapid revision of routing, platforming, and timing decisions. Dense traffic and shared infrastructure create tightly coupled conflicts, making real-time optimization computationally demanding. This paper proposes a learning-enhanced Reduce-Repair-Refine-Optimize framework that reduces and selectively relaxes the routing search space to balance computational efficiency, feasibility, and solution quality. The reduction stage constructs a restricted MILP by fixing selected routing decisions using route-specific predictive models and thresholds, thereby accounting for heterogeneity across routes. Two adaptive mechanisms subsequently modify the reduced search space: repair selectively releases route fixings to restore feasibility, while refinement releases additional fixings to recover routing alternatives and improve solution quality without reverting to the unrestricted problem. Computational experiments on real-life disrupted station-area instances show that the framework matches or improves upon a recent rTPP heuristic in more than 80% of instances within 60~s. Under the common 180~s budget, the framework obtains strictly better terminal incumbents than the unrestricted MILP in 56.7% of all instances and 77.4% of hard instances. Moreover, it obtains better terminal incumbents than an otherwise identical variant without refinement in 71.9% of hard instances. The results demonstrate that learning-based search-space reduction is most effective when the reduced search space remains adaptable during optimization, enabling high-quality feasible solutions within the real-time computation budget.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-14" data-venue="arXiv cs.DC"
+           data-text="can agentic llms write task-based parallel code? a study of openmp tasking, hpx, starpu and ttg linus bantel anna-lena roth tim thüring jonas posner dirk pflüger arxiv cs.dc">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.19105" target="_blank" rel="noopener">Can Agentic LLMs Write Task-Based Parallel Code? A Study of OpenMP Tasking, HPX, StarPU and TTG</a></h3>
+<div class="by">Linus Bantel, Anna-Lena Roth, Tim Thüring, Jonas Posner et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.DC</span><span class="by">2026-11-14</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Evaluates agentic LLMs that edit, compile and run code in an iterative loop, relevant to agentic workflows though focused on HPC parallel programming.</p>
+      <details><summary>Abstract</summary><p>Task-based programming offers more expressive power than loop-level parallelism, but the runtimes providing it differ widely in API style, maturity, and the amount of public code to learn from. This paper asks how well LLM agents write C++ for four of them: OpenMP Tasking, HPX, StarPU, and TTG. Instead of single one-shot prompts, we use an agentic workflow in which the model edits files, compiles, and runs its kernels until it reproduces a reference output. Five locally hosted open-weight LLM implement seven HPC kernels, including matrix multiplication, Cholesky and LU factorization, in all four frameworks and a serial baseline to verify their understanding of the problem in general. Every kernel is evaluated independently for correctness at each concurrency level, strong scaling, and peak memory. Model capability dominates the outcome: three models produce correct, genuinely task-parallel kernels in 57-82% of the cases, while two models rarely compile their own code and almost never succeed. For the capable models, OpenMP Tasking and HPX are handled most reliably, StarPU is close behind, and TTG trails. The best generated GEMM and factorization kernels match or exceed the multithreaded OpenBLAS/LAPACK reference. However, correctness overstates parallel quality: several &#34;parallel&#34; kernels contain no parallelism at all; and serialized task graphs and unsuitable task granularity remain common.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-14" data-venue="arXiv cs.LG · KDD 2027"
+           data-text="the critic can hurt: on the safety of critics in llm-guided automl search gaoyuan du xiaoyang liu rex zhou dengdu jiang rong fu meng ding defu cao arxiv cs.lg · kdd 2027">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.19037" target="_blank" rel="noopener">The Critic Can Hurt: On the Safety of Critics in LLM-Guided AutoML Search</a></h3>
+<div class="by">Gaoyuan Du, Xiaoyang Liu, Rex Zhou, Dengdu Jiang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG · KDD 2027</span><span class="by">2026-11-14</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Studies LLM critics steering iterative AutoML search and their harmful effects; relevant to agent reliability in optimisation loops.</p>
+      <details><summary>Abstract</summary><p>LLM critics increasingly steer iterative search in agentic AutoML, prompt optimization, and self-refinement--evaluated for whether they help, but rarely for whether they can hurt. We isolate the critic&#39;s marginal effect through a four-arm audit and characterize the loop&#39;s tolerance through controlled fault injection. We show a naive 8B critic drives search below the no-critic random-search floor on 7 of 8 tabular datasets, losing up to 0.245 AUC in the worst case; the magnitude varies strongly with dataset, frontier, and budget. When: stronger critics attenuate the loss on the evaluated suite, without establishing a universal capability threshold. Why: controlled fault injection shows that non-directional errors are nearly costless under best-so-far search, whereas directional errors consume finite search opportunities; an idealized effective-sample calculation yields a necessary condition, $q(m-1) &gt; β$, not a deployment certificate. How: a simple observable validation gate and a learned detector can reduce realized loss, but neither is guaranteed to preserve the full-budget no-critic baseline. We will release CRITFAULT, to our knowledge the first benchmark for detecting harmful critic feedback in AutoML. A critic is not a free addition: audit before trusting, and gate when capability or verification is insufficient.</p></details>
+    </div>
+  </article>
+</main>
+<p class="empty" id="none" hidden>No papers match this filter.</p>
 
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-16.html" class="cur" aria-current="page">2026-11-16 · 0</a></li>
+    <li><a href="archive/2026-11-17.html" class="cur" aria-current="page">2026-11-17 · 3</a></li>
+    <li><a href="archive/2026-11-16.html">2026-11-16 · 0</a></li>
     <li><a href="archive/2026-11-15.html">2026-11-15 · 2</a></li>
     <li><a href="archive/2026-11-14.html">2026-11-14 · 22</a></li>
     <li><a href="archive/2026-11-13.html">2026-11-13 · 3</a></li>
@@ -122,7 +174,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-15 23:53 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-17 02:53 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
