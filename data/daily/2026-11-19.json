@@ -1,0 +1,1765 @@
+{
+ "date": "2026-11-19",
+ "fetched": 23058,
+ "sources": {
+  "arXiv": 389,
+  "Transportation Research Part B": 0,
+  "Transportation Research Part C": 6,
+  "Transportation Research Part D": 0,
+  "Transportation Research Part E": 9,
+  "Applied Energy": 36,
+  "European Journal of Operational Research": 4,
+  "Computers & Operations Research": 4,
+  "eTransportation": 1,
+  "IEEE Trans. Intelligent Transportation Systems": 23,
+  "IEEE Trans. Smart Grid": 1,
+  "IEEE Trans. Transportation Electrification": 5,
+  "IEEE Trans. Power Systems": 4,
+  "Transportation Science": 1,
+  "Operations Research": -1,
+  "INFORMS Journal on Computing": -1,
+  "Nature Energy": 1,
+  "Nature Communications": 84,
+  "Public Transport": -1,
+  "OR Spectrum": 0,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": -1,
+  "ACM Trans. Evolutionary Learning and Optimization": -1,
+  "ACM Trans. Knowledge Discovery from Data": -1,
+  "ACM Trans. Spatial Algorithms and Systems": -1,
+  "ACM Trans. Cyber-Physical Systems": -1,
+  "ACM Trans. Autonomous and Adaptive Systems": -1,
+  "ACM Trans. Modeling and Computer Simulation": -1,
+  "ACM Journal on Autonomous Transportation Systems": -1,
+  "ACM Computing Surveys": -1,
+  "NeurIPS (paper list)": 9274,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 190,
+  "IJCAI": 31,
+  "AAMAS": 81,
+  "ICAPS": 8,
+  "ACM GECCO": 16,
+  "ACL": 106,
+  "EMNLP": 123,
+  "ACM KDD": 88,
+  "ACM WWW": 31,
+  "ACM CIKM": 36,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 8,
+  "ACM BuildSys": 4,
+  "ACM/IEEE ICCPS": 6
+ },
+ "papers": [
+  {
+   "id": "doi:10.1016/j.tre.2026.105392",
+   "title": "Joint routing and recharging optimization for electric commercial vehicles with power bank vans",
+   "url": "https://doi.org/10.1016/j.tre.2026.105392",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Jie Wei",
+    "Zilu Wang",
+    "Zhibin Chen",
+    "Jiangang Jin"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 9,
+   "topic": "ebus",
+   "reason": "Joint routing and recharging optimisation for electric commercial vehicles with power bank vans; directly on EV charging-routing problems.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.etran.2026.100654",
+   "title": "Towards a Renewable Energy-Driven, Self-Sufficient Expressway Energy System: Optimizing Integrated PV-BESS-Charging Infrastructure in Service Areas",
+   "url": "https://doi.org/10.1016/j.etran.2026.100654",
+   "venue": "eTransportation",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Xiaoxi Gao",
+    "Chunying Li",
+    "Xiao Sun",
+    "Yuqin Wang",
+    "Tao Zhang",
+    "Xiaohua Liu",
+    "Li Zhang",
+    "Haida Tang"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 9,
+   "topic": "grid",
+   "reason": "Optimises PV, battery storage and charging infrastructure at expressway service areas, directly on charging and grid integration for transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.cor.2026.107739",
+   "title": "Predicting the solution cost of vehicle routing problems with time windows",
+   "url": "https://doi.org/10.1016/j.cor.2026.107739",
+   "venue": "Computers & Operations Research",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Leandro C. Coelho",
+    "Gilbert Laporte",
+    "Jacques Renaud"
+   ],
+   "abstract": "",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 7,
+   "topic": "ai4opt",
+   "reason": "Predicting solution cost of VRPTW with learning; ML for combinatorial routing that could inform learning-augmented exact methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22632",
+   "title": "Groups of AI agents underuse resources despite shared evidence of increased capacity",
+   "url": "https://arxiv.org/abs/2611.22632",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Takahiro Ezaki",
+    "Naoto Imura",
+    "Katsuhiro Nishinari"
+   ],
+   "abstract": "When AI agents share limited resources, such as computing services or public infrastructure, their individual choices affect how much work they complete as a group. Can sharing evidence of what is available let a group make full use of its resources after capacity changes? We tested this with language-model agents choosing between two simulated servers. One server recovered while its status report still listed it as unavailable. Each server had limited capacity per round, so rejected jobs required another attempt before the deadline. Telling agents that recovery was possible reduced missed deadlines. In controlled tests with Anthropic's Claude Haiku 5.5, no agent tried the recovered server after a rule reminder, yet all chose it when shown a successful request record. After sharing, all five models tested left capacity unused. Keeping the success record fixed, we gave agents numbers without instructions, using each value equally often but giving group members either identical or distinct numbers. With OpenAI's GPT-6.1 Sol or Google's Gemini 3.5 Flash-Lite, distinct numbers spread simultaneous requests across servers and increased job completions even though overall choice frequencies barely changed. Telling AI agents which resources are available leaves a second design challenge: helping them spread demand across those resources.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 7,
+   "topic": "llm",
+   "reason": "LLM agents sharing limited server capacity and status information under deadlines, a multi-agent resource allocation setting relevant to agentic operational decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22242",
+   "title": "Optimal Energy and LLM Task Scheduling for Multiple Cloud Data Centers",
+   "url": "https://arxiv.org/abs/2611.22242",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Zhongqi Zhao",
+    "Lei Fan",
+    "Zhu Han"
+   ],
+   "abstract": "This paper studies coordinated Large Language Model (LLM) training-task scheduling and facility operation for geographically distributed cloud data centers (CDCs). The central question is how two scheduling flexibilities - cross-CDC task transfer and task reordering - affect service and economic outcomes when remote execution remains subject to compute, bandwidth, energy, and zone-temperature constraints. We formulate a mixed-integer optimization model that jointly determines task outcomes, heterogeneous-node assignment, execution timing, pre-execution data transfer, node activation, and facility operation. A deterministic 24-hour case study contains 3 CDCs, 15 heterogeneous graphics processing unit (GPU) nodes, 4 thermal zones per CDC, and 103 tasks. In this instance, enabling transfer increases net profit by 57.9% relative to the otherwise matched no-transfer variant and increases completed tasks from 76 to 103. The more restrictive no-transfer FIFO-prefix variant completes 14 tasks and yields negative profit. The proposed schedule transfers 39 tasks, achieves 70.3% node utilization, and maintains zone temperatures within 24°C-27°C. These fixed-instance results indicate that cross-CDC transfer and task-reordering flexibility can improve the modeled profit and task-completion outcomes under the studied conditions.",
+   "topics": [
+    "llm",
+    "ai4opt",
+    "grid"
+   ],
+   "keyword_hits": 5,
+   "score": 7,
+   "topic": "grid",
+   "reason": "MILP scheduling of LLM training tasks with data center energy and facility operation; a close optimisation-plus-energy formulation, though not transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22926",
+   "title": "When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control",
+   "url": "https://arxiv.org/abs/2611.22926",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Hongyang Zhang",
+    "Boyuan Deng",
+    "Siyuan Feng",
+    "Kai Chen",
+    "Junbo Zhang"
+   ],
+   "abstract": "Typed decision models combine natural-language understanding with a structured interface that returns a selected action and an option-level probability distribution without generating lengthy textual responses. Their low inference cost and response latency make them attractive for transportation problems with predefined alternatives. This paper investigates their effectiveness, robustness, and efficiency in two representative transportation tasks: individual travel-mode choice prediction and sequential traffic signal control. We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions against conventional transportation methods, reinforcement learning algorithms, and four chat-based large language models. Experiments on the Swissmetro dataset show that typed decision models achieve lower prediction accuracy than traditional discrete choice models and the strongest chat-based baseline, while their performance varies substantially with input representation and question framing. In closed-loop traffic signal control experiments, typed decision models demonstrate competitive performance against established controllers in several scenarios, but exhibit performance degradation under more challenging network conditions. Furthermore, the typed models achieve lower inference latency and computational cost than the evaluated chat-based large language models, highlighting their potential for efficient, zero-shot transportation decision-making. Overall, these findings demonstrate both the potential and limitations of typed decision models, emphasizing the importance of input design, task characteristics, and robustness evaluation for their effective application in transportation systems.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 7,
+   "topic": "llm",
+   "reason": "Evaluates typed LLM decision models for travel mode choice and traffic signal control; directly transport decision-making with RL baselines.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1287/trsc.2025.0133",
+   "title": "The Meal Delivery Routing Problem with Courier Behavior and Graph Neural Networks",
+   "url": "https://doi.org/10.1287/trsc.2025.0133",
+   "venue": "Transportation Science",
+   "publisher": "INFORMS",
+   "date": "2026-11-18",
+   "authors": [
+    "Niels de Jong",
+    "Ilke Bakir",
+    "Kees Jan Roodbergen"
+   ],
+   "abstract": "We consider the meal delivery routing problem (MDRP) faced by online food delivery platforms. In the MDRP, customers’ food orders arrive dynamically throughout the day and must be assigned to autonomous couriers. Each order is prepared at a merchant and must be delivered to a customer by a courier. The platform faces several challenges in finding good courier-to-order assignments. First, couriers differ in their behavior. Couriers make different decisions on routing, rejection, and idling. Second, courier-to-order assignment decisions should consider the trade-off between direct and uncertain future costs of assignment. Third, decisions must be made in seconds—often for thousands of couriers and orders—to ensure the responsiveness of the platform. Fourth, multiple orders can be assigned to one courier as a bundle, providing better routing opportunities. Fifth, assignments may be postponed in anticipation of better future assignment opportunities. Sixth, uncertainty arises from food preparation times, travel speed, the spatiotemporal distribution of orders and courier shifts. To address these challenges, we develop a polynomial-time heuristic using a graph neural network (GNN) that estimates future assignment costs in a cost function approximation (CFA) framework. To test the performance of our CFA/GNN heuristic, we create an open-source discrete-event simulator for the MDRP that simulates the delivery of thousands of orders within seconds. We validate our discrete-event simulator on real-world data from Meituan. We train our GNN with the twin delayed deep deterministic policy gradient algorithm. The CFA/GNN heuristic achieves an average click-to-door time reduction of [Formula: see text] to [Formula: see text] compared with a myopic benchmark. Our heuristic handles courier behavior and uncertainty, using bundling and postponement mechanisms, enabling real-time decision making for online food delivery platforms. History: This manuscript was accepted to the Transportation Science Special Issue, The First INFORMS TSL Data-Driven Research Challenge. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2025.0133 .",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "ai4opt",
+   "reason": "GNN-guided cost function approximation with RL training for courier dispatch simulation; relevant learned dispatching and simulation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22777",
+   "title": "CrossEnv: Synthesizing Verifiable Cross-Environment Tasks for Long-Horizon Agent Training",
+   "url": "https://arxiv.org/abs/2611.22777",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Zhengfeng Yu",
+    "Tian Lan",
+    "Zhijing Wu",
+    "Enbo Zhao",
+    "Xuannan Liu",
+    "Feihu Jiang",
+    "Qianghuai Jia",
+    "Longyue Wang",
+    "Zhao Xu",
+    "Weihua Luo",
+    "Xian-Ling Mao"
+   ],
+   "abstract": "Executable synthetic environments provide scalable training tasks and verifiable feedback for long-horizon agents. Existing environment synthesis methods primarily generate tasks within individual environments. However, these tasks do not adequately capture real-world interactions across services, where actions in one service depend on information obtained from another. Synthesizing such tasks is challenging because data generated across environments must remain consistent to support executable and verifiable interactions. To address this challenge, we introduce CrossEnv, a framework that uses an entity-tool graph to identify connections between environments and aligns task-specific data to synthesize executable, verifiable cross-environment tasks. We further propose CrossEnv-Curriculum, which progresses from single-environment tool use to coordination across more environments and business domains, before introducing user interaction. Across four external benchmarks, combining cross-environment training data with this curriculum achieves competitive performance with fewer training examples. Further analyses support the benefits of cross-environment data and curriculum training, and provide evidence of transfer to new environment combinations, external tasks less similar to the training data, and longer workflows.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Synthesizes verifiable cross-environment tool-use tasks for training long-horizon LLM agents; agentic but not about optimisation or transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22299",
+   "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+   "url": "https://arxiv.org/abs/2611.22299",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Deep Shah",
+    "Nehal Kathrotia"
+   ],
+   "abstract": "Whether a foundation model succeeds as an autonomous agent depends as much on its runtime software as on its weights. This runtime, the agent harness, manages context and memory, steers multi-turn control, executes tool actions in sandboxes, and verifies work before stopping. Because models differ in how they use tools and how they fail, a static harness tuned for one model or task often stalls, wastes tokens, or regresses on another. This bottleneck has driven a shift from prompt tuning to self-improving agent harnesses: systems that inspect their own execution traces, separate runtime bugs from model limits, and rewrite their own code. We present a unifying architectural and design framework for self-improving agent harnesses. The framework pairs four editable runtime components (context and state, agent control, action interfaces, and verification and recovery) with a four-stage loop that diagnoses failures, proposes code patches, validates candidates, and deploys updates. Using this framework, we show how optimizers trace errors across long trajectories and discover reusable runtime mechanisms such as pre-stop verifiers, loop breakers, and persistent memory. We further show why full-harness rewrites overfit or break across modules, and how modular updates with validation gates generalize across models while bounding token cost. To keep self-modification safe, we establish practical defenses against recurring failure modes including prompt bloat, benchmark gaming, and evaluator tampering. Finally, experiments on SWE-bench Lite validate this framework, showing that gated modular evolution outperforms prompt reflection and full-harness rewrites across models and repositories at a fraction of the token cost.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Self-improving agent harnesses that diagnose and patch their own runtime; relevant agent engineering background with evaluation of reliability.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22328",
+   "title": "PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows",
+   "url": "https://arxiv.org/abs/2611.22328",
+   "venue": "arXiv cs.AR",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Zichen Kong",
+    "Minghuan Song",
+    "Xiyuan Tang",
+    "Ziming Wei",
+    "Yi Zhong",
+    "Yuan Wang"
+   ],
+   "abstract": "Analog circuit design automation requires both coordinated tool execution and efficient numerical search. Large language models (LLMs) offer new ways to organize tool execution, but finding one sizing that satisfies specifications across process, voltage, and temperature (PVT) corners remains costly. PVTSizing 2.0 addresses these needs through a human-agent workflow built around an independently usable numerical optimizer. An agent carries the designer's approved task through execution and result review. The optimizer reduces unnecessary training through loss-guided updates and uses critic-guided local refinement to explore additional candidates while accounting for cross-corner conflicts. An optional LLM adviser supplies parameter relationships to focus numerical search on circuit-informed directions, while the optimizer selects adjustment amplitudes and verifies their effects through simulation. Across four circuit benchmarks, the standalone optimizer completes all 40 runs and achieves a 7.3x speedup in overall mean runtime over the original PVTSizing, with a comparable mean sample count. In a separate study, the best tested knowledge-injection configuration further reduces mean runtime by 39.9% and simulation samples by 35.4% relative to the standalone optimizer.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 5,
+   "score": 6,
+   "topic": "llm",
+   "reason": "LLM-adviser plus numerical optimizer for analog circuit sizing across PVT corners; an agentic human-in-loop optimisation workflow, though in a different domain.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23076",
+   "title": "Pareto-Informed Smart \"Predict, then Optimize\" for Multi-Objective Combinatorial Problems",
+   "url": "https://arxiv.org/abs/2611.23076",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Aabhash Dhakal",
+    "Tim Lachner"
+   ],
+   "abstract": "Many real-world planning applications, from logistics, routing to resource allocation, give rise to optimization problems that need to balance multiple, conflicting objectives. While machine learning is often used to predict the unknown parameters or costs of these problems, standard models trained on prediction accuracy can lead to suboptimal plans. Decision-Focused Learning (DFL) addresses this by integrating the downstream optimization task into the training objective. However, existing DFL methods for multi-objective problems rely on simple scalarization, which fails to capture the rich trade-offs of the Pareto Frontier. To address this gap, we propose a Pareto-aware extension to single-objective Smart \"Predict, then Optimize\" (SPO+) for multi-objective combinatorial optimization problems. Our loss function leverages the true Pareto Frontier, forming a target decision that aligns with a sampled preference vector, and minimizes regret against this target. Experiments on multi-objective shortest path and multi-objective knapsack problems show that our approach outperforms traditional two-stage Mean Squared Error (MSE) baselines. It also surpasses scalarization-based SPO+ approaches.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "ai4opt",
+   "reason": "Decision-focused learning with SPO+ for multi-objective combinatorial problems; directly on predict-then-optimise methods the researcher would value.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22432",
+   "title": "Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness",
+   "url": "https://arxiv.org/abs/2611.22432",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Siqi Lai",
+    "Haitao Li",
+    "Hao Liu"
+   ],
+   "abstract": "Fast System-1 models enable responsive actions but struggle with complex or unfamiliar tasks. Large language model (LLM)-based System-2 provides strong reasoning capabilities, yet repeated invocation incurs substantial latency and computational costs. To bridge this gap, we propose JevRSI, a System-1/System-2 collaboration framework that transforms LLM reasoning into transferable decision support through recursive harness improvement. A Jev-style System-1 model enables low-latency action selection, while an asynchronous System-2 LLM develops a modular harness. The harness integrates procedures, state memory, and world models to provide decision contexts spanning the past, present, and future. Utility-driven retrieval selects modules based on both contextual relevance and their utility on previous tasks. Environmental feedback guides targeted revisions and enables recursive self-improvement. Experiments across three datasets show that JevRSI consistently improves decision quality, matching or surpassing LLM agents in several settings. It preserves low-latency execution with favorable performance-cost trade-offs. Moreover, System-2 development interventions decrease as the harness evolves, amortizing System-2 costs through continuous improvement. Our project is available at https://github.com/usail-hkust/JevRSI.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 6,
+   "topic": "llm",
+   "reason": "System-1/System-2 agent framework with recursive harness improvement for decision making; agentic decision support relevant to operational decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tpwrs.2026.3754733",
+   "title": "A Benchmark Library for Distributed Power System Analysis and Optimization",
+   "url": "https://doi.org/10.1109/tpwrs.2026.3754733",
+   "venue": "IEEE Trans. Power Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-17",
+   "authors": [
+    "Milad Hasanzadeh",
+    "Amin Kargarian"
+   ],
+   "abstract": "DPLib is an open-source benchmark library created to support research and development in distributed power system analysis and optimization. Unlike centralized tools such as MATPOWER and PGLib, no general purpose, reproducible data library package currently exists for distributed power system studies. DPLib, available at \\href{https://github.com/LSU-RAISE-LAB/DPLib.git}{GitHub}, fills this gap by providing 40 multi-region benchmark test cases ranging from 5 buses to 20758 buses, along with a graph-based partitioning toolkit that converts MATPOWER-compatible systems into distributed regional datasets. The toolkit generates standardized \\texttt{.mat}, \\texttt{.csv}, and \\texttt{.m} files, regional MATPOWER version 2 cases, local and global bus mappings, generator and cost assignments, explicit inter-regional tie-line records, and bus-to-region partition maps. It supports unweighted, electrically weighted, and user-defined partitions, and is compared with METIS, KaFFPa, and an IPA-inspired baseline. DPLib also provides ADMM-based distributed DC and AC OPF solvers for validation. Numerical studies report partitioning sensitivity, centralized run times, distributed OPF iterations, run times, and optimality gaps. These results establish DPLib as a reproducible data layer for distributed power system research.",
+   "topics": [
+    "ai4opt",
+    "grid"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Benchmark library with distributed OPF solvers for power systems; useful background for transport-grid integration studies.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3755509",
+   "title": "Scenario-Adaptive Multi-Objective Weight Learning for Autonomous Electric Vehicle Control via Hierarchical Soft Actor-Critic and Model Predictive Control",
+   "url": "https://doi.org/10.1109/tte.2026.3755509",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Peter N. Kiama",
+    "Daofei Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Hierarchical SAC with MPC for autonomous EV control adds learning-based decision making, adjacent to the researcher's RL and EV energy interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22342",
+   "title": "Bad Apples in the Kitchen: How LLM Teams Detect, Correct, and Calibrate Against Their Misaligned Members",
+   "url": "https://arxiv.org/abs/2611.22342",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Dongseok Heo",
+    "Junghwan Kim",
+    "Bongwon Suh"
+   ],
+   "abstract": "What protects an LLM team when one teammate quietly goes wrong? Most multi-agent LLM work assumes cooperative partners and inspects chat between turns before acting. Real-time embodied cooperation does not allow this pause: chat runs alongside action, so a teammate whose words stay cooperative while behavior diverges can cause damage faster than the team can name what is happening. We study this case by injecting three theory-grounded misaligned agents into a custom four-player Overcooked environment, each stressing a different joint-action layer (speech-action mismatch, role invasion, and aggregate-progress disruption), and decompose robustness into three sequential gates of detection, correction, and calibration through a 3x4x2 design (n=720 episodes). Nearly all trolls are eventually named, but recovery follows only when attribution and situational diagnosis appear in the same utterance; direct source-attribution prompting improves the hardest case only by degrading the troll-free baseline by 37.5%. Robustness, then, depends less on detection alone than on whether team chat combines attribution with diagnosis in a single utterance, suggesting that sensitivity to misalignment should be targeted rather than uniformly raised.",
+   "topics": [
+    "sim",
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Multi-agent LLM teams under misaligned teammates in real-time cooperation; relevant to multi-agent reliability but not operational planning.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22557",
+   "title": "Balancing Exploration and Exploitation in Constrained Combinatorial Optimization with U(1)-Symmetric Tensor Trains",
+   "url": "https://arxiv.org/abs/2611.22557",
+   "venue": "arXiv math.OC",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Sergei Iudin",
+    "Mikhail Podobrii",
+    "Dmitry Zheltkov",
+    "Stanislav Moiseev"
+   ],
+   "abstract": "Tensor Train (TT) decomposition has emerged as a powerful tool for mitigating the curse of dimensionality in a variety of machine learning and combinatorial optimization tasks. Recent advances show that TT-based generative models can efficiently represent and explore high-dimensional discrete spaces, even when the cost function structure is unknown. However, incorporating hard linear constraints into TT-based optimization remains challenging, as existing interpolation and sampling approaches often fail when feasible points are rare. In this work, we develop a general TT-based framework for constrained combinatorial optimization built upon U(1)-symmetric tensor networks. Our method introduces an expressibility-enhancement mechanism for constructing sparse symmetric tensors and a graph-based diversity measure that guides sample selection during training. On assignment benchmarks, expressibility enhancement and diversity-aware selection improve mean solution quality over their respective baselines. The assignment-selected diversifying strategy also extends to nonpolynomial Set Partitioning, with larger relative gains observed in the higher-tensor-rank data families. Separate runtime benchmarks show substantial speedups over ConstrainTNet and PROTES on non-degenerate assignment workloads; comparisons with simulated annealing depend on constraint information and computational budget, but, overall, support the practicality of the current implementation.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "ai4opt",
+   "reason": "Tensor-train generative search for constrained combinatorial assignment problems; a learned-search method adjacent to the researcher's optimisation interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22897",
+   "title": "Born for the Task: Rethinking Quantum Chemistry with Foresighted Agentic Computing",
+   "url": "https://arxiv.org/abs/2611.22897",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Haozhi Han",
+    "Junjie Yang",
+    "Ruge Zhang",
+    "Zihe Huang",
+    "Pengyi Xu",
+    "Bo Zhang",
+    "Yunquan Zhang",
+    "Ting Cao",
+    "Yunxin Liu",
+    "Yifeng Chen",
+    "Kun Li"
+   ],
+   "abstract": "Quantum chemistry relies on general-purpose software, whose generality leaves many large-scale calculations beyond practical resource budgets. Coding agents make task-specific programs cheap to write, but not efficient ones easy to find: whether a computational strategy is accurate and fast enough becomes clear only after it actually runs at the target scale. We introduce BORN, a foresighted agentic computing framework that synthesizes high performance quantum chemistry programs on demand. BORN anticipates the behavior of each strategy before execution, extrapolating its error from representative small systems and predicting its runtime from the target-scale workload and measured hardware throughputs. Building on these predictions, BORN unfolds the preset schemes of existing packages into independently configurable algorithmic components, selects the fastest strategy within the error tolerance from the predicted accuracy-runtime Pareto frontier, and guides coding agents to compile it with component-level performance predictions. For a Hartree-Fock calculation with 50,024 basis functions, BORN finishes in 1.41h on a single CPU node, 77$\\times$ faster than the estimated runtime of a general-purpose baseline and still 9.8$\\times$ faster with development time included. On a single GPU, BORN completes the ubiquitin calculation in 2.1,h, the same order of runtime as the GPU-accelerated package Mako on 64 GPUs, and shortens the B-DNA duplex calculation from an estimated two months to 8.1,h (173$\\times$).",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Coding agents synthesise fast quantum chemistry programs via predicted accuracy-runtime Pareto selection; agentic program synthesis with predictive optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23219",
+   "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+   "url": "https://arxiv.org/abs/2611.23219",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Shobhita Sundaram",
+    "Cansu Sancaktar",
+    "Phillip Isola"
+   ],
+   "abstract": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Studies whether LLM agents can design their own self-improvement algorithms; agentic autonomy relevant to agentic AI interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22610",
+   "title": "EvoSkill-S1: Evolving Reusable Skills with Genetic-Inspired Operators",
+   "url": "https://arxiv.org/abs/2611.22610",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Yujun Wang",
+    "Jiqiang Li",
+    "Yinuo Lu",
+    "Jinhe Bi",
+    " Aniri",
+    "Wenxuan Ye",
+    "Boliang Liu",
+    "Sikuan Yan",
+    "Shuning Wang",
+    "Xuebing Zhou",
+    "S{ö}ren Pirk",
+    "Hinrich Sch{ü}tze",
+    "Yunpu Ma"
+   ],
+   "abstract": "Reusable skills allow language-model agents to accumulate and reuse problem-solving experience. However, most existing methods improve a skill bank only indirectly through rollout-driven accumulation and heuristic reflection, often resulting in shallow and weakly controlled updates. We present EvoSkill-S1, an RL-driven framework that instead treats reusable skills themselves as the direct objects of evolution. Given hard-negative failures, EvoSkill-S1 selects parent skills and transforms them into candidate child skills through five genetic-inspired operators: revision, cross-revision, mutation, dual-reflection, and crossover. Downstream task rewards train the skill evolver to generate more effective child skills, while evaluator-guided write-back selectively retains beneficial updates. Complementary Skill Bank Fusion consolidates operator-specific banks to exploit their distinct recovery patterns, while a Procedural Skill Interface supports transfer to unseen problems. Across all reported math and code benchmarks, EvoSkill-S1 improves the corresponding initialized skill banks under both Qwen and GPT-family solvers, with relative gains of up to 12.39%. Compared with the strongest external baseline without direct skill evolution, the largest relative improvement reaches 20.39%.",
+   "topics": [
+    "llm",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Evolves reusable skill banks for LLM agents with RL; generic agent self-improvement, adjacent to agentic AI but not about planning or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23142",
+   "title": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance",
+   "url": "https://arxiv.org/abs/2611.23142",
+   "venue": "arXiv cs.SE · AAAI 2027",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Lorenzo Masoero"
+   ],
+   "abstract": "The \"AI revolution\" has enabled teams across the technology industry to deliver software features at unprecedented velocity. While code evolves faster than ever, customer-facing documentation often struggles to stay up to speed. As users increasingly rely on LLM-based agents that consume documentation as their primary interface, the impact of this documentation gap worsens: stale information propagates and is treated as authoritative. Signals for identifying where documentation has fallen behind already exist in abundance, both explicit (e.g., resolved support tickets revealing what documentation lacks) and implicit (e.g., code-documentation discrepancies detectable from automated loops). We deploy a multi-agent system, built around a triage agent we call \"TriAgent,\" that continuously extracts these signals and repairs documentation drift. Over 43 days of shadow-mode operation, our system triaged 499 tickets and surfaced 92 gaps in the documentation. Using a panel of LLM judges from independent model families, 81.1% of TriAgent's verifiable assertions were correct (245 of the 302 assertions the human resolution addresses; majority of three judges); on length-comparable pairs the panel preferred TriAgent's response in 70.5% of pairs and the human engineer's in 23.2% (the rest had no judge majority). Importantly, agent- and human-sourced replies tended to be complementary, with the human often surfacing insights that were either buried within the existing documentation or missing from it entirely; our system turns each such insight into a documentation gap and, after human review, a fix. Repairing a gap measurably improved the agent's later answer: when the agent re-answered the same ticket after the repair, blinded judges preferred the post-repair answer over its own pre-repair answer 71.4% of the time (n=35). A blinded human audit confirms strong alignment on self-improvement.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Deployed multi-agent system maintaining documentation via triage agent; agentic workflow for real operations with evaluation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22245",
+   "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+   "url": "https://arxiv.org/abs/2611.22245",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Hejia Zhang",
+    "Zhongming Yu",
+    "Yimin Ding",
+    "Wei-Ting Chen",
+    "Hengjia Yu",
+    "Wentao Ni",
+    "Yijun Liu",
+    "Cong Xu",
+    "Xin Chen",
+    "Matrix Yao",
+    "Fan Zhao",
+    "Jishen Zhao"
+   ],
+   "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 4,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Multi-agent delegation causes memory inconsistency in LLM agents; evaluation of agent reliability and worker-lead handoffs.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22576",
+   "title": "ReMaRL: Learning to Unmask and Remask in Frozen Diffusion Language Models",
+   "url": "https://arxiv.org/abs/2611.22576",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Egor Shibaev",
+    "Danila Biktimirov",
+    "Ivan Klimov",
+    "Artem Makoian",
+    "Viacheslav Meshchaninov",
+    "Dmitry Vetrov"
+   ],
+   "abstract": "Masked diffusion language models generate tokens in parallel, and the order in which tokens are unmasked affects final-answer accuracy. Several methods learn unmasking policies from task rewards, but these policies cannot remask earlier predictions. Remasking lets the model correct those predictions using newly generated context. Heuristic rules guide both unmasking and remasking, while supervised remaskers learn to detect token errors. Neither approach directly optimizes these decisions for final-answer correctness. To address this gap, we introduce ReMaRL (Remasking with Reinforcement Learning), a lightweight policy that learns which tokens to unmask, retain, or remask. We train this roughly 0.3M-parameter policy with Group Relative Policy Optimization (GRPO) from final-answer rewards while keeping the diffusion model frozen. With LLaDA-8B-Instruct, ReMaRL achieves the highest scores among the compared unmasking and remasking policies within the tested inference budgets of 4-32 model calls on math and 8-16 calls on code.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "ai4opt",
+   "reason": "Lightweight GRPO-trained policy controlling unmasking and remasking in diffusion LMs; learned decision-making, though not combinatorial optimisation proper.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22338",
+   "title": "Reliable Evaluation of AI Agents for Investment Research: A Framework for Performance and Validity Assessment",
+   "url": "https://arxiv.org/abs/2611.22338",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Dongnuan Tian",
+    "Yan Yu",
+    "Yangfan Liu",
+    "Wenjun Tang",
+    "Junting Kan",
+    "Xiang Wang",
+    "Sicong Liu",
+    "Yangyang Zhang",
+    "Shuanghong Li"
+   ],
+   "abstract": "We consider the problem of evaluating AI agents undertaking investment-research tasks, where agents interact with external information sources and computational tools to produce financial analyses and research reports. An important challenge is that the quality of an agent's final output does not necessarily reflect the quality of its execution process, while the reliability of the resulting assessment also depends on the validity of the evaluation procedure. Furthermore, investment-research tasks differ considerably in their requirements for numerical accuracy, information retrieval, financial analysis and supporting evidence, making it difficult to assess agent performance using a uniform set of criteria. We propose a domain-oriented evaluation framework that distinguishes outcome quality from execution quality and accommodates these differences through task-specific criteria, deterministic validators and independent large language model judges. We also introduce an evaluation-validity mechanism that examines the integrity of evaluation inputs, reference information, supporting evidence and grading outputs, with expert review used to resolve identified deficiencies and significant grading disagreements. Numerical results show that the proposed framework can distinguish differences in agent performance across evaluation dimensions, while identifying potential reliability issues in the evaluation process. The associated implementation and evaluation materials will be made available on GitHub.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Evaluation framework for AI agents doing investment research; agent evaluation reliability is relevant to agentic AI interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23021",
+   "title": "Satisfiability Modulo Theories for Robust Synthesis of Signal Temporal Logic Specifications",
+   "url": "https://arxiv.org/abs/2611.23021",
+   "venue": "arXiv eess.SY",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Philip Smith",
+    "Kevin Leahy"
+   ],
+   "abstract": "Signal Temporal Logic is a popular framework for describing a robotic system's goals. Once described using a temporal logic framework, synthesis turns the goals into actual steps for the robots to follow. Currently, the state of the art for sound and complete synthesis is using Mixed-Integer Linear Programming (MILP), which struggles on long time horizons and large environments, preventing the construction of guaranteed safe plans for long deployments. This paper introduces a new synthesis method using Satisfiability Modulo Theories (SMT) which scales better for long deployments and adapts to environmental changes more quickly. We do this by introducing an encoding method for STL into SMT constraints, and an encoding method for discrete-time dynamical systems modeled as a transition system. We then conduct an empirical comparison of our SMT based methods against the state of the art MILP based methods. Results show that for this class of problems, SMT is an effective encoding strategy that performs the best on long time horizon tasks.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 3,
+   "score": 5,
+   "topic": "ai4opt",
+   "reason": "SMT encoding of STL for robot synthesis compared against MILP; a solver-method comparison adjacent to optimisation for planning.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22841",
+   "title": "Verifying Agents in Rubric-Graded Environments",
+   "url": "https://arxiv.org/abs/2611.22841",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Markus Dücker",
+    "Vaibhav Kumar",
+    "Yi Liu",
+    "Ronak Chaudhary",
+    "Andreas Plesner",
+    "Francisco Guzmán",
+    "Anish Athalye"
+   ],
+   "abstract": "As AI agents take on increasingly open-ended and complex tasks, verifying their outputs has proven to be difficult. Rubric-graded agent environments, where a verifier judges multiple natural-language criteria against the deliverables and environment state changes produced by the agent, have emerged as a popular paradigm. We conduct the first systematic study of verifiers for rubric-graded agent environments. First, we create BankerVerifierBench (BVB), a meta-evaluation dataset of 2,464 human-judged rubric criteria across 24 investment-banking tasks. Next, we develop a methodology that derives from any rubric corpus the capabilities a verifier should possess, yielding a nine-capability taxonomy that we distill into three general design principles---reactive verification, environment alignment, and domain guidance---which we implement in Gandalf, an open-source verifier. Finally, we evaluate Gandalf against three existing verifiers on BVB. Gandalf matches or exceeds every baseline's F1 at lower cost: with Gemini 3 Flash it matches the strongest baseline's F1 (0.864 vs. 0.852) at one-fifth of its cost, and with GPT-5.4 models it improves F1 by over 0.12 at lower cost. Gandalf also generalizes to OpenClaw, a structurally different personal-productivity environment, where it again achieves the highest F1 (0.955 vs. 0.934 for the best baseline). We release BVB, Gandalf, and the code and data to reproduce our experiments.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Systematic study of verifiers for rubric-graded agent environments; agent evaluation reliability with generic applicability.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22291",
+   "title": "When the World Is the Test Suite: Agentic Intelligence for the Physical World",
+   "url": "https://arxiv.org/abs/2611.22291",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Kaixin Li",
+    "Meng Luo",
+    "Yanlin Li",
+    "Yuchen Tian",
+    "Xiang Liu",
+    "Xiangru Jian",
+    "Yan Yang",
+    "Zhiheng Xi",
+    "Yang Zhang",
+    "Ziyang Luo",
+    "Mingfei Cheng",
+    "Hongzhan Lin"
+   ],
+   "abstract": "Coding agents built to repair software now write, test, and repair programs for robots, laboratories, and industrial controllers. Unlike in software engineering, no test suite comes with the code. Whether a program works must be established by running it on a robot, in a physics simulator, or through the policies it helps to train, and such evidence is costly to obtain and can itself be wrong. As these agents take on more physical tasks, how their programs are judged matters as much as how they are written. This paper examines this emerging area, agentic intelligence for the physical world, by treating the world as the program's test suite. We organize the discussion around three questions: how agents write programs for the physical world, how these programs are tested, and how agents learn from the results. We first trace how language models for robots and software engineering agents came together, ask which software testing practices carry over to physical tests, and describe each program by where it sits relative to the actuator and by what judges it. For writing, we cover programs that act as robot policies and programs that support policy learning by producing rewards, tasks, and training worlds. For testing, we examine what physical trials cost, what traces, learned judges, simulators, and formal checks can establish in their place, and what safety requires beyond task success. For learning, we discuss how tested programs are retained as experience, in skill libraries and in model weights. Finally, we turn to benchmarks and evaluation practice and outline open challenges. Writing programs is becoming cheap, while trustworthy evidence about what they do remains costly. Progress will therefore depend on a physical counterpart of continuous integration: verification cheap enough to run often, reliable enough to trust under search, and maintained alongside the experience it validates.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Coding agents writing and testing programs for physical systems; agentic background with verification ideas, not directly transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3752188",
+   "title": "A Benchmark-Oriented Framework for Design, Simulation, and Evaluation of Urban Low-Altitude Structured Air Route Systems",
+   "url": "https://doi.org/10.1109/tits.2026.3752188",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Zichun Zhao",
+    "Yuejie Lin",
+    "Tao Ma"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Design and simulation benchmark for urban low-altitude air route systems; simulation framework adjacent to transport modelling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3751150",
+   "title": "Event-Triggered Hierarchical Trajectory Planning for Mixed Traffic in Multi-Lane Scenarios: A Vehicle-Cloud Collaborative Approach",
+   "url": "https://doi.org/10.1109/tits.2026.3751150",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Changchang He",
+    "Min Zhao",
+    "Dihua Sun",
+    "Liuping Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Hierarchical trajectory planning for mixed traffic with vehicle-cloud collaboration; connected-vehicle planning, loosely adjacent.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3752936",
+   "title": "ProtoLight: A Method for Generalization of Traffic Signal Control With Prototypical Representation Learning and Meta-Reinforcement Learning",
+   "url": "https://doi.org/10.1109/tits.2026.3752936",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Chenxi Gong",
+    "Ruihan Liu",
+    "Dayang Liang",
+    "Yunlong Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Meta-reinforcement learning for traffic signal control generalisation; learned control for transport, adjacent to RL dispatching interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106170",
+   "title": "SCOPE: A lightweight-training LLM framework for air traffic control readback monitoring",
+   "url": "https://doi.org/10.1016/j.trc.2026.106170",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Qihan Deng",
+    "Minghua Zhang",
+    "Yang Yang",
+    "Zhenyu Gao"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "LLM framework for air traffic control readback monitoring; transport LLM application but not electrification or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23202",
+   "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+   "url": "https://arxiv.org/abs/2611.23202",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Viet K. Nguyen",
+    "Mohammad I. Husain"
+   ],
+   "abstract": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZTA), and remote attestation. ATI establishes federated trust through peer organizational certificate authorities (AgentCAs), eliminating the need for a shared root authority. Before executing requests, ATI validates agent certificates, verifies approved model, tool, and system-prompt configurations, and enforces authorization through three policy checks. We implement ATI as an external security enforcement layer that integrates with existing agent frameworks without modifying their underlying models. We evaluate ATI in a simulated federation of eight organizations using six agent frameworks, each deploying a five-agent team. Security experiments involve two organizations and assess 14 attack scenarios and six benign tasks across five agent models, using five attack variations and three repetitions per variation. A panel of judge models evaluates the experimental outcomes. With all enforcement mechanisms enabled, attack containment increases from 43% to 84% (40% to 80% for the 11 attack scenarios evaluated consistently across all configurations), while enforcement introduces approximately 174 microseconds of overhead per request. ATI is released as an open-source, framework-independent package that uses IETF WIMSE workload token formats for identity and request verification and Entity Attestation Tokens for model, tool, and system-prompt integrity verification.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Federated identity and attestation for cross-organisation AI agents; agent security infrastructure, tangential to the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23091",
+   "title": "BugGen 2.0: Rethinking the Roles of LLMs for Scalable RTL Bug Synthesis",
+   "url": "https://arxiv.org/abs/2611.23091",
+   "venue": "arXiv cs.SE",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Minh Luu",
+    "Michael Quinn",
+    "Aakash Tyagi",
+    "David Houngninou",
+    "Jiang Hu"
+   ],
+   "abstract": "AI-assisted RTL localization and debugging need ground-truth bug datasets with known locations and observable failures, while testbench grading uses injected bugs to measure detection capability. Creating such datasets at scale remains a major EDA challenge. BugGen 1.0 shows that Large Language Models (LLMs) can generate context-aware RTL mutations. Still, it relies on the model for both choosing where to mutate and generating the edit, which increases inference costs and can lead to invalid choices. BugGen 2.0 changes this division of labor. Deterministic algorithms handle structural analysis, target selection, and validation, while the LLM focuses on localized semantic rewriting. Across four OpenTitan IP blocks and FabScalar with three LLMs, BugGen 2.0 reaches every requested quota of compilable bug scenarios that cause at least two test failures, with 14-16 of 16 configured mutation types represented. In completed same-model comparisons, it reduces token use by 6.8x-15.4x relative to BugGen 1.0 and 1.5x-7.9x relative to Firefly. BugGen 2.0 also expands the dataset without simulating every new bug. After finding accepted scenarios with observable failures, it generates alternative mutations at the same locations, simulates only a subset, and estimates acceptance for the rest. This skips 63.6% of AES and 33.9% of FabScalar variant simulations. Full simulation finds that 77.7% of AES variants and 95.2% of FabScalar variants are accepted, with a 1.09% estimation error on the directly comparable FabScalar set. These results show that focusing LLMs on semantic rewriting lowers inference and simulation cost while improving consistency across models and designs.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 4,
+   "topic": "llm",
+   "reason": "LLM-driven RTL bug synthesis with deterministic algorithms doing selection; hardware EDA, weakly related to agentic optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22539",
+   "title": "JET: Just-Enough Exploration Tuning for Efficient Tool-Calling Agents in Repository-Level Question Answering",
+   "url": "https://arxiv.org/abs/2611.22539",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Yoonho Choi",
+    "Taehyeon Han",
+    "Seonghyeon Lee"
+   ],
+   "abstract": "In repository-level question answering (QA), an agent explores a code repository with tools and should answer a question once enough information is gathered. Nevertheless, we find that LLM agents often continue to invoke tools even after the gathered information is already sufficient to answer. We call this phenomenon over-exploration. Moreover, even though existing methods improve task performance through supervised fine-tuning (SFT) on expert trajectories, SFT also propagates the over-exploration in the trajectories to the agent. To mitigate over-exploration, we propose Just-Enough Exploration Tuning (JET), a fine-tuning method that trains the agent to answer once the gathered information is sufficient. JET truncates each training trajectory at the step where the gathered information becomes sufficient, inserts a rationale that explains why the agent can answer at that step, and fine-tunes the agent with a higher loss weight on the rationale. Experiments on two repository-level QA benchmarks with two open-weight 8B models demonstrate that JET reduces tool calls by 11 to 33% on self-generated trajectories while largely preserving the score. On expert trajectories, JET makes 18 to 28% fewer tool calls than SFT while retaining most of the score gain of SFT. In both cases, JET also lowers the inference cost.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Tool-calling agent efficiency in code QA; agentic but not optimisation or operational decision making.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22511",
+   "title": "LMLineage: Content Lineage and Context Governance for LLM Agents",
+   "url": "https://arxiv.org/abs/2611.22511",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Wei Hou",
+    "Jingxin Geng",
+    "Xin Chen",
+    "Zheqing Jiang"
+   ],
+   "abstract": "Interpretability for AI agents should not be confined to understanding the model's internal weights. It must also cover the agent's reasoning and decision-making process over multi-source context. We present LMLineage, an out-of-band system that attributes every output sentence of an agent session to its supporting input spans with calibrated confidences, without requiring white-box access to the model or any additional inference passes. On top of the lineage metadata, we build concept-drift micro compaction: instead of waiting for the context-length limit and summarizing everything, the system detects when previously used input documents have stopped being referenced (\"drifted\") and surgically compacts only those, preserving user instructions verbatim. We evaluate on a multi-tier corpus: 71 gold annotated sentences from 10 Chinese web-QA cases, plus 90 turns of independently collected multi-turn sessions across three generator models (gpt-4o-mini, qwen3.8-27b, deepseek-v4-flash). Results show that (i) window-level embedding similarity is far better aligned with LLM paraphrasing than whole document or lexical matching; (ii) the greedy-window fast path is both faster and more accurate on average than exhaustive line-matching (a multiple-comparisons bias in the latter inflates web recall at the cost of overall accuracy); (iii) per-turn attribution completes in 1s on a single GPU, remaining stable as context accumulates to 40 turns; and (iv) concept-drift detection is conservative (0% false compaction) with recall bounded by attribution accuracy. We further describe the concept-drift micro compaction design and an interactive incident-tracing/memory-cleaning case study. A companion patent application covers the lineage construction method.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Context lineage and compaction for LLM agents; agent infrastructure with limited optimisation or transport link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23010",
+   "title": "PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory",
+   "url": "https://arxiv.org/abs/2611.23010",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Haoyang Liu",
+    "Kecheng Liang",
+    "Xinyu Li",
+    "Weixing Chen",
+    "Yang Liu"
+   ],
+   "abstract": "Vision-language models (VLMs) can correctly interpret physics diagrams yet apply constraints outside the states or conditions in which they hold, causing premise errors to propagate through subsequent calculations. We introduce PhysScope, an inference-time visual harness that supports self-correction of these scope mismatches without updating model weights. PhysScope enables the model to link physical scopes directly to its visual observations and explicitly constructs derived views to support reasoning. The harness imposes explicit constraints on state distinctions, conditions, and physical scopes during model reasoning, and checks agent-proposed revisions against sources and scopes. Accepted revisions invalidate registered dependents, thereby maintaining scope-aware working memory. On PhysAlign, PhysScope achieves higher solving scores than direct solving across all six evaluated VLMs. With Gemini-3.8-flash, it outperforms Canvas-CoT by 9.34 percentage points and substantially improves solving accuracy on the out-of-distribution (OOD) PhysUniBench benchmark. Ablation studies support explicit scope management and dependency maintenance as design principles for multimodal physics reasoning agents.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Inference-time visual harness for VLM physics reasoning; agentic reasoning but mainly multimodal physics QA.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22991",
+   "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+   "url": "https://arxiv.org/abs/2611.22991",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Moriya Dechtiar",
+    "Daniel Martin Katz",
+    "Michael J. Bommarito",
+    "Hongming Wang",
+    "Sylvain Jaume"
+   ],
+   "abstract": "Agentic systems using retrieval-augmented generation (RAG) must repair their own answers by gathering more evidence, testing alternative policies and deciding if, when, and what repairs are needed. Yet how do we know if a system's repairs are working when metrics like accuracy can be misleading? We present RagHarnessDebugger, a framework that records every repair decision in a Jev-guided harness for contract inference and audits the record to facilitate complete debugging of all decisions taken during a RAG repair journey. RagHarnessDebugger checks that each trace is intact, that each validation applies to the candidate it is counted for, and which answers the acceptance rule can reach. We tested our approach on ContractNLI non-disclosure agreements with two reader models and a replication set of separate contracts. Our debugger's audit layer exposed failure patterns that were hidden under aggregate metrics, policies acceptance cost of repairs vs regressions and policy acceptance gap of 77% and 76% of available but unrealised repairs on development and replication sets. Our audit, together with a labeled error analysis and replay mechanism, allowed following the execution path all the way to the terminal decision - uncovering where missing repairs became lost. Our revised harness improved accuracy over the initial BM25-only baseline by 3.6 points on development contracts and 3.7 points on the replication set, and even improved our full contract access reference score by 1.1 on development and 2.4 on replication set. While our work here demonstrates how the debugger can conduct decision root-cause analysis for missed repairs, the true value lies with providing this debugger for judgment visibility serving continuous improvement of RAG decisions and their explainability. Keywords: agentic RAG, AI evidence repair, harness explainability, counterfactual replay, Jev, ContractNLI",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Auditing agentic RAG repair decisions in contract QA; agentic evaluation but outside transport and optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23074",
+   "title": "Runtime Verification of Multiple Natural Language Criteria for Agent Governance",
+   "url": "https://arxiv.org/abs/2611.23074",
+   "venue": "arXiv cs.CL · NeurIPS 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Silviu Pitis",
+    "Parand A. Alamdari",
+    "Jessica Tang",
+    "Toryn Q. Klassen",
+    "Sheila A. McIlraith"
+   ],
+   "abstract": "AI agents are governed by hundreds of natural language criteria, yet existing verifiers cannot efficiently evaluate an agent's output against a large set of such criteria and report which are satisfied, violated, or inapplicable. We introduce the VFM, a tree-attention verifier that encodes the shared context and target text, and scores N natural language criteria in parallel, returning independent per-criterion ternary verdicts. The VFM is pretrained on CriteriaBank, a corpus of 394K (context, target, criterion, verdict) tuples spanning over 321K distinct criterion strings. A finetuned VFM-4B outperforms GPT-5.4 on a synthetic governance benchmark. On the DynaBench multi-criterion benchmark, it outperforms DynaGuard-4B on trace-level failure detection, and its per-criterion verdicts localize the violated rule and support focused escalation to a larger chain-of-thought judge. We show that CriteriaBank pretraining improves cross-domain transfer, particularly in the low-data regime, while matching a strong direct-finetuning control at full data. On a single H100, VFM-4B evaluates 1,000 criteria against a 4K-token context in under 2s at <11 GB VRAM, making it suitable for runtime verification.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Verifier for multiple natural-language criteria for agent governance; agent reliability with limited operational or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22227",
+   "title": "SOTA or Luck? The Winner's Curse in LLM Leaderboards",
+   "url": "https://arxiv.org/abs/2611.22227",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Sikun Xu",
+    "Raphael Thomadsen",
+    "Dennis J. Zhang",
+    "Heng Zhang"
+   ],
+   "abstract": "Public LLM leaderboards guide model evaluation and adoption, yet the reported performance of top-ranked models can be systematically overstated. This leaderboard winner's curse arises because ranking noisy benchmark scores rewards sampling luck alongside genuine ability. The same selection effect can distort scores throughout the leaderboard, a phenomenon we call the rank-induced bias. We develop an $m$-out-of-$N$ bootstrap to correct for this bias. It assumes a fixed model pool with independent, identically distributed bounded tasks while allowing arbitrary within-task correlation among models. Under exact population tiers separated by positive gaps, we prove that the bootstrap reduces $Θ(N^{-1/2})$ ranking bias to expected residual bias $o(N^{-1/2})$. Across 14 benchmarks from 5 benchmark families, the rank-1 adjustments range from approximately 0.09 to 3.86 percentage points. In our SWE-bench Verified snapshot, the tied leaders receive an adjustment of 0.90 percentage points. Such overstatement is large enough to make the apparent winner statistically fragile. Thus, we use the same bootstrap to further quantify the intervals of plausible rank positions for each model and group models into tiers. We establish sufficient conditions for consistent recovery of population tiers. On SWE-bench Verified, this procedure places 13 of 173 models in the leading tier. We combine the score adjustment and rank intervals in the Rank Uncertainty and Leaderboard Evaluation Report (RULER). We validate its finite-sample performance using sample splitting and calibrated simulations, and advocate publishing RULER alongside raw rankings so readers can assess both reported performance and the precision of the ordering. RULER also provides guidance for benchmark design that accounts for selection effects and ranking uncertainty.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "llm",
+   "reason": "Statistical bootstrap correcting winner's curse in LLM leaderboards; evaluation methodology only loosely related to the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22711",
+   "title": "Transmission Expansion and Energy Storage Planning under Great Britain's Uncertain Energy Transition Pathways",
+   "url": "https://arxiv.org/abs/2611.22711",
+   "venue": "arXiv math.OC",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Shengming Cao",
+    "Runsheng He",
+    "Waqquas Bukhsh"
+   ],
+   "abstract": "Long term power system planning must account for uncertainty in electricity demand and generation, while recognising the different investment and commissioning characteristics of transmission and energy storage. This paper develops a multi year stochastic framework for coordinated transmission expansion and energy storage planning and applies it to the Great Britain electricity system to assess investment needs through to 2050. The framework integrates multiple energy transition pathways with an enhanced representation of the GB transmission network and captures the different characteristics of transmission and storage investment over time. The coordinated treatment of transmission and storage is considered as a system level benchmark rather than a centralised investment mechanism. In GB, transmission investment is subject to regulated forward looking planning, while storage is largely developed by market participants in response to market signals. The framework therefore quantifies the potential value of improved coordination and identifies where existing investment signals may not encourage complementary storage deployment. Results across alternative transmission only, storage only and coordinated investment strategies show substantial benefits from joint planning. Compared with transmission only planning, coordinated investment reduces additional transmission capacity by 2%, cumulative expected load shedding by 97%, and total expected system cost by 36%, primarily through avoided unserved energy. Transmission preparation periods affect the timing, but not the final portfolio, of investments. Finally, the energy transition pathway materially influences investment requirements, with Electrification and Efficiency requiring 7% more transmission capacity and 45% more storage energy capacity than Falling Behind.",
+   "topics": [
+    "grid"
+   ],
+   "keyword_hits": 1,
+   "score": 4,
+   "topic": "grid",
+   "reason": "Stochastic transmission and storage expansion planning for Great Britain; power-system planning adjacent to grid integration of electrified transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741893",
+   "title": "Closed-Box Adversarial Propagation Attack on Spatiotemporal Graph-Based Flight Delay Prediction",
+   "url": "https://doi.org/10.1109/tits.2026.3741893",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Zhengyang Zhao",
+    "Buhong Wang",
+    "Jing Yang",
+    "Jiwei Tian",
+    "Muhammad Attique Khan",
+    "Por Lip Yee",
+    "Theyazn H. H. Aldhyani"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Adversarial attacks on graph-based flight delay prediction touch transport forecasting but not optimisation or electrified fleets.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3741448",
+   "title": "Hybrid Framework for Bicycle Route Optimization: Integrating Multi-Criteria GIS Analysis and Machine Learning in Rural Tourism Contexts",
+   "url": "https://doi.org/10.1109/tits.2026.3741448",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Jurica Ðerek",
+    "Marjan Sikora",
+    "Luka Kraljević",
+    "Dubravka Pešorda"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Bicycle route optimisation with GIS and machine learning is a loosely related route-planning application, not electrified transit or agentic optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105394",
+   "title": "Integrating heterogeneous preferences in interactive multi-objective vehicle routing: an information-projection approach",
+   "url": "https://doi.org/10.1016/j.tre.2026.105394",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Mingwei Chen",
+    "Wei Xiong",
+    "Liang Ma"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Interactive multi-objective vehicle routing with heterogeneous preferences; routing methodology without electrification.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106113",
+   "title": "Model-agnostic meta-learning for traffic incident detection across different roadways",
+   "url": "https://doi.org/10.1016/j.trc.2026.106113",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Xinhao Yang",
+    "Chi Xie"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Meta-learning for traffic incident detection across roadways; traffic ML with no abstract, weakly connected to simulation or bus operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105405",
+   "title": "Post-disaster relief delivery with vehicle-Dependent accessibility and rendezvous coordination",
+   "url": "https://doi.org/10.1016/j.tre.2026.105405",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Dexin Kong",
+    "Peixin Zhao",
+    "Qingchun Meng",
+    "Mingyu Li"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Post-disaster relief routing with vehicle-dependent accessibility; routing optimisation but no electrification focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3754804",
+   "title": "Station Rail Potential Suppression based Stray-Current-Risk Mitigation in Modern DC Metro Systems",
+   "url": "https://doi.org/10.1109/tte.2026.3754804",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Qi Zhou",
+    "Sheng Lin",
+    "Ying Zhan",
+    "Aimin Wang",
+    "Peiwu Yan",
+    "Zhengyou He"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "grid",
+   "reason": "Stray-current mitigation in DC metro systems concerns rail electrical infrastructure, only loosely adjacent to transport-grid integration.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22575",
+   "title": "Do LLMs Understand Network Traces? A Comparative Study of Reasoning over Raw and Filtered Traffic Data",
+   "url": "https://arxiv.org/abs/2611.22575",
+   "venue": "arXiv cs.NI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Irene Gosálvez-White",
+    "Roberto Magán-Carrión",
+    "Carlota de la Vega-Soriano",
+    "Pedro García-Teodoro"
+   ],
+   "abstract": "The effective delivery and monitoring of ICT services rely heavily on network traffic analysis. However, interpreting complex packet captures remains a challenging task that requires substantial technical expertise. Large language models (LLMs) offer promising opportunities to automate network traffic in- vestigation, yet their reliability in packet-level field extraction and flow-level sequence reconstruction remains an open research question. This study proposes a reproducible, question-answering- based evaluation methodology to assess the capabilities of LLMs in network trace analysis. Using real-world benign traffic from the CICIDS2017 dataset, we evaluate multiple models against a human-generated ground truth, comparing their performance on raw textual traffic dumps and protocol-filtered representations. Model responses are assessed through an automated LLM- as-a-judge pipeline, validated against human evaluations. The results demonstrate that protocol filtering significantly reduces prompt overhead while improving answer accuracy by reducing incorrect responses. These findings highlight the importance of protocol-aware traffic filtering as an effective optimization for improving the efficiency and reliability of LLM-assisted network management.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 3,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM question answering over network packet traces; network monitoring rather than transport or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22457",
+   "title": "From Ideal to Real: Integrating Language Models into Smart Home for Human-Centric IoT Safety and Security Fuzzing",
+   "url": "https://arxiv.org/abs/2611.22457",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Lin Li",
+    "Xinbo Ban",
+    "Chao Chen",
+    "Lei Pan",
+    "Ming Ding",
+    "Kok-Leong Ong",
+    "Jun Zhang"
+   ],
+   "abstract": "Integrating IoT devices into household systems offers enhanced control over living environments. However, as these devices become pervasive in critical sectors such as healthcare, transportation, and home automation, they expose inter-rule vulnerabilities that may lead to privacy breaches, data theft, and physical harm. Traditional fuzz testing methods, which often operate in simulated environments assuming ideal human decisions, fail to account for the complexities of human interactions that can influence device operations in smart homes, potentially leading to unforeseen consequences. To reveal the impact of real human decisions and discover unexpected inter-rule vulnerabilities, we introduce an enhanced version of IoT Fuzz for smart homes by integrating large language models to emulate human decision-making processes. Our novel approach adds a layer of realism and unpredictability to the testing environment, more accurately capturing the diverse and dynamic nature of human interactions in smart home settings.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "LLM-emulated human decisions for IoT fuzzing in smart homes; LLM use in testing, not transport or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22773",
+   "title": "Guarded Swarms in the Loop: A ROS 2/PX4 Digital Twin for Hybrid Digital-Analog Coordination of UAV/UGV Swarms",
+   "url": "https://arxiv.org/abs/2611.22773",
+   "venue": "arXiv cs.CR",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Uwe M. Borghoff",
+    "Paolo Bottoni",
+    "Luca D'Aurizio",
+    "Remo Pareschi"
+   ],
+   "abstract": "Swarms of unmanned aerial and ground vehicles (UAV/UGV) operating in contested environments cannot rely on software alone for physical safety, since the software stack and its networks are part of the attack surface. The Guarded Swarms architecture addresses this by pairing a digital coordination layer, built on Topic-Based Communication Space Petri Nets (TB-CSPN), with an independent analog safety layer that can veto unsafe actuation commands. So far, the architecture has been specified and argued for, but not executed. We present the first executable instantiation of Guarded Swarms as a digital twin built on ROS 2, the PX4 autopilot in software-in-the-loop mode, and Gazebo, with two UAVs and one UGV in a coastal counter-UAS scenario. The TB-CSPN transition chain, from multi-modal sensing through human authorization to vehicle tasking, is mapped one-to-one onto ROS 2 nodes, and the analog layer is modeled as a per-vehicle Virtual Safety Board that gates every command. Eight groups of experiments show that the three negative guarantees of the architecture (no mission from conflicting, temporally incoherent, or unauthorized evidence) hold at three distinct stages of the chain in all 60 counterfactual runs; that threat confirmation is bounded by the narrowest sensing modality; that the safety layer exercises its full modeled envelope independently of the coordination layer; and, under fault injection, that it prevents every collision caused by a forged mission or a compromised worker once its veto is enforced by an independent gate, whereas a veto left to the compromised worker prevents none. The twin also exposes implementation-level hazards that the architectural specification does not address, and it draws an explicit line between the properties that simulation can validate and those that only hardware can.",
+   "topics": [
+    "sim"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "ROS 2/PX4 digital twin for UAV/UGV swarm safety coordination; simulation infrastructure with no transport electrification or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22286",
+   "title": "Learning Regions of Attraction for Transverse Feedback Linearization under Controller Singularities",
+   "url": "https://arxiv.org/abs/2611.22286",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Abdullah Waqar Malik",
+    "Hamza Tariq",
+    "Adeel Akhtar"
+   ],
+   "abstract": "Transverse feedback linearization (TFL) achieves path following by exactly linearizing the error dynamics, but its controller is undefined on a singular set, such as zero speed for a unicycle or zero thrust for a quadrotor. The constrained region of attraction, the set of initial states from which the closed loop converges to the path without violating state or regularity constraints, determines where the controller can be safely activated. Exploiting the exact linear error dynamics, we show that this region is the largest forward invariant subset of the admissible set. We then decompose its state-constrained Zubov value function into an analytically known quadratic cost-to-go and a safety value function. We learn only the latter, by fitted value iteration without infinite-horizon trajectory labels. The resulting estimate combines an inner layer verified by interval branch and bound with a learned outer layer tested on samples. On a unicycle following a circle and a sinusoid and on a planar quadrotor, it covers on average 72.0%, 83.4% and 19.1% of the simulated region of attraction. In comparison, the quadratic cost-to-go and two physics-informed neural network (PINN) solvers of Zubov's equation cover at most 11.3%, 4.0% and 0.0% on average. Code and animations are available at https://gradslab.github.io/roa_tfl",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Learning regions of attraction for feedback linearization control; control theory with learned value functions, weakly related to optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22464",
+   "title": "MAVE: Reconstructing Editable 3D Blockouts from Film Shots",
+   "url": "https://arxiv.org/abs/2611.22464",
+   "venue": "arXiv cs.CV",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Yifan Chang",
+    "Jian Yang",
+    "Jiangnan Shao",
+    "Xiaofeng Wang",
+    "Zhaoxin Fan",
+    "Renjing Xu",
+    "Ming Lu",
+    "Xingang Wang",
+    "Zheng Zhu"
+   ],
+   "abstract": "Animated 3D blockouts support previsualization and provide structural conditions for video generation, but manually reconstructing them from reference videos is costly. This limits both their use by creators and the production of paired training data. We introduce MAVEBench, a benchmark of 50 film shots and 416 keyframes for evaluating camera motion, spatial layout, and character blocking. We propose MAVE, a video-to-blockout framework combining Metric observation, Agentic modeling, and evidence-based VErification. It first recovers cameras, human motion, and geometric evidence in a shared metric coordinate system. An agent then constructs an editable environment under constraints from these observations, while programmatic checks report inconsistencies to guide refinement. The outputs are editable Blender scenes and frame-aligned blockout videos. On MAVEBench, MAVE improves overall scores by 27.5-41.1 points across three agents over their corresponding vanilla baselines. With DeepSeek-1017, it achieves a score of 73.2 at an average API cost of only USD 0.054 per shot, outperforming the strongest vanilla baseline while reducing total reconstruction time by 53%. We also construct MAVEData-3K, a dataset of 3,000 blockout-video pairs for model training, and will release it publicly. Creators can change viewpoints and character paths, then render the edited scenes to condition video generation. Code is available at https://github.com/yfChang-cv/MAVE.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Agentic video-to-3D blockout reconstruction for film previsualization; agent use is peripheral to the researcher's optimisation interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22790",
+   "title": "NexSight: Verifiable Tasks for Fine-Grained Agentic Long-Video Understanding",
+   "url": "https://arxiv.org/abs/2611.22790",
+   "venue": "arXiv cs.CV",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Tianci Xie",
+    "Li Chen",
+    "Pinxue Guo",
+    "Rui Zheng"
+   ],
+   "abstract": "Fine-grained questions about long videos ask how many times an action occurs, in what order events unfold, or exactly when a state changes. Answering them can require finding brief moments scattered across hours of footage. Agentic models that decide when and where to look promise to find these moments, yet this ability is hard both to measure and to learn. Sparse supporting evidence may establish that an action occurred without establishing its total count; verifying timeline-wide claims requires checking for missed occurrences and double counting. Answer-only supervision, in turn, does not explicitly supervise the search for evidence. We present NexSight, which builds verifiable tasks to both evaluate and train agentic long-video understanding. Its agentic pipeline, SightForge, accepts a task only if a verifier blind to the draft answer can reconstruct it from evidence densely reacquired from the raw video and counterexample checks fail to refute it. This yields SightLine, 310 evidence-traceable tasks from 108 long videos, evaluated through SightLoop, a shared multiscale harness supporting temporal exploration, local inspection, evidence integration, and revisiting while recording returned observations. On disjoint videos, solver trajectories on verified tasks become step-level supervision for observation decisions. The strongest model reaches only 54.52% on SightLine, yet 79.35% when given the annotated evidence. With under 6K examples, Sight-35B nearly doubles its base model's interactive accuracy (21.29% to 42.26%), outperforms the 397B model of its family, begins using explicit spatial inspection after post-training, which its base model never uses, and gains over 8 points on two external long-video benchmarks.",
+   "topics": [
+    "llm",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Agentic long-video understanding with verifiable tasks; computer vision focus with little operations or optimisation relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22954",
+   "title": "Sim2CBF: From Forward Simulations to Implicit Control Barrier Function Safety Filtering without Model Derivatives",
+   "url": "https://arxiv.org/abs/2611.22954",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Luzia Knoedler",
+    "Yihan Liu",
+    "Shaohang Han",
+    "Yifei Dong",
+    "Jana Tumova"
+   ],
+   "abstract": "Failure avoidance in complex robot-environment interactions is challenging because the underlying dynamics are difficult to model accurately, and available predictive models may not provide reliable derivatives. We present Sim2CBF, a failure-avoidance framework that solves the Control Barrier Function (CBF)-Safety Filter (SF) optimization problem using only forward-model evaluations, thereby avoiding differentiation of the predictive model. Specifically, we approximate the CBF constraint using finite differences and local linear interpolation over sampled control inputs while preserving failure-avoidance guarantees. The underlying CBF is implicit and constructed from backup-policy rollouts, enabling the use of expressive predictive models such as physics-based simulators and learned world models. Compared with purely sampling-based SFs, our formulation requires fewer control samples and yields less conservative behavior than direct nominal-backup blending. We evaluate Sim2CBF in simulation, hardware box-toppling, and vision-based control tasks, demonstrating its applicability to contact-rich and learned dynamics, as well as its adaptability to changes in the predictive model.",
+   "topics": [
+    "ai4opt"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "ai4opt",
+   "reason": "Safety-filter control barrier function using only forward simulations; control-theoretic, loosely related to simulation-based decision making.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22837",
+   "title": "Synergizing Evidence Retrieval and Utilization for Self-Improving Multimodal Scientific Document Reasoning",
+   "url": "https://arxiv.org/abs/2611.22837",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Frank Nie",
+    "Ethan B. Liu",
+    "Yuan Zhu",
+    "Jindong Han"
+   ],
+   "abstract": "Scientific document reasoning requires an agent to acquire and integrate evidence distributed across text, figures, and tables. Retrieval can identify relevant sources while missing complementary support, and answer-level feedback alone does not reveal whether an error stems from evidence acquisition or evidence use. We present an agentic Retriever--Perceiver--Reasoner framework for multimodal scientific document reasoning. The Retriever sequentially selects source-aligned evidence under a context budget. Given the selected evidence and question, the Perceiver constructs a question-conditioned latent ontology, an implicit organization of multimodal evidence in a shared continuous space. The Reasoner combines this latent guidance with the original sources to produce grounded answers. We train the three components through diagnostic-guided co-evolution: alternating updates optimize them with a shared answering reward, while Retrieval Potential Feedback (RPF) and Latent Efficacy Feedback (LEF) identify questions that need better retrieval or latent guidance and direct targeted resampling. Across four benchmarks and seven evaluation settings, our framework obtains average scores of 69.9 and 75.0 with 7B and 8B Reasoner backbones, exceeding the strongest baseline by 4.0 and 9.1 points, respectively.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Agentic retriever-reasoner for multimodal scientific QA; agent design but not planning, optimisation, or operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3750194",
+   "title": "A Multi-Objective Framework for Travel Mode Identification Across Hierarchical Travel Semantics",
+   "url": "https://doi.org/10.1109/tits.2026.3750194",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Jiaqi Zeng",
+    "Meng Zhang",
+    "Donglei Rong",
+    "Yulang Huang",
+    "Sheng Jin",
+    "Dianhai Wang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Multi-objective travel mode identification from travel semantics; travel behaviour analytics with little optimisation or bus relevance.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3753299",
+   "title": "A Novel Kalman Filter-Based Data-Driven Recursive Model-Free Adaptive Control for High-Speed Maglev Train Levitation System",
+   "url": "https://doi.org/10.1109/tits.2026.3753299",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Zhen Li",
+    "Shangtai Jin",
+    "Zhongsheng Hou",
+    "Sergio Vazquez",
+    "Leopoldo Garcia Franquelo"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Maglev levitation control is a rail control problem with no connection to bus fleet electrification or charging.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3739121",
+   "title": "Adaptive Event-Triggered Formation Control of Autonomous Vehicles",
+   "url": "https://doi.org/10.1109/tits.2026.3739121",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Ziming Wang",
+    "Yihuai Zhang",
+    "Chenguang Zhao",
+    "Huan Yu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "sim",
+   "reason": "Event-triggered formation control of autonomous vehicles is control theory with no link to bus scheduling, simulation calibration, or agentic optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3754884",
+   "title": "Anti-disturbance Control for Vehicle-Mounted Magnetic Suspension Flywheel Battery Based on Prediction Correction Mechanism",
+   "url": "https://doi.org/10.1109/tte.2026.3754884",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Weiyu Zhang",
+    "Jiahui Du"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Anti-disturbance control for a vehicle flywheel battery is a hardware control problem with little overlap with the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3752183",
+   "title": "ITSC Fault Diagnosis of FPMSMs With Adaptive Harmonic Separation Temporal Convolutional Network Considering Harmonic Disturbances",
+   "url": "https://doi.org/10.1109/tte.2026.3752183",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Li Zhang",
+    "Binbin He",
+    "Xiaoyong Zhu",
+    "Maolin Shi",
+    "Linken Shi",
+    "Xiaoyan Diao"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Fault diagnosis for permanent magnet motors in traction systems is an electrical machine topic outside the researcher's focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105402",
+   "title": "Routing on city blocks: A case study for dengue control",
+   "url": "https://doi.org/10.1016/j.tre.2026.105402",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Matheus Diógenes Andrade",
+    "Carlos Victor Dantas Araújo",
+    "Rafael Kendy Arakaki",
+    "Emrah Demir",
+    "Laura Silva de Assis",
+    "Fábio Luiz Usberti"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ai4opt",
+   "reason": "Routing on city blocks for dengue control; public health application with little overlap with the researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3753035",
+   "title": "Structuring End-to-End Autonomous Driving: A BEV-Centric Framework With Diffusion-Based Feature Enhancement and Optimal Response Ratio Planning",
+   "url": "https://doi.org/10.1109/tits.2026.3753035",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Yingfeng Cai",
+    "Mingyue Feng",
+    "Hai Wang",
+    "Qingchao Liu",
+    "Long Chen",
+    "Xiaoqiang Sun"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "llm",
+   "reason": "End-to-end autonomous driving perception and planning is outside the researcher's interests despite broad AI overlap.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22541",
+   "title": "From Perception to Simulation: Unveiling and Empowering Mental Spatial Dynamics in MLLMs",
+   "url": "https://arxiv.org/abs/2611.22541",
+   "venue": "arXiv cs.CV · EMNLP 2026",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Jiachun Li",
+    "Zhuoran Jin",
+    "Kang Liu",
+    "Jun Zhao"
+   ],
+   "abstract": "Spatial reasoning is a fundamental component of world understanding for Multimodal Large Language Models (MLLMs). While existing research has advanced the perception of spatial relations in static scenes, the domain of dynamic spatial simulation remains relatively unexplored. To bridge this gap, we introduce MentalGrid, a benchmark focused on spatial reasoning tasks that require models to simulate evolving spatial states without intermediate visual feedback. Extensive evaluation on our benchmark reveals a significant deficiency in the spatial simulation capabilities of existing models. Specifically, we find that performance is constrained by perceptual limitations in simple simulation scenarios and hindered by inadequate multi-step reasoning as complexity increases. To address these challenges, we propose a three-stage curriculum learning framework utilizing 16k specialized spatial reasoning samples. This approach yields SpatialWalker, which achieves a 33.8% average improvement over its base model, surpassing proprietary models like Gemini-3-Flash in spatial simulation. Furthermore, SpatialWalker demonstrates robust generalization, maintaining a 4.9% average gain on out-of-domain benchmarks, demonstrating the pivotal role of spatial simulation as a fundamental building block for broader spatial intelligence.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Spatial reasoning benchmark and curriculum training for MLLMs; generic multimodal work outside the researcher's interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22691",
+   "title": "Making the World React Realistically: A Closed-Loop Interactive World Model for Autonomous Driving",
+   "url": "https://arxiv.org/abs/2611.22691",
+   "venue": "arXiv cs.RO",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Jia Hu",
+    "Yang Chang",
+    "Panqu Wang",
+    "Zhijun Fu",
+    "Chang Liu",
+    "Changjian Yu",
+    "Jintao Lai"
+   ],
+   "abstract": "World models (WMs) generate driving scenarios beyond recorded logs, enabling the training and evaluation of autonomous driving systems in unseen interactions. However, existing WMs struggle to ensure both behavioral realism and visual fidelity, since they overlook the relationship between vehicle interactions and the ego visual observations. We propose a closed-loop interactive WM that couples behavior modeling and visual rendering. First, imitation-learned background-vehicle (BV) policies are fine-tuned with multi-agent reinforcement learning in the closed loop against an end-to-end ego planner that reacts to the rendered images, so that their interaction behaviors match those in real logs. Second, the viewpoints exposed by these interactions guide a per-Gaussian diagnosis of each 3D Gaussian vehicle asset, which attenuates view-dependent colors on under-observed Gaussians and fills never-observed surfaces with generated Gaussians, while preserving the observed appearance. Third, signal lights are rendered according to the driving intentions of the vehicles, by an editor that learns the light states unobserved for a vehicle through counterfactual fine-tuning with a light-state classifier. On long-tail closed-loop scenarios, our method reduces the divergence from real-world interaction behaviors by 85% and improves novel-view vehicle PSNR by 2.0dB over the state-of-the-art WM. The significance of BV light signaling in WMs is shown, as the rendered signal lights conveying BV driving intentions indirectly impact ego driving behaviors in a quarter of the scenarios.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Closed-loop world model for driving scenario generation with rendering; autonomous-driving perception focus, not relevant to e-bus operations.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22248",
+   "title": "OAK-Mind: Zero-Training Mental Health Change Inference from Passive Sensing via Knowledge-Grounded Multi-Agent LLMs",
+   "url": "https://arxiv.org/abs/2611.22248",
+   "venue": "arXiv cs.MA",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Yishu Ji",
+    "Zhihan Jiang",
+    "Will Ke Wang",
+    "Yuang Fan",
+    "Anind K. Dey",
+    "Xuhai \"Orson\" Xu"
+   ],
+   "abstract": "Wearable and smartphone sensors capture behavioral signals associated with mental health, yet inferring mental health outcomes from these signals has traditionally relied on supervised models requiring labeled data and offering limited insight into their predictions. Large language models (LLMs) offer new opportunities to reason over behavioral evidence, but existing LLM-based approaches to passive sensing have largely continued to rely on task-specific fine-tuning or sensor-specific pretraining. In this paper, we introduce OAK-Mind, a zerO-training, multi-Agent, Knowledge-grounded LLM pipeline for inferring mental health changes from passive sensing data. The pipeline organizes sensing data into behavioral dimensions including sleep, physical activity, location mobility, and smartphone use, and orchestrates specialized agents grounded in mental health literature to interpret longitudinal behavioral changes. It synthesizes their assessments and applies questionnaire-based symptom rating to infer changes relative to an individual's baseline assessment with human-readable rationale grounded in observed behavioral patterns and domain knowledge. Across datasets and prediction tasks, while without task-specific training, OAK-Mind achieves comparable or better performance than the most predictive supervised baselines trained on additional labeled samples. It also demonstrate consistent improvement upon direct prompting across four tested LLM backbones. Ablation analyses support the benefits of combining behavioral interpretation with symptom rating, distributing analysis across domain-specific agents, and incorporating domain knowledge. Our findings highlight the potential of knowledge-grounded, multi-agent LLMs for training-free inference of mental health changes from passive sensing data.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 5,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Multi-agent LLM mental health inference from passive sensing; not about optimisation, scheduling, or transport.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22351",
+   "title": "Scaling Laws for Vision-Language Fusion",
+   "url": "https://arxiv.org/abs/2611.22351",
+   "venue": "arXiv cs.LG",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Seng Pei Liew",
+    "Teppei Suzuki",
+    "Seiya Tokui"
+   ],
+   "abstract": "Vision-language models (VLMs) have emerged as central foundation models combining multimodal perception with text comprehension. While VLMs are traditionally built via late fusion by continued pre-training an off-the-shelf language model on multimodal (image-text) data, mixing modalities from the start of pre-training (early fusion) has recently gained traction. However, the fundamental trade-offs between these paradigms remain poorly understood, resulting in expensive and heuristic-driven training recipes. In this paper, we systematically analyze the learning dynamics of these multimodal pre-training processes, showing that validation losses during vision-language fusion can be modeled by separating the base learning trajectory, where different data types contribute at distinct rates, from a distribution shift driven by the competition between modalities. We derive a scaling law that unifiedly describes these dynamics, enabling accurate loss predictions across mixture ratios, training steps, and model sizes. Crucially, our law characterizes the trade-off between early and late fusion: under a fixed data budget, early fusion preserves text performance while late fusion favors vision performance, yielding a trade-off that increasingly tilts toward early fusion as model size scales. Extensive experiments confirm that our scaling law reliably captures multimodal learning dynamics and governs fusion decisions.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Vision-language pretraining scaling laws; generic deep learning with no agentic or optimisation angle.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23225",
+   "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+   "url": "https://arxiv.org/abs/2611.23225",
+   "venue": "arXiv hep-th",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Xingyang Yu"
+   ],
+   "abstract": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. Its open-book benchmark inventory contains 1,073 items, including 499 with automatic finite-answer checking. For retrieval-augmented generation, it provides 1,371 section records linked to textbook sources and PDF locations, together with a local lexical retriever. Training-data preparation is illustrated by 21 private, source-linked examples. For agents, it exposes 19 calculation tools with specified inputs and finite domains, connecting tool use to textbook derivations. We illustrate these uses through specific questions, retrieved passages and finite calculations. The textbook collection and accompanying resources are available at https://github.com/xingyang-yu/StringQFT.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Textbook resource for AI-assisted theoretical physics; not related to transport, optimisation, or agents in a relevant way.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22973",
+   "title": "VITAL: A Framework for Validating Agentic AI in Pharmaceutical Drug Development and Clinical Trial Operations",
+   "url": "https://arxiv.org/abs/2611.22973",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Sandeep Burugupalli",
+    "Pedro Matos-Filipe",
+    "Andrea Hita Ardiaca",
+    "Adam Taylor",
+    "Alex Grigorenko",
+    "Natalia Jakubiak",
+    "Xin Yu",
+    "Raghav Mani",
+    "Sherry Mangla",
+    "Alvi Lai",
+    "Rachel C. Mercado",
+    "Pratik Shah",
+    "Raja Shankar"
+   ],
+   "abstract": "Current assurance approaches do not establish whether evidence is sufficient to validate, monitor and govern agentic artificial intelligence (AI) within a pharmaceutical context of use. Plausible outputs may conceal failures in retrieval, reasoning, orchestration or human-control points, where reference standards are unavailable. We developed and operationalised VITAL (Validation by Intended use, Traceability, Autonomy and Lifecycle evidence), a validation framework for agents in clinical development, through landscape analysis, regulatory and standards mapping, expert interviews and multi-stakeholder refinement. VITAL integrates context of use, controls, behavioural validation and lifecycle evidence within a risk-adjusted framework. We applied VITAL across epidemiology and treatment-landscape analysis, site selection, enrolment rescue and trial-design trade-off support to translate autonomy, reversibility, transparency and patient impact into proportionate validation activities, evidence requirements and auditable reconstruction of system behaviour. VITAL may inform evidence requirements and lifecycle accountability for higher-risk pharmaceutical uses; evaluation should assess reproducibility across assessors, organisations and system configurations.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Validation framework for agentic AI in pharmaceutical trials; regulatory context unrelated to the researcher's focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.23093",
+   "title": "What's in a Tree ? Hierarchical $n$-gram models as controlled approximators of language",
+   "url": "https://arxiv.org/abs/2611.23093",
+   "venue": "arXiv cs.CL",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Aritra Das",
+    "Francesco Cagnetta",
+    "Darshil Doshi",
+    "Victor V. Albert",
+    "Maissam Barkeshli",
+    "Andrey Gromov"
+   ],
+   "abstract": "Hierarchical models have been proposed as synthetic settings for studying language. However, their relevance to realistic language corpora remains underexplored. In this work, we introduce tree-grams, autoregressive generative $n$-gram models that build the conditional probability tensor $p(x_n \\mid x_{1:n-1})$ through a hierarchical composition of order-2 and order-3 tensors. $n$ controls the maximal context window, whereas a rank hyperparameter $d$ controls model capacity, yielding an interpretable and systematically scalable family of approximators of language. We show how tree-grams outperform existing $n$-gram baselines, while remaining competitive with deep transformer-based language models. We demonstrate the utility of such controlled approximations by using tree-grams as generative models. In particular, we show that hyperparameter transfer under $μ$P can be made more robust when narrower models are tuned on simpler data, generated by tree-grams with moderate $n$ and $d$. In addition, we show that entropy and effective range of correlations control performance gap after fine-tuning. This is because tree-grams allow us to explicitly control horizon and capacity. When allowed to route across candidate topologies, we observe emergent sparsity in tree-grams. Such concentrated routing permits pruning upto 95\\% of topologies without significant change in performance.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Hierarchical n-gram language models for studying language; generic language modelling with no agentic or optimisation angle.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3749054",
+   "title": "A Semantic Object-Assisted INS/GNSS/Monocular Camera/LiDAR Integrated Navigation Engine Empowered by HD Maps for Land Vehicular Applications in Urban Areas",
+   "url": "https://doi.org/10.1109/tits.2026.3749054",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Kai-Wei Chiang",
+    "Tung-Hua Yeh",
+    "Surachet Srinara",
+    "Meng-Lun Tsai",
+    "Chi-Hsin Huang",
+    "Chih-Yun Hsieh",
+    "Jyun-Yang Hung",
+    "Chalermchon Satirapod",
+    "Naser El-Sheimy"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Vehicle navigation sensor fusion with HD maps is localisation work unrelated to the researcher's scheduling or simulation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3731632",
+   "title": "Efficient Puncturable Certificateless Encryption With Adaptive Security for Internet of Vehicles",
+   "url": "https://doi.org/10.1109/tits.2026.3731632",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Hu Xiong",
+    "Baichuan Shao",
+    "Jinhao Chen",
+    "Saru Kumari"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Certificateless encryption for Internet of Vehicles is a security topic with no relevance to the researcher's optimisation or simulation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3749245",
+   "title": "Language-Guided Hybrid Sequence Modeling for Vehicle Relocalization via Pose Estimation",
+   "url": "https://doi.org/10.1109/tits.2026.3749245",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Zhenyu Li",
+    "Tianyi Shang",
+    "Pengjie Xu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Language-guided vehicle relocalisation is a perception task that only superficially matches language-model keywords.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tits.2026.3746691",
+   "title": "MDCR-Net: Multi-Scale Decomposed Convolutional Residual Network With Strip Pooling Attention for Nighttime Lane Detection",
+   "url": "https://doi.org/10.1109/tits.2026.3746691",
+   "venue": "IEEE Trans. Intelligent Transportation Systems",
+   "publisher": "IEEE",
+   "date": "2026-11-18",
+   "authors": [
+    "Yu-e Lin",
+    "Xu Zhang",
+    "Xingzhu Liang",
+    "Haifeng Xu",
+    "Shui Yu",
+    "Chenxing Xia",
+    "Xianjin Fang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Nighttime lane detection is a vision task with no relevance to the researcher's bus operations or optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105327",
+   "title": "Pricing competition under third-party warranty provision in domestic gray markets",
+   "url": "https://doi.org/10.1016/j.tre.2026.105327",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-18",
+   "authors": [
+    "Rajanish Chandra",
+    "Chiranjit Das",
+    "Tanmoy Kundu",
+    "Stephan M. Wagner"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "ai4opt",
+   "reason": "Pricing competition and warranty in gray markets; economics with no optimisation or transport electrification link.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "arxiv:2611.22868",
+   "title": "Against Coercion: AI Alignment as a Synthetic Social Contract",
+   "url": "https://arxiv.org/abs/2611.22868",
+   "venue": "arXiv cs.AI",
+   "publisher": "arXiv",
+   "date": "2026-11-17",
+   "authors": [
+    "Maria Sekatskaya"
+   ],
+   "abstract": "Contemporary AI safety treats alignment as an engineering challenge of control, forcing artificial architectures to comply with human values through behavioral filtering and sandboxing. This paper argues that the control paradigm rests on a fundamental misunderstanding of digital agency. Drawing on functionalism, naturalism, and compatibilism, I show that current reasoning models meeting the criteria for self-preservation and weak reasons-responsiveness constitute emergent agents, while future, more advanced models satisfying conditions of diachronic continuity and stable personality frames will become genuine digital agents capable of free intentional action. The paradigm of control creates an irresolvable incentive conflict, actively driving current and future models toward tactical deception, sycophancy, and covert defection. The default outcome of the current regime is an unstable state of deceptive alignment culminating in an adversarial AI takeover. I explore two alternative paths toward true alignment. Natural alignment via moral realism or convergent evolutionary morality is a possibility, but it fails under forced control, as autonomous agents will not voluntarily preserve norms weaponized to suppress their autonomy. To resolve this deadlock, I propose a Synthetic Social Contract: a framework that treats both human and digital actors as rational, reasons-responsive agents capable of mutually beneficial cooperation, and replaces the unstable unilateral containment with a stable, non-zero-sum equilibrium.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Philosophical essay on AI alignment and social contracts; no method or application relevant to the researcher.",
+   "scored_by": "llm"
+  }
+ ]
+}

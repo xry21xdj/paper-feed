@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-18</h2>
-  <span class="meta">20 relevant of 149 screened · 23337 new papers fetched</span>
+  <h2>Today · 2026-11-19</h2>
+  <span class="meta">12 relevant of 73 screened · 23058 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">20</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">2</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">11</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">6</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">12</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">6</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,264 +107,156 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-16" data-venue="arXiv eess.SY"
-           data-text="probabilistic power estimation and mpc-based scheduling of construction electric vehicles supported by mobile charging stations shubhan mital avik ghosh daniela rojas sujit dey yuanyuan shi arxiv eess.sy">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-18" data-venue="Transportation Research Part E"
+           data-text="joint routing and recharging optimization for electric commercial vehicles with power bank vans jie wei zilu wang zhibin chen jiangang jin transportation research part e">
     <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.20392" target="_blank" rel="noopener">Probabilistic Power Estimation and MPC-based Scheduling of Construction Electric Vehicles Supported by Mobile Charging Stations</a></h3>
-<div class="by">Shubhan Mital, Avik Ghosh, Daniela Rojas, Sujit Dey et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-16</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">MILP scheduling of construction EVs with mobile charging stations under MPC with uncertainty, directly matching electrified fleet scheduling and charging optimisation.</p>
-      <details><summary>Abstract</summary><p>The adoption of construction electric vehicles (CEVs) is held back by sparse on-site charging infrastructure, limited mobility, and insufficient knowledge of their power consumption. Mobile charging stations (MCSs) towed between grid connection points and construction sites address the first barrier, yet scheduling them optimally requires an accurate estimate of the CEV power consumption. In this paper, we address these gaps, first, by estimating the power of each subactivity of a representative CEV (a compact electric excavator) based on real-world construction demonstration data. We use Bayesian linear regression to obtain the subactivity power distributions, accounting for their operational uncertainty. Second, we formulate a mixed-integer program that jointly schedules CEV work and charging together with MCS routing, charging, and discharging, optimizing electricity costs, carbon emissions, work completion, and MCS travel. We embed the optimizer in a shrinking-horizon model predictive control (MPC) loop to perform real-time control on the CEV-MCS system. Two MPC variants, one a certainty-equivalent MPC (CE-MPC) controller, and the other a scenario-based MPC (SB-MPC) controller, are compared in closed-loop against an open-loop day-ahead schedule. Realistic simulations show that SB-MPC performs the best, lowering the operating costs by $60.2\%$ relative to the open-loop baseline, and by $23.3\%$ relative to CE-MPC, demonstrating the efficacy of incorporating predictive control with feedback. The code is available at https://github.com/Shubhanflash22/CEV-MCS-MPC-Joint-Scheduling</p></details>
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105392" target="_blank" rel="noopener">Joint routing and recharging optimization for electric commercial vehicles with power bank vans</a></h3>
+<div class="by">Jie Wei, Zilu Wang, Zhibin Chen, Jiangang Jin</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part E</span><span class="by">2026-11-18</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Joint routing and recharging optimisation for electric commercial vehicles with power bank vans; directly on EV charging-routing problems.</p>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-17" data-venue="arXiv eess.SY"
-           data-text="grid-responsive pricing of dynamic wireless charging with coupled residential demand zhiheng wang dipanjan ghose s. sivaranjani junjie qin qin lv arxiv eess.sy">
-    <div class="score s-hi" title="Relevance 8/10">8</div>
+  <article class="card" data-topic="grid" data-score="9" data-date="2026-11-18" data-venue="eTransportation"
+           data-text="towards a renewable energy-driven, self-sufficient expressway energy system: optimizing integrated pv-bess-charging infrastructure in service areas xiaoxi gao chunying li xiao sun yuqin wang tao zhang xiaohua liu li zhang haida tang etransportation">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22197" target="_blank" rel="noopener">Grid-Responsive Pricing of Dynamic Wireless Charging with Coupled Residential Demand</a></h3>
-<div class="by">Zhiheng Wang, Dipanjan Ghose, S. Sivaranjani, Junjie Qin et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Jointly prices dynamic wireless charging for EVs with residential charging displacement and feeder loading via MPC; directly on transport-grid integration.</p>
-      <details><summary>Abstract</summary><p>Dynamic wireless charging (DWC) is an emerging technology that enables electric vehicles (EVs) to recharge while traveling. Its unique operational model creates two revenue streams for DWC operators through lane access tolls and electricity sales. However, these prices influence not only traffic flow and roadway energy delivery but also how much EV charging moves to homes instead, potentially within the same distribution network. Neglecting this coupling can underestimate grid loading and compromise pricing decisions. We develop a coupled traffic, EV energy, driver-response, and AC distribution network model with a model predictive control (MPC) framework that jointly optimizes DWC tolls and charging prices while explicitly accounting for displaced residential charging and network losses. Using 78 days of I-210 West traffic data, we show that conventional MPC exceeds feeder loading limits on 52 days, whereas the proposed residential load aware controller eliminates these violations with only 0.6% lower operator revenue. Under a more constrained feeder configuration, it eliminates 50 overloaded days with a 0.9% revenue reduction. Sensitivity analyses highlight the importance of accurate residential demand estimation and feeder loss modeling, while peak-aware pricing further reduces daily peak loading by 3.7% relative to the base load. These results demonstrate the value of coordinated pricing that captures the interaction between roadway and residential charging.</p></details>
+      <h3><a href="https://doi.org/10.1016/j.etran.2026.100654" target="_blank" rel="noopener">Towards a Renewable Energy-Driven, Self-Sufficient Expressway Energy System: Optimizing Integrated PV-BESS-Charging Infrastructure in Service Areas</a></h3>
+<div class="by">Xiaoxi Gao, Chunying Li, Xiao Sun, Yuqin Wang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>eTransportation</span><span class="by">2026-11-18</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Optimises PV, battery storage and charging infrastructure at expressway service areas, directly on charging and grid integration for transport.</p>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-16" data-venue="arXiv cs.AI"
-           data-text="agent-guided configuration tuning for smt solvers cong wang qiaoyi zheng zhaoguo wang fan long arxiv cs.ai">
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-18" data-venue="Computers &amp; Operations Research"
+           data-text="predicting the solution cost of vehicle routing problems with time windows leandro c. coelho gilbert laporte jacques renaud computers &amp; operations research">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.20484" target="_blank" rel="noopener">Agent-Guided Configuration Tuning for SMT Solvers</a></h3>
-<div class="by">Cong Wang, Qiaoyi Zheng, Zhaoguo Wang, Fan Long</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.cor.2026.107739" target="_blank" rel="noopener">Predicting the solution cost of vehicle routing problems with time windows</a></h3>
+<div class="by">Leandro C. Coelho, Gilbert Laporte, Jacques Renaud</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Computers &amp; Operations Research</span><span class="by">2026-11-18</span>
+<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Predicting solution cost of VRPTW with learning; ML for combinatorial routing that could inform learning-augmented exact methods.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.MA"
+           data-text="groups of ai agents underuse resources despite shared evidence of increased capacity takahiro ezaki naoto imura katsuhiro nishinari arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22632" target="_blank" rel="noopener">Groups of AI agents underuse resources despite shared evidence of increased capacity</a></h3>
+<div class="by">Takahiro Ezaki, Naoto Imura, Katsuhiro Nishinari</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-16</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">LLM agents tuning solver configurations with experiment records and a deterministic harness; agents running optimisation pipelines.</p>
-      <details><summary>Abstract</summary><p>SMT solvers expose many configuration choices that determine how well their existing algorithms perform on a workload. We present, to our knowledge, the first workflow that uses general-purpose LLM agents to tune SMT solver configurations. Agents read solver documentation, source code, and persistent experiment records to propose option changes, and a deterministic harness measures each proposal, validates the returned models, and selects changes separately for each competition Division. Over roughly nine weeks, our tuning campaign recorded 4,545 proposals for cvc5 across 13 Divisions and 36 logics. We evaluate the tuned configurations on the 2026 and 2025 SMT-COMP ModelValidation benchmarks under a 24-second cutoff. On problems not used for training, they validate more problems than official cvc5 in ten of the 13 Divisions in 2026 and in eight in 2025, with geometric-mean gains of 7.8% and 6.8% across Divisions. On the complete official selections, which include training problems, the tuned floating-point counts exceed those of every individual competition participant in both years. Further studies show how configuration changes make existing algorithms effective by changing access to strategies, scheduling, and option compatibility, and how benchmark families trade off against one another. The agents&#39; experiment traces contain hypothesis-based proposals in every tuning group, and 64.3% of the extracted hypotheses draw on prior measurements. These results show that agent-guided tuning can specialize a mature SMT solver and that accumulated experimental evidence informs sustained search.</p></details>
+      <p class="reason">LLM agents sharing limited server capacity and status information under deadlines, a multi-agent resource allocation setting relevant to agentic operational decisions.</p>
+      <details><summary>Abstract</summary><p>When AI agents share limited resources, such as computing services or public infrastructure, their individual choices affect how much work they complete as a group. Can sharing evidence of what is available let a group make full use of its resources after capacity changes? We tested this with language-model agents choosing between two simulated servers. One server recovered while its status report still listed it as unavailable. Each server had limited capacity per round, so rejected jobs required another attempt before the deadline. Telling agents that recovery was possible reduced missed deadlines. In controlled tests with Anthropic&#39;s Claude Haiku 5.5, no agent tried the recovered server after a rule reminder, yet all chose it when shown a successful request record. After sharing, all five models tested left capacity unused. Keeping the success record fixed, we gave agents numbers without instructions, using each value equally often but giving group members either identical or distinct numbers. With OpenAI&#39;s GPT-6.1 Sol or Google&#39;s Gemini 3.5 Flash-Lite, distinct numbers spread simultaneous requests across servers and increased job completions even though overall choice frequencies barely changed. Telling AI agents which resources are available leaves a second design challenge: helping them spread demand across those resources.</p></details>
     </div>
   </article>
   <article class="card" data-topic="grid" data-score="7" data-date="2026-11-17" data-venue="arXiv eess.SY"
-           data-text="an explainable agentic ai framework for distribution system load restoration s. m. monzurul hoque chowdhury qinghua li arxiv eess.sy">
+           data-text="optimal energy and llm task scheduling for multiple cloud data centers zhongqi zhao lei fan zhu han arxiv eess.sy">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22016" target="_blank" rel="noopener">An Explainable Agentic AI Framework for Distribution System Load Restoration</a></h3>
-<div class="by">S. M. Monzurul Hoque Chowdhury, Qinghua Li</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22242" target="_blank" rel="noopener">Optimal Energy and LLM Task Scheduling for Multiple Cloud Data Centers</a></h3>
+<div class="by">Zhongqi Zhao, Lei Fan, Zhu Han</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
         <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
 <span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Multi-LLM agentic framework for distribution system load restoration with AC power-flow checks; operational decisions in power systems, close to grid and agentic interests.</p>
-      <details><summary>Abstract</summary><p>Distribution system load restoration is a sequential decision-making problem in which restoration actions must maximize served load, prioritize critical loads, and preserve power-flow feasibility. This paper proposes an explainable agentic artificial intelligence (AI) framework for distribution system load restoration. The proposed framework uses multiple large language model (LLM) agents for planner guidance, strategic plan generation, decision arbitration, memory-based feedback, and explanation generation. Unlike unconstrained LLM-based control, the proposed method restricts agent decisions to feasible restoration actions and evaluates all candidate plans using deterministic AC power-flow feasibility checks. The framework is evaluated on IEEE 33-bus and 69-bus distribution feeders, as well as a larger IEEE 118-bus test case, and compared against reinforcement learning and planning baselines. The results show that the proposed agentic framework achieves better restoration performance while producing structured explanations for operator-facing decision support. A direct comparison with a Single-LLM-Agent baseline further shows that the proposed multi-agent decomposition improves weighted restored load and critical-load recovery compared with a monolithic LLM decision structure.</p></details>
+      <p class="reason">MILP scheduling of LLM training tasks with data center energy and facility operation; a close optimisation-plus-energy formulation, though not transport.</p>
+      <details><summary>Abstract</summary><p>This paper studies coordinated Large Language Model (LLM) training-task scheduling and facility operation for geographically distributed cloud data centers (CDCs). The central question is how two scheduling flexibilities - cross-CDC task transfer and task reordering - affect service and economic outcomes when remote execution remains subject to compute, bandwidth, energy, and zone-temperature constraints. We formulate a mixed-integer optimization model that jointly determines task outcomes, heterogeneous-node assignment, execution timing, pre-execution data transfer, node activation, and facility operation. A deterministic 24-hour case study contains 3 CDCs, 15 heterogeneous graphics processing unit (GPU) nodes, 4 thermal zones per CDC, and 103 tasks. In this instance, enabling transfer increases net profit by 57.9% relative to the otherwise matched no-transfer variant and increases completed tasks from 76 to 103. The more restrictive no-transfer FIFO-prefix variant completes 14 tasks and yields negative profit. The proposed schedule transfers 39 tasks, achieves 70.3% node utilization, and maintains zone temperatures within 24°C-27°C. These fixed-instance results indicate that cross-CDC transfer and task-reordering flexibility can improve the modeled profit and task-completion outcomes under the studied conditions.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-15" data-venue="arXiv eess.SY"
-           data-text="consensus-based economic dispatch for self-organized local energy communities dimitrios lagos josh eichman georgios tsaousoglou arxiv eess.sy">
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.CL"
+           data-text="when do typed decision models work in transportation? evidence from travel choice and traffic signal control hongyang zhang boyuan deng siyuan feng kai chen junbo zhang arxiv cs.cl">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.20070" target="_blank" rel="noopener">Consensus-based Economic Dispatch for Self-organized Local Energy Communities</a></h3>
-<div class="by">Dimitrios Lagos, Josh Eichman, Georgios Tsaousoglou</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22926" target="_blank" rel="noopener">When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control</a></h3>
+<div class="by">Hongyang Zhang, Boyuan Deng, Siyuan Feng, Kai Chen et al.</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-15</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Decentralised voltage-constrained economic dispatch for local energy communities with learned voltage surrogate; relevant to DER and distribution-network coordination.</p>
-      <details><summary>Abstract</summary><p>The increasing penetration of distributed energy resources (DERs) is transforming traditional distribution networks into dynamic, decentralized systems, creating a pressing need for scalable, autonomous coordination mechanisms that do not rely on centralized control or full system observability. In particular, local energy communities need to self-organize and coordinate energy schedules while respecting network constraints, especially voltage limits, despite lacking detailed knowledge of the distribution grid&#39;s topology and parameters. Existing distributed optimization approaches either neglect such physical constraints or assume perfect knowledge of the network model. This paper addresses the Voltage-Constrained Economic Dispatch (VCED) problem in a fully decentralized, consensus-based manner, without any coordinating entity. We use sparse-group LASSO regression to learn a linear surrogate of nodal voltages from local power and voltage measurements alone. The surrogate serves a dual purpose: it enters each agent&#39;s local problem as a voltage penalty and induces the communication graph over which the agents reach consensus. We provide a theoretical bound on the optimality loss caused by the surrogate voltage estimator inaccuracy. Our numerical results, on an IEEE-33 network, show that the scheme reduces the share of bus-timesteps voltage violations from 30\% to below 3\%, while staying within 1\% of a centralized benchmark computed with full network knowledge. We further quantify how the sparsity of the communication graph affects both the optimality gap and the residual violations.</p></details>
+        <span>arXiv cs.CL</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Evaluates typed LLM decision models for travel mode choice and traffic signal control; directly transport decision-making with RL baselines.</p>
+      <details><summary>Abstract</summary><p>Typed decision models combine natural-language understanding with a structured interface that returns a selected action and an option-level probability distribution without generating lengthy textual responses. Their low inference cost and response latency make them attractive for transportation problems with predefined alternatives. This paper investigates their effectiveness, robustness, and efficiency in two representative transportation tasks: individual travel-mode choice prediction and sequential traffic signal control. We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions against conventional transportation methods, reinforcement learning algorithms, and four chat-based large language models. Experiments on the Swissmetro dataset show that typed decision models achieve lower prediction accuracy than traditional discrete choice models and the strongest chat-based baseline, while their performance varies substantially with input representation and question framing. In closed-loop traffic signal control experiments, typed decision models demonstrate competitive performance against established controllers in several scenarios, but exhibit performance degradation under more challenging network conditions. Furthermore, the typed models achieve lower inference latency and computational cost than the evaluated chat-based large language models, highlighting their potential for efficient, zero-shot transportation decision-making. Overall, these findings demonstrate both the potential and limitations of typed decision models, emphasizing the importance of input design, task characteristics, and robustness evaluation for their effective application in transportation systems.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-15" data-venue="arXiv eess.SY"
-           data-text="the grid&#39;s own language: a common information model layer for llm grid assistants antonio alcántara ioannis karampinis spyros chatzivasileiadis arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.20026" target="_blank" rel="noopener">The Grid&#39;s Own Language: A Common Information Model Layer for LLM Grid Assistants</a></h3>
-<div class="by">Antonio Alcántara, Ioannis Karampinis, Spyros Chatzivasileiadis</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-15</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">CIM information layer for LLM grid assistants in power-system operation with solver-verified answers; relevant to grid-facing agentic tools.</p>
-      <details><summary>Abstract</summary><p>Assistants built on large language models (LLMs) are entering power system operation. Current designs delegate computations to validated solvers, but the agent still infers the type, role and state of each element from its name and tool-specific formats, and errors propagate to every study. The Common Information Model (CIM), the IEC standard in which operators already exchange network models, defines unambiguously what each element is and how it connects. We propose a CIM layer for LLM grid assistants and implement it in CONDUCTOR, an open-source assistant. Both the agent and its power-system studies read the layer. It labels the provenance of each fact (stated in the data, suggested only by a name, or inferred from topology), loads operators&#39; CGMES models directly, and builds in $\leq$1\,s on the 9,241-bus PEGASE network. Deterministic checks compare every answer with solver results and the layer. On 37 tasks about the CIGRE medium-voltage and IEEE 30-bus networks, the agent gets right 97\,\% of the graded facts with the layer, such as a unit&#39;s energy source or a switch&#39;s normal state, against 55\,\% without it. We argue that a CIM layer should be a default component of grid assistants.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv eess.SY"
-           data-text="ai agents executing an rms and emt ride-through workflow on a 2,000-bus synthetic texas grid: a case study with open-source tools tam kemabonta brighton ombuki vladimir abdelnour arxiv eess.sy">
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-18" data-venue="Transportation Science"
+           data-text="the meal delivery routing problem with courier behavior and graph neural networks niels de jong ilke bakir kees jan roodbergen transportation science">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22167" target="_blank" rel="noopener">AI Agents Executing an RMS and EMT Ride-Through Workflow on a 2,000-Bus Synthetic Texas Grid: A Case Study with Open-Source Tools</a></h3>
-<div class="by">Tam Kemabonta, Brighton Ombuki, Vladimir Abdelnour</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">AI agents execute a power-grid ride-through simulation workflow with open-source tools; agentic simulation pipeline relevant to the researcher, though in power systems.</p>
-      <details><summary>Abstract</summary><p>This paper reports a case study of engineer-supervised AI agents executing a predefined RMS and EMT ride-through workflow on the 2,000-bus ACTIVSg2000 synthetic Texas grid with open-source tools. The test case is a 133 MW battery with a co-located 130 MW data-center load, assessed against ride-through criteria fixed before simulation and for loss of synchronism elsewhere in the grid. One agent ran 44 RMS cases and 15 without-project comparisons in ANDES; the other ran a 220-row EMT intake bench and an 84-row system study in DPsim and ParaEMT on a Kron-reduced area. Across the 44 RMS cases, 127 criterion cells fail, including loss of synchronism in all 44. Two findings concern the project plant. The battery keeps absorbing reactive power during sags on the light-load schedule (B3, as low as -19.8 Mvar on S4 T1), and the data-center load returns only at 5.00-5.56 s after long bolted faults (L3), which misses the ERCOT load-return requirement. In 13 of the 15 comparisons, which the authors selected after slips or speed-gate stops, the same machines slip without the project; the other 29 runs have no without-project comparison. RMS and EMT values differ in network, plant model, controls, operating point, and base, and so they are reported as separate, unaligned observations. The paper reports the errors the authors identified in the agent logs, 63 author messages, and 3.8 days from agent start to the integrated study report. The agents executed and documented the predefined ride-through and stability workflow, which covers one part of an interconnection study.</p></details>
+      <h3><a href="https://doi.org/10.1287/trsc.2025.0133" target="_blank" rel="noopener">The Meal Delivery Routing Problem with Courier Behavior and Graph Neural Networks</a></h3>
+<div class="by">Niels de Jong, Ilke Bakir, Kees Jan Roodbergen</div>      <div class="venue">
+        <span class="pub informs">INFORMS</span>
+        <span>Transportation Science</span><span class="by">2026-11-18</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">GNN-guided cost function approximation with RL training for courier dispatch simulation; relevant learned dispatching and simulation methods.</p>
     </div>
   </article>
   <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
-           data-text="atlas-finance: benchmarking ai agents in realistic banking environments elaine lau antoine pangas alexandre finot collin schweiker amir bouzidi hui wen goh andrew peter martin jonas mueller arxiv cs.ai">
+           data-text="crossenv: synthesizing verifiable cross-environment tasks for long-horizon agent training zhengfeng yu tian lan zhijing wu enbo zhao xuannan liu feihu jiang qianghuai jia longyue wang zhao xu weihua luo xian-ling mao arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22085" target="_blank" rel="noopener">ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments</a></h3>
-<div class="by">Elaine Lau, Antoine Pangas, Alexandre Finot, Collin Schweiker et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22777" target="_blank" rel="noopener">CrossEnv: Synthesizing Verifiable Cross-Environment Tasks for Long-Horizon Agent Training</a></h3>
+<div class="by">Zhengfeng Yu, Tian Lan, Zhijing Wu, Enbo Zhao et al.</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
         <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Benchmarks frontier agents on multi-step financial modelling across tool environments; relevant as an agent evaluation study, though not transport or optimisation.</p>
-      <details><summary>Abstract</summary><p>Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform economically valuable work in such settings, we introduce ATLAS-Finance, a benchmark of 100 end-to-end investment-banking tasks across 13 simulated firms. As in real banking workflows, agents must search email, chat, calendars, notes, and files to identify requirements, gather information, reconcile conflicts/updates, and then build complex financial models. Tasks were developed by experienced bankers based on their real deal work and take them 15-30 hours to complete. Agent deliverables are evaluated with expert-authored rubrics (median: 124.5 criteria) covering financial rationale and results, spreadsheet construction, completeness, and formatting. Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today&#39;s frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks.</p></details>
+      <p class="reason">Synthesizes verifiable cross-environment tool-use tasks for training long-horizon LLM agents; agentic but not about optimisation or transport.</p>
+      <details><summary>Abstract</summary><p>Executable synthetic environments provide scalable training tasks and verifiable feedback for long-horizon agents. Existing environment synthesis methods primarily generate tasks within individual environments. However, these tasks do not adequately capture real-world interactions across services, where actions in one service depend on information obtained from another. Synthesizing such tasks is challenging because data generated across environments must remain consistent to support executable and verifiable interactions. To address this challenge, we introduce CrossEnv, a framework that uses an entity-tool graph to identify connections between environments and aligns task-specific data to synthesize executable, verifiable cross-environment tasks. We further propose CrossEnv-Curriculum, which progresses from single-environment tool use to coordination across more environments and business domains, before introducing user interaction. Across four external benchmarks, combining cross-environment training data with this curriculum achieves competitive performance with fewer training examples. Further analyses support the benefits of cross-environment data and curriculum training, and provide evidence of transfer to new environment combinations, external tasks less similar to the training data, and longer workflows.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.AI"
-           data-text="discoveryagent: a framework for scientist-centric agentic ai owen queen ioana ciuca emma dann jean somalwar carine you steven dillmann viraj manwadkar evan gorrell harrison g zhang jonathan k pritchard risa h wechsler james zou arxiv cs.ai">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="harnesses that improve themselves: a unifying framework for self-improving agent harnesses deep shah nehal kathrotia arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.21950" target="_blank" rel="noopener">DiscoveryAgent: A Framework for Scientist-centric Agentic AI</a></h3>
-<div class="by">Owen Queen, Ioana Ciuca, Emma Dann, Jean Somalwar et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22299" target="_blank" rel="noopener">Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses</a></h3>
+<div class="by">Deep Shah, Nehal Kathrotia</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-16</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Scientist-steered agentic research framework with audit agents; relevant agent oversight design, though not optimisation or transport.</p>
-      <details><summary>Abstract</summary><p>AI agents can assist scientific research, but balancing autonomous investigation with scientists&#39; ability to inspect and redirect ongoing work remains a central design challenge. We present DiscoveryAgent, a domain-agnostic, scientist-centric system that combines autonomous investigation with scientist-directed hypothesis steering. Scientists select, refine, or replace hypotheses between research rounds, while audit agents interrogate checkpointed records to trace claims, reproduce analyses, and inform subsequent decisions. Across two predictive modeling tasks, DiscoveryAgent produced the best variable-star classifier among evaluated baselines and, with scientist steering, a protein variant-effect predictor surpassed by only one of 106 ProteinGym baselines. We develop a rigorous checkpointing system that enables highly capable audit agents, a scalable form of oversight for agentic research. Audit agents autonomously identify errors at higher rates than previous AI scientist agents, and scientists collaborating with audit agents identify 14x more valid errors versus scientists performing manual review. In three case studies led by domain experts across physical science, social science, and life science, we developed a multimodal photometric-redshift estimator that resolves complementary failures of images and photometry, achieving 0.971 AUROC for low-redshift classification; documented an 83% rise in Florida homeowners-insurance premiums from 2013 to 2023, with a growing, regressive burden; and identified CD4+ T-cell relay genes, which both receive and exert broad transcriptional regulation, enriched for autoimmune disease associations. Together, these results show how autonomous research can expand scientists&#39; empirical reach while centering their authority over research direction and their ability to understand and challenge the evidence.</p></details>
+      <p class="reason">Self-improving agent harnesses that diagnose and patch their own runtime; relevant agent engineering background with evaluation of reliability.</p>
+      <details><summary>Abstract</summary><p>Whether a foundation model succeeds as an autonomous agent depends as much on its runtime software as on its weights. This runtime, the agent harness, manages context and memory, steers multi-turn control, executes tool actions in sandboxes, and verifies work before stopping. Because models differ in how they use tools and how they fail, a static harness tuned for one model or task often stalls, wastes tokens, or regresses on another. This bottleneck has driven a shift from prompt tuning to self-improving agent harnesses: systems that inspect their own execution traces, separate runtime bugs from model limits, and rewrite their own code. We present a unifying architectural and design framework for self-improving agent harnesses. The framework pairs four editable runtime components (context and state, agent control, action interfaces, and verification and recovery) with a four-stage loop that diagnoses failures, proposes code patches, validates candidates, and deploys updates. Using this framework, we show how optimizers trace errors across long trajectories and discover reusable runtime mechanisms such as pre-stop verifiers, loop breakers, and persistent memory. We further show why full-harness rewrites overfit or break across modules, and how modular updates with validation gates generalize across models while bounding token cost. To keep self-modification safe, we establish practical defenses against recurring failure modes including prompt bloat, benchmark gaming, and evaluator tampering. Finally, experiments on SWE-bench Lite validate this framework, showing that gated modular evolution outperforms prompt reflection and full-harness rewrites across models and repositories at a fraction of the token cost.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.AI"
-           data-text="grace: parallel best-of-n multi-agent analysis of closed-form questions over dataframes with guardrail selection and adaptive retry fabio picariello salvatore cipolla susanna bonura vito morreale arxiv cs.ai">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AR"
+           data-text="pvtsizing 2.0: a fast and reliable analog circuit sizing operator for agentic eda workflows zichen kong minghuan song xiyuan tang ziming wei yi zhong yuan wang arxiv cs.ar">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.20983" target="_blank" rel="noopener">GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry</a></h3>
-<div class="by">Fabio Picariello, Salvatore Cipolla, Susanna Bonura, Vito Morreale</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22328" target="_blank" rel="noopener">PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows</a></h3>
+<div class="by">Zichen Kong, Minghuan Song, Xiyuan Tang, Ziming Wei et al.</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-16</span>
+        <span>arXiv cs.AR</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Parallel best-of-N multi-agent code generation with guardrail selection and adaptive retry for dataframe analysis; relevant agent selection design.</p>
-      <details><summary>Abstract</summary><p>LLM agents answer closed-form questions over a tabular dataframe by writing and executing Python, almost always as a single rollout: one interpretation, one script, one result, accepted without comparison. The few pipelines that produce several candidates reconcile them by answer-agreement voting, which needs a single comparable scalar and always returns one, even when every candidate is wrong. We present GRACE (Generative, Ranked, Adaptive Code Ensemble), a production-oriented pipeline that instead runs parallel best-of-N selection specialised to dataframe code. N agents run concurrently under a strict, machine-checkable output contract, diversified by persona hints, per-retry rotation, and a two-regime temperature schedule. Rather than vote, GRACE judges the executed artefacts: a pairwise tournament pre-filters the pool and a domain-specialised guardrail either selects the best candidate or, when none is defensible, rejects the whole pool and abstains with a diagnosis (an option voting structurally lacks), which in turn drives an adaptive retry with per-agent feedback. On InfiAgent-DABench (DAEval, M = 246), using Qwen3.6-35B-A3B as the backbone, GRACE raises answer match from 39% for a single-rollout baseline to 71% (+32 pp, 1.8x), recovering 53% of previously wrong answers. On the same DAEval task, the smaller dense Qwen3.5-9B lifts answer match from 38% to 63% (+25 pp, 1.7x). A controlled 3 x 3 study that sweeps the number of parallel agents against the retry budget finds, on the 35B backbone, the two levers largely substitutable: once either one is generous, the other adds little, identifying a cheap operating point for deployment. The same directional pattern replicates on the independent DataBench benchmark, again on the Qwen3.6-35B-A3B backbone, where answer match rises by 15 percentage points (from 70% to 85%) across 400 sampled questions.</p></details>
+      <p class="reason">LLM-adviser plus numerical optimizer for analog circuit sizing across PVT corners; an agentic human-in-loop optimisation workflow, though in a different domain.</p>
+      <details><summary>Abstract</summary><p>Analog circuit design automation requires both coordinated tool execution and efficient numerical search. Large language models (LLMs) offer new ways to organize tool execution, but finding one sizing that satisfies specifications across process, voltage, and temperature (PVT) corners remains costly. PVTSizing 2.0 addresses these needs through a human-agent workflow built around an independently usable numerical optimizer. An agent carries the designer&#39;s approved task through execution and result review. The optimizer reduces unnecessary training through loss-guided updates and uses critic-guided local refinement to explore additional candidates while accounting for cross-corner conflicts. An optional LLM adviser supplies parameter relationships to focus numerical search on circuit-informed directions, while the optimizer selects adjustment amplitudes and verifies their effects through simulation. Across four circuit benchmarks, the standalone optimizer completes all 40 runs and achieves a 7.3x speedup in overall mean runtime over the original PVTSizing, with a comparable mean sample count. In a separate study, the best tested knowledge-injection configuration further reduces mean runtime by 39.9% and simulation samples by 35.4% relative to the standalone optimizer.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.AI"
-           data-text="multi-llm agentic ai at the edge: joint agent scheduling and resource allocation yuanyan song kezhi wang xinmian xu yongmin li arxiv cs.ai">
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.LG"
+           data-text="pareto-informed smart &#34;predict, then optimize&#34; for multi-objective combinatorial problems aabhash dhakal tim lachner arxiv cs.lg">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.20915" target="_blank" rel="noopener">Multi-LLM Agentic AI at the Edge: Joint Agent Scheduling and Resource Allocation</a></h3>
-<div class="by">Yuanyan Song, Kezhi Wang, Xinmian Xu, Yongmin Li</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-16</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Multi-LLM agent scheduling with resource allocation and optimisation (AO, SCA, Gale-Shapley) at the edge; agentic and optimisation-based but not transport-focused.</p>
-      <details><summary>Abstract</summary><p>In this paper, an edge-enabled multi-large language model (LLM) agentic AI architecture is proposed, where one supervisor AI agent and multiple worker AI agents cooperatively execute users&#39; requests at the edge. The supervisor AI agent decouples the user request into a series of sub-tasks and dynamically dispatches them to LLM-equipped worker AI agents via two agentic workflows, i.e., parallel and serial workflows, with a two-level retry mechanism to enhance execution reliability. To prolong the service duration of worker AI agents, the energy minimization problems are formulated by jointly considering AI agent selection and resource allocation, subject to task execution latency and quality of service (QoS) constraints. A resource allocation scheme based on alternating optimization (AO) is proposed. Specifically, for the parallel workflow, the scheme decouples the original problem into bandwidth allocation, retrieval selection and AI agent selection sub-problems, which are iteratively solved by the proposed successive convex approximation (SCA), Lagrangian relaxation (LR), and Gale-Shapley (GS) or LLM-based algorithms, respectively. For the serial workflow, the problem is similarly decoupled into service time allocation, retrieval selection and AI agent selection sub-problems; the optimal service time allocation is obtained via Karush-Kuhn-Tucker (KKT) conditions, while the latter two sub-problems are addressed by extending the proposed algorithms to the serial scenario. Simulation results show that the proposed resource allocation scheme can reduce system energy consumption compared with other benchmarks, while experiments on a multi-LLM agentic AI system based on Qwen and Llama demonstrate improved task execution success rates.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-17" data-venue="arXiv eess.SY"
-           data-text="safely mitigating grid imbalance: a hybrid distributional wide-margin recourse approach shoaib hussain mostafa farrokhabadi hamidreza zareipour arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.22220" target="_blank" rel="noopener">Safely Mitigating Grid Imbalance: A Hybrid Distributional Wide-Margin Recourse Approach</a></h3>
-<div class="by">Shoaib Hussain, Mostafa Farrokhabadi, Hamidreza Zareipour</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Safe RL for grid imbalance mitigation with soft open points in distribution networks; relevant to grid flexibility and RL for dispatch.</p>
-      <details><summary>Abstract</summary><p>This paper proposes the Multi-Agent Distributional Wide-Margin Policy Gradient (MADWMPG) framework: a dual-policy hybrid imitation and safe reinforcement learning (IL-SRL) method designed for safely mitigating grid imbalance in multiphase active distribution networks with distributed soft open points (SOPs). The framework comprises a wide-margin constraint barrier recourse (WCBR) module that seeks the maximal separation of constraint-compliant and unsafe actions and learns to proactively suppress exploratory violations. The framework addresses operational volatility using a novel adaptation of noncrossing quantile regression (NQR) distributional critics that track the complete distribution of policy returns. The set of behavior and recourse policies integrates an instantaneous physics-based and differentiable action projection mechanism that generates SOP constraint-compliant actions without relying on active learning. Policy safety is made responsive using an enhancement of conventional experience replay, and the safety performance of the framework is supported by probabilistic bounds derived in the paper. The proposed framework was trained and tested on a modified multiphase IEEE 123-bus test feeder. Results demonstrate its superiority to conventional reinforcement learning and SRL methods and show that it is highly competitive against the nonlinear AC optimal power flow.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.SE"
-           data-text="scientific coding with large language models: evidence from finite element analysis erfan hamdi joel shor emma lejeune arxiv cs.se">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.21176" target="_blank" rel="noopener">Scientific Coding with Large Language Models: Evidence from Finite Element Analysis</a></h3>
-<div class="by">Erfan Hamdi, Joel Shor, Emma Lejeune</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.SE</span><span class="by">2026-11-16</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Evaluates LLM agents writing and self-verifying scientific simulation code with execution feedback, relevant to agents running simulation pipelines and reliability.</p>
-      <details><summary>Abstract</summary><p>Large language models (LLMs) offer a potential route to automating scientific programming, but their usefulness depends on consistently producing numerically correct code. We extend FEM-Bench to 17 finite element tasks involving nonlinear and history-dependent mechanics and structural dynamics, and evaluate 15 models on implementation and test generation without execution feedback. The best model succeeds in 87.1% of single-pass implementation trials, but rankings differ between tracks. The leading implementer achieves 49.9% joint test success, while the leading tester reaches 82.6%. For six models, we compare single-pass generation with two agentic harnesses that allow code execution and revision. Agentic execution solves some tasks that never succeeded in single-pass trials and improves consistency on others, but gains vary across models and harnesses, and regressions also occur. Claude Opus 5 with SimpleAgent reaches 96.5% Pass@3, the probability of at least one success in three attempts, but 77.1% Pass$^3$, the probability that all three succeed. No model-harness combination exceeds 78.8% Pass$^3$. To understand why agents submit incorrect code after passing their own checks, we analyze 249 failed agentic trajectories and identify six categories of self-verification failure. The most common are inadequate test coverage (73.1%) and reliance on generic consistency checks (70.3%), and in 28.5% of cases the tests share an error with the implementation. Motivated by these findings, an exploratory configuration with separate coder and tester agents achieves the highest observed scores, with 97.6% Pass@3 and 88.8% Pass$^3$. These results identify consistency across attempts and independent verification as the main obstacles to trusting LLM-generated scientific code.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-16" data-venue="arXiv eess.SY"
-           data-text="social welfare and equilibrium in distributed microgrid prosumer coordination under a mixed competitive-cooperative setting mahan fakourifard elizabeth l. ratnam mingxi liu arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.20534" target="_blank" rel="noopener">Social Welfare and Equilibrium in Distributed Microgrid Prosumer Coordination Under a Mixed Competitive-Cooperative Setting</a></h3>
-<div class="by">Mahan Fakourifard, Elizabeth L. Ratnam, Mingxi Liu</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-16</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Distributed prosumer coordination with EV fleets on distribution networks, with convergence guarantees; directly relevant to transport-grid integration and price-based coordination.</p>
-      <details><summary>Abstract</summary><p>Price-based distributed prosumer coordination in distribution networks is fundamentally challenging when the aggregator pursues grid-level goals that couple prosumers&#39; decisions, because the Lagrangian fails to separate and nodal prices are undefined under conventional dual decomposition. This paper develops a novel method that embeds mixed competitive-cooperative objectives exactly into prices, which are split into energy, congestion, and grid-objective components, closing the gap between the social welfare optimum and the competitive equilibrium. To compute the equilibrium, a distributed optimization algorithm is developed based on the projected Arrow-Hurwicz-Uzawa scheme. Explicit step-size rules are developed for the algorithm to guarantee $\mathcal{O}(1/\sqrt{L})$ and $\mathcal{O}(1/L)$ ergodic convergence rates. Simulations on an IEEE 33-bus feeder that is connected to prosumers and electric vehicle fleets validate the accuracy and efficacy of the proposed methods.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-15" data-venue="arXiv math.OC"
-           data-text="strengthening compact vehicle routing formulations through arc-flow aggregation and refinement julian yarkony willem-jan van hoeve anthony karahalios martin karyamsetty soheyl khalilpourazari louis-martin rousseau xiaohang zhu arxiv math.oc">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.20310" target="_blank" rel="noopener">Strengthening Compact Vehicle Routing Formulations through Arc-Flow Aggregation and Refinement</a></h3>
-<div class="by">Julian Yarkony, Willem-Jan van Hoeve, Anthony Karahalios, Martin Karyamsetty et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv math.OC</span><span class="by">2026-11-15</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Arc-flow aggregation for VRPTW MILP formulations with cutting planes; strongly related to the researcher&#39;s MILP decomposition and routing interests.</p>
-      <details><summary>Abstract</summary><p>Arc-flow formulations can provide strong relaxations for mixed-integer program formulations of vehicle routing problems, but the associated networks may be prohibitively large. We study the setting in which multiple arc flow relaxations may be applied, and introduce a dual-guided aggregation and refinement framework that constructs substantially smaller arc-flow formulations while recovering the LP bound of the original networks. Dual information is used both to identify states that can be aggregated without weakening the bound and to guide node disaggregation. We show that the resulting procedure converges finitely to the arc-flow bound of the full arc-flow formulation. The framework retains the original decision variables, allowing cutting planes to be added directly in the original variable space. Moreover, it produces an explicit MILP formulation without relying on column generation or pricing to determine the arc-flow relaxation bound. We apply our approach to the vehicle routing problem with time windows for which we define two arc flow relaxations, as well as two families of cutting planes over the original variable space. Computational experiments show that strong bounds can be obtained using substantially aggregated networks. The resulting root bounds are competitive with those obtained by the branch-and-price solver RouteOpt, while retaining a formulation that can be solved directly by a general-purpose MILP solver.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.AI"
-           data-text="toolgraph as a q-function for test-time scaling of tool-use agents ke shen ankita bhaumik li dong shengjie liu shuzhen li naveed ahmed janvekar arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.20569" target="_blank" rel="noopener">ToolGraph as a Q-Function for Test-Time Scaling of Tool-Use Agents</a></h3>
-<div class="by">Ke Shen, Ankita Bhaumik, Li Dong, Shengjie Liu et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-16</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Graph-based value function for tool-use agent chaining calls; agentic planning with multi-step value, useful for agent design.</p>
-      <details><summary>Abstract</summary><p>Tool-use agents must chain interdependent calls, yet which outputs satisfy which later inputs in a deployed catalog is not something a general-purpose language model reliably infers from tool descriptions alone. We compile that structure once into a reusable external representation. ToolGraph is a directed, weighted dependency graph over a tool catalog: parameter matching and interventional probes, which execute a candidate chain with and without its proposed predecessor, propose edges whose evidence is combined into an edge confidence. Prior work uses such graphs to retrieve tools, search for tool paths, or score the next call. We ask instead whether the same structure can supply a \emph{multi-step} value by composing graph paths into a goal-conditioned action value \(Q(s,a,g)\). We study three estimators (dynamic programming over entity sets, a GraphSAGE estimator distilled from it, and an LLM scorer conditioned on graph evidence) plus a verbalizer that returns action--goal feedback to the agent, which keeps final action selection. Across two tool-use benchmarks and three backbones, we compare value ranking against personalized-PageRank retrieval over the identical graph, and against direct and reflective agents. Composition pays off only when the estimator also reads the concrete state: the LLM estimator improves on PageRank in every benchmark--backbone setting, by \(8.3\) points on average, while the two purely structural estimators fall below it, because a value defined over tool types cannot separate a correct tool called with a wrong argument. Graph construction is a one-time cost; we report it separately rather than assume it amortized away (at our scale it is comparable to request-time cost) and sweep four knobs controlling how much graph evidence to expose against success and tokens.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.LG"
-           data-text="trainexplorer: autonomous llm post-training via plan-and-decouple exploration xuannan liu tian lan zekun li xing cui zhengfeng yu feihu jiang qianghuai jia longyue wang zhao xu weihua luo peipei li ran he arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.20430" target="_blank" rel="noopener">TrainExplorer: Autonomous LLM Post-Training via Plan-and-Decouple Exploration</a></h3>
-<div class="by">Xuannan Liu, Tian Lan, Zekun Li, Xing Cui et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-16</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Multi-agent LLM framework that plans and executes autonomous post-training experiments with decoupled attribution, akin to agents running optimisation pipelines.</p>
-      <details><summary>Abstract</summary><p>LLM-based agents can automate model post-training, accelerating progress toward recursive self-improvement. Despite their promise, existing approaches remain under-explored and face two main challenges: (1) strategy lock-in that limits exploration beyond the initial strategy; and (2) coupled execution that obscures the effects of individual modifications. To address these challanges, we propose TrainExplorer, a multi-agent framework for autonomous post-training, that incorporates strategy planning and execution decoupling, to achieve broaden strategy exploration. First, strategy planning draws on scientific literature to construct a candidate search space of training strategies. Then, decoupled execution enables single-component interventions and attribution to guide strategy exploration. Extensive experiments on PostTrainBench demonstrate that TrainExplorer achieves a weighted aggregate score of 39.02, outperforming Claude Code using the same LLM by 7.32 and surpassing GPT-5.6 Sol-powered Codex, which scores 36.23. Code will be available.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.LG"
-           data-text="vtt: reading vehicle size and powertrain type from motion trajectory across unseen car models yuhang wang yuechen guo jingxin yang chuheng wei suyang chen abdulaziz alhuraish yiyi wang mingyang ban jingran sun hao zhou arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.22109" target="_blank" rel="noopener">VTT: Reading Vehicle Size and Powertrain Type from Motion Trajectory Across Unseen Car Models</a></h3>
-<div class="by">Yuhang Wang, Yuechen Guo, Jingxin Yang, Chuheng Wei et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.23076" target="_blank" rel="noopener">Pareto-Informed Smart &#34;Predict, then Optimize&#34; for Multi-Objective Combinatorial Problems</a></h3>
+<div class="by">Aabhash Dhakal, Tim Lachner</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
         <span>arXiv cs.LG</span><span class="by">2026-11-17</span>
-<span class="tag">E-bus scheduling &amp; charging</span>      </div>
-      <p class="reason">Infers vehicle size and powertrain from CAN and trajectory data; useful for electrified fleet data and simulation inputs.</p>
-      <details><summary>Abstract</summary><p>Vehicle size and powertrain information can enrich trajectory data for traffic analysis and simulation. We present VTT, a dataset and benchmark for identifying these attributes from motion and controller area network (CAN) signals across unseen car models. The dataset contains 9,062 drives, about 3,950 h, from 1,431 vehicles and 174 car models. It provides three footprint-based size classes, powertrain labels, and evaluation on unseen car models and unseen drivers. Using 60-s windows, we compare four sequence architectures, statistical features and physical features proposed by large language models. Training with auxiliary physical targets, data augmentation and task-specific weighting raises drive-level macro-F1 to 92.6-93.0% for battery-electric versus combustion vehicles and from 62.9% to 67.1% for size classification. On public logs from 4,061 additional drivers, the full-input model identifies powertrain correctly for 86 of 88 car models; size accuracy is 63.2%, close to the internal vehicle-level result of 63.5%. Physical-feature analysis links powertrain recognition to deceleration behaviour and size recognition to steering response. Errors near size-class boundaries and limited gains from longer observations highlight the importance of label resolution and training-fleet coverage for cross-model generalisation.</p></details>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Decision-focused learning with SPO+ for multi-objective combinatorial problems; directly on predict-then-optimise methods the researcher would value.</p>
+      <details><summary>Abstract</summary><p>Many real-world planning applications, from logistics, routing to resource allocation, give rise to optimization problems that need to balance multiple, conflicting objectives. While machine learning is often used to predict the unknown parameters or costs of these problems, standard models trained on prediction accuracy can lead to suboptimal plans. Decision-Focused Learning (DFL) addresses this by integrating the downstream optimization task into the training objective. However, existing DFL methods for multi-objective problems rely on simple scalarization, which fails to capture the rich trade-offs of the Pareto Frontier. To address this gap, we propose a Pareto-aware extension to single-objective Smart &#34;Predict, then Optimize&#34; (SPO+) for multi-objective combinatorial optimization problems. Our loss function leverages the true Pareto Frontier, forming a target decision that aligns with a sampled preference vector, and minimizes regret against this target. Experiments on multi-objective shortest path and multi-objective knapsack problems show that our approach outperforms traditional two-stage Mean Squared Error (MSE) baselines. It also surpasses scalarization-based SPO+ approaches.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-15" data-venue="arXiv cs.RO"
-           data-text="value and policy calibration from execution feedback for socially compatible driving sen shen ning liu xiangrui kong yingwei li dongkun han arxiv cs.ro">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="think once, act fast: cost-effective recursive self-improvement for decision model harness siqi lai haitao li hao liu arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.19969" target="_blank" rel="noopener">Value and Policy Calibration from Execution Feedback for Socially Compatible Driving</a></h3>
-<div class="by">Sen Shen, Ning Liu, Xiangrui Kong, Yingwei Li et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.22432" target="_blank" rel="noopener">Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness</a></h3>
+<div class="by">Siqi Lai, Haitao Li, Hao Liu</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.RO</span><span class="by">2026-11-15</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">World-model RL for AV intersection behaviour affecting human-driven vehicles; adjacent to operations decisions but not agentic LLM or transit-specific.</p>
-      <details><summary>Abstract</summary><p>Autonomous vehicle (AV) decisions at intersections affect the delay, braking, and motion smoothness of surrounding human-driven vehicles (HDVs). Learning socially compatible behavior requires connecting imagined interaction outcomes with feedback from executed actions. We propose a world-model reinforcement learning framework combines imagined policy improvement with direct value and policy calibration from finalized interactions, balancing AV progress with HDV interaction burden. An interaction-aware latent model supports imagination, while off-policy correction and replay updates enable observed rewards and transitions to supervise both the critic and actor. Simulation experiments at an unsignalized intersection achieve a 100% success and reductions in following-HDV acceleration variation of 65.5% and 44.0% relative to PIWM and DreamerV3, respectively. Ablations identify complementary roles for value calibration in reducing HDV burden and policy calibration in improving passage efficiency. Tests under out-of-distribution traffic shifts further show lower ego jerk and HDV acceleration variation than PIWM at comparable passage times.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-16" data-venue="arXiv cs.LG"
-           data-text="weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor timo oksanen arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.21958" target="_blank" rel="noopener">Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor</a></h3>
-<div class="by">Timo Oksanen</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-16</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">LLMs directly write neural controller weights to steer a real tractor with simulation feedback, relevant to LLM-driven control design and vehicle guidance.</p>
-      <details><summary>Abstract</summary><p>Weight-space programming is a process where a large language model reads and writes the weights of a neural network directly, guided by a natural language specification, without an optimiser or gradient descent. This study applies it to automatic tractor guidance, where a 253-parameter neural network steers along paths of lines and arcs and must be adapted when the machine changes, such as a slower steering actuator. GPT-6 Astra and Claude Fable 5.1 (also 5.2) edited the network for our research tractor using a small budget of simulated evaluations to repair a network trained for another tractor and write a controller into a network with zero weights. We compared them with an evolution strategy, gradient descent and pure pursuit in simulation and on the real tractor. Both models read the network and analysed the closed loop with control theory correctly, and Fable&#39;s repair without simulation succeeded only occasionally. With simulated feedback, both models repaired the trained network in single sessions and wrote a working controller from zero weights, whereas from zero the evolution strategy found none. The controllers written from zero were sparse and in a classical cascaded structure; one model edited the trained network while the other replaced it. Gradient descent reached higher accuracy with far more simulation, and all language model controllers steered the real tractor without intervention, with errors of the same order as pure pursuit. Language models can program the weights of a neural controller directly, much as control engineers design one. We call this Weight-Space Engineering.</p></details>
+      <p class="reason">System-1/System-2 agent framework with recursive harness improvement for decision making; agentic decision support relevant to operational decisions.</p>
+      <details><summary>Abstract</summary><p>Fast System-1 models enable responsive actions but struggle with complex or unfamiliar tasks. Large language model (LLM)-based System-2 provides strong reasoning capabilities, yet repeated invocation incurs substantial latency and computational costs. To bridge this gap, we propose JevRSI, a System-1/System-2 collaboration framework that transforms LLM reasoning into transferable decision support through recursive harness improvement. A Jev-style System-1 model enables low-latency action selection, while an asynchronous System-2 LLM develops a modular harness. The harness integrates procedures, state memory, and world models to provide decision contexts spanning the past, present, and future. Utility-driven retrieval selects modules based on both contextual relevance and their utility on previous tasks. Environmental feedback guides targeted revisions and enables recursive self-improvement. Experiments across three datasets show that JevRSI consistently improves decision quality, matching or surpassing LLM agents in several settings. It preserves low-latency execution with favorable performance-cost trade-offs. Moreover, System-2 development interventions decrease as the harness evolves, amortizing System-2 costs through continuous improvement. Our project is available at https://github.com/usail-hkust/JevRSI.</p></details>
     </div>
   </article>
 </main>
@@ -373,7 +265,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-18.html" class="cur" aria-current="page">2026-11-18 · 20</a></li>
+    <li><a href="archive/2026-11-19.html" class="cur" aria-current="page">2026-11-19 · 12</a></li>
+    <li><a href="archive/2026-11-18.html">2026-11-18 · 20</a></li>
     <li><a href="archive/2026-11-17.html">2026-11-17 · 3</a></li>
     <li><a href="archive/2026-11-16.html">2026-11-16 · 0</a></li>
     <li><a href="archive/2026-11-15.html">2026-11-15 · 2</a></li>
@@ -396,7 +289,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-18 02:26 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-19 01:58 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>

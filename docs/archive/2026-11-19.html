@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Bus &amp; Transport Research Feed</title>
+<meta name="description" content="Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration">
+<link rel="alternate" type="application/rss+xml" title="E-Bus &amp; Transport Research Feed" href="../feed.xml">
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --ink: #1d1f23; --muted: #62666d; --line: #e3e3df;
+  --accent: #2f5bd3; --chip: #eef1f8;
+  --hi: #1f7a4d; --hi-bg: #e3f3ea; --mid: #8a6a12; --mid-bg: #faf1d7; --lo: #62666d; --lo-bg: #ececea;
+  --arxiv: #b31b1b; --elsevier: #e9711c; --ieee: #00629b; --informs: #6a3d9a; --springer: #0f7f74; --acm: #1f5fbf; --conf: #3d6b1f; --other: #62666d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+    --accent: #8ea8ff; --chip: #262b35;
+    --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+    --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --acm: #8fb4ff; --conf: #a6d97a; --other: #9a9ea6;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+  --accent: #8ea8ff; --chip: #262b35;
+  --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+  --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --acm: #8fb4ff; --conf: #a6d97a; --other: #9a9ea6;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 28px 16px 64px; }
+header h1 { font-size: 1.55rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--muted); }
+.daybar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 22px 0 14px; }
+.daybar h2 { margin: 0; font-size: 1.15rem; }
+.daybar .meta { color: var(--muted); font-size: 0.88rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 18px; }
+.chip { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip .n { opacity: 0.7; margin-left: 4px; }
+.controls input, .controls select { font: inherit; font-size: 0.88rem; padding: 6px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.controls input { flex: 1 1 180px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+  margin-bottom: 10px; display: grid; grid-template-columns: 44px 1fr; gap: 0 14px; }
+.score { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center;
+  font-weight: 700; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.s-hi { color: var(--hi); background: var(--hi-bg); }
+.s-mid { color: var(--mid); background: var(--mid-bg); }
+.s-lo { color: var(--lo); background: var(--lo-bg); }
+.card h3 { margin: 0 0 3px; font-size: 1.02rem; line-height: 1.35; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.by { color: var(--muted); font-size: 0.85rem; }
+.venue { font-size: 0.83rem; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.pub { font-weight: 600; }
+.pub.arxiv { color: var(--arxiv); } .pub.elsevier { color: var(--elsevier); } .pub.ieee { color: var(--ieee); }
+.pub.informs { color: var(--informs); } .pub.springer { color: var(--springer); } .pub.acm { color: var(--acm); } .pub.conf { color: var(--conf); } .pub.other { color: var(--other); }
+.tag { font-size: 0.75rem; background: var(--chip); border-radius: 6px; padding: 1px 7px; color: var(--muted); }
+.reason { margin: 8px 0 0; }
+details { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
+details summary { cursor: pointer; }
+.empty { color: var(--muted); padding: 28px 0; text-align: center; }
+.archive { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+.archive h2 { font-size: 1rem; margin: 0 0 10px; }
+.archive ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.archive a { display: inline-block; padding: 4px 10px; border-radius: 8px; background: var(--surface);
+  border: 1px solid var(--line); font-size: 0.85rem; text-decoration: none; color: var(--ink); }
+.archive a.cur { border-color: var(--accent); color: var(--accent); }
+footer { margin-top: 28px; color: var(--muted); font-size: 0.8rem; }
+.theme { float: right; }
+@media (max-width: 520px) {
+  .card { grid-template-columns: 1fr; }
+  .score { width: auto; height: auto; justify-self: start; padding: 2px 10px; margin-bottom: 6px; font-size: 0.95rem; }
+}
+</style>
+<script>
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <button class="chip theme" id="theme" type="button" aria-label="Toggle colour theme">◐</button>
+  <h1>E-Bus &amp; Transport Research Feed</h1>
+  <p>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</p>
+</header>
+
+<div class="daybar">
+  <h2>Today · 2026-11-19</h2>
+  <span class="meta">12 relevant of 73 screened · 23058 new papers fetched</span>
+</div>
+
+<div class="controls" role="group" aria-label="Filters">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">12</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">6</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <select id="sort" aria-label="Sort">
+    <option value="score">By relevance</option>
+    <option value="date">By date</option>
+    <option value="venue">By venue</option>
+  </select>
+</div>
+
+<main id="list">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-18" data-venue="Transportation Research Part E"
+           data-text="joint routing and recharging optimization for electric commercial vehicles with power bank vans jie wei zilu wang zhibin chen jiangang jin transportation research part e">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105392" target="_blank" rel="noopener">Joint routing and recharging optimization for electric commercial vehicles with power bank vans</a></h3>
+<div class="by">Jie Wei, Zilu Wang, Zhibin Chen, Jiangang Jin</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part E</span><span class="by">2026-11-18</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Joint routing and recharging optimisation for electric commercial vehicles with power bank vans; directly on EV charging-routing problems.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="9" data-date="2026-11-18" data-venue="eTransportation"
+           data-text="towards a renewable energy-driven, self-sufficient expressway energy system: optimizing integrated pv-bess-charging infrastructure in service areas xiaoxi gao chunying li xiao sun yuqin wang tao zhang xiaohua liu li zhang haida tang etransportation">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.etran.2026.100654" target="_blank" rel="noopener">Towards a Renewable Energy-Driven, Self-Sufficient Expressway Energy System: Optimizing Integrated PV-BESS-Charging Infrastructure in Service Areas</a></h3>
+<div class="by">Xiaoxi Gao, Chunying Li, Xiao Sun, Yuqin Wang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>eTransportation</span><span class="by">2026-11-18</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Optimises PV, battery storage and charging infrastructure at expressway service areas, directly on charging and grid integration for transport.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-18" data-venue="Computers &amp; Operations Research"
+           data-text="predicting the solution cost of vehicle routing problems with time windows leandro c. coelho gilbert laporte jacques renaud computers &amp; operations research">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.cor.2026.107739" target="_blank" rel="noopener">Predicting the solution cost of vehicle routing problems with time windows</a></h3>
+<div class="by">Leandro C. Coelho, Gilbert Laporte, Jacques Renaud</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Computers &amp; Operations Research</span><span class="by">2026-11-18</span>
+<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Predicting solution cost of VRPTW with learning; ML for combinatorial routing that could inform learning-augmented exact methods.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.MA"
+           data-text="groups of ai agents underuse resources despite shared evidence of increased capacity takahiro ezaki naoto imura katsuhiro nishinari arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22632" target="_blank" rel="noopener">Groups of AI agents underuse resources despite shared evidence of increased capacity</a></h3>
+<div class="by">Takahiro Ezaki, Naoto Imura, Katsuhiro Nishinari</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM agents sharing limited server capacity and status information under deadlines, a multi-agent resource allocation setting relevant to agentic operational decisions.</p>
+      <details><summary>Abstract</summary><p>When AI agents share limited resources, such as computing services or public infrastructure, their individual choices affect how much work they complete as a group. Can sharing evidence of what is available let a group make full use of its resources after capacity changes? We tested this with language-model agents choosing between two simulated servers. One server recovered while its status report still listed it as unavailable. Each server had limited capacity per round, so rejected jobs required another attempt before the deadline. Telling agents that recovery was possible reduced missed deadlines. In controlled tests with Anthropic&#39;s Claude Haiku 5.5, no agent tried the recovered server after a rule reminder, yet all chose it when shown a successful request record. After sharing, all five models tested left capacity unused. Keeping the success record fixed, we gave agents numbers without instructions, using each value equally often but giving group members either identical or distinct numbers. With OpenAI&#39;s GPT-6.1 Sol or Google&#39;s Gemini 3.5 Flash-Lite, distinct numbers spread simultaneous requests across servers and increased job completions even though overall choice frequencies barely changed. Telling AI agents which resources are available leaves a second design challenge: helping them spread demand across those resources.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-17" data-venue="arXiv eess.SY"
+           data-text="optimal energy and llm task scheduling for multiple cloud data centers zhongqi zhao lei fan zhu han arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22242" target="_blank" rel="noopener">Optimal Energy and LLM Task Scheduling for Multiple Cloud Data Centers</a></h3>
+<div class="by">Zhongqi Zhao, Lei Fan, Zhu Han</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">MILP scheduling of LLM training tasks with data center energy and facility operation; a close optimisation-plus-energy formulation, though not transport.</p>
+      <details><summary>Abstract</summary><p>This paper studies coordinated Large Language Model (LLM) training-task scheduling and facility operation for geographically distributed cloud data centers (CDCs). The central question is how two scheduling flexibilities - cross-CDC task transfer and task reordering - affect service and economic outcomes when remote execution remains subject to compute, bandwidth, energy, and zone-temperature constraints. We formulate a mixed-integer optimization model that jointly determines task outcomes, heterogeneous-node assignment, execution timing, pre-execution data transfer, node activation, and facility operation. A deterministic 24-hour case study contains 3 CDCs, 15 heterogeneous graphics processing unit (GPU) nodes, 4 thermal zones per CDC, and 103 tasks. In this instance, enabling transfer increases net profit by 57.9% relative to the otherwise matched no-transfer variant and increases completed tasks from 76 to 103. The more restrictive no-transfer FIFO-prefix variant completes 14 tasks and yields negative profit. The proposed schedule transfers 39 tasks, achieves 70.3% node utilization, and maintains zone temperatures within 24°C-27°C. These fixed-instance results indicate that cross-CDC transfer and task-reordering flexibility can improve the modeled profit and task-completion outcomes under the studied conditions.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.CL"
+           data-text="when do typed decision models work in transportation? evidence from travel choice and traffic signal control hongyang zhang boyuan deng siyuan feng kai chen junbo zhang arxiv cs.cl">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22926" target="_blank" rel="noopener">When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control</a></h3>
+<div class="by">Hongyang Zhang, Boyuan Deng, Siyuan Feng, Kai Chen et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CL</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Evaluates typed LLM decision models for travel mode choice and traffic signal control; directly transport decision-making with RL baselines.</p>
+      <details><summary>Abstract</summary><p>Typed decision models combine natural-language understanding with a structured interface that returns a selected action and an option-level probability distribution without generating lengthy textual responses. Their low inference cost and response latency make them attractive for transportation problems with predefined alternatives. This paper investigates their effectiveness, robustness, and efficiency in two representative transportation tasks: individual travel-mode choice prediction and sequential traffic signal control. We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions against conventional transportation methods, reinforcement learning algorithms, and four chat-based large language models. Experiments on the Swissmetro dataset show that typed decision models achieve lower prediction accuracy than traditional discrete choice models and the strongest chat-based baseline, while their performance varies substantially with input representation and question framing. In closed-loop traffic signal control experiments, typed decision models demonstrate competitive performance against established controllers in several scenarios, but exhibit performance degradation under more challenging network conditions. Furthermore, the typed models achieve lower inference latency and computational cost than the evaluated chat-based large language models, highlighting their potential for efficient, zero-shot transportation decision-making. Overall, these findings demonstrate both the potential and limitations of typed decision models, emphasizing the importance of input design, task characteristics, and robustness evaluation for their effective application in transportation systems.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-18" data-venue="Transportation Science"
+           data-text="the meal delivery routing problem with courier behavior and graph neural networks niels de jong ilke bakir kees jan roodbergen transportation science">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1287/trsc.2025.0133" target="_blank" rel="noopener">The Meal Delivery Routing Problem with Courier Behavior and Graph Neural Networks</a></h3>
+<div class="by">Niels de Jong, Ilke Bakir, Kees Jan Roodbergen</div>      <div class="venue">
+        <span class="pub informs">INFORMS</span>
+        <span>Transportation Science</span><span class="by">2026-11-18</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">GNN-guided cost function approximation with RL training for courier dispatch simulation; relevant learned dispatching and simulation methods.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="crossenv: synthesizing verifiable cross-environment tasks for long-horizon agent training zhengfeng yu tian lan zhijing wu enbo zhao xuannan liu feihu jiang qianghuai jia longyue wang zhao xu weihua luo xian-ling mao arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22777" target="_blank" rel="noopener">CrossEnv: Synthesizing Verifiable Cross-Environment Tasks for Long-Horizon Agent Training</a></h3>
+<div class="by">Zhengfeng Yu, Tian Lan, Zhijing Wu, Enbo Zhao et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Synthesizes verifiable cross-environment tool-use tasks for training long-horizon LLM agents; agentic but not about optimisation or transport.</p>
+      <details><summary>Abstract</summary><p>Executable synthetic environments provide scalable training tasks and verifiable feedback for long-horizon agents. Existing environment synthesis methods primarily generate tasks within individual environments. However, these tasks do not adequately capture real-world interactions across services, where actions in one service depend on information obtained from another. Synthesizing such tasks is challenging because data generated across environments must remain consistent to support executable and verifiable interactions. To address this challenge, we introduce CrossEnv, a framework that uses an entity-tool graph to identify connections between environments and aligns task-specific data to synthesize executable, verifiable cross-environment tasks. We further propose CrossEnv-Curriculum, which progresses from single-environment tool use to coordination across more environments and business domains, before introducing user interaction. Across four external benchmarks, combining cross-environment training data with this curriculum achieves competitive performance with fewer training examples. Further analyses support the benefits of cross-environment data and curriculum training, and provide evidence of transfer to new environment combinations, external tasks less similar to the training data, and longer workflows.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="harnesses that improve themselves: a unifying framework for self-improving agent harnesses deep shah nehal kathrotia arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22299" target="_blank" rel="noopener">Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses</a></h3>
+<div class="by">Deep Shah, Nehal Kathrotia</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Self-improving agent harnesses that diagnose and patch their own runtime; relevant agent engineering background with evaluation of reliability.</p>
+      <details><summary>Abstract</summary><p>Whether a foundation model succeeds as an autonomous agent depends as much on its runtime software as on its weights. This runtime, the agent harness, manages context and memory, steers multi-turn control, executes tool actions in sandboxes, and verifies work before stopping. Because models differ in how they use tools and how they fail, a static harness tuned for one model or task often stalls, wastes tokens, or regresses on another. This bottleneck has driven a shift from prompt tuning to self-improving agent harnesses: systems that inspect their own execution traces, separate runtime bugs from model limits, and rewrite their own code. We present a unifying architectural and design framework for self-improving agent harnesses. The framework pairs four editable runtime components (context and state, agent control, action interfaces, and verification and recovery) with a four-stage loop that diagnoses failures, proposes code patches, validates candidates, and deploys updates. Using this framework, we show how optimizers trace errors across long trajectories and discover reusable runtime mechanisms such as pre-stop verifiers, loop breakers, and persistent memory. We further show why full-harness rewrites overfit or break across modules, and how modular updates with validation gates generalize across models while bounding token cost. To keep self-modification safe, we establish practical defenses against recurring failure modes including prompt bloat, benchmark gaming, and evaluator tampering. Finally, experiments on SWE-bench Lite validate this framework, showing that gated modular evolution outperforms prompt reflection and full-harness rewrites across models and repositories at a fraction of the token cost.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AR"
+           data-text="pvtsizing 2.0: a fast and reliable analog circuit sizing operator for agentic eda workflows zichen kong minghuan song xiyuan tang ziming wei yi zhong yuan wang arxiv cs.ar">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22328" target="_blank" rel="noopener">PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows</a></h3>
+<div class="by">Zichen Kong, Minghuan Song, Xiyuan Tang, Ziming Wei et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AR</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM-adviser plus numerical optimizer for analog circuit sizing across PVT corners; an agentic human-in-loop optimisation workflow, though in a different domain.</p>
+      <details><summary>Abstract</summary><p>Analog circuit design automation requires both coordinated tool execution and efficient numerical search. Large language models (LLMs) offer new ways to organize tool execution, but finding one sizing that satisfies specifications across process, voltage, and temperature (PVT) corners remains costly. PVTSizing 2.0 addresses these needs through a human-agent workflow built around an independently usable numerical optimizer. An agent carries the designer&#39;s approved task through execution and result review. The optimizer reduces unnecessary training through loss-guided updates and uses critic-guided local refinement to explore additional candidates while accounting for cross-corner conflicts. An optional LLM adviser supplies parameter relationships to focus numerical search on circuit-informed directions, while the optimizer selects adjustment amplitudes and verifies their effects through simulation. Across four circuit benchmarks, the standalone optimizer completes all 40 runs and achieves a 7.3x speedup in overall mean runtime over the original PVTSizing, with a comparable mean sample count. In a separate study, the best tested knowledge-injection configuration further reduces mean runtime by 39.9% and simulation samples by 35.4% relative to the standalone optimizer.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.LG"
+           data-text="pareto-informed smart &#34;predict, then optimize&#34; for multi-objective combinatorial problems aabhash dhakal tim lachner arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.23076" target="_blank" rel="noopener">Pareto-Informed Smart &#34;Predict, then Optimize&#34; for Multi-Objective Combinatorial Problems</a></h3>
+<div class="by">Aabhash Dhakal, Tim Lachner</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-17</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Decision-focused learning with SPO+ for multi-objective combinatorial problems; directly on predict-then-optimise methods the researcher would value.</p>
+      <details><summary>Abstract</summary><p>Many real-world planning applications, from logistics, routing to resource allocation, give rise to optimization problems that need to balance multiple, conflicting objectives. While machine learning is often used to predict the unknown parameters or costs of these problems, standard models trained on prediction accuracy can lead to suboptimal plans. Decision-Focused Learning (DFL) addresses this by integrating the downstream optimization task into the training objective. However, existing DFL methods for multi-objective problems rely on simple scalarization, which fails to capture the rich trade-offs of the Pareto Frontier. To address this gap, we propose a Pareto-aware extension to single-objective Smart &#34;Predict, then Optimize&#34; (SPO+) for multi-objective combinatorial optimization problems. Our loss function leverages the true Pareto Frontier, forming a target decision that aligns with a sampled preference vector, and minimizes regret against this target. Experiments on multi-objective shortest path and multi-objective knapsack problems show that our approach outperforms traditional two-stage Mean Squared Error (MSE) baselines. It also surpasses scalarization-based SPO+ approaches.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="think once, act fast: cost-effective recursive self-improvement for decision model harness siqi lai haitao li hao liu arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.22432" target="_blank" rel="noopener">Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness</a></h3>
+<div class="by">Siqi Lai, Haitao Li, Hao Liu</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">System-1/System-2 agent framework with recursive harness improvement for decision making; agentic decision support relevant to operational decisions.</p>
+      <details><summary>Abstract</summary><p>Fast System-1 models enable responsive actions but struggle with complex or unfamiliar tasks. Large language model (LLM)-based System-2 provides strong reasoning capabilities, yet repeated invocation incurs substantial latency and computational costs. To bridge this gap, we propose JevRSI, a System-1/System-2 collaboration framework that transforms LLM reasoning into transferable decision support through recursive harness improvement. A Jev-style System-1 model enables low-latency action selection, while an asynchronous System-2 LLM develops a modular harness. The harness integrates procedures, state memory, and world models to provide decision contexts spanning the past, present, and future. Utility-driven retrieval selects modules based on both contextual relevance and their utility on previous tasks. Environmental feedback guides targeted revisions and enables recursive self-improvement. Experiments across three datasets show that JevRSI consistently improves decision quality, matching or surpassing LLM agents in several settings. It preserves low-latency execution with favorable performance-cost trade-offs. Moreover, System-2 development interventions decrease as the harness evolves, amortizing System-2 costs through continuous improvement. Our project is available at https://github.com/usail-hkust/JevRSI.</p></details>
+    </div>
+  </article>
+</main>
+<p class="empty" id="none" hidden>No papers match this filter.</p>
+
+<nav class="archive" aria-label="Previous days">
+  <h2>Previous days</h2>
+  <ul>
+    <li><a href="../archive/2026-11-19.html" class="cur" aria-current="page">2026-11-19 · 12</a></li>
+    <li><a href="../archive/2026-11-18.html">2026-11-18 · 20</a></li>
+    <li><a href="../archive/2026-11-17.html">2026-11-17 · 3</a></li>
+    <li><a href="../archive/2026-11-16.html">2026-11-16 · 0</a></li>
+    <li><a href="../archive/2026-11-15.html">2026-11-15 · 2</a></li>
+    <li><a href="../archive/2026-11-14.html">2026-11-14 · 22</a></li>
+    <li><a href="../archive/2026-11-13.html">2026-11-13 · 3</a></li>
+    <li><a href="../archive/2026-11-12.html">2026-11-12 · 13</a></li>
+    <li><a href="../archive/2026-11-11.html">2026-11-11 · 17</a></li>
+    <li><a href="../archive/2026-11-10.html">2026-11-10 · 10</a></li>
+    <li><a href="../archive/2026-11-09.html">2026-11-09 · 392</a></li>
+    <li><a href="../archive/2026-11-08.html">2026-11-08 · 2</a></li>
+    <li><a href="../archive/2026-11-07.html">2026-11-07 · 2</a></li>
+    <li><a href="../archive/2026-11-06.html">2026-11-06 · 5</a></li>
+    <li><a href="../archive/2026-11-05.html">2026-11-05 · 3</a></li>
+    <li><a href="../archive/2026-11-04.html">2026-11-04 · 33</a></li>
+    <li><a href="../archive/2026-11-03.html">2026-11-03 · 3</a></li>
+    <li><a href="../archive/2026-11-02.html">2026-11-02 · 10</a></li>
+  </ul>
+</nav>
+
+<footer>
+  Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
+  Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
+  Updated 2026-11-19 01:58 UTC · <a href="../feed.xml">RSS</a></footer>
+</div>
+
+<script>
+(() => {
+  const btn = document.getElementById("theme");
+  btn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+
+  const list = document.getElementById("list");
+  if (!list) return;
+  const cards = [...list.querySelectorAll(".card")];
+  const chips = [...document.querySelectorAll(".chip[data-topic]")];
+  const q = document.getElementById("q"), sort = document.getElementById("sort"), none = document.getElementById("none");
+  let topic = "";
+
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const c of cards) {
+      const ok = (!topic || c.dataset.topic === topic) && (!term || c.dataset.text.includes(term));
+      c.hidden = !ok; shown += ok;
+    }
+    none.hidden = shown > 0;
+  }
+  chips.forEach(ch => ch.addEventListener("click", () => {
+    topic = ch.dataset.topic;
+    chips.forEach(x => x.setAttribute("aria-pressed", String(x === ch)));
+    apply();
+  }));
+  q.addEventListener("input", apply);
+  sort.addEventListener("change", () => {
+    const key = sort.value;
+    const cmp = {
+      score: (a, b) => b.dataset.score - a.dataset.score,
+      date: (a, b) => b.dataset.date.localeCompare(a.dataset.date) || b.dataset.score - a.dataset.score,
+      venue: (a, b) => a.dataset.venue.localeCompare(b.dataset.venue) || b.dataset.score - a.dataset.score,
+    }[key];
+    cards.sort(cmp).forEach(c => list.appendChild(c));
+  });
+})();
+</script>
+</body>
+</html>
