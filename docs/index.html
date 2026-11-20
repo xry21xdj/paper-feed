@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-19</h2>
-  <span class="meta">12 relevant of 73 screened · 23058 new papers fetched</span>
+  <h2>Today · 2026-11-20</h2>
+  <span class="meta">22 relevant of 117 screened · 25689 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">12</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">6</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">22</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">2</span></button><button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">2</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">10</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">2</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">6</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,156 +107,285 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-18" data-venue="Transportation Research Part E"
-           data-text="joint routing and recharging optimization for electric commercial vehicles with power bank vans jie wei zilu wang zhibin chen jiangang jin transportation research part e">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-18" data-venue="arXiv eess.SY"
+           data-text="scalable vehicle charging coordination for online operations: a column generation approach joas kahlert ruiting wang gabrijela obradović henrik svärd jonas mårtensson arxiv eess.sy">
     <div class="score s-hi" title="Relevance 9/10">9</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.tre.2026.105392" target="_blank" rel="noopener">Joint routing and recharging optimization for electric commercial vehicles with power bank vans</a></h3>
-<div class="by">Jie Wei, Zilu Wang, Zhibin Chen, Jiangang Jin</div>      <div class="venue">
-        <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part E</span><span class="by">2026-11-18</span>
-<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Joint routing and recharging optimisation for electric commercial vehicles with power bank vans; directly on EV charging-routing problems.</p>
+      <h3><a href="https://arxiv.org/abs/2611.24030" target="_blank" rel="noopener">Scalable Vehicle Charging Coordination for Online Operations: A Column Generation Approach</a></h3>
+<div class="by">Joas Kahlert, Ruiting Wang, Gabrijela Obradović, Henrik Svärd et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-18</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Column generation and set partitioning for EV charging scheduling with charger capacity and online operations, directly on the researcher&#39;s problem class.</p>
+      <details><summary>Abstract</summary><p>We consider an electric vehicle charging scheduling problem for long-haul freight transport. To mitigate unforeseen waiting times caused by congestion and limited charger capacity, we consider a coordinated scheduling approach that prioritizes scalable, computationally efficient scheduling for ongoing or online operations. We formulate the problem as a set partitioning model and develop a column generation framework with a label-correcting algorithm to solve it efficiently. We assess the scalability of our algorithm through both theoretical complexity analysis and empirical measurements, highlighting the role of feasibility and dominance pruning in limiting label growth. Finally, using freight telematics data from Sweden, we show that the proposed method computes optimized schedules for realistic instances with 1000 vehicles within seconds and reduces vehicle operation downtime by 78.6% compared to uncoordinated scheduling.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="9" data-date="2026-11-18" data-venue="eTransportation"
-           data-text="towards a renewable energy-driven, self-sufficient expressway energy system: optimizing integrated pv-bess-charging infrastructure in service areas xiaoxi gao chunying li xiao sun yuqin wang tao zhang xiaohua liu li zhang haida tang etransportation">
-    <div class="score s-hi" title="Relevance 9/10">9</div>
+  <article class="card" data-topic="grid" data-score="8" data-date="2026-11-18" data-venue="arXiv eess.SY"
+           data-text="dynamic and risk-aware procurement of fast frequency response from electric vehicles and heat pumps savvas panagi fanourios kourougianni andreas olympios chrysovalantis spanias petros aristidou arxiv eess.sy">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.etran.2026.100654" target="_blank" rel="noopener">Towards a Renewable Energy-Driven, Self-Sufficient Expressway Energy System: Optimizing Integrated PV-BESS-Charging Infrastructure in Service Areas</a></h3>
-<div class="by">Xiaoxi Gao, Chunying Li, Xiao Sun, Yuqin Wang et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.24026" target="_blank" rel="noopener">Dynamic and Risk-Aware Procurement of Fast Frequency Response from Electric Vehicles and Heat Pumps</a></h3>
+<div class="by">Savvas Panagi, Fanourios Kourougianni, Andreas Olympios, Chrysovalantis Spanias et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-18</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Risk-aware aggregator bidding of EV and heat pump fleets into fast frequency response markets; directly on transport-grid flexibility and electricity market uncertainty.</p>
+      <details><summary>Abstract</summary><p>Low-inertia power systems increasingly rely on Fast Frequency Response (FFR) to keep the frequency nadir above under-frequency load-shedding thresholds without oversized Frequency Containment Reserve or synchronous inertia. This paper proposes two complementary methodologies that interface with an existing day-ahead FFR capacity market. On the Transmission System Operator (TSO) side, a dynamic procurement rule maps forecasted kinetic energy and contingency magnitude onto an offline neighborhood-need surface, yielding interval-wise FFR capacity requests rather than constant seasonal or annual volumes. On the aggregator side, a risk-aware, TSO-certifiable bidding strategy quantifies reliable FFR capacity from fleets of electric vehicles (EVs) and heat pumps (HPs) by offering lower conditional quantiles of day-ahead headroom at a prescribed delivery reliability. The resulting requests and offers are cleared through a pay-as-bid capacity auction. A Cyprus 2025 case study shows that dynamic neighborhood-based procurement yields an annual clearing cost of about EUR 476,000, which is 30%-33% lower than the seasonal and annual static rules and also below the UFLS VoLL of EUR 637,500 estimated from the fifteen real 2025 events with fmin &lt;= 49 Hz. EV and HP offers meet their target delivery reliabilities, and RMS validation finds 46 of 50 operating points above 49 Hz at both full and 85% FFR delivery.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-19" data-venue="Transportation Research Part E"
+           data-text="learning-based pricing and deployment of parallel mobile charging services considering customer choice behavior xiaohua chen min xu transportation research part e">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105389" target="_blank" rel="noopener">Learning-based pricing and deployment of parallel mobile charging services considering customer choice behavior</a></h3>
+<div class="by">Xiaohua Chen, Min Xu</div>      <div class="venue">
         <span class="pub elsevier">Elsevier</span>
-        <span>eTransportation</span><span class="by">2026-11-18</span>
+        <span>Transportation Research Part E</span><span class="by">2026-11-19</span>
 <span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Optimises PV, battery storage and charging infrastructure at expressway service areas, directly on charging and grid integration for transport.</p>
+      <p class="reason">Learning-based pricing and deployment of mobile charging services addresses charging operations and flexibility, close to the researcher&#39;s charging scheduling interests.</p>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-18" data-venue="Computers &amp; Operations Research"
-           data-text="predicting the solution cost of vehicle routing problems with time windows leandro c. coelho gilbert laporte jacques renaud computers &amp; operations research">
+  <article class="card" data-topic="ebus" data-score="7" data-date="2026-11-19" data-venue="Transportation Research Part D"
+           data-text="sustainable port-city connectivity using remote gates and battery-electric truck operations ali mokhtari-moghadam trung thanh nguyen huanhuan li stephen carr delaram yazdani zaili yang jin wang transportation research part d">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.cor.2026.107739" target="_blank" rel="noopener">Predicting the solution cost of vehicle routing problems with time windows</a></h3>
-<div class="by">Leandro C. Coelho, Gilbert Laporte, Jacques Renaud</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.trd.2026.105749" target="_blank" rel="noopener">Sustainable port-city connectivity using remote gates and battery-electric truck operations</a></h3>
+<div class="by">Ali Mokhtari-Moghadam, Trung Thanh Nguyen, Huanhuan Li, Stephen Carr et al.</div>      <div class="venue">
         <span class="pub elsevier">Elsevier</span>
-        <span>Computers &amp; Operations Research</span><span class="by">2026-11-18</span>
-<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Predicting solution cost of VRPTW with learning; ML for combinatorial routing that could inform learning-augmented exact methods.</p>
+        <span>Transportation Research Part D</span><span class="by">2026-11-19</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Battery-electric truck operations and remote port gates involve electrified fleet operations and scheduling, relevant to electric vehicle logistics optimisation.</p>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.MA"
-           data-text="groups of ai agents underuse resources despite shared evidence of increased capacity takahiro ezaki naoto imura katsuhiro nishinari arxiv cs.ma">
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-18" data-venue="arXiv cs.RO"
+           data-text="asymmetric decomposition for multi-agent path finding with unassigned agents xi jin chen qian renjun zhang guowei wu xiaobo li jun jiang weiwei shang arxiv cs.ro">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22632" target="_blank" rel="noopener">Groups of AI agents underuse resources despite shared evidence of increased capacity</a></h3>
-<div class="by">Takahiro Ezaki, Naoto Imura, Katsuhiro Nishinari</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.24108" target="_blank" rel="noopener">Asymmetric Decomposition for Multi-Agent Path Finding with Unassigned Agents</a></h3>
+<div class="by">Xi Jin, Chen Qian, Renjun Zhang, Guowei Wu et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.RO</span><span class="by">2026-11-18</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Conflict-based search with min-cost flow for multi-agent path finding with unassigned agents; a combinatorial optimisation method with a fleet-travel application.</p>
+      <details><summary>Abstract</summary><p>Robots without assigned tasks may obstruct active robots, while routing them to designated parking locations can cause unnecessary travel. This article proposes flow-oracle conflict-based search (FOCBS) for Multi-Agent Path Finding with unassigned agents (MAPF-UA). FOCBS searches over assigned-agent paths using conflict-based search (CBS) and routes targetless unassigned agents through a min-cost flow oracle. When the selected assigned-agent paths leave unassigned agents no collision-free paths, flow-conflict branching converts min-cut blockers into assigned-agent constraints, which guide the search without excluding optimal solutions. A batched zero-cost warm start accelerates the oracle, and start-avoiding tie-breaking reduces unassigned-agent movement. For feasible instances on finite graphs, we prove termination and global minimization of assigned-agent sum of service time, measured by last-arrival times. Unassigned-agent movement is minimized conditional on the selected assigned-agent paths, without a global lexicographic optimality guarantee. Benchmark experiments show that FOCBS scales well with the number of unassigned agents, and ablation studies show that, compared with discarding non-completable assigned-agent paths, flow-conflict branching solves substantially more instances while retaining optimality. Simulation and physical-robot experiments demonstrate plan executability, with laboratory tests reducing fleet travel by 40.8% relative to the parking-based coordination baseline. The source code and related resources are available at https://github.com/Chin-hsi/focbs</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="7" data-date="2026-11-18" data-venue="arXiv cs.CE"
+           data-text="beyond corridor averages: lane-level validation of microscopic freeway simulation with empirically parameterized arrivals korede r. bishi casey bowman john a. miller arxiv cs.ce">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.24853" target="_blank" rel="noopener">Beyond corridor averages: Lane-level validation of microscopic freeway simulation with empirically parameterized arrivals</a></h3>
+<div class="by">Korede R. Bishi, Casey Bowman, John A. Miller</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-18</span>
+<span class="tag">Traffic simulation &amp; calibration</span>      </div>
+      <p class="reason">Lane-level validation of microscopic freeway simulation with empirically parameterized arrivals; directly relevant to traffic simulation calibration and validation methods.</p>
+      <details><summary>Abstract</summary><p>Traffic flow modeling is an essential part of civil planning around the world, and traffic simulation is an important component of the analyses that city planners must perform to ensure safe and efficient road networks for their citizens. This work advances microscopic traffic simulation through lane-level validation of speed and flow dynamics, addressing a critical gap in conventional macro-aggregated approaches. We systematically evaluate the trade-offs between numerical integration methods and vehicle arrival processes when reproducing empirical trajectory data from California&#39;s freeway network. Results demonstrate that numerical-integrator choice has negligible impact on simulation accuracy, with less than one percent variation across eight methods, while vehicle arrival-process modeling substantially affects fidelity. The shifted Erlang-2 distribution reduces flow-prediction error by approximately 28% compared to Poisson processes by enforcing a realistic minimum headway. Lane-level validation across five detector stations reveals lane-specific dynamics that aggregated metrics often obscure.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-18" data-venue="arXiv cs.CR"
+           data-text="intent contracts: taking tools away from agents ziyuan wang genliang zhu xiaobo chen chu wang arxiv cs.cr">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.24025" target="_blank" rel="noopener">Intent Contracts: Taking Tools Away from Agents</a></h3>
+<div class="by">Ziyuan Wang, Genliang Zhu, Xiaobo Chen, Chu Wang</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CR</span><span class="by">2026-11-18</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Authorization interface for tool-using LLM agents separating planning from trusted tool execution; relevant agentic-AI reliability work for agents that take operational actions.</p>
+      <details><summary>Abstract</summary><p>Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user&#39;s words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner&#39;s influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user&#39;s words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner&#39;s goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user&#39;s task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark&#39;s environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner&#39;s choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="mle agents: autonomous ml engineering in large-scale recommendation systems matthew li albert liang dilip raj arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.23910" target="_blank" rel="noopener">MLE Agents: Autonomous ML Engineering in Large-scale Recommendation Systems</a></h3>
+<div class="by">Matthew Li, Albert Liang, Dilip Raj</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM agents autonomously propose, implement and evaluate model changes in industry; a clear agentic workflow with harness-design lessons the researcher would read.</p>
+      <details><summary>Abstract</summary><p>The typical workflow for improving large-scale ranking and recommendation models is slow and tedious: an engineer forms a hypothesis, implements it as a code change, trains a model, and evaluates it both offline and online, often relying on their own intuition and experience along the way. Autonomous LLM agents promise to speed this up by running the loop on their own, but it is still unclear whether they can do this in industry-scale systems rather than on benchmarks or small proxy tasks. We build human-on-the-loop machine learning engineer (MLE) agents that propose, implement, train, and evaluate model changes on large-scale search rankers. Engineers retain control over objective design, search direction, and final-model review. We identify three obstacles that make this industry setting challenging: feedback takes hours per experiment, offline metrics do not always predict online impact, and improvements saturate after the early wins. We address these with parallel training runs, an objective calibrated to match online impact, and careful context engineering. In one campaign, the system ran 1,097 completed candidate experiments and accepted 325, a 29.6\% acceptance rate compared with 15.6\% in the earlier campaign under a different objective and search constraint. Its best model increases search volume by 0.23\% in an A/B test of large scale. Several improvements were architectural changes the team had never tried, drawn from the broader industry and literature, suggesting that MLE agents can explore regions of the design space that human intuition overlooks. We find that the design of the harness around the model matters: intuition suggests that a stronger underlying model is enough, but in our experience, the design of the loop around it is just as critical. More broadly, our work shows that autonomous agents can do real machine-learning engineering in industry-scale systems.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-19" data-venue="Transportation Research Part E"
+           data-text="centralized and decentralized decision-making in port logistics platform: a reinforcement learning approach yehan dou ruoyu li yangyan shi tieling zhang constantin blome transportation research part e">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.tre.2026.105390" target="_blank" rel="noopener">Centralized and decentralized Decision-making in port logistics platform: A reinforcement learning approach</a></h3>
+<div class="by">Yehan Dou, Ruoyu Li, Yangyan Shi, Tieling Zhang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part E</span><span class="by">2026-11-19</span>
+<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Reinforcement learning for centralized versus decentralized decisions in a port logistics platform touches on RL for scheduling and dispatching.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-19" data-venue="Transportation Research Part D"
+           data-text="how much does weather matter for bus reliability under shifting demand regimes? evidence from greater sydney haoning xi transportation research part d">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trd.2026.105731" target="_blank" rel="noopener">How much does weather matter for bus reliability under shifting demand regimes? Evidence from Greater Sydney</a></h3>
+<div class="by">Haoning Xi</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part D</span><span class="by">2026-11-19</span>
+<span class="tag">Traffic simulation &amp; calibration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Empirical study of weather and demand effects on bus reliability in Greater Sydney uses transit operations data relevant to bus performance modelling.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-17" data-venue="Applied Energy"
+           data-text="optimal integration of power-to-vehicle and power-to-heat systems to support renewable deployment in smart urban energy districts ashkan mohammadbagherzadehmamaghani endeshaw alemu bekele antonio sgaramella lorenzo mario pastore davide astiaso garcia applied energy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.apenergy.2026.129286" target="_blank" rel="noopener">Optimal integration of Power-to-Vehicle and Power-to-Heat systems to support renewable deployment in smart urban energy districts</a></h3>
+<div class="by">Ashkan Mohammadbagherzadehmamaghani, Endeshaw Alemu Bekele, Antonio Sgaramella, Lorenzo Mario Pastore et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Applied Energy</span><span class="by">2026-11-17</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Multi-objective planning of Power-to-Vehicle and heat with EV smart charging flexibility in urban districts; relevant to grid integration of EVs.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="depth before breadth: reverse-to-forward curriculum with advantage decomposition for llm agent siyuan du yuxin liu meng tang haoran li yechao bai feiyang pan jia he arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.24697" target="_blank" rel="noopener">Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent</a></h3>
+<div class="by">Siyuan Du, Yuxin Liu, Meng Tang, Haoran Li et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">RL training of LLM agents on long-horizon tasks with curriculum and credit assignment; agentic and planning-related but not optimisation-focused.</p>
+      <details><summary>Abstract</summary><p>Reinforcement learning (RL) has become a common approach for training large language model (LLM) agents on long-horizon tasks. However, learning from sparse terminal rewards makes credit assignment and exploration difficult. We approach these challenges through a policy-induced capability region, the set of states from which the current policy can reliably complete a task. Near its boundary, an agent may need only a few actions to reach a more solvable state, even when the goal remains distant. This reduces long-horizon learning to two coupled subproblems of reaching that state and completing the task from there. We address them with paired advantages and a progressive reverse-to-forward curriculum. The advantages provide separate signals for reaching more solvable states and completing the task from them, while the curriculum expands the capability region backward along successful reference trajectories and then into off-reference states through on-policy exploration. On ALFWorld and WebShop, our method outperforms competitive agentic RL methods at both model scales, achieving success rates of 90.1%/96.1% and 80.2%/82.6% with Qwen2.5-1.5B/7B-Instruct, respectively.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="evaluating governed llm-driven ml experimentation: lifecycle, provenance, and failure metrics dowling wong arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.23678" target="_blank" rel="noopener">Evaluating Governed LLM-Driven ML Experimentation: Lifecycle, Provenance, and Failure Metrics</a></h3>
+<div class="by">Dowling Wong</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Governed LLM agent harness for ML experimentation with lifecycle control and ledgers; relevant to evaluation and reliability of agents running experiments.</p>
+      <details><summary>Abstract</summary><p>Autonomous agents that run ML experiments are usually judged by the best score they reach. That score says nothing about how it was reached: whether the agent stayed within the files it was allowed to edit, whether failed trials were kept or silently dropped, and whether each keep or discard decision can be traced to its evidence. We propose evaluating such systems on their experimental process as well as their outcome, and we build a governed harness that makes this possible. A control plane, not the LLM that proposes changes, owns each trial&#39;s lifecycle, checks its edit scope, decides keep or discard, and appends one record per trial to an append-only ledger. Governance metrics such as the invalid-action rate, the repeated-bad rate and provenance completeness are computed from that ledger. Across six ML tasks, from synthetic logistic regression to language-model training, and 1,445 trials, the same contract applied unchanged. The ledger exposed failures that a task score hides: a no-memory arm in which all 120 trials failed, a benchmark adapter whose bounded proposals ran out, and a reset failure that reproducibility hashes revealed, after which the affected campaigns were rerun. In a matched counterfactual, a loop that logs only successful trials left no record of 43 of 50 trials, while the governed ledger recorded all 50. Memory ablations show that memory&#39;s effect on repeated bad proposals depends on the task. We release the ledgers of all 1,445 trials, so that every number reported for them can be recomputed.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
+           data-text="graft: execution-guided genetic recombination for agent design sevda ebrahimi mohammed saidul islam xiaodan zhu elham dolatabadi arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.23509" target="_blank" rel="noopener">GRAFT: Execution-Guided Genetic Recombination for Agent Design</a></h3>
+<div class="by">Sevda Ebrahimi, Mohammed Saidul Islam, Xiaodan Zhu, Elham Dolatabadi</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM-driven evolutionary search over agent architectures with execution-guided crossover; relevant to LLM-designed heuristics and agent search methods.</p>
+      <details><summary>Abstract</summary><p>Automated agent design searches for executable architectures that improve LLM-based agent performance, with evolutionary methods using language-model crossover to recombine promising mechanisms for task decomposition, model coordination, and verification. This search, however, is typically guided by aggregate fitness alone, which hides the instance-level successes and failures behind each score. We introduce Execution Guided Genetic Recombination for Agent Design (GRAFT), which uses aggregate fitness for selection and survival and parent-specific execution evidence to guide semantic crossover with integrated mutation. Its feedback harness reuses bounded samples of successful and failed runs from fitness evaluation, withholding reference answers and requiring no additional task executions. We evaluate GRAFT across six reasoning and programming settings using open-weight optimizer and executor models. It achieves a mean test accuracy of 82.0%, exceeding the strongest baseline by 9.8% points. Controlled ablations show that adding execution evidence improves test accuracy with initialization, search rules, repair policies, and evaluation budgets held fixed. Our results support the value of parent-specific execution evidence for evolutionary agent design.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.MA"
+           data-text="mango arena: same seeds, different chains evaluating llm agents in a disrupted supply chain sara amar arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.23613" target="_blank" rel="noopener">MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain</a></h3>
+<div class="by">Sara Amar</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
         <span>arXiv cs.MA</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">LLM agents sharing limited server capacity and status information under deadlines, a multi-agent resource allocation setting relevant to agentic operational decisions.</p>
-      <details><summary>Abstract</summary><p>When AI agents share limited resources, such as computing services or public infrastructure, their individual choices affect how much work they complete as a group. Can sharing evidence of what is available let a group make full use of its resources after capacity changes? We tested this with language-model agents choosing between two simulated servers. One server recovered while its status report still listed it as unavailable. Each server had limited capacity per round, so rejected jobs required another attempt before the deadline. Telling agents that recovery was possible reduced missed deadlines. In controlled tests with Anthropic&#39;s Claude Haiku 5.5, no agent tried the recovered server after a rule reminder, yet all chose it when shown a successful request record. After sharing, all five models tested left capacity unused. Keeping the success record fixed, we gave agents numbers without instructions, using each value equally often but giving group members either identical or distinct numbers. With OpenAI&#39;s GPT-6.1 Sol or Google&#39;s Gemini 3.5 Flash-Lite, distinct numbers spread simultaneous requests across servers and increased job completions even though overall choice frequencies barely changed. Telling AI agents which resources are available leaves a second design challenge: helping them spread demand across those resources.</p></details>
+      <p class="reason">Multi-LLM-agent supply chain testbed evaluating operational decisions and bullwhip; agentic operations relevant but not transport.</p>
+      <details><summary>Abstract</summary><p>We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot&#39;s main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as &#34;no order&#34; decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-17" data-venue="arXiv eess.SY"
-           data-text="optimal energy and llm task scheduling for multiple cloud data centers zhongqi zhao lei fan zhu han arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-18" data-venue="arXiv eess.SY"
+           data-text="mitigating the grid impact of gigawatt-scale ai data centers via high-fidelity model flexibility eihab e. e. ahmed saeed manshadi arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22242" target="_blank" rel="noopener">Optimal Energy and LLM Task Scheduling for Multiple Cloud Data Centers</a></h3>
-<div class="by">Zhongqi Zhao, Lei Fan, Zhu Han</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.23771" target="_blank" rel="noopener">Mitigating the Grid Impact of Gigawatt-Scale AI Data Centers via High-Fidelity Model Flexibility</a></h3>
+<div class="by">Eihab E. E. Ahmed, Saeed Manshadi</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-17</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-18</span>
 <span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">MILP scheduling of LLM training tasks with data center energy and facility operation; a close optimisation-plus-energy formulation, though not transport.</p>
-      <details><summary>Abstract</summary><p>This paper studies coordinated Large Language Model (LLM) training-task scheduling and facility operation for geographically distributed cloud data centers (CDCs). The central question is how two scheduling flexibilities - cross-CDC task transfer and task reordering - affect service and economic outcomes when remote execution remains subject to compute, bandwidth, energy, and zone-temperature constraints. We formulate a mixed-integer optimization model that jointly determines task outcomes, heterogeneous-node assignment, execution timing, pre-execution data transfer, node activation, and facility operation. A deterministic 24-hour case study contains 3 CDCs, 15 heterogeneous graphics processing unit (GPU) nodes, 4 thermal zones per CDC, and 103 tasks. In this instance, enabling transfer increases net profit by 57.9% relative to the otherwise matched no-transfer variant and increases completed tasks from 76 to 103. The more restrictive no-transfer FIFO-prefix variant completes 14 tasks and yields negative profit. The proposed schedule transfers 39 tasks, achieves 70.3% node utilization, and maintains zone temperatures within 24°C-27°C. These fixed-instance results indicate that cross-CDC transfer and task-reordering flexibility can improve the modeled profit and task-completion outcomes under the studied conditions.</p></details>
+      <p class="reason">Embeds high-fidelity AI data center flexibility in multi-period AC OPF with storage; useful grid-integration method background.</p>
+      <details><summary>Abstract</summary><p>Gigawatt-scale artificial intelligence data centers (AIDCs) are being connected at a single point of interconnection (POI) faster than transmission can be reinforced, yet studies of their flexibility rely on DC power flow and simplified load envelopes that omit voltage, cooling dynamics, and workload deadlines. This paper addresses this gap by embedding a high-fidelity AIDC model, with separate inference and training pools, hall thermal mass, PV, a battery energy storage system (BESS) with reactive capability, and a STATCOM, in a five-minute multi-period AC optimal power flow. Simulations on the RTS-GMLC test system show that active-power flexibility mitigates local price spikes and relieves congestion, whereas reactive support from the BESS inverter or a STATCOM is needed to keep the POI voltage away from sagging around its 0.95~pu limit. Sensitivity analyses show that cost-driven charging of large batteries can induce new morning congestion and that storage largely substitutes for wider workload deferral.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-17" data-venue="arXiv cs.CL"
-           data-text="when do typed decision models work in transportation? evidence from travel choice and traffic signal control hongyang zhang boyuan deng siyuan feng kai chen junbo zhang arxiv cs.cl">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-18" data-venue="arXiv eess.SY"
+           data-text="n-1 security constrained hosting capacity assessment for ultra large-scale data center with workload flexibility jiakai wu pengyu ren yifan wang wei sun arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22926" target="_blank" rel="noopener">When Do Typed Decision Models Work in Transportation? Evidence from Travel Choice and Traffic Signal Control</a></h3>
-<div class="by">Hongyang Zhang, Boyuan Deng, Siyuan Feng, Kai Chen et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.24493" target="_blank" rel="noopener">N-1 Security constrained Hosting Capacity Assessment for Ultra Large-scale Data Center with Workload Flexibility</a></h3>
+<div class="by">Jiakai Wu, Pengyu Ren, Yifan Wang, Wei Sun</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.CL</span><span class="by">2026-11-17</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-18</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">N-1 security-constrained hosting capacity with batch workload deferral; relevant flexibility-in-grid reasoning, though not transport-based.</p>
+      <details><summary>Abstract</summary><p>Transmission network security can substantially alter where large-scale data centers can connect and how much workload flexibility can unlock. This paper develops a hosting-capacity framework that couples computing demand, batch workload scheduling, and N-1 security constraints. A modified IEEE 118-bus case study reveals that two data center sites with identical hosting capacities under normal operation differ by 874.5 MW under the contingencies operation when workload flexibility is enabled. Six-hour batch deferral increases N-1 hosting capacity by up to 24.5\% relative to immediate execution. These gains arise from reducing demand at critical hours while accommodating deferred tasks within subsequent transmission limits and deadlines. At bus 92, a four-hour window captures 90.9\% of the six-hour capacity gain. The findings establish workload flexibility as a location-dependent connection resource whose capacity value requires joint assessment of contingency exposure and deadline constrainted workload recovery, beyond the power reduction available at a single critical hour.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-18" data-venue="arXiv eess.SY"
+           data-text="quantifying the hosting capacity value of workload flexibility for ai data centers: a two-stage electricity-computation co-optimization framework jiakai wu wei sun pengyu ren yifan wang arxiv eess.sy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.24506" target="_blank" rel="noopener">Quantifying the hosting capacity value of workload flexibility for AI data centers: A two-stage electricity-computation co-optimization framework</a></h3>
+<div class="by">Jiakai Wu, Wei Sun, Pengyu Ren, Yifan Wang</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv eess.SY</span><span class="by">2026-11-18</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Quantifies hosting capacity of AI data centers via workload flexibility and transmission-constrained co-optimization; adjacent to grid integration of flexible loads.</p>
+      <details><summary>Abstract</summary><p>Grid connection constraints increasingly limit the expansion of AI data centers, yet the additional hosting capacity enabled by computational workload flexibility remains insufficiently quantified. This paper develops a two-stage electricity--computation co-optimization framework to quantify the individual and coordinated hosting capacity values of spatial and temporal workload flexibility. Data center capacities are determined endogenously, with computational task arrivals scaling with admitted capacity. Spatial routing of eligible interactive requests and temporal deferral of batch workloads are linked to server operation and facility power demand, subject to workload completion requirements and transmission constraints. The first stage maximizes aggregate hosting capacity; the second fixes the resulting site capacities and optimizes annual workload scheduling and generation dispatch to minimize generation and carbon costs. An 8760-hour case study with three data centers on a modified IEEE 118-bus system shows that temporal and spatial flexibility individually increase hosting capacity by 21.26\% and 5.37\%, respectively. Their coordinated use raises hosting capacity from 4635.1~MW to 6231.5~MW, a 34.44\% increase without network reinforcement. The coordinated gain exceeds the sum of the individual gains by 361.9~MW, demonstrating complementarity between spatial migration and temporal deferral. By redistributing computational demand across locations and operating hours, these mechanisms enable fuller utilization of existing transmission capacity. The findings establish workload flexibility as a quantifiable planning resource for accommodating additional data center capacity within existing transmission networks.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="reducing inference cost of coding agents with timeout cascades boxi zhou german sviridov dmitrii ustiugov haris javaid arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.24324" target="_blank" rel="noopener">Reducing Inference Cost of Coding Agents with Timeout Cascades</a></h3>
+<div class="by">Boxi Zhou, German Sviridov, Dmitrii Ustiugov, Haris Javaid</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Evaluates typed LLM decision models for travel mode choice and traffic signal control; directly transport decision-making with RL baselines.</p>
-      <details><summary>Abstract</summary><p>Typed decision models combine natural-language understanding with a structured interface that returns a selected action and an option-level probability distribution without generating lengthy textual responses. Their low inference cost and response latency make them attractive for transportation problems with predefined alternatives. This paper investigates their effectiveness, robustness, and efficiency in two representative transportation tasks: individual travel-mode choice prediction and sequential traffic signal control. We systematically evaluate TypeSafe Jev and GPT-6 Luna Decisions against conventional transportation methods, reinforcement learning algorithms, and four chat-based large language models. Experiments on the Swissmetro dataset show that typed decision models achieve lower prediction accuracy than traditional discrete choice models and the strongest chat-based baseline, while their performance varies substantially with input representation and question framing. In closed-loop traffic signal control experiments, typed decision models demonstrate competitive performance against established controllers in several scenarios, but exhibit performance degradation under more challenging network conditions. Furthermore, the typed models achieve lower inference latency and computational cost than the evaluated chat-based large language models, highlighting their potential for efficient, zero-shot transportation decision-making. Overall, these findings demonstrate both the potential and limitations of typed decision models, emphasizing the importance of input design, task characteristics, and robustness evaluation for their effective application in transportation systems.</p></details>
+      <p class="reason">Cascading small-to-large model routing for cost-efficient coding agents; cost-aware agent operations the researcher would find useful.</p>
+      <details><summary>Abstract</summary><p>AI coding agents have become one of the most popular applications of large language models. Yet, agentic AI comes at the cost of a tremendous amount of GPU compute resources, which limits its profitability and its viability at scale. In this paper, we investigate whether smaller, cheaper models can cut this cost without sacrificing accuracy. We evaluate 36 popular large and small open-weight models released since 2024 on a software engineering benchmark, and find that recent small models are closing the accuracy gap compared to their large counterparts. We investigate the structure of this gap and find that the gap is highly concentrated around hard tasks that small language models fail to solve while achieving remarkably good accuracy for easy and medium complexity tasks. Following this observation, we show that by utilizing a hybrid inference strategy that tries a small model first and escalates to a large one only when needed, we can achieve up to 33% reduction in total GPU-hour costs and 16.4% on all tasks from SWE-bench Verified, without sacrificing accuracy. Strikingly, this simple cascade nearly matches an oracle-style task router, highlighting a practical path for deploying cost-aware coding agents in production without complex learned task routers and with minimal engineering complexity.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-18" data-venue="Transportation Science"
-           data-text="the meal delivery routing problem with courier behavior and graph neural networks niels de jong ilke bakir kees jan roodbergen transportation science">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.CE"
+           data-text="reliability by architecture: agentic workflows for validated multi-physics simulation from natural language søren taverniers eric darve hamdi a. tchelepi arxiv cs.ce">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1287/trsc.2025.0133" target="_blank" rel="noopener">The Meal Delivery Routing Problem with Courier Behavior and Graph Neural Networks</a></h3>
-<div class="by">Niels de Jong, Ilke Bakir, Kees Jan Roodbergen</div>      <div class="venue">
-        <span class="pub informs">INFORMS</span>
-        <span>Transportation Science</span><span class="by">2026-11-18</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">GNN-guided cost function approximation with RL training for courier dispatch simulation; relevant learned dispatching and simulation methods.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
-           data-text="crossenv: synthesizing verifiable cross-environment tasks for long-horizon agent training zhengfeng yu tian lan zhijing wu enbo zhao xuannan liu feihu jiang qianghuai jia longyue wang zhao xu weihua luo xian-ling mao arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.22777" target="_blank" rel="noopener">CrossEnv: Synthesizing Verifiable Cross-Environment Tasks for Long-Horizon Agent Training</a></h3>
-<div class="by">Zhengfeng Yu, Tian Lan, Zhijing Wu, Enbo Zhao et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.23473" target="_blank" rel="noopener">Reliability by Architecture: Agentic Workflows for Validated Multi-Physics Simulation from Natural Language</a></h3>
+<div class="by">Søren Taverniers, Eric Darve, Hamdi A. Tchelepi</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-17</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Synthesizes verifiable cross-environment tool-use tasks for training long-horizon LLM agents; agentic but not about optimisation or transport.</p>
-      <details><summary>Abstract</summary><p>Executable synthetic environments provide scalable training tasks and verifiable feedback for long-horizon agents. Existing environment synthesis methods primarily generate tasks within individual environments. However, these tasks do not adequately capture real-world interactions across services, where actions in one service depend on information obtained from another. Synthesizing such tasks is challenging because data generated across environments must remain consistent to support executable and verifiable interactions. To address this challenge, we introduce CrossEnv, a framework that uses an entity-tool graph to identify connections between environments and aligns task-specific data to synthesize executable, verifiable cross-environment tasks. We further propose CrossEnv-Curriculum, which progresses from single-environment tool use to coordination across more environments and business domains, before introducing user interaction. Across four external benchmarks, combining cross-environment training data with this curriculum achieves competitive performance with fewer training examples. Further analyses support the benefits of cross-environment data and curriculum training, and provide evidence of transfer to new environment combinations, external tasks less similar to the training data, and longer workflows.</p></details>
+      <p class="reason">Agentic LLM workflow with deterministic checks running multi-physics simulations from natural language; relevant to LLM-driven simulation pipelines.</p>
+      <details><summary>Abstract</summary><p>Preparing, executing, and validating strongly coupled multi-physics simulations require expert time. Agentic workflows use large language models (LLMs) to coordinate them from natural-language descriptions, but reliability requires checks of physical consistency and fidelity to the problem description. Our agentic harness implements explicit task allocation: LLMs interpret user requests and simulator diagnostics, generate input components not covered by predefined construction rules, and propose repairs, while deterministic routines construct supported components and check inputs, edits, and results. We evaluate CO2-storage problems using the multi-physics simulator GEOS, from compositional flow to flow-poromechanics with frictional fault contact. In 80 attempts on two flow problems, grounding raises the proportion of structurally valid inputs from 5/20 to 20/20, but acceptance reaches 20/20 only with complete rule-based input preparation. With identical inputs, local repairs correct three seeded defects while preserving valid inputs. Supporting tests identify simulations passing physics checks despite differing from the problem description or reference results.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
-           data-text="harnesses that improve themselves: a unifying framework for self-improving agent harnesses deep shah nehal kathrotia arxiv cs.ai">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="thinking fast, anywhere: one system-1 for the decision points of any agent workflow rui li liyang he zheng zhang zhenya huang qi liu arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22299" target="_blank" rel="noopener">Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses</a></h3>
-<div class="by">Deep Shah, Nehal Kathrotia</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.23751" target="_blank" rel="noopener">Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow</a></h3>
+<div class="by">Rui Li, Liyang He, Zheng Zhang, Zhenya Huang et al.</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Self-improving agent harnesses that diagnose and patch their own runtime; relevant agent engineering background with evaluation of reliability.</p>
-      <details><summary>Abstract</summary><p>Whether a foundation model succeeds as an autonomous agent depends as much on its runtime software as on its weights. This runtime, the agent harness, manages context and memory, steers multi-turn control, executes tool actions in sandboxes, and verifies work before stopping. Because models differ in how they use tools and how they fail, a static harness tuned for one model or task often stalls, wastes tokens, or regresses on another. This bottleneck has driven a shift from prompt tuning to self-improving agent harnesses: systems that inspect their own execution traces, separate runtime bugs from model limits, and rewrite their own code. We present a unifying architectural and design framework for self-improving agent harnesses. The framework pairs four editable runtime components (context and state, agent control, action interfaces, and verification and recovery) with a four-stage loop that diagnoses failures, proposes code patches, validates candidates, and deploys updates. Using this framework, we show how optimizers trace errors across long trajectories and discover reusable runtime mechanisms such as pre-stop verifiers, loop breakers, and persistent memory. We further show why full-harness rewrites overfit or break across modules, and how modular updates with validation gates generalize across models while bounding token cost. To keep self-modification safe, we establish practical defenses against recurring failure modes including prompt bloat, benchmark gaming, and evaluator tampering. Finally, experiments on SWE-bench Lite validate this framework, showing that gated modular evolution outperforms prompt reflection and full-harness rewrites across models and repositories at a fraction of the token cost.</p></details>
+      <p class="reason">Agent workflow decision points resolved by a small model to cut cost; agentic and operational but not optimisation-focused.</p>
+      <details><summary>Abstract</summary><p>Autonomous LLM agents incur substantial cost and latency by invoking a large model (System-2) at every step, even when many intermediate actions choose among a small set of known candidates. Existing dual-system agents offload such decisions to a lightweight System-1 model, but rely on workflow-specific hooks authored per environment. We present AnyS1, a framework that turns human-authored procedural skills, whose instructions naturally specify where choices arise and which options apply, into a shared, domain-general source of decision points. Offline, AnyS1 mines grounded enumerable decisions across over 1,000 public skills, gathers execution-grounded trajectory states inside isolated containers to construct Any-DP, and trains a single calibrated 4B pointer System-1 with label smoothing. At run time, compiled workflows resolve routine decisions in one forward pass and fall back to System-2 when confidence falls below a calibrated threshold. Across three unseen benchmarks and distinct System-2 model families, AnyS1 preserves task reliability while cutting episode cost by 75-91% and model-call time by 63-92% relative to an uncompiled System-2 agent, and maintains performance under zero-shot threshold transfer.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AR"
-           data-text="pvtsizing 2.0: a fast and reliable analog circuit sizing operator for agentic eda workflows zichen kong minghuan song xiyuan tang ziming wei yi zhong yuan wang arxiv cs.ar">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-18" data-venue="arXiv cs.AI"
+           data-text="automodel: a skill for agentic model discovery marco virgolin harry desmond ester bergantin giorgio morales john w. sheppard luigi romano alessandro lucantonio arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.22328" target="_blank" rel="noopener">PVTSizing 2.0: A Fast and Reliable Analog Circuit Sizing Operator for Agentic EDA Workflows</a></h3>
-<div class="by">Zichen Kong, Minghuan Song, Xiyuan Tang, Ziming Wei et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.24347" target="_blank" rel="noopener">automodel: A Skill for Agentic Model Discovery</a></h3>
+<div class="by">Marco Virgolin, Harry Desmond, Ester Bergantin, Giorgio Morales et al.</div>      <div class="venue">
         <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AR</span><span class="by">2026-11-17</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-18</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">LLM-adviser plus numerical optimizer for analog circuit sizing across PVT corners; an agentic human-in-loop optimisation workflow, though in a different domain.</p>
-      <details><summary>Abstract</summary><p>Analog circuit design automation requires both coordinated tool execution and efficient numerical search. Large language models (LLMs) offer new ways to organize tool execution, but finding one sizing that satisfies specifications across process, voltage, and temperature (PVT) corners remains costly. PVTSizing 2.0 addresses these needs through a human-agent workflow built around an independently usable numerical optimizer. An agent carries the designer&#39;s approved task through execution and result review. The optimizer reduces unnecessary training through loss-guided updates and uses critic-guided local refinement to explore additional candidates while accounting for cross-corner conflicts. An optional LLM adviser supplies parameter relationships to focus numerical search on circuit-informed directions, while the optimizer selects adjustment amplitudes and verifies their effects through simulation. Across four circuit benchmarks, the standalone optimizer completes all 40 runs and achieves a 7.3x speedup in overall mean runtime over the original PVTSizing, with a comparable mean sample count. In a separate study, the best tested knowledge-injection configuration further reduces mean runtime by 39.9% and simulation samples by 35.4% relative to the standalone optimizer.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.LG"
-           data-text="pareto-informed smart &#34;predict, then optimize&#34; for multi-objective combinatorial problems aabhash dhakal tim lachner arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.23076" target="_blank" rel="noopener">Pareto-Informed Smart &#34;Predict, then Optimize&#34; for Multi-Objective Combinatorial Problems</a></h3>
-<div class="by">Aabhash Dhakal, Tim Lachner</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-17</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Decision-focused learning with SPO+ for multi-objective combinatorial problems; directly on predict-then-optimise methods the researcher would value.</p>
-      <details><summary>Abstract</summary><p>Many real-world planning applications, from logistics, routing to resource allocation, give rise to optimization problems that need to balance multiple, conflicting objectives. While machine learning is often used to predict the unknown parameters or costs of these problems, standard models trained on prediction accuracy can lead to suboptimal plans. Decision-Focused Learning (DFL) addresses this by integrating the downstream optimization task into the training objective. However, existing DFL methods for multi-objective problems rely on simple scalarization, which fails to capture the rich trade-offs of the Pareto Frontier. To address this gap, we propose a Pareto-aware extension to single-objective Smart &#34;Predict, then Optimize&#34; (SPO+) for multi-objective combinatorial optimization problems. Our loss function leverages the true Pareto Frontier, forming a target decision that aligns with a sampled preference vector, and minimizes regret against this target. Experiments on multi-objective shortest path and multi-objective knapsack problems show that our approach outperforms traditional two-stage Mean Squared Error (MSE) baselines. It also surpasses scalarization-based SPO+ approaches.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-17" data-venue="arXiv cs.AI"
-           data-text="think once, act fast: cost-effective recursive self-improvement for decision model harness siqi lai haitao li hao liu arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.22432" target="_blank" rel="noopener">Think Once, Act Fast: Cost-Effective Recursive Self-Improvement for Decision Model Harness</a></h3>
-<div class="by">Siqi Lai, Haitao Li, Hao Liu</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-17</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">System-1/System-2 agent framework with recursive harness improvement for decision making; agentic decision support relevant to operational decisions.</p>
-      <details><summary>Abstract</summary><p>Fast System-1 models enable responsive actions but struggle with complex or unfamiliar tasks. Large language model (LLM)-based System-2 provides strong reasoning capabilities, yet repeated invocation incurs substantial latency and computational costs. To bridge this gap, we propose JevRSI, a System-1/System-2 collaboration framework that transforms LLM reasoning into transferable decision support through recursive harness improvement. A Jev-style System-1 model enables low-latency action selection, while an asynchronous System-2 LLM develops a modular harness. The harness integrates procedures, state memory, and world models to provide decision contexts spanning the past, present, and future. Utility-driven retrieval selects modules based on both contextual relevance and their utility on previous tasks. Environmental feedback guides targeted revisions and enables recursive self-improvement. Experiments across three datasets show that JevRSI consistently improves decision quality, matching or surpassing LLM agents in several settings. It preserves low-latency execution with favorable performance-cost trade-offs. Moreover, System-2 development interventions decrease as the harness evolves, amortizing System-2 costs through continuous improvement. Our project is available at https://github.com/usail-hkust/JevRSI.</p></details>
+      <p class="reason">Agent skill that lets coding agents run automated model discovery including traffic flow case studies; LLM agents running scientific pipelines.</p>
+      <details><summary>Abstract</summary><p>The search for better models, whether expressed as analytical equations or neural architectures, has increasingly shifted from manual design toward data-driven automation. While a multitude of algorithms exist, ranging from exhaustive search to AlphaEvolve, recent advances in general-purpose coding agents such as Claude Code and OpenAI Codex raise the question: could providing such systems with a &#34;model discovery recipe&#34; be enough to discover or improve models? We present automodel, an agent skill for general model discovery. With case studies in astrophysics, cardiovascular dynamics, precision agriculture, traffic flow, and vehicle tire dynamics, we show how commercial agents equipped with automodel can successfully identify novel and scientifically-relevant models. Our findings suggest that encoding model-discovery methodology as a portable agent skill can provide a simple, interactive, powerful and broadly applicable alternative to domain-specific automated discovery pipelines. The skill is available at: https://github.com/unlayer-ai/automodel.</p></details>
     </div>
   </article>
 </main>
@@ -265,7 +394,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-19.html" class="cur" aria-current="page">2026-11-19 · 12</a></li>
+    <li><a href="archive/2026-11-20.html" class="cur" aria-current="page">2026-11-20 · 22</a></li>
+    <li><a href="archive/2026-11-19.html">2026-11-19 · 12</a></li>
     <li><a href="archive/2026-11-18.html">2026-11-18 · 20</a></li>
     <li><a href="archive/2026-11-17.html">2026-11-17 · 3</a></li>
     <li><a href="archive/2026-11-16.html">2026-11-16 · 0</a></li>
@@ -289,7 +419,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-19 01:58 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-20 01:45 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
