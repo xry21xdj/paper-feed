@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-21</h2>
-  <span class="meta">11 relevant of 100 screened · 25661 new papers fetched</span>
+  <h2>Today · 2026-11-22</h2>
+  <span class="meta">4 relevant of 25 screened · 25496 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">11</span></button>
-<button class="chip" type="button" data-topic="sim" aria-pressed="false">Traffic simulation &amp; calibration<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">4</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">3</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">4</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">2</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,144 +107,52 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="ai4opt" data-score="8" data-date="2026-11-20" data-venue="Operations Research"
-           data-text="column elimination: an iterative approach to solving arc-flow formulations anthony karahalios willem-jan van hoeve operations research">
-    <div class="score s-hi" title="Relevance 8/10">8</div>
-    <div>
-      <h3><a href="https://doi.org/10.1287/opre.2024.1404" target="_blank" rel="noopener">Column Elimination: An Iterative Approach to Solving Arc-Flow Formulations</a></h3>
-<div class="by">Anthony Karahalios, Willem-Jan Van Hoeve</div>      <div class="venue">
-        <span class="pub informs">INFORMS</span>
-        <span>Operations Research</span><span class="by">2026-11-20</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Column elimination for arc-flow formulations applied to VRP with time windows, closely matching decomposition and routing methods the researcher uses.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="8" data-date="2026-11-19" data-venue="arXiv cs.AI"
-           data-text="the frontieror challenge: agentic algorithm design for operations research hai wang bretislav hajek chonghe jiang minwei kong ao qu huatian gong bo dong cynthia barnhart jinhua zhao arxiv cs.ai">
-    <div class="score s-hi" title="Relevance 8/10">8</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.26171" target="_blank" rel="noopener">The FrontierOR Challenge: Agentic Algorithm Design for Operations Research</a></h3>
-<div class="by">Hai Wang, Bretislav Hajek, Chonghe Jiang, Minwei Kong et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-19</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Benchmarks LLM agents designing algorithms for many OR problems against Gurobi, directly matching agentic AI for optimisation and LLM-designed heuristics.</p>
-      <details><summary>Abstract</summary><p>Operations research (OR) relies on algorithms that experts tailor to each problem: a new routing, scheduling or network design problem can take weeks of specialist work before it is solved well at scale. Large language model (LLM) agents now write, test and improve code, but whether they can design algorithms that scale to realistic instances is open: in the FrontierOR benchmark&#39;s one-shot evaluation, the strongest model matches Gurobi, with an objective within 1% of Gurobi&#39;s and no slower, on only 39% of the large instances. The FrontierOR Challenge asks teams to build agentic workflows that design, test, and improve algorithms for many optimization problems at once. Stage 1 releases 60 of the benchmark&#39;s 180 audited problems, spanning six application categories and five formulation types, in weekly rounds of 15; Stage 2 introduces new problems outside the benchmark, with unseen instances. Two tracks are ranked separately: in the Main track we run the submitted algorithms in a network-isolated sandbox with open-source dependencies only; in the Self-hosted track teams solve the instances on their own machines, with any software, within a timed window. Every solution is checked for feasibility, and a feasible solution scores the ratio of its objective to a frozen known reference, averaged over hidden instances.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-19" data-venue="Nature Communications"
-           data-text="automated data to model transformation for constraint programming with ai zhengqi shi jin huang xinyu li hao zhang mingming peng xinyi yang qihao liu shaosen su chunjiang zhang peigen li liang gao nature communications">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://doi.org/10.1038/s41467-026-78715-2" target="_blank" rel="noopener">Automated data to model transformation for constraint programming with AI</a></h3>
-<div class="by">Zhengqi Shi, Jin Huang, Xinyu Li, Hao Zhang et al.</div>      <div class="venue">
-        <span class="pub springer">Springer Nature</span>
-        <span>Nature Communications</span><span class="by">2026-11-19</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">LLM framework converting natural-language problems into executable constraint programming models, directly on LLM formulation of optimisation models.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-19" data-venue="arXiv cs.LG"
-           data-text="decision-focused reinforcement learning for llm post-training haotian zhai leqi liu arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.25597" target="_blank" rel="noopener">Decision-Focused Reinforcement Learning for LLM Post-Training</a></h3>
-<div class="by">Haotian Zhai, Leqi Liu</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-19</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Trains LLM predictors with downstream decision regret as reward for inventory optimisation, a decision-focused learning approach relevant to learning for optimisation.</p>
-      <details><summary>Abstract</summary><p>Large language models (LLMs) have shown promise as predictors across various tasks, benefiting from their ability to use information from unstructured context. However, when predictions serve as parameters of downstream optimization problems, higher prediction accuracy does not necessarily translate into lower decision costs. We propose decision-focused reinforcement learning (DFRL), a framework for post-training LLMs to predict optimization parameters using negative downstream decision regret as reward. DFRL trains LLM predictors to minimize the costs of the decisions induced by their predictions, without requiring downstream convexity or differentiability, and integrates readily into existing RL post-training frameworks. To address expensive reward evaluation, we develop two approaches. Heuristic warm-starting uses inexpensive approximate rewards during an initial phase before switching to refinement with exact rewards. Reward correction combines inexpensive estimates with randomized exact evaluations, preserving the expected policy gradient while reducing the expected number of exact solves per update. Experiments on three synthetic optimization problems demonstrate improvements over prediction-loss baselines, while a larger knapsack experiment shows faster early improvement under short training budgets. On inventory planning with H&amp;M transactions and product descriptions, our best configuration, in which the LLM reasons before predicting, reduces regret by 31.4% relative to the SFT baseline and 12.4% relative to the strongest evaluated conventional forecasting baseline.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-19" data-venue="IEEE Trans. Smart Grid"
-           data-text="real-time neural distributed energy resources dispatch with feasibility guarantees jie zhu yinliang xu hongbin sun ieee trans. smart grid">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="NeurIPS 2026"
+           data-text="capo: constraint-aware prompt optimization for llm agents victor ye dong reid pryzant yi liu jian jiao neurips 2026">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1109/tsg.2026.3755951" target="_blank" rel="noopener">Real-Time Neural Distributed Energy Resources Dispatch with Feasibility Guarantees</a></h3>
-<div class="by">Jie Zhu, Yinliang Xu, Hongbin Sun</div>      <div class="venue">
+      <h3><a href="https://openreview.net/forum?id=nS6hVWW0JO" target="_blank" rel="noopener">CAPO: Constraint-Aware Prompt Optimization for LLM Agents</a></h3>
+<div class="by">Victor Ye Dong, Reid Pryzant, Yi Liu, Jian Jiao</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>NeurIPS 2026</span><span class="by">2026-11-22</span>
+<span class="tag">LLM &amp; agentic AI</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Constraint-aware prompt optimisation for LLM agents touches agent reliability and constrained optimisation, which fits the agentic AI interest somewhat.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-21" data-venue="Transportation Research Part D"
+           data-text="inland shipping battery swapping station planning and operation optimization considering multiple factors yubing wang siqing guo mingyuan yue lei dai hao hu shenxi zhang transportation research part d">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trd.2026.105753" target="_blank" rel="noopener">Inland shipping battery swapping station planning and operation optimization considering multiple factors</a></h3>
+<div class="by">Yubing Wang, Siqing Guo, Mingyuan Yue, Lei Dai et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part D</span><span class="by">2026-11-21</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Battery swapping station planning and operation optimisation for inland ships is close electrified-fleet charging optimisation, though for shipping rather than buses.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-20" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="physics-informed kan autoencoder for anomaly detection in ev aggregation with coordinated economic and frequency services dongze li kalpesh chaudhari song ke xusheng wang guangze sun yunzhu cao jingyuan lu abhisek ukil akshya swain ieee trans. transportation electrification">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tte.2026.3756012" target="_blank" rel="noopener">Physics-Informed KAN Autoencoder for Anomaly Detection in EV Aggregation with Coordinated Economic and Frequency Services</a></h3>
+<div class="by">Dongze Li, Kalpesh Chaudhari, Song Ke, Xusheng Wang et al.</div>      <div class="venue">
         <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Smart Grid</span><span class="by">2026-11-19</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Solver-free neural dispatch of distributed energy resources with feasibility guarantees; relevant to learned scheduling under grid constraints.</p>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-20</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Anomaly detection for aggregated EVs providing economic and frequency services; touches EV aggregators and grid flexibility, though method is ML-based and not optimisation-focused.</p>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-19" data-venue="arXiv cs.AI"
-           data-text="ai agents can redesign engineering parts with more than a thousand cad parameters and nonlinear simulations alexandra starostina alexander hermann mahish guru kartik bali roland aydin christian c. cyron arxiv cs.ai">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="NeurIPS 2026"
+           data-text="shepherd: enabling programmable meta-agents via reversible agentic execution traces simon yu derek chong ananjan nandi dilara soylu jiuding sun christopher d manning weiyan shi neurips 2026">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.26003" target="_blank" rel="noopener">AI agents can redesign engineering parts with more than a thousand CAD parameters and nonlinear simulations</a></h3>
-<div class="by">Alexandra Starostina, Alexander Hermann, Mahish Guru, Kartik Bali et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-19</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">LLM agent proposes design edits using simulation feedback under tight simulation budget, a sim-in-the-loop optimisation method adjacent to the researcher&#39;s work.</p>
-      <details><summary>Abstract</summary><p>Simulation-driven design of real engineering components has to meet three conditions at once. It runs on few solves, since a nonlinear finite-element simulation of a 3D part takes hours; its design space has many values, the hundreds to thousands of values of the part&#39;s CAD model; and a better design often needs a redesign, coordinated changes of the part&#39;s proportions rather than local polishing of its surface. Automated optimisers meet at most two of these conditions. Classical optimisers, Bayesian or derivative-free, need a person to cut the design down to a few parameters, and on all the values they need far more solves; industrial shape optimisers move every surface node of the mesh in one solve per cycle, but only in small steps that polish rather than redesign. We ask whether a general-purpose large language model (LLM) can meet all three by joining what it knows with what the simulation shows. GPT-6 Astra edits a magnesium stent through a CAD geometry parametrisation of about 1,650 values, with a budget of 15 simulations; every proposal is built in CAD, meshed and simulated with large-deformation plasticity and contact, and the LLM reads the full results of every solve. Within that budget it lowered the objective, a high percentile of the strains in the stent&#39;s bends, by 32%; on the same budget, the industrial shape optimiser Tosca improved the original design by a tenth and then stopped improving. An earlier GPT-6 Astra design, 25% lower in the same objective, was checked in an independent, higher-fidelity model of the full deployment with crimping and damage: it was 14% less strained than the original after the full chain, and its most damaged spot began to fail later and carried 63% less damage at full expansion. LLMs can thus join their learned knowledge with simulation data to adjust more than a thousand design values and reach valid designs with real improvements.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-19" data-venue="arXiv cs.AI"
-           data-text="beyond weight updates: evolving agent harnesses for domain specialization bohao chen arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.25380" target="_blank" rel="noopener">Beyond Weight Updates: Evolving Agent Harnesses for Domain Specialization</a></h3>
-<div class="by">BoHao Chen</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-19</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Evolves agent harnesses with GEPA as an outer optimisation loop without weight updates; relevant agent-optimisation method for LLM agents.</p>
-      <details><summary>Abstract</summary><p>Domain specialization of LLM agents is usually framed as a weight-update problem: collect trajectories, run reinforcement learning (RL) or supervised fine-tuning (SFT), and deploy a new checkpoint. We study a complementary axis: evolving the \textbf{agent harness}---the system prompt, tool schemas, skill library, and planning scaffolding---while keeping the policy frozen. We cast harness evolution as an RL-style outer loop and instantiate it with GEPA, a reflective evolutionary optimizer. The resulting harness adapters require no GPU training, are loadable per vertical domain, and compose with weight-based RL. Experiments with Codev, a Claude Code-style coding agent, on SWE-bench Verified, OfficeBench, and Terminal-Bench show a consistent pattern: weight updates give the strongest single-path gains, harness evolution recovers most of those gains at a small fraction of the compute, and combining both paths is best overall. We also analyze a failure mode of SFT-based specialization---shortened reasoning chains and increased truncation---and argue that harness adapters avoid it by construction. Our results position harness evolution as a practical, non-destructive complement to weight updates for vertical agents.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-19" data-venue="arXiv cs.AR"
-           data-text="fpga-gen: target-aware rtl generation via hls luke ztz hu zhihan xiao zhe zhao john imoleayo adebisi han gao linxiao yan songping mai arxiv cs.ar">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.25351" target="_blank" rel="noopener">FPGA-GEN: Target-Aware RTL Generation via HLS</a></h3>
-<div class="by">Luke Ztz Hu, Zhihan Xiao, Zhe Zhao, John Imoleayo Adebisi et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AR</span><span class="by">2026-11-19</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Agentic HLS-C generation workflow with tool-feedback loops; agentic code generation for hardware design, adjacent to the researcher&#39;s agent interests but outside transport.</p>
-      <details><summary>Abstract</summary><p>Successful C/C++ compilation does not guarantee correct or efficient FPGA hardware after high-level synthesis (HLS). FPGA-GEN is an agentic HLS-C generation workflow that encodes specification, readiness, selection, repair, and admission rules in explicit task contracts and bounded tool-feedback loops for candidate-level decisions. On HLS-Eval, five shared-context outputs per task yield 407/425 (95.8%) public-testbench passes. In a cumulative conversion campaign, FPGA-GEN admits 104/107 (97.2%) HLS-LeVeri designs under held-out co-simulation, Vivado synthesis/fit, and same-RTL evidence. In focused TensorCore screening, selected candidate 3 reports 73.7% fewer CSynth cycles and 14.6% fewer LUTs than generated/composed C0, with 26.7% more DSPs, and passes development CoSim.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="sim" data-score="6" data-date="2026-11-19" data-venue="arXiv eess.SY"
-           data-text="information-region mpc: non-iterative distributed control of urban traffic signals qiongdan hu menglin yang meng wang chaopeng tan arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.26141" target="_blank" rel="noopener">Information-Region MPC: Non-Iterative Distributed Control of Urban Traffic Signals</a></h3>
-<div class="by">Qiongdan Hu, Menglin Yang, Meng Wang, Chaopeng Tan</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-19</span>
-<span class="tag">Traffic simulation &amp; calibration</span>      </div>
-      <p class="reason">Distributed MPC for urban traffic signals validated in SUMO on a real network; relevant control and simulation methodology adjacent to the researcher&#39;s work.</p>
-      <details><summary>Abstract</summary><p>Centralized model predictive control (MPC) exploits network-wide traffic information to obtain the optimal solution of the network-level control problem, but its computational burden grows rapidly with network size. Iterative distributed MPC reduces the size of local optimization problems, but requires repeated information exchange and coordination within each control update. To address these limitations, this paper proposes information-region MPC (IR-MPC), which approximates the first control input of centralized MPC using limited real-time data without iterative coordination. Based on historical traffic data, we quantify how perturbations at other intersections affect the centralized first control input of each intersection and use these couplings to construct a compact information region for every intersection. At each control update, each intersection then solves a local IR-MPC problem once using current data only from its information region. SUMO simulations on a real 28-intersection network show that IR-MPC with one processor per intersection computes its control inputs 9 times faster than centralized MPC and 15 times faster than a representative iterative decomposition-based distributed MPC method. IR-MPC reproduces 85% of the centralized control inputs exactly at the implemented one-second resolution, keeps 99.3% within 2s, and increases mean delay by only 0.03%.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-19" data-venue="arXiv eess.SY"
-           data-text="network-aware reserve procurement via decision-dependent adaptive robust optimization guillaume van caelenberg akylas stratigakos elina spyrou arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.26175" target="_blank" rel="noopener">Network-Aware Reserve Procurement via Decision-Dependent Adaptive Robust Optimization</a></h3>
-<div class="by">Guillaume Van Caelenberg, Akylas Stratigakos, Elina Spyrou</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-19</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Decision-dependent adaptive robust optimisation for network-aware reserve procurement; robust optimisation method relevant to the researcher&#39;s power-system interests.</p>
-      <details><summary>Abstract</summary><p>Network congestion can hinder reserve deliverability, motivating network-aware reserve procurement. Existing adaptive robust optimization approaches overlook the dependence of uncertainty sets on reserve demand curves and renewable curtailment, which is important in systems with high levels of variable renewable energy. We address this using decisiondependent box uncertainty sets, whose bounds depend on reserve demand curves and day-ahead curtailment of variable renewable energy. We reformulate the problem using a primitive uncertainty set and solve it via column-and-constraint generation. On a 29- bus Great Britain system, the proposed method is more costeffective than the inscribed boxes method because it accounts for the potential of reserve activation to both aggravate and relieve network congestion, whereas the inscribed boxes method only captures the former. Cost savings stem from differences in energy and reserve schedules, including the beneficial simultaneous activation of upward and downward reserves for real-time balancing in some scenarios.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-19" data-venue="arXiv math.OC"
-           data-text="optimal scheduling of multi-site ai data centers in day-ahead markets xinyang zhou guido cavraro arxiv math.oc">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.26572" target="_blank" rel="noopener">Optimal Scheduling of Multi-Site AI Data Centers in Day-Ahead Markets</a></h3>
-<div class="by">Xinyang Zhou, Guido Cavraro</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv math.OC</span><span class="by">2026-11-19</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">LP-based day-ahead scheduling of flexible AI data-centre loads under electricity prices; grid flexibility similar to charging-flexibility problems.</p>
-      <details><summary>Abstract</summary><p>AI data centers are among the fastest-growing loads on the power grid, and their flexibility is increasingly sought by grid operators. Using it requires a model that links what an operator controls, namely GPU power caps, job timing and job placement, to the power drawn at each site and the electricity prices it faces. This paper develops such a framework for a multi-site AI data-center fleet. It represents GPU power-cap levels; deferrable jobs with deadlines and inference with response-time headroom; and site facility power, and casts the fleet schedule as a linear program solved on day-ahead prices. A year-long simulation on 2025 California Independent System Operator (CAISO) day-ahead prices in three data-center markets demonstrates the framework. Coordinated scheduling lowers the fleet&#39;s energy cost by 6.3% at equal work. Four operating modes, each adding one capability, split this saving into efficient GPU operation that needs no price signal, price response in time, and routing work between sites.</p></details>
+      <h3><a href="https://openreview.net/forum?id=OZ3EtBIrwP" target="_blank" rel="noopener">Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces</a></h3>
+<div class="by">Simon Yu, Derek Chong, Ananjan Nandi, Dilara Soylu et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>NeurIPS 2026</span><span class="by">2026-11-22</span>
+<span class="tag">LLM &amp; agentic AI</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Programmable meta-agents with reversible execution traces address agent planning and tool use, a close match to agentic AI interests.</p>
     </div>
   </article>
 </main>
@@ -253,7 +161,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-21.html" class="cur" aria-current="page">2026-11-21 · 11</a></li>
+    <li><a href="archive/2026-11-22.html" class="cur" aria-current="page">2026-11-22 · 4</a></li>
+    <li><a href="archive/2026-11-21.html">2026-11-21 · 11</a></li>
     <li><a href="archive/2026-11-20.html">2026-11-20 · 22</a></li>
     <li><a href="archive/2026-11-19.html">2026-11-19 · 12</a></li>
     <li><a href="archive/2026-11-18.html">2026-11-18 · 20</a></li>
@@ -279,7 +188,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-21 01:15 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-22 00:12 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>

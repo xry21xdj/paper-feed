@@ -5,6 +5,38 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[6] CAPO: Constraint-Aware Prompt Optimization for LLM Agents</title>
+    <link>https://openreview.net/forum?id=nS6hVWW0JO</link>
+    <guid isPermaLink="false">neurips:2026:f32fe8b226a4303632d2c749bb9304cc</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Victor Ye Dong, Reid Pryzant, Yi Liu, Jian Jiao — Constraint-aware prompt optimisation for LLM agents touches agent reliability and constrained optimisation, which fits the agentic AI interest somewhat.</description>
+  </item>
+  <item>
+    <title>[6] Inland shipping battery swapping station planning and operation optimization considering multiple factors</title>
+    <link>https://doi.org/10.1016/j.trd.2026.105753</link>
+    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105753</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>Transportation Research Part D · Yubing Wang, Siqing Guo, Mingyuan Yue, Lei Dai et al. — Battery swapping station planning and operation optimisation for inland ships is close electrified-fleet charging optimisation, though for shipping rather than buses.</description>
+  </item>
+  <item>
+    <title>[6] Physics-Informed KAN Autoencoder for Anomaly Detection in EV Aggregation with Coordinated Economic and Frequency Services</title>
+    <link>https://doi.org/10.1109/tte.2026.3756012</link>
+    <guid isPermaLink="false">doi:10.1109/tte.2026.3756012</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>IEEE Trans. Transportation Electrification · Dongze Li, Kalpesh Chaudhari, Song Ke, Xusheng Wang et al. — Anomaly detection for aggregated EVs providing economic and frequency services; touches EV aggregators and grid flexibility, though method is ML-based and not optimisation-focused.</description>
+  </item>
+  <item>
+    <title>[6] Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces</title>
+    <link>https://openreview.net/forum?id=OZ3EtBIrwP</link>
+    <guid isPermaLink="false">neurips:2026:cb2934ae5683eff802277d627c0ed3d3</guid>
+    <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>NeurIPS 2026 · Simon Yu, Derek Chong, Ananjan Nandi, Dilara Soylu et al. — Programmable meta-agents with reversible execution traces address agent planning and tool use, a close match to agentic AI interests.</description>
+  </item>
+  <item>
     <title>[8] Column Elimination: An Iterative Approach to Solving Arc-Flow Formulations</title>
     <link>https://doi.org/10.1287/opre.2024.1404</link>
     <guid isPermaLink="false">doi:10.1287/opre.2024.1404</guid>
@@ -547,22 +579,6 @@
     <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
     <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.LG · KDD 2027 · Gaoyuan Du, Xiaoyang Liu, Rex Zhou, Dengdu Jiang et al. — Studies LLM critics steering iterative AutoML search and their harmful effects; relevant to agent reliability in optimisation loops.</description>
-  </item>
-  <item>
-    <title>[7] Data-driven planning of electric truck charging stations with heterogeneous driving ranges</title>
-    <link>https://doi.org/10.1016/j.trd.2026.105728</link>
-    <guid isPermaLink="false">doi:10.1016/j.trd.2026.105728</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Transportation Research Part D · Hailin Tong, Guangnian Xiao, Yuandong Liu, Jiapei Li — Data-driven planning of electric truck charging stations with heterogeneous ranges; close to charging infrastructure planning for electrified fleets, though trucks rather than buses.</description>
-  </item>
-  <item>
-    <title>[7] Low-carbon distributed flexible job shop scheduling with AGV transport and charging under time-varying electricity prices and grid carbon intensity: an improved multi-objective evolutionary algorithm</title>
-    <link>https://doi.org/10.1016/j.cor.2026.107737</link>
-    <guid isPermaLink="false">doi:10.1016/j.cor.2026.107737</guid>
-    <pubDate>Sun, 15 Nov 2026 00:00:00 +0000</pubDate>
-    <category>E-bus scheduling &amp; charging</category>
-    <description>Computers &amp; Operations Research · Liao Ran, Yao Lu, Guanyu Chen, Xianming Wu et al. — Low-carbon flexible job shop scheduling with AGV transport and charging under time-varying prices; relevant scheduling-with-charging and multi-objective evolutionary methods, though in manufacturing.</description>
   </item>
 </channel>
 </rss>

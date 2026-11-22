@@ -1,0 +1,657 @@
+{
+ "date": "2026-11-22",
+ "fetched": 25496,
+ "sources": {
+  "arXiv": 231,
+  "Transportation Research Part B": 3,
+  "Transportation Research Part C": 6,
+  "Transportation Research Part D": 8,
+  "Transportation Research Part E": 11,
+  "Applied Energy": 15,
+  "European Journal of Operational Research": 2,
+  "Computers & Operations Research": 5,
+  "eTransportation": 2,
+  "IEEE Trans. Intelligent Transportation Systems": 0,
+  "IEEE Trans. Smart Grid": 2,
+  "IEEE Trans. Transportation Electrification": 9,
+  "IEEE Trans. Power Systems": 0,
+  "Transportation Science": 0,
+  "Operations Research": 5,
+  "INFORMS Journal on Computing": 0,
+  "Nature Energy": 3,
+  "Nature Communications": 103,
+  "Public Transport": 0,
+  "OR Spectrum": 1,
+  "Transportation": 0,
+  "ACM Trans. Intelligent Systems and Technology": 1,
+  "ACM Trans. Evolutionary Learning and Optimization": 0,
+  "ACM Trans. Knowledge Discovery from Data": 3,
+  "ACM Trans. Spatial Algorithms and Systems": 0,
+  "ACM Trans. Cyber-Physical Systems": 0,
+  "ACM Trans. Autonomous and Adaptive Systems": 2,
+  "ACM Trans. Modeling and Computer Simulation": 1,
+  "ACM Journal on Autonomous Transportation Systems": 0,
+  "ACM Computing Surveys": 4,
+  "NeurIPS (paper list)": 9275,
+  "ICML (paper list)": 6797,
+  "ICLR (paper list)": 5691,
+  "NeurIPS": 0,
+  "AAAI": 777,
+  "IJCAI": 156,
+  "AAMAS": 352,
+  "ICAPS": 29,
+  "ACM GECCO": 29,
+  "ACL": 530,
+  "EMNLP": 795,
+  "ACM KDD": 284,
+  "ACM WWW": 164,
+  "ACM CIKM": 164,
+  "ACM SIGSPATIAL": 0,
+  "IEEE ITSC": 0,
+  "ACM e-Energy": 15,
+  "ACM BuildSys": 11,
+  "ACM/IEEE ICCPS": 10
+ },
+ "papers": [
+  {
+   "id": "neurips:2026:f32fe8b226a4303632d2c749bb9304cc",
+   "title": "CAPO: Constraint-Aware Prompt Optimization for LLM Agents",
+   "url": "https://openreview.net/forum?id=nS6hVWW0JO",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Victor Ye Dong",
+    "Reid Pryzant",
+    "Yi Liu",
+    "Jian Jiao"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Constraint-aware prompt optimisation for LLM agents touches agent reliability and constrained optimisation, which fits the agentic AI interest somewhat.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105753",
+   "title": "Inland shipping battery swapping station planning and operation optimization considering multiple factors",
+   "url": "https://doi.org/10.1016/j.trd.2026.105753",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Yubing Wang",
+    "Siqing Guo",
+    "Mingyuan Yue",
+    "Lei Dai",
+    "Hao Hu",
+    "Shenxi Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "ebus",
+   "reason": "Battery swapping station planning and operation optimisation for inland ships is close electrified-fleet charging optimisation, though for shipping rather than buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3756012",
+   "title": "Physics-Informed KAN Autoencoder for Anomaly Detection in EV Aggregation with Coordinated Economic and Frequency Services",
+   "url": "https://doi.org/10.1109/tte.2026.3756012",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-20",
+   "authors": [
+    "Dongze Li",
+    "Kalpesh Chaudhari",
+    "Song Ke",
+    "Xusheng Wang",
+    "Guangze Sun",
+    "Yunzhu Cao",
+    "Jingyuan Lu",
+    "Abhisek Ukil",
+    "Akshya Swain"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 6,
+   "topic": "grid",
+   "reason": "Anomaly detection for aggregated EVs providing economic and frequency services; touches EV aggregators and grid flexibility, though method is ML-based and not optimisation-focused.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:cb2934ae5683eff802277d627c0ed3d3",
+   "title": "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
+   "url": "https://openreview.net/forum?id=OZ3EtBIrwP",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Simon Yu",
+    "Derek Chong",
+    "Ananjan Nandi",
+    "Dilara Soylu",
+    "Jiuding Sun",
+    "Christopher D Manning",
+    "Weiyan Shi"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 6,
+   "topic": "llm",
+   "reason": "Programmable meta-agents with reversible execution traces address agent planning and tool use, a close match to agentic AI interests.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:a727613d0a2990f28408a41df0924160",
+   "title": "A Few Teacher Steps Go a Long Way: Efficient SFT Data Collection for LLM Agents",
+   "url": "https://openreview.net/forum?id=exsMozVjaF",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Junze Ye",
+    "Jiayi Cheng",
+    "Miao Lu",
+    "Michal Mankowski",
+    "Jose Blanchet",
+    "Mohsen Bayati"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Efficient supervised fine-tuning data collection for LLM agents is agentic-adjacent background, though it is about training data rather than optimisation or operational decisions.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105407",
+   "title": "A physical-network-based space-time-state modeling and branch-and-price framework for the time-dependent vehicle routing problem with drones",
+   "url": "https://doi.org/10.1016/j.tre.2026.105407",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Chenhao Zhang",
+    "Tao Feng",
+    "Yaoxin Wu",
+    "Yuanbo Li",
+    "Lin Cheng"
+   ],
+   "abstract": "",
+   "topics": [
+    "ebus",
+    "ai4opt"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "ebus",
+   "reason": "Branch-and-price for time-dependent routing with drones is an adjacent vehicle routing method with a column-generation framework the researcher uses, but drones are not electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:b7852f3d3a775b5188139a2c07024397",
+   "title": "Agentic Reverse Engineering: From I/O to Code with Discovery Agent",
+   "url": "https://openreview.net/forum?id=BZxrI7kEUy",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Yihong Dong",
+    "Jiaru Qian",
+    "Haoran Zhang",
+    "Peixu Wang",
+    "Binhua Li",
+    "Zhi Jin",
+    "Yongbin Li",
+    "Ge Li",
+    "Xiaokang Yang",
+    "Xue Jiang"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 5,
+   "topic": "llm",
+   "reason": "An agentic discovery approach to reverse engineering code from I/O uses agents writing code, which is loosely related to agentic AI for engineering tasks.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105745",
+   "title": "Prosocial behaviour for sharing charging points: a survey-informed agent-based model",
+   "url": "https://doi.org/10.1016/j.trd.2026.105745",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Milan Tamis",
+    "Naud Loomans",
+    "Gerdien de Vries",
+    "Floor Alkemade"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 5,
+   "topic": "grid",
+   "reason": "Agent-based model of sharing charging points relates to charging infrastructure use, though it is behavioural and not focused on buses or scheduling.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:9cb9ed4f35cf7c2f295cc2bc6f732a84",
+   "title": "QVal: Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+   "url": "https://openreview.net/forum?id=ZMC8Gwiail",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Sergio Hernández-Gutiérrez",
+    "Matteo Merler",
+    "Ilze Amanda Auzina",
+    "Joschka Strüber",
+    "Ameya Prabhu",
+    "Matthias Bethge"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 5,
+   "topic": "llm",
+   "reason": "Dense supervision signals for long-horizon LLM agents relate to agent evaluation and reliability, a relevant but indirect topic for this researcher.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106057",
+   "title": "Macroscopic multimodal hierarchy model in urban public transit systems: A framework with empirical evidence",
+   "url": "https://doi.org/10.1016/j.trc.2026.106057",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Jongho Oh",
+    "Yeonwoo Jung",
+    "Seungmo Kang",
+    "Chungwon Lee",
+    "Jinwoo Lee"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "sim",
+   "reason": "Macroscopic multimodal transit hierarchy model is adjacent public transport background without electrification or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105754",
+   "title": "Transferable deep reinforcement learning for resilience-oriented and adaptive metro network recovery",
+   "url": "https://doi.org/10.1016/j.trd.2026.105754",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Wen He",
+    "Yue Pan",
+    "Pingbo Tang",
+    "Jin-jian Chen",
+    "Guanlin Ye"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 4,
+   "topic": "ai4opt",
+   "reason": "Transferable deep RL for metro network recovery is RL for transit disruption, adjacent to dispatching but not electric buses.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trc.2026.106171",
+   "title": "A Bayesian latent class reinforcement learning framework to capture adaptive, feedback-driven travel behaviour",
+   "url": "https://doi.org/10.1016/j.trc.2026.106171",
+   "venue": "Transportation Research Part C",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Georges Sfeir",
+    "Stephane Hess",
+    "Thomas O. Hancock",
+    "Filipe Rodrigues",
+    "Jamal Amani Rad",
+    "Michiel Bliemer",
+    "Matthew Beck",
+    "Fayyaz Khan"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 3,
+   "topic": "sim",
+   "reason": "Bayesian latent class reinforcement learning of travel behaviour is a behavioural model, only loosely connected to transit simulation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:d714d2c5a796d5814c565d78dd16188d",
+   "title": "A Benchmark and Agentic Framework for Omni-Modal Reasoning in Long Videos",
+   "url": "https://openreview.net/forum?id=oCkr3KnHhU",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Mohammed Irfan Kurpath",
+    "Jaseel M Kaithakkodan",
+    "Jinxing Zhou",
+    "Sahal Shaji Mullappilly",
+    "Mohammad Almansoori",
+    "Noor Ahsan",
+    "Beknur Kalmakhanbet",
+    "sambal shikhar",
+    "Rishabh Lalla",
+    "Jean Lahoud",
+    "Mariette Awad",
+    "Fahad Shahbaz Khan",
+    "Salman Khan",
+    "Rao Anwer",
+    "Hisham Cholakkal"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Omni-modal long-video reasoning benchmark with an agentic framework is mostly vision and multimodal, only loosely agentic.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:1c80289707dba7161733a9a248855ce8",
+   "title": "Voluntary Servitude: Weaponized Safety Warning Mechanisms for Controlling AI Agents",
+   "url": "https://openreview.net/forum?id=ZswTm9bjg9",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Ilan Zendel",
+    "Matan Levy",
+    "Stav Cohen",
+    "Avi Mendelson",
+    "Amit LeVi"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 3,
+   "topic": "llm",
+   "reason": "Adversarial safety-warning attacks on AI agents touch agent reliability but are mainly security-focused rather than planning or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3756229",
+   "title": "Accurate Inductance Extraction Methodology for a Wireless Charging System for Electric Vehicles",
+   "url": "https://doi.org/10.1109/tte.2026.3756229",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-20",
+   "authors": [
+    "Yujun Shin",
+    "Seongho Woo",
+    "Hyunwoong Kim",
+    "Seungyoung Ahn"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "grid",
+   "reason": "Inductance extraction for EV wireless charging hardware; power electronics rather than scheduling or grid integration, so only superficially related.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.18653/2026.emnlp-main.2007",
+   "title": "CLAAS: Conditional LVLM-enabled Attribute-Aware response Simulation for Public Health Education",
+   "url": "https://doi.org/10.18653/2026.emnlp-main.2007",
+   "venue": "EMNLP 2026",
+   "publisher": "Conference",
+   "date": "2026-01-01",
+   "authors": [
+    "Anh N. Nhu",
+    "Jenna Yang",
+    "Laura Yu Zheng",
+    "Sylvette La Touche-Howard",
+    "Tracy Marie Zeeger",
+    "Ming Lin"
+   ],
+   "abstract": "Modeling how diverse communities respond to public health messages is critical for training students to design targeted communication materials. However, no method is currently available to iteratively evaluate how different populations may perceive their campaign designs before human-subject testing. Despite progress in VLM/LLM-based psychometric simulation, community simulators for public health education remain largely unexplored. We reframe VLMs as attribute-aware community response simulators and introduce CLAAS, to our knowledge the first multimodal response simulation tool for public-health higher education. CLAAS aligns open-source VLMs, such as Gemma3, Llama-3.2, and Qwen2.5-VL, with an in-house survey dataset of 33K+ responses from 1K+ participants to simulate trait-conditioned emotional, behavioral, and sentimental responses. Quantitatively, attribute-aligned VLMs consistently outperform zero-shot and random baselines and generalize to unseen communication strategies. Beyond dataset evaluation, our pilot studies in real course sessions across two semesters demonstrate CLAAS's potential practical relevance in educational settings. Most students reported CLAAS provided useful feedback and generated responses aligned with their expectations. This study suggests attribute-aware VLM support experiential public health education and promote a socially impactful research direction: interactive population simulator for community-centered communication design.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Simulating community responses to public health messages with VLMs is psychometric simulation, not agentic or optimisation work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105409",
+   "title": "Drone delivery in urban retail operations: Fulfillment competition, ground-delivery workload, and retailer–logistics provider interactions",
+   "url": "https://doi.org/10.1016/j.tre.2026.105409",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Baozhuang Niu",
+    "Enkai Zhang",
+    "Yuyang Chen",
+    "Fengfeng Xie",
+    "Mengdi Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 2,
+   "topic": "ebus",
+   "reason": "Drone delivery competition and workload in retail is freight-oriented logistics without electrification or optimisation methods.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:aa486f25175cbdc3854151288a645c19",
+   "title": "More Is Not More: What Matters for Opinion Diversity in LLM Simulations?",
+   "url": "https://openreview.net/forum?id=O98QtBcpjG",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Qiyang Yao"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 2,
+   "topic": "llm",
+   "reason": "Opinion diversity in LLM simulations is a generic LLM evaluation topic with no agentic or optimisation angle.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.trd.2026.105747",
+   "title": "Decarbonising pavement rehabilitation: a life cycle assessment of geopolymer-based full-depth reclamation",
+   "url": "https://doi.org/10.1016/j.trd.2026.105747",
+   "venue": "Transportation Research Part D",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Abhitesh Sachdeva",
+    "G.D. Ransinchung R.N",
+    "Praveen Kumar"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Life cycle assessment of pavement rehabilitation materials is unrelated to bus electrification or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.tre.2026.105412",
+   "title": "How urban e-commerce development mitigates enterprise supply chain risks: Evidence from a quasi-natural experiment in China’s e-commerce demonstration cities",
+   "url": "https://doi.org/10.1016/j.tre.2026.105412",
+   "venue": "Transportation Research Part E",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Qiqi Wu",
+    "Shiyao Min",
+    "Siyu Wu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "sim",
+   "reason": "Quasi-experimental study of e-commerce and supply chain risk is an economic policy analysis unrelated to this researcher's work.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "neurips:2026:504c296f8eb5fd521e744da4e8371f28",
+   "title": "Lie Routing Vision Language Models for View-Robust 3D Understanding",
+   "url": "https://openreview.net/forum?id=sBOq6IiZpM",
+   "venue": "NeurIPS 2026",
+   "publisher": "Conference",
+   "date": "2026-11-22",
+   "authors": [
+    "Jingjun Yi",
+    "Chen Hu",
+    "Qi Bi",
+    "Hao Zheng",
+    "Huimin Huang",
+    "Yongkang Li",
+    "Wei Ji",
+    "Yawen Huang",
+    "Xian Wu",
+    "Yefeng Zheng"
+   ],
+   "abstract": "",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 1,
+   "score": 1,
+   "topic": "llm",
+   "reason": "Vision-language models for 3D understanding are generic vision work with no relevance to this researcher.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1016/j.etran.2026.100657",
+   "title": "Near-Ambient Temperature-Dependent Degradation of Large-Format High-Ni NMC Pouch Cells Associated with Cathode Oxygen Instability",
+   "url": "https://doi.org/10.1016/j.etran.2026.100657",
+   "venue": "eTransportation",
+   "publisher": "Elsevier",
+   "date": "2026-11-21",
+   "authors": [
+    "Seunghyun Lee",
+    "Eungyu Lee",
+    "Junhyung Kim",
+    "Junghyo Chang",
+    "Kyoungdoug Min"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Cell-level battery degradation chemistry at near-ambient temperature; only tangentially relevant to battery ageing as a scheduling cost, mostly battery materials which the researcher finds less relevant.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.18653/2026.emnlp-main.2155",
+   "title": "SCORE: Similarity-Aware Contextual Overlap-Redundancy Eviction for Efficient KV Cache Compression in LLMs",
+   "url": "https://doi.org/10.18653/2026.emnlp-main.2155",
+   "venue": "EMNLP 2026",
+   "publisher": "Conference",
+   "date": "2026-01-01",
+   "authors": [
+    "Gilha Lee",
+    "Seungil Lee",
+    "Hyun Kim"
+   ],
+   "abstract": "Recent advances in large language models (LLMs) have unlocked remarkable long-context capabilities, enabling breakthroughs across diverse NLP tasks. However, despite architectural progress, the key-value (KV) cache remains a critical memory bottleneck during inference. Prior work has explored cache optimization via eviction strategies, yet most rely on heuristic or single-axis importance metrics, neglecting the nuanced and dynamic interplay between layers and attention heads. In this paper, we propose SCORE (Similarity-aware Contextual Overlap-Redundancy Eviction), a novel framework that introduces a distance-based multi-level similarity metric to quantify and eliminate structural redundancy within the KV cache. By dynamically reallocating cache budgets across layers and heads and employing a redundancy-aware greedy token selection mechanism, SCORE preserves semantic diversity while minimizing memory overhead. Extensive experiments on long-context benchmarks such as LongBench and NeedleBench show that SCORE retains 96.2% of full KV cache performance using only 1.5% of the cache, consistently outperforming state-of-the-art baselines under strict memory constraints. These results underscore the value of fine-grained, context-aware cache management for scalable and efficient long-context inference in LLMs.",
+   "topics": [
+    "llm"
+   ],
+   "keyword_hits": 2,
+   "score": 1,
+   "topic": "llm",
+   "reason": "KV cache compression for LLM inference is generic LLM efficiency work with no agentic or optimisation focus.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3756030",
+   "title": "Topology Design of a Hybrid Series Variable Flux Memory Machine with Multi-Functional Magnetic Barrier",
+   "url": "https://doi.org/10.1109/tte.2026.3756030",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-20",
+   "authors": [
+    "Yiyi Fu",
+    "Wei Liu",
+    "Jiamou Zhang",
+    "Weihan Wang",
+    "Yiming Qiu",
+    "Jinhua Chen",
+    "Hui Yang",
+    "Chi Zhang"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Electric machine topology design with variable flux memory; motor design with no link to transport operations or optimisation.",
+   "scored_by": "llm"
+  },
+  {
+   "id": "doi:10.1109/tte.2026.3756173",
+   "title": "Topology, Design and Implementation of a Novel Two-Stage Hybrid-Excitation Starter-Generator System with High Fault-Tolerance Ability for Aircraft Application",
+   "url": "https://doi.org/10.1109/tte.2026.3756173",
+   "venue": "IEEE Trans. Transportation Electrification",
+   "publisher": "IEEE",
+   "date": "2026-11-20",
+   "authors": [
+    "Pu Yao",
+    "Ningfei Jiao",
+    "Huanxu Zhang",
+    "Zhihong Wang",
+    "Xinyi Chen",
+    "Shoujun Song",
+    "Weiguo Liu"
+   ],
+   "abstract": "",
+   "topics": [],
+   "keyword_hits": 0,
+   "score": 1,
+   "topic": "grid",
+   "reason": "Aircraft starter-generator machine topology and fault tolerance; electrical machine design unrelated to the researcher's bus fleet or optimisation work.",
+   "scored_by": "llm"
+  }
+ ]
+}
