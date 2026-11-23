@@ -5,6 +5,94 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[8] Learning to Handle Constrained Routing Problems From a Decoupling Perspective</title>
+    <link>https://doi.org/10.1145/3770855.3817954</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3817954</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACM KDD 2026 · Rui Cao, Zhiguang Cao, Yihan Huang, Jiaqi Wang et al. — Neural combinatorial optimisation for constrained VRPs with step-wise feasibility via a heavy decoder; closely matches learning-to-optimise scheduling interests.</description>
+  </item>
+  <item>
+    <title>[7] RExBench: Can coding agents autonomously implement AI research extensions?</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.745</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.745</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Nicholas Edwards, Yukyung Lee, Yujun Audrey Mao, Yulu Qin et al. — Benchmarks whether coding agents can autonomously implement research extensions, relevant to agents that run research pipelines and simulations for the researcher&#39;s work.</description>
+  </item>
+  <item>
+    <title>[7] Uncertainty-Aware Test-Time Search for Optimization Problem Solving</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1975</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1975</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACL 2026 · Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu et al. — LLM plus MCTS formulating optimisation models and code checked by solvers; directly relevant to LLM-formulated optimisation for the researcher.</description>
+  </item>
+  <item>
+    <title>[6] AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.33</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.33</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Zheyuan Zhang, Kaiwen Shi, Zhengqing Yuan, Zehong Wang et al. — Graph-guided routing among LLM agents for QA; agent selection is an operational decision, adjacent to agentic orchestration but not optimisation-focused.</description>
+  </item>
+  <item>
+    <title>[6] Dual-Cluster Memory Agent: Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.266</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.266</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>ACL 2026 · Xinyu Zhang, Yuchen Wan, Boxuan Zhang, Zesheng Yang et al. — LLM memory agent that formulates optimisation models and code for OR problems, directly relevant to LLMs formulating optimisation models.</description>
+  </item>
+  <item>
+    <title>[6] Evolving Agents</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.754</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.754</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Leonardo Ranaldi — Proposes an LLM-agent-style meta-control and self-generated abstraction for autonomous learning; agentic but not about planning or optimisation for operations.</description>
+  </item>
+  <item>
+    <title>[6] From Language to Driving: A Dual-Loop SLM-Enhanced Framework for Multi-Planner Scheduling via a Domain-Specific Language</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.1381</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.1381</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Jiawei Liu, Xun Gong, Muli Yang, Xingrui Yu et al. — SLM-driven scheduling across multiple motion planners with RL and receding-horizon control; LLM operational scheduling in driving, adjacent to fleet decisions.</description>
+  </item>
+  <item>
+    <title>[6] Grammar Search for Multi-Agent Systems</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.75</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.75</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Mayank Singh, Vikas Yadav, Shiva Krishna Reddy Malay, Shravan Nayak et al. — Structured search over composable multi-agent system components; agent design search relevant to automatic agentic system optimisation.</description>
+  </item>
+  <item>
+    <title>[6] MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-demo.35</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-demo.35</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Yang Janet Liu, Jinxuan Cai, Yishen Li, Qi Meng et al. — Framework for orchestrating LLM multi-agent workflows from natural language; general agent tooling with limited optimisation focus.</description>
+  </item>
+  <item>
+    <title>[6] MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios</title>
+    <link>https://doi.org/10.1145/3770855.3817498</link>
+    <guid isPermaLink="false">doi:10.1145/3770855.3817498</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACM KDD 2026 · Zhiheng Song, Jingshuai Zhang, Chuan Qin, Chao Wang et al. — Route-planning agent benchmark for mobility; touches the mobility domain and agent evaluation, though not electrified or optimisation-focused.</description>
+  </item>
+  <item>
+    <title>[6] Taming &#34;Zombie&#34; Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution</title>
+    <link>https://doi.org/10.18653/v1/2026.acl-long.373</link>
+    <guid isPermaLink="false">doi:10.18653/v1/2026.acl-long.373</guid>
+    <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>ACL 2026 · Taolin Zhang, Pukun Zhao, Qizhou Chen, Jiuheng Wan et al. — Multi-agent LLM collaboration with state-aware agent scheduling and edge pruning; agentic and resource-aware, relevant to multi-agent decision making.</description>
+  </item>
+  <item>
     <title>[6] CAPO: Constraint-Aware Prompt Optimization for LLM Agents</title>
     <link>https://openreview.net/forum?id=nS6hVWW0JO</link>
     <guid isPermaLink="false">neurips:2026:f32fe8b226a4303632d2c749bb9304cc</guid>

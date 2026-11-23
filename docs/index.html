@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-22</h2>
-  <span class="meta">4 relevant of 25 screened · 25496 new papers fetched</span>
+  <h2>Today · 2026-11-23</h2>
+  <span class="meta">11 relevant of 114 screened · 24538 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">4</span></button>
-<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">2</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">11</span></button>
+<button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">8</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,52 +107,136 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="NeurIPS 2026"
-           data-text="capo: constraint-aware prompt optimization for llm agents victor ye dong reid pryzant yi liu jian jiao neurips 2026">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
+  <article class="card" data-topic="ai4opt" data-score="8" data-date="2026-08-08" data-venue="ACM KDD 2026"
+           data-text="learning to handle constrained routing problems from a decoupling perspective rui cao zhiguang cao yihan huang jiaqi wang yuan jiang yubin xiao you zhou acm kdd 2026">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
     <div>
-      <h3><a href="https://openreview.net/forum?id=nS6hVWW0JO" target="_blank" rel="noopener">CAPO: Constraint-Aware Prompt Optimization for LLM Agents</a></h3>
-<div class="by">Victor Ye Dong, Reid Pryzant, Yi Liu, Jian Jiao</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1145/3770855.3817954" target="_blank" rel="noopener">Learning to Handle Constrained Routing Problems From a Decoupling Perspective</a></h3>
+<div class="by">Rui Cao, Zhiguang Cao, Yihan Huang, Jiaqi Wang et al.</div>      <div class="venue">
         <span class="pub conf">Conference</span>
-        <span>NeurIPS 2026</span><span class="by">2026-11-22</span>
-<span class="tag">LLM &amp; agentic AI</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Constraint-aware prompt optimisation for LLM agents touches agent reliability and constrained optimisation, which fits the agentic AI interest somewhat.</p>
+        <span>ACM KDD 2026</span><span class="by">2026-08-08</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Neural combinatorial optimisation for constrained VRPs with step-wise feasibility via a heavy decoder; closely matches learning-to-optimise scheduling interests.</p>
     </div>
   </article>
-  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-21" data-venue="Transportation Research Part D"
-           data-text="inland shipping battery swapping station planning and operation optimization considering multiple factors yubing wang siqing guo mingyuan yue lei dai hao hu shenxi zhang transportation research part d">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="rexbench: can coding agents autonomously implement ai research extensions? nicholas edwards yukyung lee yujun audrey mao yulu qin sebastian schuster najoung kim acl 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://doi.org/10.1016/j.trd.2026.105753" target="_blank" rel="noopener">Inland shipping battery swapping station planning and operation optimization considering multiple factors</a></h3>
-<div class="by">Yubing Wang, Siqing Guo, Mingyuan Yue, Lei Dai et al.</div>      <div class="venue">
-        <span class="pub elsevier">Elsevier</span>
-        <span>Transportation Research Part D</span><span class="by">2026-11-21</span>
-<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Battery swapping station planning and operation optimisation for inland ships is close electrified-fleet charging optimisation, though for shipping rather than buses.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-20" data-venue="IEEE Trans. Transportation Electrification"
-           data-text="physics-informed kan autoencoder for anomaly detection in ev aggregation with coordinated economic and frequency services dongze li kalpesh chaudhari song ke xusheng wang guangze sun yunzhu cao jingyuan lu abhisek ukil akshya swain ieee trans. transportation electrification">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://doi.org/10.1109/tte.2026.3756012" target="_blank" rel="noopener">Physics-Informed KAN Autoencoder for Anomaly Detection in EV Aggregation with Coordinated Economic and Frequency Services</a></h3>
-<div class="by">Dongze Li, Kalpesh Chaudhari, Song Ke, Xusheng Wang et al.</div>      <div class="venue">
-        <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-20</span>
-<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Anomaly detection for aggregated EVs providing economic and frequency services; touches EV aggregators and grid flexibility, though method is ML-based and not optimisation-focused.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="NeurIPS 2026"
-           data-text="shepherd: enabling programmable meta-agents via reversible agentic execution traces simon yu derek chong ananjan nandi dilara soylu jiuding sun christopher d manning weiyan shi neurips 2026">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://openreview.net/forum?id=OZ3EtBIrwP" target="_blank" rel="noopener">Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces</a></h3>
-<div class="by">Simon Yu, Derek Chong, Ananjan Nandi, Dilara Soylu et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.745" target="_blank" rel="noopener">RExBench: Can coding agents autonomously implement AI research extensions?</a></h3>
+<div class="by">Nicholas Edwards, Yukyung Lee, Yujun Audrey Mao, Yulu Qin et al.</div>      <div class="venue">
         <span class="pub conf">Conference</span>
-        <span>NeurIPS 2026</span><span class="by">2026-11-22</span>
-<span class="tag">LLM &amp; agentic AI</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
-      <p class="reason">Programmable meta-agents with reversible execution traces address agent planning and tool use, a close match to agentic AI interests.</p>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Benchmarks whether coding agents can autonomously implement research extensions, relevant to agents that run research pipelines and simulations for the researcher&#39;s work.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="uncertainty-aware test-time search for optimization problem solving linlin yu xujiang zhao dong li yanchi liu wei cheng zhengzhang chen 赵晨 chen zhao feng chen haifeng chen acl 2026">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.1975" target="_blank" rel="noopener">Uncertainty-Aware Test-Time Search for Optimization Problem Solving</a></h3>
+<div class="by">Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">LLM plus MCTS formulating optimisation models and code checked by solvers; directly relevant to LLM-formulated optimisation for the researcher.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="agentrouter: a knowledge-graph-guided llm router for collaborative multi-agent question answering zheyuan zhang kaiwen shi zhengqing yuan zehong wang tianyi ma keerthiram murugesan vincent galassi chuxu zhang yanfang ye acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.33" target="_blank" rel="noopener">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a></h3>
+<div class="by">Zheyuan Zhang, Kaiwen Shi, Zhengqing Yuan, Zehong Wang et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Graph-guided routing among LLM agents for QA; agent selection is an operational decision, adjacent to agentic orchestration but not optimisation-focused.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="dual-cluster memory agent: resolving multi-paradigm ambiguity in optimization problem solving xinyu zhang yuchen wan boxuan zhang zesheng yang lingling zhang bifan wei jun liu acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.266" target="_blank" rel="noopener">Dual-Cluster Memory Agent: Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving</a></h3>
+<div class="by">Xinyu Zhang, Yuchen Wan, Boxuan Zhang, Zesheng Yang et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">LLM memory agent that formulates optimisation models and code for OR problems, directly relevant to LLMs formulating optimisation models.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="evolving agents leonardo ranaldi acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.754" target="_blank" rel="noopener">Evolving Agents</a></h3>
+<div class="by">Leonardo Ranaldi</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Proposes an LLM-agent-style meta-control and self-generated abstraction for autonomous learning; agentic but not about planning or optimisation for operations.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="from language to driving: a dual-loop slm-enhanced framework for multi-planner scheduling via a domain-specific language jiawei liu xun gong muli yang xingrui yu fen fang xulei yang ivor wai-hung tsang yunfeng hu hong chen qing guo acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.1381" target="_blank" rel="noopener">From Language to Driving: A Dual-Loop SLM-Enhanced Framework for Multi-Planner Scheduling via a Domain-Specific Language</a></h3>
+<div class="by">Jiawei Liu, Xun Gong, Muli Yang, Xingrui Yu et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">SLM-driven scheduling across multiple motion planners with RL and receding-horizon control; LLM operational scheduling in driving, adjacent to fleet decisions.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="grammar search for multi-agent systems mayank singh vikas yadav shiva krishna reddy malay shravan nayak sai rajeswar sathwik tejaswi madhusudhan eduardo blanco acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.75" target="_blank" rel="noopener">Grammar Search for Multi-Agent Systems</a></h3>
+<div class="by">Mayank Singh, Vikas Yadav, Shiva Krishna Reddy Malay, Shravan Nayak et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Structured search over composable multi-agent system components; agent design search relevant to automatic agentic system optimisation.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="masfactory: a graph-centric framework for orchestrating llm-based multi-agent systems with vibe graphing yang janet liu jinxuan cai yishen li qi meng zedi liu xin li chen qian chuan shi cheng yang acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-demo.35" target="_blank" rel="noopener">MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing</a></h3>
+<div class="by">Yang Janet Liu, Jinxuan Cai, Yishen Li, Qi Meng et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Framework for orchestrating LLM multi-agent workflows from natural language; general agent tooling with limited optimisation focus.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-08-08" data-venue="ACM KDD 2026"
+           data-text="mobilitybench: a benchmark for evaluating route-planning agents in real-world mobility scenarios zhiheng song jingshuai zhang chuan qin chao wang chao chen longfei xu kaikui liu xiangxiang chu hengshu zhu acm kdd 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3770855.3817498" target="_blank" rel="noopener">MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios</a></h3>
+<div class="by">Zhiheng Song, Jingshuai Zhang, Chuan Qin, Chao Wang et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACM KDD 2026</span><span class="by">2026-08-08</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Route-planning agent benchmark for mobility; touches the mobility domain and agent evaluation, though not electrified or optimisation-focused.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
+           data-text="taming &#34;zombie&#34; agents: a markov state-aware framework for resilient multi-agent evolution taolin zhang pukun zhao qizhou chen jiuheng wan chen chen xiaofeng he chengyu wang richang hong acl 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.373" target="_blank" rel="noopener">Taming &#34;Zombie&#34; Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution</a></h3>
+<div class="by">Taolin Zhang, Pukun Zhao, Qizhou Chen, Jiuheng Wan et al.</div>      <div class="venue">
+        <span class="pub conf">Conference</span>
+        <span>ACL 2026</span><span class="by">2026-01-01</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Multi-agent LLM collaboration with state-aware agent scheduling and edge pruning; agentic and resource-aware, relevant to multi-agent decision making.</p>
     </div>
   </article>
 </main>
@@ -161,7 +245,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-22.html" class="cur" aria-current="page">2026-11-22 · 4</a></li>
+    <li><a href="archive/2026-11-23.html" class="cur" aria-current="page">2026-11-23 · 11</a></li>
+    <li><a href="archive/2026-11-22.html">2026-11-22 · 4</a></li>
     <li><a href="archive/2026-11-21.html">2026-11-21 · 11</a></li>
     <li><a href="archive/2026-11-20.html">2026-11-20 · 22</a></li>
     <li><a href="archive/2026-11-19.html">2026-11-19 · 12</a></li>
@@ -188,7 +273,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-22 00:12 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-23 00:52 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
