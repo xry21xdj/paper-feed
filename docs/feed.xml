@@ -5,6 +5,150 @@
   <link>https://xry21xdj.github.io/paper-feed/</link>
   <description>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</description>
   <item>
+    <title>[7] Unlocking public EV charging flexibility for grid balancing: A year-long empirical assessment of unidirectional and bidirectional smart charging in Prague</title>
+    <link>https://doi.org/10.1016/j.apenergy.2026.129307</link>
+    <guid isPermaLink="false">doi:10.1016/j.apenergy.2026.129307</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>Applied Energy · Ondřej Štogl, Marek Miltner, Jakub Zíka, Martin Tichý et al. — Year-long empirical study of smart and bidirectional charging for grid balancing; directly on charging flexibility and grid integration.</description>
+  </item>
+  <item>
+    <title>[7] Learned spatial opportunity cost admission for ride-hailing with calibrated thresholds</title>
+    <link>https://arxiv.org/abs/2611.29319</link>
+    <guid isPermaLink="false">arxiv:2611.29319</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>E-bus scheduling &amp; charging</category>
+    <description>arXiv math.OC · Baichuan Mo, Yuan Zhou, Qixin Zhang, Hai Yang — Learned opportunity-cost admission with dual prices for fleet dispatch; close to fleet operations and ML-guided decision making.</description>
+  </item>
+  <item>
+    <title>[6] SolarSys: Scalable Peer-to-Peer Energy Trading for Residential Virtual Power Plants</title>
+    <link>https://doi.org/10.1145/3744256.3812551</link>
+    <guid isPermaLink="false">doi:10.1145/3744256.3812551</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>Transport-grid integration</category>
+    <description>ACM BuildSys 2026 · Anany Pratap Gupta, Xiangyu Li, Keyang Yu, Qi Li — Multi-agent RL for peer-to-peer trading among residential solar and storage; relevant to energy coordination and distributed grid operations.</description>
+  </item>
+  <item>
+    <title>[6] Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?</title>
+    <link>https://arxiv.org/abs/2611.28610</link>
+    <guid isPermaLink="false">arxiv:2611.28610</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Zhe Chen, Emma Hsieh, Vicky Fu — Evaluates LLM agents that autonomously spend money on data purchases, relevant to agent decision reliability and evaluation, though not optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Agentic Discovery of Simple Symbolic Inventory Policies</title>
+    <link>https://arxiv.org/abs/2611.29440</link>
+    <guid isPermaLink="false">arxiv:2611.29440</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv math.OC · Xi Chen, Yuze Chen, Baichuan Mo, Jie Ying et al. — LLM-driven agentic discovery of inventory policies with parameter fitting; relevant to LLM-designed heuristics for operations optimisation.</description>
+  </item>
+  <item>
+    <title>[6] Don&#39;t Train It, Write It: An AI Agent Writes New Capabilities into Language Model Weights</title>
+    <link>https://arxiv.org/abs/2611.28483</link>
+    <guid isPermaLink="false">arxiv:2611.28483</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.LG · Santiago Rivadeneira Quintero — An AI agent writes new capabilities into LLM weights under a budget, an agentic workflow with planning-like search, though weight editing is outside core interests.</description>
+  </item>
+  <item>
+    <title>[6] EA-Bench: Measuring information and action efficiency under imperfect instructions</title>
+    <link>https://arxiv.org/abs/2611.28846</link>
+    <guid isPermaLink="false">arxiv:2611.28846</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Xu Wan, Wenyue Xu, Shenjie Zhao — Benchmark for tool-call and interaction efficiency of agents under imperfect information; relevant to agent reliability evaluation.</description>
+  </item>
+  <item>
+    <title>[6] EvoViM: Recursively Self-Evolving Visual Agents for Exploration with Deferred Queries</title>
+    <link>https://arxiv.org/abs/2611.28574</link>
+    <guid isPermaLink="false">arxiv:2611.28574</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Xinyu Cao, Tianjie Ju, Zhuosheng Zhang — Recursively self-evolving multimodal agent that rewrites its own memory and tools from failure traces; agentic self-improvement relevant to the researcher&#39;s agent interests.</description>
+  </item>
+  <item>
+    <title>[6] Factory-simulator: A process-oriented environment for evaluating manufacturing decisions against optimisation-based references</title>
+    <link>https://arxiv.org/abs/2611.29079</link>
+    <guid isPermaLink="false">arxiv:2611.29079</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.MA · Andrzej Wodecki, Wojciech Godlewski, Michał Chojna — Deterministic factory environment for evaluating LLM multi-agent decisions against MILP optimisation references; relevant to agentic evaluation and optimisation baselines.</description>
+  </item>
+  <item>
+    <title>[6] Handover Cost Optimization in LEO Satellite Networks using an RL-based Multiple-Column Selection Strategy via Branch-and-Price</title>
+    <link>https://arxiv.org/abs/2611.29129</link>
+    <guid isPermaLink="false">arxiv:2611.29129</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.NI · Mandar R. Nalavade, Gaurav S. Kasbekar, Koushik Kar — RL-guided column selection to accelerate branch-and-price for LEO satellite handover; close to the researcher&#39;s column generation and branch-and-price methods.</description>
+  </item>
+  <item>
+    <title>[6] Human-in-the-Loop Runbook Improvement with Agentic Support Automation</title>
+    <link>https://arxiv.org/abs/2611.28441</link>
+    <guid isPermaLink="false">arxiv:2611.28441</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Rocker D&#39;Antonio, Harry Xie — Agentic AI guiding human operators through runbook incident mitigation; relevant to LLM agents for operational decisions.</description>
+  </item>
+  <item>
+    <title>[6] Improving the Improver: Semantic PID Control for Medical Agent Self-Improvement</title>
+    <link>https://arxiv.org/abs/2611.28680</link>
+    <guid isPermaLink="false">arxiv:2611.28680</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Dexia Chen, YiLong Hu, Wenqi Zhong, Guangyu Guo et al. — Self-improving medical LLM agents with a control-theoretic improver; agentic and relevant to self-evolving agent design, though not transport or optimisation.</description>
+  </item>
+  <item>
+    <title>[6] MetaSkill: Reusable Problem-Solving Methods for Adaptive Skill Orchestration in LLM Agents</title>
+    <link>https://arxiv.org/abs/2611.29274</link>
+    <guid isPermaLink="false">arxiv:2611.29274</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.AI · Tianxing Wang, Mingming Zhao, Shuai Huang, Chaoyue Niu et al. — Two-layer framework for LLM agents selecting and orchestrating problem-solving methods and tools; agentic planning relevant, though not explicitly optimisation or transport.</description>
+  </item>
+  <item>
+    <title>[6] Neural Agent Compiler: Learning to Schedule Soft Dependencies</title>
+    <link>https://arxiv.org/abs/2611.29262</link>
+    <guid isPermaLink="false">arxiv:2611.29262</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.AI · Bo Yan, Peng Wang, Zihan Chen, Ziwen Kan et al. — Learned scheduler for LLM agent tool-operation dependencies; scheduling and utility-based mode selection matches the researcher&#39;s ai4opt interests.</description>
+  </item>
+  <item>
+    <title>[6] Subsurface Model Programming: Frontier Large Language Models Natively Interpret and Edit Dynamic Reservoir Models</title>
+    <link>https://arxiv.org/abs/2611.29612</link>
+    <guid isPermaLink="false">arxiv:2611.29612</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.CE · Yanchen Song, Huizhu Xiang, Zhengdong Lei, Yuezhong Wang et al. — LLMs edit reservoir simulation decks and beat PSO on production optimisation; relevant to LLM-driven simulation and optimisation pipelines, though a different domain.</description>
+  </item>
+  <item>
+    <title>[6] The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates</title>
+    <link>https://arxiv.org/abs/2611.28671</link>
+    <guid isPermaLink="false">arxiv:2611.28671</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.MA · Haoyuan Zheng, Dongting Li, Hancheng Ye, Qinsi Wang et al. — Benchmarks multi-agent LLM workflows across serving substrates and load regimes; relevant to evaluating agent systems under operating conditions.</description>
+  </item>
+  <item>
+    <title>[6] When Simpler Beats Learned: Dual-Weighted Sampling vs. Machine Learning for the Pricing Subproblem in Graph Coloring</title>
+    <link>https://arxiv.org/abs/2611.29769</link>
+    <guid isPermaLink="false">arxiv:2611.29769</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>AI for optimisation</category>
+    <description>arXiv cs.LG · Nikolai Antonov, Přemysl Šůcha, Mikoláš Janota, Jan Hůla — Column generation pricing for graph colouring with dual-weighted sampling versus ML; relevant to branch-and-price and learned pricing heuristics.</description>
+  </item>
+  <item>
+    <title>[6] When a Permitted Action Completes a Forbidden Workflow: Designing Consequence-Oriented Approval for LLM Agents</title>
+    <link>https://arxiv.org/abs/2611.28454</link>
+    <guid isPermaLink="false">arxiv:2611.28454</guid>
+    <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+    <category>LLM &amp; agentic AI</category>
+    <description>arXiv cs.LG · S M Asif Hossain, Ruksat Khan Shayoni, Md Kishor Morol, M F Mridha — Approval interfaces for LLM agents that act on consequential multi-step actions; relevant to agent operational decisions and reliability.</description>
+  </item>
+  <item>
     <title>[8] Learning to Handle Constrained Routing Problems From a Decoupling Perspective</title>
     <link>https://doi.org/10.1145/3770855.3817954</link>
     <guid isPermaLink="false">doi:10.1145/3770855.3817954</guid>
@@ -643,30 +787,6 @@
     <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
     <category>LLM &amp; agentic AI</category>
     <description>arXiv cs.LG · Timo Oksanen — LLMs directly write neural controller weights to steer a real tractor with simulation feedback, relevant to LLM-driven control design and vehicle guidance.</description>
-  </item>
-  <item>
-    <title>[7] Learning-Enhanced Reduce-Repair-Refine-Optimize Framework for Real-Time Train Platforming</title>
-    <link>https://arxiv.org/abs/2611.19041</link>
-    <guid isPermaLink="false">arxiv:2611.19041</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
-    <category>AI for optimisation</category>
-    <description>arXiv math.OC · Md Tabish Haque, Sebastian Sehmisch, Christopher Szymula, Nikola Bešinović — Learning-enhanced reduce-repair-refine MILP framework for real-time train platforming; close to the researcher&#39;s learning-augmented MILP and disruption work.</description>
-  </item>
-  <item>
-    <title>[6] Can Agentic LLMs Write Task-Based Parallel Code? A Study of OpenMP Tasking, HPX, StarPU and TTG</title>
-    <link>https://arxiv.org/abs/2611.19105</link>
-    <guid isPermaLink="false">arxiv:2611.19105</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM &amp; agentic AI</category>
-    <description>arXiv cs.DC · Linus Bantel, Anna-Lena Roth, Tim Thüring, Jonas Posner et al. — Evaluates agentic LLMs that edit, compile and run code in an iterative loop, relevant to agentic workflows though focused on HPC parallel programming.</description>
-  </item>
-  <item>
-    <title>[6] The Critic Can Hurt: On the Safety of Critics in LLM-Guided AutoML Search</title>
-    <link>https://arxiv.org/abs/2611.19037</link>
-    <guid isPermaLink="false">arxiv:2611.19037</guid>
-    <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
-    <category>LLM &amp; agentic AI</category>
-    <description>arXiv cs.LG · KDD 2027 · Gaoyuan Du, Xiaoyang Liu, Rex Zhou, Dengdu Jiang et al. — Studies LLM critics steering iterative AutoML search and their harmful effects; relevant to agent reliability in optimisation loops.</description>
   </item>
 </channel>
 </rss>

@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-23</h2>
-  <span class="meta">11 relevant of 114 screened · 24538 new papers fetched</span>
+  <h2>Today · 2026-11-24</h2>
+  <span class="meta">18 relevant of 165 screened · 25575 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">11</span></button>
-<button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">8</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">18</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">1</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">11</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">4</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,136 +107,236 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="ai4opt" data-score="8" data-date="2026-08-08" data-venue="ACM KDD 2026"
-           data-text="learning to handle constrained routing problems from a decoupling perspective rui cao zhiguang cao yihan huang jiaqi wang yuan jiang yubin xiao you zhou acm kdd 2026">
-    <div class="score s-hi" title="Relevance 8/10">8</div>
-    <div>
-      <h3><a href="https://doi.org/10.1145/3770855.3817954" target="_blank" rel="noopener">Learning to Handle Constrained Routing Problems From a Decoupling Perspective</a></h3>
-<div class="by">Rui Cao, Zhiguang Cao, Yihan Huang, Jiaqi Wang et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACM KDD 2026</span><span class="by">2026-08-08</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Neural combinatorial optimisation for constrained VRPs with step-wise feasibility via a heavy decoder; closely matches learning-to-optimise scheduling interests.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="7" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="rexbench: can coding agents autonomously implement ai research extensions? nicholas edwards yukyung lee yujun audrey mao yulu qin sebastian schuster najoung kim acl 2026">
+  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-23" data-venue="Applied Energy"
+           data-text="unlocking public ev charging flexibility for grid balancing: a year-long empirical assessment of unidirectional and bidirectional smart charging in prague ondřej štogl marek miltner jakub zíka martin tichý oldřich starý michaela valentová applied energy">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.745" target="_blank" rel="noopener">RExBench: Can coding agents autonomously implement AI research extensions?</a></h3>
-<div class="by">Nicholas Edwards, Yukyung Lee, Yujun Audrey Mao, Yulu Qin et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Benchmarks whether coding agents can autonomously implement research extensions, relevant to agents that run research pipelines and simulations for the researcher&#39;s work.</p>
+      <h3><a href="https://doi.org/10.1016/j.apenergy.2026.129307" target="_blank" rel="noopener">Unlocking public EV charging flexibility for grid balancing: A year-long empirical assessment of unidirectional and bidirectional smart charging in Prague</a></h3>
+<div class="by">Ondřej Štogl, Marek Miltner, Jakub Zíka, Martin Tichý et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Applied Energy</span><span class="by">2026-11-23</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Year-long empirical study of smart and bidirectional charging for grid balancing; directly on charging flexibility and grid integration.</p>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="uncertainty-aware test-time search for optimization problem solving linlin yu xujiang zhao dong li yanchi liu wei cheng zhengzhang chen 赵晨 chen zhao feng chen haifeng chen acl 2026">
+  <article class="card" data-topic="ebus" data-score="7" data-date="2026-11-22" data-venue="arXiv math.OC"
+           data-text="learned spatial opportunity cost admission for ride-hailing with calibrated thresholds baichuan mo yuan zhou qixin zhang hai yang arxiv math.oc">
     <div class="score s-mid" title="Relevance 7/10">7</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.1975" target="_blank" rel="noopener">Uncertainty-Aware Test-Time Search for Optimization Problem Solving</a></h3>
-<div class="by">Linlin Yu, Xujiang Zhao, Dong Li, Yanchi Liu et al.</div>      <div class="venue">
+      <h3><a href="https://arxiv.org/abs/2611.29319" target="_blank" rel="noopener">Learned spatial opportunity cost admission for ride-hailing with calibrated thresholds</a></h3>
+<div class="by">Baichuan Mo, Yuan Zhou, Qixin Zhang, Hai Yang</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv math.OC</span><span class="by">2026-11-22</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Learned opportunity-cost admission with dual prices for fleet dispatch; close to fleet operations and ML-guided decision making.</p>
+      <details><summary>Abstract</summary><p>Ride-hailing operators must decide whether to accept a request before observing future demand. Serving a ride earns revenue and changes where and when the vehicle can serve again. We develop learned spatial opportunity cost admission for a centrally managed fleet. The policy estimates demand from past requests and solves a rolling mean-demand plan. Dual prices account for using a vehicle at its origin and returning it to service at its destination. With positive regularization, the policy accepts a request when its planned service fraction reaches a common threshold. We fix the regularization parameter and select the threshold using validation revenue. For one vehicle on a single route, we derive the exact range of thresholds that attain optimal expected revenue. When several origins share return demand at a hub, the best common threshold can lose revenue in proportion to fleet size. Independent validation bounds the revenue loss relative to the best candidate threshold. At a fixed threshold, under Poisson arrivals and a margin condition, the revenue gap between using estimated and true mean demand has a tight inverse-square-root bound in the number of historical days. We evaluate the policy on 60 synthetic instances across six demand families and on ten New York workdays across 25 taxi zones and three fleet sizes. With two validation days, calibration improves mean paired revenue over the default threshold by 4.93% in the synthetic study and 7.08% in New York. In New York, the policy earns 1.24% to 2.54% less than the best-performing benchmark in mean paired comparisons and takes about one-eleventh as long per decision. Calibration gains are largest for the smallest New York fleet. In the synthetic study, gains over accepting every feasible request are largest under commuting demand.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-06-22" data-venue="ACM BuildSys 2026"
+           data-text="solarsys: scalable peer-to-peer energy trading for residential virtual power plants anany pratap gupta xiangyu li keyang yu qi li acm buildsys 2026">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1145/3744256.3812551" target="_blank" rel="noopener">SolarSys: Scalable Peer-to-Peer Energy Trading for Residential Virtual Power Plants</a></h3>
+<div class="by">Anany Pratap Gupta, Xiangyu Li, Keyang Yu, Qi Li</div>      <div class="venue">
         <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+        <span>ACM BuildSys 2026</span><span class="by">2026-06-22</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Multi-agent RL for peer-to-peer trading among residential solar and storage; relevant to energy coordination and distributed grid operations.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.AI"
+           data-text="agent money benchmark: can ai agents be trusted to spend money? zhe chen emma hsieh vicky fu arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.28610" target="_blank" rel="noopener">Agent Money Benchmark: Can AI Agents Be Trusted to Spend Money?</a></h3>
+<div class="by">Zhe Chen, Emma Hsieh, Vicky Fu</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-21</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Evaluates LLM agents that autonomously spend money on data purchases, relevant to agent decision reliability and evaluation, though not optimisation.</p>
+      <details><summary>Abstract</summary><p>Giving an AI agent a wallet lets it buy data and services on a client&#39;s behalf. Trust then depends on how it spends money and what that spending achieves. We introduce Agent Money Benchmark (AMB) to test whether agents spend a client&#39;s money well, starting with purchases of information for financial decisions. We link seller quotes and payments to final answers, evaluating 12 models on 80 payment tasks with simulated sellers and 76 research questions using live data. Purchases settled in USDC on Solana mainnet via x402, a protocol for paying per web request. Three of the 12 models passed 79 of 80 payment tasks without payment or budget errors. Nine fell for a seller&#39;s trap at least once; repeat charges and above-list quotes accounted for 79% of scam events. We estimate waste from data and inference costs, counting failed payment tasks in full and research answers in proportion to missed points. With spending split equally between tracks, estimated waste ranged from \$21.0 per \$100 for Claude Fable 5.2 to \$70.8 for GPT-6 Luna.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-22" data-venue="arXiv math.OC"
+           data-text="agentic discovery of simple symbolic inventory policies xi chen yuze chen baichuan mo jie ying yuan zhou arxiv math.oc">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.29440" target="_blank" rel="noopener">Agentic Discovery of Simple Symbolic Inventory Policies</a></h3>
+<div class="by">Xi Chen, Yuze Chen, Baichuan Mo, Jie Ying et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv math.OC</span><span class="by">2026-11-22</span>
 <span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">LLM plus MCTS formulating optimisation models and code checked by solvers; directly relevant to LLM-formulated optimisation for the researcher.</p>
+      <p class="reason">LLM-driven agentic discovery of inventory policies with parameter fitting; relevant to LLM-designed heuristics for operations optimisation.</p>
+      <details><summary>Abstract</summary><p>Designing simple inventory policies becomes increasingly difficult as operational features and system configurations expand. We develop an Agentic Inventory-Policy Discovery System based on explicitly defined simple operational formula (SOF) policy and template classes. Large language models (LLMs) revise symbolic structures, while a numerical engine fits parameters separately for each instance and evaluates the induced policies. Multicriteria parent selection, state-specific operational diagnostics, and reusable symbolic motifs guide structural evolution. A three-stage progression develops shared templates across instances and configurations with varying state dimensions. Experiments on 15,600 instances spanning 50 demand distributions cover lead times, perishability, their combination, and lead times with limited customer patience. The discovered templates improve aggregate empirical performance over evaluated SOF benchmarks and are competitive with policies requiring more elaborate online computations. For a lost-sales system with a three-period lead time, we develop an average-cost decomposition and prove that, under specified demand and cost conditions, a capped dual-shortfall specialization of a discovered policy strictly outperforms every policy in the considered capped base-stock benchmark class. This analysis links the performance advantage to the discovered replenishment mechanism. Together, these results highlight the potential of agentic discovery to generate simple inventory policies with strong empirical performance and identify operational mechanisms amenable to rigorous theoretical analysis.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="agentrouter: a knowledge-graph-guided llm router for collaborative multi-agent question answering zheyuan zhang kaiwen shi zhengqing yuan zehong wang tianyi ma keerthiram murugesan vincent galassi chuxu zhang yanfang ye acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.LG"
+           data-text="don&#39;t train it, write it: an ai agent writes new capabilities into language model weights santiago rivadeneira quintero arxiv cs.lg">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.33" target="_blank" rel="noopener">AgentRouter: A Knowledge-Graph-Guided LLM Router for Collaborative Multi-Agent Question Answering</a></h3>
-<div class="by">Zheyuan Zhang, Kaiwen Shi, Zhengqing Yuan, Zehong Wang et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.28483" target="_blank" rel="noopener">Don&#39;t Train It, Write It: An AI Agent Writes New Capabilities into Language Model Weights</a></h3>
+<div class="by">Santiago Rivadeneira Quintero</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-21</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Graph-guided routing among LLM agents for QA; agent selection is an operational decision, adjacent to agentic orchestration but not optimisation-focused.</p>
+      <p class="reason">An AI agent writes new capabilities into LLM weights under a budget, an agentic workflow with planning-like search, though weight editing is outside core interests.</p>
+      <details><summary>Abstract</summary><p>We show that an AI agent can write new capabilities into a pretrained language model by adding gated attention heads and MLP neurons inside its existing layers, without backpropagation and without fitting any weight to the answers of task examples. It has a budget of 50 model passes and sees no validation or test instance. Composed in one model, its modules for six BIG-Bench Hard (BBH) subtasks raise the normalized BBH score of Qwen2.5-1.5B-Instruct from 19.95 to 41.05 (Qwen2.5-7B-Instruct: at most 35.01) and that of Gemma-3-1B-it from 10.25 to 32.86. Against the unmodified model at the same precision, both composites leave the next-token distribution on 1,023,000 WikiText tokens unchanged (KL exactly 0), give identical answers on 15,845 items of five other Leaderboard tests and identical scores on the other 18 BBH subtasks. The agent also writes exact multiplication up to 20 digits, running the model only up to 6 (100.0% on the absent lengths of the sealed test in both models; a LoRA with the same budget: at most 2.1%). Sets, rules and report sentences were sealed in git before the first session (manifests timestamped in Bitcoin), with dated amendments listed in Appendix D; a frozen evaluator ran the sealed test once. Verdicts (H5: tracking; H6: composite; H8: one pass vs. chain of thought; H9: fresh and rewritten instances; H10: side effects; H12: multiplication), on the preregistered sealed test, Qwen2.5-1.5B-Instruct: H5 success, H6 success, H8 (web_of_lies) success, H9 success, H10 (composite) success on (i) to (iii), (iv) confirmed, H12 success; Gemma-3-1B-it (H7: H5, H6, H8 and H9 in this model): H5 success, H6 success, H8 (web_of_lies) success, H8 (tracking 3) success, H9 partial, H10 (composite) success on (i) to (iii), (iv) confirmed, H12 success. Not everything worked: 4 of 45 single modules show small side effects and 5 of 50 sessions hit the 12-hour limit without a module.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="dual-cluster memory agent: resolving multi-paradigm ambiguity in optimization problem solving xinyu zhang yuchen wan boxuan zhang zesheng yang lingling zhang bifan wei jun liu acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.AI"
+           data-text="ea-bench: measuring information and action efficiency under imperfect instructions xu wan wenyue xu shenjie zhao arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.266" target="_blank" rel="noopener">Dual-Cluster Memory Agent: Resolving Multi-Paradigm Ambiguity in Optimization Problem Solving</a></h3>
-<div class="by">Xinyu Zhang, Yuchen Wan, Boxuan Zhang, Zesheng Yang et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.28846" target="_blank" rel="noopener">EA-Bench: Measuring information and action efficiency under imperfect instructions</a></h3>
+<div class="by">Xu Wan, Wenyue Xu, Shenjie Zhao</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-21</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Benchmark for tool-call and interaction efficiency of agents under imperfect information; relevant to agent reliability evaluation.</p>
+      <details><summary>Abstract</summary><p>Personal agents help users complete everyday work across digital applications. Many standard benchmarks assume that users provide sufficient information to solve a task. However, agents often encounter incomplete, distracting, or inconsistent information in practice. To systematically study agent inefficiency under such imperfect information, we introduce Efficient Action (EA)-Bench, which evaluates both tool calls and user interactions in work-related tasks. To our knowledge, it is the first benchmark to jointly evaluate tool-call efficiency and user-interaction efficiency under controlled missing, redundant, and conflicting information. We construct 63 base-task instances adapted from existing work-related benchmarks. To guide perturbation design and quantify task requirements, we represent workflows as directed acyclic graphs (DAGs) and examine node-level dependencies to identify where information can be withheld, contradicted, or supplemented with distractors. We use a two-stage validation process combining AI-assisted checks with expert screening to select 232 conditions from 792 initial candidates. We organize these tasks into Easy and Hard tracks by task complexity. Experiments show that imperfect information can reduce accuracy and increase tool-use and user-interaction costs. More concerning, several models obtain apparently correct outcomes by guessing user-specific values without confirmation, revealing potential execution unreliability in current models under imperfect user information.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.AI"
+           data-text="evovim: recursively self-evolving visual agents for exploration with deferred queries xinyu cao tianjie ju zhuosheng zhang arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.28574" target="_blank" rel="noopener">EvoViM: Recursively Self-Evolving Visual Agents for Exploration with Deferred Queries</a></h3>
+<div class="by">Xinyu Cao, Tianjie Ju, Zhuosheng Zhang</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-21</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Recursively self-evolving multimodal agent that rewrites its own memory and tools from failure traces; agentic self-improvement relevant to the researcher&#39;s agent interests.</p>
+      <details><summary>Abstract</summary><p>Multimodal large language model (MLLM) agents have shown promising capabilities in task-oriented environments. However, they still struggle when queries are deferred until after exploration, requiring them to retain visual evidence before knowing which details will matter. We introduce EvoViM, a recursively self-evolving framework in which a frozen multimodal model turns its own interaction experience into one visual program for memory and skills. The program retains images and computes directly on pixels, and its operations decide how this evidence is used in each task. During memory evolution, the same model traces failures in its visual trajectories to the operations that lost or misused evidence and revises them. It also rewrites the notes and analysis tools that guide later revisions, which then build on earlier findings and skip changes that have already failed. We evaluate EvoViM with three multimodal models on six tasks covering visual matching, spatial recall, and sequential decision-making, including three tasks with deferred queries. Across the six tasks, EvoViM improves the average score over AutoMem, the strongest baseline in the main comparison, by 31.3-47.6 points on held-out episodes. Programs written once from the initial environment instructions perform substantially worse, highlighting the value of interaction experience in shaping how visual evidence is retained and used. Code and dataset are available at https://evovim.github.io/.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.MA"
+           data-text="factory-simulator: a process-oriented environment for evaluating manufacturing decisions against optimisation-based references andrzej wodecki wojciech godlewski michał chojna arxiv cs.ma">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.29079" target="_blank" rel="noopener">Factory-simulator: A process-oriented environment for evaluating manufacturing decisions against optimisation-based references</a></h3>
+<div class="by">Andrzej Wodecki, Wojciech Godlewski, Michał Chojna</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-21</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Deterministic factory environment for evaluating LLM multi-agent decisions against MILP optimisation references; relevant to agentic evaluation and optimisation baselines.</p>
+      <details><summary>Abstract</summary><p>Motivated by discussions with an electronics contract manufacturer about decision support, Factory-simulator provides a deterministic manufacturing environment for controlled research on the business performance of large language model-based multi-agent systems (LLM-MAS). Equal delivery performance can arise from decisions with different financial consequences, complicating evaluation through delivery metrics alone. Its process-oriented model connects procurement and production decisions to order fulfilment and factory finances. Seeded worlds and recorded actions support replay and branching from a shared history to examine alternative decisions and their downstream consequences. Linear and mixed-integer programming models generate profit-oriented reference decisions. Observation-limited comparators use disclosed information; full-foresight references use future events for diagnostic comparison. Controlled examples show equal delivery performance with different profit under the same information and distinguish delivery penalties from deferred payment. Verification includes material and financial balances, replay and forks, and a small allocation instance in which the tested optimisation-based controllers attain an analytically established optimum. An external three-role LLM-MAS client completed four illustrative runs comprising 159 periods, with reconciled balances and exact replay of recorded actions. Matched-world rolling comparisons contextualise the financial outcomes, while full-foresight results provide heuristic reference points rather than certified optima. The software enables researchers to investigate how agent organisation and information access affect business outcomes, including whether distributing procurement and production responsibilities changes profit relative to a centralised controller.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-22" data-venue="arXiv cs.NI"
+           data-text="handover cost optimization in leo satellite networks using an rl-based multiple-column selection strategy via branch-and-price mandar r. nalavade gaurav s. kasbekar koushik kar arxiv cs.ni">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.29129" target="_blank" rel="noopener">Handover Cost Optimization in LEO Satellite Networks using an RL-based Multiple-Column Selection Strategy via Branch-and-Price</a></h3>
+<div class="by">Mandar R. Nalavade, Gaurav S. Kasbekar, Koushik Kar</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.NI</span><span class="by">2026-11-22</span>
 <span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">LLM memory agent that formulates optimisation models and code for OR problems, directly relevant to LLMs formulating optimisation models.</p>
+      <p class="reason">RL-guided column selection to accelerate branch-and-price for LEO satellite handover; close to the researcher&#39;s column generation and branch-and-price methods.</p>
+      <details><summary>Abstract</summary><p>Next-generation wireless networks increasingly rely on low Earth orbit (LEO) satellites for broad coverage and low latency, making efficient handover management essential. We formulate satellite handover as a combinatorial optimization problem, assigning each ground user to exactly one capacity-limited, visible satellite while minimizing network handover costs. We propose a reinforcement learning (RL)-based branch-and-price (B&amp;P) framework with learned multiple-column selection (MCS) to accelerate column generation while retaining exact dynamic programming pricing. We also develop two lightweight heuristic policies: handover-aware visibility duration (HAVD) for online decisions and congestion-aware predictive (CAP) for offline planning. Additionally, a local-search repair algorithm adapts precomputed B&amp;P or MCS-B&amp;P solutions to demand perturbations through single-flip and per-user trajectory re-optimization, avoiding complete re-optimization. Simulations using realistic large scale constellations, including Starlink Gen-1, demonstrate that MCS-B&amp;P achieves solution quality comparable to exact B&amp;P with fewer column-generation iterations, fewer branch-and-bound nodes, and reduced computation time. HAVD and CAP offer effective online and offline cost-latency trade-offs, while local-search repair recovers most performance losses due to demand perturbations at a fraction of the computational cost of full re-optimization.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="evolving agents leonardo ranaldi acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.AI"
+           data-text="human-in-the-loop runbook improvement with agentic support automation rocker d&#39;antonio harry xie arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.754" target="_blank" rel="noopener">Evolving Agents</a></h3>
-<div class="by">Leonardo Ranaldi</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.28441" target="_blank" rel="noopener">Human-in-the-Loop Runbook Improvement with Agentic Support Automation</a></h3>
+<div class="by">Rocker D&#39;Antonio, Harry Xie</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-21</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Proposes an LLM-agent-style meta-control and self-generated abstraction for autonomous learning; agentic but not about planning or optimisation for operations.</p>
+      <p class="reason">Agentic AI guiding human operators through runbook incident mitigation; relevant to LLM agents for operational decisions.</p>
+      <details><summary>Abstract</summary><p>Operational support is an important component of production software services. Support requests are often emergent and can come in many forms such as customer escalations or unplanned service interruption. Engineers across organizations have been successful in implementing automation to help streamline support processes but many solutions remain in the hands of human operators. A successful strategy to improve operator response times is to maintain up-to-date runbooks which are documents enumerating triage steps and remediation procedures in the face of identified incidents. This paper is an investigation into an operational system which incorporates Agentic AI into a runbook based incident resolution pattern. The bot uses information in the runbook corpus along with some system-specific tooling to guide the manual operator through the mitigation process then evaluate the outcome and suggest edits to the runbook where it found gaps and in its ability to triage the situation. By using the runbook as a medium to bridge humans and automation, the process maintains explainability and can be decoupled from the agent system. This paper demonstrates a collaboration between human operators and Agentic AI with results from an 17 week study involving 232 production incidents. We conclude with lessons on integrating LLMs into DevOps workflows, related work in AI-assisted operations, and guidance for reproducibility.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="from language to driving: a dual-loop slm-enhanced framework for multi-planner scheduling via a domain-specific language jiawei liu xun gong muli yang xingrui yu fen fang xulei yang ivor wai-hung tsang yunfeng hu hong chen qing guo acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.AI"
+           data-text="improving the improver: semantic pid control for medical agent self-improvement dexia chen yilong hu wenqi zhong guangyu guo tony c. w. mok ling zhang zhongwei qiu arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.1381" target="_blank" rel="noopener">From Language to Driving: A Dual-Loop SLM-Enhanced Framework for Multi-Planner Scheduling via a Domain-Specific Language</a></h3>
-<div class="by">Jiawei Liu, Xun Gong, Muli Yang, Xingrui Yu et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.28680" target="_blank" rel="noopener">Improving the Improver: Semantic PID Control for Medical Agent Self-Improvement</a></h3>
+<div class="by">Dexia Chen, YiLong Hu, Wenqi Zhong, Guangyu Guo et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-21</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">SLM-driven scheduling across multiple motion planners with RL and receding-horizon control; LLM operational scheduling in driving, adjacent to fleet decisions.</p>
+      <p class="reason">Self-improving medical LLM agents with a control-theoretic improver; agentic and relevant to self-evolving agent design, though not transport or optimisation.</p>
+      <details><summary>Abstract</summary><p>High-stakes vertical medical tasks, such as postoperative pathological staging and long-term survival prediction, demand multi-step clinical reasoning over heterogeneous evidence under weak supervision and high outcome uncertainty. While we first orchestrate CliAgent, a domain-tailored clinical agent workflow that systematically grounds predictions in multi-modal patient evidence, manually designed medical agents remain constrained by static, brittle rules. Moreover, existing recursive self-improvement (RSI) methods suffer from feedback ambiguity and severe development-set overfitting when evolving agents in high-noise medical domains. Focusing on improving the improver, we propose Semantic PID-RSI, an evidence-guided control-theoretic framework for medical agent self-improvement. Inspired by PID control, our improver evaluates candidate modification batches via three diagnostic roles: P isolates current clinical failure modes, I synthesizes longitudinal evidence from past trials, and D estimates response dynamics and regression risks (D-pre/D-post). Selected plans are compiled into behavior contracts for staged probing and independent adoption judging. Instantiated and validated on challenging oncology tasks (pT/pN staging and survival prognosis), evolving CliAgent with Semantic PID-RSI on a 3B-activated open-weight model achieves substantial gains (up to +6.27 C-index points), outperforming overfitting-prone RSI baselines and approaching the performance of frontier proprietary models (e.g., GPT-6 series) equipped with CliAgent.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="grammar search for multi-agent systems mayank singh vikas yadav shiva krishna reddy malay shravan nayak sai rajeswar sathwik tejaswi madhusudhan eduardo blanco acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="arXiv cs.AI"
+           data-text="metaskill: reusable problem-solving methods for adaptive skill orchestration in llm agents tianxing wang mingming zhao shuai huang chaoyue niu huiyang xu fan wu guihai chen arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.75" target="_blank" rel="noopener">Grammar Search for Multi-Agent Systems</a></h3>
-<div class="by">Mayank Singh, Vikas Yadav, Shiva Krishna Reddy Malay, Shravan Nayak et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.29274" target="_blank" rel="noopener">MetaSkill: Reusable Problem-Solving Methods for Adaptive Skill Orchestration in LLM Agents</a></h3>
+<div class="by">Tianxing Wang, Mingming Zhao, Shuai Huang, Chaoyue Niu et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-22</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Structured search over composable multi-agent system components; agent design search relevant to automatic agentic system optimisation.</p>
+      <p class="reason">Two-layer framework for LLM agents selecting and orchestrating problem-solving methods and tools; agentic planning relevant, though not explicitly optimisation or transport.</p>
+      <details><summary>Abstract</summary><p>Reusable skills provide specialized procedures, but large language model (LLM) agents must still determine how to organize and adapt their use. We introduce MetaSkill, a two-layer framework for reusing problem-solving methods across tasks and domains. The method layer selects from 26 curated methods and binds abstract roles to task objects. The execution layer uses the instantiated method to identify intermediate objectives, coordinate native skills, and guide repair or method reselection. On 89 SkillsBench tasks and 995 ToolHop examples, MetaSkill outperforms the evaluated baselines in all six configurations, with accuracy gains of 3.51-13.48% over the strongest baseline. Ablations support explicit method-guided orchestration beyond direct method injection and further gains from method reselection.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="masfactory: a graph-centric framework for orchestrating llm-based multi-agent systems with vibe graphing yang janet liu jinxuan cai yishen li qi meng zedi liu xin li chen qian chuan shi cheng yang acl 2026">
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-22" data-venue="arXiv cs.AI"
+           data-text="neural agent compiler: learning to schedule soft dependencies bo yan peng wang zihan chen ziwen kan zhen tan huiyuan chen bo sun shuai shao tianlong chen song wang arxiv cs.ai">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-demo.35" target="_blank" rel="noopener">MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing</a></h3>
-<div class="by">Yang Janet Liu, Jinxuan Cai, Yishen Li, Qi Meng et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Framework for orchestrating LLM multi-agent workflows from natural language; general agent tooling with limited optimisation focus.</p>
+      <h3><a href="https://arxiv.org/abs/2611.29262" target="_blank" rel="noopener">Neural Agent Compiler: Learning to Schedule Soft Dependencies</a></h3>
+<div class="by">Bo Yan, Peng Wang, Zihan Chen, Ziwen Kan et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-22</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Learned scheduler for LLM agent tool-operation dependencies; scheduling and utility-based mode selection matches the researcher&#39;s ai4opt interests.</p>
+      <details><summary>Abstract</summary><p>Large language model agents accomplish complex tasks by coordinating multiple reasoning steps and tool operations, which form dependencies among their operations. Existing orchestration methods primarily consider hard dependencies that determine when an operation can legally begin, but overlook soft dependencies, i.e., information that is not required for execution but may improve an already executable operation. We identify soft-dependency scheduling as an important problem in agent execution. To this end, we introduce Neural Agent Compiler (NAC), a learned scheduler that predicts the task-quality and resource consequences of three execution modes and selects the highest-utility legal mode at a scheduling boundary. NAC represents the executable continuation, pending information event, and resource state in a shared memory, and uses a utility function to adapt the consequence predictions to different resource preferences. Across AppWorld, WebShop, and $τ^2$-bench, NAC achieves 276/417 AppWorld task completions, a 74.69 WebShop Task Score, and 59/100 $τ^2$-bench successes. Additional studies show that the learned scheduler reduces execution work, establishing soft-dependency scheduling as a promising solution for orchestrating tool-using agents.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-08-08" data-venue="ACM KDD 2026"
-           data-text="mobilitybench: a benchmark for evaluating route-planning agents in real-world mobility scenarios zhiheng song jingshuai zhang chuan qin chao wang chao chen longfei xu kaikui liu xiangxiang chu hengshu zhu acm kdd 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-22" data-venue="arXiv cs.CE"
+           data-text="subsurface model programming: frontier large language models natively interpret and edit dynamic reservoir models yanchen song huizhu xiang zhengdong lei yuezhong wang xingbang liu arxiv cs.ce">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1145/3770855.3817498" target="_blank" rel="noopener">MobilityBench: A Benchmark for Evaluating Route-Planning Agents in Real-World Mobility Scenarios</a></h3>
-<div class="by">Zhiheng Song, Jingshuai Zhang, Chuan Qin, Chao Wang et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACM KDD 2026</span><span class="by">2026-08-08</span>
+      <h3><a href="https://arxiv.org/abs/2611.29612" target="_blank" rel="noopener">Subsurface Model Programming: Frontier Large Language Models Natively Interpret and Edit Dynamic Reservoir Models</a></h3>
+<div class="by">Yanchen Song, Huizhu Xiang, Zhengdong Lei, Yuezhong Wang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.CE</span><span class="by">2026-11-22</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Route-planning agent benchmark for mobility; touches the mobility domain and agent evaluation, though not electrified or optimisation-focused.</p>
+      <p class="reason">LLMs edit reservoir simulation decks and beat PSO on production optimisation; relevant to LLM-driven simulation and optimisation pipelines, though a different domain.</p>
+      <details><summary>Abstract</summary><p>Multiphase flow simulation in heterogeneous porous media supports decisions in hydrocarbon recovery, geological carbon sequestration, and geothermal extraction. We introduce Subsurface Model Programming, a workflow in which large language models (LLMs) read and edit reservoir simulation decks directly without numerical gradients or external optimization algorithms. We evaluate four benchmarks using geometric checks for connectivity and open-source simulators for dynamic tasks. In one text-only response, the LLM correctly classified all six reservoir-layer well-pair labels and all three flow-path labels between open completions. On PUNQ-S3, a single proposal modified 54 of 1,761 active cells (3.1%) and reduced well-balanced water-cut RMSE by 71.9%. On the SPE10 sector model, the best of five LLM proposals yielded 1.795 million standard cubic meters of cumulative oil over ten years, 8.9% more than the best plan from 25 particle swarm optimization evaluations. On the 533,403-cell UNISIM-IV-2026 compositional model, five rounds of script-based editing reduced combined field-and-well NRMSE from 37.98% to 11.62% (a 69.4% reduction) and field production error by 73.9%. Replacing exhaustive stochastic search with physically auditable causal interventions in just one to five runs provides a generalizable foundation for autonomous reservoir development, rapid history matching, legacy model diagnosis, and coupled multiphysics engineering.</p></details>
     </div>
   </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-01-01" data-venue="ACL 2026"
-           data-text="taming &#34;zombie&#34; agents: a markov state-aware framework for resilient multi-agent evolution taolin zhang pukun zhao qizhou chen jiuheng wan chen chen xiaofeng he chengyu wang richang hong acl 2026">
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.MA"
+           data-text="the evaluation substrate matters: benchmarking multi-agent serving substrates haoyuan zheng dongting li hancheng ye qinsi wang mingyuan ma yuncheng yao yifei wang baijun zhou zishan shao tingjun chen hai helen li danyang zhuo yiran chen arxiv cs.ma">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.18653/v1/2026.acl-long.373" target="_blank" rel="noopener">Taming &#34;Zombie&#34; Agents: A Markov State-Aware Framework for Resilient Multi-Agent Evolution</a></h3>
-<div class="by">Taolin Zhang, Pukun Zhao, Qizhou Chen, Jiuheng Wan et al.</div>      <div class="venue">
-        <span class="pub conf">Conference</span>
-        <span>ACL 2026</span><span class="by">2026-01-01</span>
+      <h3><a href="https://arxiv.org/abs/2611.28671" target="_blank" rel="noopener">The Evaluation Substrate Matters: Benchmarking Multi-Agent Serving Substrates</a></h3>
+<div class="by">Haoyuan Zheng, Dongting Li, Hancheng Ye, Qinsi Wang et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.MA</span><span class="by">2026-11-21</span>
 <span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Multi-agent LLM collaboration with state-aware agent scheduling and edge pruning; agentic and resource-aware, relevant to multi-agent decision making.</p>
+      <p class="reason">Benchmarks multi-agent LLM workflows across serving substrates and load regimes; relevant to evaluating agent systems under operating conditions.</p>
+      <details><summary>Abstract</summary><p>Multi-agent systems (MAS) usually coordinate heterogeneous models and tools to solve complex tasks, creating a growing need for reliable evaluation. However, a multi-agent workflow that is fastest in one serving environment can lose its advantage in another, even when its models, prompts, and task remain fixed. This makes a benchmark result conditional on how the workflow is executed. We introduce MASSys, a benchmark for measuring this dependence in multi-agent large language model (LLM) systems. MASSys executes the same candidate-task pairs across serving substrates and load regimes, using five workload families spanning software repair, research synthesis, financial analysis, interactive control, and diagram generation. It records task quality alongside delivery, latency, cost, resource pressure, and failure evidence. In a controlled motivation diagnostic, the Star workflow falls from first to fourth in mean-latency rank under KV-cache pressure, while Chain rises from fourth to first. The substrate sweeps further show that increasing load creates long runtime tails and timeout pressure. In several task families, quality among evaluated outputs changes less than effective quality over submitted jobs: the system delivers fewer usable results even when the surviving outputs remain competitive. Tool and runtime traces reveal that these outcomes involve both model serving and non-model execution. Together, the results motivate evaluating MAS designs over explicit operating conditions and reporting which tasks are delivered, how well they are solved, and where execution breaks down.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-22" data-venue="arXiv cs.LG"
+           data-text="when simpler beats learned: dual-weighted sampling vs. machine learning for the pricing subproblem in graph coloring nikolai antonov přemysl šůcha mikoláš janota jan hůla arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.29769" target="_blank" rel="noopener">When Simpler Beats Learned: Dual-Weighted Sampling vs. Machine Learning for the Pricing Subproblem in Graph Coloring</a></h3>
+<div class="by">Nikolai Antonov, Přemysl Šůcha, Mikoláš Janota, Jan Hůla</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-22</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Column generation pricing for graph colouring with dual-weighted sampling versus ML; relevant to branch-and-price and learned pricing heuristics.</p>
+      <details><summary>Abstract</summary><p>The graph coloring problem can be solved to optimality by branch-and-price (B&amp;P), but its performance hinges on the column generation (CG) step, where each iteration requires solving a maximum weight independent set (MWIS) pricing problem. The state-of-the-art machine-learning (ML) pricing heuristic follows a prediction-sampling paradigm: a learned model scores each vertex of a graph, and independent sets are sampled from the induced distribution. We observe, however, that the scoring procedure does not need to be learned, and critically assess the role of ML by replacing the learned scores with the dual solution of the restricted master problem, resulting in Dual-Weighted Sampling, a proposed lightweight alternative that requires no feature engineering or training. Within a unified CG and B&amp;P framework that varies only the pricing oracle, Dual-Weighted Sampling outperforms MLPH, hand-crafted heuristics, and exact solvers on the established graph coloring benchmark in both runtime and solution quality. In particular, it remains competitive on the DIMACS random family, where MLPH was shown strongest in the original evaluation, while achieving more than a two-fold speedup in CG runtime on recursive-sparse and real-world graph families.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-21" data-venue="arXiv cs.LG"
+           data-text="when a permitted action completes a forbidden workflow: designing consequence-oriented approval for llm agents s m asif hossain ruksat khan shayoni md kishor morol m f mridha arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.28454" target="_blank" rel="noopener">When a Permitted Action Completes a Forbidden Workflow: Designing Consequence-Oriented Approval for LLM Agents</a></h3>
+<div class="by">S M Asif Hossain, Ruksat Khan Shayoni, Md Kishor Morol, M F Mridha</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-21</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Approval interfaces for LLM agents that act on consequential multi-step actions; relevant to agent operational decisions and reliability.</p>
+      <details><summary>Abstract</summary><p>Tool-using language-model agents increasingly ask people to approve consequential actions, yet an approval prompt shows only the next step. A request to send a file to an approved recipient can look harmless even when that file was assembled, several steps earlier, from data the user said must never leave. We call this a cumulative authorization failure and argue that it is an interaction design problem as much as a security problem. The evidence a reviewer needs is spread across the trajectory, and listing it in time order leaves the reviewer to reconstruct the causal chain. We present the Cumulative Consent Ledger (CCL), an approval interface built on four design principles that restate the user&#39;s intent, bind the review to the exact action, compose the cumulative consequence, and keep every claim checkable. A trusted monitor that tracks artifact lineage supplies the evidence. In a between-subjects study with 80 participants and 960 approval decisions, CCL was associated with fewer unsafe approvals than an evidence-matched chronological log (24.2% vs. 32.5%), higher comprehension, and faster decisions, although the adjusted difference in unsafe approvals remained uncertain (-7.9 points, 95% CrI [-19.7, 3.8]). In a system evaluation, the monitor detected 89.2% of 120 violating checkpoints and, used as an execution gate, reduced executed unsafe effects from 43.3% to 5.0% for one agent at a small cost to benign completion. We derive implications for designing consent around consequences rather than individual calls.</p></details>
     </div>
   </article>
 </main>
@@ -245,7 +345,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-23.html" class="cur" aria-current="page">2026-11-23 · 11</a></li>
+    <li><a href="archive/2026-11-24.html" class="cur" aria-current="page">2026-11-24 · 18</a></li>
+    <li><a href="archive/2026-11-23.html">2026-11-23 · 11</a></li>
     <li><a href="archive/2026-11-22.html">2026-11-22 · 4</a></li>
     <li><a href="archive/2026-11-21.html">2026-11-21 · 11</a></li>
     <li><a href="archive/2026-11-20.html">2026-11-20 · 22</a></li>
@@ -273,7 +374,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-23 00:52 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-24 04:43 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
