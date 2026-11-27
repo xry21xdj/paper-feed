@@ -92,13 +92,13 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </header>
 
 <div class="daybar">
-  <h2>Today · 2026-11-26</h2>
-  <span class="meta">11 relevant of 73 screened · 25845 new papers fetched</span>
+  <h2>Today · 2026-11-27</h2>
+  <span class="meta">5 relevant of 24 screened · 25406 new papers fetched</span>
 </div>
 
 <div class="controls" role="group" aria-label="Filters">
-  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">11</span></button>
-<button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">6</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">3</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">5</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">2</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">2</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
   <select id="sort" aria-label="Sort">
     <option value="score">By relevance</option>
     <option value="date">By date</option>
@@ -107,146 +107,64 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 </div>
 
 <main id="list">
-  <article class="card" data-topic="llm" data-score="8" data-date="2026-11-24" data-venue="arXiv cs.AI"
-           data-text="partial routing: trace-tuned delegation for resource-efficient agentic workflows siddharth arya kshitij jain arxiv cs.ai">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-26" data-venue="IEEE Trans. Intelligent Transportation Systems"
+           data-text="substation power-demand-driven joint optimization of metro timetabling and energy-efficient operation pengfei sun chengcheng fu zhongcheng zhang qingyuan wang xiaoyun feng ieee trans. intelligent transportation systems">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tits.2026.3756733" target="_blank" rel="noopener">Substation Power-Demand-Driven Joint Optimization of Metro Timetabling and Energy-Efficient Operation</a></h3>
+<div class="by">Pengfei Sun, Chengcheng Fu, Zhongcheng Zhang, Qingyuan Wang et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Intelligent Transportation Systems</span><span class="by">2026-11-26</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Joint metro timetabling and energy-efficient operation driven by substation power demand; directly on electrified transit scheduling and energy use.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-26" data-venue="Transportation Research Part C"
+           data-text="great: a graph edge attention network for the electric vehicle routing problem with asymmetric costs attila lischka filip rydin jiaming wu morteza haghir chehreghani balázs kulcsár transportation research part c">
     <div class="score s-hi" title="Relevance 8/10">8</div>
     <div>
-      <h3><a href="https://arxiv.org/abs/2611.33402" target="_blank" rel="noopener">Partial Routing: Trace-Tuned Delegation for Resource-Efficient Agentic Workflows</a></h3>
-<div class="by">Siddharth Arya, Kshitij Jain</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-24</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Lead model delegates recurring subtasks to cheaper worker models based on past runs, a close analogue of cost-aware agentic delegation the researcher would build on.</p>
-      <details><summary>Abstract</summary><p>AI models vary enormously in capability and price. Model routing exploits this by sending easier tasks to cheaper models. However, a single agentic task often combines easy and difficult subtasks, making one model choice for the entire task inefficient. We introduce partial routing, which guides a frontier lead model to delegate suitable subtasks to a cheaper worker model. From both models&#39; past runs, we identify recurring subtasks and measure each model&#39;s quality and cost on them. These measurements produce delegation guidance, with a parameter, $δ$, controlling how much is delegated. The lead decides when and what to delegate during execution, without training either model. On held-out tasks from ViBench and Terminal-Bench 4.0, partial routing achieves higher mean task performance than the lead alone and task-level routing. With $δ= 0.75$, it raises the lead&#39;s ViBench score from 70.2 to 78.5 at 19% lower cost, and its Terminal-Bench pass rate from 54% to 61% at similar cost. Giving the lead only the subtask breakdown, without a worker, also reduces cost on both benchmarks and raises the Terminal-Bench pass rate. These results show that analysis of past runs can support more efficient planning and more effective delegation, with little cost and implementation overhead.</p></details>
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106184" target="_blank" rel="noopener">GREAT: A graph edge attention network for the electric vehicle routing problem with asymmetric costs</a></h3>
+<div class="by">Attila Lischka, Filip Rydin, Jiaming Wu, Morteza Haghir Chehreghani et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part C</span><span class="by">2026-11-26</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Graph attention network for electric vehicle routing with asymmetric costs, a learned approach to EV routing that the researcher would want to read.</p>
     </div>
   </article>
-  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-24" data-venue="arXiv cs.LG"
-           data-text="boiling down uncertainty: deep generative scenario search with decision-guided evolution strategies for two-stage stochastic optimization atefeh hemmati golsefidi david pisinger arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.32573" target="_blank" rel="noopener">Boiling Down Uncertainty: Deep Generative Scenario Search with Decision-Guided Evolution Strategies for Two-Stage Stochastic Optimization</a></h3>
-<div class="by">Atefeh Hemmati Golsefidi, David Pisinger</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-24</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Decision-guided scenario generation for two-stage stochastic programming with evolution strategies; directly relevant to robust and stochastic optimisation methods the researcher uses.</p>
-      <details><summary>Abstract</summary><p>One of the most common models for handling uncertainty is two-stage stochastic programming. Choosing the right number of scenarios is a trade-off between the uncertainty that can be represented and computational cost. A recent method, Deep Generative Scenario Search, generates synthetic scenarios and improves them by learning from the decisions they induce. The original approach used a black-box gradient estimate, since decisions are piecewise constant across scenarios. This paper provides the missing analytical foundation by deriving the gradient in closed form from recourse duality and an adjoint solve of the regularized reduced problem. The decision-focused direction, with a heuristic direction as a backup when duals are unavailable, defines the sampling subspace of a guided evolution strategy rather than being used as a direct update. For any guiding subspace, the expected update is a descent direction of the smoothed objective, so an inaccurate guide adds variance while the expected step still descends. For six problem families, both guided estimators outperform the baseline. The decision-focused version reduces the mean gap by three-quarters, and on the two families with the most integer variables the reduced sets beat the exact solver&#39;s two-hour incumbent in most runs, using a fifth of the time.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-24" data-venue="arXiv cs.AI"
-           data-text="delegent: a multi-agent harness that reduces cost without sacrificing performance lingwei gu jimmy lin arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.33098" target="_blank" rel="noopener">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a></h3>
-<div class="by">Lingwei Gu, Jimmy Lin</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-24</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Frontier agent delegates subtasks to small models to cut cost of long-horizon agentic coding and search; a clear agentic-workflow method the researcher would read.</p>
-      <details><summary>Abstract</summary><p>Agents built on frontier language models are expensive. At every step, the frontier model re-reads its entire context and executes every subtask regardless of its difficulty. This paper explores the simple thesis that much of this cost can be removed by delegating easy subtasks to a small language model, or SLM, that runs on hardware one already owns. To test it, we build Delegent, a simple and effective agent harness built on Claude Code, in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests, and searching a corpus, to SLM subagents. Existing approaches such as cascades and model routers usually choose which model executes the entire task, whereas in Delegent, the frontier model always leads the execution and delegates easy subtasks to the SLM. No router or model is trained, so either model can be swapped freely. With the help of a 27B FP8 SLM, Delegent reduces the frontier cost of long-horizon coding by 67% and of agentic search by 59%, with no loss in task performance, and even a 2B SLM that fits on a laptop reduces the coding cost by 66%. The savings grow with the legwork that the frontier model would otherwise do itself, and a short instruction, which leaves the main coding tasks to the frontier model, accounts for most of the saving and keeps the 2B SLM from losing tasks. Code: https://github.com/castorini/delegent</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="7" data-date="2026-11-24" data-venue="arXiv eess.SY"
-           data-text="voltage-feedback backoff and restoration for priority-based ev charging control eyad alsulayhim ning lu arxiv eess.sy">
-    <div class="score s-mid" title="Relevance 7/10">7</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.33300" target="_blank" rel="noopener">Voltage-Feedback Backoff and Restoration for Priority-Based EV Charging Control</a></h3>
-<div class="by">Eyad Alsulayhim, Ning Lu</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv eess.SY</span><span class="by">2026-11-24</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Voltage-feedback control of EV charging counts on IEEE 123-bus feeder with priority allocation; directly on EV charging grid impacts.</p>
-      <details><summary>Abstract</summary><p>Uncoordinated residential electric vehicle (EV) charging can cause sustained undervoltage in distribution networks. This paper proposes a centralized voltage-feedback backoff and restoration (VFBR) framework that separates concurrent charging-count control from EV selection. The controller adjusts the allowable charging count using monitored critical-bus voltages, without load forecasts, online power-flow calculations, or optimization. Initial charging suspension relieves undervoltage, followed by group-wise restoration and backoff as voltage conditions permit. A complementary priority score combines charging urgency with voltage sensitivity precomputed offline to balance time-critical requests against their location-dependent voltage impacts. One-week simulations on the unbalanced IEEE 123-bus feeder with 500 EVs show that VFBR reduces the proportion of charging-period bus-time samples below 0.95 p.u. from 15% to less than 1%. Among the evaluated strategies, combined allocation with urgency and sensitivity weights of 0.75 and 0.25 delivers 25% more energy than random allocation and achieves the highest mean departure state of charge and fairness. These results demonstrate that simple voltage-feedback control, coupled with urgency- and sensitivity-based allocation, effectively mitigates undervoltage while improving charging service.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-24" data-venue="IEEE Trans. Smart Grid"
-           data-text="from tokens to energy flexibility: quantization-enabled demand response for data centers with llm inference workloads bojun du xiaoyi fan ershun du long chen jianpei han qingchun hou ning zhang chongqing kang ieee trans. smart grid">
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-25" data-venue="Applied Energy"
+           data-text="electric vehicles as mobile energy carriers: an activity-based agent-based model of residential pv origin energy flows and v2g moses katontoka francesco orsi applied energy">
     <div class="score s-mid" title="Relevance 6/10">6</div>
     <div>
-      <h3><a href="https://doi.org/10.1109/tsg.2026.3757191" target="_blank" rel="noopener">From Tokens to Energy Flexibility: Quantization-Enabled Demand Response for Data Centers with LLM Inference Workloads</a></h3>
-<div class="by">Bojun Du, Xiaoyi Fan, Ershun Du, Long Chen et al.</div>      <div class="venue">
+      <h3><a href="https://doi.org/10.1016/j.apenergy.2026.129313" target="_blank" rel="noopener">Electric vehicles as mobile energy carriers: An activity-based agent-based model of residential PV origin energy flows and V2G</a></h3>
+<div class="by">Moses Katontoka, Francesco Orsi</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Applied Energy</span><span class="by">2026-11-25</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Agent-based model of EV V2G and PV energy flows across home and public charging; relevant to grid integration and charging flexibility, though not optimisation-focused.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-26" data-venue="Computers &amp; Operations Research"
+           data-text="local search-guided generative flow networks for the capacitated vehicle routing problem jingfeng yang ni zhang zhiqin zhang yixin xu zhiguang cao computers &amp; operations research">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.cor.2026.107740" target="_blank" rel="noopener">Local search-guided Generative Flow Networks for the capacitated vehicle routing problem</a></h3>
+<div class="by">Jingfeng Yang, Ni Zhang, Zhiqin Zhang, Yixin Xu et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Computers &amp; Operations Research</span><span class="by">2026-11-26</span>
+<span class="tag">AI for optimisation</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Generative flow networks combined with local search for CVRP; a learning-guided combinatorial method relevant to ML-guided routing.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-25" data-venue="IEEE Trans. Transportation Electrification"
+           data-text="traffic-aware analysis of dynamic wireless power transfer: multi-ev interaction, feeder power peaks, and energy share cristian giovanni colombo michela longo ieee trans. transportation electrification">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tte.2026.3757539" target="_blank" rel="noopener">Traffic-Aware Analysis of Dynamic Wireless Power Transfer: Multi-EV Interaction, Feeder Power Peaks, and Energy Share</a></h3>
+<div class="by">Cristian Giovanni Colombo, Michela Longo</div>      <div class="venue">
         <span class="pub ieee">IEEE</span>
-        <span>IEEE Trans. Smart Grid</span><span class="by">2026-11-24</span>
-<span class="tag">Transport-grid integration</span>      </div>
-      <p class="reason">Quantization-enabled demand response for LLM data centers under grid and carbon signals; relevant to flexibility and grid-integration thinking but not transport.</p>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-24" data-venue="arXiv cs.NE"
-           data-text="accelerating dynamic route re-solving via robust solver evolution in automatic heuristic design yizhuo ma haoran sun shuang liang muquan li qizhi chen renzhong wang nan chen lunxu liu ke qin arxiv cs.ne">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.32576" target="_blank" rel="noopener">Accelerating Dynamic Route Re-solving via Robust Solver Evolution in Automatic Heuristic Design</a></h3>
-<div class="by">Yizhuo Ma, Haoran Sun, Shuang Liang, Muquan Li et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.NE</span><span class="by">2026-11-24</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">LLM-driven automatic heuristic design for dynamic TSP re-solving; directly on routing optimisation with learned heuristics.</p>
-      <details><summary>Abstract</summary><p>Multi-goal route planning uses spatial data on service locations and pairwise travel costs to determine a visiting order that minimizes total travel cost. This task can be formulated as the traveling salesman problem (TSP) and has benefited from large language model-based automatic heuristic design (AHD) for constructing effective solvers. Despite their effectiveness in static settings, existing methods exhibit substantial re-solving inefficiency when location changes, new requests, or request cancellations alter the underlying request data during execution. Our empirical analysis suggests that ``static-overfitting&#39;&#39; contributes to this inefficiency, as evolved solvers may repeatedly direct search toward overlapping local neighborhoods after dynamic changes. We further find that this ``overfitting&#39;&#39; is associated with limitations in existing evolutionary processes, where lower objective values on some instances coincide with longer solving times. In this paper, we therefore propose ERDR, a plug-and-play framework that integrates two strategies into existing AHD pipelines to guide evolution toward solvers that re-solve dynamically changed instances faster. Specifically, 1) ERDR uses validation-guided reselection to reevaluate candidates on instances excluded from routine evolution, reducing specialization to fixed training instances. 2) ERDR applies runtime robustness-augmented evaluation, supplementing the original evaluation objective of AHD methods with inter-group variability and tail risk in solving time to discourage costly and uneven search. Experiments across multiple TSP scales and dynamic scenarios show that ERDR achieves average re-solving speedups of $2.2\times$ under guided local search and $4.4\times$ under iterated local search.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-24" data-venue="arXiv cs.CE"
-           data-text="ded-agent: an agentic ai method for autonomous thermal simulation model development and calibration in laser directed energy deposition michael song yilong dai lin cheng arxiv cs.ce">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.32822" target="_blank" rel="noopener">DED-Agent: An agentic AI method for autonomous thermal simulation model development and calibration in laser directed energy deposition</a></h3>
-<div class="by">Michael Song, Yilong Dai, Lin Cheng</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.CE</span><span class="by">2026-11-24</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Multi-agent supervisor coordinating simulation build and surrogate-based calibration with trust-region search; close to the researcher&#39;s simulation calibration and agent-pipeline interests.</p>
-      <details><summary>Abstract</summary><p>In metal additive manufacturing (AM), process parameters set the local thermal history, which governs defects, microstructure and properties. Laser power, scan speed, hatch spacing, layer thickness, scan strategy and position combine into a design space of 10^4-10^6 conditions, which is beyond what human experts can map by hand with finite element (FE) thermal models: every model must be set up, meshed, solved and calibrated by an expert, and calibrating unknown heat-source parameters alone can take days to weeks. This paper presents DED-Agent, an agentic artificial intelligence (AI) method for autonomous simulation model development and calibration in laser directed energy deposition (L-DED). A supervisor agent coordinates three specialist agents that share a structured simulation specification and call open-source tools. An intent agent turns a plain-language request into a validated specification, a simulation agent builds, runs and checks an FE thermal model through physics-aware step-by-step reasoning, and a calibration agent identifies key heat-source parameters against experimental data (e.g., thermocouple data) using a high-order proper generalized decomposition (HOPGD) surrogate within a trust-region search. On five benchmark builds, from single-track walls to a multi-track band on a cylindrical tube, the agents built executable thermal models without manual intervention, with 4.1-9.1% error for the simple and medium builds. Within three calibration rounds, the error fell to 0.9-2.5%. The surrogate matched full FE to within 0.08-1.55% and shortened calibration by 5-13 times. Agentic AI can thus autonomously establish reliable, accurate simulation models for AM processes and accelerate the search for process parameters that control microstructure.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-24" data-venue="arXiv cs.MA"
-           data-text="recursive collective intelligence: emergence on an equal-budget ladder in multi-agent llm systems lixuan he shengqu cai fang wu shikang zheng liwei jiang manling li yi ma li fei-fei leonidas guibas gordon wetzstein yejin choi yining hong arxiv cs.ma">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.32606" target="_blank" rel="noopener">Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems</a></h3>
-<div class="by">Lixuan He, Shengqu Cai, Fang Wu, Shikang Zheng et al.</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.MA</span><span class="by">2026-11-24</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Multi-agent LLM teams with compute-matched evaluation and self-improvement across generations; agentic AI at top-venue level.</p>
-      <details><summary>Abstract</summary><p>Large language models increasingly work as teams of agents, and a team is expected to solve problems beyond the reach of any single member. Most evaluations credit a team for outperforming a single agent, without accounting for the additional computation: a team may consume many times the tokens of one agent, and a plain vote over independent answers already explains most of the reported gain. Two questions therefore remain open: When does interaction itself make a group smarter, and can a group improve its next generation by learning from its own work? We answer both with the equal-budget ladder, which grades a group against independent agents at three levels: outperforming a single agent, a compute-matched majority vote, and compute-matched pass@n. On this ladder we define Recursive Collective Intelligence (RCI) as a group whose own output, without a teacher or external labels, makes its next generation smarter at equal cost. Three findings follow. First, interaction improves collective intelligence when it moves information across agents: forwarding split facts lifts groups above pass@n at three model scales, by about a third at 27B. Second, organization emerges spontaneously: identical 27B agents form hubs and improve accuracy by 18 percentage points; encoding their organization in a prompt enables them to reach level 3 at less than half the token budget in a descriptive comparison. Third, groups recursively improve themselves: Two label-free generations progressively climb the ladder, the second 9B generation surpassing both pass@$n$ and a control trained on base-model turns; on PlanBench, HiddenBench and Hanabi, each generation outperforms its predecessor on unseen problems for four to six generations. A group therefore outperforms its members when it forwards useful information more efficiently than it spends tokens on coordination, and learns to do so from its own work.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="ai4opt" data-score="6" data-date="2026-11-24" data-venue="arXiv cs.LG"
-           data-text="st-gnn-aaas: spatio-temporal graph neural networks for anytime automatic algorithm selection in the traveling salesman problem zeyu zhang mustafa misir arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.32602" target="_blank" rel="noopener">ST-GNN-AAAS: Spatio-Temporal Graph Neural Networks for Anytime Automatic Algorithm Selection in the Traveling Salesman Problem</a></h3>
-<div class="by">Zeyu Zhang, Mustafa Misir</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-24</span>
-<span class="tag">AI for optimisation</span>      </div>
-      <p class="reason">Spatio-temporal GNN selecting solvers for TSP under time budgets; adjacent learning-to-select work relevant to algorithm selection for routing and scheduling.</p>
-      <details><summary>Abstract</summary><p>Anytime Automatic Algorithm Selection (AAAS) aims to make solver choices under varying time budgets. The existing AAAS approaches largely rely on static instance characteristics and make limited use of temporal information revealed during solver execution. We propose ST-GNN-AAAS, a Spatio-Temporal Graph Neural Network framework for AAAS in the Traveling Salesman Problem (TSP). The framework represents evolving incumbent tours using time-varying node features, including distances from each node to its neighbors in the current tour, and combines these features with solver performance observations over a short history window. Given this short history, ST-GNN-AAAS predicts solver selections over a longer future horizon. We evaluate the method on a subset of diverse TSP benchmarks from NATIONAL, TNM, TSPLIB, and VLSI, releasing the corresponding solver execution data to support reproducibility. Our model achieves a selection accuracy of 76.59% and closes 46.05% of the average rank gap between the single best solver (SBS) and the virtual best solver (VBS).</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-24" data-venue="arXiv cs.LG"
-           data-text="scalpel and brush: pruning and targeted weight editing of a small language model by a single llm agent sergei koltcov vera ignatenko anton surkov rabie abdultawab ramadan arxiv cs.lg">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.33426" target="_blank" rel="noopener">Scalpel and Brush: Pruning and Targeted Weight Editing of a Small Language Model by a Single LLM Agent</a></h3>
-<div class="by">Sergei Koltcov, Vera Ignatenko, Anton Surkov, Rabie Abdultawab Ramadan</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.LG</span><span class="by">2026-11-24</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">A single LLM agent edits model weights and prunes networks under a metric; agentic optimisation-style search with some relevance to agent-run pipelines.</p>
-      <details><summary>Abstract</summary><p>It has recently been shown that an LLM can itself edit the weights of a language model, yet it remains unclear which part of such a result is due to the agent and which part is reproduced by a random edit of the same shape, by an instruction in the prompt, or by a standard procedure without an LLM. We unify repair and pruning as sparse weight edits to optimize a metric we specify, using BLEU as an example: three tasks -- targeted weight repair (&#34;brush&#34;), structured MLP neuron pruning (&#34;scalpel&#34;, zeroing pruned weights), and layer removal with repair - are assigned to a DeepSeek Harness agent powered by DeepSeek-V4.1-Flash, with up to 50 dev evaluations. We study Qwen2.5-Math-1.5B-Instruct in three independent runs per task, with final evaluation on two hidden splits. On ordinary differential equations, changing at most 0.0084% of weights raised test BLEU by 24-32% on second-order equations and by a factor of 1.8-2.5 on equations with polynomial right-hand sides. An independent substitution check showed that higher BLEU reflects notation alignment rather than improved correctness. Masks that remove 12.5-15% of MLP neurons shrink the model by 9.4-11.2% with mean BLEU loss of at most 0.01 on both hidden splits, whereas standard pruning with equal shares per layer failed the constraint at all tested shares. On seven-class GoEmotions classification, edits raise macro-F1 from 0.100 to 0.396-0.451 on test and from 0.175 to 0.455-0.476 on holdout. A ridge-based classifier written into agent-selected weight rows yields macro-F1 of 0.424 and 0.464. Pruning search with the same evaluation limit removes 15.9% of neurons versus 14-21.4% for agent runs passing the hidden check. Standard procedures without an LLM reproduce much of the performance once given the location and form of intervention found by the agent; a comparison of agentic and non-agentic search remains open.</p></details>
-    </div>
-  </article>
-  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-25" data-venue="arXiv cs.AI"
-           data-text="sliceplanner: logic-guided agentic ai for online qos-aware network slicing in open ran adhwaa al-chaab ayman younis dario pompili arxiv cs.ai">
-    <div class="score s-mid" title="Relevance 6/10">6</div>
-    <div>
-      <h3><a href="https://arxiv.org/abs/2611.33664" target="_blank" rel="noopener">SlicePlanner: Logic-Guided Agentic AI for Online QoS-Aware Network Slicing in Open RAN</a></h3>
-<div class="by">Adhwaa Al-Chaab, Ayman Younis, Dario Pompili</div>      <div class="venue">
-        <span class="pub arxiv">arXiv</span>
-        <span>arXiv cs.AI</span><span class="by">2026-11-25</span>
-<span class="tag">LLM &amp; agentic AI</span>      </div>
-      <p class="reason">Logic-guided agentic AI making closed-loop RAN reconfiguration decisions with rollback; agents making operational decisions, though network slicing rather than transport.</p>
-      <details><summary>Abstract</summary><p>Adaptive network slicing in Open Radio Access Network (O-RAN) demands reconfiguration decisions that respond to live traffic conditions while remaining safe with respect to Service Level Agreement (SLA) constraints, a combination that purely data-driven controllers cannot reliably guarantee without continuous retraining. We present SlicePlanner, a logic-guided closed-loop framework that treats each RAN reconfiguration as a controlled hypothesis: proposed from live and historical KeyPerformance Indicator (KPI) evidence, filtered through explicit SLA constraints and mined RAN control rules, and committed only when post-action measurements confirm improvement. SlicePlanner comprises two cooperating agents: SliceSense, which monitors live KPIs, retrieves context-conditioned evidence, and ranks candidate RAN actions through a surrogate-guided admissibility filter; and SliceGuard, which validates post-action KPI responses, rolls back harmful configurations, and refreshes rules under distribution drift. Validated over the air using OpenAirInterface, FlexRIC, and commercial Sierra Wireless 5G devices, SlicePlanner reduces SLA latency violations by up to 86% over static slicing and 50% over Deep Reinforcement Learning (DRL)-based slicing, while maintaining comparable cell throughput and auditable decisions without online retraining.</p></details>
+        <span>IEEE Trans. Transportation Electrification</span><span class="by">2026-11-25</span>
+<span class="tag">Transport-grid integration</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Dynamic wireless charging with multi-EV traffic and feeder power peaks touches grid impact and EV charging load, adjacent to the researcher&#39;s transport-grid interests.</p>
     </div>
   </article>
 </main>
@@ -255,7 +173,8 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <nav class="archive" aria-label="Previous days">
   <h2>Previous days</h2>
   <ul>
-    <li><a href="archive/2026-11-26.html" class="cur" aria-current="page">2026-11-26 · 11</a></li>
+    <li><a href="archive/2026-11-27.html" class="cur" aria-current="page">2026-11-27 · 5</a></li>
+    <li><a href="archive/2026-11-26.html">2026-11-26 · 11</a></li>
     <li><a href="archive/2026-11-25.html">2026-11-25 · 18</a></li>
     <li><a href="archive/2026-11-24.html">2026-11-24 · 18</a></li>
     <li><a href="archive/2026-11-23.html">2026-11-23 · 11</a></li>
@@ -286,7 +205,7 @@ try { const t = localStorage.getItem("theme"); if (t) document.documentElement.d
 <footer>
   Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
   Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
-  Updated 2026-11-26 02:44 UTC · <a href="feed.xml">RSS</a></footer>
+  Updated 2026-11-27 02:44 UTC · <a href="feed.xml">RSS</a></footer>
 </div>
 
 <script>
