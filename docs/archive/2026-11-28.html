@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Bus &amp; Transport Research Feed</title>
+<meta name="description" content="Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration">
+<link rel="alternate" type="application/rss+xml" title="E-Bus &amp; Transport Research Feed" href="../feed.xml">
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --ink: #1d1f23; --muted: #62666d; --line: #e3e3df;
+  --accent: #2f5bd3; --chip: #eef1f8;
+  --hi: #1f7a4d; --hi-bg: #e3f3ea; --mid: #8a6a12; --mid-bg: #faf1d7; --lo: #62666d; --lo-bg: #ececea;
+  --arxiv: #b31b1b; --elsevier: #e9711c; --ieee: #00629b; --informs: #6a3d9a; --springer: #0f7f74; --acm: #1f5fbf; --conf: #3d6b1f; --other: #62666d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+    --accent: #8ea8ff; --chip: #262b35;
+    --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+    --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --acm: #8fb4ff; --conf: #a6d97a; --other: #9a9ea6;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1d2024; --ink: #e8e8e6; --muted: #9a9ea6; --line: #2e3238;
+  --accent: #8ea8ff; --chip: #262b35;
+  --hi: #7fd6a6; --hi-bg: #1d3328; --mid: #e6c66b; --mid-bg: #3a3220; --lo: #9a9ea6; --lo-bg: #2a2d31;
+  --arxiv: #ff7a7a; --elsevier: #ffa463; --ieee: #5cb8ec; --informs: #b99ae0; --springer: #5fd0c4; --acm: #8fb4ff; --conf: #a6d97a; --other: #9a9ea6;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 28px 16px 64px; }
+header h1 { font-size: 1.55rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+header p { margin: 0; color: var(--muted); }
+.daybar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; margin: 22px 0 14px; }
+.daybar h2 { margin: 0; font-size: 1.15rem; }
+.daybar .meta { color: var(--muted); font-size: 0.88rem; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 18px; }
+.chip { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px;
+  padding: 5px 12px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.chip .n { opacity: 0.7; margin-left: 4px; }
+.controls input, .controls select { font: inherit; font-size: 0.88rem; padding: 6px 10px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.controls input { flex: 1 1 180px; min-width: 0; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+  margin-bottom: 10px; display: grid; grid-template-columns: 44px 1fr; gap: 0 14px; }
+.score { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center;
+  font-weight: 700; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.s-hi { color: var(--hi); background: var(--hi-bg); }
+.s-mid { color: var(--mid); background: var(--mid-bg); }
+.s-lo { color: var(--lo); background: var(--lo-bg); }
+.card h3 { margin: 0 0 3px; font-size: 1.02rem; line-height: 1.35; }
+.card h3 a { color: var(--ink); text-decoration: none; }
+.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+.by { color: var(--muted); font-size: 0.85rem; }
+.venue { font-size: 0.83rem; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.pub { font-weight: 600; }
+.pub.arxiv { color: var(--arxiv); } .pub.elsevier { color: var(--elsevier); } .pub.ieee { color: var(--ieee); }
+.pub.informs { color: var(--informs); } .pub.springer { color: var(--springer); } .pub.acm { color: var(--acm); } .pub.conf { color: var(--conf); } .pub.other { color: var(--other); }
+.tag { font-size: 0.75rem; background: var(--chip); border-radius: 6px; padding: 1px 7px; color: var(--muted); }
+.reason { margin: 8px 0 0; }
+details { margin-top: 6px; font-size: 0.88rem; color: var(--muted); }
+details summary { cursor: pointer; }
+.empty { color: var(--muted); padding: 28px 0; text-align: center; }
+.archive { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+.archive h2 { font-size: 1rem; margin: 0 0 10px; }
+.archive ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.archive a { display: inline-block; padding: 4px 10px; border-radius: 8px; background: var(--surface);
+  border: 1px solid var(--line); font-size: 0.85rem; text-decoration: none; color: var(--ink); }
+.archive a.cur { border-color: var(--accent); color: var(--accent); }
+footer { margin-top: 28px; color: var(--muted); font-size: 0.8rem; }
+.theme { float: right; }
+@media (max-width: 520px) {
+  .card { grid-template-columns: 1fr; }
+  .score { width: auto; height: auto; justify-self: start; padding: 2px 10px; margin-bottom: 6px; font-size: 0.95rem; }
+}
+</style>
+<script>
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <button class="chip theme" id="theme" type="button" aria-label="Toggle colour theme">◐</button>
+  <h1>E-Bus &amp; Transport Research Feed</h1>
+  <p>Daily papers on electric-bus operations, traffic simulation, agentic AI, AI for optimisation and grid integration</p>
+</header>
+
+<div class="daybar">
+  <h2>Today · 2026-11-28</h2>
+  <span class="meta">10 relevant of 79 screened · 25630 new papers fetched</span>
+</div>
+
+<div class="controls" role="group" aria-label="Filters">
+  <button class="chip" type="button" data-topic="" aria-pressed="true">All<span class="n">10</span></button>
+<button class="chip" type="button" data-topic="ebus" aria-pressed="false">E-bus scheduling &amp; charging<span class="n">3</span></button><button class="chip" type="button" data-topic="llm" aria-pressed="false">LLM &amp; agentic AI<span class="n">5</span></button><button class="chip" type="button" data-topic="ai4opt" aria-pressed="false">AI for optimisation<span class="n">1</span></button><button class="chip" type="button" data-topic="grid" aria-pressed="false">Transport-grid integration<span class="n">1</span></button>  <input id="q" type="search" placeholder="Search title, author, venue…" aria-label="Search">
+  <select id="sort" aria-label="Sort">
+    <option value="score">By relevance</option>
+    <option value="date">By date</option>
+    <option value="venue">By venue</option>
+  </select>
+</div>
+
+<main id="list">
+  <article class="card" data-topic="ebus" data-score="9" data-date="2026-11-27" data-venue="IEEE Trans. Smart Grid"
+           data-text="a large language model-driven framework for automated reward discovery in electric vehicle fleet scheduling for grid-integrated energy systems xiyang chu meiting tu tongtong shi dominique gruyer ye li ieee trans. smart grid">
+    <div class="score s-hi" title="Relevance 9/10">9</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tsg.2026.3757966" target="_blank" rel="noopener">A Large Language Model-Driven Framework for Automated Reward Discovery in Electric Vehicle Fleet Scheduling for Grid-Integrated Energy Systems</a></h3>
+<div class="by">Xiyang Chu, Meiting Tu, Tongtong Shi, Dominique Gruyer et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Smart Grid</span><span class="by">2026-11-27</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">LLM-driven automated reward discovery for EV fleet scheduling integrated with the grid; directly targets the researcher&#39;s e-fleet scheduling and grid problems.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="8" data-date="2026-11-27" data-venue="Transportation Research Part C"
+           data-text="joint operational coordination of electric vehicle fleets and battery swapping stations for reliable battery swapping services bo zhang yanchao zhang zhihua chen tao wang guoliang shi rui miao transportation research part c">
+    <div class="score s-hi" title="Relevance 8/10">8</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.trc.2026.106178" target="_blank" rel="noopener">Joint operational coordination of electric vehicle fleets and battery swapping stations for reliable battery swapping services</a></h3>
+<div class="by">Bo Zhang, Yanchao Zhang, Zhihua Chen, Tao Wang et al.</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Transportation Research Part C</span><span class="by">2026-11-27</span>
+<span class="tag">E-bus scheduling &amp; charging</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">Coordinating electric vehicle fleets with battery swapping stations under reliability constraints; directly on EV fleet operations and charging scheduling.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="ai4opt" data-score="7" data-date="2026-11-25" data-venue="arXiv math.OC"
+           data-text="decision-focused learning for multistage stochastic programs, with application to power network repair scheduling david krame kadurha alessandro zocca sandjai bhulai arxiv math.oc">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.34419" target="_blank" rel="noopener">Decision-Focused Learning for Multistage Stochastic Programs, with Application to Power Network Repair Scheduling</a></h3>
+<div class="by">David Krame Kadurha, Alessandro Zocca, Sandjai Bhulai</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv math.OC</span><span class="by">2026-11-25</span>
+<span class="tag">AI for optimisation</span>      </div>
+      <p class="reason">Decision-focused learning with Fenchel-Young loss for multistage stochastic programs with discrete decisions, applied to power repair scheduling; a clear learning-to-optimise method of interest.</p>
+      <details><summary>Abstract</summary><p>Multistage stochastic programs (MSPs) with discrete decisions are hard to solve due to the curse of dimensionality, non-convex value functions, and scenario trees that grow exponentially with the horizon. We develop a decision-focused learning (DFL) framework for MSPs in which a neural network predicts scores for the part of the decision that drives the state transition. Under structural conditions that make this sub-decision enter the stage objective linearly, the network is trained on labels from offline single-scenario problems, using the Fenchel-Young loss with perturbed optimizers, which need only an optimization oracle. We apply the framework to repair scheduling in power networks under stochastic, time-varying component failures, with and without a per-stage repair budget. On a synthetic 5-bus network and on the IEEE 14-bus network at two repair-cost scales, the learned and baseline policies are compared on common evaluation paths. Without the budget, DFL is the cheapest policy on the 5-bus network; on the 14-bus network it does not outperform a near-sighted model-predictive control (MPC) baseline, but it beats repairing every failed component at the higher scale. Under a binding budget, DFL is the cheapest policy evaluated on both networks and at both scales, 14% to 23% below the next-best policy. On the 5-bus network, the mean cost of DFL is 1.7% (without the budget) and 1.8% (with it) above the exact optimum computed by dynamic programming. Within days of computation, sample average approximation yields costlier policies than DFL and the repair-everything heuristic, and stochastic dual dynamic integer programming remains far from convergence. DFL computes its decisions about as fast as the trivial heuristics and orders of magnitude faster than MPC. Since these conditions are not specific to power networks, the framework extends to other MSPs that share this structure.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="7" data-date="2026-11-25" data-venue="arXiv cs.AI"
+           data-text="meterrouter: budget-aware dynamic routing for multi-agent systems yue xu leikun yin ruiming min yufeng lai justin andrew johnson sitao luan xiaotong shen arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 7/10">7</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.34327" target="_blank" rel="noopener">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a></h3>
+<div class="by">Yue Xu, Leikun Yin, Ruiming Min, Yufeng Lai et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-25</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Budget-aware dynamic routing of multi-agent LLM systems trained with GRPO; directly on agent orchestration and cost optimisation the researcher would want to read.</p>
+      <details><summary>Abstract</summary><p>Multi-agent systems (MAS) built on large language models (LLMs) outperform single-agent systems, but inter-agent communication incurs substantial token overhead. While assigning a large LLM to every agent is common, it results in inefficient resource utilization, leaving the system far from the Pareto frontier. The cost of answering a query is set jointly by how many agents are recruited, the role and LLM assigned to each, and communication topology among them. Most existing routers treat cost only implicitly rather than as an explicit optimization constraint. A fixed accuracy-cost preference also cannot express how much a caller is willing to pay for a particular query. We introduce MeterRouter, a budget-aware dynamic router that incrementally synthesizes a collaboration graph by selecting each agent&#39;s role, LLM, incoming connections, and termination conditioned on the query and a per-query monetary budget. We initialize the router by imitating successful execution graphs, then jointly refine its decisions with a variant of Group Relative Policy Optimization (GRPO) whose reward favors correct answers and penalizes spending and budget overruns. Across five benchmarks and a three-tier LLM pool, MeterRouter is (1) accurate, achieving performance comparable to the strongest MAS; (2) economical, reaching that accuracy at 82% lower cost than the strongest MAS router and extending the accuracy-cost frontier beyond the ceiling of single-agent systems; and (3) controllable, adapting its spending to the specified budget while rarely exceeding it.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="ebus" data-score="6" data-date="2026-11-27" data-venue="Transportation Science"
+           data-text="air service hub network design for express delivery operations kaixiang tang ling zhu lingxiao wu jean-françois cordeau yixiao huang transportation science">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1287/trsc.2025.0528" target="_blank" rel="noopener">Air Service Hub Network Design for Express Delivery Operations</a></h3>
+<div class="by">Kaixiang Tang, Ling Zhu, Lingxiao Wu, Jean-François Cordeau et al.</div>      <div class="venue">
+        <span class="pub informs">INFORMS</span>
+        <span>Transportation Science</span><span class="by">2026-11-27</span>
+<span class="tag">E-bus scheduling &amp; charging</span>      </div>
+      <p class="reason">Exact Benders plus column generation for network design with fleet management is methodologically close to the researcher&#39;s decomposition work, though it is air express delivery, not electrified buses.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-27" data-venue="IEEE Trans. Intelligent Transportation Systems"
+           data-text="portagent: large language model-driven vehicle dispatching agent for port terminals jia hu junqi li weimeng lin peng jia yuxiong ji jintao lai ieee trans. intelligent transportation systems">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1109/tits.2026.3740627" target="_blank" rel="noopener">PortAgent: Large Language Model-Driven Vehicle Dispatching Agent for Port Terminals</a></h3>
+<div class="by">Jia Hu, Junqi Li, Weimeng Lin, Peng Jia et al.</div>      <div class="venue">
+        <span class="pub ieee">IEEE</span>
+        <span>IEEE Trans. Intelligent Transportation Systems</span><span class="by">2026-11-27</span>
+<span class="tag">LLM &amp; agentic AI</span><span class="tag" title="No abstract in open metadata; scored from the title">title only</span>      </div>
+      <p class="reason">LLM-driven vehicle dispatching agent for port terminals; agentic operational decisions in a transport setting, though without abstract details.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="grid" data-score="6" data-date="2026-11-26" data-venue="Applied Energy"
+           data-text="virtual heat plants as flexibility providers: a multi-energy aggregation framework for decarbonising residential heating mousa zerai mohammed qais desen kirli andrew lyden applied energy">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.apenergy.2026.129341" target="_blank" rel="noopener">Virtual heat plants as flexibility providers: A multi-energy aggregation framework for decarbonising residential heating</a></h3>
+<div class="by">Mousa Zerai, Mohammed Qais, Desen Kirli, Andrew Lyden</div>      <div class="venue">
+        <span class="pub elsevier">Elsevier</span>
+        <span>Applied Energy</span><span class="by">2026-11-26</span>
+<span class="tag">Transport-grid integration</span>      </div>
+      <p class="reason">Aggregates hybrid heat pumps with coupled electricity-gas network constraints via MCTS; relevant to flexibility aggregation and distribution network stress.</p>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-25" data-venue="arXiv cs.NI"
+           data-text="autorsp: an ai agent for radar sensing pipeline design zhi zheng xincheng xie avery gump sacha jungerman hongyang li yin li mohit gupta akarsh prabhakara arxiv cs.ni">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.34754" target="_blank" rel="noopener">AutoRSP: An AI Agent for Radar Sensing Pipeline Design</a></h3>
+<div class="by">Zhi Zheng, Xincheng Xie, Avery Gump, Sacha Jungerman et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.NI</span><span class="by">2026-11-25</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">An LLM agent that automatically designs radar sensing pipelines using simulation and hardware feedback in place of an LLM judge; agentic design loops are adjacent to the researcher&#39;s interests.</p>
+      <details><summary>Abstract</summary><p>Radar sensing demands a pipeline that is well-thought-out across hardware and software. We ask whether an AI agent can automatically design radar sensing pipelines at a fraction of the time, cost, and expertise that current practice needs. We present AutoRSP, an agent that embeds radar-system-level structure through sub-agents mapped to five stack layers, a code-based representation of every layer with explicitly modeled cross-layer dependencies. Feedback for the agentic search process comes from a pipeline of realistic RF simulation, on-sensor emulation, and execution on real edge devices, rather than from an LLM judge. Because such feedback can be slower than an LLM call, we present methods to efficiently optimize agentic loops. We evaluate AutoRSP on robotic imaging, automotive perception, and vital sign sensing. It produces executable pipelines with performance comparable to or better than human-expert pipelines and closed-source agents. AutoRSP&#39;s harness, tools, and benchmarks will be released to bridge the rising gap in agentic research abilities outside of frontier labs.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-25" data-venue="arXiv cs.AI"
+           data-text="crucible: evaluating llm agents in executable chemistry research environments yinjun liu xinye li ruisen peng lang gao zixiang xu zirui song xiuying chen arxiv cs.ai">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.34254" target="_blank" rel="noopener">Crucible: Evaluating LLM Agents in Executable Chemistry Research Environments</a></h3>
+<div class="by">Yinjun Liu, Xinye Li, Ruisen Peng, Lang Gao et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.AI</span><span class="by">2026-11-25</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">Benchmark of LLM agents using tools in executable chemistry environments; relevant agent evaluation with simulators, though domain is chemistry.</p>
+      <details><summary>Abstract</summary><p>Large language models (LLMs) perform well on chemistry knowledge benchmarks, which mainly assess question answering and isolated tasks. Chemical research, however, requires using specialized tools and interpreting their outputs to obtain chemically valid results. To address this gap, we introduce Crucible Bench to evaluate this ability across all four stages of the design-make-test-analyze (DMTA) cycle. The benchmark contains 1,078 tasks in 12 task families curated from 18 published datasets, covering molecular design, synthesis planning, experimental execution, closed-loop optimization, simulation, and analytical characterization. Agents access 75 domain-specific tools through the Model Context Protocol in seven isolated environments. Sandboxed graders verify the resulting synthesis routes, experimental protocols, and other outputs. Laboratory tasks use robotic simulators or previously measured experimental data. We evaluate 14 LLMs as agents and find that the best achieves an overall score of 0.545, with synthesis planning and closed-loop optimization emerging as the hardest domains. Overall performance does not predict optimization performance well: the model ranked twelfth overall achieves the highest score in closed-loop optimization. Error analysis also shows that agents often submit chemically invalid results despite running their tools successfully. Stronger models benefit more from tool access, but reliable use of chemical software remains a challenge that Crucible Bench can track as models improve.</p></details>
+    </div>
+  </article>
+  <article class="card" data-topic="llm" data-score="6" data-date="2026-11-25" data-venue="arXiv cs.LG"
+           data-text="do we still need reinforcement learning when we can read the world model? mingchao zhang miduo cui kangze he yuanjun li dapeng li ce zhang chuanchen luo xue yan mingzhe xing zhumin chen hangyu mao bin zhang zhiwei xu arxiv cs.lg">
+    <div class="score s-mid" title="Relevance 6/10">6</div>
+    <div>
+      <h3><a href="https://arxiv.org/abs/2611.34656" target="_blank" rel="noopener">Do We Still Need Reinforcement Learning When We Can Read the World Model?</a></h3>
+<div class="by">Mingchao Zhang, Miduo Cui, Kangze He, Yuanjun Li et al.</div>      <div class="venue">
+        <span class="pub arxiv">arXiv</span>
+        <span>arXiv cs.LG</span><span class="by">2026-11-25</span>
+<span class="tag">LLM &amp; agentic AI</span>      </div>
+      <p class="reason">LLM coding agents synthesize control policies from readable world models instead of RL; agentic decision-making close to the researcher&#39;s interests.</p>
+      <details><summary>Abstract</summary><p>Reinforcement learning has achieved remarkable success in sequential decision-making, but learning effective policies often requires substantial interaction experience. Model-based reinforcement learning alleviates this dependence by leveraging world models, which are typically used to support planning or policy optimization. In this paper, we investigate an alternative paradigm in which autonomous LLM-based coding agents directly synthesize control policies by reasoning over readable world models. By examining environment source code, these agents translate environmental knowledge into executable decision rules and iteratively refine their policies using online feedback or offline data, without task-specific RL training. Experiments across diverse decision-making benchmarks show that synthesized policies match or outperform conventional RL methods while requiring substantially less experience. Further analyses reveal interpretable decision rules and how they evolve through feedback-driven refinement. Comparisons with policies generated without source code access and experiments under challenging conditions further demonstrate the benefits of readable world models. These findings suggest that direct policy synthesis can reduce reliance on trial and error, challenging the necessity of task-specific RL training.</p></details>
+    </div>
+  </article>
+</main>
+<p class="empty" id="none" hidden>No papers match this filter.</p>
+
+<nav class="archive" aria-label="Previous days">
+  <h2>Previous days</h2>
+  <ul>
+    <li><a href="../archive/2026-11-28.html" class="cur" aria-current="page">2026-11-28 · 10</a></li>
+    <li><a href="../archive/2026-11-27.html">2026-11-27 · 5</a></li>
+    <li><a href="../archive/2026-11-26.html">2026-11-26 · 11</a></li>
+    <li><a href="../archive/2026-11-25.html">2026-11-25 · 18</a></li>
+    <li><a href="../archive/2026-11-24.html">2026-11-24 · 18</a></li>
+    <li><a href="../archive/2026-11-23.html">2026-11-23 · 11</a></li>
+    <li><a href="../archive/2026-11-22.html">2026-11-22 · 4</a></li>
+    <li><a href="../archive/2026-11-21.html">2026-11-21 · 11</a></li>
+    <li><a href="../archive/2026-11-20.html">2026-11-20 · 22</a></li>
+    <li><a href="../archive/2026-11-19.html">2026-11-19 · 12</a></li>
+    <li><a href="../archive/2026-11-18.html">2026-11-18 · 20</a></li>
+    <li><a href="../archive/2026-11-17.html">2026-11-17 · 3</a></li>
+    <li><a href="../archive/2026-11-16.html">2026-11-16 · 0</a></li>
+    <li><a href="../archive/2026-11-15.html">2026-11-15 · 2</a></li>
+    <li><a href="../archive/2026-11-14.html">2026-11-14 · 22</a></li>
+    <li><a href="../archive/2026-11-13.html">2026-11-13 · 3</a></li>
+    <li><a href="../archive/2026-11-12.html">2026-11-12 · 13</a></li>
+    <li><a href="../archive/2026-11-11.html">2026-11-11 · 17</a></li>
+    <li><a href="../archive/2026-11-10.html">2026-11-10 · 10</a></li>
+    <li><a href="../archive/2026-11-09.html">2026-11-09 · 392</a></li>
+    <li><a href="../archive/2026-11-08.html">2026-11-08 · 2</a></li>
+    <li><a href="../archive/2026-11-07.html">2026-11-07 · 2</a></li>
+    <li><a href="../archive/2026-11-06.html">2026-11-06 · 5</a></li>
+    <li><a href="../archive/2026-11-05.html">2026-11-05 · 3</a></li>
+    <li><a href="../archive/2026-11-04.html">2026-11-04 · 33</a></li>
+    <li><a href="../archive/2026-11-03.html">2026-11-03 · 3</a></li>
+    <li><a href="../archive/2026-11-02.html">2026-11-02 · 10</a></li>
+  </ul>
+</nav>
+
+<footer>
+  Sources: arXiv; IEEE, Elsevier, INFORMS, Springer Nature and ACM journals (Crossref, OpenAlex); NeurIPS, ICML and ICLR accepted-paper lists; AAAI, IJCAI, AAMAS, KDD, WWW, GECCO and other ACM/AI conferences (OpenAlex).
+  Relevance scored by Claude against Renyou Xie, UNSW's research profile (threshold 6/10).
+  Updated 2026-11-28 02:35 UTC · <a href="../feed.xml">RSS</a></footer>
+</div>
+
+<script>
+(() => {
+  const btn = document.getElementById("theme");
+  btn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+  });
+
+  const list = document.getElementById("list");
+  if (!list) return;
+  const cards = [...list.querySelectorAll(".card")];
+  const chips = [...document.querySelectorAll(".chip[data-topic]")];
+  const q = document.getElementById("q"), sort = document.getElementById("sort"), none = document.getElementById("none");
+  let topic = "";
+
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const c of cards) {
+      const ok = (!topic || c.dataset.topic === topic) && (!term || c.dataset.text.includes(term));
+      c.hidden = !ok; shown += ok;
+    }
+    none.hidden = shown > 0;
+  }
+  chips.forEach(ch => ch.addEventListener("click", () => {
+    topic = ch.dataset.topic;
+    chips.forEach(x => x.setAttribute("aria-pressed", String(x === ch)));
+    apply();
+  }));
+  q.addEventListener("input", apply);
+  sort.addEventListener("change", () => {
+    const key = sort.value;
+    const cmp = {
+      score: (a, b) => b.dataset.score - a.dataset.score,
+      date: (a, b) => b.dataset.date.localeCompare(a.dataset.date) || b.dataset.score - a.dataset.score,
+      venue: (a, b) => a.dataset.venue.localeCompare(b.dataset.venue) || b.dataset.score - a.dataset.score,
+    }[key];
+    cards.sort(cmp).forEach(c => list.appendChild(c));
+  });
+})();
+</script>
+</body>
+</html>
